@@ -1,15 +1,11 @@
----
-tags:
-- tutorials
-- ruby
-- ruby-on-rails
-- refactoring
-comments: true
-date: 2012-11-10T00:00:00Z
-title: 'Don''t do this at home on Rails #2'
-slug: dont-do-this-at-home-on-rails-2
----
++++
+date = "2012-11-10T00:00:00Z"
+draft = false
+slug = "dont-do-this-at-home-on-rails-2"
+tags = ["ruby", "ruby-on-rails", "refactoring"]
+title = "Don't do this at home on Rails #2"
 
++++
 - Languages: Ruby
 - Difficulty: <span class="label label-success">Easy</span>
 
@@ -29,11 +25,11 @@ Well, let's start.
 
 Very often I see a code like this:
 
-{% codeblock lang:ruby %}
+``` ruby
 if schedulled_at > Time.zone.now
   ...
 end
-{% endcodeblock %}
+```
 
 And there is nothing wrong with it :) Seriously. But what if we have not set
 the time zone? Most likely we'll get an error. Just recently I came across a
@@ -43,11 +39,11 @@ method that does this check for us.
 `Time.zone.now` if the `Time.zone` or `config.time_zone` set,
 otherwise just returns `Time.now`.
 
-{% codeblock lang:ruby %}
+``` ruby
 if schedulled_at > Time.current
   ...
 end
-{% endcodeblock %}
+```
 
 ### \#2 - Avoid using `before_filter`
 
@@ -55,7 +51,7 @@ end
 will be executed. This allows us to avoid duplicating code. But, like any tool,
 it can be used "in the wrong way".
 
-{% codeblock lang:ruby %}
+``` ruby
 class SubscribesController < ApplicationController
   before_filter :load_subscribe, only: [:show, :destroy]
 
@@ -77,7 +73,7 @@ class SubscribesController < ApplicationController
       @subscribe = Subscribe.find_by_name(params[:id]) || raise(ActiveRecord::RecordNotFound)
     end
 end
-{% endcodeblock %}
+```
 
 I do not mind eliminating duplication, especially when the private method below
 does consist of 40 lines, for example. I just think, logic should be more explicit
@@ -89,7 +85,7 @@ the application logic confusing and difficult to understand.
 Before filters are really helpful in some cases. For example, when we need to check
 whether the user is authorized or log each request.
 
-{% codeblock lang:ruby %}
+``` ruby
 class SubscribesController < ApplicationController
   def index
     @subscribes = Subscribe.all
@@ -111,7 +107,7 @@ class SubscribesController < ApplicationController
     @subscribe = Subscribe.find_by_name!(params[:id])
   end
 end
-{% endcodeblock %}
+```
 
 When you look at each action it doesn't seem like the instance variables appear
 magically. As the capabilities of a controller increases in size it becomes more
@@ -133,7 +129,7 @@ Now I will show you two main sources that help me every day:
 - [APIdock](http://apidock.com/)
 - [Ruby 1.9.3 Doc](http://ruby-doc.org/core-1.9.3/)
 
-{% codeblock lang:ruby %}
+``` ruby
 # before
 @groups = Group.all.find_all { |g| g.admin?(current_user) }
 @projects = Project.all.find_all { |p| p.admin?(current_user) }
@@ -141,7 +137,7 @@ Now I will show you two main sources that help me every day:
 # after
 @groups = Group.select { |g| g.admin?(current_user) }
 @projects = Project.select { |p| p.admin?(current_user) }
-{% endcodeblock %}
+```
 
 As you can see, the code has not changed much.
 But, using such a bricks, we can build really powerful self-documenting code.
@@ -152,5 +148,6 @@ it without any problems.
 
 And that's all for today folks!
 
-## Following reading
+## Follow up
+
 - [Don't do this at home on Rails #3](/2013/01/dont-do-this-at-home-on-rails-3)

@@ -1,17 +1,16 @@
----
-tags:
-- ruby
-- ruby-on-rails
-- activerecord
-- migrations
-- db
-- schema
-comments: true
-date: 2012-11-18T00:00:00Z
-title: Null migration, or What to do when there are too many migrations
-slug: null-migration-or-what-to-do-when-there-are-too-many-migrations
----
++++
+date = "2012-11-18T00:00:00Z"
+draft = false
+slug = "null-migration-or-what-to-do-when-there-are-too-many-migrations"
+tags = [
+  "ruby",
+  "ruby-on-rails",
+  "activerecord",
+  "migrations"
+]
+title = "Null migration, or What to do when there are too many migrations"
 
++++
 Migrations are probably one of the most killer features of ActiveRecord.
 They allow you to design the architecture of the database along with the
 growth of your project. If you change your data model ([Domain Model](http://martinfowler.com/eaaCatalog/domainModel.html)),
@@ -73,9 +72,9 @@ Next, I will show how you can create a null migration.
 
 In most cases, you should already have a file `db/schema.rb`. If not, use the following rake task:
 
-{% codeblock lang:bash %}
+``` bash
 > rake db:schema:dump
-{% endcodeblock %}
+```
 
 It should do the job.
 
@@ -83,13 +82,13 @@ It should do the job.
 
 Create a new migration named `NullMigration` using Rails generator:
 
-{% codeblock lang:bash %}
+``` bash
 > rails g migration NullMigration
-{% endcodeblock %}
+```
 
 Open the newly created migration. It should look something like this:
 
-{% codeblock lang:ruby %}
+``` ruby
 class NullMigration < ActiveRecord::Migration
   def up
   end
@@ -97,7 +96,7 @@ class NullMigration < ActiveRecord::Migration
   def down
   end
 end
-{% endcodeblock %}
+```
 
 Now copy the contents of the `ActiveRecord::Schema.define` block from a file `db/schema.rb` into the method `up`.
 
@@ -110,7 +109,7 @@ database using the rake command `db:drop db:create`).
 
 As a result, the migration should look like this:
 
-{% codeblock lang:ruby %}
+``` ruby
 class NullMigration < ActiveRecord::Migration
   def up
     create_table "table", :force => true do |t|
@@ -121,7 +120,7 @@ class NullMigration < ActiveRecord::Migration
     raise ActiveRecord::IrreversibleMigration
   end
 end
-{% endcodeblock %}
+```
 
 ### 3. Change migration timestamp
 
@@ -146,7 +145,7 @@ Alternatively, you can find the required timestamp inside the
 
 Example (using the command line):
 
-{% codeblock lang:bash %}
+``` bash
 > ls db/migrate
 
 20120925084251_add_state_to_task_topics.rb
@@ -157,7 +156,7 @@ Example (using the command line):
 
 20120925084251_add_state_to_task_topics.rb
 20120925084251_null_migration.rb
-{% endcodeblock %}
+```
 
 ### 4. Remove previous migrations
 
@@ -175,9 +174,9 @@ Now you only have to remove the previous migrations. I think this you can do wit
 This step is not much different from the above, with the exception of the
 schema file - `db/structure.sql` and rake command to dump the database:
 
-{% codeblock lang:bash %}
+``` bash
 > rake db:structure:dump
-{% endcodeblock %}
+```
 
 Would like to note that, unlike the command `rake db:schema:dump`, which uses
 built-in ActiveRecord schema dumper, this command uses special tools
@@ -190,7 +189,7 @@ Create a migration (see a similar step above). Next, copy the file
 
 Our migration would look like this:
 
-{% codeblock lang:ruby %}
+``` ruby
 class NullMigration < ActiveRecord::Migration
   def up
     file_data = File.read('db/migrate/null_schema.sql')
@@ -201,7 +200,7 @@ class NullMigration < ActiveRecord::Migration
     raise ActiveRecord::IrreversibleMigration
   end
 end
-{% endcodeblock %}
+```
 
 ### 3. Change migration timestamp
 ### 4. Remove previous migrations

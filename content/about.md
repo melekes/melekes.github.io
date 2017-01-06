@@ -6,7 +6,6 @@ noauthor = true
 share = false
 title = "About me"
 type = "page"
-slug = "about"
 [menu.main]
 weight = -119
 
