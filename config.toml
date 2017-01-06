@@ -7,8 +7,7 @@ pluralizeListTitles = false
 theme               = "casper"
 title               = "Home on Rails"
 
-disqusshortname = "homeonrails"
-pygmentsStyle   = "monokai"
+disqusshortname    = "homeonrails"
 
 [permalinks]
   post = "/:year/:month/:slug/"
@@ -42,6 +41,7 @@ pygmentsStyle   = "monokai"
   hideHUGOSupport       = false
   logo                  = "images/logo.png"
   twitterName           = "AntonKalyaev"
+  customHeaderPartial   = "header.include.html"
 
 [sitemap]
   ChangeFreq = ""
