@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Почему стоит писать почему"/>
+<meta name="twitter:description" content="Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
+&ldquo;Что?&rdquo;.
+
+commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
+Author: Anton Kalyaev &lt;anton.kalyaev@gmail.com&gt;
+Date:   Mon Apr 14 13:20:06 2014 &#43;0400
+
+    raise NoSlidesError if no slides
+
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Почему стоит писать почему &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2014/04/why-should-i-write-why/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2014-04-15T14:58:08Z" />
+
+    
+    <meta property="og:article:tag" content="git-commit" />
+    
+    <meta property="og:article:tag" content="git" />
+    
+    <meta property="og:article:tag" content="coding-style" />
+    
+    
+
+    <title>
+       Почему стоит писать почему &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2014/04/why-should-i-write-why/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Почему стоит писать почему</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2014-04-15T14:58:08Z">
+            Apr 15, 2014
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/git-commit/">#git-commit</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/git/">#git</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/coding-style/">#coding-style</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
+&ldquo;Что?&rdquo;.</p>
+
+<pre><code>commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
+Author: Anton Kalyaev &lt;anton.kalyaev@gmail.com&gt;
+Date:   Mon Apr 14 13:20:06 2014 +0400
+
+    raise NoSlidesError if no slides
+</code></pre>
+
+<p></p>
+
+<p>Что сделали, то и пишем:</p>
+
+<ul>
+<li>добавили - added</li>
+<li>удалили - removed</li>
+<li>отрефакторили - refactored</li>
+<li>&hellip; ну вы поняли.</li>
+</ul>
+
+<p>Это позволяет быстро понять что было сделано в рамках данного коммита.</p>
+
+<p>Со временем я осознал, что у данного подхода есть один серьезный
+минус - он не отвечает на вопрос &ldquo;Почему это было сделано?&rdquo;. Позже я
+убедился, что в некоторых ситуациях <strong>это способно сильно осложнить
+жизнь простому разработчику</strong>.</p>
+
+<p>Рассмотрим случай выше. Непонятно почему мы бросаем исключение, а не
+логгируем ошибку. Мы уже не можем быстро поменять данную
+функциональность. Приходится самому додумывать причину. Словом <strong>при
+отсутствии причины внесения изменений увеличивается стоимость поддержки
+данного кода</strong>.</p>
+
+<pre><code>commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
+Author: Anton Kalyaev &lt;anton.kalyaev@gmail.com&gt;
+Date:   Mon Apr 14 13:20:06 2014 +0400
+
+    raise NoSlidesError if no slides
+
+    This is exceptional situation because if there are no slides, layout
+    looses it's meaning.
+</code></pre>
+
+<p>Теперь становится ясно, что в случае отсутствия слайдов лейаут теряет свой
+смысл. Мы ожидаем, что будет присутствовать хотя бы один слайд.</p>
+
+<p><em>Прошу вас, не вдавайтесь в терминологию предметной области. Для интересующихся
+лишь отмечу, что исключение обрабатывается уровнем выше.</em></p>
+
+<p>Еще пара советов:</p>
+
+<ul>
+<li>не используйте <code>git commit -m &quot;&quot;</code>. Она(команда) принуждает вас писать короткие
+сообщения (например, &ldquo;fixed nil error&rdquo;)</li>
+<li>по возможности ссылайтесь на внешние источники информации (номер тикета,
+ссылка на баг в Airbrake, ссылка на статью в интернете и т.п.)</li>
+<li>первая строка не должна быть длиннее 72 символов. Следующее после нее
+расширенное описание может быть любой длинны. В качестве разделителя идет пустая
+строка.</li>
+<li>если вы пользуетесь Vim, то можно добавить проверку правописания и ограничение
+длины текста добавив это в ваш <code>~/.vimrc</code>:</li>
+</ul>
+
+<pre><code>  autocmd Filetype gitcommit setlocal spell textwidth=72
+</code></pre>
+
+<p>Полезные ссылки:</p>
+
+<ul>
+<li><a href="http://mislav.uniqpath.com/2014/02/hidden-documentation/">Every line of code is always documented</a></li>
+<li><a href="http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message">5 Useful Tips For A Better Commit Message</a></li>
+</ul>
+
+<p><em>Отдельное спасибо <a href="https://twitter.com/plugin73">@plugin73</a> и <a href="https://twitter.com/SavelyevAndrey">@SavelyevAndrey</a> за ревью</em>.</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%d0%9f%d0%be%d1%87%d0%b5%d0%bc%d1%83%20%d1%81%d1%82%d0%be%d0%b8%d1%82%20%d0%bf%d0%b8%d1%81%d0%b0%d1%82%d1%8c%20%d0%bf%d0%be%d1%87%d0%b5%d0%bc%d1%83&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fwhy-should-i-write-why%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fwhy-should-i-write-why%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fwhy-should-i-write-why%2f&amp;description=%d0%9f%d0%be%d1%87%d0%b5%d0%bc%d1%83%20%d1%81%d1%82%d0%be%d0%b8%d1%82%20%d0%bf%d0%b8%d1%81%d0%b0%d1%82%d1%8c%20%d0%bf%d0%be%d1%87%d0%b5%d0%bc%d1%83"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fwhy-should-i-write-why%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2014\/04\/why-should-i-write-why\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

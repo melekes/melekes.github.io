@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Validating nested associations in Rails"/>
+<meta name="twitter:description" content="Intro
+
+Rails provide a wide range of options for creating rich forms for your models.
+This can be a simple form for one object, or the form for many related objects.
+Usually it is a parent-children relations. If you are not familiar with such terms
+as form_for
+or accepts_nested_attributes_for,
+I strongly recommend taking a look at this article Complex Rails Forms with Nested Attributes,
+written by Xavier Shay, which will show your how you can create complex forms with Rails.
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Validating nested associations in Rails &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2012/10/validating-nested-associations-in-rails/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2012-10-08T00:00:00Z" />
+
+    
+    <meta property="og:article:tag" content="tutorials" />
+    
+    <meta property="og:article:tag" content="ruby" />
+    
+    <meta property="og:article:tag" content="ruby-on-rails" />
+    
+    <meta property="og:article:tag" content="activerecord" />
+    
+    <meta property="og:article:tag" content="forms" />
+    
+    <meta property="og:article:tag" content="validation" />
+    
+    <meta property="og:article:tag" content="nested-attributes" />
+    
+    <meta property="og:article:tag" content="accepts_nested_attributes_for" />
+    
+    
+
+    <title>
+       Validating nested associations in Rails &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2012/10/validating-nested-associations-in-rails/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Validating nested associations in Rails</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2012-10-08T00:00:00Z">
+            Oct 8, 2012
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/tutorials/">#tutorials</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/ruby/">#ruby</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/ruby-on-rails/">#ruby-on-rails</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/activerecord/">#activerecord</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/forms/">#forms</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/validation/">#validation</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/nested-attributes/">#nested-attributes</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/accepts_nested_attributes_for/">#accepts_nested_attributes_for</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <h2 id="intro">Intro</h2>
+
+<p>Rails provide a wide range of options for creating rich forms for your models.
+This can be a simple form for one object, or the form for many related objects.
+Usually it is a parent-children relations. If you are not familiar with such terms
+as <a href="http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#M001605">form_for</a>
+or <a href="http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html#M002132">accepts_nested_attributes_for</a>,
+I strongly recommend taking a look at this article <a href="http://rubysource.com/complex-rails-forms-with-nested-attributes/">Complex Rails Forms with Nested Attributes</a>,
+written by <a href="http://xaviershay.com/">Xavier Shay</a>, which will show your how you can create complex forms with Rails.</p>
+
+<p></p>
+
+<h2 id="an-example">An example</h2>
+
+<p>Suppose, we have a model called <code>Company</code>. And the company may have several offices.
+Lets define these two models.</p>
+
+<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
+  attr_accessible :name, :offices_attributes
+  validates :name, presence: true
+  has_many :offices
+  accepts_nested_attributes_for :offices, allow_destroy: true
+end
+
+class Company::Office &lt; ActiveRecord::Base
+  attr_accessible :company_id, :name
+  validates :name, presence: true
+  belongs_to :company
+end
+</code></pre>
+
+<p>Both company and office have names. The company could have zero or more offices.</p>
+
+<p>By including <code>accepts_nested_attributes_for</code> it becomes possible to access
+offices attributes inside our <code>Company</code> model.</p>
+
+<pre><code class="language-ruby">&gt; c = Company.create(name: 'Mars LLC')
+&gt;   =&gt; #&lt;Company id: 1, name: &quot;Mars LLC&quot;, created_at: &quot;2012-10-08 19:16:44&quot;, updated_at: &quot;2012-10-08 19:16:44&quot;&gt;
+
+# add two new offices
+&gt; c.offices_attributes = [{ name: 'North America' }, { name: 'Europe' }]
+&gt;   =&gt; [{:name=&gt;&quot;North America&quot;}, {:name=&gt;&quot;Europe&quot;}]
+&gt; c.save
+&gt; c.offices
+&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:21:54&quot;&gt;, #&lt;Company::Office id: 2, company_id: 1, name: &quot;Europe&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:21:54&quot;&gt;]
+
+# edit office in North America
+&gt; c.offices_attributes = [{ id: 1, name: &quot;North America (it's cold out there)&quot; }]
+&gt;   =&gt; [{:id=&gt;1, :name=&gt;&quot;North America (it's cold out there)&quot;}]
+&gt; c.save
+&gt; c.offices
+&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America (it's cold out there)&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:25:18&quot;&gt;, #&lt;Company::Office id: 2, company_id: 1, name: &quot;Europe&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:21:54&quot;&gt;]
+
+# delete an office in Europe
+&gt; c.offices_attributes = [{ id: 2, _destroy: '1' }]
+&gt;   =&gt; [{:id=&gt;2, :_destroy=&gt;&quot;1&quot;}]
+&gt; c.save
+&gt; c.offices
+&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America (it's cold out there)&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:25:18&quot;&gt;]
+</code></pre>
+
+<p>There are two basic options, that you should know when dealing with <code>accepts_nested_attributes_for</code>:</p>
+
+<ul>
+<li><code>allow_destroy</code> - allows to destroy objects (<code>false</code> by default)</li>
+<li><code>reject_if</code> - rejects the records, based on the given  <code>Proc</code> or
+a <code>Symbol</code> pointing to a method. This one is simular to the <code>Enumerable::reject</code> method (<a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-reject">Doc</a>).</li>
+</ul>
+
+<p>Take a look at the other supported options on <a href="http://apidock.com/rails/ActiveRecord/NestedAttributes/ClassMethods/accepts_nested_attributes_for">apidock.com</a>.</p>
+
+<h3 id="validating-nested-attributes">Validating nested attributes</h3>
+
+<p>Except the basic validation, you can use <code>reject_if</code> option to validate a nested object.</p>
+
+<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
+  attr_accessible :name, :offices_attributes
+  validates :name, presence: true
+  has_many :offices
+  accepts_nested_attributes_for :offices, allow_destroy: true, reject_if: :office_name_invalid
+
+  private
+
+    def office_name_invalid(attributes)
+      # office name shouldn't start with underscore
+      attributes['name'] =~ /\A_/
+    end
+end
+</code></pre>
+
+<p>The method should return either true (rejects the record) or false.</p>
+
+<pre><code class="language-ruby">&gt; c.offices_attributes = [{ id: 1, name: '_North America'}]
+&gt;   =&gt; [{:id=&gt;1, :name=&gt;&quot;_North America&quot;}]
+&gt; c.save
+&gt; c.offices # no changes
+&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:46:22&quot;&gt;]
+</code></pre>
+
+<p>We could use predefined <code>:all_blank</code> symbol.</p>
+
+<pre><code class="language-ruby">&gt; c.offices_attributes = [{ name: ''}]
+&gt;   =&gt; [{:name=&gt;&quot;&quot;}]
+&gt; c.save
+&gt; c.offices # no changes
+&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:46:22&quot;&gt;]
+</code></pre>
+
+<p>Passing <code>:all_blank</code> instead of a Proc will create a proc that will reject a record where all the attributes are blank excluding any value for <code>_destroy</code>.</p>
+
+<h3 id="validating-count-of-the-nested-attributes">Validating count of the nested attributes</h3>
+
+<p>Lets add more complexity to our company model and say for example: it <strong>must have at least one
+office</strong> (we usually called it the main office).</p>
+
+<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
+  OFFICES_COUNT_MIN = 1
+
+  attr_accessible :name, :offices_attributes
+  validates :name, presence: true
+  validate do
+    check_offices_number
+  end
+  has_many :offices
+  accepts_nested_attributes_for :offices, allow_destroy: true
+
+  private
+
+    def offices_count_valid?
+      offices.count &gt;= OFFICES_COUNT_MIN
+    end
+
+    def check_offices_number
+      unless offices_count_valid?
+        errors.add(:base, :offices_too_short, :count =&gt; OFFICES_COUNT_MIN)
+      end
+    end
+end
+</code></pre>
+
+<p>The problem here is that accepts_nested_attributes_for call destroy for child
+objects <strong>AFTER</strong> validation of the parent object. So the user is able to delete
+an office. Of course, later, when the user will try to edit a company,
+he/she will get an error - &ldquo;Company should have at least one office.&rdquo;.</p>
+
+<p><img src="/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process" /></p>
+
+<pre><code class="language-ruby">&gt; c.offices_attributes = [{ id: 1, _destroy: '1' }]
+&gt;   =&gt; [{:id=&gt;1, :_destroy=&gt;&quot;1&quot;}]
+&gt; c.save
+&gt; c.offices
+&gt;   =&gt; []
+</code></pre>
+
+<p>You could try to use standard <code>length</code> validator
+(e.g. <code>validates :offices, length: { minimum: OFFICES_COUNT_MIN }</code>), and it actually works,
+but again, it does not take into account the fact that some of the records may
+be marked for destruction.</p>
+
+<p>The things are getting a little tricky here.
+To sort out the problem, we need to understand what <code>offices_attributes=</code> method does.</p>
+
+<pre><code class="language-ruby"># accepts_nested_attributes_for generates for us this method
+def offices_attributes=(attributes)
+  # @note the name of the method to call may vary depending on the type of association
+  # @see https://github.com/rails/rails/blob/master/activerecord/lib/active_record/nested_attributes.rb#L285
+  assign_nested_attributes_for_collection_association(:offices, attributes, mass_assignment_options)
+end
+
+def assign_nested_attributes_for_collection_association
+  ...
+  if !call_reject_if(association_name, attributes) # if the record passed
+    # update a record with the attributes or marks it for destruction
+    assign_to_or_mark_for_destruction(existing_record, attributes, options[:allow_destroy], assignment_opts)
+  end
+  ...
+end
+</code></pre>
+
+<p>As you can see from the code above, our method marks offices records (with <code>_destroy</code> attribute) for destruction.
+When the company validates offices count, the offices relation includes <strong>all</strong> the records.
+So, all we need to do is to select only those records not marked for destruction.</p>
+
+<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
+  ...
+
+  private
+
+    def offices_count_valid?
+      offices.reject(&amp;:marked_for_destruction?).count &gt;= OFFICES_COUNT_MIN
+    end
+end
+</code></pre>
+
+<p>Now we&rsquo;ve got the actual number of the company&rsquo;s offices. Therefore, we will get an error while trying to delete the last office in North America:</p>
+
+<pre><code class="language-ruby">&gt; c.offices_attributes = [{ id: 1, _destroy: '1' }]
+&gt;   =&gt; [{:id=&gt;1, :_destroy=&gt;&quot;1&quot;}]
+&gt; c.save
+&gt; c.errors
+&gt;   =&gt; #&lt;ActiveModel::Errors:0x000000038fc840 @base=#&lt;Company id: 1, name: &quot;Mars LLC&quot;, created_at: &quot;2012-10-08 19:16:44&quot;, updated_at: &quot;2012-10-08 19:16:44&quot;&gt;, @messages={:base=&gt;[&quot;Company should have at least one office.&quot;]}&gt;
+</code></pre>
+
+<p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I&rsquo;ve added <a href="/2012/10/associationcountvalidator">one more for this case</a>.</p>
+
+<p>If you know a better solution, don&rsquo;t hesitate to <a href="/about.html">contact me</a> or simply leave a comment below.</p>
+
+<h3 id="validating-presence-of-the-parent-object">Validating presence of the parent object</h3>
+
+<p>The last thing I wanna share with you is how you can add <code>presence</code> validator
+to the parent association inside the nested model.</p>
+
+<pre><code class="language-ruby">class Company::Office &lt; ActiveRecord::Base
+  attr_accessible :company_id, :name
+
+  validates :name, presence: true
+  # add validator to company
+  validates :company, presence: true
+
+  belongs_to :company
+end
+</code></pre>
+
+<p>We want to be sure that the office always have a corresponding company. But this fails on creating a company.</p>
+
+<pre><code class="language-ruby">&gt; c = Company.create(name: 'Adidas America Inc', offices_attributes: [{ name: 'LS' }])
+&gt;   =&gt; #&lt;Company id: nil, name: &quot;Adidas America Inc&quot;, created_at: nil, updated_at: nil&gt;
+&gt; c.errors
+&gt;   =&gt; #&lt;ActiveModel::Errors:0x000000036387a8 @base=#&lt;Company id: nil, name: &quot;Adidas America Inc&quot;, created_at: nil, updated_at: nil&gt;, @messages={:&quot;offices.company&quot;=&gt;[&quot;can't be blank&quot;]}&gt;
+</code></pre>
+
+<p>The solution here is to use <code>inverse_of</code> option. See the options section
+in <code>belongs_to</code>, <code>has_one</code> or <code>has_many</code> <a href="http://apidock.com/rails/ActiveRecord/Associations/ClassMethods/belongs_to">documentation</a>.
+Note: it does not work in combination with the <code>polymorphic</code> option.</p>
+
+<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
+  ...
+  has_many :offices, inverse_of: :company
+  ...
+end
+
+class Company::Office &lt; ActiveRecord::Base
+  ...
+  belongs_to :company, inverse_of: :offices
+  ...
+end
+</code></pre>
+
+<p>Now we are able to create a company instance:</p>
+
+<pre><code class="language-ruby">&gt; c = Company.create(name: 'Adidas America Inc', offices_attributes: [{ name: 'LS' }])
+&gt;   =&gt; #&lt;Company id: 2, name: &quot;Adidas America Inc&quot;, created_at: &quot;2012-10-09 07:36:07&quot;, updated_at: &quot;2012-10-09 07:36:07&quot;&gt;
+&gt; c.offices
+&gt;   =&gt; #&lt;Company::Office id: 6, company_id: 2, name: &quot;LS&quot;, created_at: &quot;2012-10-09 07:36:07&quot;, updated_at: &quot;2012-10-09 07:36:07&quot;&gt;
+</code></pre>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Validating%20nested%20associations%20in%20Rails&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2012%2f10%2fvalidating-nested-associations-in-rails%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2012%2f10%2fvalidating-nested-associations-in-rails%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2012%2f10%2fvalidating-nested-associations-in-rails%2f&amp;description=Validating%20nested%20associations%20in%20Rails"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2012%2f10%2fvalidating-nested-associations-in-rails%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2012\/10\/validating-nested-associations-in-rails\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

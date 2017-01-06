@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="How to be productive with almost any text editor"/>
+<meta name="twitter:description" content="
+  На русском
+
+
+What makes us productive when working with code in the editor? Every day, there
+is a new shining plugin, that allows us to do something useful by pressing only
+2 keystrokes. Don&rsquo;t get me wrong, I&rsquo;m not against plugins. Hell, I have at
+least 40 of them (https://git.io/vrg64).
+
+But, are all of them equally useful? I am certain that some tricks outperform
+others in terms of productivity (20% results in 80% boost). These could be
+features, built into the editor. You just don&rsquo;t know about them. Here, I&rsquo;ve
+tried to collect the most important ones, which don&rsquo;t require you to read a
+pile of docs and much time to learn.
+
+"/>
+
+
+
+  	<meta property="og:title" content=" How to be productive with almost any text editor &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-05-23T12:02:11Z" />
+
+    
+    <meta property="og:article:tag" content="editors" />
+    
+    <meta property="og:article:tag" content="vim" />
+    
+    <meta property="og:article:tag" content="productivity" />
+    
+    
+
+    <title>
+       How to be productive with almost any text editor &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">How to be productive with almost any text editor</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-05-23T12:02:11Z">
+            May 23, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/editors/">#editors</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/vim/">#vim</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/productivity/">#productivity</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p><a href="/pdfs/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/how_to_be_productive_with_almost_any_editor_ru_RU.pdf" title="Скачать PDF на русском">
+  На русском
+</a></p>
+
+<p>What makes us productive when working with code in the editor? Every day, there
+is a new shining plugin, that allows us to do something useful by pressing only
+2 keystrokes. Don&rsquo;t get me wrong, I&rsquo;m not against plugins. Hell, I have at
+least 40 of them (<a href="https://git.io/vrg64">https://git.io/vrg64</a>).</p>
+
+<p>But, are all of them equally useful? I am certain that some tricks outperform
+others in terms of productivity (<strong>20% results in 80% boost</strong>). These could be
+features, built into the editor. You just don&rsquo;t know about them. Here, I&rsquo;ve
+tried to collect <strong>the most important ones</strong>, which don&rsquo;t require you to read a
+pile of docs and much time to learn.</p>
+
+<p></p>
+
+<p>There is no research (not to my knowledge) to backup the list below. If you
+think I missed something, leave a comment or two.</p>
+
+<p>In addition, I&rsquo;ve compared the 5 most popular editors (vim, emacs, idea,
+sublime text and atom). I hope it will be interesting for you to see how your
+editor is doing relative to others.</p>
+
+<p><img class="img-rounded" src="/images/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/trends.png" alt="" width="100%" title=""/></p>
+
+<p>Your humble servant is using Vim at his regular job, so you may notice a
+certain predisposition. But I try to be open - the second attempt to master
+Spacemacs? <a href="https://github.com/google/xi-editor">https://github.com/google/xi-editor</a> ? Who knows..</p>
+
+<h2 id="1-fast-switching-between-the-last-two-files">1. Fast switching between the last two files</h2>
+
+<table>
+<thead>
+<tr>
+<th>Editor</th>
+<th>Mapping</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Vim</td>
+<td><code>nnoremap &lt;leader&gt;&lt;leader&gt; &lt;C-^&gt;</code></td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Emacs</td>
+<td><code>(global-set-key (kbd &quot;M-o&quot;)  'mode-line-other-buffer)</code></td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Idea</td>
+<td>Ctrl + Tab / Ctrl + Shift + Tab</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Sublime Text</td>
+<td>Ctrl + Tab / Ctrl + Shift + Tab</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Atom</td>
+<td>Ctrl + Tab / Ctrl + Shift + Tab</td>
+</tr>
+</tbody>
+</table>
+
+<p>Emacs:</p>
+
+<ul>
+<li><a href="https://www.emacswiki.org/emacs/SwitchingBuffers#toc5">https://www.emacswiki.org/emacs/SwitchingBuffers#toc5</a></li>
+<li><a href="http://emacsredux.com/blog/2013/04/28/switch-to-previous-buffer/">http://emacsredux.com/blog/2013/04/28/switch-to-previous-buffer/</a></li>
+</ul>
+
+<p>Idea:</p>
+
+<ul>
+<li><a href="http://blog.jetbrains.com/webide/2013/02/navigating-between-files-in-the-ide-best-practices/">http://blog.jetbrains.com/webide/2013/02/navigating-between-files-in-the-ide-best-practices/</a></li>
+</ul>
+
+<h2 id="2-running-tests-without-leaving-the-editor">2. Running tests without leaving the editor</h2>
+
+<table>
+<thead>
+<tr>
+<th>Editor</th>
+<th>The way</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Vim</td>
+<td><a href="https://github.com/janko-m/vim-test">https://github.com/janko-m/vim-test</a></td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+</tr>
+
+<tr>
+<td>Emacs</td>
+<td>no uniform interface, but there are packages for different languages</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+</tr>
+
+<tr>
+<td>Idea</td>
+<td>through the UI plus Ctrl + R to restart</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+</tr>
+
+<tr>
+<td>Sublime Text</td>
+<td>no uniform interface, but there are packages for different languages</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+</tr>
+
+<tr>
+<td>Atom</td>
+<td>no uniform interface, but there are packages for different languages</td>
+</tr>
+</tbody>
+</table>
+
+<p>Emacs:</p>
+
+<ul>
+<li>clojure - <a href="https://github.com/clojure-emacs/cider">https://github.com/clojure-emacs/cider</a></li>
+<li>ruby - <a href="https://github.com/pezra/rspec-mode">https://github.com/pezra/rspec-mode</a></li>
+<li>erlang - <a href="https://github.com/tjarvstrand/edts">https://github.com/tjarvstrand/edts</a></li>
+<li>python - <a href="https://github.com/ionrock/pytest-el">https://github.com/ionrock/pytest-el</a></li>
+<li>golang - <a href="https://github.com/nlamirault/gotest.el">https://github.com/nlamirault/gotest.el</a></li>
+</ul>
+
+<p>Idea:</p>
+
+<ul>
+<li>for some languages, you&rsquo;ll need to configure Idea, e.g. golang - <a href="https://github.com/go-lang-plugin-org/go-lang-idea-plugin/wiki/Documentation">https://github.com/go-lang-plugin-org/go-lang-idea-plugin/wiki/Documentation</a></li>
+<li><a href="https://www.jetbrains.com/help/idea/2016.1/rerunning-tests.html">https://www.jetbrains.com/help/idea/2016.1/rerunning-tests.html</a></li>
+</ul>
+
+<p>Sublime Text:</p>
+
+<ul>
+<li>ruby - <a href="https://github.com/maltize/sublime-text-2-ruby-tests">https://github.com/maltize/sublime-text-2-ruby-tests</a></li>
+<li>python - <a href="https://damnwidget.github.io/anaconda/tests_runner/">https://damnwidget.github.io/anaconda/tests_runner/</a></li>
+<li>scala - <a href="https://github.com/jarhart/SublimeSBT">https://github.com/jarhart/SublimeSBT</a></li>
+</ul>
+
+<p>Atom:</p>
+
+<ul>
+<li>ruby - <a href="https://github.com/moxley/atom-ruby-test">https://github.com/moxley/atom-ruby-test</a></li>
+<li>elixir - <a href="https://github.com/indiejames/atom-iex">https://github.com/indiejames/atom-iex</a></li>
+<li>(many) - <a href="https://atom.io/packages/script">https://atom.io/packages/script</a></li>
+<li><a href="http://brendankemp.com/essays/atom-is-ready-to-be-your-editor/">http://brendankemp.com/essays/atom-is-ready-to-be-your-editor/</a></li>
+</ul>
+
+<h2 id="3-terminal-emulator">3. Terminal emulator</h2>
+
+<table>
+<thead>
+<tr>
+<th>Editor</th>
+<th>Terminal emulator</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Vim</td>
+<td>no</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+</tr>
+
+<tr>
+<td>Neovim</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+</tr>
+
+<tr>
+<td>Emacs</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+</tr>
+
+<tr>
+<td>Idea</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+</tr>
+
+<tr>
+<td>Sublime Text</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+</tr>
+
+<tr>
+<td>Atom</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+
+<p><em>Note on terminal text editors</em></p>
+
+<p>You can easily switch to the actual terminal using Ctrl + z (this will suspend
+the editor) and get back by entering fg. However, I would say that it is not
+the same as having a terminal emulator running in an editor&rsquo;s window below. The
+reason is simple - context. Most often, <strong>you&rsquo;ll want to look at the output of
+some command and the code at the same time</strong>. For example, seeing an error&rsquo;s
+stack trace and the code at the same time is far better than performing these
+actions in turn (you could easily forget the exact line number or some other
+detail).</p>
+
+<p>If you don&rsquo;t want to type fg, there is a hack:</p>
+
+<p>zsh: <a href="https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/fancy-ctrl-z/fancy-ctrl-z.plugin.zsh">https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/fancy-ctrl-z/fancy-ctrl-z.plugin.zsh</a></p>
+
+<p>fish:</p>
+
+<pre><code>bind \ck 'if test -z (commandline) ; fg %; else ; clear; commandline &quot;&quot;; end'
+</code></pre>
+
+<p>Another advantage of having a terminal emulator: copy-pasting between the
+terminal emulator and your code is much easier, and you <strong>get completion in the
+code for things in the terminal</strong> (thanks to
+<a href="https://www.reddit.com/user/somebodddy">somebodddy</a>).</p>
+
+<p>Sublime Text: <a href="https://packagecontrol.io/packages/Terminal">https://packagecontrol.io/packages/Terminal</a></p>
+
+<p>Atom: <a href="https://atom.io/packages/term3">https://atom.io/packages/term3</a></p>
+
+<h2 id="4-go-to-definition">4. Go to definition</h2>
+
+<table>
+<thead>
+<tr>
+<th>Editor</th>
+<th>Mapping</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Vim</td>
+<td>Ctrl + ] / Ctrl - T using ctags</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Emacs</td>
+<td>M-. / M-* using ctags</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Idea</td>
+<td>Ctrl + B or Ctrl + click / Ctrl + Tab</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Sublime Text</td>
+<td>Ctrl + click / Ctrl + right click</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Atom</td>
+<td>Ctrl + Alt + down / Ctrl + Alt + up</td>
+</tr>
+</tbody>
+</table>
+
+<p>Emacs:</p>
+
+<ul>
+<li><a href="https://www.emacswiki.org/emacs/EmacsTags">https://www.emacswiki.org/emacs/EmacsTags</a></li>
+<li><a href="https://github.com/jacktasia/dumb-jump">https://github.com/jacktasia/dumb-jump</a> (uses <code>ag</code>)</li>
+</ul>
+
+<p>Sublime Text: <a href="https://gist.github.com/kendellfab/6135193#gistcomment-1768760">https://gist.github.com/kendellfab/6135193#gistcomment-1768760</a></p>
+
+<p>Atom: <a href="https://github.com/atom/symbols-view">https://github.com/atom/symbols-view</a></p>
+
+<p>Generating tags using git hooks: <a href="http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html">http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html</a></p>
+
+<h2 id="5-repl-advanced">5. REPL (Advanced)</h2>
+
+<p>If you have a REPL alongside the editor - excellent! You can eval some code or
+lookup some documentation (<a href="http://tonsky.me/blog/interactive-development/">http://tonsky.me/blog/interactive-development/</a>).</p>
+
+<table>
+<thead>
+<tr>
+<th>Editor</th>
+<th>REPL</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Vim</td>
+<td>yes (few languages)</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Neovim</td>
+<td>yes (many languages)</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Emacs</td>
+<td>yes (many languages)</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Idea</td>
+<td>yes (many languages)</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Sublime Text</td>
+<td>yes (many languages)</td>
+</tr>
+
+<tr>
+<td>&mdash;&mdash;&mdash;&mdash;</td>
+<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
+</tr>
+
+<tr>
+<td>Atom</td>
+<td>yes (few languages)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Vim:</p>
+
+<ul>
+<li>clojure: <a href="https://github.com/tpope/vim-fireplace">https://github.com/tpope/vim-fireplace</a></li>
+</ul>
+
+<p>If language has a command-line REPL, you can always execute: <code>:!&lt;repl&gt;</code> (e.g. <code>:!irb</code>).</p>
+
+<p>Neovim: <a href="https://github.com/kassio/neoterm">https://github.com/kassio/neoterm</a></p>
+
+<p>Emacs:</p>
+
+<ul>
+<li>ruby - <a href="https://github.com/dgutov/robe">https://github.com/dgutov/robe</a></li>
+<li>scala - <a href="https://github.com/ensime/ensime-emacs">https://github.com/ensime/ensime-emacs</a></li>
+<li>clojure - <a href="https://github.com/clojure-emacs/cider">https://github.com/clojure-emacs/cider</a></li>
+</ul>
+
+<p>Idea:</p>
+
+<ul>
+<li>clojure - <a href="https://cursive-ide.com/">https://cursive-ide.com/</a></li>
+</ul>
+
+<p>Sublime Text: <a href="https://packagecontrol.io/packages/SublimeREPL">https://packagecontrol.io/packages/SublimeREPL</a></p>
+
+<p>Atom:</p>
+
+<ul>
+<li>clojure - <a href="https://atom.io/packages/proto-repl">https://atom.io/packages/proto-repl</a></li>
+<li>haskell - <a href="https://atom.io/packages/ide-haskell-repl">https://atom.io/packages/ide-haskell-repl</a></li>
+</ul>
+
+<h2 id="the-end-list">The end list</h2>
+
+<ol>
+<li>Fast switching between the last two files</li>
+<li>Running tests without leaving the editor</li>
+<li>Terminal emulator</li>
+<li>Go to definition</li>
+<li>REPL (Advanced)</li>
+</ol>
+
+<p>3 and 5 could be alternatively solved using a terminal multiplexer. For
+example, my favorite <a href="https://tmux.github.io/">https://tmux.github.io/</a> .</p>
+
+<h2 id="bonus">Bonus</h2>
+
+<p>1) Do not repeat yourself (&ldquo;.&rdquo; in Vim, macros [atom - <a href="https://atom.io/packages/atom-keyboard-macros]">https://atom.io/packages/atom-keyboard-macros]</a>)</p>
+
+<p>2) Operate on objects: blocks, functions, etc., not individual characters (motions and text objects <a href="https://github.com/kana/vim-textobj-user/wiki">https://github.com/kana/vim-textobj-user/wiki</a> in Vim)</p>
+
+<p>3) Quickly navigate through code using AceJump-like plugins</p>
+
+<ul>
+<li>vim - <a href="https://github.com/easymotion/vim-easymotion">https://github.com/easymotion/vim-easymotion</a></li>
+<li>idea - <a href="https://github.com/johnlindquist/AceJump">https://github.com/johnlindquist/AceJump</a></li>
+<li>emacs - <a href="https://github.com/abo-abo/avy">https://github.com/abo-abo/avy</a></li>
+<li>sublime text - <a href="https://packagecontrol.io/packages/EasyMotion">https://packagecontrol.io/packages/EasyMotion</a></li>
+<li>atom - <a href="https://atom.io/packages/jumpy">https://atom.io/packages/jumpy</a></li>
+</ul>
+
+<p>My current use of <code>vim-easymotion</code> reduced to only one <a href="https://git.io/vrzAE">https://git.io/vrzAE</a>
+mapping that allows me to jump to any location in the current file. Simple and
+effective!</p>
+
+<p>4) Use multiple selection/cursors</p>
+
+<ul>
+<li>vim - <a href="https://github.com/terryma/vim-multiple-cursors">https://github.com/terryma/vim-multiple-cursors</a></li>
+<li>idea - F6 and the rest</li>
+<li>emacs - <a href="https://github.com/magnars/multiple-cursors.el">https://github.com/magnars/multiple-cursors.el</a></li>
+<li>sublime text - Ctrl + D</li>
+<li>atom - Ctrl + D</li>
+</ul>
+
+<p>5) Open files using fuzzy search</p>
+
+<ul>
+<li>vim - <a href="https://github.com/junegunn/fzf.vim">https://github.com/junegunn/fzf.vim</a></li>
+<li>idea - Shift + Ctrl + O (<a href="https://www.jetbrains.com/help/idea/2016.1/navigating-to-class-file-or-symbol-by-name.html">https://www.jetbrains.com/help/idea/2016.1/navigating-to-class-file-or-symbol-by-name.html</a>)</li>
+<li>emacs - <a href="https://github.com/bbatsov/projectile">https://github.com/bbatsov/projectile</a></li>
+<li>sublime text - Ctrl + P (<a href="http://docs.sublimetext.info/en/latest/file_management/file_management.html">http://docs.sublimetext.info/en/latest/file_management/file_management.html</a>)</li>
+<li>atom - <a href="https://github.com/atom/fuzzy-finder">https://github.com/atom/fuzzy-finder</a></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>As you can see, each of the editors does the job. Some slightly better, others
+- a little worse.</p>
+
+<p>Another finding: Vim is best suited for polyglot developers
+(<a href="http://searchsoftwarequality.techtarget.com/definition/polyglot-programming">http://searchsoftwarequality.techtarget.com/definition/polyglot-programming</a>)
+because it provides plugins and unified interface for multiple languages. Emacs
+offers more power, but you need to configure all the packages to make mappings
+the same. It may be a good idea for Spacemacs, is it?</p>
+
+<p>Useful links:</p>
+
+<ul>
+<li><a href="https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/">https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/</a></li>
+<li><a href="https://danielmiessler.com/blog/enhancements-to-shell-and-vim-productivity/">https://danielmiessler.com/blog/enhancements-to-shell-and-vim-productivity/</a></li>
+</ul>
+
+<p>Did I miss something? You can leave a comment or send me an email.</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=How%20to%20be%20productive%20with%20almost%20any%20text%20editor&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fhow-to-be-productive-with-almost-any-editor%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fhow-to-be-productive-with-almost-any-editor%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fhow-to-be-productive-with-almost-any-editor%2f&amp;description=How%20to%20be%20productive%20with%20almost%20any%20text%20editor"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fhow-to-be-productive-with-almost-any-editor%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2016\/05\/how-to-be-productive-with-almost-any-editor\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Зависла Erlang нода. Что делать?"/>
+<meta name="twitter:description" content="
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Зависла Erlang нода. Что делать? &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2016/04/erlang-node-freezes-now-what/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-04-05T15:50:31Z" />
+
+    
+    <meta property="og:article:tag" content="erlang" />
+    
+    <meta property="og:article:tag" content="debugging" />
+    
+    
+
+    <title>
+       Зависла Erlang нода. Что делать? &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2016/04/erlang-node-freezes-now-what/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Зависла Erlang нода. Что делать?</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-04-05T15:50:31Z">
+            Apr 5, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/erlang/">#erlang</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/debugging/">#debugging</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p><img class="img-rounded" src="/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg" alt="" width="100%" title=""/></p>
+
+<p></p>
+
+<p>Пишу статью по горячим следам. Пару дней назад тестировал работу приложения при
+пропаже соединения с Redis&rsquo;ом. Так вот, после возобновления соединения
+(успешном переподключении), через раз приложение зависало полностью. Ни
+консолью подрубиться, ничего&hellip;</p>
+
+<p>Обычно такое происходит, если вы используете C-расширение, оформленное в виде
+NIF, и оно в один прекрасный момент блокируется. Шедулер Erlang в таком случае
+не может прервать выполнение потока, как он поступил бы в случае с Erlang
+кодом.</p>
+
+<p>Всякие Linux утилиты (типа <code>strace</code>) нам мало о чем скажут. Как дебажить
+C-расширения в Erlang тоже непонятно (отдельно - понятно, <code>gdb</code> и тому
+подобное). Если знаете - напишите плиз.</p>
+
+<p>Зато мы можем послать сигнал виртуальной машине Erlang и она создаст crash dump:</p>
+
+<pre><code>$ kill -SIGUSR1 &lt;pid&gt;
+
+Crash dump is being written to: erl_crash.dump...done
+Received SIGUSR1
+</code></pre>
+
+<p>Смотреть на него без дополнительных утилит еще более болезненно, чем на вывод
+<code>tcpdump</code> без <a href="https://www.wireshark.org/">Wireshark</a>.</p>
+
+<h2 id="анализируем-crashdump">Анализируем crashdump</h2>
+
+<p>Мне известны по крайней мере 2 инструмента: crashdump_viewer и recon.</p>
+
+<h3 id="crashdump-viewer">crashdump_viewer</h3>
+
+<p><a href="http://erlang.org/doc/apps/observer/crashdump_ug.html">http://erlang.org/doc/apps/observer/crashdump_ug.html</a></p>
+
+<pre><code>$ erl
+&gt; crashdump_viewer:start().
+</code></pre>
+
+<p><img class="img-rounded" src="/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug1.png" alt="" width="100%" title=""/></p>
+
+<p>Общая информация.</p>
+
+<p><img class="img-rounded" src="/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug2.png" alt="" width="100%" title=""/></p>
+
+<p>Список процессов.</p>
+
+<p><img class="img-rounded" src="/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug3.png" alt="" width="100%" title=""/></p>
+
+<p>Информация по одному из немногих запущенных процессов с большим количеством
+редукций. Чтобы найти конкретный процесс, внутри которого произошла блокировка,
+пришлось просмотреть несколько штук (количество запущенных процессов обычно =
+числу ядер).</p>
+
+<p><img class="img-rounded" src="/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug4.png" alt="" width="100%" title=""/></p>
+
+<p>stackdump процесса.</p>
+
+<p>Как видно из 2-й картинки выше мы заблокировались на
+<code>hierdis:pipeline_cleaner/4</code> (см. &ldquo;Continuation pointer&rdquo;).
+<a href="https://github.com/funbox/hierdis">Hierdis</a> - это клиент для Redis, который мы
+используем. Далее оставалось делом техники воспроизвести вызов (подсмотреть
+аргументы можно либо в crashdump_viewer, либо используя
+<a href="https://ferd.github.io/recon/recon_trace.html">recon_trace</a>) в самом клиенте и
+найти конкретную причину (<a href="https://github.com/funbox/hierdis/pull/1">PR</a>).</p>
+
+<h3 id="recon">recon</h3>
+
+<p><a href="https://ferd.github.io/recon/">https://ferd.github.io/recon/</a></p>
+
+<pre><code>./recon/scripts/erl_crashdump_analyzer.sh &lt;crashdump&gt;
+
+analyzing erl_crash.dump, generated on:  Tue Apr 5 12:30:26 2016
+
+Slogan: Received SIGUSR1
+
+Memory:
+===
+  processes: 374 Mb
+  processes_used: 374 Mb
+  system: 14 Mb
+  atom: 0 Mb
+  atom_used: 0 Mb
+  binary: 0 Mb
+  code: 8 Mb
+  ets: 0 Mb
+  ---
+  total: 388 Mb
+
+Different message queue lengths (5 largest different):
+===
+      3 1
+    217 0
+
+Error logger queue length:
+===
+0
+
+File descriptors open:
+===
+  UDP:  2
+  TCP:  8
+  Files:  4
+  ---
+  Total:  14
+
+Number of processes:
+===
+220
+
+Processes Heap+Stack memory sizes (words) used in the VM (5 largest different):
+===
+      1 10695351
+      2 8912793
+      1 3581853
+      1 2487399
+      2 2072833
+
+Processes OldHeap memory sizes (words) used in the VM (5 largest different):
+===
+      1 7427328
+      1 514838
+      1 121536
+      2 28690
+      1 10958
+
+Process States when crashing (sum):
+===
+      4 Current Process Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ACTIVE | RUNNING
+      4 Current Process Running
+      3 Internal ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX
+      2 Internal ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | TRAP_EXIT
+     90 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL
+      4 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ACTIVE | RUNNING
+      3 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | IN_PRQ_NORMAL | ACTIVE | IN_RUNQ
+    118 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT
+      4 Running
+      3 Scheduled
+    213 Waiting
+</code></pre>
+
+<p>Он дает общую картину того, что происходит.</p>
+
+<p>Вообще recon довольно полезная библиотека. В ней можно найти различные модули
+для инспекции состояния ноды, трассировки и т.д.</p>
+
+<p>Вот например скрипт, который показывает работающие (running) процессы с
+количеством сообщений в mailbox&rsquo;е &gt;= <code>threshold</code>:</p>
+
+<pre><code>$ awk -v threshold=1 -f ./recon/script/queue_fun.awk erl_crash.dump                                                                                                                                         MESSAGE QUEUE LENGTH: CURRENT FUNCTION
+======================================
+1: gen_server:loop/6
+1: gen:do_call/4
+1: gen:do_call/4
+</code></pre>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%d0%97%d0%b0%d0%b2%d0%b8%d1%81%d0%bb%d0%b0%20Erlang%20%d0%bd%d0%be%d0%b4%d0%b0.%20%d0%a7%d1%82%d0%be%20%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c%3f&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2016%2f04%2ferlang-node-freezes-now-what%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2016%2f04%2ferlang-node-freezes-now-what%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2016%2f04%2ferlang-node-freezes-now-what%2f&amp;description=%d0%97%d0%b0%d0%b2%d0%b8%d1%81%d0%bb%d0%b0%20Erlang%20%d0%bd%d0%be%d0%b4%d0%b0.%20%d0%a7%d1%82%d0%be%20%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c%3f"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2016%2f04%2ferlang-node-freezes-now-what%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2016\/04\/erlang-node-freezes-now-what\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

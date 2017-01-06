@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Ruby speed quiz explained"/>
+<meta name="twitter:description" content="At the end of Ruby speed quiz I promised to publish an explanation for each case.
+I did not expect that more than 900 Rubyists will give it a shot. I
+was surprised. Thanks to all who participated!
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Ruby speed quiz explained &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2014/04/ruby-speed-quiz-explained/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2014-04-01T23:47:38Z" />
+
+    
+    <meta property="og:article:tag" content="quizzes" />
+    
+    <meta property="og:article:tag" content="ruby" />
+    
+    
+
+    <title>
+       Ruby speed quiz explained &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2014/04/ruby-speed-quiz-explained/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Ruby speed quiz explained</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2014-04-01T23:47:38Z">
+            Apr 1, 2014
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/quizzes/">#quizzes</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/ruby/">#ruby</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>At the end of <a href="/2014/03/ruby-speed-quiz/">Ruby speed quiz</a> I promised to publish an explanation for each case.
+I did not expect that more than 900 Rubyists will give it a shot. I
+was surprised. Thanks to all who participated!</p>
+
+<p></p>
+
+<p>But lets go back to the questions.</p>
+
+<h1 id="1-range-cover-vs-include">1. Range cover? VS include?</h1>
+
+<ul>
+<li><code>('a'..'z').cover?('f')</code></li>
+<li><code>('a'..'z').include?('f')</code></li>
+<li>both run with the similar speed</li>
+</ul>
+
+<p><strong>cover? is faster</strong> because it just finds out if the argument is &gt; than the first and &lt; the second.
+No looping necessary. include?, in opposite, loops through all elements of the range until it
+finds an argument or reaches the end.</p>
+
+<pre><code class="language-ruby">('a'..'z').cover?('f')
+==&gt; 'a' &lt;= 'f' &amp;&amp; 'f' &lt;= 'z'
+
+('a'..'z').include?('f')
+==&gt; 'a' == 'f'
+==&gt; 'b' == 'f'
+==&gt; 'c' == 'f'
+==&gt; 'd' == 'f'
+==&gt; 'e' == 'f'
+==&gt; 'f' == 'f'
+</code></pre>
+
+<h3 id="caveats">Caveats</h3>
+
+<p>Be careful when using include? and cover?:</p>
+
+<pre><code class="language-ruby">('a'..'z').include?('blah')
+# =&gt; false
+('a'..'z').cover?('blah')
+# =&gt; true
+'a' &lt; 'blah'
+# =&gt; true
+'blah' &lt; 'z'
+# =&gt; true
+</code></pre>
+
+<p>See <a href="http://gistflow.com/posts/816-range-include-vs-range-cover">this post</a> for detailed benchmarks.</p>
+
+<h1 id="2-blk-call-vs-yield">2. blk.call VS yield</h1>
+
+<pre><code class="language-ruby">def foo
+  yield if block_given?
+end
+foo { puts &quot;Hi from foo&quot; }
+</code></pre>
+
+<pre><code class="language-ruby">def bar(&amp;blk)
+  blk.call
+end
+bar { puts &quot;Hi from bar&quot; }
+</code></pre>
+
+<ul>
+<li>both run with the similar speed</li>
+</ul>
+
+<p><strong>yield is faster</strong> because the process of procifying a block takes time.</p>
+
+<p>See <a href="http://mudge.name/2011/01/26/passing-blocks-in-ruby-without-block.html">this post</a> for detailed benchmarks.</p>
+
+<h1 id="3-hash-vs-fetch">3. Hash [] VS fetch</h1>
+
+<pre><code class="language-ruby">h = {}
+h[:a] || 1
+</code></pre>
+
+<pre><code class="language-ruby">h = {}
+h.fetch(:a, 1)
+</code></pre>
+
+<ul>
+<li>both run with the similar speed</li>
+</ul>
+
+<p>Using brackets to get goodies out of a hash is the same as fetch because they both use the same code to do exactly the same thing.</p>
+
+<pre><code class="language-ruby">if (!RHASH(hash)-&gt;ntbl || !st_lookup(RHASH(hash)-&gt;ntbl, key, &amp;val)) {
+</code></pre>
+
+<p>It checks that the hash is not empty and tries to find the value using a
+given key.</p>
+
+<h1 id="4-define-method-vs-class-eval-definition-not-call-speed">4. define_method VS class_eval (definition, NOT call speed)</h1>
+
+<pre><code class="language-ruby">class A
+  100.times do |i|
+    define_method(&quot;foo_#{i}&quot;) { 10.times.map { &quot;foo&quot;.length } }
+  end
+end
+</code></pre>
+
+<pre><code class="language-ruby">class B
+  100.times do |i|
+    class_eval 'def bar_#{i}; 10.times.map { &quot;foo&quot;.length }; end'
+  end
+end
+</code></pre>
+
+<ul>
+<li>both run with the similar speed</li>
+</ul>
+
+<p><strong>Define method is faster</strong> because you don&rsquo;t have to eval the class and then define a method on it. You are already in the class scope. Also on each call to class_eval, MRI creates a new parser and parses the string. In the define_method case, the parser is only run once.</p>
+
+<p>However, it&rsquo;s not that simple. Yes, define_method creates the method faster. But after creation, a short method created with class_eval is usually faster than one created with define_method. That is why you still can find many class_eval instructions
+in Rails. These are places where run (not startup) speed matters. So, it&rsquo;s worthwhile to chose based on your use case.</p>
+
+<p>See <a href="http://tenderlovemaking.com/2013/03/03/dynamic_method_definitions.html">this post</a> for detailed benchmarks.</p>
+
+<h1 id="5-super-with-or-without-arguments">5. super with OR without arguments</h1>
+
+<pre><code class="language-ruby">class Parent
+ def bar(a, b)
+   puts &quot;#{a} - #{b}&quot;
+ end
+end
+
+class Child &lt; Parent
+ def bar(a, b)
+   super
+ end
+end
+c = Child.new
+c.bar(1, 2)
+</code></pre>
+
+<pre><code class="language-ruby">class Parent
+  def bar(a, b)
+    puts &quot;#{a} - #{b}&quot;
+  end
+end
+
+class Child &lt; Parent
+  def bar(a, b)
+    super(a, b)
+  end
+end
+c = Child.new
+c.bar(1, 2)
+</code></pre>
+
+<ul>
+<li>both run with the similar speed</li>
+</ul>
+
+<p>Calling super without arguments passes any arguments along that were passed through to the calling method. So it deals with arguments anyways.</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Ruby%20speed%20quiz%20explained&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fruby-speed-quiz-explained%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fruby-speed-quiz-explained%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fruby-speed-quiz-explained%2f&amp;description=Ruby%20speed%20quiz%20explained"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2014%2f04%2fruby-speed-quiz-explained%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2014\/04\/ruby-speed-quiz-explained\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

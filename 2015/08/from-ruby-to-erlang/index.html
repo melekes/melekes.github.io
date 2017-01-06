@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="From Ruby To Erlang. Beginner&#39;s mistakes"/>
+<meta name="twitter:description" content="I&rsquo;ve  been programming full-time using Erlang for a while already (about eight
+months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
+are very different languages: OOP vs functional, mutable vs immutable and so
+on. Also, there are things you won&rsquo;t find in Ruby (the opposite is also true).
+
+In this post I want to show you the mistakes that I&rsquo;ve made and the lessons
+that I&rsquo;ve learned during the transition.
+
+"/>
+
+
+
+  	<meta property="og:title" content=" From Ruby To Erlang. Beginner&#39;s mistakes &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2015/08/from-ruby-to-erlang/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-08-03T15:09:10Z" />
+
+    
+    <meta property="og:article:tag" content="ruby" />
+    
+    <meta property="og:article:tag" content="erlang" />
+    
+    
+
+    <title>
+       From Ruby To Erlang. Beginner&#39;s mistakes &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2015/08/from-ruby-to-erlang/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">From Ruby To Erlang. Beginner&#39;s mistakes</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-08-03T15:09:10Z">
+            Aug 3, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/ruby/">#ruby</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/erlang/">#erlang</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>I&rsquo;ve  been programming full-time using Erlang for a while already (about eight
+months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
+are very different languages: OOP vs functional, mutable vs immutable and so
+on. Also, there are things you won&rsquo;t find in Ruby (the opposite is also true).</p>
+
+<p>In this post I want to show you the mistakes that I&rsquo;ve made and the lessons
+that I&rsquo;ve learned during the transition.</p>
+
+<p></p>
+
+<h2 id="1-list-comprehensions">1. List Comprehensions</h2>
+
+<p>There is no such thing as List Comprehension in Ruby (but you could write
+<a href="http://blog.tarkalabs.com/2015/04/21/list-comprehension-in-ruby/">something similar</a>), so when I was using it in Erlang, I didn&rsquo;t fully
+understand how it works. Let me show you.</p>
+
+<pre><code class="language-erlang">[X || X &lt;- [1,2,3,4,5,6], X &gt; 3].
+=&gt; [4,5,6]
+</code></pre>
+
+<p>There are 3 main components here:</p>
+
+<ol>
+<li><code>X &lt;- [1,2,3,4,5,6]</code> - <strong>generator</strong> - usually some set of elements;</li>
+<li><code>X &gt; 3</code> - <strong>filter</strong> - conditions, that we impose on these elements;</li>
+<li><code>X</code> - <strong>list</strong> - expression, which gives us the resulting element.</li>
+</ol>
+
+<p><img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/listc1.png" alt=""/ width="100%" title=""></p>
+
+<p>I thought that, the way it works is &ldquo;one by one&rdquo;:</p>
+
+<ol>
+<li>element is taken from generator;</li>
+<li>if it passes all the filters, the expression on the left gets executed;
+otherwise, goto (1).</li>
+</ol>
+
+<p>As it turned out, I was wrong. I&rsquo;ve noticed it, when I wrote a for loop using
+list comprehension, and, later on, one of the filters fell.</p>
+
+<pre><code class="language-erlang">[save(Rec, Db) || Rec &lt;- Records, is_dirty(Rec), can_be_saved(Rec)]
+</code></pre>
+
+<p><em>this is not the production code</em></p>
+
+<p>What do you think will happen if <code>can_be_saved</code> throw an error for the
+third record? <strong>Correct answer</strong>: non of the records will be saved.</p>
+
+<p><img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/listc2.png" alt=""/ width="100%" title=""></p>
+
+<p><img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/listc3.png" alt=""/ width="100%" title=""></p>
+
+<p>The way it works is &ldquo;one by one || one by one&rdquo;: firstly, Erlang generates and
+filters initial list. After that, it executes expression on the left side for
+each item resulting in a new list.</p>
+
+<p><strong>Lesson #1. List Comprehension should not be used when you need a for loop. Instead, use recursion.</strong></p>
+
+<pre><code class="language-erlang">save_records([], _) -&gt; ok;
+save_records([Rec|Rest], Db) -&gt;
+    try
+        case is_dirty(Rec) of
+            false -&gt; throw({filtered, io_lib:format(&quot;~p not dirty&quot;, [Rec])});
+            true -&gt; ok
+        end,
+        case can_be_saved(Rec) of
+            false -&gt; throw({filtered, io_lib:format(&quot;~p cannot be saved&quot;, [Rec])});
+            true -&gt; ok
+        end
+    of _ -&gt;
+        save(Rec, Db)
+    catch
+        throw:{filtered, Reason} -&gt; lager:debug(Reason)
+    end,
+    save_records(Rest, Db).
+</code></pre>
+
+<p>This way, if <code>can_be_saved</code> does throw an error, at least some of the records
+will be saved.</p>
+
+<h2 id="2-lager">2. Lager</h2>
+
+<p><a href="https://github.com/basho/lager">lager</a> is a logging framework for Erlang and
+it has become a de facto standard for Erlang applications.</p>
+
+<p>Usually, when you look through log files in Ruby (e.g. puma.log), you can say
+&ldquo;we started processing at XXX and finished at YYY&rdquo; and it will be more or less
+accurate.</p>
+
+<pre><code>I, [2015-04-31T03:04:20.613116 #28143]  INFO -- : Started
+...
+I, [2015-04-31T03:04:21.345985 #28143]  INFO -- : Finished
+</code></pre>
+
+<p>So the first thing I did, when I needed to find a bottleneck in one part of our
+system, was looking at log timings. Wrong move!</p>
+
+<pre><code>2015-05-25 16:50:42.229 [info] Started
+2015-05-25 16:50:42.235 [info] Finished
+</code></pre>
+
+<p>6ms - wow!</p>
+
+<p>It is like an old shabby van with free candies. You have a feeling that
+something is not right.</p>
+
+<p>And when I had used <code>timer:tc</code> (analog in Ruby - <code>Benchmark</code>), these timings
+proved to be &ldquo;wrong&rdquo;. And that&rsquo;s because in Erlang, logger (as most things) is
+a separate process with its own mailbox. What you see are <strong>the times of when
+it received the messages</strong>. In contrast, things are usually happening in the
+same thread in Ruby (that is why timings are usually more accurate).</p>
+
+<div style="align:center">
+  <img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/lager1.png" alt=""/ width="100%" title="">
+</div>
+
+<p><strong>Lesson #2. Do not rely on lager timings, because it is a separate gen_server (i.e. you don’t know when it will process your messages).</strong></p>
+
+<h2 id="3-high-loaded-gen-server">3. High-loaded gen_server</h2>
+
+<p>This is more like a word of advice. When you have a <code>gen_server</code>, which is
+supposed to process, say, 1000 events per second, you can&rsquo;t make any
+synchronous blocking calls (e.g. to Redis) or set any locks, because soon
+enough the process mailbox will be full of messages and things will become
+ugly.</p>
+
+<p>What you should do instead, is to spawn a process per unit (an order or
+something like that) or use a worker pool (<a href="https://github.com/devinus/poolboy">1</a>,<a href="https://github.com/seth/pooler">2</a>,<a href="https://github.com/inaka/worker_pool">3</a>). I personally
+recommend to watch <a href="https://www.youtube.com/watch?v=GO_97_6w5lU">this talk</a> by Anthony Molinaro at Erlang Factory SF
+2015, where he compares a few different options we have at the moment.</p>
+
+<p>If you also had some troubles during transition to another language, let me
+know. I personally laugh at such moments and don&rsquo;t take them too seriously,
+because, you know, it just happens sometimes. The important is to learn by
+these mistakes.</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=From%20Ruby%20To%20Erlang.%20Beginner%27s%20mistakes&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2015%2f08%2ffrom-ruby-to-erlang%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2015%2f08%2ffrom-ruby-to-erlang%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2015%2f08%2ffrom-ruby-to-erlang%2f&amp;description=From%20Ruby%20To%20Erlang.%20Beginner%27s%20mistakes"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2015%2f08%2ffrom-ruby-to-erlang%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2015\/08\/from-ruby-to-erlang\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

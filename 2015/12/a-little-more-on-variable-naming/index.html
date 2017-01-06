@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Еще немного про именование переменных"/>
+<meta name="twitter:description" content="Вообще, после того, как вы прочитаете &ldquo;Совершенный код&rdquo; Стива Макконнелла,
+вопросов как назвать ту или иную переменную быть не должно. Но есть некоторые
+моменты, которые не освещены в книге и нуждаются в обсуждении.
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Еще немного про именование переменных &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2015/12/a-little-more-on-variable-naming/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-12-14T15:33:33Z" />
+
+    
+    <meta property="og:article:tag" content="programming" />
+    
+    
+
+    <title>
+       Еще немного про именование переменных &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2015/12/a-little-more-on-variable-naming/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Еще немного про именование переменных</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-12-14T15:33:33Z">
+            Dec 14, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/programming/">#programming</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>Вообще, после того, как вы прочитаете &ldquo;Совершенный код&rdquo; Стива Макконнелла,
+вопросов как назвать ту или иную переменную быть не должно. Но есть некоторые
+моменты, которые не освещены в книге и нуждаются в обсуждении.</p>
+
+<p></p>
+
+<h2 id="меры-ms-min">Меры (ms, min)</h2>
+
+<p>Недавно пришлось залезть в исходники HBase, чтобы выяснить в каких единицах мне
+нужно задать TTL. В документации я этого не нашел :( Вот, например, одна строка из теста:</p>
+
+<pre><code class="language-java">protected static final int TTL = 86400;
+</code></pre>
+
+<p><small>(<a href="https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35">https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35</a>)</small></p>
+
+<div style="align:center">
+  <img class="img-rounded" src="/images/posts/2015-12-14-a-little-more-on-variable-naming/wtf.png" alt="" width="100%" title=""/>
+</div>
+
+<p>Что это? Минуты, секунды, миллисекунды? Как я должен понять это?</p>
+
+<p>Какие варианты я вижу:</p>
+
+<ol>
+<li>Писать единицы в названии: <code>TTL_IN_SEC</code> - так себе, думаю тут все согласны.</li>
+<li>Писать рядом комментарий: <code>TTL = 86400; // sec</code> - уже лучше, но ненамного; пока придерживаюсь этого варианта.</li>
+<li>Использовать структуры языка: <code>-define(TTL, {86400, sec});</code>.
+Для тех, кто не знает, это определение константы в Erlang&rsquo;e. Здесь мы
+складываем значение и единицу в кортеж (tuple). Очевидный минус в том, что
+нужно будет переписать код для работы с ними.</li>
+<li>Предоставить стандартный класс, кот. явно задает единицу измерения для любых
+промежутков времени и методы для преобразования одних единиц в другие. К
+примеру, <a href="https://golang.org/pkg/time">time</a> в Golang:</li>
+</ol>
+
+<pre><code class="language-go">func Sleep(d Duration)
+
+type Duration int64
+const (
+  Nanosecond  Duration = 1
+  Microsecond          = 1000 * Nanosecond
+  Millisecond          = 1000 * Microsecond
+  Second               = 1000 * Millisecond
+  Minute               = 60 * Second
+  Hour                 = 60 * Minute
+)
+
+// example
+time.Sleep(time.Second * 2)
+</code></pre>
+
+<p>В Ruby есть библиотека <a href="http://api.rubyonrails.org/v2.3/classes/ActiveSupport/CoreExtensions/Numeric/Time.html">ActiveSupport</a>:</p>
+
+<pre><code>TTL = 20.seconds
+</code></pre>
+
+<p>Кстати, TTL для отдельного столбца <a href="https://github.com/apache/hbase/blob/master/hbase-client/src/main/java/org/apache/hadoop/hbase/client/Mutation.java#L444">задается в
+мс</a>.
+В примере выше оказались секунды.</p>
+
+<h2 id="переменные-под-прикрытием">Переменные под прикрытием</h2>
+
+<p>Зачастую вижу в коде в одном месте переменная называется <code>list_id</code>, а в функции
+куда она передается - <code>dest_id</code>.</p>
+
+<pre><code># first_class.rb
+list_id = 1
+call(list_id, ...)
+
+# second_class.rb
+def call(dest_id)
+  ...
+end
+</code></pre>
+
+<p>Плохо, что при этом теряется частичка смысла. Глядя на код во втором случае, мы
+уже не знаем ID чего передается в функцию. Нам приходится вспоминать, или
+строить догадки, или возвращаться в то место, где происходит вызов функции
+(<code>first_class.rb</code>).</p>
+
+<p>За этим однозначно нужно следить. В нашем примере можно было обозвать
+переменную <code>dest_list_id</code> в <code>second_class.rb</code>.</p>
+
+<p>Похожую мысль в своем <a href="http://tonsky.livejournal.com/304954.html">ЖЖ</a> недавно
+высказал <a href="https://twitter.com/nikitonsky">Никита Прокопов</a>.</p>
+
+<h2 id="какои-тип">Какой тип?</h2>
+
+<p>В языках со строгой типизацией (в частности, в Erlang) мы получим ошибку в
+рантайме, если попытаемся склеить число со списком:</p>
+
+<pre><code>1 ++ &quot;abc&quot;.
+** exception error: bad argument
+     in operator  ++/2
+        called as 1 ++ &quot;abc&quot;
+</code></pre>
+
+<p>потому что отсутствует автоматическое приведение типов. Проблема тут в том, что
+ты не можешь узнать тип переменной исходя из ее имени:</p>
+
+<pre><code>call(ListId,...) -&gt;
+  Str = integer_to_list(ListId),
+  ...
+</code></pre>
+
+<p>сюда в результате рефакторинга может прийти строка и все попадает нафиг.</p>
+
+<p>Опытным путем было установлено, что добавление типа к имени переменной помогает
+избегать подобных багов.</p>
+
+<pre><code>call(ListIdStr,...) -&gt;
+  ...
+</code></pre>
+
+<p>Еще конечно выручает <a href="http://www.erlang.org/doc/man/dialyzer.html">dialyzer</a>
+или его аналоги: <a href="https://andreacensi.github.io/contracts/">PyContracts</a>,
+<a href="http://typedclojure.org/">Typed Clojure</a>. Ну или статическая типизация.</p>
+
+<p>Если у вас есть замечания или дополнения, welcome to комментарии.</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%d0%95%d1%89%d0%b5%20%d0%bd%d0%b5%d0%bc%d0%bd%d0%be%d0%b3%d0%be%20%d0%bf%d1%80%d0%be%20%d0%b8%d0%bc%d0%b5%d0%bd%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5%20%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d1%85&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2015%2f12%2fa-little-more-on-variable-naming%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2015%2f12%2fa-little-more-on-variable-naming%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2015%2f12%2fa-little-more-on-variable-naming%2f&amp;description=%d0%95%d1%89%d0%b5%20%d0%bd%d0%b5%d0%bc%d0%bd%d0%be%d0%b3%d0%be%20%d0%bf%d1%80%d0%be%20%d0%b8%d0%bc%d0%b5%d0%bd%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5%20%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d1%8b%d1%85"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2015%2f12%2fa-little-more-on-variable-naming%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2015\/12\/a-little-more-on-variable-naming\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

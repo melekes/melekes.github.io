@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Don&#39;t do this at home on Rails #3"/>
+<meta name="twitter:description" content="
+Languages: Ruby
+Difficulty: Easy
+
+
+A lot of time has passed since my last post, so I decided to fix this
+little drawback. Next, we will discuss three small pieces of code,
+which smells not very good. Let&rsquo;s see what we can do about it.
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Don&#39;t do this at home on Rails #3 &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2013-01-05T00:00:00Z" />
+
+    
+    <meta property="og:article:tag" content="ruby" />
+    
+    <meta property="og:article:tag" content="ruby-on-rails" />
+    
+    <meta property="og:article:tag" content="security" />
+    
+    <meta property="og:article:tag" content="yaml" />
+    
+    
+
+    <title>
+       Don&#39;t do this at home on Rails #3 &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Don&#39;t do this at home on Rails #3</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2013-01-05T00:00:00Z">
+            Jan 5, 2013
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/ruby/">#ruby</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/ruby-on-rails/">#ruby-on-rails</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/security/">#security</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/yaml/">#yaml</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <ul>
+<li>Languages: Ruby</li>
+<li>Difficulty: <span class="label label-success">Easy</span></li>
+</ul>
+
+<p>A lot of time has passed since my last post, so I decided to fix this
+little drawback. Next, we will discuss three small pieces of code,
+which smells not very good. Let&rsquo;s see what we can do about it.</p>
+
+<p></p>
+
+<h3 id="1-vulnerabilities-in-code">#1 - Vulnerabilities in code</h3>
+
+<p>Let&rsquo;s take a closer look at two methods from the controller:</p>
+
+<pre><code class="language-ruby">def show_with_fragments
+  constant = get_constant_from_param
+  if constant
+    obj = constant.find(params[:id])
+    data = obj.attributes
+    data.merge!(:telecasts =&gt; obj.telecasts.map(&amp;:as_json)) if obj.is_a?(TvShow::Programme)
+    data.merge!(:seasons =&gt; obj.seasons.map(&amp;:as_json)) if obj.is_a?(TvShow::Serial)
+    render :json =&gt; data
+  else
+    render :json =&gt; {}
+  end
+end
+
+private
+
+def get_constant_from_param(type = nil)
+  param = type || params[:type]
+  begin
+    constant = param.constantize
+    constant if constant &lt; ActiveRecord::Base
+  rescue NameError
+    nil
+  end
+end
+</code></pre>
+
+<p>So, what happens here?</p>
+
+<ol>
+<li>We receive the type of the model (<code>params[:type]</code>) and convert string
+to a constant using <a href="http://apidock.com/rails/v3.2.8/ActiveSupport/Inflector/constantize">constantize</a>;</li>
+<li>We find the record with a given id (<code>params[:id]</code>) and select all its
+attributes and attributes of the associated objects.</li>
+</ol>
+
+<p>We expect that the <code>type</code> will be either &ldquo;TvShow::Programme&rdquo; or &ldquo;TvShow::Serial&rdquo;.
+But what if <code>type</code> will be &ldquo;User&rdquo;. We will get access to all the attributes of the
+<code>User</code> model. This is a serious security issue in our application.</p>
+
+<p>The first step is to limit <code>type</code> to the <code>TvShow</code> class descendants only.</p>
+
+<pre><code class="language-ruby">def show_with_fragments
+  constant = get_constant_from_param
+  unless constant.is_a?(TvShow)
+    raise ArgumentError, “type should be TvShow class descendant”
+  end
+  if constant
+    obj = constant.find(params[:id])
+    data = obj.attributes
+    data.merge!(:telecasts =&gt; obj.telecasts.map(&amp;:as_json)) if obj.is_a?(TvShow::Programme)
+    data.merge!(:seasons =&gt; obj.seasons.map(&amp;:as_json)) if obj.is_a?(TvShow::Serial)
+    render :json =&gt; data
+  else
+    render :json =&gt; {}
+  end
+end
+</code></pre>
+
+<p>The code above violates <a href="http://en.wikipedia.org/wiki/Open/closed_principle">OCP</a>
+principe. Because we want to take advantage of polymorphism,
+lets move the logic of getting the attributes of associated
+objects into the classes themselves (see <code>complete_attributes_json</code> method).
+This will allow us to remove all those ugly is_a? checks.</p>
+
+<pre><code class="language-ruby">def show_with_fragments
+  constant = get_constant_from_param
+  unless constant.is_a?(TvShow)
+    raise ArgumentError, “type param should be TvShow accessor class”
+  end
+  if constant
+    obj = constant.find(params[:id])
+    render :json =&gt; obj.complete_attributes_json
+  else
+    render :json =&gt; {}
+  end
+end
+</code></pre>
+
+<p>Looks better, right?</p>
+
+<h3 id="2-take-advantage-of-yaml-language">#2 - Take advantage of YAML language</h3>
+
+<p>Despite the fact that most of rails applications (and others) using
+<a href="http://en.wikipedia.org/wiki/YAML">YAML</a> to store the translations and settings,
+not many of us knows all its features. Two features that
+distinguish YAML from the capabilities of other data serialization languages
+​​are Relational trees and Data Typing. The most interesting is the first one.
+It allows us to attach the anchors (&amp;) on the elements and refer to them
+using references (*). To understand this, it is useful to imagine
+a document as a tree.</p>
+
+<p>For example, here is some common locale file <code>config/locales/en.yml</code>:</p>
+
+<pre><code class="language-yaml">en:
+  helpers:
+    submit:
+      product:
+        create: 'Create it'
+        update: 'Save it'
+      product_item:
+        create: 'Create it'
+        update: 'Save it'
+</code></pre>
+
+<p>What if we could define the translations for helpers <code>create</code> and <code>update</code>
+in one place, and then use them in other cases. Usually these translations
+rarely changes, so, in this case, this is just what we need.</p>
+
+<pre><code class="language-yaml">en:
+  helpers:
+    submit:
+      product:
+        create: &amp;create 'Create it'
+        update: &amp;update 'Save it'
+      product_item:
+        create: *create
+        update: *update
+</code></pre>
+
+<p>Here we have created two anchors and referred to them inside product_item
+through two links. Advantages: avoiding possible errors (define
+in one place) and compactness. Also, in future, if the translation will needs
+to be changed, we wont spend much time to perform the appropriate changes.</p>
+
+<p>You can anchor not only tree nodes, but also the whole branches:</p>
+
+<pre><code class="language-yaml">common: &amp;COMMON
+  adapter: postgresql
+  encoding: unicode
+  pool: 10
+
+development:
+  &lt;&lt;: *COMMON
+  database: db_name
+  username: postgres
+  password:
+</code></pre>
+
+<h3 id="3-look-for-existing-method-before-writing-your-own">#3 - Look for existing method before writing your own</h3>
+
+<p>Maybe I&rsquo;m repeating myself, but this is exactly the case where repetition
+will only benefit.</p>
+
+<p>Before you write any functionality, that is not relevant to the
+application&rsquo;s business logic, it is always better to look, maybe someone
+has already implemented it. And very often it is. All we are know the
+advantages of using existing solutions (libraries). And I think, if you like
+it (you can not see any obstacles - performance, memory, that can stop you),
+it is better to use it.</p>
+
+<pre><code class="language-ruby">def keys_to_symbols(data)
+  res = {}
+  data.each do |k, v|
+    res[k.to_sym] = v.is_a?(Hash) ? keys_to_symbols(v) : v
+  end
+  res
+end
+</code></pre>
+
+<p>I found this method in one controller. It takes the hash and symbolize all
+the keys. This functionality already implemented in the <code>active_support</code> gem,
+which is also enabled by default in rails. The method we are looking for -
+<a href="http://apidock.com/rails/Hash/symbolize_keys">symbolize_keys</a></p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Don%27t%20do%20this%20at%20home%20on%20Rails%20%233&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2013%2f01%2fdont-do-this-at-home-on-rails-3%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2013%2f01%2fdont-do-this-at-home-on-rails-3%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2013%2f01%2fdont-do-this-at-home-on-rails-3%2f&amp;description=Don%27t%20do%20this%20at%20home%20on%20Rails%20%233"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2013%2f01%2fdont-do-this-at-home-on-rails-3%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2013\/01\/dont-do-this-at-home-on-rails-3\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

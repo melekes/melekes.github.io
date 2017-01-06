@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Заметки на полях: Изучай Erlang во имя добра!"/>
+<meta name="twitter:description" content="Фред Хеберт - широко известный в Erlang сообществе
+программист. Он не только написал дюжину полезных утилит и приложений, но и
+замечательную книгу &ldquo;Изучай Erlang во имя добра!&rdquo;, которая, к тому же,
+доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
+только начинает изучать Erlang. Но и более опытные разработчики с большой
+вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
+Distributed Erlang).
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Заметки на полях: Изучай Erlang во имя добра! &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-05-28T11:51:25Z" />
+
+    
+    <meta property="og:article:tag" content="books" />
+    
+    <meta property="og:article:tag" content="erlang" />
+    
+    
+
+    <title>
+       Заметки на полях: Изучай Erlang во имя добра! &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Заметки на полях: Изучай Erlang во имя добра!</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-05-28T11:51:25Z">
+            May 28, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/books/">#books</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/erlang/">#erlang</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p><a href="https://github.com/ferd">Фред Хеберт</a> - широко известный в Erlang сообществе
+программист. Он не только написал дюжину полезных утилит и приложений, но и
+замечательную книгу <a href="http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev">&ldquo;Изучай Erlang во имя добра!&rdquo;</a>, которая, к тому же,
+доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
+только начинает изучать Erlang. Но и более опытные разработчики с большой
+вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
+Distributed Erlang).</p>
+
+<p></p>
+
+<p><img class="img-rounded" src="/images/posts/2015-05-28-zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/book.jpg" alt=""/ width="270" title="Изучай Erlang во имя добра!"></p>
+
+<p>Вот лишь часть того, что я почерпнул из данной книги:</p>
+
+<ol>
+<li>используйте ctrl-a / ctrl-e в командной строке для перехода в начало / конец строки;</li>
+<li>;(,) и andalso(orelse) различаются в работе при построении защитных выражений (guards). Например, <code>when C1 ; C2</code> не упадет с ошибкой, если первое условие (C1) покрашится, а вычислит второе (C2);</li>
+<li>старайтесь избегать “true&rdquo; веток в условных операторах, если есть возможность покрыть все варианты (пример: <code>X &gt;= 0, X &lt; 0</code>);</li>
+<li><a href="http://www.erlang.se/~bjorn/">Björn Gustavsson</a> из команды Erlang OTP рекомендует использовать gb_sets почти во всех случаях, ordsets, когда вам нужно простое представление и sets, когда требуется строгое сравнение =:= ;</li>
+<li>references используются, в том числе, потому что Pid может поменяться пока мы дожидаемся ответа на сообщение (процесс упал и был перезапущен супервизором);</li>
+<li>[ETS] ordered_set проигрывает по скорости рандомного чтения set, поэтому должен использоваться только для range queries;</li>
+<li>[EUnit] <code>?_assert</code> исполняется не сразу, а после генерации теста.</li>
+</ol>
+
+<p>{% blockquote %}
+Симметричная мультипроцессорность появилась в Erlang не сразу, а была добавлена в 2000 годах (ее можно отключить с помощью <code>erl -smp disable</code>)
+{% endblockquote %}</p>
+
+<h1 id="distributed-erlang">Distributed Erlang</h1>
+
+<ol>
+<li>узлы в Erlang общаются по TCP соединению, и, если у вас большое сообщение, остальные сообщения будут ждать очень долго. Хуже того, heartbeat сообщения могут не дойти до узла и Erlang посчитает, что узел умер;</li>
+<li>большое количество связей (link) между узлами не есть хорошо, так как приведет к всплеску количества сообщений при падении одного из них;</li>
+<li>4369 порт закреплен за <a href="http://www.erlang.org/doc/man/epmd.html">epmd</a>. range для портов узлов можно установить через inet_dist_listen_min(max);</li>
+<li>в консоли можно использовать net_kernel:connect для связи с узлом;</li>
+<li>{global, Name} медленно разрешает конфликты имен (3 стратегии) и потерю связи с узлами. Он подходит для небольшого количества регистраций, которые нечасто меняются с течением времени;</li>
+<li>распределенные приложения OTP (OTP Distributed Applications) делают упор на то, что ошибки в основном происходят по вине аппаратного обеспечения, а не разделения сети. Если у вас по другому - OTP не для вас. Они (приложения) служат для организации failover и backover;</li>
+<li>если планируется использовать горячую замену кода (hot code reloading), то записи (records) лучше не выставлять наружу (только в рамках модуля). Иначе - боль.</li>
+</ol>
+
+<p>{% blockquote %}
+Версии Erlang &gt;= R15B01 позволяют использовать реестры помимо local и global - {via, МодульРеестра, Имя}
+{% endblockquote %}</p>
+
+<h1 id="mnesia">Mnesia</h1>
+
+<ol>
+<li>хорошей идеей будет добавить префикс к названию таблиц в mnesia (так как они шарятся по всему кластеру);</li>
+<li>при написании большого приложения лучше разделить логику приложения и код mnesia (чтобы, к примеру, иметь возможность заменить транзакции на синхронные);</li>
+<li>tv:start() - GUI для просмотра таблиц.</li>
+</ol>
+
+<p>Полезные ссылки:</p>
+
+<ul>
+<li><a href="http://ferd.ca/">Блог автора книги</a></li>
+<li><a href="http://learnyousomeerlang.com/">Сама книга</a></li>
+</ul>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%d0%97%d0%b0%d0%bc%d0%b5%d1%82%d0%ba%d0%b8%20%d0%bd%d0%b0%20%d0%bf%d0%be%d0%bb%d1%8f%d1%85%3a%20%d0%98%d0%b7%d1%83%d1%87%d0%b0%d0%b9%20Erlang%20%d0%b2%d0%be%20%d0%b8%d0%bc%d1%8f%20%d0%b4%d0%be%d0%b1%d1%80%d0%b0%21&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2fzamietki-na-poliakh-izuchai-erlang-vo-imia-dobra%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2fzamietki-na-poliakh-izuchai-erlang-vo-imia-dobra%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2fzamietki-na-poliakh-izuchai-erlang-vo-imia-dobra%2f&amp;description=%d0%97%d0%b0%d0%bc%d0%b5%d1%82%d0%ba%d0%b8%20%d0%bd%d0%b0%20%d0%bf%d0%be%d0%bb%d1%8f%d1%85%3a%20%d0%98%d0%b7%d1%83%d1%87%d0%b0%d0%b9%20Erlang%20%d0%b2%d0%be%20%d0%b8%d0%bc%d1%8f%20%d0%b4%d0%be%d0%b1%d1%80%d0%b0%21"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2fzamietki-na-poliakh-izuchai-erlang-vo-imia-dobra%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2015\/05\/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

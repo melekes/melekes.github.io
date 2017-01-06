@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Profiling in Erlang"/>
+<meta name="twitter:description" content="
+  На русском
+
+
+The list of available instruments:
+
+
+fprof, eprof, cover, cprof (shipped with erlang)
+top-like utilities: third party entop и etop
+eep
+recon
+eflame and eflame2
+eper
+timer:tc/3, statistics/1
+latency_histogram_tracer.erl (requires folsom_metrics)
+
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Profiling in Erlang &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2016/05/profiling-in-erlang/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-05-25T11:41:44Z" />
+
+    
+    <meta property="og:article:tag" content="erlang" />
+    
+    
+
+    <title>
+       Profiling in Erlang &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2016/05/profiling-in-erlang/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Profiling in Erlang</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-05-25T11:41:44Z">
+            May 25, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/erlang/">#erlang</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p><a href="/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf" title="Скачать PDF на русском">
+  На русском
+</a></p>
+
+<p>The list of available instruments:</p>
+
+<ul>
+<li>fprof, eprof, cover, cprof (shipped with erlang)</li>
+<li><code>top</code>-like utilities: third party <a href="https://github.com/zaa/entop">entop</a> и <a href="http://erlang.org/doc/apps/observer/etop_ug.html">etop</a></li>
+<li><a href="https://github.com/virtan/eep/">eep</a></li>
+<li><a href="https://ferd.github.io/recon/">recon</a></li>
+<li><a href="https://github.com/proger/eflame">eflame</a> and <a href="https://github.com/slfritchie/eflame">eflame2</a></li>
+<li><a href="https://github.com/massemanet/eper">eper</a></li>
+<li><code>timer:tc/3</code>, <code>statistics/1</code></li>
+<li><a href="https://gist.github.com/slfritchie/159a8ce1f49fc03c77c6">latency_histogram_tracer.erl</a> (requires <code>folsom_metrics</code>)</li>
+</ul>
+
+<p></p>
+
+<p><em>Note</em>: here are not given the tools, which are used rarely
+(<a href="http://erlang.org/doc/man/percept.html">percept</a>), or on the basis of which
+more powerful things are built (<a href="http://erlang.org/doc/man/ttb.html">ttb</a>).</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>An overview of all the tools would be very time-consuming. And I doubt that
+normal Erlang programmer may need all of them anyway.</p>
+
+<p>Far more important is to know four or five, and based on the results, obtained
+during profiling, be able to find bottlenecks and decide, whenever they should
+be fixed or not.</p>
+
+<h2 id="fprof-cprof">fprof, cprof</h2>
+
+<p>Like it or not, you need to know one or two standard tools.</p>
+
+<p>The best place to start: <a href="http://erlang.org/doc/efficiency_guide/profiling.html">http://erlang.org/doc/efficiency_guide/profiling.html</a></p>
+
+<p>fprof&rsquo;s output can be converted into the format suitable for kcachegrind (see
+below) using the <a href="https://github.com/isacssouza/erlgrind">erlgrind</a>.</p>
+
+<pre><code class="language-erlang">1&gt; fprof:start().
+2&gt; fprof:trace([start, {procs, all}]). % trace all the processes (significantly slows down the system)
+3&gt; fprof:trace([stop]).
+4&gt; fprof:profile().
+5&gt; fprof:analyse([totals, {dest, &quot;fprof.analysis&quot;}]).
+6&gt; fprof:stop().
+</code></pre>
+
+<p>You can find explanations for each command above in the standard docs and also
+<a href="https://timanovsky.wordpress.com/2009/01/20/profiling-running-erlang-server/">here</a>.</p>
+
+<pre><code class="language-erlang">1&gt; cprof:start().
+2&gt; cprof:pause().
+3&gt; cprof:analyse().
+4&gt; cprof:analyse(cprof). % analysing calls of a specific module
+5&gt; cprof:stop().
+</code></pre>
+
+<h2 id="eep">eep</h2>
+
+<p>The sequence of steps is quite simple and described in the project&rsquo;s README.</p>
+
+<p>We start the tracing:</p>
+
+<pre><code class="language-erlang">1&gt; eep:start_file_tracing(&quot;appname&quot;), timer:sleep(10000), eep:stop_tracing().
+</code></pre>
+
+<p>Then copy the resulting file: <code>appname.trace</code> to our machine (before that we
+gzip it because of it&rsquo;s size). On our machine, we transform it into the text
+format, suitable for
+<a href="https://kcachegrind.github.io/html/Home.html">kcachegrind</a>.</p>
+
+<pre><code class="language-erlang">1&gt; eep:convert_tracing(&quot;appname&quot;).
+</code></pre>
+
+<p>If you still do not have kcachegrind, go install it:</p>
+
+<p>In Ubuntu:</p>
+
+<pre><code>$ sudo apt-get install kcachegrind
+</code></pre>
+
+<p>After the conversion has finished, we may begin analyzing the results.</p>
+
+<pre><code>$ kcachegrind callgrind.out.appname
+</code></pre>
+
+<p><img class="img-rounded" src="/images/posts/2016-05-25-profiling-in-erlang/eep.png" alt="" width="100%" title=""/></p>
+
+<p>3 important points:</p>
+
+<ul>
+<li>group by &ldquo;Source File&rdquo; (or by &ldquo;ELF Object&rdquo; if you target is a particular PID);</li>
+<li>percentage (&ldquo;Relative&rdquo;) is better than absolute time;</li>
+<li>percentage relative to its parent (&ldquo;Relative to Parent&rdquo;) is even better, otherwise, you can&rsquo;t understand the damn thing.</li>
+</ul>
+
+<p>&ldquo;No Grouping&rdquo; and &ldquo;Function Cycle&rdquo; do not give a clear picture of what is
+happening. The first option leads to the top lines: <code>gen_server:decode_msg</code>,<code>
+gen_server:loop</code>, and only indicates that more time spent in <code>gen_server:*</code> -
+thank you, captain! I didn&rsquo;t understand the results of the second option.</p>
+
+<h2 id="eflame2">eflame2</h2>
+
+<pre><code class="language-erlang">1&gt; eflame2:write_trace(global_calls_plus_new_procs, &quot;/tmp/ef.test.0&quot;, all, 10*1000).
+2&gt; eflame2:format_trace(&quot;/tmp/ef.test.0&quot;, &quot;/tmp/ef.test.0.out&quot;).
+</code></pre>
+
+<p>According to the docs, we need to run tracing in a separate process. But when
+I&rsquo;d tried to do so, I got &ldquo;Segmentation fault&rdquo;.</p>
+
+<pre><code>$ cat /tmp/ef.test.0.out | ./flamegraph.riak-color.pl &gt; output.svg
+</code></pre>
+
+<p><img class="img-rounded" src="/images/posts/2016-05-25-profiling-in-erlang/eflame2.png" alt="" width="100%" title=""/></p>
+
+<h2 id="timer-tc">timer:tc</h2>
+
+<p>What is there to talk? Recently, I came across an unexpected behavior. Take a
+look at the following code:</p>
+
+<pre><code class="language-erlang">{Time, Result} = timer:tc(fun() -&gt;
+    {Time1, Result1} = timer_tc(fun() -&gt; do_smth1() end)
+    {Time2, Result2} = timer_tc(fun() -&gt; do_smth2() end)
+end)
+</code></pre>
+
+<p><code>Time</code> should be equal to <code>Time1 + Time2</code>, right?</p>
+
+<p>Well, not in reality. <strong>Time is often greater than Time1 + Time2</strong> (even if I
+measure it, say 100 times). I think it is because <code>timer:tc</code> uses<code>
+os:timestamp</code> and <code>Time</code> includes some switching (when scheduler runs other
+process).</p>
+
+<p>Useful links:</p>
+
+<ul>
+<li><a href="http://www.snookles.com/erlang/ef2015/slf-presentation.html">Actively measuring and profiling Erlang code by S. L. Fritchie</a></li>
+<li><a href="http://roberto-aloi.com/erlang/profiling-erlang-applications-using-redbug/">Profiling Erlang Apps using Redbug (using eper)</a></li>
+</ul>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Profiling%20in%20Erlang&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fprofiling-in-erlang%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fprofiling-in-erlang%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fprofiling-in-erlang%2f&amp;description=Profiling%20in%20Erlang"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2016%2f05%2fprofiling-in-erlang%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2016\/05\/profiling-in-erlang\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

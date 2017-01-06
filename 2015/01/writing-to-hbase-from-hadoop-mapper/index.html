@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Writing to HBase from Hadoop Mapper"/>
+<meta name="twitter:description" content="Although Hadoop and HBase are often used together, not so many resources
+devoted to interaction between them. In the book &ldquo;HBase: The Definitive
+Guide&rdquo; there is a chapter
+named &ldquo;MapReduce Integration&rdquo;, which sheds some light on this. I would like to
+give you another example of the MR task that reads and writes to the same HBase
+table.
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Writing to HBase from Hadoop Mapper &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-01-16T15:48:49Z" />
+
+    
+    <meta property="og:article:tag" content="hbase" />
+    
+    <meta property="og:article:tag" content="hadoop" />
+    
+    <meta property="og:article:tag" content="apache" />
+    
+    <meta property="og:article:tag" content="map-reduce" />
+    
+    
+
+    <title>
+       Writing to HBase from Hadoop Mapper &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Writing to HBase from Hadoop Mapper</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-01-16T15:48:49Z">
+            Jan 16, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/hbase/">#hbase</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/hadoop/">#hadoop</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/apache/">#apache</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/map-reduce/">#map-reduce</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>Although Hadoop and HBase are often used together, not so many resources
+devoted to interaction between them. In the book <a href="http://shop.oreilly.com/product/0636920014348.do">&ldquo;HBase: The Definitive
+Guide&rdquo;</a> there is a chapter
+named &ldquo;MapReduce Integration&rdquo;, which sheds some light on this. I would like to
+give you another example of the MR task that reads and writes to the same HBase
+table.</p>
+
+<p></p>
+
+<p><em>This article assumes you have a basic knowledge of Hadoop.</em></p>
+
+<h2 id="task">Task</h2>
+
+<p>In our table &ldquo;weather&rdquo; we have 2 columns - the maximum temperature for a
+month (<code>max</code>) and minimum respectively (<code>min</code>). We need to calculate the
+average temperature and put it in a new column for further calculations.</p>
+
+<h2 id="mapper">Mapper</h2>
+
+<p>{% gist 8ba19e1baca077d67c65 AvgTemperatureMapper.java %}</p>
+
+<p>For every row we get <code>max</code> and <code>min</code> column&rsquo;s latest values (#13), wrap them into
+ByteBuffer (#15), so we can get Integer values.</p>
+
+<p>On line #7, we then construct new Put object, passing the same rowkey. After
+that , we add new column <code>avg</code> into <code>temperatures</code> family and put the result of
+<code>(max + min) / 2.0</code> in it (#8). In the end, we pass <code>rowkey</code> and our Put object
+to <code>context#write</code> method, which modifies &ldquo;weather&rdquo; table and records the
+results (#9).</p>
+
+<h2 id="driver">Driver</h2>
+
+<p>{% gist 8ba19e1baca077d67c65 AvgTemperatureDriver.java %}</p>
+
+<p>In order to run our baby, we create new job (#5). Since we do not have Reduce
+stage, we can set number of reduce tasks to 0 (#7). TableMapReduceUtil utility
+saves us from routine work by setting the correct input format, mapper class,
+adding dependencies jars and so on. All we need to do is to pass a few
+parameters to <code>initTableMapperJob</code> method (#11).</p>
+
+<p>I would like to note that if you need additional filtering, Scan object (#9)
+could be tweaked more heavily (e.g. by using <code>#setFilter</code> method).</p>
+
+<p>That is all for the reading. To write to a table (not necessarily the same, it
+could be any other table as well) we have to:</p>
+
+<ol>
+<li>Set OutputKeyClass and OutputValueClass to ImmutableBytesWritable and Put (both in mapper - #1 and driver - lines #14, #15);</li>
+<li>Set OutputFormatClass (#20) and table name (#21).</li>
+</ol>
+
+<p>Thats all folks. If I missed something, feel free to contact me or just leave a
+comment.</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Writing%20to%20HBase%20from%20Hadoop%20Mapper&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2015%2f01%2fwriting-to-hbase-from-hadoop-mapper%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2015%2f01%2fwriting-to-hbase-from-hadoop-mapper%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2015%2f01%2fwriting-to-hbase-from-hadoop-mapper%2f&amp;description=Writing%20to%20HBase%20from%20Hadoop%20Mapper"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2015%2f01%2fwriting-to-hbase-from-hadoop-mapper%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2015\/01\/writing-to-hbase-from-hadoop-mapper\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

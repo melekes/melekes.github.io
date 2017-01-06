@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Erlang, HBase и Thrift"/>
+<meta name="twitter:description" content="И так, вы планируете читать и писать данные в HBase таблицу из Erlang&rsquo;а. Что ж,
+начнем с того, что клиента для Erlang&rsquo;а нет :( А на выбор имеются:
+
+
+REST
+Thrift
+C/C&#43;&#43; Apache HBase Client
+
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Erlang, HBase и Thrift &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2015/05/erlang-hbase-and-thrift/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-05-23T13:30:47Z" />
+
+    
+    <meta property="og:article:tag" content="erlang" />
+    
+    <meta property="og:article:tag" content="hbase" />
+    
+    <meta property="og:article:tag" content="thrift" />
+    
+    
+
+    <title>
+       Erlang, HBase и Thrift &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2015/05/erlang-hbase-and-thrift/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Erlang, HBase и Thrift</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-05-23T13:30:47Z">
+            May 23, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/erlang/">#erlang</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/hbase/">#hbase</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/thrift/">#thrift</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>И так, вы планируете читать и писать данные в HBase таблицу из Erlang&rsquo;а. Что ж,
+начнем с того, что клиента для Erlang&rsquo;а нет :( А на выбор имеются:</p>
+
+<ol>
+<li>REST</li>
+<li>Thrift</li>
+<li>C/C++ Apache HBase Client</li>
+</ol>
+
+<p></p>
+
+<p>Истории ради отмечу, что когда-то, давным давно, был шлюз для <a href="http://en.wikipedia.org/wiki/Apache_Avro">Avro</a>. Но в
+начале 2013 он канул в лету.</p>
+
+<p>{% blockquote <a href="http://comments.gmane.org/gmane.comp.java.hadoop.hbase.user/32617">http://comments.gmane.org/gmane.comp.java.hadoop.hbase.user/32617</a> %}
+We removed the Avro gateway because the implementation as contributed was a work in progress that was not subsequently maintained.
+{% endblockquote %}</p>
+
+<p>Третья опция отпадает, потому как ссылка битая - <a href="http://hbase.apache.org/book.html#c">см. официальную
+документацию</a>. Видимо, в Facebook решили прекратить поддержку этого клиента.
+Тем более, по <a href="http://stackoverflow.com/a/13755031/820520">словам пользователя stackoverflow</a>, под капотом он (клиент)
+вызывал Thrift API. А еще один уровень нам ни к чему.</p>
+
+<p>Таким образом, остаются REST и Thrift.</p>
+
+<h1 id="rest">Rest</h1>
+
+<p><a href="https://wiki.apache.org/hadoop/Hbase/Stargate">Stargate</a> (REST сервер) поддерживает 3 формата передачи данных - XML, JSON
+и protobufs. В целом он выглядит довольно симпатично, но а) проигрывает
+thrift&rsquo;у по скорости (особенно xml и json, которые тащат за собой схему) б)
+могут отсутствовать некоторые параметры для требуемого вам метода.</p>
+
+<p><img class="img-rounded" src="/images/posts/2015-05-16-erlang-hbase-and-thrift/thrift-vs-rest1.png" alt=""/ width="450" title="Program completion time (in seconds)">
+<small>
+(Program completion time (in seconds) <a href="http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/" target="_blank"><a href="http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/">http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/</a></a>)
+</small></p>
+
+<p>Например, в protobuf схеме вы не найдете <code>filter</code>, которые может быть нужен при выполнении <code>Scan</code>.</p>
+
+<pre><code class="language-proto">message Scanner {
+  optional bytes startRow = 1;
+  optional bytes endRow = 2;
+  repeated bytes columns = 3;
+  optional int32 batch = 4;
+  optional int64 startTime = 5;
+  optional int64 endTime = 6;
+}
+</code></pre>
+
+<p>Хотя в XML схеме он присутствует:</p>
+
+<pre><code class="language-xml">&lt;complexType name=&quot;Scanner&quot;&gt;
+    ...
+    &lt;sequence&gt;
+        &lt;element name=&quot;filter&quot; type=&quot;string&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot;&gt;&lt;/element&gt;
+    &lt;/sequence&gt;
+    &lt;attribute name=&quot;startRow&quot; type=&quot;base64Binary&quot;&gt;&lt;/attribute&gt;
+    &lt;attribute name=&quot;endRow&quot; type=&quot;base64Binary&quot;&gt;&lt;/attribute&gt;
+    ...
+&lt;/complexType&gt;
+</code></pre>
+
+<p>Если скорость для вас не критична, можно смело выбирать REST (REST плюс
+protobufs может быть неплохим выбором). Хотя, лучше перед этим убедиться, что
+все требуемые параметры (для ваших запросов) присутствуют и проблем здесь не
+возникнет.</p>
+
+<h1 id="thrift">Thrift</h1>
+
+<p>У Thrift 2 недостатка:</p>
+
+<ol>
+<li><a href="https://thrift.apache.org/lib/erl">документации</a> считай нет</li>
+<li>выглядит он ужасно (просьба любителей прекрасного кода на время
+просмотра запастись успокоительными средствами)</li>
+</ol>
+
+<p>Давайте рассмотрим типовые операции при работе с HBase.</p>
+
+<p>Для начала создадим тестовую табличку:</p>
+
+<pre><code>$ ~/hbase/bin/hbase shell
+...
+hbase(main):001:0&gt; create 'users', 'data'
+hbase(main):007:0&gt; put 'users', 'mike', 'data:age', 15
+hbase(main):007:0&gt; put 'users', 'mike', 'data:sex', 'male'
+hbase(main):007:0&gt; put 'users', 'caleb', 'data:age', 21
+hbase(main):007:0&gt; put 'users', 'caleb', 'data:sex', 'male'
+</code></pre>
+
+<h3 id="get">Get</h3>
+
+<pre><code class="language-erlang">{ok, C0} = thrift_client_util:new(&quot;localhost&quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
+{C1, {ok, Results}} = thrift_client:call(C0, getRowWithColumns, [&quot;users&quot;, &quot;mike&quot;, [&quot;data:age&quot;, &quot;data:sex&quot;], dict:new()]),
+=&gt; [{'TRowResult',&lt;&lt;&quot;mike&quot;&gt;&gt;,
+               {dict,2,16,16,8,80,48,
+                     {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                     \{\{[],[],
+                       [[&lt;&lt;&quot;data:sex&quot;&gt;&gt;|{'TCell',&lt;&lt;&quot;male&quot;&gt;&gt;,1432370741107}]],
+                       [],[],[],[],[],[],[],[],[],[],[],[],...\}\}},
+               undefined}]
+thrift_client:close(C1).
+</code></pre>
+
+<p>В первой строке мы устанавливаем соединение. Стоит обратить внимание на 2 вещи:
+connect_timeout - таймаут на соединение, и hbase_thrift - имя нашего приложения
+(обычно == OTP application name). Далее мы забираем строку с интересующими нас
+столбцами по ключу.</p>
+
+<h3 id="put">Put</h3>
+
+<pre><code class="language-erlang">{ok, C0} = thrift_client_util:new(&quot;localhost&quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
+Mutations = [#'Mutation'{column= &quot;data:age&quot;, value= &lt;&lt;&quot;17&quot;&gt;&gt;}]
+{C1, {ok, _}} = thrift_client:call(C0, mutateRow, [&quot;users&quot;, &quot;mike&quot;, Mutations, dict:new()]),
+thrift_client:close(C1).
+</code></pre>
+
+<p>Новое значение для столбца в записи #&lsquo;Mutation&rsquo; может быть либо строкой, либо
+binary (&lt;&lt;&ldquo;17&rdquo;&gt;&gt;).</p>
+
+<h3 id="scan">Scan</h3>
+
+<pre><code class="language-erlang">{ok, C0} = thrift_client_util:new(&quot;localhost&quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
+Scan = #'TScan'{'columns'=[&quot;data:sex&quot;]},
+{C1, {ok, ScannerId}} = thrift_client:call(C0, scannerOpenWithScan, [&quot;users&quot;, Scan, dict:new()]),
+{C2, {ok, Results}} = thrift_client:call(C1, scannerGetList, [ScannerId, 10]),
+=&gt; [#'TRowResult'{row = &lt;&lt;&quot;caleb&quot;&gt;&gt;,
+               columns = {dict,1,16,16,8,80,48,
+                               {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                               \{\{[],[],
+                                 [[&lt;&lt;&quot;data:sex&quot;&gt;&gt;|
+                                   #'TCell'{value = &lt;&lt;&quot;male&quot;&gt;&gt;,timestamp = 1432372800621}]],
+                                 [],[],[],[],[],[],[],[],[],[],[],[],...\}\}},
+               sortedColumns = undefined},
+    #'TRowResult'{row = &lt;&lt;&quot;mike&quot;&gt;&gt;,
+               columns = {dict,1,16,16,8,80,48,
+                               {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                               \{\{[],[],
+                                 [[&lt;&lt;&quot;data:sex&quot;&gt;&gt;|
+                                   #'TCell'{value = &lt;&lt;&quot;male&quot;&gt;&gt;,timestamp = 1432370741107}]],
+                                 [],[],[],[],[],[],[],[],[],[],[],...\}\}},
+               sortedColumns = undefined}]
+{C3, {ok, _}} = thrift_client:call(C2, scannerClose, [ScannerId]),
+thrift_client:close(C3).
+</code></pre>
+
+<p>У #&lsquo;Scan&rsquo; можно задать не только столбцы, но и другие параметры: стартовую
+строку, конечную строку, фильтр (рассмотрен ниже).</p>
+
+<h3 id="scan-с-фильтром-и-начальной-строкой">Scan с фильтром и начальной строкой</h3>
+
+<pre><code class="language-erlang">{ok, C0} = thrift_client_util:new(&quot;localhost&quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
+FilterString = &quot;(SingleColumnValueFilter('data', 'sex', =, 'binary:male', true, true))&quot;,
+Scan = #'TScan'{'filterString'=FilterString,'startRow'=&quot;caleb1&quot;,'columns'=[&quot;data:sex&quot;]},
+{C1, {ok, ScannerId}} = thrift_client:call(C0, scannerOpenWithScan, [&quot;users&quot;, Scan, dict:new()]),
+{C2, {ok, Results}} = thrift_client:call(C1, scannerGetList, [ScannerId, 10]),
+=&gt; [#'TRowResult'{row = &lt;&lt;&quot;mike&quot;&gt;&gt;,
+               columns = {dict,1,16,16,8,80,48,
+                               {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                               \{\{[],[],
+                                 [[&lt;&lt;&quot;data:sex&quot;&gt;&gt;|
+                                   #'TCell'{value = &lt;&lt;&quot;male&quot;&gt;&gt;,timestamp = 1432370741107}]],
+                                 [],[],[],[],[],[],[],[],[],[],[],[],...\}\}},
+               sortedColumns = undefined}]
+{C3, {ok, _}} = thrift_client:call(C2, scannerClose, [ScannerId]),
+thrift_client:close(C3).
+</code></pre>
+
+<p>Здесь мы фильтруем всех пользователей по атрибуту sex. Последние 2 параметра
+сообщают HBase, что надо исключить из результирующей выборки строки, где данный
+атрибут отсутствует и забрать только последнюю версию (по умолчанию HBase
+хранит 5 версий). <a href="https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/filter/SingleColumnValueFilter.html">Документация по
+SingleColumnValueFilter</a>.</p>
+
+<p>Обратите также внимание на значение startRow - <code>caleb1</code>. Постфикс (1 байт в
+конце) нужен для того, чтобы не включать данную строку в результат.</p>
+
+<h3 id="delete">Delete</h3>
+
+<pre><code class="language-erlang">{ok, C0} = thrift_client_util:new(&quot;localhost&quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
+{C1, {ok, _}} = thrift_client:call(C0, deleteAll, [&quot;users&quot;, &quot;caleb&quot;, &quot;data:age&quot;, dict:new()]),
+thrift_client:close(C1).
+</code></pre>
+
+<p>удалит столбец age (все версии) у пользователя caleb.</p>
+
+<h1 id="заключение">Заключение</h1>
+
+<p>С Thrift&rsquo;ом работать можно, если приноровиться. Конечно, проблемы еще есть
+(<a href="https://issues.apache.org/jira/browse/THRIFT-2842https://issues.apache.org/jira/browse/THRIFT-2842">https://issues.apache.org/jira/browse/THRIFT-2842https://issues.apache.org/jira/browse/THRIFT-2842</a>),
+но они решаются.</p>
+
+<p>Полезные ссылки:</p>
+
+<ul>
+<li><a href="http://wiki.apache.org/hadoop/Hbase/ThriftApi">http://wiki.apache.org/hadoop/Hbase/ThriftApi</a></li>
+<li><a href="http://rambocoder.com/?p=142">http://rambocoder.com/?p=142</a></li>
+<li><a href="http://kungfooguru.wordpress.com/2009/08/31/erlang-thrift-and-hbase/">http://kungfooguru.wordpress.com/2009/08/31/erlang-thrift-and-hbase/</a></li>
+</ul>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Erlang%2c%20HBase%20%d0%b8%20Thrift&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2ferlang-hbase-and-thrift%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2ferlang-hbase-and-thrift%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2ferlang-hbase-and-thrift%2f&amp;description=Erlang%2c%20HBase%20%d0%b8%20Thrift"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2015%2f05%2ferlang-hbase-and-thrift%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2015\/05\/erlang-hbase-and-thrift\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

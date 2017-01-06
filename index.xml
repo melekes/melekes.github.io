@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Rails</title>
+    <link>http://homeonrails.com/index.xml</link>
+    <description>Recent content on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <lastBuildDate>Fri, 06 Jan 2017 14:14:00 +0000</lastBuildDate>
+    <atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About me</title>
+      <link>http://homeonrails.com/about.html</link>
+      <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/about.html</guid>
+      <description>&lt;p&gt;Hi! My name is Anton Kalyaev.&lt;/p&gt;
+
+&lt;p&gt;&lt;img id=&#34;portrait&#34; src=&#34;http://homeonrails.com/images/pic.jpeg&#34; alt=&#34;portrait&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;I am an enthusiastic developer, who likes to grow every day in different areas
+of expertise and apply that knowledge in everyday life.&lt;/p&gt;
+
+&lt;p&gt;My open source work is available on &lt;a href=&#34;https://github.com/akalyaev/&#34;&gt;GitHub&lt;/a&gt;, my
+work history is on &lt;a href=&#34;http://www.linkedin.com/in/anton-kalyaev&#34;&gt;LinkedIn&lt;/a&gt;, and my
+thoughts are on &lt;a href=&#34;https://twitter.com/AntonKalyaev&#34;&gt;Twitter&lt;/a&gt;. You’re also
+welcome to say hello at &lt;a href=&#34;mailto:anton.kalyaev@gmail.com&#34;&gt;anton.kalyaev@gmail.com&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Best motivational videos</title>
+      <link>http://homeonrails.com/2016/12/best-motivational-videos/</link>
+      <pubDate>Thu, 29 Dec 2016 11:54:48 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/best-motivational-videos/</guid>
+      <description>&lt;p&gt;Best motivational videos related to life (in general).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;will-smith-the-keys-to-life&#34;&gt;Will Smith - The Keys To Life&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/-08M7JpLpl4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;steve-jobs-stanford-commencement-speech-2005&#34;&gt;Steve Jobs Stanford Commencement Speech 2005&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D1R-jKKp3NA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;look-up-gary-turk-spoken-word&#34;&gt;Look Up || Gary Turk - SPOKEN WORD&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Z7dLU6fk9QY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;neil-gaiman-addresses-the-university-of-the-arts-class-of-2012&#34;&gt;Neil Gaiman Addresses the University of the Arts Class of 2012&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://player.vimeo.com/video/42372767?color=ffffff&#34; width=&#34;560&#34; height=&#34;420&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;the-big-kahuna-final-monologue&#34;&gt;The big Kahuna final monologue&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xkgbWGBmgN8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You may also find interesting &lt;a href=&#34;https://gist.github.com/akalyaev/ac047081e479b4f4aeb6#life&#34;&gt;videos, which were not listed
+here&lt;/a&gt;, but still
+are my favorite (some of them are quite long).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://homeonrails.com/2016/11/prince-ea/&#34;&gt;Prince Ea&lt;/a&gt; has something to add here too, but I don&amp;rsquo;t
+want to duplicate the content.&lt;/p&gt;
+
+&lt;p&gt;Any suggestions? Leave your comments below.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Итоги 2016 года</title>
+      <link>http://homeonrails.com/2016/12/2016-results/</link>
+      <pubDate>Wed, 28 Dec 2016 22:45:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/2016-results/</guid>
+      <description>&lt;p&gt;Под конец уходящего года принято подводить некоторые итоги: что удалось, что не
+удалось сделать, поставить цели на следующий год. В принципе, это не
+обязательно должен быть канун НГ. Просто так удобней. Еще можно попробовать
+подводить итоги чаще - скажем, раз в квартал. Интересно, кто-то так делает?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Итак, в 2016 я:&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; поменял &lt;a href=&#34;https://www.linkedin.com/in/anton-kalyaev&#34;&gt;работу&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; оформил ИП&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; путешествовал по Китаю &lt;a href=&#34;http://homeonrails.com/2016/10/one-month-in-china/&#34;&gt;один месяц&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; начал учить новый язык (китайский)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; в течении пары месяцев плавал на озере 3 раза в неделю&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; написал 53 статьи в блог&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; попробовал акройогу&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; провел &lt;a href=&#34;http://homeonrails.com/2016/08/backendsecret-week/&#34;&gt;неделю @backendsecret в твиттере&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; погулял по Астане в Казахстане&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; прочел чуть больше &lt;a href=&#34;https://www.goodreads.com/user_challenges/4160345&#34;&gt;40 книг&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Пара полезных упражнений:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Запишите три вещи, которые вам особенно запомнились и доставили вам массу
+удовольствия в этом году. Запишите их как цели и повторите в следующем году.
+Профит, хехе :)&lt;/li&gt;
+&lt;li&gt;Отправьте будущему себе (самой) письмо &lt;a href=&#34;https://www.futureme.org/&#34;&gt;https://www.futureme.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Пара советов:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Ставьте цели, используя &lt;a href=&#34;https://ru.wikipedia.org/wiki/SMART&#34;&gt;SMART&lt;/a&gt;.
+Некоторых целей в прошлом году не достиг, потому как они были какие-то
+неопределенные и без каких-либо шагов&lt;/li&gt;
+&lt;li&gt;Собственно, запишите хотя бы первый шаг к достижению цели&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;в 2017 я обещаю:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[] прочесть 50 книг&lt;/li&gt;
+&lt;li&gt;[] подтянуть вождение&lt;/li&gt;
+&lt;li&gt;[] принять участие в заплыве через Волгу&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Удачи нам в новом году!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #15</title>
+      <link>http://homeonrails.com/2016/12/monthly-art-number-15/</link>
+      <pubDate>Tue, 13 Dec 2016 16:40:11 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/monthly-art-number-15/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;documentary-going-clear-scientology-and-the-prison-of-belief-2015&#34;&gt;Documentary - Going Clear: Scientology and the Prison of Belief (2015)&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ixgd38EZIR0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt4257858&#34;&gt;http://www.imdb.com/title/tt4257858&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/going_clear_scientology_and_the_prison_of_belief_2015/&#34;&gt;https://www.rottentomatoes.com/m/going_clear_scientology_and_the_prison_of_belief_2015/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/885326/&#34;&gt;https://www.kinopoisk.ru/film/885326/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It scares me sometimes what religion could do to a person, a group of people, a
+government or the world. I am not going to talk about it here because this blog
+is not what&amp;rsquo;s this about.&lt;/p&gt;
+
+&lt;h2 id=&#34;ted-talk-10-things-you-didn-t-know-about-orgasm-2009&#34;&gt;TED talk - 10 things you didn&amp;rsquo;t know about orgasm (2009)&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://embed.ted.com/talks/mary_roach_10_things_you_didn_t_know_about_orgasm&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Incredibly funny :D&lt;/p&gt;
+
+&lt;h2 id=&#34;ru-видео-самая-быстрая-история-русского-искусства-xx-века&#34;&gt;[RU] Видео - Самая быстрая история русского искусства XX века&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/tDxrdnk4e5g&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Узнал, что за черным квадратом оказывается что-то другое было нарисовано! А я
+то неуч думал, что это просто черный квадрат :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>November Picks</title>
+      <link>http://homeonrails.com/2016/12/november-picks/</link>
+      <pubDate>Tue, 13 Dec 2016 12:06:13 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/november-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Truth bomb 💣💥👌 &lt;a href=&#34;https://twitter.com/hashtag/JSConfAU16?src=hash&#34;&gt;#JSConfAU16&lt;/a&gt; &lt;a href=&#34;https://t.co/mq3B1Un9Fl&#34;&gt;pic.twitter.com/mq3B1Un9Fl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Melissa Kaulfuss 🎄 (@MelissaKaulfuss) &lt;a href=&#34;https://twitter.com/MelissaKaulfuss/status/804209991510937600&#34;&gt;1 декабря 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://dave.cheney.net/2016/08/20/solid-go-design&#34;&gt;SOLID Go Design&lt;/a&gt;
+Want to see how do these principles apply to a language written ~ 7 years
+after the acronym &amp;ldquo;SOLID&amp;rdquo; was first introduced to the public?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bravenewgeek.com/you-are-not-paid-to-write-code/&#34;&gt;You Are Not Paid to Write Code&lt;/a&gt;
+&amp;ldquo;you are not paid to write code. You have never been paid to write code. In
+fact, code is a nasty byproduct of being a software engineer.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=03GsLxVdVzU&#34;&gt;Designing for Performance&lt;/a&gt;
+You will hear about latency, throughput, queuing theory, dangers of
+abstractions and much more.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/03GsLxVdVzU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=kDh5BrqiGhI&#34;&gt;The Verification of a Distributed System&lt;/a&gt;
+We are all writing distributed systems. And while most of us probably do not
+need formal specifications, other methods (unit, integration, property-based
+testing, fault injection) and tactics are very useful.
+&lt;a href=&#34;https://github.com/CaitieM20/TheVerificationOfDistributedSystem&#34;&gt;https://github.com/CaitieM20/TheVerificationOfDistributedSystem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/kDh5BrqiGhI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@shiroginne/%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D0%B0%D0%BC-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B8%D1%89%D1%83%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83-c4df8f7caf1f#.ung9wu4n0&#34;&gt;Советы программистам, которые ищут работу&lt;/a&gt;
+Один из самых лучших постов по данной теме.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #14</title>
+      <link>http://homeonrails.com/2016/11/monthly-art-number-14/</link>
+      <pubDate>Fri, 11 Nov 2016 13:24:39 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/11/monthly-art-number-14/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;movie-mr-church-2016&#34;&gt;Movie - Mr. Church (2016)&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wySiVNV71IQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;That&amp;rsquo;s the tough one. I can&amp;rsquo;t say this movie has some particular subject.
+Instead, I think, it teaches you many small things like passion, love, life and
+death.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt4196848/&#34;&gt;http://www.imdb.com/title/tt4196848/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/mr_church/&#34;&gt;https://www.rottentomatoes.com/m/mr_church/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/860683/&#34;&gt;https://www.kinopoisk.ru/film/860683/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;video-a-writer-and-three-script-editors-walk-into-a-bar&#34;&gt;Video - A Writer and Three Script Editors Walk Into a Bar&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://player.vimeo.com/video/179713937?color=f0a400&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;video-the-first-principles-method-explained-by-elon-musk&#34;&gt;Video - The First Principles Method Explained by Elon Musk&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NV3sBlRgzTI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;One must reason from fundamental truths, rather than by analogy.&lt;/p&gt;
+
+&lt;h2 id=&#34;documentary-propaganda-2012&#34;&gt;Documentary - Propaganda (2012)&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/hQLfkhwkEbo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=tLFO0PcHHMA&#34;&gt;На русском&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The film tells about propaganda, which is used to turn one part of society into powerless and foolish consumers, the other - to slave labor, and the third - to nothing. All for the sake of extracting super-profits for the elite.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt2279306/&#34;&gt;http://www.imdb.com/title/tt2279306/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/propaganda_2013/&#34;&gt;https://www.rottentomatoes.com/m/propaganda_2013/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/752178/&#34;&gt;https://www.kinopoisk.ru/film/752178/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>October Picks</title>
+      <link>http://homeonrails.com/2016/11/october-picks/</link>
+      <pubDate>Fri, 11 Nov 2016 12:20:03 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/11/october-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;We all know what&amp;#39;s coming. &lt;a href=&#34;https://t.co/4P2GcWt09D&#34;&gt;pic.twitter.com/4P2GcWt09D&lt;/a&gt;&lt;/p&gt;&amp;mdash; Adam (@AdamWhitcroft) &lt;a href=&#34;https://twitter.com/AdamWhitcroft/status/791718192506953728&#34;&gt;27 октября 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://danluu.com/hn-comments/&#34;&gt;Hacker News comments&lt;/a&gt;
+&amp;ldquo;I compiled a very abbreviated list of comments I like because comments seem to get lost.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/the-hoard/how-kafkas-storage-internals-work-3a29b02e026#.t3um9zqs0&#34;&gt;How Kafka’s Storage Internals Work&lt;/a&gt;
+Want to know how Kafka stores data? Then read this small article.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@FunctionalWorks/relocating-to-london-12754053c81e#.xgbknzar5&#34;&gt;Relocating to London&lt;/a&gt;
+The bottom line is that £30,000 annual salary in London equals to £8,500 in savings (50000 RUB per month). If you want to save more, there are options: &lt;a href=&#34;https://hackerlife.co/blog/compare-cities-cost/London-United-Kingdom&#34;&gt;work in USA&lt;/a&gt;, remote work for a USA company, another options?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/caitiem20/a-brief-history-of-distributed-programming-rpc&#34;&gt;A Brief History of Distributed Programming: RPC&lt;/a&gt;
+Although, we have some solutions (Finagle, gRPC), we are still in the beginning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://bvz.name/blog/all/lyudvig-kazan-2016/&#34;&gt;Людвиг, Казань, 2016&lt;/a&gt;
+&amp;ldquo;Слишком сложные проекты — это хорошо. Условия для качественного роста.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prince Ea</title>
+      <link>http://homeonrails.com/2016/11/prince-ea/</link>
+      <pubDate>Fri, 04 Nov 2016 23:14:20 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/11/prince-ea/</guid>
+      <description>&lt;p&gt;There are actually not many great motivational videos on the Internet. But this
+guy, this guy has some style.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Prince Ea (Richard Williams) is a poet, filmmaker, and speaker. He speaks at
+conferences and gives lectures to high school/university students nationwide,
+on the topics of self­-development, living your passion and the importance of
+being motivated and engaged in the classroom.&lt;/p&gt;
+
+&lt;h2 id=&#34;can-we-auto-correct-humanity&#34;&gt;Can We Auto-Correct Humanity?&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/dRl8EIhrQjQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;everybody-dies-but-not-everybody-lives&#34;&gt;EVERYBODY DIES, BUT NOT EVERYBODY LIVES&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ja-n5qUNRi8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;why-i-think-this-world-should-end&#34;&gt;Why I Think This World Should End&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/itvnQ2QB4yc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCDgUAAHgsV2fFZQm2fIWBnA&#34;&gt;Prince Ea channel on YouTube&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hire me</title>
+      <link>http://homeonrails.com/2016/10/hire-me/</link>
+      <pubDate>Wed, 26 Oct 2016 19:12:16 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/hire-me/</guid>
+      <description>&lt;p&gt;For the past two years, I&amp;rsquo;ve been working full time at FunBox as an &lt;strong&gt;Erlang developer&lt;/strong&gt;. I&amp;rsquo;ve learned so much during that time - the Erlang language itself and the tooling (observer, recon and &lt;a href=&#34;http://homeonrails.com/2016/05/profiling-in-erlang/&#34;&gt;others&lt;/a&gt;), Hadoop, HDFS and even some team management skills (thanks to @gumayunov).&lt;/p&gt;
+
+&lt;p&gt;I am grateful for the opportunity that FunBox has given me. But once a while you need to move on and I did. So I&amp;rsquo;m looking for a new job.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;me&#34;&gt;Me&lt;/h2&gt;
+
+&lt;p&gt;I’m primary interested in system programming (right now I’m writing a &lt;a href=&#34;https://github.com/akalyaev/OS-bitch&#34;&gt;hobby OS&lt;/a&gt; in Rust) and infrastructure.&lt;/p&gt;
+
+&lt;p&gt;This may seem strange to somebody because I started my career as a web developer. However, as years went by, I’ve realized I&amp;rsquo;m enjoying system programming more (OS insides and tools, building SaaS, debugging and fixing complex bugs using Linux utilities like strace, iostat, tcpdump and others).&lt;/p&gt;
+
+&lt;p&gt;Besides all of the above, I have also interest in:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;streaming/batch solutions (Hadoop/Spark/…)&lt;/li&gt;
+&lt;li&gt;distributed programming (e.g. distributed DB)&lt;/li&gt;
+&lt;li&gt;compilers&lt;/li&gt;
+&lt;li&gt;NLP&lt;/li&gt;
+&lt;li&gt;ML&lt;/li&gt;
+&lt;li&gt;AI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One day I might want to become an architect. I like to think about application&amp;rsquo;s architecture and ways to improve it. But this won&amp;rsquo;t happen very soon cause of my little experience.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Possibility of relocation&lt;/strong&gt;: yes, but remote is preferable &lt;br&gt;
+&lt;strong&gt;Require visa sponsorship&lt;/strong&gt;: yes&lt;/p&gt;
+
+&lt;h2 id=&#34;you&#34;&gt;You&lt;/h2&gt;
+
+&lt;p&gt;The following should describe you, the company:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You must support remote work. My parents mean a lot to me and I want to be able to visit them a couple months every year.&lt;/li&gt;
+&lt;li&gt;You invest time and money in your employee&amp;rsquo;s education (Wednesday meetups, buying tech books and paying for a conference once a year would be nice)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bonus: if you are doing some bioengineering or financial stuff (transaction processing, cryptocurrencies), this is a plus.&lt;/p&gt;
+
+&lt;h2 id=&#34;contact-me&#34;&gt;Contact me&lt;/h2&gt;
+
+&lt;p&gt;If you think I will be a good add to your team, &lt;strong&gt;please contact me&lt;/strong&gt; via anton.kalyaev at gmail.com. Thank you!&lt;/p&gt;
+
+&lt;p&gt;Additional links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.linkedin.com/in/anton-kalyaev-a2617786&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/akalyaev/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/akalyaev&#34;&gt;SpeakerDeck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Erlang User Conference 2016</title>
+      <link>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
+      <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
+      <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
+sharing them with the community.&lt;/p&gt;
+
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-erlang-and-deep-learning&#34;&gt;1. Erlang and Deep Learning&lt;/h1&gt;
+
+&lt;p&gt;by Garrett Smith (47 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/iMhBEVCgPdg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;An example of a very good presentation. After watching, I immediately wanted to learn more about deep learning.&lt;/p&gt;
+
+&lt;h1 id=&#34;2-rethinking-the-language-runtime-for-scale&#34;&gt;2. Rethinking the Language Runtime for Scale&lt;/h1&gt;
+
+&lt;p&gt;by Christopher Meiklejohn (45 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SXT_fVJOkD0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Christopher continues his series of presentations about the Lasp lang and its runtime system.&lt;/p&gt;
+
+&lt;h1 id=&#34;3-going-barking-mad-with-dalmatinerdb&#34;&gt;3. Going Barking Mad with DalmatinerDB&lt;/h1&gt;
+
+&lt;p&gt;by Steven Acreman and Heinz Gies (42 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/1lC8m3omo4I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;4-think-outside-the-vm-unobtrusive-performance-measurement&#34;&gt;4. Think Outside the VM: Unobtrusive Performance Measurement&lt;/h1&gt;
+
+&lt;p&gt;by Julian Squires (44 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xP2yzaYdjpo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
+
+&lt;p&gt;If you are an Erlang/Elixir/LFE developer and want to help, watch &lt;a href=&#34;https://www.youtube.com/watch?v=Z28SDd9bXcE&#34;&gt;How things are, and how they could be by Fred Hebert&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Russel Brown has a &lt;a href=&#34;https://www.youtube.com/watch?v=f20882ZSdkU&#34;&gt;nice talk on CRDT in Riak&lt;/a&gt; - what they&amp;rsquo;ve already implemented and future plans.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t know what LFE is, watch &lt;a href=&#34;https://www.youtube.com/watch?v=x2ysisqgd2g&#34;&gt;LFE: A Real Lisp in the Erlang Ecosystem by Robert Virding&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>5 New Tab Google Chrome extensions for productivity freaks</title>
+      <link>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</link>
+      <pubDate>Tue, 18 Oct 2016 17:40:16 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;1-mortality&#34;&gt;1. Mortality&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/mortality.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Mortality is a new tab extension that reminds you of your precise age. A
+bitter-sweet motivational tool; it illustrates how little time we have. Circles
+represent months, for the average lifespan of 80 years. As you age, the circles
+fill, and are split into the main Chapters of your life.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;My current one. Highly motivating.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/mortality-new-tab/eeedcpdcehnikgkhbobmkjcipjhlbmpn&#34;&gt;https://chrome.google.com/webstore/detail/mortality-new-tab/eeedcpdcehnikgkhbobmkjcipjhlbmpn&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-motivation&#34;&gt;2. Motivation&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/motivation.gif&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;If Mortality is too much for you, try this small extension. &lt;strong&gt;Just a counter&lt;/strong&gt;,
+nothing more.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/motivation/ofdgfpchbidcgncgfpdlpclnpaemakoj&#34;&gt;https://chrome.google.com/webstore/detail/motivation/ofdgfpchbidcgncgfpdlpclnpaemakoj&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;3-dayboard-new-tab-page&#34;&gt;3. Dayboard - New Tab Page&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/dayboard.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VHfWzt94tVQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;ToDo list&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Focus mode allow you to focus on a particular task. In some way, it combines
+Momentum and Wunderlist together, but lacks Momentum&amp;rsquo;s wallpaper and Wunderlist
+sync.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/dayboard-new-tab-page/kimodcegbhclamjcbifgfaldeengbgij&#34;&gt;https://chrome.google.com/webstore/detail/dayboard-new-tab-page/kimodcegbhclamjcbifgfaldeengbgij&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;4-wunderlist-new-tab&#34;&gt;4. Wunderlist New Tab&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/wunderlist.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ToDo list with a background&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/wunderlist-new-tab/fgikemaeelgbhjnhnnahcpkjpafaeion?hl=en&#34;&gt;https://chrome.google.com/webstore/detail/wunderlist-new-tab/fgikemaeelgbhjnhnnahcpkjpafaeion?hl=en&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;5-momentum&#34;&gt;5. Momentum&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/momentum.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Personal dashboard&lt;/strong&gt; with a different wallpaper every day, ability to set a daily
+goal and other features. There is a new extension,
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/leoh-new-tab/ijhhakihjccpanbibbcceofpjnebokcb&#34;&gt;Leoh&lt;/a&gt;,
+which is similar to Momentum, but more minimalistic and streamlined.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&#34;&gt;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hope you will find something for you. Cheers!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Strange Loop 2016</title>
+      <link>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
+      <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
+conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
+YouTube&lt;/a&gt;.
+Again, thank you to organizers for sharing them. I think, I have found real
+gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-agility-robustness-clojure-spec&#34;&gt;1. Agility &amp;amp; Robustness: Clojure spec&lt;/h1&gt;
+
+&lt;p&gt;by Stuart Halloway (40 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VNTQ-M_uSo8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;2-reasoning-about-performance-in-the-context-of-search&#34;&gt;2. Reasoning about performance (in the context of search)&lt;/h1&gt;
+
+&lt;p&gt;by Dan Luu (30 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/80LKF2qph6I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;3-point-free-or-die-tacit-programming-in-haskell-and-beyond&#34;&gt;3. Point-Free or Die: Tacit Programming in Haskell and Beyond&lt;/h1&gt;
+
+&lt;p&gt;by Amar Shah (36 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/seVSlKazsNk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;4-graphql-designing-a-data-language&#34;&gt;4. GraphQL: Designing a Data Language&lt;/h1&gt;
+
+&lt;p&gt;by Lee Byron (40 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Oh5oC98ztvI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;5-runtime-scheduling-theory-and-reality&#34;&gt;5. Runtime scheduling: theory and reality&lt;/h1&gt;
+
+&lt;p&gt;by Eben Freeman (42 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8g9fG7cApbc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
+
+&lt;p&gt;If you are curious about data structures, watch &lt;a href=&#34;https://www.youtube.com/watch?v=jdn617M3-P4&#34;&gt;&amp;ldquo;Exotic Functional Data
+Structures: Hitchhiker Trees&amp;rdquo; by David
+Greenberg&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is a nice intro to data processing systems - &lt;a href=&#34;https://www.youtube.com/watch?v=oaxBY-e9ZSg&#34;&gt;&amp;ldquo;Deep dive into
+Unbounded Data Processing Systems&amp;rdquo; by Monal
+Daxini&lt;/a&gt;. Apparently, Netflix is
+switching from their own custom solution, which uses Kafka and Samza, to Flink
+and thinking about Apache Beam.&lt;/p&gt;
+
+&lt;p&gt;If you are writing distributed task scheduler, watch &lt;a href=&#34;https://www.youtube.com/watch?v=s3GfXTnzG_Y&#34;&gt;&amp;ldquo;Building a Distributed
+Task Scheduler With Akka, Kafka, and Cassandra&amp;rdquo; by David van
+Geest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to know how Golang detect data races (hint: using vector clocks),
+take a look at &lt;a href=&#34;https://www.youtube.com/watch?v=5erqWdlhQLA&#34;&gt;&amp;rdquo;&amp;ldquo;go test -race&amp;rdquo; Under the Hood&amp;rdquo; by Kavya
+Joshi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And there is one more good &lt;a href=&#34;https://www.youtube.com/watch?v=B1-gS0oEtYc&#34;&gt;talk on CQRS and Event Sourcing by Bobby
+Calderwood&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #13</title>
+      <link>http://homeonrails.com/2016/10/monthly-art-number-13/</link>
+      <pubDate>Tue, 11 Oct 2016 12:06:49 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/monthly-art-number-13/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;movie-captain-fantastic-2016&#34;&gt;Movie - Captain Fantastic (2016)&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D1kH4OMIOMc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt3553976/&#34;&gt;http://www.imdb.com/title/tt3553976/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/captain_fantastic/&#34;&gt;https://www.rottentomatoes.com/m/captain_fantastic/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/841147/&#34;&gt;https://www.kinopoisk.ru/film/841147/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;ldquo;What is Coca Cola? - Poisoned water.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;The director is trying to show us how far we have shifted from nature. All our
+modern world (gadgets, virtual reality, fast food) sometimes leads us astray
+and creates a veil before our eyes. Tim Urban has a really good article on this
+- &lt;a href=&#34;http://waitbutwhy.com/2014/10/religion-for-the-nonreligious.html&#34;&gt;Religion for the
+Nonreligious&lt;/a&gt;
+(&lt;a href=&#34;https://lifehacker.ru/2016/08/27/wisdom-is-the-goal/&#34;&gt;ru_RU&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;ted-talk-what-makes-a-good-life-lessons-from-the-longest-study-on-happiness-2015&#34;&gt;TED talk - What makes a good life? Lessons from the longest study on happiness (2015)&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://embed.ted.com/talks/lang/en/robert_waldinger_what_makes_a_good_life_lessons_from_the_longest_study_on_happiness&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;&lt;Paste&gt;
+
+Family is important! Point.
+
+## [RU] Видео - Надежные источники информации
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/AfUqqOiZVHg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Вкратце: надежных источников нет, есть эмпирика и логика. Совет: выставляйте
+скорость 2X.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>September Picks</title>
+      <link>http://homeonrails.com/2016/10/september-picks/</link>
+      <pubDate>Tue, 11 Oct 2016 10:47:37 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/september-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Most important, have the courage to follow your heart and intuition.&amp;quot; Remembering Steve and the many ways he changed our world. &lt;a href=&#34;https://t.co/ONAuEoq3uU&#34;&gt;pic.twitter.com/ONAuEoq3uU&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Cook (@tim_cook) &lt;a href=&#34;https://twitter.com/tim_cook/status/783662822819401728&#34;&gt;5 октября 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;As many of you already know, I was traveling in China. And I didn&amp;rsquo;t have much
+time to read articles. That&amp;rsquo;s why it&amp;rsquo;s only 4 articles and 1 video.&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.baqend.com/real-time-stream-processors-a-survey-and-decision-guidance-6d248f692056#.v6o6r3wm7&#34;&gt;Scalable Stream Processing: A Survey of Storm, Samza, Spark and Flink&lt;/a&gt;
+Very good overview of the stream processing solutions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HjASqh5z8ck&#34;&gt;PolyConf 16: Why System Programming is for Everyone / Julia Evans&lt;/a&gt;
+strace, opensnoop, tcpdump, dstat, ngrep, &amp;hellip; I love that she is not afraid
+to experiment, like &amp;ldquo;write a keyboard driver&amp;rdquo; or &amp;ldquo;write a tcp stack&amp;rdquo;. Maybe I
+will follow in her steps and try to write these things too. There is a
+transcript of the same talk (I believe)
+&lt;a href=&#34;http://jvns.ca/blog/2016/09/17/strange-loop-talk/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://tonsky.livejournal.com/308320.html&#34;&gt;Голые короли IT&lt;/a&gt;
+В очередной раз говорят, что не нужно слепо следовать за хайпом, даже если во
+главе стоят ваши кумиры.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://grishaev.me/business-game&#34;&gt;Бизнес как игра&lt;/a&gt;
+Прочел книгу. Мне также очень понравилась. Спасибо Ивану за наводку!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://lifehacker.ru/2016/09/27/lichnaja-effektivnost/&#34;&gt;О личной эффективности&lt;/a&gt;
+Добротный пост про личную эффективность.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Обязательные приложения для путешествия по Китаю</title>
+      <link>http://homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</link>
+      <pubDate>Fri, 07 Oct 2016 12:17:02 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;china-trains&#34;&gt;China Trains&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/china_trains.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Билеты на поезд&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Интуитивный интерфейс, показывает сколько осталось мест (это важно). Можно
+использовать только для информации, если неохота дополнительно платить 40 юаней
+за бронь.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.travelchinaguide.com/china-trains/&#34;&gt;https://www.travelchinaguide.com/china-trains/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/china-trains-online-tickets/id564713153?mt=8&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.travelchinaguide.chinatrainsV2&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ctrip&#34;&gt;Ctrip&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/ctrip.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;отели, билеты на поезд или самолёт, статус рейса&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Заметил, что цены на отели выше, чем в Qunar.com. Но зато оно (приложение и
+сайт) на английском и принимает карты помимо
+&lt;a href=&#34;https://en.wikipedia.org/wiki/China_UnionPay&#34;&gt;UnionPay&lt;/a&gt;. Напомню, что в Китае
+наши обычные карточки (Visa, Mastercard) не принимаются (за исключением
+банкоматов, где можно снять наличность).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://english.ctrip.com/&#34;&gt;http://english.ctrip.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/ctrip-book-hotels-flights/id681752345?mt=8&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=ctrip.english&amp;hl=en&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;qunar-com-去哪儿旅行&#34;&gt;Qunar.com (去哪儿旅行)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/qunar.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;отели, билеты на автобусы, поезда и самолеты&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;На китайском, но большая часть и так понятна. В режиме чтения можно
+использовать для получения информации об автобусах, доступном жилье и
+авиаперелетах. Инструкция ниже.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.qunar.com/&#34;&gt;http://www.qunar.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/qu-na-er-lu-xing-zong-you/id395096736?mt=8&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.Qunar&amp;hl=en&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;pleco&#34;&gt;Pleco&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/pleco.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;китайско-английский словарь&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Работает без интернета. Удобно учить слова отдельные. OCR (оптическое
+распознавание символов) на данный момент дороже, чем в Waygo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.pleco.com/&#34;&gt;https://www.pleco.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/pleco-chinese-dictionary/id341922306?mt=8&amp;uo=4&amp;at=11l4Wi&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.pleco.chinesesystem&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;waygo&#34;&gt;Waygo&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/waygo.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;переводит иероглифы с изображения из камеры на английский на лету&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Распознает китайский, японский и корейский языки. Работает без интернета.
+Удобно меню смотреть. В бесплатной версии только 10 переводов в день.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.waygoapp.com/&#34;&gt;http://www.waygoapp.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/app/id496038103?ls=1&amp;mt=8&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.waygoapp.waygo&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;baidu-maps-百度地图-智能出行&#34;&gt;Baidu maps (百度地图-智能出行)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/baidu_maps.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;карты&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Аналог карт от Google. Работают шустро, сохраняют карты в офлайн. Собственно,
+ими я и пользовался на протяжении всей поездки. Задаешь точку отправления и
+прибытия, жмешь Enter и смотришь варианты (группы: автомобиль, общ.транспорт,
+пешком, такси).&lt;/p&gt;
+
+&lt;p&gt;Руководство &lt;a href=&#34;https://ykitai.com/2015/07/07/karta-baidu/&#34;&gt;https://ykitai.com/2015/07/07/karta-baidu/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://map.baidu.com/&#34;&gt;http://map.baidu.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/ru/app/bai-du-de-tu-zhi-neng-chu-xing/id452186370?l=en&amp;mt=8&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.baidu.BaiduMap&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;baidu-translate-百度翻译&#34;&gt;Baidu Translate 百度翻译&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/baidu_translate.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;китайско-английский переводчик&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Переводит довольно хорошо. Из минусов: не показывает пиньинь и требует интернет.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://fanyi.baidu.com/&#34;&gt;http://fanyi.baidu.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/ru/app/bai-du-fan-yi/id605670941?l=en&amp;mt=8&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.baidu.baidutranslate&amp;hl=en&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;metro-china-subway&#34;&gt;Metro China Subway&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/metroman.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;карты метро городов Китая&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Рассчитывают стоимость, время в пути (приблизительное). Работает без интернета.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/metro-china-subway/id466351433?mt=8&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.xinlukou.metroman&amp;hl=en&#34;&gt;
+  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;как-посмотреть-расписание-автобусов-и-станцию-отправления&#34;&gt;Как посмотреть расписание автобусов и станцию отправления&lt;/h2&gt;
+
+&lt;p&gt;В переводчике (Baidu Translate) забиваем &amp;ldquo;Автобус от Чэнду до Эмэйшань&amp;rdquo;.
+Копируем результат в строку поиска Qunar.com. Из предложенного списка выбираем
+автобус и переходим к результатам.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/bus_sequence_01.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;как-найти-гостиницу-хостел&#34;&gt;Как найти гостиницу/хостел&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/hotel_sequence_01.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Жмем на иконку здания. Город выбираем либо вставляя его название из интернета
+или заметок, либо набирая на
+&lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C&#34;&gt;пиньине&lt;/a&gt;.
+Можно выбрать ценовой диапазон. Я обычно приходил по адресу и выкупал место на
+месте. Эта схема не будет работать разве что на праздниках (Китайский Новый Год
+и золотая неделя).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://dzhedtravel.blogspot.de/2014/04/blog-post_30.html&#34;&gt;Вот эти ребята&lt;/a&gt;
+умудрялись бронировать жилье без карты китайского банка, так что ознакомьтесь
+со статьей если для вас это актуально.&lt;/p&gt;
+
+&lt;h2 id=&#34;необязательные-приложения&#34;&gt;Необязательные приложения&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Офлайн карты для всего мира Maps.me &lt;a href=&#34;https://maps.me/en/home&#34;&gt;https://maps.me/en/home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Booking.com &lt;a href=&#34;https://www.booking.com/&#34;&gt;https://www.booking.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Знаете еще убер-крутые приложения? Оставьте комментарий!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

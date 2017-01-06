@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Fish shell"/>
+<meta name="twitter:description" content="Не так давно у меня появилось немножко свободного времени, и я решил посмотреть
+аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
+напротив, многие его фишки, включая подсветку, дополнение по Tab и
+автоматическое раскрытие путей, пришлись мне по душе.
+
+Одновременно с этим @saratovsource
+намекнул, что пересел на Fish shell около полугода назад и вполне доволен.
+
+{% img /images/posts/2014-07-15-fish-shell/logo.png %}
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Fish shell &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2014/07/fish-shell/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2014-07-15T18:20:50Z" />
+
+    
+    <meta property="og:article:tag" content="fish-shell" />
+    
+    <meta property="og:article:tag" content="shells" />
+    
+    
+
+    <title>
+       Fish shell &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2014/07/fish-shell/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Fish shell</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2014-07-15T18:20:50Z">
+            Jul 15, 2014
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/fish-shell/">#fish-shell</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/shells/">#shells</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>Не так давно у меня появилось немножко свободного времени, и я решил посмотреть
+аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
+напротив, многие его фишки, включая подсветку, дополнение по Tab и
+автоматическое раскрытие путей, пришлись мне по душе.</p>
+
+<p>Одновременно с этим <a href="https://twitter.com/saratovsource">@saratovsource</a>
+намекнул, что пересел на Fish shell около полугода назад и вполне доволен.</p>
+
+<p>{% img /images/posts/2014-07-15-fish-shell/logo.png %}</p>
+
+<p></p>
+
+<p>И так, <a href="https://github.com/fish-shell/fish-shell">Fish</a> (friendly interactive shell) - это командная оболочка для
+Unix-подобных операционных систем. К её плюсам можно отнести подсветку
+синтаксиса и продвинутое автодополнение из коробки.</p>
+
+<h3 id="1-предсказание-пути">1. Предсказание пути</h3>
+
+<p>Не нужно больше переходить в отдельный режим, набирая <code>Ctrl-r</code>, чтобы найти и
+выполнить команду из истории. Fish предлагает варианты по мере того, как вы
+набираете. И если это то что вам нужно, смело жмите <code>Ctrl-f</code> или <code>right</code>. Очень
+удобно!</p>
+
+<p>{% img /images/posts/2014-07-15-fish-shell/fish1-o.gif %}</p>
+
+<p>Есть аналогичный плагин для zsh - <a href="https://github.com/tarruda/zsh-autosuggestions">zsh-autosuggestions</a>.</p>
+
+<h3 id="2-поиск-при-дополнении-по-tab">2. Поиск при дополнении по Tab</h3>
+
+<p>Также полезная и удобная штука.</p>
+
+<p>{% img /images/posts/2014-07-15-fish-shell/fish2-o.gif %}</p>
+
+<h3 id="3-fish-config">3. fish_config</h3>
+
+<p>Команда <code>fish_config</code> запускает простенький веб-сервер c приложением, которое
+позволяет вам менять некоторые параметры оболочки (темы, оформление),
+просматривать список функций, переменных окружения и историю. Функциональность
+более чем спорная, ведь большинству пользователей не составляет труда
+посмотреть/поменять настройки прямо в консоли.</p>
+
+<h3 id="4-fish-и-zsh">4. Fish и Zsh</h3>
+
+<p>У Fish не такое большое и активное сообщество как у Zsh. Тут уж не поспоришь.
+Но, так как текущей функциональности вкупе с несколькими плагинами вполне
+достаточно для комфортной работы и баги фиксится довольно быстро, это не должно
+иметь решающее значение.</p>
+
+<h3 id="5-общие-впечатления">5. Общие впечатления</h3>
+
+<p>Вообще после zsh Fish кажется очень быстрым (1). Во многом за счет предсказания
+пути скорость переходов становиться почти заоблачной :)</p>
+
+<p>Из минусов, могу выделить отсутствие дополнения alias&rsquo;ов по Tab&rsquo;у. То есть, если
+у вас допустим <code>gco</code> - alias <code>git checkout</code>, то Fish не предложит вам список
+веток. Для этого придется набрать <code>git co</code>. Возможно в будущей версии это будет
+исправлено.</p>
+
+<p>Также Fish не совместима со стандартами POSIX (not POSIX compliant). Это
+значит, что скорей всего не получиться скопировать Bash однострочник из
+Интернета и выполнить его в командной строке - синтаксис чуточку другой. Плюс
+некоторые утилиты (например <a href="https://github.com/kennethreitz/autoenv">autoenv</a>
+или Vim) из-за этого могут работать не совсем корректно. В случае с Vim, это
+решается добавлением <code>set shell=/bin/bash</code> в <code>.vimrc</code>.</p>
+
+<h3 id="итоги">Итоги</h3>
+
+<p>В целом впечатления положительные. Может Fish и сыроват по сравнению с тем же
+zsh, но некоторые его возможности просто поражают. Так что советую попробовать,
+тем более, что сейчас перейти с одной облочки на другую можно за пару минут.</p>
+
+<p>Дополнительные ссылки:</p>
+
+<ul>
+<li><a href="https://github.com/bpinto/oh-my-fish">Oh My Fish!</a> oh my zsh для Fish shell.</li>
+</ul>
+
+<p><em>(1) - вполне возможно причиной некоторых тормозов является используемый мною <code>oh-my-zsh</code>.</em></p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Fish%20shell&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2014%2f07%2ffish-shell%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2014%2f07%2ffish-shell%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2014%2f07%2ffish-shell%2f&amp;description=Fish%20shell"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2014%2f07%2ffish-shell%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2014\/07\/fish-shell\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Redis дропает события? Что?"/>
+<meta name="twitter:description" content="&ldquo;Redis дропает события? Что?&rdquo; или поучительная история о том, как важно читать
+документацию.
+
+
+  
+
+
+
+
+"/>
+
+
+
+  	<meta property="og:title" content=" Redis дропает события? Что? &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-10-19T14:00:26Z" />
+
+    
+    <meta property="og:article:tag" content="redis" />
+    
+    <meta property="og:article:tag" content="linux" />
+    
+    <meta property="og:article:tag" content="networking" />
+    
+    
+
+    <title>
+       Redis дропает события? Что? &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Notes on software development, traveling and life" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.comimages/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.comimages/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.comcss/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.comindex.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.19-DEV" />
+
+    <link rel="canonical" href="http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="about.html">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/akalyaev">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/AntonKalyaev">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.comindex.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com"><img src="http://homeonrails.comimages/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Redis дропает события? Что?</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-10-19T14:00:26Z">
+            Oct 19, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/redis/">#redis</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/linux/">#linux</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.comtags/networking/">#networking</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>&ldquo;Redis дропает события? Что?&rdquo; или поучительная история о том, как важно читать
+документацию.</p>
+
+<div style="align:center">
+  <img class="img-rounded" src="/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg" alt="" width="100%" title=""/>
+</div>
+
+<p><br/></p>
+
+<p></p>
+
+<p>В один дождливый и прохладный осенний день мы увидели слишком маленькое
+значение одной из метрик нашего приложения. Оно занималось (1) отправкой
+текстовых сообщений через специальный шлюз и приемом отчетов о доставке. Отчеты
+(2) публиковались в Redis через Redis Pub/Sub и (3) вычитывались отдельным
+демоном (Listener), который (4) отмечал факт получения или неполучения
+абонентом смс в БД (Postgresql).</p>
+
+<div style="align:center">
+  <img class="img-rounded" src="/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/app.png" alt="" style="width:400px;" title=""/>
+</div>
+
+<p>В статистике значилось: <strong>&ldquo;отправлено 20000, доставлено 122&rdquo;</strong>. По необъяснимой
+причине мы недополучали большую часть отчетов.</p>
+
+<p>Сначала я предположил, что они просто не доходят до Redis, но посмотрев логи
+убедился в обратном. Далее подозрение пало на Listener и мой тимлид высказал
+предположение о том, что он (Listener) не успевает вычитывать все публикуемые
+события и <strong>Redis их дропает</strong>.</p>
+
+<p>Увидев в логе Redis строчку &ldquo;Client XXX scheduled  to  be  closed  ASAP  for
+overcoming  of  output  buffer  limits&rdquo;, мы поняли что скорее всего так и есть.</p>
+
+<p>Я был удивлен. Опыта работы с Redis у меня было не так уж и много, но мне все
+равно казалось это нереальным.</p>
+
+<div style="align:center">
+  <img class="img-rounded" src="/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/wat.png" alt="" style="width:400px;" title=""/>
+</div>
+
+<p><br/></p>
+
+<p>Думалось, что он будет хранить данные в списке так долго как сможет.
+Оказывается, Redis Pub/Sub вообще не хранит никаких данных (есть буфер). В
+идеале, он старается раскидать данные с сокета &ldquo;издателя&rdquo; (Publisher&rsquo;s socket)
+по сокетам подписчиков (Subscribers sockets) на одной итерации <a href="https://en.wikipedia.org/wiki/Event_loop">event loop</a>.</p>
+
+<div style="align:center">
+  <img class="img-rounded" src="/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/pub-sub.png" alt="" style="width:450px;" title=""/>
+</div>
+
+<p>Так что же про буферы. У Redis есть буфер с soft limit = 8MB и hard limit =
+32MB. Также есть по 1 буферу на каждое TCP соединение.</p>
+
+<p>Размеры буферов можно узнать так:</p>
+
+<pre><code>$ cat /proc/sys/net/ipv4/tcp_rmem # publisher's socket
+$ cat /proc/sys/net/ipv4/tcp_wmem # subscribers sockets
+</code></pre>
+
+<p>В нашем случае размер и того, и другого = 4MB.</p>
+
+<p>Если подписчик не успевает вычитывать данные, буфер справа в какой-то момент
+заполнится и TCP запретит дальнейшую запись в него. Redis пометит буфер как
+&ldquo;non-writable&rdquo; и начнет заполнять свой буфер.</p>
+
+<p>Если размер буфера Redis&rsquo;а превысит 32MB или в течении 60 секунд будет больше
+8MB, то Redis закроет соединение. Об этом честно написано в <a href="http://redis.io/topics/clients">документации
+Redis</a> см. &ldquo;Output buffers limits&rdquo;. Правда,
+нигде не написано, что перед тем как соединение будет закрыто часть сообщений
+будут потеряны.</p>
+
+<p>В нашем случае Redis действительно закрывал соединение, но Listener
+переподнимался Upstart&rsquo;ом и тут же подписывался заново, продолжая выгребать
+лишь часть отчетов.</p>
+
+<p>Описывать как мы поправили эту багу не буду, ибо это уже не так интересно для
+читателя. Вывод для себя сделал такой - <strong>перед тем как использовать
+инструмент, прочитай документацию</strong>. В серьезных продуктах обычно расписано
+все, включая разнообразные <a href="https://en.wikipedia.org/wiki/Corner_case">corner case</a>.</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com" style="background-image: url(http://homeonrails.comimages/logo.png)"><span class="hidden">Anton Kalyaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com">Anton Kalyaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Redis%20%d0%b4%d1%80%d0%be%d0%bf%d0%b0%d0%b5%d1%82%20%d1%81%d0%be%d0%b1%d1%8b%d1%82%d0%b8%d1%8f%3f%20%d0%a7%d1%82%d0%be%3f&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2015%2f10%2fredis-dropaiet-sobytiia-chto%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2015%2f10%2fredis-dropaiet-sobytiia-chto%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2015%2f10%2fredis-dropaiet-sobytiia-chto%2f&amp;description=Redis%20%d0%b4%d1%80%d0%be%d0%bf%d0%b0%d0%b5%d1%82%20%d1%81%d0%be%d0%b1%d1%8b%d1%82%d0%b8%d1%8f%3f%20%d0%a7%d1%82%d0%be%3f"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2015%2f10%2fredis-dropaiet-sobytiia-chto%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2015\/10\/redis-dropaiet-sobytiia-chto\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.comjs/index.js"></script>
+    
+</body>
+</html>
+
