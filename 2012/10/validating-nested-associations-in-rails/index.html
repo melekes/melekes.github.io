@@ -117,12 +117,12 @@ written by Xavier Shay, which will show your how you can create complex forms wi
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/">Blog</a>
+            	<a href="http://homeonrails.com/">Blog</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/about.html">About me</a>
+            	<a href="http://homeonrails.com/about">About me</a>
             </li>
         
             <h3>Follow me</h3>
@@ -347,7 +347,7 @@ objects <strong>AFTER</strong> validation of the parent object. So the user is a
 an office. Of course, later, when the user will try to edit a company,
 he/she will get an error - &ldquo;Company should have at least one office.&rdquo;.</p>
 
-<p><img src="/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process" /></p>
+<p><img src="http://homeonrails.com/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process" /></p>
 
 <pre><code class="language-ruby">&gt; c.offices_attributes = [{ id: 1, _destroy: '1' }]
 &gt;   =&gt; [{:id=&gt;1, :_destroy=&gt;&quot;1&quot;}]
@@ -405,9 +405,9 @@ end
 &gt;   =&gt; #&lt;ActiveModel::Errors:0x000000038fc840 @base=#&lt;Company id: 1, name: &quot;Mars LLC&quot;, created_at: &quot;2012-10-08 19:16:44&quot;, updated_at: &quot;2012-10-08 19:16:44&quot;&gt;, @messages={:base=&gt;[&quot;Company should have at least one office.&quot;]}&gt;
 </code></pre>
 
-<p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I&rsquo;ve added <a href="/2012/10/associationcountvalidator">one more for this case</a>.</p>
+<p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I&rsquo;ve added <a href="http://homeonrails.com/2012/10/associationcountvalidator">one more for this case</a>.</p>
 
-<p>If you know a better solution, don&rsquo;t hesitate to <a href="/about.html">contact me</a> or simply leave a comment below.</p>
+<p>If you know a better solution, don&rsquo;t hesitate to <a href="http://homeonrails.com/about.html">contact me</a> or simply leave a comment below.</p>
 
 <h3 id="validating-presence-of-the-parent-object">Validating presence of the parent object</h3>
 

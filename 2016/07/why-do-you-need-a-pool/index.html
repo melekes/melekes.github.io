@@ -95,12 +95,12 @@
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/">Blog</a>
+            	<a href="http://homeonrails.com/">Blog</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/about.html">About me</a>
+            	<a href="http://homeonrails.com/about">About me</a>
             </li>
         
             <h3>Follow me</h3>
@@ -199,7 +199,7 @@ if fork/join model better suits your needs. Refer to
 
 <p>I think, only the last one requires explanation, others are pretty obvious.</p>
 
-<p><img src="/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif" alt="" width="100%" title=""/></p>
+<p><img src="http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif" alt="" width="100%" title=""/></p>
 
 <p>Our friend Barney here wants to buy some beer, so he takes a long walk to the nearest store. It will take him <code>3 * (t1 + t2)</code> to buy 3 beers.</p>
 
@@ -207,7 +207,7 @@ if fork/join model better suits your needs. Refer to
 
 <p>What if instead, he and his buddies will go to the store together. <strong>Even if the store has only one cash register (like Redis) and the cashier serve them in turn, they will buy 3 beers in <code>t1 + 3 * t2</code></strong>.</p>
 
-<p><img src="/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif" alt="" width="100%" title=""/></p>
+<p><img src="http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif" alt="" width="100%" title=""/></p>
 
 <p>Most often t1 much greater than t2. Therefore, <code>t1 + 3 * t2</code> &lt; <code>3 * (t1 + t2)</code>.
 In other words, it is better to send N requests in parallel comparing to

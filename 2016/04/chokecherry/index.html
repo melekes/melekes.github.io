@@ -107,12 +107,12 @@ This article tells a story behind this library. Down below you&rsquo;ll find ans
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/">Blog</a>
+            	<a href="http://homeonrails.com/">Blog</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/about.html">About me</a>
+            	<a href="http://homeonrails.com/about">About me</a>
             </li>
         
             <h3>Follow me</h3>
@@ -199,14 +199,14 @@ backend.</p>
 <p>We use lager in almost all of our applications. And it works pretty well most
 of the time, except the cases where it doesn&rsquo;t.</p>
 
-<p><img class="img-rounded" src="/images/posts/2016-04-24-chokecherry/karate.gif" alt="" width="100%" title=""/></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif" alt="" width="100%" title=""/></p>
 
 <p>It all started one day when we were experiencing a <strong>peak load</strong> in one of the
 applications (we&rsquo;ll call it FortKnox). So, FortKnox was processing a lot of
 data and producing a lot of logs (particularly, info messages). As
 shown on a picture below, we were writing logs to a file on disk.</p>
 
-<p><img class="img-rounded" src="/images/posts/2016-04-24-chokecherry/app1.png" alt="" width="100%" title=""/></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app1.png" alt="" width="100%" title=""/></p>
 
 <p>Then we started seeing <strong>random exits</strong> (timeouts in calls to <code>lager:info</code>)
 from many places. These led to different parts (gen_servers, gen_fsms, etc.) of
@@ -214,7 +214,7 @@ FortKnox crashing. Some of them got restarted by their supervisor. But it was
 clear that this won&rsquo;t last long. Indeed, at some point, it all came down to the
 application&rsquo;s supervisor and <strong>whole node stopped working</strong>.</p>
 
-<p><img class="img-rounded" src="/images/posts/2016-04-24-chokecherry/app2.png" alt="" width="100%" title=""/></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png" alt="" width="100%" title=""/></p>
 
 <p>This is what happened. <strong>Hard disk was not able to handle so much writes</strong> (even in
 the presence of OS caches). <a href="https://github.com/basho/lager/blob/ec43800bd5bf0286c5d591fbda0b2d22fccf4d7b/src/lager_file_backend.erl#L257">file:write</a> became slower and lager&rsquo;s
@@ -237,7 +237,7 @@ That&rsquo;s how we came to the random exits.</p>
 <p>lager has many settings and we could play with them. For example, we could turn
 off synchronous mode.</p>
 
-<p><img class="img-rounded" src="/images/posts/2016-04-24-chokecherry/app3.png" alt="" width="100%" title=""/></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png" alt="" width="100%" title=""/></p>
 
 <p>What will happen then is lager&rsquo;s mailbox start growing and, eventually, when
 there will be no more free memory, node will crash.</p>
@@ -256,7 +256,7 @@ chokecherry</strong>. What follows is how it works.</p>
 
 <h2 id="chokecherry">Chokecherry</h2>
 
-<p><img class="img-rounded" src="/images/posts/2016-04-24-chokecherry/app4.png" alt="" width="100%" title=""/></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app4.png" alt="" width="100%" title=""/></p>
 
 <p><strong>shaper</strong> accumulates incoming messages in the queue. If the queue size
 exceeds <code>log_queue_capacity</code> within a certain time period (1 second), it sends

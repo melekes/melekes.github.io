@@ -103,12 +103,12 @@ that I&rsquo;ve learned during the transition.
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/">Blog</a>
+            	<a href="http://homeonrails.com/">Blog</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/about.html">About me</a>
+            	<a href="http://homeonrails.com/about">About me</a>
             </li>
         
             <h3>Follow me</h3>
@@ -204,7 +204,7 @@ understand how it works. Let me show you.</p>
 <li><code>X</code> - <strong>list</strong> - expression, which gives us the resulting element.</li>
 </ol>
 
-<p><img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/listc1.png" alt=""/ width="100%" title=""></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc1.png" alt=""/ width="100%" title=""></p>
 
 <p>I thought that, the way it works is &ldquo;one by one&rdquo;:</p>
 
@@ -225,9 +225,9 @@ list comprehension, and, later on, one of the filters fell.</p>
 <p>What do you think will happen if <code>can_be_saved</code> throw an error for the
 third record? <strong>Correct answer</strong>: non of the records will be saved.</p>
 
-<p><img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/listc2.png" alt=""/ width="100%" title=""></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc2.png" alt=""/ width="100%" title=""></p>
 
-<p><img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/listc3.png" alt=""/ width="100%" title=""></p>
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc3.png" alt=""/ width="100%" title=""></p>
 
 <p>The way it works is &ldquo;one by one || one by one&rdquo;: firstly, Erlang generates and
 filters initial list. After that, it executes expression on the left side for
@@ -290,7 +290,7 @@ it received the messages</strong>. In contrast, things are usually happening in 
 same thread in Ruby (that is why timings are usually more accurate).</p>
 
 <div style="align:center">
-  <img class="img-rounded" src="/images/posts/2015-08-03-from-ruby-to-erlang/lager1.png" alt=""/ width="100%" title="">
+  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/lager1.png" alt=""/ width="100%" title="">
 </div>
 
 <p><strong>Lesson #2. Do not rely on lager timings, because it is a separate gen_server (i.e. you don’t know when it will process your messages).</strong></p>
