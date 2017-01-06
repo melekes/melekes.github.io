@@ -12,10 +12,10 @@
     
     <item>
       <title>About me</title>
-      <link>http://homeonrails.com/about.html</link>
+      <link>http://homeonrails.com/about/</link>
       <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/about.html</guid>
+      <guid>http://homeonrails.com/about/</guid>
       <description>&lt;p&gt;Hi! My name is Anton Kalyaev.&lt;/p&gt;
 
 &lt;p&gt;&lt;img id=&#34;portrait&#34; src=&#34;http://homeonrails.com/images/pic.jpeg&#34; alt=&#34;portrait&#34;/&gt;&lt;/p&gt;

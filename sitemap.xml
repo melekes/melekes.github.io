@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://homeonrails.com/about.html</loc>
+    <loc>http://homeonrails.com/about/</loc>
     <lastmod>2017-01-06T14:14:00+00:00</lastmod>
   </url>
   
@@ -502,7 +502,7 @@
   </url>
   
   <url>
-    <loc>http://homeonrails.com/most-popular-posts.html</loc>
+    <loc>http://homeonrails.com/most-popular-posts/</loc>
     <lastmod>2014-07-11T10:54:24+02:00</lastmod>
   </url>
   
@@ -652,193 +652,193 @@
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/accepts_nested_attributes_for</loc>
+    <loc>http://homeonrails.com/tags/accepts_nested_attributes_for/</loc>
     <lastmod>2012-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/activerecord</loc>
+    <loc>http://homeonrails.com/tags/activerecord/</loc>
     <lastmod>2012-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/alias</loc>
+    <loc>http://homeonrails.com/tags/alias/</loc>
     <lastmod>2013-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/apache</loc>
+    <loc>http://homeonrails.com/tags/apache/</loc>
     <lastmod>2015-01-16T15:48:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/api</loc>
+    <loc>http://homeonrails.com/tags/api/</loc>
     <lastmod>2014-03-09T13:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/art</loc>
+    <loc>http://homeonrails.com/tags/art/</loc>
     <lastmod>2016-12-13T16:40:11+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/bansko</loc>
+    <loc>http://homeonrails.com/tags/bansko/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/belarus_ruby</loc>
+    <loc>http://homeonrails.com/tags/belarus_ruby/</loc>
     <lastmod>2013-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/books</loc>
+    <loc>http://homeonrails.com/tags/books/</loc>
     <lastmod>2016-01-30T11:54:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/chrome</loc>
+    <loc>http://homeonrails.com/tags/chrome/</loc>
     <lastmod>2016-10-18T17:40:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/clojure</loc>
+    <loc>http://homeonrails.com/tags/clojure/</loc>
     <lastmod>2016-06-18T13:44:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/coding-style</loc>
+    <loc>http://homeonrails.com/tags/coding-style/</loc>
     <lastmod>2014-04-15T14:58:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/contests</loc>
+    <loc>http://homeonrails.com/tags/contests/</loc>
     <lastmod>2014-11-07T22:05:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/copy-and-paste</loc>
+    <loc>http://homeonrails.com/tags/copy-and-paste/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/creativity</loc>
+    <loc>http://homeonrails.com/tags/creativity/</loc>
     <lastmod>2014-11-22T17:53:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/debugging</loc>
+    <loc>http://homeonrails.com/tags/debugging/</loc>
     <lastmod>2016-04-05T15:50:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/docker</loc>
+    <loc>http://homeonrails.com/tags/docker/</loc>
     <lastmod>2015-05-07T11:53:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/editors</loc>
+    <loc>http://homeonrails.com/tags/editors/</loc>
     <lastmod>2016-05-23T12:02:11+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/erlang</loc>
+    <loc>http://homeonrails.com/tags/erlang/</loc>
     <lastmod>2016-10-20T13:33:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/factory_girl</loc>
+    <loc>http://homeonrails.com/tags/factory_girl/</loc>
     <lastmod>2012-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/fish-shell</loc>
+    <loc>http://homeonrails.com/tags/fish-shell/</loc>
     <lastmod>2014-07-15T18:20:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/food</loc>
+    <loc>http://homeonrails.com/tags/food/</loc>
     <lastmod>2016-08-25T10:02:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/forms</loc>
+    <loc>http://homeonrails.com/tags/forms/</loc>
     <lastmod>2012-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/gems</loc>
+    <loc>http://homeonrails.com/tags/gems/</loc>
     <lastmod>2012-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/git</loc>
+    <loc>http://homeonrails.com/tags/git/</loc>
     <lastmod>2014-04-15T14:58:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/git-commit</loc>
+    <loc>http://homeonrails.com/tags/git-commit/</loc>
     <lastmod>2014-04-15T14:58:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/guides</loc>
+    <loc>http://homeonrails.com/tags/guides/</loc>
     <lastmod>2014-09-17T15:22:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/hackaton</loc>
+    <loc>http://homeonrails.com/tags/hackaton/</loc>
     <lastmod>2013-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/hadoop</loc>
+    <loc>http://homeonrails.com/tags/hadoop/</loc>
     <lastmod>2015-01-16T15:48:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/hbase</loc>
+    <loc>http://homeonrails.com/tags/hbase/</loc>
     <lastmod>2015-07-17T12:34:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/health</loc>
+    <loc>http://homeonrails.com/tags/health/</loc>
     <lastmod>2016-08-25T10:02:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/history</loc>
+    <loc>http://homeonrails.com/tags/history/</loc>
     <lastmod>2013-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -850,336 +850,336 @@
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/http-client</loc>
+    <loc>http://homeonrails.com/tags/http-client/</loc>
     <lastmod>2015-02-15T12:04:01+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/humor</loc>
+    <loc>http://homeonrails.com/tags/humor/</loc>
     <lastmod>2014-10-04T20:42:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/interviews</loc>
+    <loc>http://homeonrails.com/tags/interviews/</loc>
     <lastmod>2014-10-04T20:42:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/java</loc>
+    <loc>http://homeonrails.com/tags/java/</loc>
     <lastmod>2015-07-17T12:34:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/linux</loc>
+    <loc>http://homeonrails.com/tags/linux/</loc>
     <lastmod>2015-10-19T14:00:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/logging</loc>
+    <loc>http://homeonrails.com/tags/logging/</loc>
     <lastmod>2016-04-24T11:25:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/map-reduce</loc>
+    <loc>http://homeonrails.com/tags/map-reduce/</loc>
     <lastmod>2015-01-16T15:48:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/meck</loc>
+    <loc>http://homeonrails.com/tags/meck/</loc>
     <lastmod>2015-03-03T11:04:41+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/migrations</loc>
+    <loc>http://homeonrails.com/tags/migrations/</loc>
     <lastmod>2012-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/mrunit</loc>
+    <loc>http://homeonrails.com/tags/mrunit/</loc>
     <lastmod>2015-07-17T12:34:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/neovim</loc>
+    <loc>http://homeonrails.com/tags/neovim/</loc>
     <lastmod>2015-07-17T10:35:07+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/nested-attributes</loc>
+    <loc>http://homeonrails.com/tags/nested-attributes/</loc>
     <lastmod>2012-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/networking</loc>
+    <loc>http://homeonrails.com/tags/networking/</loc>
     <lastmod>2015-10-19T14:00:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/os</loc>
+    <loc>http://homeonrails.com/tags/os/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/personal</loc>
+    <loc>http://homeonrails.com/tags/personal/</loc>
     <lastmod>2016-07-29T11:22:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/picks</loc>
+    <loc>http://homeonrails.com/tags/picks/</loc>
     <lastmod>2016-12-13T12:06:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/poetry</loc>
+    <loc>http://homeonrails.com/tags/poetry/</loc>
     <lastmod>2014-11-07T22:05:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/post</loc>
+    <loc>http://homeonrails.com/post/</loc>
     <lastmod>2016-12-29T11:54:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/productivity</loc>
+    <loc>http://homeonrails.com/tags/productivity/</loc>
     <lastmod>2016-10-18T17:40:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/profiling</loc>
+    <loc>http://homeonrails.com/tags/profiling/</loc>
     <lastmod>2015-10-22T10:16:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/programming</loc>
+    <loc>http://homeonrails.com/tags/programming/</loc>
     <lastmod>2016-10-20T13:33:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/quizzes</loc>
+    <loc>http://homeonrails.com/tags/quizzes/</loc>
     <lastmod>2014-04-01T23:47:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/railsrumble</loc>
+    <loc>http://homeonrails.com/tags/railsrumble/</loc>
     <lastmod>2013-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/redis</loc>
+    <loc>http://homeonrails.com/tags/redis/</loc>
     <lastmod>2015-10-19T14:00:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/refactoring</loc>
+    <loc>http://homeonrails.com/tags/refactoring/</loc>
     <lastmod>2012-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/review</loc>
+    <loc>http://homeonrails.com/tags/review/</loc>
     <lastmod>2015-01-17T12:00:12+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/reviews</loc>
+    <loc>http://homeonrails.com/tags/reviews/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/ruby</loc>
+    <loc>http://homeonrails.com/tags/ruby/</loc>
     <lastmod>2015-08-03T15:09:10+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/ruby-on-rails</loc>
+    <loc>http://homeonrails.com/tags/ruby-on-rails/</loc>
     <lastmod>2015-02-17T10:05:37+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/security</loc>
+    <loc>http://homeonrails.com/tags/security/</loc>
     <lastmod>2016-07-03T16:28:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/self-development</loc>
+    <loc>http://homeonrails.com/tags/self-development/</loc>
     <lastmod>2014-11-30T16:02:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/shells</loc>
+    <loc>http://homeonrails.com/tags/shells/</loc>
     <lastmod>2015-07-17T10:35:07+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/shortcuts</loc>
+    <loc>http://homeonrails.com/tags/shortcuts/</loc>
     <lastmod>2013-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/shortfilms</loc>
+    <loc>http://homeonrails.com/tags/shortfilms/</loc>
     <lastmod>2016-01-16T11:51:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/ski-resort</loc>
+    <loc>http://homeonrails.com/tags/ski-resort/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/snowboard</loc>
+    <loc>http://homeonrails.com/tags/snowboard/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags</loc>
+    <loc>http://homeonrails.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/talks</loc>
+    <loc>http://homeonrails.com/tags/talks/</loc>
     <lastmod>2016-10-20T13:33:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/team-work</loc>
+    <loc>http://homeonrails.com/tags/team-work/</loc>
     <lastmod>2014-12-13T17:57:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/terminal</loc>
+    <loc>http://homeonrails.com/tags/terminal/</loc>
     <lastmod>2016-05-04T11:41:10+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/testing</loc>
+    <loc>http://homeonrails.com/tags/testing/</loc>
     <lastmod>2015-07-17T12:34:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/thrift</loc>
+    <loc>http://homeonrails.com/tags/thrift/</loc>
     <lastmod>2015-05-23T13:30:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/time-tracking</loc>
+    <loc>http://homeonrails.com/tags/time-tracking/</loc>
     <lastmod>2014-11-22T17:53:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/tmux</loc>
+    <loc>http://homeonrails.com/tags/tmux/</loc>
     <lastmod>2016-05-04T11:41:10+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/tools</loc>
+    <loc>http://homeonrails.com/tags/tools/</loc>
     <lastmod>2014-12-13T17:57:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/traveling</loc>
+    <loc>http://homeonrails.com/tags/traveling/</loc>
     <lastmod>2016-10-07T12:17:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/tutorials</loc>
+    <loc>http://homeonrails.com/tags/tutorials/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/validation</loc>
+    <loc>http://homeonrails.com/tags/validation/</loc>
     <lastmod>2012-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/video</loc>
+    <loc>http://homeonrails.com/tags/video/</loc>
     <lastmod>2013-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/vim</loc>
+    <loc>http://homeonrails.com/tags/vim/</loc>
     <lastmod>2016-05-23T12:02:11+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/vimrc</loc>
+    <loc>http://homeonrails.com/tags/vimrc/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/virtualbox</loc>
+    <loc>http://homeonrails.com/tags/virtualbox/</loc>
     <lastmod>2014-06-04T12:11:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/vm</loc>
+    <loc>http://homeonrails.com/tags/vm/</loc>
     <lastmod>2014-06-04T12:11:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/workplace</loc>
+    <loc>http://homeonrails.com/tags/workplace/</loc>
     <lastmod>2016-07-09T10:03:59+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/yaml</loc>
+    <loc>http://homeonrails.com/tags/yaml/</loc>
     <lastmod>2013-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://homeonrails.com/tags/year_review</loc>
+    <loc>http://homeonrails.com/tags/year_review/</loc>
     <lastmod>2016-12-28T22:45:00+00:00</lastmod>
     <priority>0</priority>
   </url>
