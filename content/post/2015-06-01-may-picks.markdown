@@ -1,0 +1,54 @@
+---
+categories: picks
+comments: true
+date: 2015-06-01T22:04:31Z
+title: May Picks
+slug: may-picks
+---
+
+"Random picks from all over the Internet".
+
+<!--more-->
+
+<blockquote class="twitter-tweet" lang="ru"><p lang="en" dir="ltr">☐ Consistency&#10;☐ Availability&#10;☐ Partition tolerance&#10;☑ Deployed to production</p>&mdash; Sad Server (@sadserver) <a href="https://twitter.com/sadserver/status/598117703291797504">12 мая 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## English
+
+### Articles
+
+* [Exploring message brokers](https://www.percona.com/blog/2014/05/05/exploring-message-brokers/).
+  Comparison of well-known message brokers: RabbitMQ, Kafka, ActiveMQ, Kestrel.
+
+* [WebSockets From Scratch](https://blog.pusher.com/websockets-from-scratch/).
+  Very good article, which will give you a deep understanding of the WebSocket
+  mechanics. Examples are written in Ruby.
+
+* [Using logs to build a solid data infrastructure (or: why dual writes are a bad idea)](http://blog.confluent.io/2015/05/27/using-logs-to-build-a-solid-data-infrastructure-or-why-dual-writes-are-a-bad-idea/).
+  I really like the idea of ubiquitous log for building complex
+  highly-performant applications. If you don't know what it is (ubiquitous log)
+  or currently into this topic, go read this article.
+
+* [Please stop calling databases CP or AP](https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html).
+  "The CAP theorem is too simplistic and too widely misunderstood to be of much
+  use for characterizing systems. Therefore I ask that we retire all references
+  to the CAP theorem, stop talking about the CAP theorem, and put the poor
+  thing to rest."
+
+### Videos
+
+* [Greg Young - The art of destroying software](https://vimeo.com/108441214).
+  How could you write programs that, in the future, will be easily rewritable?
+  Greg shares his point of view on this problem and a solution to it.
+
+* [Edward Kmett - Stop Treading Water: Learning to Learn](https://yow.eventer.com/yow-2014-1222/stop-treading-water-learning-to-learn-by-edward-kmett-1750).
+  Couple of valuable tips of how to learn things.
+
+* [Cory House - Becoming an Outlier: Career Reboot for the Developer Mind](https://vimeo.com/97415346).
+  Cory tells us about developer career, good vs bad habits, and all those
+  things that could make a better programmer.
+
+### Tools
+
+* [z is the new j, yo](https://github.com/rupa/z).
+  Replaced autojump with this. Works very good so far.

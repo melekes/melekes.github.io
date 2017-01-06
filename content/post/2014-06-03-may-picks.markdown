@@ -1,0 +1,35 @@
+---
+categories: picks
+comments: false
+date: 2014-06-03T09:58:07Z
+title: May picks
+slug: may-picks
+---
+
+Monthly {newsletter} with great articles, videos and presentations.
+
+<!--more-->
+
+## English
+
+### Articles
+
+* [Why Generation Y Yuppies Are Unhappy](http://waitbutwhy.com/2013/09/why-generation-y-yuppies-are-unhappy.html) ([ru](http://us2.campaign-archive.com/?u=833bf5395122c8de57f99f863&id=853c245786))
+* [The basics of the InnoDB undo logging and history system](http://blog.jcole.us/2014/04/16/the-basics-of-the-innodb-undo-logging-and-history-system/)
+* [Unofficial guide to Datomic internals](http://tonsky.me/blog/unofficial-guide-to-datomic-internals/)
+* [If redis is already a part of the stack, why is Memcached still used alongside Redis?](http://stackoverflow.com/questions/23601622/if-redis-is-already-a-part-of-the-stack-why-is-memcached-still-used-alongside-r/23650189#23650189)
+* [UnitTest](http://martinfowler.com/bliki/UnitTest.html)
+
+### Videos
+
+* [Keynote - Writing Software by David Heinemeier Hansson at RailsConf 2014](http://www.confreaks.com/videos/3315%C2%ADrailsconf%C2%ADkeynote)
+
+### Presentations
+
+* [Tricks that Rails didn't tell you about by Carlos Antonio Da Silva at RailsConf 2014](https://speakerdeck.com/carlosantoniodasilva/tricks-that-rails-didnt-tell-you-about-at-railsconf-2014)
+
+## Russian
+
+### Videos
+
+* [Основной парадокс состояния сна и его экспериментальное разрешение](http://polit.ru/article/2014/05/04/pigarev/)
