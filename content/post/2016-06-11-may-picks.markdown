@@ -40,5 +40,3 @@ slug: may-picks
 
 * [Размышления о Питоне](http://grishaev.me/python)
   Clojure захватывает умы питонистов! Плюсы / минусы языка.
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

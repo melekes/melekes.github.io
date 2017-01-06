@@ -46,5 +46,3 @@ slug: january-picks
   сохранить этот поток, обработать его за считанные секунды и увидеть картину
   происходящего в реальном времени. Вы узнаете, как JRuby, Celluloid, Logstah,
   Apache Kafka и другие инструменты помогают нам в этом."
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

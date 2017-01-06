@@ -37,5 +37,3 @@ slug: september-picks
 
 * [4 Myths about In-Memory Databases Busted](http://www.slideshare.net/imcsummit/imcs2015-2-bus4-myth-about-inmemory-databases-busted)
   A very good presentation, which compares Aerospike, Couchbase, Redis and Cassandra.
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

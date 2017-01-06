@@ -31,5 +31,3 @@ slug: december-picks
   is that time series databases are almost always storing aggregate metrics
   over time ranges, not the full population of events that were originally
   measured."
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

@@ -37,5 +37,3 @@ slug: june-picks
 
 * [Big Data головного мозга](https://habrahabr.ru/post/303802/)
   Отличная статья, описывающая чем Hadoop является, а чем нет.
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

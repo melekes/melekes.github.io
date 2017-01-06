@@ -33,5 +33,3 @@ slug: october-picks
 ### Видео
 
 * [Мастер класс А Рыбака (Badoo) "Про то, что я бы хотел, чтобы мне рассказали, пока я учился"](https://www.youtube.com/watch?v=k_IaWe1FJ4I)
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

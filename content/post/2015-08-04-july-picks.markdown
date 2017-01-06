@@ -43,5 +43,3 @@ slug: july-picks
 
 * [Ленивые вычисления: плюсы и минусы](http://ruhaskell.org/posts/talks/2015/06/21/lazy-evaluation.html)
   Очень годный доклад Дениса Шевченко o плюсах и минусах ленивости.
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

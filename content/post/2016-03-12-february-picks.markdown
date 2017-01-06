@@ -40,5 +40,3 @@ slug: february-picks
 * [Стоит ли брать на работу джуниоров](http://dou.ua/lenta/articles/why-need-junior/)
   Хорошим джуном кашу не испортишь. Понравилось, как автор раскладывает все по
   полочкам, подробно обсуждая каждый аспект работы джуниора.
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

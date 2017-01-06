@@ -37,5 +37,3 @@ slug: november-picks
 
 * [Хорошо читаемый код умещается на салфетке](https://medium.com/@pismenny/%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9-%D0%BA%D0%BE%D0%B4-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF-%D1%81%D0%B0%D0%BB%D1%84%D0%B5%D1%82%D0%BA%D0%B8-74f0dd50a98a#.95nv9lbd6)
   Неплохой способ понять, насколько прост и понятен код у вас перед глазами.
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)

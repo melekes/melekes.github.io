@@ -46,5 +46,3 @@ slug: august-picks
 
 * [Роман Гребенников, Sociohub — Scala под капотом](https://www.youtube.com/watch?v=M7ptT_yY97U)
   Про магию (Привет дедушке Бобу выше). Интересно смотреть даже если не пишешь на Scala.
-
-Like these? Check out some [previous picks](http://homeonrails.com/blog/categories/picks/)
