@@ -1,5 +1,5 @@
 ---
-tags: picks
+tags: ["picks"]
 comments: false
 date: 2015-02-02T10:45:11Z
 title: February picks

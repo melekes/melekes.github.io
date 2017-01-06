@@ -1,5 +1,5 @@
 ---
-tags: picks
+tags: ["picks"]
 comments: false
 date: 2015-09-07T19:48:02Z
 title: August picks

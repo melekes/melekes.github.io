@@ -1,5 +1,5 @@
 ---
-tags: picks
+tags: ["picks"]
 comments: true
 date: 2015-07-03T10:59:59Z
 title: June picks

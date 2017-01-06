@@ -1,5 +1,5 @@
 ---
-tags: picks
+tags: ["picks"]
 date: 2014-02-10T00:00:00Z
 title: January picks
 slug: january-picks

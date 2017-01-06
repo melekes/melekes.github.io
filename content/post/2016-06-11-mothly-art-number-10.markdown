@@ -1,5 +1,5 @@
 ---
-tags: art
+tags: ["art"]
 comments: true
 date: 2016-06-11T11:35:48Z
 title: 'Mothly Art #10'

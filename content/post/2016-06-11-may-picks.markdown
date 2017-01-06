@@ -1,8 +1,8 @@
 ---
-tags: picks
+tags: ["picks"]
 comments: true
 date: 2016-06-11T10:40:07Z
-title: May Picks
+title: "May Picks"
 slug: may-picks
 ---
 

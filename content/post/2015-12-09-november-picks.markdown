@@ -1,5 +1,5 @@
 ---
-tags: picks
+tags: ["picks"]
 comments: false
 date: 2015-12-09T19:43:27Z
 title: November picks

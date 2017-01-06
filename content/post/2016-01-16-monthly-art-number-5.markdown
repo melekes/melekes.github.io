@@ -1,5 +1,5 @@
 ---
-tags: art
+tags: ["art"]
 comments: true
 date: 2016-01-16T11:30:22Z
 title: 'Monthly Art #5'

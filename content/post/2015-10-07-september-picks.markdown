@@ -1,5 +1,5 @@
 ---
-tags: picks
+tags: ["picks"]
 comments: true
 date: 2015-10-07T11:14:55Z
 title: September picks

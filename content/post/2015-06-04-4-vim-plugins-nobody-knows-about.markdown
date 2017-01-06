@@ -1,5 +1,5 @@
 ---
-tags: vim
+tags: ["vim"]
 comments: true
 date: 2015-06-04T22:53:15Z
 title: 4 Vim Plugins Nobody Knows About
