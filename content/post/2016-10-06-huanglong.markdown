@@ -1,20 +1,15 @@
----
-categories:
-- traveling
-comments: true
-date: 2016-10-06T22:58:27Z
-title: Заповедник Хуанлун. Как добраться из Цзючжайгоу плюс карта
-twitter_card:
-  image: http://homeonrails.com/images/posts/2016-10-06-huanglong/huanglong.jpg
-  type: summary_large_image
-slug: huanglong
----
++++
+date = "2016-10-06T22:58:27Z"
+draft = false
+slug = "huanglong"
+tags = ["traveling"]
+title = "Заповедник Хуанлун. Как добраться из Цзючжайгоу плюс карта"
+image = "/images/posts/2016-10-06-huanglong/huanglong.jpg"
 
-{% blockquote Википедия https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%B0%D0%BD%D0%BB%D1%83%D0%BD_(%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA) %}
-Хуанлун (кит. трад. 黃龍, упр. 黄龙, пиньинь: Huánglóng), «Жёлтый дракон» — живописная заповедная местность, известная своими травертиновыми террасами (из известкового туфа), многочисленными озёрами, различных цветов и форм.
-{% endblockquote %}
-
-<img class="img-rounded" src="/images/posts/2016-10-06-huanglong/huanglong.jpg" alt="" width="100%" title=""/>
++++
+<blockquote>
+Хуанлун (кит. трад. 黃龍, упр. 黄龙, пиньинь: Huánglóng), «Жёлтый дракон» — живописная заповедная местность, известная своими травертиновыми террасами (из известкового туфа), многочисленными озёрами, различных цветов и форм. <a href="https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%B0%D0%BD%D0%BB%D1%83%D0%BD_(%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA">Википедия</a>
+</blockquote>
 
 <!--more-->
 

@@ -1,5 +1,5 @@
 ---
-categories: picks
+tags: picks
 comments: true
 date: 2016-04-11T22:00:55Z
 title: March Picks

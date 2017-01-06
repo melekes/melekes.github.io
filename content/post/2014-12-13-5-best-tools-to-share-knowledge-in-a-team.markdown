@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - tools
 - team-work
 comments: true

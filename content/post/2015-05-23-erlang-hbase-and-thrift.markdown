@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - erlang
 - hbase
 - thrift

@@ -1,5 +1,5 @@
 ---
-categories: picks
+tags: picks
 comments: false
 date: 2014-08-05T20:45:46Z
 title: July Picks

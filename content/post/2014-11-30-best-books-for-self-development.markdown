@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - self-development
 - books
 comments: true

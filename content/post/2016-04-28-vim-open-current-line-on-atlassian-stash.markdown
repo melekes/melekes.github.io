@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - vim
 comments: true
 date: 2016-04-28T11:47:36Z

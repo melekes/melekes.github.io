@@ -1,5 +1,5 @@
 ---
-categories: picks
+tags: picks
 comments: false
 date: 2014-03-10T11:45:03Z
 title: February picks

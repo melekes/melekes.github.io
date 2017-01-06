@@ -1,5 +1,5 @@
 ---
-categories: art
+tags: art
 comments: true
 date: 2015-09-10T21:30:10Z
 title: 'Monthly Art #1'

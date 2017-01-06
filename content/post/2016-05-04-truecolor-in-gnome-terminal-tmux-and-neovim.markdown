@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - tmux
 - vim
 - terminal

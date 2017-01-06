@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - erlang
 - logging
 comments: true

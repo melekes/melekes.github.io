@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - tutorials
 - ruby
 - ruby-on-rails

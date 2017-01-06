@@ -1,5 +1,5 @@
 ---
-categories: picks
+tags: picks
 comments: false
 date: 2014-10-01T14:47:51Z
 title: September picks

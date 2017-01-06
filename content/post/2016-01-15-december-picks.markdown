@@ -1,5 +1,5 @@
 ---
-categories: picks
+tags: picks
 comments: false
 date: 2016-01-15T21:15:49Z
 title: December picks

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - security
 - traveling
 comments: true

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - ruby
 - gems
 - factory_girl

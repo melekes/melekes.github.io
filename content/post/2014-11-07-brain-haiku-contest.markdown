@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - contests
 - poetry
 comments: true

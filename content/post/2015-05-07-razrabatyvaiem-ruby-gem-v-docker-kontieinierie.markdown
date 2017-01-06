@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - ruby
 - docker
 comments: true

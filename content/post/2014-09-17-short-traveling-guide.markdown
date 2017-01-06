@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - traveling
 - guides
 comments: true

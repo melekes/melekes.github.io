@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - gui
 - ubuntu
 - haskell

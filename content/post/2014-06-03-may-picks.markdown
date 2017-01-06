@@ -1,5 +1,5 @@
 ---
-categories: picks
+tags: picks
 comments: false
 date: 2014-06-03T09:58:07Z
 title: May picks

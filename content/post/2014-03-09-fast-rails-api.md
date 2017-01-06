@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - talks
 - ruby-on-rails
 - api

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - talks
 - erlang
 comments: true

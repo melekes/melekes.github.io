@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - java
 - http-client
 - testing

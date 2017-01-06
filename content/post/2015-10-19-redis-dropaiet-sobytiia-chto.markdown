@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - redis
 - linux
 - networking

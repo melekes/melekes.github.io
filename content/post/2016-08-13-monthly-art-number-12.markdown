@@ -1,12 +1,11 @@
----
-categories:
-- art
-comments: true
-date: 2016-08-13T11:26:40Z
-title: 'Monthly Art #12'
-slug: monthly-art-number-12
----
++++
+date = "2016-08-13T11:26:40Z"
+draft = false
+slug = "monthly-art-number-12"
+tags = ["art"]
+title = "Monthly Art #12"
 
++++
 This is a monthly "newsletter", containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.

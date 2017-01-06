@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - hbase
 - mrunit
 - testing

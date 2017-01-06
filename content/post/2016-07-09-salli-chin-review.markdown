@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - workplace
 comments: true
 date: 2016-07-09T10:03:59Z

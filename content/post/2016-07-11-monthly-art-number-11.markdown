@@ -1,8 +1,7 @@
 ---
-categories: art
-comments: true
+tags: ["art"]
 date: 2016-07-11T12:16:47Z
-title: 'Monthly Art #11'
+title: "Monthly Art #11"
 slug: monthly-art-number-11
 ---
 

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - erlang
 comments: true
 date: 2016-04-25T10:38:13Z

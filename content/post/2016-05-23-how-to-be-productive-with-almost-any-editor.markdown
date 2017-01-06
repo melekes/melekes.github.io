@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - editors
 - vim
 - productivity
@@ -9,7 +9,7 @@ title: How to be productive with almost any text editor
 slug: how-to-be-productive-with-almost-any-editor
 ---
 
-<a href="/assets/pdfs/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/how_to_be_productive_with_almost_any_editor_ru_RU.pdf" title="Скачать PDF на русском">
+<a href="/pdfs/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/how_to_be_productive_with_almost_any_editor_ru_RU.pdf" title="Скачать PDF на русском">
   На русском
 </a>
 

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - erlang
 comments: true
 date: 2016-05-25T11:41:44Z
@@ -7,7 +7,7 @@ title: Profiling in Erlang
 slug: profiling-in-erlang
 ---
 
-<a href="/assets/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf" title="Скачать PDF на русском">
+<a href="/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf" title="Скачать PDF на русском">
   На русском
 </a>
 

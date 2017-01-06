@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - vim
 - clojure
 - virtualbox

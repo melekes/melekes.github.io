@@ -1,11 +1,11 @@
----
-categories: picks
-comments: true
-date: 2016-08-13T13:02:05Z
-title: July Picks
-slug: july-picks
----
++++
+date = "2016-08-13T13:02:05Z"
+draft = false
+slug = "july-picks"
+tags = ["picks"]
+title = "July Picks"
 
++++
 "Random picks from all over the Internet".
 
 <!--more-->

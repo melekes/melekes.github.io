@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - books
 comments: true
 date: 2016-01-30T11:54:13Z

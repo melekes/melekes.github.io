@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - traveling
 comments: true
 date: 2016-01-10T20:57:21Z

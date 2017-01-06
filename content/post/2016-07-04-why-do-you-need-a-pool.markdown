@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - programming
 comments: true
 date: 2016-07-04T12:35:52Z

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - shortfilms
 comments: true
 date: 2016-01-16T11:51:55Z

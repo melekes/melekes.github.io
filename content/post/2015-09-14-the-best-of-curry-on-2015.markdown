@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - talks
 - programming
 comments: true

@@ -1,5 +1,5 @@
 ---
-categories: interviews
+tags: interviews
 comments: true
 date: 2014-11-06T11:48:59Z
 published: false

@@ -1,5 +1,5 @@
 ---
-categories: []
+tags: []
 comments: true
 date: 2016-02-06T18:20:37Z
 title: Супер-пупер крутые статьи для разработчиков

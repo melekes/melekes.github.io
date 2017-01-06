@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - kafka
 - distributed-systems
 comments: true

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - humor
 - interviews
 comments: true

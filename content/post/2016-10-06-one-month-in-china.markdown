@@ -1,17 +1,12 @@
----
-categories:
-- traveling
-comments: true
-date: 2016-10-06T13:00:41Z
-title: Один месяц в Китае
-twitter_card:
-  image: http://homeonrails.com/images/posts/2016-10-06-one-month-in-china/wall2.jpg
-  type: summary_large_image
-slug: one-month-in-china
----
++++
+date = "2016-10-06T13:00:41Z"
+draft = false
+slug = "one-month-in-china"
+tags = ["traveling"]
+title = "Один месяц в Китае"
+image = "/images/posts/2016-10-06-one-month-in-china/wall2.jpg"
 
-<img class="img-rounded" src="/images/posts/2016-10-06-one-month-in-china/wall2.jpg" alt="" width="100%" title=""/>
-
++++
 Недавно вернулся из Китая, где прожил один месяц. Никакой работы, просто
 путешествуя из города в город. Иногда это были деревни, иногда заповедники.
 Другие люди, другая еда, да все другое. Этим меня и покорил Китай. Но не будем

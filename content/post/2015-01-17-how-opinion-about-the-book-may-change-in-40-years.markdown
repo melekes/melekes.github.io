@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - books
 - review
 comments: true

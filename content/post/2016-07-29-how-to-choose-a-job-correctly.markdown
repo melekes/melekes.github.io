@@ -1,15 +1,12 @@
----
-categories:
-- personal
-comments: true
-date: 2016-07-29T11:22:34Z
-title: Правильный подход к выбору работы
-twitter_card:
-  image: http://homeonrails.com/images/posts/2016-07-29-how-to-choose-a-job-correctly/chart.png
-  type: summary_large_image
-slug: how-to-choose-a-job-correctly
----
++++
+date = "2016-07-29T11:22:34Z"
+draft = false
+slug = "how-to-choose-a-job-correctly"
+tags = ["personal"]
+title = "Правильный подход к выбору работы"
+image = "/images/posts/2016-07-29-how-to-choose-a-job-correctly/chart.png"
 
++++
 На свою первую работу в качестве программиста я устроился чисто случайно. Один
 из преподавателей в универе предложил под его руководством написать CRM систему
 для довольно известной сети бытовой техники. Недолго раздумывая (~ 1 день), я

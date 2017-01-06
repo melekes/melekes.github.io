@@ -1,5 +1,5 @@
 ---
-categories: art
+tags: art
 comments: true
 date: 2016-05-10T22:02:00Z
 title: 'Monthly Art #9'

@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - git-commit
 - git
 - coding-style

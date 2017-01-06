@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - fish-shell
 - shells
 comments: true

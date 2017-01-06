@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - time-tracking
 - creativity
 comments: true

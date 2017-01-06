@@ -1,5 +1,5 @@
 ---
-categories:
+tags:
 - books
 - erlang
 comments: true
