@@ -7,8 +7,79 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Thu, 29 Dec 2016 11:54:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jan 2017 10:54:24 +0200</lastBuildDate>
     <atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>December Picks</title>
+      <link>http://homeonrails.com/2017/01/december-picks/</link>
+      <pubDate>Sat, 07 Jan 2017 10:54:24 +0200</pubDate>
+      
+      <guid>http://homeonrails.com/2017/01/december-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The CIA remotely accessed Russian hacker&amp;#39;s webcam moments before hack, first images have been revealed &lt;a href=&#34;https://t.co/RycQD8RYX1&#34;&gt;pic.twitter.com/RycQD8RYX1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Science Cat (@DrScienceCat) &lt;a href=&#34;https://twitter.com/DrScienceCat/status/809473634259636225&#34;&gt;15 декабря 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://preshing.com/20120612/an-introduction-to-lock-free-programming/&#34;&gt;An Introduction to Lock-Free Programming&lt;/a&gt;
+I don&amp;rsquo;t know much about you, but I always wanted to know what people mean by
+lock-free programming. Here is the best article I was able to find.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html&#34;&gt;Cap&amp;rsquo;n Proto, FlatBuffers, and SBE&lt;/a&gt;
+What serialization protocol will you choose for your next project? Be aware
+of the author&amp;rsquo;s bias towards his own solution (Cap&amp;rsquo;n Proto).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ericdykstra.me/blog/improving-as-an-intermediate-programmer&#34;&gt;How Does One Improve as an Intermediate Programmer?&lt;/a&gt;
+&amp;ldquo;Maybe the discipline is still too young to have formalized ways of
+performance improvement like classical music training or sports training.&amp;rdquo; Do
+you think it&amp;rsquo;s true? Personally, I tend to agree with Eric.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.bradfieldcs.com/in-2017-learn-every-language-59b11f68eee#.ib8fx7xzm&#34;&gt;In 2017, learn &lt;em&gt;every&lt;/em&gt; language&lt;/a&gt;
+Do not have plans for 2017? How about learning &lt;em&gt;every&lt;/em&gt; language :)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://waitbutwhy.com/2014/06/taming-mammoth-let-peoples-opinions-run-life.html&#34;&gt;Taming the Mammoth: Why You Should Stop Caring What Other People Think&lt;/a&gt;
+You&amp;rsquo;ve probably been told that many times, but it won&amp;rsquo;t hurt to read about
+this problem again and you will find glorious pictures (as always with
+waitbutwhy.com).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=3wyd6J3yjcs&#34;&gt;The Silver Bullet Syndrome by Hadi Hariri&lt;/a&gt;
+This is probably the second funniest dev talk after the famous &amp;ldquo;Wat&amp;rdquo; talk by
+Gary Bernhardt. Must watch!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3wyd6J3yjcs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rX0ItVEVjHc&#34;&gt;CppCon 2014: Mike Acton &amp;ldquo;Data-Oriented Design and C++&amp;rdquo;&lt;/a&gt;
+Ok, this is something paradigm shifting. Data-oriented versus object-oriented
+design.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/rX0ItVEVjHc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://antonz.ru/interest/&#34;&gt;Сделайте себе интересно&lt;/a&gt;
+&amp;ldquo;Это конспект лекции Людвига Быстроновского об интересе и контринтуитивном
+решении задач. Людвиг рассказывает, когда возникает интерес, какие приемы
+помогают не потерять его, чем вреден «поток» и как разрыв шаблона приводит к
+успеху.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Best motivational videos</title>
@@ -860,49 +931,6 @@ transcript of the same talk (I believe)
 &lt;/ol&gt;
 
 &lt;p&gt;Знаете еще убер-крутые приложения? Оставьте комментарий!&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Заповедник Хуанлун. Как добраться из Цзючжайгоу плюс карта</title>
-      <link>http://homeonrails.com/2016/10/huanglong/</link>
-      <pubDate>Thu, 06 Oct 2016 22:58:27 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/huanglong/</guid>
-      <description>&lt;blockquote&gt;
-Хуанлун (кит. трад. 黃龍, упр. 黄龙, пиньинь: Huánglóng), «Жёлтый дракон» — живописная заповедная местность, известная своими травертиновыми террасами (из известкового туфа), многочисленными озёрами, различных цветов и форм. &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%B0%D0%BD%D0%BB%D1%83%D0%BD_(%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA&#34;&gt;Википедия&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Как добраться из Цзючжайгоу 九寨沟&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Куда: Национальный Парк Хуанлун / Huanglong National Park / 黄龙地质国家公园&lt;/p&gt;
-
-&lt;p&gt;Билет на автобус можно купить на единственной станции (九通阳光大酒店), которая
-находится в 1км от входа в парк Цзючжайгоу (идти налево если стоять лицом
-ко входу).&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-06-huanglong/bus_station.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;2 автобуса отходят утром 7:00 и 7:30 (только в пиковый сезон с апреля по
-ноябрь). Ехать 3 часа. Я покупал прямо перед отправлением. В автобусе будет
-ходить парнишка и предлагать обратный билет (45 юаней), входной билет (200
-юаней) и билет на канатную дорогу (80 юаней).&lt;/p&gt;
-
-&lt;p&gt;Если вы планируете остаться на несколько дней, то можно подняться неспеша
-пешком. Иначе, за 4,5 часа без канатной дороги не обернешся. Наш автобус уехал
-в тот же день обратно в 15:30.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Карта&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-06-huanglong/map.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;У правой ветки 2 маршрута. Выбирайте horse track - на нём практически нет людей
-(на основном как в Московском метро в часы пик).&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-06-huanglong/huanglong2.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Остались вопросы? Пишите их в комментариях.&lt;/p&gt;</description>
     </item>
     
   </channel>

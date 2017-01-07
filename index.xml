@@ -7,8 +7,79 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Fri, 06 Jan 2017 14:14:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jan 2017 10:54:24 +0200</lastBuildDate>
     <atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>December Picks</title>
+      <link>http://homeonrails.com/2017/01/december-picks/</link>
+      <pubDate>Sat, 07 Jan 2017 10:54:24 +0200</pubDate>
+      
+      <guid>http://homeonrails.com/2017/01/december-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The CIA remotely accessed Russian hacker&amp;#39;s webcam moments before hack, first images have been revealed &lt;a href=&#34;https://t.co/RycQD8RYX1&#34;&gt;pic.twitter.com/RycQD8RYX1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Science Cat (@DrScienceCat) &lt;a href=&#34;https://twitter.com/DrScienceCat/status/809473634259636225&#34;&gt;15 декабря 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://preshing.com/20120612/an-introduction-to-lock-free-programming/&#34;&gt;An Introduction to Lock-Free Programming&lt;/a&gt;
+I don&amp;rsquo;t know much about you, but I always wanted to know what people mean by
+lock-free programming. Here is the best article I was able to find.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html&#34;&gt;Cap&amp;rsquo;n Proto, FlatBuffers, and SBE&lt;/a&gt;
+What serialization protocol will you choose for your next project? Be aware
+of the author&amp;rsquo;s bias towards his own solution (Cap&amp;rsquo;n Proto).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ericdykstra.me/blog/improving-as-an-intermediate-programmer&#34;&gt;How Does One Improve as an Intermediate Programmer?&lt;/a&gt;
+&amp;ldquo;Maybe the discipline is still too young to have formalized ways of
+performance improvement like classical music training or sports training.&amp;rdquo; Do
+you think it&amp;rsquo;s true? Personally, I tend to agree with Eric.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.bradfieldcs.com/in-2017-learn-every-language-59b11f68eee#.ib8fx7xzm&#34;&gt;In 2017, learn &lt;em&gt;every&lt;/em&gt; language&lt;/a&gt;
+Do not have plans for 2017? How about learning &lt;em&gt;every&lt;/em&gt; language :)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://waitbutwhy.com/2014/06/taming-mammoth-let-peoples-opinions-run-life.html&#34;&gt;Taming the Mammoth: Why You Should Stop Caring What Other People Think&lt;/a&gt;
+You&amp;rsquo;ve probably been told that many times, but it won&amp;rsquo;t hurt to read about
+this problem again and you will find glorious pictures (as always with
+waitbutwhy.com).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=3wyd6J3yjcs&#34;&gt;The Silver Bullet Syndrome by Hadi Hariri&lt;/a&gt;
+This is probably the second funniest dev talk after the famous &amp;ldquo;Wat&amp;rdquo; talk by
+Gary Bernhardt. Must watch!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3wyd6J3yjcs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rX0ItVEVjHc&#34;&gt;CppCon 2014: Mike Acton &amp;ldquo;Data-Oriented Design and C++&amp;rdquo;&lt;/a&gt;
+Ok, this is something paradigm shifting. Data-oriented versus object-oriented
+design.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/rX0ItVEVjHc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://antonz.ru/interest/&#34;&gt;Сделайте себе интересно&lt;/a&gt;
+&amp;ldquo;Это конспект лекции Людвига Быстроновского об интересе и контринтуитивном
+решении задач. Людвиг рассказывает, когда возникает интерес, какие приемы
+помогают не потерять его, чем вреден «поток» и как разрыв шаблона приводит к
+успеху.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>About me</title>
@@ -691,196 +762,6 @@ transcript of the same talk (I believe)
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://lifehacker.ru/2016/09/27/lichnaja-effektivnost/&#34;&gt;О личной эффективности&lt;/a&gt;
 Добротный пост про личную эффективность.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Обязательные приложения для путешествия по Китаю</title>
-      <link>http://homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</link>
-      <pubDate>Fri, 07 Oct 2016 12:17:02 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;china-trains&#34;&gt;China Trains&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/china_trains.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Билеты на поезд&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Интуитивный интерфейс, показывает сколько осталось мест (это важно). Можно
-использовать только для информации, если неохота дополнительно платить 40 юаней
-за бронь.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.travelchinaguide.com/china-trains/&#34;&gt;https://www.travelchinaguide.com/china-trains/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/china-trains-online-tickets/id564713153?mt=8&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.travelchinaguide.chinatrainsV2&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ctrip&#34;&gt;Ctrip&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/ctrip.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;отели, билеты на поезд или самолёт, статус рейса&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Заметил, что цены на отели выше, чем в Qunar.com. Но зато оно (приложение и
-сайт) на английском и принимает карты помимо
-&lt;a href=&#34;https://en.wikipedia.org/wiki/China_UnionPay&#34;&gt;UnionPay&lt;/a&gt;. Напомню, что в Китае
-наши обычные карточки (Visa, Mastercard) не принимаются (за исключением
-банкоматов, где можно снять наличность).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://english.ctrip.com/&#34;&gt;http://english.ctrip.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/ctrip-book-hotels-flights/id681752345?mt=8&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=ctrip.english&amp;hl=en&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;qunar-com-去哪儿旅行&#34;&gt;Qunar.com (去哪儿旅行)&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/qunar.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;отели, билеты на автобусы, поезда и самолеты&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;На китайском, но большая часть и так понятна. В режиме чтения можно
-использовать для получения информации об автобусах, доступном жилье и
-авиаперелетах. Инструкция ниже.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.qunar.com/&#34;&gt;http://www.qunar.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/qu-na-er-lu-xing-zong-you/id395096736?mt=8&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.Qunar&amp;hl=en&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;pleco&#34;&gt;Pleco&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/pleco.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;китайско-английский словарь&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Работает без интернета. Удобно учить слова отдельные. OCR (оптическое
-распознавание символов) на данный момент дороже, чем в Waygo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.pleco.com/&#34;&gt;https://www.pleco.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/pleco-chinese-dictionary/id341922306?mt=8&amp;uo=4&amp;at=11l4Wi&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.pleco.chinesesystem&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;waygo&#34;&gt;Waygo&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/waygo.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;переводит иероглифы с изображения из камеры на английский на лету&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Распознает китайский, японский и корейский языки. Работает без интернета.
-Удобно меню смотреть. В бесплатной версии только 10 переводов в день.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.waygoapp.com/&#34;&gt;http://www.waygoapp.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/app/id496038103?ls=1&amp;mt=8&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.waygoapp.waygo&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;baidu-maps-百度地图-智能出行&#34;&gt;Baidu maps (百度地图-智能出行)&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/baidu_maps.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;карты&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Аналог карт от Google. Работают шустро, сохраняют карты в офлайн. Собственно,
-ими я и пользовался на протяжении всей поездки. Задаешь точку отправления и
-прибытия, жмешь Enter и смотришь варианты (группы: автомобиль, общ.транспорт,
-пешком, такси).&lt;/p&gt;
-
-&lt;p&gt;Руководство &lt;a href=&#34;https://ykitai.com/2015/07/07/karta-baidu/&#34;&gt;https://ykitai.com/2015/07/07/karta-baidu/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://map.baidu.com/&#34;&gt;http://map.baidu.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/ru/app/bai-du-de-tu-zhi-neng-chu-xing/id452186370?l=en&amp;mt=8&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.baidu.BaiduMap&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;baidu-translate-百度翻译&#34;&gt;Baidu Translate 百度翻译&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/baidu_translate.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;китайско-английский переводчик&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Переводит довольно хорошо. Из минусов: не показывает пиньинь и требует интернет.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://fanyi.baidu.com/&#34;&gt;http://fanyi.baidu.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/ru/app/bai-du-fan-yi/id605670941?l=en&amp;mt=8&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.baidu.baidutranslate&amp;hl=en&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;metro-china-subway&#34;&gt;Metro China Subway&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/metroman.png&#34; alt=&#34;&#34; width=&#34;128px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;карты метро городов Китая&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Рассчитывают стоимость, время в пути (приблизительное). Работает без интернета.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/metro-china-subway/id466351433?mt=8&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_apple.png&#34; alt=&#34;Скачать в App Store&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.xinlukou.metroman&amp;hl=en&#34;&gt;
-  &lt;img src=&#34;http://homeonrails.com/images/appstore_button_google.png&#34; alt=&#34;Скачать в Google Play&#34; title=&#34;&#34;/&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;как-посмотреть-расписание-автобусов-и-станцию-отправления&#34;&gt;Как посмотреть расписание автобусов и станцию отправления&lt;/h2&gt;
-
-&lt;p&gt;В переводчике (Baidu Translate) забиваем &amp;ldquo;Автобус от Чэнду до Эмэйшань&amp;rdquo;.
-Копируем результат в строку поиска Qunar.com. Из предложенного списка выбираем
-автобус и переходим к результатам.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/bus_sequence_01.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;как-найти-гостиницу-хостел&#34;&gt;Как найти гостиницу/хостел&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-07-must-have-apps-for-traveling-in-china/hotel_sequence_01.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Жмем на иконку здания. Город выбираем либо вставляя его название из интернета
-или заметок, либо набирая на
-&lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C&#34;&gt;пиньине&lt;/a&gt;.
-Можно выбрать ценовой диапазон. Я обычно приходил по адресу и выкупал место на
-месте. Эта схема не будет работать разве что на праздниках (Китайский Новый Год
-и золотая неделя).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://dzhedtravel.blogspot.de/2014/04/blog-post_30.html&#34;&gt;Вот эти ребята&lt;/a&gt;
-умудрялись бронировать жилье без карты китайского банка, так что ознакомьтесь
-со статьей если для вас это актуально.&lt;/p&gt;
-
-&lt;h2 id=&#34;необязательные-приложения&#34;&gt;Необязательные приложения&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Офлайн карты для всего мира Maps.me &lt;a href=&#34;https://maps.me/en/home&#34;&gt;https://maps.me/en/home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Booking.com &lt;a href=&#34;https://www.booking.com/&#34;&gt;https://www.booking.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Знаете еще убер-крутые приложения? Оставьте комментарий!&lt;/p&gt;</description>
     </item>
     
   </channel>
