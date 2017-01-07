@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Home on Rails</title>
+    <link>http://homeonrails.com/tags/talks/index.xml</link>
+    <description>Recent content in Talks on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Best of Erlang User Conference 2016</title>
+      <link>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
+      <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
+      <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
+sharing them with the community.&lt;/p&gt;
+
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-erlang-and-deep-learning&#34;&gt;1. Erlang and Deep Learning&lt;/h1&gt;
+
+&lt;p&gt;by Garrett Smith (47 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/iMhBEVCgPdg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;An example of a very good presentation. After watching, I immediately wanted to learn more about deep learning.&lt;/p&gt;
+
+&lt;h1 id=&#34;2-rethinking-the-language-runtime-for-scale&#34;&gt;2. Rethinking the Language Runtime for Scale&lt;/h1&gt;
+
+&lt;p&gt;by Christopher Meiklejohn (45 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SXT_fVJOkD0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Christopher continues his series of presentations about the Lasp lang and its runtime system.&lt;/p&gt;
+
+&lt;h1 id=&#34;3-going-barking-mad-with-dalmatinerdb&#34;&gt;3. Going Barking Mad with DalmatinerDB&lt;/h1&gt;
+
+&lt;p&gt;by Steven Acreman and Heinz Gies (42 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/1lC8m3omo4I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;4-think-outside-the-vm-unobtrusive-performance-measurement&#34;&gt;4. Think Outside the VM: Unobtrusive Performance Measurement&lt;/h1&gt;
+
+&lt;p&gt;by Julian Squires (44 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xP2yzaYdjpo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
+
+&lt;p&gt;If you are an Erlang/Elixir/LFE developer and want to help, watch &lt;a href=&#34;https://www.youtube.com/watch?v=Z28SDd9bXcE&#34;&gt;How things are, and how they could be by Fred Hebert&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Russel Brown has a &lt;a href=&#34;https://www.youtube.com/watch?v=f20882ZSdkU&#34;&gt;nice talk on CRDT in Riak&lt;/a&gt; - what they&amp;rsquo;ve already implemented and future plans.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t know what LFE is, watch &lt;a href=&#34;https://www.youtube.com/watch?v=x2ysisqgd2g&#34;&gt;LFE: A Real Lisp in the Erlang Ecosystem by Robert Virding&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Strange Loop 2016</title>
+      <link>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
+      <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
+conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
+YouTube&lt;/a&gt;.
+Again, thank you to organizers for sharing them. I think, I have found real
+gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-agility-robustness-clojure-spec&#34;&gt;1. Agility &amp;amp; Robustness: Clojure spec&lt;/h1&gt;
+
+&lt;p&gt;by Stuart Halloway (40 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VNTQ-M_uSo8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;2-reasoning-about-performance-in-the-context-of-search&#34;&gt;2. Reasoning about performance (in the context of search)&lt;/h1&gt;
+
+&lt;p&gt;by Dan Luu (30 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/80LKF2qph6I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;3-point-free-or-die-tacit-programming-in-haskell-and-beyond&#34;&gt;3. Point-Free or Die: Tacit Programming in Haskell and Beyond&lt;/h1&gt;
+
+&lt;p&gt;by Amar Shah (36 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/seVSlKazsNk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;4-graphql-designing-a-data-language&#34;&gt;4. GraphQL: Designing a Data Language&lt;/h1&gt;
+
+&lt;p&gt;by Lee Byron (40 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Oh5oC98ztvI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;5-runtime-scheduling-theory-and-reality&#34;&gt;5. Runtime scheduling: theory and reality&lt;/h1&gt;
+
+&lt;p&gt;by Eben Freeman (42 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8g9fG7cApbc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
+
+&lt;p&gt;If you are curious about data structures, watch &lt;a href=&#34;https://www.youtube.com/watch?v=jdn617M3-P4&#34;&gt;&amp;ldquo;Exotic Functional Data
+Structures: Hitchhiker Trees&amp;rdquo; by David
+Greenberg&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is a nice intro to data processing systems - &lt;a href=&#34;https://www.youtube.com/watch?v=oaxBY-e9ZSg&#34;&gt;&amp;ldquo;Deep dive into
+Unbounded Data Processing Systems&amp;rdquo; by Monal
+Daxini&lt;/a&gt;. Apparently, Netflix is
+switching from their own custom solution, which uses Kafka and Samza, to Flink
+and thinking about Apache Beam.&lt;/p&gt;
+
+&lt;p&gt;If you are writing distributed task scheduler, watch &lt;a href=&#34;https://www.youtube.com/watch?v=s3GfXTnzG_Y&#34;&gt;&amp;ldquo;Building a Distributed
+Task Scheduler With Akka, Kafka, and Cassandra&amp;rdquo; by David van
+Geest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to know how Golang detect data races (hint: using vector clocks),
+take a look at &lt;a href=&#34;https://www.youtube.com/watch?v=5erqWdlhQLA&#34;&gt;&amp;rdquo;&amp;ldquo;go test -race&amp;rdquo; Under the Hood&amp;rdquo; by Kavya
+Joshi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And there is one more good &lt;a href=&#34;https://www.youtube.com/watch?v=B1-gS0oEtYc&#34;&gt;talk on CQRS and Event Sourcing by Bobby
+Calderwood&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Clojure/west 2016</title>
+      <link>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</link>
+      <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-06-18-the-best-of-clojure-slash-west-2016/donevan_dolby.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
+wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
+Clojure conference in the western United States and all about this language, as
+you may guess.&lt;/p&gt;
+
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-managing-one-of-the-world-s-largest-clojure-code-bases&#34;&gt;1. Managing One of the World&amp;rsquo;s Largest Clojure Code Bases&lt;/h1&gt;
+
+&lt;p&gt;by Donevan Dolby (41 min)&lt;/p&gt;
+
+&lt;p&gt;Never would have thought that Clojure could be a part of an airplane&amp;rsquo;s software (Boeing 737 Max).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=iUC7noGU1mQ&#34;&gt;https://www.youtube.com/watch?v=iUC7noGU1mQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-parallel-programming-fork-join-and-reducers&#34;&gt;2. Parallel Programming, Fork Join, and Reducers&lt;/h1&gt;
+
+&lt;p&gt;by Daniel Higginbotham (41 min)&lt;/p&gt;
+
+&lt;p&gt;Daniel is an author of &amp;ldquo;Clojure for the brave and true&amp;rdquo;. He talks about
+approaches to parallel programming (thread management, task decomposition) and
+fork/join framework. He is also fun to watch, so go watch it right now.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eRq5UBx6cbA&#34;&gt;https://www.youtube.com/watch?v=eRq5UBx6cbA&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-types-are-like-the-weather-type-systems-are-like-weathermen&#34;&gt;3. Types are like the Weather, Type Systems are like Weathermen&lt;/h1&gt;
+
+&lt;p&gt;by Matthias Felleisen (1 hour 15 min)&lt;/p&gt;
+
+&lt;p&gt;Types for untyped languages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;must speak the grown idioms&lt;/li&gt;
+&lt;li&gt;must allow gradual additions&lt;/li&gt;
+&lt;li&gt;ought to come with soundness because
+
+&lt;ul&gt;
+&lt;li&gt;it reduces developer time&lt;/li&gt;
+&lt;li&gt;it won&amp;rsquo;t mask errors (like Typed Clojure does)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=XTl7Jn_kmio&#34;&gt;https://www.youtube.com/watch?v=XTl7Jn_kmio&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-one-million-clicks-per-minute-with-kafka-and-clojure&#34;&gt;4. One Million Clicks per Minute with Kafka and Clojure&lt;/h1&gt;
+
+&lt;p&gt;by Devon Peticolas (31 min)&lt;/p&gt;
+
+&lt;p&gt;I like talks where you see the gradual improvement of the code (Kafka&amp;rsquo;s consumer in this case).&lt;/p&gt;
+
+&lt;p&gt;Devon finishes his talk with the thought that &lt;strong&gt;Clojure could potentially
+become the main language for stream processing applications&lt;/strong&gt; and solutions
+(&lt;a href=&#34;https://github.com/onyx-platform/onyx&#34;&gt;Onyx&lt;/a&gt;), because of it&amp;rsquo;s Java interop
+and Lisp&amp;rsquo;s expressiveness. What do you think?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=VC_MTD68erY&#34;&gt;https://www.youtube.com/watch?v=VC_MTD68erY&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Erlang Factory SF Bay 2016</title>
+      <link>http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
+      <pubDate>Thu, 31 Mar 2016 10:49:23 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
+      <description>&lt;p&gt;Annual &lt;a href=&#34;http://www.erlang-factory.com/sfbay2016&#34;&gt;Erlang Factory SF Bay Area
+2016&lt;/a&gt; conference ended only 3 weeks
+ago. There were many great speakers and presentations. What I specifically like
+about it, is that videos are available almost immediately. As usual, I am
+publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
+&lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-jamshid-mahdavi-an-erlang-based-philosophy-for-service-reliability-1&#34;&gt;1. Jamshid Mahdavi - An Erlang based Philosophy for Service Reliability 1&lt;/h1&gt;
+
+&lt;p&gt;by Jamshid Mahdavi, WhatsApp Inc. (45 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/tW49z8HqsNw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Great talk from the WhatsApp engineer on how they make this app so bulletproof.&lt;/p&gt;
+
+&lt;h1 id=&#34;2-a-brief-history-of-time&#34;&gt;2. A Brief History of Time&lt;/h1&gt;
+
+&lt;p&gt;by Fred Hebert aka ferd (45 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WoUn2XQvGDw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;An excursion into the history of different civilizations and their calendars. Fascinating!&lt;/p&gt;
+
+&lt;h1 id=&#34;3-reactive-programming-with-elixir-and-rethinkdb&#34;&gt;3. Reactive Programming With Elixir And RethinkDB&lt;/h1&gt;
+
+&lt;p&gt;by Peter Hamilton, RethinkDB (36 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/6K0Tjvn6PV8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Peter talks about one of the ways to build a reliable processing pipeline which
+stores intermediate results inside RethinkDB. You will need something like this
+if it&amp;rsquo;s undesirable to restart the whole pipeline from the beginning.&lt;/p&gt;
+
+&lt;h1 id=&#34;4-keynote-phoenix-and-elm-making-the-web-functional&#34;&gt;4. Keynote Phoenix and Elm – Making the Web Functional&lt;/h1&gt;
+
+&lt;p&gt;by Chris McCord and Evan Czaplicki (55 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/XJ9ckqCMiKk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Feel free to skip the Elm part if you are already familiar with this language.&lt;/p&gt;
+
+&lt;h1 id=&#34;5-high-performance-erlang-pitfalls-and-solutions&#34;&gt;5. High Performance Erlang Pitfalls and Solutions&lt;/h1&gt;
+
+&lt;p&gt;by MZSPEED team, MachineZone Inc. (47 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SPZV2h_r4U0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;How would you build a fast data processing system in Erlang? The presenters
+tell a story about their attempts in building one and the difficulties they
+faced along the way.&lt;/p&gt;
+
+&lt;p&gt;Also there were 2 talks on &lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS&lt;/a&gt;, which seems interesting.&lt;/p&gt;
+
+&lt;p&gt;If are planning to use Kafka with Erlang, you should probably watch &lt;a href=&#34;https://youtu.be/FTLTbB8BlYc&#34;&gt;this talk&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Лучшие доклады fpconf 2015</title>
+      <link>http://homeonrails.com/2016/01/the-best-of-fpconf-2015/</link>
+      <pubDate>Sat, 23 Jan 2016 11:15:07 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/01/the-best-of-fpconf-2015/</guid>
+      <description>&lt;p&gt;В прошлом году состоялась первая конференция, посвященная функциональному
+программированию - &lt;a href=&#34;http://fpconf.ru/&#34;&gt;fpconf&lt;/a&gt;. Судя по рассказам моих
+знакомых, подобралась неплохая компания и было несколько действительно крутых
+докладов. К счастью, вам не надо смотреть все выложенные видео, чтобы найти те
+самые доклады.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Дисклеймер: выбранные материалы и степень их крутости отражают личное мнение
+автора. Ваше мнение может отличаться.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-clojure-data-dsl-s-для-web-разработки&#34;&gt;1. Clojure Data DSL&amp;rsquo;s для web разработки&lt;/h1&gt;
+
+&lt;p&gt;Николай Рыжиков (46 мин)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/urQ5o754TU4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Код и данные, как Инь и Янь, и граница между ними при пристальном взгляде начинает исчезать. На примере web стэка для clojure мы познакомимся c Data DSL - hiccup, honeysql, prismatic schema, в режиме реального времени попробуем написать свои DSL и познать Дао.&lt;/p&gt;
+
+&lt;h1 id=&#34;2-фронтенд-без-грусти&#34;&gt;2. Фронтенд без грусти&lt;/h1&gt;
+
+&lt;p&gt;Никита Прокопов (50 мин)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/cRWrrHPrk9g&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Писать веб-приложение — то еще занятие: медленно, сложно, да и платформа скорее мешает, чем помогает. В докладе мы ответим:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Как функциональный подход помогает делать веб-приложения?&lt;/li&gt;
+&lt;li&gt;Может ли база данных быть иммутабельной?&lt;/li&gt;
+&lt;li&gt;Зачем вообще на фронте база данных?&lt;/li&gt;
+&lt;li&gt;Что интересного можно сделать с такими инструментами?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Причем не вообще, а на конкретных примерах ClojureScript и DataScript.&lt;/p&gt;
+
+&lt;h1 id=&#34;3-scala-performance-для-сомневающихся&#34;&gt;3. Scala performance для сомневающихся&lt;/h1&gt;
+
+&lt;p&gt;Роман Гребенников (48 мин)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/__PLkxx6Yko&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Язык Scala нынче модный: тут вам и паттерн матчинг, и рекурсия, и коллекции, обильно приправленные лямбдами, а также много других страшных слов из мира функционального программирования, для понимания которых не нужна ученая степень по математике. И все эти плюшки органично переплетены в такой язык, начав писать на котором, очень тяжело перестать.
+Но волшебство функциональной легкости заканчивается с фразой &amp;ldquo;а почему я переписал 100 строк лапши на Java в однострочник на Scala, но оно стало работать в 3 раза медленнее?&amp;rdquo;, и мечта о прекрасном языке превращается в тыкву. Суровая реальность грязным сапогом как бы говорит нам, что абстракции языков высокого уровня могут скрывать монстров и всё удобство имеет свою цену. И если вы делаете на Scala не простое CRUD-приложение, а что-то, хоть отдаленно связанное с нагрузкой, необходимо хорошо понимать, во что именно вам обходятся все вот эти монады-шмонады.
+Доклад может открыть глаза на возможные подводные камни производительности людям, практикующим программирование на Scala. В процессе будет рассказано:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;об интеграции jmh и sbt;&lt;/li&gt;
+&lt;li&gt;о том, как заставить scalac рассказывать о том, что он там наоптимизировал;&lt;/li&gt;
+&lt;li&gt;о тайнах паттерн-матчинга, хвостовой рекурсии и scala-коллекций;&lt;/li&gt;
+&lt;li&gt;об умном HotSpot, который геройски все это оптимизирует.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;P.S. Этот доклад Роман читает не впервые, так что возможно вы его уже смотрели.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-самурайский-путь-молодого-scala-программиста&#34;&gt;4. Самурайский путь молодого Scala-программиста&lt;/h1&gt;
+
+&lt;p&gt;Сергей Лобин (45 мин)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Pu3D5GQ6UEg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;История о том:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Как в &amp;ldquo;Спутнике&amp;rdquo; появилась Scala.&lt;/li&gt;
+&lt;li&gt;Как написать функциональный поиск.&lt;/li&gt;
+&lt;li&gt;Какие мы набили шишки на пути в бой.&lt;/li&gt;
+&lt;li&gt;Правда ли что Scala такая прожорливая.&lt;/li&gt;
+&lt;li&gt;Плюсы и минусы разработки на Scala.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;5-f-type-providers-the-current-state&#34;&gt;5. F# TYPE PROVIDERS: THE CURRENT STATE&lt;/h1&gt;
+
+&lt;p&gt;Сергей Тихон (33 мин)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/gsrSoZQUV-A&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;F# Type Providers это механизм позволяющий упростить интеграцию кода и данных и является альтернативой подходу кодо-генерации. В докладе будут рассмотрены:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Code Quotations и принципы работы type provider&amp;rsquo;ов.&lt;/li&gt;
+&lt;li&gt;Обзор существующих type provider&amp;rsquo;ов.&lt;/li&gt;
+&lt;li&gt;Особенности разработки собственных type provider&amp;rsquo;ов.&lt;/li&gt;
+&lt;li&gt;Нововведения F# 4.0 для type provider&amp;rsquo;ов.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of RICON 2015</title>
+      <link>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</link>
+      <pubDate>Sun, 13 Dec 2015 10:16:59 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ricon.io/index.html&#34;&gt;RICON&lt;/a&gt; is all about distributed systems. There
+are a lot of academic (Phd) talks and a few practical ones. I&amp;rsquo;ve chosen 3 out
+of 37 videos, which I liked the most. Hope you&amp;rsquo;ll enjoy these too. &lt;em&gt;Disclaimer:
+your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-dynamiq-an-implementation-of-a-fanout-queue-on-top-of-riak&#34;&gt;1. Dynamiq - An implementation of a fanout / queue on top of Riak&lt;/h1&gt;
+
+&lt;p&gt;by Sean Kelly, Tapjoy (47 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KKk_je4GCqs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;In his talk, Sean explains why they have decided to write their own queue and
+not to use existing solutions (such as NSQ or Kafka). After that he presents
+the result and lessons they have learned on the way.&lt;/p&gt;
+
+&lt;h1 id=&#34;2-writing-distributed-systems-is-hard&#34;&gt;2. Writing distributed systems is hard&lt;/h1&gt;
+
+&lt;p&gt;by Ben Hindman, Founder Mesosphere, Inc. (1 hour 2 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/K76WZkkBO2c&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;3-distributed-transactions-the-fairness-isolation-throughput-tradeoff&#34;&gt;3. Distributed Transactions - The Fairness Isolation Throughput Tradeoff&lt;/h1&gt;
+
+&lt;p&gt;by Jose Faleiro, Yale University (45 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/5GvvkmrKKrM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;WARNING: his English is not perfect&lt;/em&gt;. But if you&amp;rsquo;re interested in distributed
+transactions (in DBs) - must watch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/N2472uS5Y6M?t=17m31s&#34;&gt;The good news&lt;/a&gt; from Uber: they are getting out of HTTP + Json business because:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTTP is slow, complex, and inconsistent&lt;/li&gt;
+&lt;li&gt;JSON is hard to validate, awkward in non-node&lt;/li&gt;
+&lt;li&gt;Thrift is ok, but generated code is bad&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That&amp;rsquo;s why they wrote &lt;a href=&#34;https://github.com/uber/thriftrw-node&#34;&gt;https://github.com/uber/thriftrw-node&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/uber/thriftrw-python&#34;&gt;https://github.com/uber/thriftrw-python&lt;/a&gt; libraries.&lt;/p&gt;
+
+&lt;p&gt;Also there are some &lt;a href=&#34;https://youtu.be/GT8JbaRyrsc?t=28m34s&#34;&gt;great lessons&lt;/a&gt; from Noah Gift:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ORMs are just horrible&lt;/li&gt;
+&lt;li&gt;Really do take backups seriously&lt;/li&gt;
+&lt;li&gt;Erlang and Riak are really good combination&lt;/li&gt;
+&lt;li&gt;Be ok with constantly failing in every way possible: Hiring, Software, Product Market fit, Technology&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Strange Loop 2015</title>
+      <link>http://homeonrails.com/2015/11/the-best-of-strange-loop-2015/</link>
+      <pubDate>Sat, 07 Nov 2015 16:10:26 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/11/the-best-of-strange-loop-2015/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is my top 5 &amp;ldquo;every year&amp;rdquo;
+conferences. There were &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaCIl5eU53uPBnRJ9rbIH32R&#34;&gt;many
+videos&lt;/a&gt;
+uploaded this year. Again, kudos to organizers for them. I think, I have found
+real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-building-scalable-stateful-services&#34;&gt;1. Building Scalable Stateful Services&lt;/h1&gt;
+
+&lt;p&gt;by Caitie McCaffrey (35 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/H0i_bXKwujQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;2-transactions-myths-surprises-and-opportunities&#34;&gt;2. Transactions: myths, surprises and opportunities&lt;/h1&gt;
+
+&lt;p&gt;by Martin Kleppmann (41 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/5ZjhNTM8XU8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;3-i-see-what-you-mean&#34;&gt;3. I See What You Mean&lt;/h1&gt;
+
+&lt;p&gt;by Peter Alvaro (52 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/R2Aa4PivG0g&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;4-eve&#34;&gt;4. Eve&lt;/h1&gt;
+
+&lt;p&gt;by Chris Granger (46 min)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/5V1ynVyud4M&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Curry On 2015</title>
+      <link>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</link>
+      <pubDate>Mon, 14 Sep 2015 23:19:10 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
+(first time this year), which took place in Prague earlier in July. Despite its
+age, many good speakers happened to be there. Here is the list of my favorite
+talks. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-pull-push-please-stop-polluting-our-imperative-languages-with-pure-concepts&#34;&gt;1. Pull Push: Please stop polluting our imperative languages with pure concepts&lt;/h1&gt;
+
+&lt;p&gt;by Ron Pressler (&lt;strong&gt;45 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/449j7oKQVkc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;2-some-things-that-macros-do&#34;&gt;2. Some Things That Macros Do&lt;/h1&gt;
+
+&lt;p&gt;by Zach Tellman (&lt;strong&gt;40 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/o69H0MXCNxw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;3-pony-making-it-easy-to-write-efficient-concurrent-data-race-free-programs&#34;&gt;3. Pony: Making it easy to write efficient, concurrent, data race free programs&lt;/h1&gt;
+
+&lt;p&gt;by Sylvan Clebsch, Sebastian Blessing (&lt;strong&gt;46 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KvLjy8w1G_U&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;4-keynote-what-if-anything-have-we-learned-from-c&#34;&gt;4. [Keynote] What – if anything – have we learned from C++?&lt;/h1&gt;
+
+&lt;p&gt;by Bjarne Stroustrup (&lt;strong&gt;1 hour 30 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/2egL4y_VpYg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;This is my fantastic four. However, I also enjoyed &lt;a href=&#34;https://www.youtube.com/watch?v=AWeT_G04a0A&#34;&gt;the talk&lt;/a&gt; about
+dependent types in Idris, &lt;a href=&#34;https://www.youtube.com/watch?v=vzzABBxo44g&#34;&gt;tips for VM writers&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/watch?v=oYk8CKH7OhE&#34;&gt;user-focused design in
+Elm&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The best of Erlang User Conference 2015</title>
+      <link>http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</link>
+      <pubDate>Mon, 10 Aug 2015 11:53:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</guid>
+      <description>&lt;p&gt;It’s been a few months since this year’s Erlang User Conference 2015, so most
+of the videos are now online (kudos to organizers). Here is a short list of my
+favorite talks. Enjoy!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-about-language-design&#34;&gt;1. About Language Design&lt;/h1&gt;
+
+&lt;p&gt;by Robert Virding (&lt;strong&gt;44 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/afLRmoSOnHA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;2-techniques-for-metaprogramming-in-erlang&#34;&gt;2. Techniques for Metaprogramming in Erlang&lt;/h1&gt;
+
+&lt;p&gt;by Sean Cribbs (&lt;strong&gt;40 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8v4ZfJUTnLc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;3-cloud-scale-erlang&#34;&gt;3. Cloud Scale Erlang&lt;/h1&gt;
+
+&lt;p&gt;by Richard Croucher (&lt;strong&gt;38 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/te89NpsryTA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;4-building-a-scalable-real-time-bidding-exchange&#34;&gt;4. Building a Scalable Real Time Bidding Exchange&lt;/h1&gt;
+
+&lt;p&gt;by Philip Clarke (&lt;strong&gt;37 min&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/4PDInGV7bNw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fast Rails API</title>
+      <link>http://homeonrails.com/2014/03/fast-rails-api/</link>
+      <pubDate>Sun, 09 Mar 2014 13:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
+      <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
+colleagues.&lt;/p&gt;
+
+&lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
+ending by using Fragment caching. Also there is list of tools for
+profiling applications (stackprof, etc.). All techniques are quite
+famous.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;script async=&#34;true&#34; class=&#34;speakerdeck-embed&#34; data-id=&#34;b618391085100131b8c566a463623da4&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;       &lt;/script&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-we-ve-tried&#34;&gt;What we&amp;rsquo;ve tried&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Connection pool
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://devcenter.heroku.com/articles/concurrency-and-database-connections&#34;&gt;Concurrency and Database Connections in Ruby with ActiveRecord&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rails-api/rails-api&#34;&gt;Rails-api&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Do not load &lt;code&gt;rails/all&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Establish DB connection after fork/new thread was created&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kzk/unicorn-worker-killer&#34;&gt;Unicorn worker killer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Postgresql tuning
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://postgresql.leopard.in.ua/html/&#34;&gt;Работа с PostgreSQL: настройка и масштабирование Алексея Васильева&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://momjian.us/main/writings/pgsql/hw_performance/&#34;&gt;PostgreSQL Hardware Performance Tuning by Bruce Momjian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://raghavt.blogspot.ru/2012/04/caching-in-postgresql.html&#34;&gt;Caching in PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Rails 4&lt;/li&gt;
+&lt;li&gt;Ruby 2.1.0&lt;/li&gt;
+&lt;li&gt;Fragment caching
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://devcenter.heroku.com/articles/caching-strategies&#34;&gt;Caching Strategies for Rails&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://signalvnoise.com/posts/3113-how-key-based-cache-expiration-works&#34;&gt;How key-based cache expiration works&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rails-api/active_model_serializers&#34;&gt;Active Model Serializers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ohler55/oj&#34;&gt;Oj&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Do not instantiate AR objects
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://brainspec.com/blog/2012/09/28/lightning-json-in-rails/&#34;&gt;Lightning JSON in Rails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Try &lt;a href=&#34;https://github.com/tmm1/gctools&#34;&gt;OOBGC - Out-of-Band GC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try different web server (e.g. Puma)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If we missed something, please share your ideas in comments.&lt;/p&gt;
+
+&lt;h2 id=&#34;profiling-tools&#34;&gt;Profiling tools&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tmm1/stackprof&#34;&gt;Stackprof&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/miniprofiler/rack-mini-profiler&#34;&gt;Rack Mini Profiler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/flyerhzm/bullet&#34;&gt;Bullet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wvanbergen/request-log-analyzer&#34;&gt;Request log analyzer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://newrelic.com/&#34;&gt;NewRelic&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;On the penultimate slide is the title slide of the &lt;a href=&#34;http://www.slideshare.net/maxlapshin/rails-26416461&#34;&gt;presentation&lt;/a&gt; of Max
+Lapshin, which briefly tells that to solve certain problems (such as when you need to
+keep a large number of clients) more appropriate solution might be using
+another technologies/languages (Erlang in particular).&lt;/p&gt;
+
+&lt;p&gt;UPD. Ideas from comments&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Try &lt;a href=&#34;http://api.rubyonrails.org/classes/ActionController/ConditionalGet.html&#34;&gt;Conditional Get&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Выступление на Belarus Ruby Meetup 2013</title>
+      <link>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</link>
+      <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
+      <description>&lt;p&gt;  Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где
+прошла очередная встреча ruby разработчиков &lt;a href=&#34;http://lanyrd.com/2013/belarus-ruby/&#34; target=&#34;_blank&#34;&gt;Belarus Ruby Meetup&lt;/a&gt;. Формат
+встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске.
+Однако, есть ряд особенностей и интересных вещей, о которых грех
+не упомянуть.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;  Скорее всего ввиду близости к Европе, среди спикеров регулярно
+появляются иностранные докладчики (на прошедшей встречи одним из них был
+Piotr Sarnacki (Warsaw), Rails контрибьютор и энтузиаст Ember.js, который рассказал
+про устройство Travis CI. Видео доступно по &lt;a href=&#34;http://youtu.be/RitU7AWb1JA&#34; target=&#34;_blank&#34;&gt;ссылке&lt;/a&gt;). Были также докладчики из
+Аргентины. С ними связывались по скайпу - своего рода телемост. Мне кажется с
+появлением таких продуктов как Skype и Google Hangouts такой формат докладов наберет
+большую популярность, особенно когда нет возможности физически добраться до места.
+Едиственным требованием является хороший интернет канал.&lt;/p&gt;
+
+&lt;p&gt;  В этом году мероприятие проходило в &lt;a href=&#34;http://me100.by/&#34; target=&#34;_blank&#34;&gt;ME100&lt;/a&gt; - насколько я понял, одно из бывших
+заводских помещений. Мне импонирует не столько место, сколько смена обстановки. Я
+не говорю, что надоело слушать доклады в чьем-либо офисе. Просто это было
+определенно чем-то новым :) Причем, места проведения каждый раз ротируются.
+К примеру, один из митапов проходил на свежем воздухе, где у участников также была
+возможность пострелять из лука! Неожиданно, правда?&lt;/p&gt;
+
+&lt;div align=&#34;left&#34;&gt;
+  &lt;img width=&#34;70%&#34; class=&#34;img-polaroid&#34; src=&#34;http://homeonrails.com/images/posts/2013-07-28-speaking-at-belarus-ruby-meetup/me100.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/div&gt;
+&lt;br&gt;
+
+&lt;h3&gt;О Минске&lt;/h3&gt;
+
+&lt;p&gt;  Город мне понравился. Там может быть не так много достопримечательностей по
+сравнению с тем же Киевом, но они и не требуются. Это город для жизни. Вкусная и
+натуральная еда (одна картошка чего стоит, ммм), обилие парков и приветливые люди.
+Быть может я чего-то не заметил, но оно и к лучшему - впечатления не испортил.&lt;/p&gt;
+
+&lt;h3&gt;Сам доклад&lt;/h3&gt;
+
+&lt;p&gt;Слайды&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;68536f2088ba0130648822000a1e8e93&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Видео&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/D6LXW3ZisB8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Готовые Vim сборки VS свои детища</title>
+      <link>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
+      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
+      <description>&lt;p&gt;Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
+возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
+есть чистый .vimrc и ваша фантазия.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Что лучше выбрать для старта? Сборки позволяют быстро спрыгнуть с IDE на Vim.
+Хотя некоторые опытные вимеры считают, что правильным путем является &#34;Начало с нуля&#34;,
+когда вы постепенно улучшаете Vim каждый день, уча и привнося что-то новое.&lt;/p&gt;
+
+&lt;p&gt;I still think the right path is to start with an unconfigured, stock Vim distribution,
+but to each their own.” - &lt;a href=&#34;http://statico.github.io/vim2.html&#34; target=&#34;_blank&#34;&gt;Ian Langworth’s &#34;Everything I Missed in &#34;Vim After 11 Years&#34;&#34;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Концепция постепенного развития очень хорошо описана в статье &lt;a href=&#34;http://ctoomey.com/posts/an-incremental-approach-to-vim/&#34; target=&#34;_blank&#34;&gt;Chris Toomey &#34;An Incremental Approach to Vim&#34;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;В своем докладе я поделился мыслями по поводу плюсов того и другого. Также были
+рассмотрены текущие плагин-менеджеры и их внутреннее устройство.
+P.S. В конце есть список очень хороших статей, с которыми не грех ознакомиться.&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b4b710d0c2370130997122e18eedc69a&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Об интерфейсе</title>
+      <link>http://homeonrails.com/2013/02/about-interface/</link>
+      <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/02/about-interface/</guid>
+      <description>&lt;p&gt;Проектирование взаимодействия все еще является достаточно молодой дисциплиной.
+Тем не менее, ее изучение может принести некоторую выгоду. Если вы разработчик,
+то она заставит вас взглянуть на продукт под другим углом, что в перспективе,
+откроет перед вами пути по улучшению пользовательского опыта.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Если у вас есть желание поглубже заглянуть в эту тему можно почитать такие
+замечательные книги как &lt;a href=&#34;http://www.ozon.ru/context/detail/id/4562908/?partner=akalyaev&amp;amp;from=bar&#34;&gt;Алан Купер об интерфейсе. Основы проектирования
+взаимодействия | Алан Купер, Роберт Рейман, Дэвид
+Кронин&lt;/a&gt;
+и &lt;a href=&#34;http://www.ozon.ru/context/detail/id/1332088/?partner=akalyaev&amp;amp;from=bar&#34;&gt;Интерфейс: новые направления в проектировании компьютерных систем | Джеф
+Раскин&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;В своем докладе я рассмотрел основные проблемы существующих продуктов, понятия
+модели реализации и ментальной модели, а также процесс целеориентированного
+проектирования как способа построения интерфейса вашего продукта.&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1861f7e063e80130bcab12313d146296&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kaizen philosophy (Initial commit)</title>
+      <link>http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</guid>
+      <description>&lt;p&gt;Обучение новичков всегда было не таким уж легким делом. Когда в команду
+приходят новые люди, их необходимо познакомить с основными подходами, техниками
+и интрументами, принятыми на вооружении. Каждая компания подходит к этому по
+разному. Кто-то проводит обучающие семинары, кто-то - отдает новоприбывших в
+руки более опытных коллег. (aka team leaders)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Мне очень понравилась идея компании [Valve](&lt;a href=&#34;http://store.valvesoftware.com/&#34;&gt;http://store.valvesoftware.com/&lt;/a&gt;.
+Каждому новому сотруднику выдается карманная книга &lt;a href=&#34;http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf&#34;&gt;HANDBOOK FOR NEW
+EMPLOYEES&lt;/a&gt;, в
+которой красочно описана история компании и ее философия, а также, что компании
+ждет от сотрудника в первые месяцы работы. Вообще, сама компания довольно
+интересная. К слову сказать, там нет менеджеров и каждый работник волен сам
+выбирать проект, в котором он хочет участвовать.&lt;/p&gt;
+
+&lt;p&gt;Подробнее о корпоративной культуре компании можно почитать в &lt;a href=&#34;http://habrahabr.ru/post/142645/&#34;&gt; посте на Хабре
+&lt;/a&gt;. Если вас заинтересовала данная тематика,
+можно также посмотреть презентацию Антона Волкова из компании Alternativa
+(конференция Flash GAMM) - &lt;a href=&#34;http://www.youtube.com/watch?v=1wwuBzKuVrc&#34;&gt;AlternativaPlatform: Как я перестал мешать людям
+работать Flash GAMM&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;В своем докладе я попытался собрать коллекцию принципов, взяв за основу
+философию Кайдзен. Не все из них находят отражение в разработке программного
+обеспечения. Каждый принцип по сути представляет собой совет начинающему
+разработчику. Я чувствую, что презентацию можно улучшить, поэтому назову эту
+&amp;ldquo;Initial commit&amp;rdquo; :)&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;7d49cd9053f80130e3bd12313d091534&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ruby&#39;s GC (RU)</title>
+      <link>http://homeonrails.com/2012/11/rubys-gc-ru/</link>
+      <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/11/rubys-gc-ru/</guid>
+      <description>&lt;p&gt;В последнее время в Кайдзен проходит все больше и больше внутренних докладов, в
+рамках которых каждый делится своими знаниями в той или иной области (к примеру
+доклад Александра Кириллова @saratovsource &lt;a href=&#34;http://www.slideshare.net/ssusercdd0ed/securing-rails-applications&#34;&gt;Securing Rails
+Applications&lt;/a&gt;).
+Докладчику это позволяет лишний раз потренироваться в искусстве публичных
+выступлений, аудитории же - набраться полезных знаний. Один из таких докладов я
+и представляю на ваш суд.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Доклад посвящен основным вехам в развитии сборщика мусора в Ruby. Также
+рассматриваются такие темы, как возможности настройки и профайлинга Ruby
+приложений, хранение объектов в Ruby и альтернативные подходы к реализации GC,
+реализованные в других языках программирования.&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;50ca0b6017c60130c10622000a9d06d3&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

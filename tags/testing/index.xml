@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Home on Rails</title>
+    <link>http://homeonrails.com/tags/testing/index.xml</link>
+    <description>Recent content in Testing on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
+      <link>http://homeonrails.com/2015/07/testing-reducer/</link>
+      <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/07/testing-reducer/</guid>
+      <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
+project. Even though, it was pretty easy, I do confronted with a couple of
+errors.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I started out by looking at &lt;a href=&#34;https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial&#34;&gt;this
+tutorial&lt;/a&gt;
+and found out it is a bit outdated. So I will post a necessary steps here.&lt;/p&gt;
+
+&lt;p&gt;First thing to do is, obviously, add mrunit as a dependency to your project:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;org.apache.mrunit&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;mrunit&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt;
+  &amp;lt;classifier&amp;gt;hadoop2&amp;lt;/classifier&amp;gt;
+  &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;This is for Maven and Hadoop 2.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Next step is to write a simple test case:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Test
+public void returnsMaximumIntegerInValues() throws IOException,
+    InterruptedException {
+    new ReduceDriver&amp;lt;Text, IntWritable, Text, IntWritable&amp;gt;()
+        .withReducer(new MaxTemperatureReducer())
+        .withInput(new Text(&amp;quot;1950&amp;quot;),
+            Arrays.asList(new IntWritable(10), new IntWritable(5)))
+        .withOutput(new Text(&amp;quot;1950&amp;quot;), new IntWritable(10))
+        .runTest();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Back to our story. So, I ended up with something like this:&lt;/p&gt;
+
+&lt;p&gt;{% gist e878b351daa8dd17bfae CatMaxAgesReducerTest.java %}&lt;/p&gt;
+
+&lt;p&gt;After running, I encountered the following error:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;No applicable class implementing Serialization in conf at io.serializations: class org.apache.hadoop.hbase.client.Put&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Because we use HBase to store our data and this reducer outputs its result to
+HBase table, Hadoop is telling us that he doesn&amp;rsquo;t know how to serialize our
+data. That is why we need to help it. Inside &lt;code&gt;setUp&lt;/code&gt; set the
+&lt;code&gt;io.serializations&lt;/code&gt; variable:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;conf.setStrings(&amp;quot;io.serializations&amp;quot;, new String[]{conf.get(&amp;quot;io.serializations&amp;quot;), MutationSerialization.class.getName(), ResultSerialization.class.getName()});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Apart from tests, you will hardly see such a code, because
+&lt;a href=&#34;https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.html&#34;&gt;TableMapReduceUtil&lt;/a&gt;
+hides many details from you.&lt;/p&gt;
+
+&lt;p&gt;When you do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;TableMapReduceUtil.initTableReducerJob(
+    Bytes.toBytes(&amp;quot;animals&amp;quot;),
+    CatMaxAgesReducer.class,
+    job
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;it sets all the necessary settings required to a Reducer to work.&lt;/p&gt;
+
+&lt;p&gt;Useful links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial&#34;&gt;https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ctrl-r.org/?p=291&#34;&gt;http://www.ctrl-r.org/?p=291&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.cloudera.com/blog/2013/09/how-to-test-hbase-applications-using-popular-tools/&#34;&gt;http://blog.cloudera.com/blog/2013/09/how-to-test-hbase-applications-using-popular-tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Опции meck:new</title>
+      <link>http://homeonrails.com/2015/03/meck-new-options/</link>
+      <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/03/meck-new-options/</guid>
+      <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;passthrough&lt;/code&gt; пробрасывает функции meck-модуля (string_meck) в оригинальный модуль (string)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;meck:new(string, [passthrough]),
+meck:expect(string, char_at,
+    fun(0) -&amp;gt;
+        $a;
+    (Pos) -&amp;gt;
+        meck:passthrough([Pos])
+end),
+?assert(meck:validate(string)).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;no_link&lt;/code&gt; не связывать meck процесс с вызывающим процессом. В зависимости от значения используется либо &lt;code&gt;gen_server:start_link&lt;/code&gt;, либо &lt;code&gt;gen_server:start&lt;/code&gt;. По умолчанию при падении вызывающего процесса meck выгрузит все модули. &lt;strong&gt;Не понимаю зачем может потребоваться не связывать эти процессы.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;unstick&lt;/code&gt; для мокинга stdlib, kernel или compiler. По умолчанию Erlang запрещает перезагружать данные модули в целях безопасности.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;no_passthrough_cover&lt;/code&gt; запрещает отслеживать покрытие тестами passthrough вызовов. &lt;strong&gt;Видимо когда-то были проблемы при взаимодействии cover и meck и, в результате, родилась данная опция.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;{spawn_opt, list()}&lt;/code&gt; позволяет указать &lt;code&gt;spawn_opt&lt;/code&gt; для &lt;code&gt;gen_server:start_link&lt;/code&gt;. Подробнее &lt;a href=&#34;http://erlang.org/doc/man/erlang.html#spawn_opt-4&#34;&gt;http://erlang.org/doc/man/erlang.html#spawn_opt-4&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;no_history&lt;/code&gt; - не записывать историю.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;non_strict&lt;/code&gt; позволяет создать expectation для несуществующей функции или даже создать несуществующий модуль. &lt;strong&gt;Не думаю, что эта хорошая практика.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;{stub_all, &#39;{@link ret_spec()}&#39;}&lt;/code&gt; замокает все функции модуля и будет возвращать то, что указано вторым параметром.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;meck:new(string, [stub_all]),
+?assertEqual(ok, string:colorize()).
+
+meck:new(string, [{stub_all, true}]),
+?assertEqual(true, string:contains($a)).
+
+meck:new(string, [{stub_all, meck:seq([$a, $b, $c])}]),
+?assertEqual($a, string:char_at(1)),
+?assertEqual($b, string:char_at(2)),
+?assertEqual($c, string:char_at(3)),
+?assertEqual($c, string:char_at(4)).
+
+meck:new(string, [{stub_all, meck:loop([$a, $b, $c])}]),
+?assertEqual($a, string:char_at(1)),
+?assertEqual($b, string:char_at(2)),
+?assertEqual($c, string:char_at(3)),
+?assertEqual($a, string:char_at(4)). %% заметили разницу между seq?
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shamrock</title>
+      <link>http://homeonrails.com/2015/02/shamrock/</link>
+      <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/02/shamrock/</guid>
+      <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
+и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
+написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
+сервер&lt;/a&gt;
+или выбрать один из существующих, и стартовать его на время тестов(а). А можно
+взять готовую библиотеку - &lt;a href=&#34;https://github.com/jsl/shamrock&#34;&gt;Shamrock&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Она принимает на вход любое Rack приложение и запускает его в отдельном треде с
+помощью WEBrick&amp;rsquo;а. Порт можно задать самому. В противном случае будет
+использован первый свободный.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def setup
+  json = load_fixture(&amp;quot;service/200.json&amp;quot;)
+  my_rack_app = proc {|env| [200, {&amp;quot;Content-Type&amp;quot; =&amp;gt; &amp;quot;application/json&amp;quot;}, [json]]}
+  @service = Shamrock::Service.new(my_rack_app)
+  @service.start
+  @service.uri    # =&amp;gt; #&amp;lt;URI::HTTP http://localhost:54321&amp;gt;
+end
+
+def teardown
+  @service.stop
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Доступные параметры у Service#new:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;handler&lt;/code&gt; - обработчик, который запускает Rack приложение (по умолчанию Rack::Handler::WEBrick)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;port&lt;/code&gt; - порт&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;monitor&lt;/code&gt; - монитор, который блокируется до тех пор, пока сервер не стартанет&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Вообще, либа написана хорошо, и выполняет именно то, что от нее ждут. Правда
+популярности ей это не принесло :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Тестируем HTTP клиент на Java</title>
+      <link>http://homeonrails.com/2015/02/testing-http-client-in-java/</link>
+      <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/02/testing-http-client-in-java/</guid>
+      <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
+на Java. Он совсем простой и состоит буквально из одного метода -
+&lt;a href=&#34;https://gist.github.com/akalyaev/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.
+Поэтому я решил не использовать Apache&amp;rsquo;s HTTPClient и другие библиотеки, вроде
+Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
+нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Для тестирования нам понадобятся следующие библиотеки:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JUnit&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mockito/mockito&#34;&gt;Mockito&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/powermock/&#34;&gt;PowerMock&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;{% gist 63b9084d3804f72be2d7 HttpClientTest.java %}&lt;/p&gt;
+
+&lt;p&gt;На мой взгляд, код получился очень понятным и не требует детального пояснения.&lt;/p&gt;
+
+&lt;p&gt;Единственное, стоит пожалуй разъяснить зачем нужны аннотации сверху класса.
+Первая из них - &lt;code&gt;@RunWith&lt;/code&gt;, заменяет стандартный JUnit runner тестов на
+PowerMock&amp;rsquo;овский. Вторая аннотация - &lt;code&gt;@PrepareForTest&lt;/code&gt;, подготавливает классы для
+тестов, так как они (классы) будут возвращать mock-объект (URL) или являются
+final (HttpClient). &lt;a href=&#34;https://powermock.googlecode.com/svn/docs/powermock-1.3.5/apidocs/org/powermock/core/classloader/annotations/PrepareForTest.html&#34;&gt;Документация по @PrepareForTest&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Пример JSON&amp;rsquo;а, возвращаемого в случае успешного ответа:&lt;/p&gt;
+
+&lt;p&gt;{% gist 63b9084d3804f72be2d7 search.json %}&lt;/p&gt;
+
+&lt;p&gt;Файл &lt;code&gt;search.json&lt;/code&gt; необходимо поместить по следующему пути:
+&lt;code&gt;src/test/resources/http_client/search.json&lt;/code&gt;. Иначе, если вы напутаете с
+путями, &lt;code&gt;getResourceAsStream&lt;/code&gt; вернет &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Если вы знаете best practices по написанию тестов на Java, или используете
+другую библиотеку, которая позволяет убрать часть mock&amp;rsquo;ов из кода теста, я буду
+рад если вы оставите комментарий.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

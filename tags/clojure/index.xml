@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clojure on Home on Rails</title>
+    <link>http://homeonrails.com/tags/clojure/index.xml</link>
+    <description>Recent content in Clojure on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Best of Clojure/west 2016</title>
+      <link>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</link>
+      <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-06-18-the-best-of-clojure-slash-west-2016/donevan_dolby.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
+wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
+Clojure conference in the western United States and all about this language, as
+you may guess.&lt;/p&gt;
+
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-managing-one-of-the-world-s-largest-clojure-code-bases&#34;&gt;1. Managing One of the World&amp;rsquo;s Largest Clojure Code Bases&lt;/h1&gt;
+
+&lt;p&gt;by Donevan Dolby (41 min)&lt;/p&gt;
+
+&lt;p&gt;Never would have thought that Clojure could be a part of an airplane&amp;rsquo;s software (Boeing 737 Max).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=iUC7noGU1mQ&#34;&gt;https://www.youtube.com/watch?v=iUC7noGU1mQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-parallel-programming-fork-join-and-reducers&#34;&gt;2. Parallel Programming, Fork Join, and Reducers&lt;/h1&gt;
+
+&lt;p&gt;by Daniel Higginbotham (41 min)&lt;/p&gt;
+
+&lt;p&gt;Daniel is an author of &amp;ldquo;Clojure for the brave and true&amp;rdquo;. He talks about
+approaches to parallel programming (thread management, task decomposition) and
+fork/join framework. He is also fun to watch, so go watch it right now.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eRq5UBx6cbA&#34;&gt;https://www.youtube.com/watch?v=eRq5UBx6cbA&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-types-are-like-the-weather-type-systems-are-like-weathermen&#34;&gt;3. Types are like the Weather, Type Systems are like Weathermen&lt;/h1&gt;
+
+&lt;p&gt;by Matthias Felleisen (1 hour 15 min)&lt;/p&gt;
+
+&lt;p&gt;Types for untyped languages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;must speak the grown idioms&lt;/li&gt;
+&lt;li&gt;must allow gradual additions&lt;/li&gt;
+&lt;li&gt;ought to come with soundness because
+
+&lt;ul&gt;
+&lt;li&gt;it reduces developer time&lt;/li&gt;
+&lt;li&gt;it won&amp;rsquo;t mask errors (like Typed Clojure does)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=XTl7Jn_kmio&#34;&gt;https://www.youtube.com/watch?v=XTl7Jn_kmio&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-one-million-clicks-per-minute-with-kafka-and-clojure&#34;&gt;4. One Million Clicks per Minute with Kafka and Clojure&lt;/h1&gt;
+
+&lt;p&gt;by Devon Peticolas (31 min)&lt;/p&gt;
+
+&lt;p&gt;I like talks where you see the gradual improvement of the code (Kafka&amp;rsquo;s consumer in this case).&lt;/p&gt;
+
+&lt;p&gt;Devon finishes his talk with the thought that &lt;strong&gt;Clojure could potentially
+become the main language for stream processing applications&lt;/strong&gt; and solutions
+(&lt;a href=&#34;https://github.com/onyx-platform/onyx&#34;&gt;Onyx&lt;/a&gt;), because of it&amp;rsquo;s Java interop
+and Lisp&amp;rsquo;s expressiveness. What do you think?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=VC_MTD68erY&#34;&gt;https://www.youtube.com/watch?v=VC_MTD68erY&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim: Connect to Clojure nREPL inside the VM</title>
+      <link>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
+      <pubDate>Wed, 04 Jun 2014 12:11:45 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
+      <description>&lt;p&gt;For Vim to talk to nREPL we will be using fantastic
+&lt;a href=&#34;https://github.com/tpope/vim-fireplace&#34;&gt;fireplace.vim&lt;/a&gt; plugin. If you have
+Clojure installed locally, this plugin will connect to its nREPL automatically
+based on &lt;code&gt;.nrepl-port&lt;/code&gt;. But if you, like me, have Clojure inside the VM
+(VirtualBox or VMWare, or something else), you need to connect to its nREPL
+manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;This function has the following syntax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;:Connect {proto}://{host}:{port} {path}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Most of the options are self-explanatory, except to say that &lt;code&gt;proto&lt;/code&gt; (protocol)
+is always &lt;code&gt;nrepl&lt;/code&gt; and &lt;code&gt;path&lt;/code&gt; is your project&amp;rsquo;s location.&lt;/p&gt;
+
+&lt;p&gt;I am using Vagrant to manage my VMs and this one, as the rest,
+configured with private network.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;Vagrant.configure(&amp;quot;2&amp;quot;) do |config|
+  config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.50.4&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we need to start nREPL inside the guest machine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$&amp;gt; lein repl :start :host 0.0.0.0 :port 4242
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You could omit the &lt;code&gt;:port&lt;/code&gt; option, in which case leiningen will use a
+random port.&lt;/p&gt;
+
+&lt;p&gt;One thing remains is to connect to nREPL.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;:Connect nrepl://192.168.50.4:4242
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you should be able to run fireplace.vim commands. Try &lt;code&gt;:Doc get&lt;/code&gt; for
+example.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

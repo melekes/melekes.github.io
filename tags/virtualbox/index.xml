@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualbox on Home on Rails</title>
+    <link>http://homeonrails.com/tags/virtualbox/index.xml</link>
+    <description>Recent content in Virtualbox on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vim: Connect to Clojure nREPL inside the VM</title>
+      <link>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
+      <pubDate>Wed, 04 Jun 2014 12:11:45 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
+      <description>&lt;p&gt;For Vim to talk to nREPL we will be using fantastic
+&lt;a href=&#34;https://github.com/tpope/vim-fireplace&#34;&gt;fireplace.vim&lt;/a&gt; plugin. If you have
+Clojure installed locally, this plugin will connect to its nREPL automatically
+based on &lt;code&gt;.nrepl-port&lt;/code&gt;. But if you, like me, have Clojure inside the VM
+(VirtualBox or VMWare, or something else), you need to connect to its nREPL
+manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;This function has the following syntax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;:Connect {proto}://{host}:{port} {path}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Most of the options are self-explanatory, except to say that &lt;code&gt;proto&lt;/code&gt; (protocol)
+is always &lt;code&gt;nrepl&lt;/code&gt; and &lt;code&gt;path&lt;/code&gt; is your project&amp;rsquo;s location.&lt;/p&gt;
+
+&lt;p&gt;I am using Vagrant to manage my VMs and this one, as the rest,
+configured with private network.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;Vagrant.configure(&amp;quot;2&amp;quot;) do |config|
+  config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.50.4&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we need to start nREPL inside the guest machine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$&amp;gt; lein repl :start :host 0.0.0.0 :port 4242
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You could omit the &lt;code&gt;:port&lt;/code&gt; option, in which case leiningen will use a
+random port.&lt;/p&gt;
+
+&lt;p&gt;One thing remains is to connect to nREPL.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;:Connect nrepl://192.168.50.4:4242
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you should be able to run fireplace.vim commands. Try &lt;code&gt;:Doc get&lt;/code&gt; for
+example.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

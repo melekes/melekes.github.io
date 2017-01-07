@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Home on Rails</title>
+    <link>http://homeonrails.com/tags/linux/index.xml</link>
+    <description>Recent content in Linux on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Redis дропает события? Что?</title>
+      <link>http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</link>
+      <pubDate>Mon, 19 Oct 2015 14:00:26 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Redis дропает события? Что?&amp;rdquo; или поучительная история о том, как важно читать
+документацию.&lt;/p&gt;
+
+&lt;div style=&#34;align:center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;В один дождливый и прохладный осенний день мы увидели слишком маленькое
+значение одной из метрик нашего приложения. Оно занималось (1) отправкой
+текстовых сообщений через специальный шлюз и приемом отчетов о доставке. Отчеты
+(2) публиковались в Redis через Redis Pub/Sub и (3) вычитывались отдельным
+демоном (Listener), который (4) отмечал факт получения или неполучения
+абонентом смс в БД (Postgresql).&lt;/p&gt;
+
+&lt;div style=&#34;align:center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/app.png&#34; alt=&#34;&#34; style=&#34;width:400px;&#34; title=&#34;&#34;/&gt;
+&lt;/div&gt;
+
+&lt;p&gt;В статистике значилось: &lt;strong&gt;&amp;ldquo;отправлено 20000, доставлено 122&amp;rdquo;&lt;/strong&gt;. По необъяснимой
+причине мы недополучали большую часть отчетов.&lt;/p&gt;
+
+&lt;p&gt;Сначала я предположил, что они просто не доходят до Redis, но посмотрев логи
+убедился в обратном. Далее подозрение пало на Listener и мой тимлид высказал
+предположение о том, что он (Listener) не успевает вычитывать все публикуемые
+события и &lt;strong&gt;Redis их дропает&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Увидев в логе Redis строчку &amp;ldquo;Client XXX scheduled  to  be  closed  ASAP  for
+overcoming  of  output  buffer  limits&amp;rdquo;, мы поняли что скорее всего так и есть.&lt;/p&gt;
+
+&lt;p&gt;Я был удивлен. Опыта работы с Redis у меня было не так уж и много, но мне все
+равно казалось это нереальным.&lt;/p&gt;
+
+&lt;div style=&#34;align:center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/wat.png&#34; alt=&#34;&#34; style=&#34;width:400px;&#34; title=&#34;&#34;/&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;Думалось, что он будет хранить данные в списке так долго как сможет.
+Оказывается, Redis Pub/Sub вообще не хранит никаких данных (есть буфер). В
+идеале, он старается раскидать данные с сокета &amp;ldquo;издателя&amp;rdquo; (Publisher&amp;rsquo;s socket)
+по сокетам подписчиков (Subscribers sockets) на одной итерации &lt;a href=&#34;https://en.wikipedia.org/wiki/Event_loop&#34;&gt;event loop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;align:center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/pub-sub.png&#34; alt=&#34;&#34; style=&#34;width:450px;&#34; title=&#34;&#34;/&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Так что же про буферы. У Redis есть буфер с soft limit = 8MB и hard limit =
+32MB. Также есть по 1 буферу на каждое TCP соединение.&lt;/p&gt;
+
+&lt;p&gt;Размеры буферов можно узнать так:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat /proc/sys/net/ipv4/tcp_rmem # publisher&#39;s socket
+$ cat /proc/sys/net/ipv4/tcp_wmem # subscribers sockets
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;В нашем случае размер и того, и другого = 4MB.&lt;/p&gt;
+
+&lt;p&gt;Если подписчик не успевает вычитывать данные, буфер справа в какой-то момент
+заполнится и TCP запретит дальнейшую запись в него. Redis пометит буфер как
+&amp;ldquo;non-writable&amp;rdquo; и начнет заполнять свой буфер.&lt;/p&gt;
+
+&lt;p&gt;Если размер буфера Redis&amp;rsquo;а превысит 32MB или в течении 60 секунд будет больше
+8MB, то Redis закроет соединение. Об этом честно написано в &lt;a href=&#34;http://redis.io/topics/clients&#34;&gt;документации
+Redis&lt;/a&gt; см. &amp;ldquo;Output buffers limits&amp;rdquo;. Правда,
+нигде не написано, что перед тем как соединение будет закрыто часть сообщений
+будут потеряны.&lt;/p&gt;
+
+&lt;p&gt;В нашем случае Redis действительно закрывал соединение, но Listener
+переподнимался Upstart&amp;rsquo;ом и тут же подписывался заново, продолжая выгребать
+лишь часть отчетов.&lt;/p&gt;
+
+&lt;p&gt;Описывать как мы поправили эту багу не буду, ибо это уже не так интересно для
+читателя. Вывод для себя сделал такой - &lt;strong&gt;перед тем как использовать
+инструмент, прочитай документацию&lt;/strong&gt;. В серьезных продуктах обычно расписано
+все, включая разнообразные &lt;a href=&#34;https://en.wikipedia.org/wiki/Corner_case&#34;&gt;corner case&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>10 команд, которыми вы пользуетесь чаще всего</title>
+      <link>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</link>
+      <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
+      <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
+замечать, что набираете некоторые команды по многу раз. Неужели вам не
+лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
+feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
+продуктивности своей работы, то в командной оболочке linux есть отличное средство,
+которое нам поможет - алиасы.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Сначала надо получить список наиболее часто используемых команд:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;history | awk &#39;{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] &amp;quot; &amp;quot; CMD[a]/count*100 &amp;quot;% &amp;quot; a;}&#39; | grep -v &amp;quot;./&amp;quot; | column -c3 -s &amp;quot; &amp;quot; -t | sort -nr | nl |  head -n10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;awk&lt;/code&gt; сохраняет команду и количество ее вхождений в
+историю. Затем результат печатается, фильтруются скрипты вида
+&lt;code&gt;./something&lt;/code&gt;, сортируется и обрезается до нужной длины.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://linux.byexamples.com/archives/332/what-is-your-10-common-linux-commands/&#34;&gt;Источник&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Пример вывода:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;13185  31.8532%   git
+21430  14.3014%   gst
+3706   7.301406071%   vim
+4687   6.87069%   cd
+5618   6.18062%   vagrant
+6404   4.0404%    sudo
+7252   2.52025%   tmux
+8232   2.32023%   g
+9197   1.9702%    ls
+10190  1.90019%   gc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Основываясь на выводе выше, можно сказать что я очень часто пользуюсь
+git, так что неплохо бы создать алиас для него и команд ниже.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias g=&amp;quot;git&amp;quot;
+alias v=&amp;quot;vim&amp;quot;
+alias l=&amp;quot;ls -al&amp;quot;
+alias c=&amp;quot;git commit -m&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Мне очень нравятся однобуквенные алиасы. Хотя на многое их явно не
+хватит.&lt;/p&gt;
+
+&lt;p&gt;Также можно проанализировать только команды vagrant&amp;rsquo;а (subcommands) или любой
+другой программы слегка модифицировав предыдущий скрипт:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;history|grep vagrant| awk &#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &amp;quot; &amp;quot; CMD[a]/count*100 &amp;quot;% &amp;quot; a;}&#39; | grep -v &amp;quot;./&amp;quot; | column -c3 -s &amp;quot; &amp;quot; -t | sort -nr | nl |  head -n10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Пример вывода:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1   193  23.9752%   ssh
+2   166  20.6211%   up
+3   98   12.1739%   halt
+4   63   7.82609%   reload
+5   37   4.59627%   destroy
+6   31   3.85093%   TEAMOCIL=1;
+7   18   2.23602%   provision
+8   14   1.73913%   box
+9   9    1.11801%   solo
+10  8    0.993789%  -r
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для vagrant мы заведем такой набор:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias v=&amp;quot;vagrant&amp;quot;
+alias vst=&amp;quot;vagrant status&amp;quot;
+alias vup=&amp;quot;vagrant up&amp;quot;
+alias vpr=&amp;quot;vagrant provision&amp;quot;
+alias vhl=&amp;quot;vagrant halt&amp;quot;
+alias vre=&amp;quot;vagrant reload&amp;quot;
+alias vssh=&amp;quot;vagrant ssh&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если вы пользуетесь zsh, то рекомендую взглянуть на &lt;a href=&#34;https://github.com/robbyrussell/oh-my-zsh&#34;&gt;oh-my-zsh&lt;/a&gt;, которая
+предлагает большое количесво плагинов с алиасами и автодополнением.
+Конечно, они во многом избыточны (стоит хотя бы взглянуть на &lt;a href=&#34;http://jasonm23.github.io/oh-my-git-aliases.html&#34;&gt;список
+команд плагина git&lt;/a&gt;), но если вас это устраивает, то можно смело их
+использовать.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Как результат, мы повышаем продуктивность и, что немаловажно, снижаем нагрузку на наши
+пальцы.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;P.S. очень рекомендую посмотреть доклад &lt;a href=&#34;http://www.youtube.com/watch?v=SkdrYWhh-8s&#34;&gt;Ben Orenstein - Write code faster: expert-level vim (Railsberry 2012)&lt;/a&gt;,
+в котором Бен рассказывает очень правильные подходы в работе с vim&amp;rsquo;ом. Даже если вы не
+пользуетесь vim&amp;rsquo;ом, многие вещи можно переложить на ваш любимый редактор, будь то Emacs, Sublime или любой другой.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

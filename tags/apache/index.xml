@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache on Home on Rails</title>
+    <link>http://homeonrails.com/tags/apache/index.xml</link>
+    <description>Recent content in Apache on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Writing to HBase from Hadoop Mapper</title>
+      <link>http://homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
+      <pubDate>Fri, 16 Jan 2015 15:48:49 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
+      <description>&lt;p&gt;Although Hadoop and HBase are often used together, not so many resources
+devoted to interaction between them. In the book &lt;a href=&#34;http://shop.oreilly.com/product/0636920014348.do&#34;&gt;&amp;ldquo;HBase: The Definitive
+Guide&amp;rdquo;&lt;/a&gt; there is a chapter
+named &amp;ldquo;MapReduce Integration&amp;rdquo;, which sheds some light on this. I would like to
+give you another example of the MR task that reads and writes to the same HBase
+table.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This article assumes you have a basic knowledge of Hadoop.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;task&#34;&gt;Task&lt;/h2&gt;
+
+&lt;p&gt;In our table &amp;ldquo;weather&amp;rdquo; we have 2 columns - the maximum temperature for a
+month (&lt;code&gt;max&lt;/code&gt;) and minimum respectively (&lt;code&gt;min&lt;/code&gt;). We need to calculate the
+average temperature and put it in a new column for further calculations.&lt;/p&gt;
+
+&lt;h2 id=&#34;mapper&#34;&gt;Mapper&lt;/h2&gt;
+
+&lt;p&gt;{% gist 8ba19e1baca077d67c65 AvgTemperatureMapper.java %}&lt;/p&gt;
+
+&lt;p&gt;For every row we get &lt;code&gt;max&lt;/code&gt; and &lt;code&gt;min&lt;/code&gt; column&amp;rsquo;s latest values (#13), wrap them into
+ByteBuffer (#15), so we can get Integer values.&lt;/p&gt;
+
+&lt;p&gt;On line #7, we then construct new Put object, passing the same rowkey. After
+that , we add new column &lt;code&gt;avg&lt;/code&gt; into &lt;code&gt;temperatures&lt;/code&gt; family and put the result of
+&lt;code&gt;(max + min) / 2.0&lt;/code&gt; in it (#8). In the end, we pass &lt;code&gt;rowkey&lt;/code&gt; and our Put object
+to &lt;code&gt;context#write&lt;/code&gt; method, which modifies &amp;ldquo;weather&amp;rdquo; table and records the
+results (#9).&lt;/p&gt;
+
+&lt;h2 id=&#34;driver&#34;&gt;Driver&lt;/h2&gt;
+
+&lt;p&gt;{% gist 8ba19e1baca077d67c65 AvgTemperatureDriver.java %}&lt;/p&gt;
+
+&lt;p&gt;In order to run our baby, we create new job (#5). Since we do not have Reduce
+stage, we can set number of reduce tasks to 0 (#7). TableMapReduceUtil utility
+saves us from routine work by setting the correct input format, mapper class,
+adding dependencies jars and so on. All we need to do is to pass a few
+parameters to &lt;code&gt;initTableMapperJob&lt;/code&gt; method (#11).&lt;/p&gt;
+
+&lt;p&gt;I would like to note that if you need additional filtering, Scan object (#9)
+could be tweaked more heavily (e.g. by using &lt;code&gt;#setFilter&lt;/code&gt; method).&lt;/p&gt;
+
+&lt;p&gt;That is all for the reading. To write to a table (not necessarily the same, it
+could be any other table as well) we have to:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Set OutputKeyClass and OutputValueClass to ImmutableBytesWritable and Put (both in mapper - #1 and driver - lines #14, #15);&lt;/li&gt;
+&lt;li&gt;Set OutputFormatClass (#20) and table name (#21).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thats all folks. If I missed something, feel free to contact me or just leave a
+comment.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

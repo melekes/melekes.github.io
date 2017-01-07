@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Refactoring on Home on Rails</title>
+    <link>http://homeonrails.com/tags/refactoring/index.xml</link>
+    <description>Recent content in Refactoring on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/refactoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Don&#39;t do this at home on Rails #2</title>
+      <link>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
+      <pubDate>Sat, 10 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Languages: Ruby&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Now is the time to break down the next three examples of code that look
+slightly chapped, and just beg to be retouched. Despite the apparent
+complexity, by running a series of easy refactorings, we can significantly
+improve the code: reduce the size, improve the readability and even
+increase its speed. Who knows?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, let&amp;rsquo;s start.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-prefer-time-current-over-time-zone-now-or-time-zone&#34;&gt;#1 - prefer Time.current over Time.zone.now or Time.zone&lt;/h3&gt;
+
+&lt;p&gt;Very often I see a code like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;if schedulled_at &amp;gt; Time.zone.now
+  ...
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And there is nothing wrong with it :) Seriously. But what if we have not set
+the time zone? Most likely we&amp;rsquo;ll get an error. Just recently I came across a
+method that does this check for us.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://apidock.com/rails/Time/current/class&#34;&gt;Time.current&lt;/a&gt; - returns
+&lt;code&gt;Time.zone.now&lt;/code&gt; if the &lt;code&gt;Time.zone&lt;/code&gt; or &lt;code&gt;config.time_zone&lt;/code&gt; set,
+otherwise just returns &lt;code&gt;Time.now&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;if schedulled_at &amp;gt; Time.current
+  ...
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-avoid-using-before-filter&#34;&gt;#2 - Avoid using &lt;code&gt;before_filter&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;before_filter&lt;/code&gt; is used inside controllers to execute any code before any action
+will be executed. This allows us to avoid duplicating code. But, like any tool,
+it can be used &amp;ldquo;in the wrong way&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class SubscribesController &amp;lt; ApplicationController
+  before_filter :load_subscribe, only: [:show, :destroy]
+
+  def index
+    @subscribes = Subscribe.all
+  end
+
+  def show
+  end
+
+  def destroy
+    @subscribe.destroy
+    redirect_to :root
+  end
+
+  private
+
+    def load_subscribe
+      @subscribe = Subscribe.find_by_name(params[:id]) || raise(ActiveRecord::RecordNotFound)
+    end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I do not mind eliminating duplication, especially when the private method below
+does consist of 40 lines, for example. I just think, logic should be more explicit
+here. Otherwise, to understand what makes a particular action, the programmer
+must first look at all before filters, then look at the methods that are
+called by these filters and only then he or she comes to the action itself. This makes
+the application logic confusing and difficult to understand.&lt;/p&gt;
+
+&lt;p&gt;Before filters are really helpful in some cases. For example, when we need to check
+whether the user is authorized or log each request.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class SubscribesController &amp;lt; ApplicationController
+  def index
+    @subscribes = Subscribe.all
+  end
+
+  def show
+    load_subscribe
+  end
+
+  def destroy
+    load_subscribe
+    @subscribe.destroy
+    redirect_to :root
+  end
+
+  private
+
+  def load_subscribe
+    @subscribe = Subscribe.find_by_name!(params[:id])
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you look at each action it doesn&amp;rsquo;t seem like the instance variables appear
+magically. As the capabilities of a controller increases in size it becomes more
+difficult to see the &amp;ldquo;magic&amp;rdquo; of a before filter hidden somewhere in the app
+and the explicitness of method calling becomes very helpful.&lt;/p&gt;
+
+&lt;p&gt;Note that I added &lt;code&gt;!&lt;/code&gt; sign to the &lt;code&gt;find_by_name&lt;/code&gt; method, which now throws an exception if the
+corresponding record is not found. Next, I would probably get rid of the private
+method, since it consists only of one line.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-use-powerful-enumerable-methods-example-with-select&#34;&gt;#3 - Use powerful &lt;code&gt;Enumerable&lt;/code&gt; methods (example with &lt;code&gt;select&lt;/code&gt;)&lt;/h3&gt;
+
+&lt;p&gt;Module &lt;a href=&#34;http://ruby-doc.org/core-1.9.3/Enumerable.html&#34;&gt;Enumerable&lt;/a&gt; provides a
+variety of methods for manipulating, traversing and searching though a
+collection. It is very hard to remember them all, but that is not necessary.
+What is required of us, is to simplify code by maximum.&lt;/p&gt;
+
+&lt;p&gt;Now I will show you two main sources that help me every day:
+- &lt;a href=&#34;http://apidock.com/&#34;&gt;APIdock&lt;/a&gt;
+- &lt;a href=&#34;http://ruby-doc.org/core-1.9.3/&#34;&gt;Ruby 1.9.3 Doc&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# before
+@groups = Group.all.find_all { |g| g.admin?(current_user) }
+@projects = Project.all.find_all { |p| p.admin?(current_user) }
+
+# after
+@groups = Group.select { |g| g.admin?(current_user) }
+@projects = Project.select { |p| p.admin?(current_user) }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, the code has not changed much.
+But, using such a bricks, we can build really powerful self-documenting code.&lt;/p&gt;
+
+&lt;p&gt;After all, this leads to a reducing of complexity, which makes the code
+transparent and flexible. As a result, we can do refactor
+it without any problems.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s all for today folks!&lt;/p&gt;
+
+&lt;h2 id=&#34;follow-up&#34;&gt;Follow up&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3&#34;&gt;Don&amp;rsquo;t do this at home on Rails #3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t do this at home on Rails #1</title>
+      <link>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
+      <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Languages: Ruby&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;These series of articles will be dedicated to every day code, that I am working on.
+This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-avoid-duplication&#34;&gt;#1 - avoid duplication&lt;/h3&gt;
+
+&lt;p&gt;The first example is a scope, that fetches the records within a given range.
+If the &lt;code&gt;date&lt;/code&gt; param passed to this block responds to the &lt;code&gt;first&lt;/code&gt; and &lt;code&gt;last&lt;/code&gt; methods,
+these are considered as start and end dates. Otherwise, it selects records for that date plus 1 day.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;scope :at_date, lambda { |date|
+  if date.respond_to?(:last) &amp;amp;&amp;amp; date.respond_to?(:first)
+    where(&amp;quot;created_at &amp;gt;= ? AND created_at &amp;lt;= ?&amp;quot;, date.first, date.last)
+  else
+    where(&amp;quot;created_at &amp;gt;= ? AND created_at &amp;lt;= ?&amp;quot;, date, date + 1.day)
+  end
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What could you say about this code? Is it well written? This code has many flaws.
+The first thing that caches the eye is duplicated &lt;code&gt;where&lt;/code&gt; condition.
+Just imagine, each time you want to change the query, you will need to update these 2 lines.
+Lets fix this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;scope :at_date, lambda { |date|
+  if date.respond_to?(:last) &amp;amp;&amp;amp; date.respond_to?(:first)
+    date_start = date.first
+    date_end = date.last
+  else
+    date_start = date
+    date_end = date_start + 1.day
+  end
+
+  where(&amp;quot;created_at &amp;gt;= ? AND created_at &amp;lt;= ?&amp;quot;, date_start, date_end)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Good, but that&amp;rsquo;s not all.&lt;/p&gt;
+
+&lt;p&gt;It seems to me very confusing, that &lt;code&gt;date&lt;/code&gt; param could be
+either &lt;code&gt;Array&lt;/code&gt; or &lt;code&gt;DateTime&lt;/code&gt;. Strictly speaking, it could be anything;
+e.g &lt;code&gt;String&lt;/code&gt; - it&amp;rsquo;s also responds to &lt;code&gt;first/last&lt;/code&gt; methods, so as a result
+we will get this query &lt;code&gt;created_at &amp;gt;= 2 and created_at &amp;lt;= 3&lt;/code&gt; for date = &amp;lsquo;2012-09-23&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;But wait, ActiveRecord&amp;rsquo;s query interface also supports ranges as an arguments,
+so we could write something like this: &lt;code&gt;where(created_at: date.first..date.last)&lt;/code&gt;,
+which will generate a query &lt;code&gt;created_at BETWEEN &amp;lt;date.first&amp;gt; AND &amp;lt;date.last&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;scope :at_date, lambda { |range|
+  where(created_at: range)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-try-to-search-for-existing-method-first&#34;&gt;#2 - try to search for existing method first&lt;/h3&gt;
+
+&lt;p&gt;The second slice of code selects the channels, locked by the current user and
+free channels.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;cu = current_user
+locked = channels.select{ |ch| ch.is_locked_by?(cu) }
+free   = channels.select{ |ch| !ch.is_locked_by?(cu) }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Did you notice the reverse condition? Every time I see the code,
+who looks like this, I thought, it should be already a method for this in ruby.
+In fact, ruby and rails has a greater collection of methods. Take a look at &lt;code&gt;ActiveSupport&lt;/code&gt;
+methods &lt;a href=&#34;http://apidock.com/rails/ActiveSupport&#34;&gt;http://apidock.com/rails/ActiveSupport&lt;/a&gt;. But what about our case? After a few minutes
+of searching, I&amp;rsquo;ve found &lt;code&gt;partition&lt;/code&gt; method (&lt;a href=&#34;http://apidock.com/ruby/Enumerable/partition&#34;&gt;Doc&lt;/a&gt;),
+which does exactly just we want to - splits collection into two arrays by a given condition.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;locked, unlocked = channels.partition { |ch| ch.is_locked_by?(current_user) }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-think-about-what-you-are-writing-right-now&#34;&gt;#3 - think about what you are writing right now&lt;/h3&gt;
+
+&lt;p&gt;The third method is a simple method inside some model.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def has_description?
+  !self.description.blank?
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I know what you are thinking right now - it&amp;rsquo;s not my :)&lt;/p&gt;
+
+&lt;p&gt;There are two drawbacks in the code above. The one significant is that there is already a
+method for this in &lt;code&gt;ActiveRecord&lt;/code&gt;. Rails creates a method called &lt;code&gt;&amp;quot;{attribute}?&amp;quot;&lt;/code&gt;,
+which checks whether a field is defined or not. So we could remove &lt;code&gt;has_description?&lt;/code&gt;
+method with &lt;code&gt;description?&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note: you don&amp;rsquo;t have to use &lt;code&gt;self&lt;/code&gt; inside the model methods, because we already in the context of an object.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s all for today. Hope you&amp;rsquo;ve caught something for you!&lt;/p&gt;
+
+&lt;h2 id=&#34;follow-up&#34;&gt;Follow up&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2&#34;&gt;Don&amp;rsquo;t do this at home on Rails #2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

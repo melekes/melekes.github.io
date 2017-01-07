@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interviews on Home on Rails</title>
+    <link>http://homeonrails.com/tags/interviews/index.xml</link>
+    <description>Recent content in Interviews on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Топ 3 ответов при собеседовании</title>
+      <link>http://homeonrails.com/2014/10/top-3-answers-at-interview/</link>
+      <pubDate>Sat, 04 Oct 2014 20:42:38 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/10/top-3-answers-at-interview/</guid>
+      <description>&lt;p&gt;Ни для кого не секрет, чтобы найти подходящего вам по всем параметрам
+сотрудника, нужно прособеседовать немалое количество кандидатов. К нам в Undev
+довольно часто приходят программисты, желающие попробовать себя в той или иной
+ипостаси. Иногда попадаются выдающиеся кадры! Представляю вам тройку лучших
+ответов на вопросы при собеседовании на моей памяти.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;1-место&#34;&gt;1 место&lt;/h2&gt;
+
+&lt;p&gt;- Знаете что такое ООП?  &lt;br /&gt;
+- Это по моему что-то тяжелое, я слез с этого&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://homeonrails.com/images/posts/2014-10-04-top-3-answers-at-interview/i-dont-believe-you.gif&#34; alt=&#34;I don&#39;t believe you&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-место&#34;&gt;2 место&lt;/h2&gt;
+
+&lt;p&gt;aaa: Тесты писали?  &lt;br /&gt;
+bbb: ЕГЭ которые?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://homeonrails.com/images/posts/2014-10-04-top-3-answers-at-interview/exactly.gif&#34; alt=&#34;Exactly&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;3-место&#34;&gt;3 место&lt;/h2&gt;
+
+&lt;p&gt;xxx: Что такое DNS?  &lt;br /&gt;
+yyy: Это магазин который штоле?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://homeonrails.com/images/posts/2014-10-04-top-3-answers-at-interview/haha-good-one.gif&#34; alt=&#34;Haha, good one&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

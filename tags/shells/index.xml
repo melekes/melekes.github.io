@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shells on Home on Rails</title>
+    <link>http://homeonrails.com/tags/shells/index.xml</link>
+    <description>Recent content in Shells on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/shells/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>tmux / Автоматическое восстановление сессии</title>
+      <link>http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</link>
+      <pubDate>Fri, 17 Jul 2015 10:35:07 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
+      <description>&lt;p&gt;Не так давно собрался с силами, и настроил у себя в tmux автоматическое
+сохранение и восстановление последней сессии. По прошествии месяца могу с
+уверенностью сказать - просто бомба!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-07-17-tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/ILKC62E3GC.jpg&#34; alt=&#34;&#34;/ width=&#34;694&#34; title=&#34;tmux / Автоматическое восстановление сессии&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Представьте себе, вы выключили компьютер (не все так поступают, я знаю) и
+отправились домой. Вечером, отправив жену готовить борщ, и удобно устроившись
+на любимом диване, предварительно включив теплый ламповый свет, вы открываете
+свой лэптоп, запускаете shell и вуаля - &lt;strong&gt;все сплиты на том же самом месте, где
+они и были в последний раз. Более того, Vim уже запущен и курсор стоит на той
+же строке, где он и был в последний раз&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Для того, чтобы данное чудо заработало и у вас, нам потребуется &lt;a href=&#34;https://github.com/tmux-plugins/tpm&#34;&gt;Tmux Plugin
+Manager&lt;/a&gt; (сокращенно, tpm):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;(примечание: нужен tmux &amp;gt;= 1.9)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Теперь добавим следующее в конец .tmux.conf:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# .tmux.conf
+
+set -g @plugin &#39;tmux-plugins/tpm&#39;
+set -g @plugin &#39;tmux-plugins/tmux-sensible&#39;
+set -g @plugin &#39;tmux-plugins/tmux-resurrect&#39;
+set -g @plugin &#39;tmux-plugins/tmux-continuum&#39;
+
+run &#39;~/.tmux/plugins/tpm/tpm&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Далее остается только загрузить наши изменения и установить плагины:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ tmux source ~/.tmux.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для установки плагинов нажмите &lt;code&gt;prefix - I&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Для комфортной работы стоит добавить пару опций. По умолчанию, tmux-continuum
+(плагин, который автоматически сохраняет tmux окружение) не восстанавливает его
+при запуске tmux. Что ж, исправим это недоразумение:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# .tmux.conf
+
+set -g @continuum-restore &#39;on&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для того, чтобы при загрузке восстанавливались Vim (Neovim) сессии, нужно&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;установить плагин &lt;a href=&#34;https://github.com/tpope/vim-obsession&#34;&gt;https://github.com/tpope/vim-obsession&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;добавить пару строк в .tmux.conf:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;# .tmux.conf
+
+# for vim
+set -g @resurrect-strategy-vim &#39;session&#39;
+# for neovim
+set -g @resurrect-strategy-nvim &#39;session&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Стоит отметить, что можно стартовать не только Vim, но и любые другие программы
+- ssh, psql, rails console, которые были запущены в прошлый раз. Для этого,
+  правда, надо добавить их в конфиг:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# .tmux.conf
+
+set -g @resurrect-processes &#39;ssh psql mysql sqlite3&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Также у данного плагина (&lt;a href=&#34;https://github.com/tmux-plugins/tmux-resurrect&#34;&gt;https://github.com/tmux-plugins/tmux-resurrect&lt;/a&gt;) есть и
+несколько интересных экспериментальный опций, таких как сохранение истории для
+каждого сплита и сохранение его содержимого.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fish shell</title>
+      <link>http://homeonrails.com/2014/07/fish-shell/</link>
+      <pubDate>Tue, 15 Jul 2014 18:20:50 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/07/fish-shell/</guid>
+      <description>&lt;p&gt;Не так давно у меня появилось немножко свободного времени, и я решил посмотреть
+аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
+напротив, многие его фишки, включая подсветку, дополнение по Tab и
+автоматическое раскрытие путей, пришлись мне по душе.&lt;/p&gt;
+
+&lt;p&gt;Одновременно с этим &lt;a href=&#34;https://twitter.com/saratovsource&#34;&gt;@saratovsource&lt;/a&gt;
+намекнул, что пересел на Fish shell около полугода назад и вполне доволен.&lt;/p&gt;
+
+&lt;p&gt;{% img /images/posts/2014-07-15-fish-shell/logo.png %}&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;И так, &lt;a href=&#34;https://github.com/fish-shell/fish-shell&#34;&gt;Fish&lt;/a&gt; (friendly interactive shell) - это командная оболочка для
+Unix-подобных операционных систем. К её плюсам можно отнести подсветку
+синтаксиса и продвинутое автодополнение из коробки.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-предсказание-пути&#34;&gt;1. Предсказание пути&lt;/h3&gt;
+
+&lt;p&gt;Не нужно больше переходить в отдельный режим, набирая &lt;code&gt;Ctrl-r&lt;/code&gt;, чтобы найти и
+выполнить команду из истории. Fish предлагает варианты по мере того, как вы
+набираете. И если это то что вам нужно, смело жмите &lt;code&gt;Ctrl-f&lt;/code&gt; или &lt;code&gt;right&lt;/code&gt;. Очень
+удобно!&lt;/p&gt;
+
+&lt;p&gt;{% img /images/posts/2014-07-15-fish-shell/fish1-o.gif %}&lt;/p&gt;
+
+&lt;p&gt;Есть аналогичный плагин для zsh - &lt;a href=&#34;https://github.com/tarruda/zsh-autosuggestions&#34;&gt;zsh-autosuggestions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-поиск-при-дополнении-по-tab&#34;&gt;2. Поиск при дополнении по Tab&lt;/h3&gt;
+
+&lt;p&gt;Также полезная и удобная штука.&lt;/p&gt;
+
+&lt;p&gt;{% img /images/posts/2014-07-15-fish-shell/fish2-o.gif %}&lt;/p&gt;
+
+&lt;h3 id=&#34;3-fish-config&#34;&gt;3. fish_config&lt;/h3&gt;
+
+&lt;p&gt;Команда &lt;code&gt;fish_config&lt;/code&gt; запускает простенький веб-сервер c приложением, которое
+позволяет вам менять некоторые параметры оболочки (темы, оформление),
+просматривать список функций, переменных окружения и историю. Функциональность
+более чем спорная, ведь большинству пользователей не составляет труда
+посмотреть/поменять настройки прямо в консоли.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-fish-и-zsh&#34;&gt;4. Fish и Zsh&lt;/h3&gt;
+
+&lt;p&gt;У Fish не такое большое и активное сообщество как у Zsh. Тут уж не поспоришь.
+Но, так как текущей функциональности вкупе с несколькими плагинами вполне
+достаточно для комфортной работы и баги фиксится довольно быстро, это не должно
+иметь решающее значение.&lt;/p&gt;
+
+&lt;h3 id=&#34;5-общие-впечатления&#34;&gt;5. Общие впечатления&lt;/h3&gt;
+
+&lt;p&gt;Вообще после zsh Fish кажется очень быстрым (1). Во многом за счет предсказания
+пути скорость переходов становиться почти заоблачной :)&lt;/p&gt;
+
+&lt;p&gt;Из минусов, могу выделить отсутствие дополнения alias&amp;rsquo;ов по Tab&amp;rsquo;у. То есть, если
+у вас допустим &lt;code&gt;gco&lt;/code&gt; - alias &lt;code&gt;git checkout&lt;/code&gt;, то Fish не предложит вам список
+веток. Для этого придется набрать &lt;code&gt;git co&lt;/code&gt;. Возможно в будущей версии это будет
+исправлено.&lt;/p&gt;
+
+&lt;p&gt;Также Fish не совместима со стандартами POSIX (not POSIX compliant). Это
+значит, что скорей всего не получиться скопировать Bash однострочник из
+Интернета и выполнить его в командной строке - синтаксис чуточку другой. Плюс
+некоторые утилиты (например &lt;a href=&#34;https://github.com/kennethreitz/autoenv&#34;&gt;autoenv&lt;/a&gt;
+или Vim) из-за этого могут работать не совсем корректно. В случае с Vim, это
+решается добавлением &lt;code&gt;set shell=/bin/bash&lt;/code&gt; в &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;итоги&#34;&gt;Итоги&lt;/h3&gt;
+
+&lt;p&gt;В целом впечатления положительные. Может Fish и сыроват по сравнению с тем же
+zsh, но некоторые его возможности просто поражают. Так что советую попробовать,
+тем более, что сейчас перейти с одной облочки на другую можно за пару минут.&lt;/p&gt;
+
+&lt;p&gt;Дополнительные ссылки:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bpinto/oh-my-fish&#34;&gt;Oh My Fish!&lt;/a&gt; oh my zsh для Fish shell.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;(1) - вполне возможно причиной некоторых тормозов является используемый мною &lt;code&gt;oh-my-zsh&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meck on Home on Rails</title>
+    <link>http://homeonrails.com/tags/meck/index.xml</link>
+    <description>Recent content in Meck on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/meck/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Опции meck:new</title>
+      <link>http://homeonrails.com/2015/03/meck-new-options/</link>
+      <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/03/meck-new-options/</guid>
+      <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;passthrough&lt;/code&gt; пробрасывает функции meck-модуля (string_meck) в оригинальный модуль (string)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;meck:new(string, [passthrough]),
+meck:expect(string, char_at,
+    fun(0) -&amp;gt;
+        $a;
+    (Pos) -&amp;gt;
+        meck:passthrough([Pos])
+end),
+?assert(meck:validate(string)).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;no_link&lt;/code&gt; не связывать meck процесс с вызывающим процессом. В зависимости от значения используется либо &lt;code&gt;gen_server:start_link&lt;/code&gt;, либо &lt;code&gt;gen_server:start&lt;/code&gt;. По умолчанию при падении вызывающего процесса meck выгрузит все модули. &lt;strong&gt;Не понимаю зачем может потребоваться не связывать эти процессы.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;unstick&lt;/code&gt; для мокинга stdlib, kernel или compiler. По умолчанию Erlang запрещает перезагружать данные модули в целях безопасности.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;no_passthrough_cover&lt;/code&gt; запрещает отслеживать покрытие тестами passthrough вызовов. &lt;strong&gt;Видимо когда-то были проблемы при взаимодействии cover и meck и, в результате, родилась данная опция.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;{spawn_opt, list()}&lt;/code&gt; позволяет указать &lt;code&gt;spawn_opt&lt;/code&gt; для &lt;code&gt;gen_server:start_link&lt;/code&gt;. Подробнее &lt;a href=&#34;http://erlang.org/doc/man/erlang.html#spawn_opt-4&#34;&gt;http://erlang.org/doc/man/erlang.html#spawn_opt-4&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;no_history&lt;/code&gt; - не записывать историю.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;non_strict&lt;/code&gt; позволяет создать expectation для несуществующей функции или даже создать несуществующий модуль. &lt;strong&gt;Не думаю, что эта хорошая практика.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;{stub_all, &#39;{@link ret_spec()}&#39;}&lt;/code&gt; замокает все функции модуля и будет возвращать то, что указано вторым параметром.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;meck:new(string, [stub_all]),
+?assertEqual(ok, string:colorize()).
+
+meck:new(string, [{stub_all, true}]),
+?assertEqual(true, string:contains($a)).
+
+meck:new(string, [{stub_all, meck:seq([$a, $b, $c])}]),
+?assertEqual($a, string:char_at(1)),
+?assertEqual($b, string:char_at(2)),
+?assertEqual($c, string:char_at(3)),
+?assertEqual($c, string:char_at(4)).
+
+meck:new(string, [{stub_all, meck:loop([$a, $b, $c])}]),
+?assertEqual($a, string:char_at(1)),
+?assertEqual($b, string:char_at(2)),
+?assertEqual($c, string:char_at(3)),
+?assertEqual($a, string:char_at(4)). %% заметили разницу между seq?
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

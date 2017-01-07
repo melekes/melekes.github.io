@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Http Client on Home on Rails</title>
+    <link>http://homeonrails.com/tags/http-client/index.xml</link>
+    <description>Recent content in Http Client on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/http-client/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Тестируем HTTP клиент на Java</title>
+      <link>http://homeonrails.com/2015/02/testing-http-client-in-java/</link>
+      <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/02/testing-http-client-in-java/</guid>
+      <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
+на Java. Он совсем простой и состоит буквально из одного метода -
+&lt;a href=&#34;https://gist.github.com/akalyaev/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.
+Поэтому я решил не использовать Apache&amp;rsquo;s HTTPClient и другие библиотеки, вроде
+Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
+нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Для тестирования нам понадобятся следующие библиотеки:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JUnit&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mockito/mockito&#34;&gt;Mockito&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/powermock/&#34;&gt;PowerMock&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;{% gist 63b9084d3804f72be2d7 HttpClientTest.java %}&lt;/p&gt;
+
+&lt;p&gt;На мой взгляд, код получился очень понятным и не требует детального пояснения.&lt;/p&gt;
+
+&lt;p&gt;Единственное, стоит пожалуй разъяснить зачем нужны аннотации сверху класса.
+Первая из них - &lt;code&gt;@RunWith&lt;/code&gt;, заменяет стандартный JUnit runner тестов на
+PowerMock&amp;rsquo;овский. Вторая аннотация - &lt;code&gt;@PrepareForTest&lt;/code&gt;, подготавливает классы для
+тестов, так как они (классы) будут возвращать mock-объект (URL) или являются
+final (HttpClient). &lt;a href=&#34;https://powermock.googlecode.com/svn/docs/powermock-1.3.5/apidocs/org/powermock/core/classloader/annotations/PrepareForTest.html&#34;&gt;Документация по @PrepareForTest&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Пример JSON&amp;rsquo;а, возвращаемого в случае успешного ответа:&lt;/p&gt;
+
+&lt;p&gt;{% gist 63b9084d3804f72be2d7 search.json %}&lt;/p&gt;
+
+&lt;p&gt;Файл &lt;code&gt;search.json&lt;/code&gt; необходимо поместить по следующему пути:
+&lt;code&gt;src/test/resources/http_client/search.json&lt;/code&gt;. Иначе, если вы напутаете с
+путями, &lt;code&gt;getResourceAsStream&lt;/code&gt; вернет &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Если вы знаете best practices по написанию тестов на Java, или используете
+другую библиотеку, которая позволяет убрать часть mock&amp;rsquo;ов из кода теста, я буду
+рад если вы оставите комментарий.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

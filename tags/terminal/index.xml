@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on Home on Rails</title>
+    <link>http://homeonrails.com/tags/terminal/index.xml</link>
+    <description>Recent content in Terminal on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TrueColor in Gnome Terminal, Tmux and Neovim</title>
+      <link>http://homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
+      <pubDate>Wed, 04 May 2016 11:41:10 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
+      <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
+can see, most of the editors and terminals now support TrueColor (16 million
+colors).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gnome-terminal&#34;&gt;Gnome Terminal&lt;/h2&gt;
+
+&lt;p&gt;gnome-terminal has to be in version linked against &lt;code&gt;libvte &amp;gt;= 0.36&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;1) Check&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ldd /usr/lib/gnome-terminal/gnome-terminal-server | grep libvte
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Install&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+sudo apt-get update
+sudo apt-get install -y gnome-terminal
+sudo add-apt-repository -r ppa:gnome3-team/gnome3-staging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) Restart gnome-terminal-server (I&amp;rsquo;ve just rebooted my machine, but killing the corresponding process should also do the job).&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://askubuntu.com/questions/512525/how-to-enable-24bit-true-color-support-in-gnome-terminal&#34;&gt;https://askubuntu.com/questions/512525/how-to-enable-24bit-true-color-support-in-gnome-terminal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tmux&#34;&gt;Tmux&lt;/h2&gt;
+
+&lt;p&gt;tmux must be &lt;code&gt;&amp;gt;= 2.2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;1) Check&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tmux -V
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Kill tmux (&lt;code&gt;tmux kill-server&lt;/code&gt;) and (optionally) remove it&lt;/p&gt;
+
+&lt;p&gt;3) Install&lt;/p&gt;
+
+&lt;p&gt;On Ubuntu:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -y libevent-dev libncurses-dev build-essential
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;wget https://github.com/tmux/tmux/releases/download/2.2/tmux-2.2.tar.gz &amp;amp;&amp;amp; \
+  tar -xzvf tmux-2.2.tar.gz &amp;amp;&amp;amp; \
+  cd tmux-2.2 &amp;amp;&amp;amp; \
+  ./configure &amp;amp;&amp;amp; \
+  make &amp;amp;&amp;amp; \
+  sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4) Alias tmux or set $TERM env variable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;alias tmux=&amp;quot;env TERM=xterm-256color tmux&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5) Set option, which overrides default terminal&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# .tmux.conf
+set-option -ga terminal-overrides &amp;quot;,xterm-256color:Tc&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6) Check (inside tmux)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tmux info | grep Tc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the command reports Tc: [missing], then support for 24-bit colors has not been enabled properly because the terminal-overrides option may have specified the outer terminal’s $TERM value incorrectly or because tmux may have been reattached to an entirely different outer terminal altogether.&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tmux/tmux&#34;&gt;https://github.com/tmux/tmux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sunaku.github.io/tmux-24bit-color.html#usage&#34;&gt;https://sunaku.github.io/tmux-24bit-color.html#usage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;neovim&#34;&gt;Neovim&lt;/h2&gt;
+
+&lt;p&gt;1) Set env variable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;&amp;quot; .nvimrc
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Pick a theme, which does not force 256 colors &lt;code&gt;if !has(&#39;gui_running&#39;)&lt;/code&gt; or checks for &lt;code&gt;neovim&lt;/code&gt; (&lt;a href=&#34;https://github.com/neovim/neovim/issues/793&#34;&gt;discussion&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/frankier/neovim-colors-solarized-truecolor-only&#34;&gt;solarized fork&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/neovim/neovim/issues/793#issuecomment-59628883&#34;&gt;https://github.com/neovim/neovim/issues/793#issuecomment-59628883&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chris.chowie.net/2015/04/19/True-colour-with-neovim-tmux-and-iterm2/&#34;&gt;https://chris.chowie.net/2015/04/19/True-colour-with-neovim-tmux-and-iterm2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My dotfiles: &lt;a href=&#34;https://github.com/akalyaev/dotfiles&#34;&gt;https://github.com/akalyaev/dotfiles&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

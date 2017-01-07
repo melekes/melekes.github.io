@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Time Tracking on Home on Rails</title>
+    <link>http://homeonrails.com/tags/time-tracking/index.xml</link>
+    <description>Recent content in Time Tracking on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/time-tracking/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stop Killing Developers Creativity</title>
+      <link>http://homeonrails.com/2014/11/stop-killing-developers-creativity/</link>
+      <pubDate>Sat, 22 Nov 2014 17:53:57 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/11/stop-killing-developers-creativity/</guid>
+      <description>&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Carlos?&lt;/p&gt;
+&lt;p style=&#34;color:#800000&#34;&gt;Carlos: Yes.&lt;/p&gt;
+&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Hi, my name is Andrea! You will be working on project X. Before you
+start, make sure you read pages A, B, and &#34;How do we work with tickets in Jira&#34;
+in our wiki.&lt;/p&gt;
+&lt;p style=&#34;color:#800000&#34;&gt;Carlos: No problem.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;When you start working on a ticket, press &amp;lsquo;Start Progress&amp;rsquo; - this will
+change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&amp;rsquo;re getting distracted from your work
+for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Carlos reads to himself&lt;/p&gt;
+
+&lt;p&gt;2 hours later&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: How are you doing?&lt;/p&gt;
+&lt;p style=&#34;color:#800000&#34;&gt;Carlos: I read all the articles you&#39;ve asked for. I had a couple of
+questions: do I really need to press Start and Stop Progress buttons all the
+time, and log how much time did I spend on a ticket?&lt;/p&gt;
+&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Yes. This is required because we want to estimate task&#39;s complexity in
+man-hours, which in turn allows us to grow our expertise in tasks estimation.
+Experience we&#39;ve gained helps us plan for future releases.&lt;/p&gt;
+&lt;p style=&#34;color:#800000&#34;&gt;Carlos: I see.&lt;/p&gt;
+
+&lt;p&gt;And Andrea is certainly right - collection and analysis of statistics of how
+much time  developer spent on a task, will have a profound impact on future
+planning. But this is only one side of the medal.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-reverse-side-of-the-medal&#34;&gt;&amp;ldquo;The Reverse side of the Medal&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;I am strongly convinced that the company thus loses more than it gains. You see,
+&lt;strong&gt;tracking time in such a way forces developer to always think about time&lt;/strong&gt;. Now
+Carlos can&amp;rsquo;t afford himself to try this new tool Y, which could, in the long
+term, improve the quality of code and reduce the amount of errors, which
+ultimately would make company&amp;rsquo;s clients more happy (the more stable our software
+- the better user experience is, right?). Or he could have come up with a way to
+  improve existing application&amp;rsquo;s architecture, because he had time to think
+  about it. Now he hadn&amp;rsquo;t, you take it from him.&lt;/p&gt;
+
+&lt;p&gt;There is also such thing as &amp;lsquo;Estimated time&amp;rsquo; - time, in which task is expected
+to be completed, usually estimated by team leader or head of development. When
+you have only logging, developer mostly thinking of how to do his job in less
+time. In this case, there is obvious time limit and often Carlos will have to
+hurry to catch the allotted time.&lt;/p&gt;
+
+&lt;p&gt;Even if the manager says &amp;ldquo;do not worry, if you go over the estimated time&amp;rdquo;, this
+does not change anything. Developer will still be thinking of time.&lt;/p&gt;
+
+&lt;p&gt;But here is good news. If you want developer to be mechanical robot, which only
+makes tickets assigned to him, then you are on the right track. Moreover, with
+time limit specified, Carlos could focus better on the task and make the most of
+his brain. It&amp;rsquo;s like deadline, only in miniature.&lt;/p&gt;
+
+&lt;p&gt;Opinions regarding the use of deadlines generally diverge. Most agree on the
+fact that, in the long term, constant focus on some task and working more than
+usual, lead to fatigue. Here the ability to keep the balance is very important -
+&lt;strong&gt;sometimes tough deadlines make us summon strength and ship the product on time&lt;/strong&gt;.
+Note that sometimes doesn&amp;rsquo;t mean &amp;ldquo;you must complete this task in about 4 hours,
+and then hop on the next one.&amp;rdquo;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-can-we-do-about-it&#34;&gt;What can we do about it&lt;/h2&gt;
+
+&lt;p&gt;Let developers estimate the value of &amp;lsquo;Estimated time&amp;rsquo; themselves. We want our
+developers to be independent. As for the logging, here as well, there are various
+options. I&amp;rsquo;m not asking you to opt-out tracking time, no. Just &lt;strong&gt;save Carlos from
+unnecessary stress and the need to press buttons and constantly keep track of
+time&lt;/strong&gt;. For example, we can take into account the time between he accepted the
+ticket and completed his work on it (set status to resolved). Yes, the accuracy
+will suffer, but you can take this instrument error into account. I&amp;rsquo;m sure you
+can easily come up with another couple of ways.&lt;/p&gt;
+
+&lt;p&gt;Hope I managed to show you what could be the consequences if you&amp;rsquo;re forcing your
+developers to think about time. Tell me what you think? Is that true for your
+company? Are you satisfied with it? Answer in comments or send me an e-mail.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

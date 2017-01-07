@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quizzes on Home on Rails</title>
+    <link>http://homeonrails.com/tags/quizzes/index.xml</link>
+    <description>Recent content in Quizzes on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/quizzes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ruby speed quiz explained</title>
+      <link>http://homeonrails.com/2014/04/ruby-speed-quiz-explained/</link>
+      <pubDate>Tue, 01 Apr 2014 23:47:38 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/04/ruby-speed-quiz-explained/</guid>
+      <description>&lt;p&gt;At the end of &lt;a href=&#34;http://homeonrails.com/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
+I did not expect that more than 900 Rubyists will give it a shot. I
+was surprised. Thanks to all who participated!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;But lets go back to the questions.&lt;/p&gt;
+
+&lt;h1 id=&#34;1-range-cover-vs-include&#34;&gt;1. Range cover? VS include?&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;(&#39;a&#39;..&#39;z&#39;).cover?(&#39;f&#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(&#39;a&#39;..&#39;z&#39;).include?(&#39;f&#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;both run with the similar speed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;cover? is faster&lt;/strong&gt; because it just finds out if the argument is &amp;gt; than the first and &amp;lt; the second.
+No looping necessary. include?, in opposite, loops through all elements of the range until it
+finds an argument or reaches the end.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;(&#39;a&#39;..&#39;z&#39;).cover?(&#39;f&#39;)
+==&amp;gt; &#39;a&#39; &amp;lt;= &#39;f&#39; &amp;amp;&amp;amp; &#39;f&#39; &amp;lt;= &#39;z&#39;
+
+(&#39;a&#39;..&#39;z&#39;).include?(&#39;f&#39;)
+==&amp;gt; &#39;a&#39; == &#39;f&#39;
+==&amp;gt; &#39;b&#39; == &#39;f&#39;
+==&amp;gt; &#39;c&#39; == &#39;f&#39;
+==&amp;gt; &#39;d&#39; == &#39;f&#39;
+==&amp;gt; &#39;e&#39; == &#39;f&#39;
+==&amp;gt; &#39;f&#39; == &#39;f&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;caveats&#34;&gt;Caveats&lt;/h3&gt;
+
+&lt;p&gt;Be careful when using include? and cover?:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;(&#39;a&#39;..&#39;z&#39;).include?(&#39;blah&#39;)
+# =&amp;gt; false
+(&#39;a&#39;..&#39;z&#39;).cover?(&#39;blah&#39;)
+# =&amp;gt; true
+&#39;a&#39; &amp;lt; &#39;blah&#39;
+# =&amp;gt; true
+&#39;blah&#39; &amp;lt; &#39;z&#39;
+# =&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See &lt;a href=&#34;http://gistflow.com/posts/816-range-include-vs-range-cover&#34;&gt;this post&lt;/a&gt; for detailed benchmarks.&lt;/p&gt;
+
+&lt;h1 id=&#34;2-blk-call-vs-yield&#34;&gt;2. blk.call VS yield&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def foo
+  yield if block_given?
+end
+foo { puts &amp;quot;Hi from foo&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def bar(&amp;amp;blk)
+  blk.call
+end
+bar { puts &amp;quot;Hi from bar&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;both run with the similar speed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;yield is faster&lt;/strong&gt; because the process of procifying a block takes time.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;http://mudge.name/2011/01/26/passing-blocks-in-ruby-without-block.html&#34;&gt;this post&lt;/a&gt; for detailed benchmarks.&lt;/p&gt;
+
+&lt;h1 id=&#34;3-hash-vs-fetch&#34;&gt;3. Hash [] VS fetch&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;h = {}
+h[:a] || 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;h = {}
+h.fetch(:a, 1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;both run with the similar speed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Using brackets to get goodies out of a hash is the same as fetch because they both use the same code to do exactly the same thing.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;if (!RHASH(hash)-&amp;gt;ntbl || !st_lookup(RHASH(hash)-&amp;gt;ntbl, key, &amp;amp;val)) {
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It checks that the hash is not empty and tries to find the value using a
+given key.&lt;/p&gt;
+
+&lt;h1 id=&#34;4-define-method-vs-class-eval-definition-not-call-speed&#34;&gt;4. define_method VS class_eval (definition, NOT call speed)&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class A
+  100.times do |i|
+    define_method(&amp;quot;foo_#{i}&amp;quot;) { 10.times.map { &amp;quot;foo&amp;quot;.length } }
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class B
+  100.times do |i|
+    class_eval &#39;def bar_#{i}; 10.times.map { &amp;quot;foo&amp;quot;.length }; end&#39;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;both run with the similar speed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Define method is faster&lt;/strong&gt; because you don&amp;rsquo;t have to eval the class and then define a method on it. You are already in the class scope. Also on each call to class_eval, MRI creates a new parser and parses the string. In the define_method case, the parser is only run once.&lt;/p&gt;
+
+&lt;p&gt;However, it&amp;rsquo;s not that simple. Yes, define_method creates the method faster. But after creation, a short method created with class_eval is usually faster than one created with define_method. That is why you still can find many class_eval instructions
+in Rails. These are places where run (not startup) speed matters. So, it&amp;rsquo;s worthwhile to chose based on your use case.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;http://tenderlovemaking.com/2013/03/03/dynamic_method_definitions.html&#34;&gt;this post&lt;/a&gt; for detailed benchmarks.&lt;/p&gt;
+
+&lt;h1 id=&#34;5-super-with-or-without-arguments&#34;&gt;5. super with OR without arguments&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Parent
+ def bar(a, b)
+   puts &amp;quot;#{a} - #{b}&amp;quot;
+ end
+end
+
+class Child &amp;lt; Parent
+ def bar(a, b)
+   super
+ end
+end
+c = Child.new
+c.bar(1, 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Parent
+  def bar(a, b)
+    puts &amp;quot;#{a} - #{b}&amp;quot;
+  end
+end
+
+class Child &amp;lt; Parent
+  def bar(a, b)
+    super(a, b)
+  end
+end
+c = Child.new
+c.bar(1, 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;both run with the similar speed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Calling super without arguments passes any arguments along that were passed through to the calling method. So it deals with arguments anyways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ruby speed quiz</title>
+      <link>http://homeonrails.com/2014/03/ruby-speed-quiz/</link>
+      <pubDate>Fri, 28 Mar 2014 12:13:48 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/03/ruby-speed-quiz/</guid>
+      <description>&lt;p&gt;For each case choose the fastest option.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Platform, which hosted this quiz was closed. So it will be read only for some time.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;1-range-cover-vs-include&#34;&gt;1. Range cover? VS include?&lt;/h3&gt;
+
+&lt;p&gt;1)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;(&#39;a&#39;..&#39;z&#39;).include?(&#39;f&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;(&#39;a&#39;..&#39;z&#39;).cover?(&#39;f&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) both run with similar speed&lt;/p&gt;
+
+&lt;h3 id=&#34;2-blk-call-vs-yield&#34;&gt;2. blk.call VS yield&lt;/h3&gt;
+
+&lt;p&gt;1)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def foo
+  yield if block_given?
+end
+foo { puts &amp;quot;Hi from foo&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) both run with similar speed&lt;/p&gt;
+
+&lt;p&gt;3)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def bar(&amp;amp;blk)
+  blk.call
+end
+bar { puts &amp;quot;Hi from bar&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-hash-vs-fetch&#34;&gt;3. Hash [] VS fetch&lt;/h3&gt;
+
+&lt;p&gt;1)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;h = {}
+h[:a] || 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;h = {}
+h.fetch(:a, 1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) both run with similar speed&lt;/p&gt;
+
+&lt;h3 id=&#34;4-super-with-or-without-arguments&#34;&gt;4. super with OR without arguments&lt;/h3&gt;
+
+&lt;p&gt;1)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Parent
+  def bar(a, b)
+    puts &amp;quot;#{a} - #{b}&amp;quot;
+  end
+end
+
+class Child &amp;lt; Parent
+  def bar(a, b)
+    super(a, b)
+  end
+end
+c = Child.new
+c.bar(1, 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) both run with similar speed&lt;/p&gt;
+
+&lt;p&gt;3)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Parent
+ def bar(a, b)
+   puts &amp;quot;#{a} - #{b}&amp;quot;
+ end
+end
+
+class Child &amp;lt; Parent
+ def bar(a, b)
+   super
+ end
+end
+c = Child.new
+c.bar(1, 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;5-define-method-vs-class-eval-definition-not-call-speed&#34;&gt;5. define_method VS class_eval (definition, NOT call speed)&lt;/h3&gt;
+
+&lt;p&gt;1)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class A
+  100.times do |i|
+    define_method(&amp;quot;foo_#{i}&amp;quot;) { 10.times.map { &amp;quot;foo&amp;quot;.length } }
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class B
+  100.times do |i|
+    class_eval &#39;def bar_#{i}; 10.times.map { &amp;quot;foo&amp;quot;.length };
+end&#39;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) both run with similar speed&lt;/p&gt;
+
+&lt;p&gt;Check yourself:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;2&lt;/li&gt;
+&lt;li&gt;1&lt;/li&gt;
+&lt;li&gt;3&lt;/li&gt;
+&lt;li&gt;2&lt;/li&gt;
+&lt;li&gt;1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://homeonrails.com/2014/04/ruby-speed-quiz-explained/&#34;&gt;Here&lt;/a&gt; you could find an explanation for each case.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

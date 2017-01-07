@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Home on Rails</title>
+    <link>http://homeonrails.com/tags/docker/index.xml</link>
+    <description>Recent content in Docker on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Разрабатываем ruby gem в docker контейнере</title>
+      <link>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
+      <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34; alt=&#34;&#34;/ width=&#34;450&#34; title=&#34;Разрабатываем ruby gem в docker контейнере&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,
+что я являюсь старым приверженцем Vagrant&amp;rsquo;а, на днях мне все же захотелось
+попробовать docker для одного из своих проектов -
+&lt;a href=&#34;https://github.com/kaize/valle&#34;&gt;Valle&lt;/a&gt;. Не без препонов, но все же удалось
+встроить docker в процесс. Далее последует руководство по разработке Ruby гема
+с использованием docker&amp;rsquo;а.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Небольшое отступление&lt;/em&gt;: я не знаю кто победит в битве тулов - docker или
+rocket и КО, которые недавно выпустили общую спецификацию на контейнеры - &lt;a href=&#34;https://github.com/appc/spec&#34;&gt;App
+Container&lt;/a&gt;, или еще кто-то. Пусть победит
+сильнейший. docker я выбрал по 2 причинам: 1) он уже давно стабилен и вполне
+годен для повседневного использования (для разработки точно) 2) это довольно
+большая платформа с кучей готовых рецептов и туториалов.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-устанавливаем-docker&#34;&gt;1. Устанавливаем docker&lt;/h3&gt;
+
+&lt;p&gt;Все команды актуальны для Ubuntu. Инструкции для других ОС читайте на
+официальных сайтах.&lt;/p&gt;
+
+&lt;p&gt;И так, начнем. Первым делом нам надо установить сам docker (для других ОС см.
+&lt;a href=&#34;http://docs.docker.com/installation/&#34;&gt;инструкцию&lt;/a&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget -qO- https://get.docker.com/ | sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Чтобы каждый раз не писать sudo при его использовании, создадим группу docker и
+добавим своего пользователя в нее:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo usermod -aG docker &amp;lt;username&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-создаем-dockerfile&#34;&gt;2. Создаем Dockerfile&lt;/h3&gt;
+
+&lt;p&gt;Следующим нашим шагом будет создание Dockerfile&amp;rsquo;а для нашего гема. Создайте
+Dockerfile со следующим содержимым в корне вашего гема:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dockerfile&#34;&gt;# Dockerfile
+FROM ruby:2.2.2
+
+RUN mkdir -p /usr/src/lib
+WORKDIR /usr/src/lib
+
+COPY Gemfile* /usr/src/lib/
+COPY *.gemspec /usr/src/lib/
+RUN bundle install
+
+COPY . /usr/src/lib/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Вы можете натолкнуться на ошибку мол &amp;ldquo;Не могу найти lib/&lt;yourgemname\&gt;/version.rb&amp;rdquo; если
+загружаете его (файл с версией) в gemspec файле. Решением будет добавить еще
+одну инструкцию COPY перед bundle install или &lt;a href=&#34;https://github.com/kaize/valle/commit/cfb4e8e451c54bb94176577811de72a01740d501#diff-6e266e394c50981ec99b03694aa7ccc0L2&#34;&gt;удалить
+его к чертям&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dockerfile&#34;&gt;RUN mkdir -p /usr/src/lib/&amp;lt;yourgemname&amp;gt;
+COPY lib/&amp;lt;yourgemname&amp;gt;/version.rb /usr/src/lib/&amp;lt;yourgemname&amp;gt;/version.rb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если вы только начинаете разрабатывать гем и вам нужно создать его скелет выполните:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -it --rm --user &amp;quot;$(id -u):$(id -g)&amp;quot; -v &amp;quot;$PWD&amp;quot;:/usr/src/lib -w /usr/src/lib ruby:2.2.2 bundle gem &amp;lt;yourgemname&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Эта команда создаст поддиректорию &lt;yourgemname\&gt; внутри текущей.&lt;/p&gt;
+
+&lt;p&gt;По умолчанию COPY скопирует все файлы и папки внутрь контейнера. Хорошей
+практикой считается добавление .dockerignore в проект (как .gitignore,
+только для docker&amp;rsquo;а):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# .dockerignore
+pkg/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Также можно заморозить bundler, чтобы он выкидывал ошибку каждый раз, когда вы
+пытаетесь запустить что-то при измененном Gemfile. То есть, вам придется
+выполнить &lt;code&gt;bundle install&lt;/code&gt; и пересобрать контейнер (опционально).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dockerfile&#34;&gt;# Dockerfile
+FROM ruby:2.2.2
+
+# throw errors if Gemfile has been modified since Gemfile.lock
+RUN bundle config --global frozen 1
+
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;bundle install&lt;/code&gt; выполняем так:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run --rm -v &amp;quot;$PWD&amp;quot;:/usr/src/lib -w /usr/src/lib ruby:2.2.2 bundle install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Другие хорошие практики можно прочесть здесь - &lt;a href=&#34;https://docs.docker.com/articles/dockerfile_best-practices/&#34;&gt;Best practices for writing
+Dockerfiles&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-собираем-контейнер-и-запускаем-тесты&#34;&gt;3. Собираем контейнер и запускаем тесты&lt;/h3&gt;
+
+&lt;p&gt;Результирующий Dockerfile должен выглядеть примерно так:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dockerfile&#34;&gt;# Dockerfile
+FROM ruby:2.2.2
+
+# throw errors if Gemfile has been modified since Gemfile.lock
+RUN bundle config --global frozen 1
+
+RUN mkdir -p /usr/src/lib
+WORKDIR /usr/src/lib
+
+COPY Gemfile* /usr/src/lib/
+COPY *.gemspec /usr/src/lib/
+RUN bundle install
+
+COPY . /usr/src/lib/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Теперь соберем наш контейнер:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker build -t &amp;lt;yourgemname&amp;gt; .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;И запустим тесты:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -it --rm -v &amp;quot;$PWD&amp;quot;:/usr/src/lib &amp;lt;yourgemname&amp;gt; bundle exec rake
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Все должно отработать без проблем.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-makefile-опционально&#34;&gt;4. Makefile (опционально)&lt;/h3&gt;
+
+&lt;p&gt;Хорошей идеей также будет добавить Makefile:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-makefile&#34;&gt;docker_build:
+	docker build -t &amp;lt;yourgemname&amp;gt; .
+
+docker_test:
+	docker run -it --rm -v &amp;quot;$(PWD)&amp;quot;:/usr/src/lib &amp;lt;yourgemname&amp;gt; bundle exec rake
+
+.PHONY: docker_build docker_test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;или использовать &lt;a href=&#34;https://docs.docker.com/compose/&#34;&gt;docker-compose&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;5-результаты&#34;&gt;5. Результаты&lt;/h3&gt;
+
+&lt;p&gt;Все это работает очень шустро (по крайней мере на моем Linux&amp;rsquo;е). Поговаривают,
+что на маках ситуация чуть хуже по понятным причинам.&lt;/p&gt;
+
+&lt;p&gt;Таким образом, все что потребуется от нашего коллеги или контрибьютора для
+старта работы над гемом - это выполнить пару команд! Я считаю это здорово. Нет,
+вы конечно можете добавить Vagrantfile вместе  с provisioning, но виртуалки
+тяжелые и съедают много ресурсов. Или сказать, что для работы над гемом вам
+нужно поставить Ruby, libXX1 и libXX2 ручками. Но и у этого подхода имеются
+серьезные недостатки.&lt;/p&gt;
+
+&lt;p&gt;Полезные ссылки:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/reference/#reference&#34;&gt;https://docs.docker.com/reference/#reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://registry.hub.docker.com/_/ruby/&#34;&gt;https://registry.hub.docker.com/_/ruby/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://registry.hub.docker.com/_/rails/&#34;&gt;https://registry.hub.docker.com/_/rails/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://robots.thoughtbot.com/rails-on-docker&#34;&gt;https://robots.thoughtbot.com/rails-on-docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
