@@ -676,7 +676,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 &lt;li&gt;&lt;a href=&#34;https://chris.chowie.net/2015/04/19/True-colour-with-neovim-tmux-and-iterm2/&#34;&gt;https://chris.chowie.net/2015/04/19/True-colour-with-neovim-tmux-and-iterm2/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;My dotfiles: &lt;a href=&#34;https://github.com/akalyaev/dotfiles&#34;&gt;https://github.com/akalyaev/dotfiles&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;My dotfiles: &lt;a href=&#34;https://github.com/melekes/dotfiles&#34;&gt;https://github.com/melekes/dotfiles&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -706,7 +706,7 @@ nnoremap &amp;lt;leader&amp;gt;ou :!echo `git url`/%?at=`git rev-parse HEAD`\#&a
 
 &lt;p&gt;&lt;strong&gt;Step 3. Enjoy&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;My dotfiles: &lt;a href=&#34;https://github.com/akalyaev/dotfiles&#34;&gt;https://github.com/akalyaev/dotfiles&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;My dotfiles: &lt;a href=&#34;https://github.com/melekes/dotfiles&#34;&gt;https://github.com/melekes/dotfiles&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -869,7 +869,7 @@ occurrences.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://asciinema.org/a/5szdg2zqk0tjg1eb81vjpdmci?autoplay=1&#34;&gt;&lt;img src=&#34;https://asciinema.org/a/5szdg2zqk0tjg1eb81vjpdmci.png&#34; alt=&#34;asciicast&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Looking for more stuff? Check out &lt;a href=&#34;https://github.com/akalyaev/dotfiles&#34;&gt;my dotfiles&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Looking for more stuff? Check out &lt;a href=&#34;https://github.com/melekes/dotfiles&#34;&gt;my dotfiles&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

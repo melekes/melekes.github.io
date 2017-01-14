@@ -140,18 +140,80 @@ design.&lt;/li&gt;
       <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/about/</guid>
-      <description>&lt;p&gt;Hi! My name is Anton Kalyaev.&lt;/p&gt;
+      <description>&lt;p&gt;Hi! My name is Anton Kaliaev.&lt;/p&gt;
 
 &lt;p&gt;&lt;img style=&#34;border-radius: 125px; width: 240px;&#34; src=&#34;http://homeonrails.com/images/pic.jpeg&#34; alt=&#34;portrait&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;I am an enthusiastic developer, who likes to grow every day in different areas
 of expertise and apply that knowledge in everyday life.&lt;/p&gt;
 
-&lt;p&gt;My open source work is available on &lt;a href=&#34;https://github.com/akalyaev/&#34;&gt;GitHub&lt;/a&gt;, my
-talks are on &lt;a href=&#34;https://speakerdeck.com/akalyaev&#34;&gt;Speaker Deck&lt;/a&gt;, my work history
+&lt;p&gt;My open source work is available on &lt;a href=&#34;https://github.com/melekes/&#34;&gt;GitHub&lt;/a&gt;, my
+talks are on &lt;a href=&#34;https://speakerdeck.com/melekes&#34;&gt;Speaker Deck&lt;/a&gt;, my work history
 is on &lt;a href=&#34;http://www.linkedin.com/in/anton-kalyaev&#34;&gt;LinkedIn&lt;/a&gt;, and my thoughts are
 on &lt;a href=&#34;https://twitter.com/AntonKalyaev&#34;&gt;Twitter&lt;/a&gt;. You’re also welcome to say
 hello at &lt;a href=&#34;mailto:anton.kalyaev@gmail.com&#34;&gt;anton.kalyaev@gmail.com&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PGP Pub Key</title>
+      <link>http://homeonrails.com/pgp/</link>
+      <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/pgp/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v2
+
+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
+pQxA9qGnUkZ65Tb4PukxfALmVQ==
+=BTtP
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -185,7 +247,7 @@ hello at &lt;a href=&#34;mailto:anton.kalyaev@gmail.com&#34;&gt;anton.kalyaev@gm
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xkgbWGBmgN8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;You may also find interesting &lt;a href=&#34;https://gist.github.com/akalyaev/ac047081e479b4f4aeb6#life&#34;&gt;videos, which were not listed
+&lt;p&gt;You may also find interesting &lt;a href=&#34;https://gist.github.com/melekes/ac047081e479b4f4aeb6#life&#34;&gt;videos, which were not listed
 here&lt;/a&gt;, but still
 are my favorite (some of them are quite long).&lt;/p&gt;
 
@@ -490,7 +552,7 @@ being motivated and engaged in the classroom.&lt;/p&gt;
 
 &lt;h2 id=&#34;me&#34;&gt;Me&lt;/h2&gt;
 
-&lt;p&gt;I’m primary interested in system programming (right now I’m writing a &lt;a href=&#34;https://github.com/akalyaev/OS-bitch&#34;&gt;hobby OS&lt;/a&gt; in Rust) and infrastructure.&lt;/p&gt;
+&lt;p&gt;I’m primary interested in system programming (right now I’m writing a &lt;a href=&#34;https://github.com/melekes/OS-bitch&#34;&gt;hobby OS&lt;/a&gt; in Rust) and infrastructure.&lt;/p&gt;
 
 &lt;p&gt;This may seem strange to somebody because I started my career as a web developer. However, as years went by, I’ve realized I&amp;rsquo;m enjoying system programming more (OS insides and tools, building SaaS, debugging and fixing complex bugs using Linux utilities like strace, iostat, tcpdump and others).&lt;/p&gt;
 
@@ -529,8 +591,8 @@ being motivated and engaged in the classroom.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.linkedin.com/in/anton-kalyaev-a2617786&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/akalyaev/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/akalyaev&#34;&gt;SpeakerDeck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/melekes/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/melekes&#34;&gt;SpeakerDeck&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
@@ -717,51 +779,6 @@ Joshi&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;And there is one more good &lt;a href=&#34;https://www.youtube.com/watch?v=B1-gS0oEtYc&#34;&gt;talk on CQRS and Event Sourcing by Bobby
 Calderwood&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Monthly Art #13</title>
-      <link>http://homeonrails.com/2016/10/monthly-art-number-13/</link>
-      <pubDate>Tue, 11 Oct 2016 12:06:49 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/monthly-art-number-13/</guid>
-      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
-last month. Whether it was a full length movie, short film, music album, book
-or even a painting.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;movie-captain-fantastic-2016&#34;&gt;Movie - Captain Fantastic (2016)&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D1kH4OMIOMc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt3553976/&#34;&gt;http://www.imdb.com/title/tt3553976/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/captain_fantastic/&#34;&gt;https://www.rottentomatoes.com/m/captain_fantastic/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/841147/&#34;&gt;https://www.kinopoisk.ru/film/841147/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;ldquo;What is Coca Cola? - Poisoned water.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;The director is trying to show us how far we have shifted from nature. All our
-modern world (gadgets, virtual reality, fast food) sometimes leads us astray
-and creates a veil before our eyes. Tim Urban has a really good article on this
-- &lt;a href=&#34;http://waitbutwhy.com/2014/10/religion-for-the-nonreligious.html&#34;&gt;Religion for the
-Nonreligious&lt;/a&gt;
-(&lt;a href=&#34;https://lifehacker.ru/2016/08/27/wisdom-is-the-goal/&#34;&gt;ru_RU&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h2 id=&#34;ted-talk-what-makes-a-good-life-lessons-from-the-longest-study-on-happiness-2015&#34;&gt;TED talk - What makes a good life? Lessons from the longest study on happiness (2015)&lt;/h2&gt;
-
-&lt;iframe src=&#34;https://embed.ted.com/talks/lang/en/robert_waldinger_what_makes_a_good_life_lessons_from_the_longest_study_on_happiness&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;&lt;Paste&gt;
-
-Family is important! Point.
-
-## [RU] Видео - Надежные источники информации
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/AfUqqOiZVHg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Вкратце: надежных источников нет, есть эмпирика и логика. Совет: выставляйте
-скорость 2X.&lt;/p&gt;</description>
     </item>
     
   </channel>
