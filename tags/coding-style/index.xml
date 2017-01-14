@@ -19,7 +19,7 @@
 &amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
-Author: Anton Kalyaev &amp;lt;anton.kalyaev@gmail.com&amp;gt;
+Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
 
     raise NoSlidesError if no slides
@@ -50,7 +50,7 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
 данного кода&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
-Author: Anton Kalyaev &amp;lt;anton.kalyaev@gmail.com&amp;gt;
+Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
 
     raise NoSlidesError if no slides
