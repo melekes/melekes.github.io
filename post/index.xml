@@ -16,20 +16,20 @@
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/01/signing-git-commits/</guid>
-      <description>
-
-&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
+      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
 возможны такие смешные поделки как
 &lt;a href=&#34;https://github.com/jayphelps/git-blame-someone-else&#34;&gt;git-blame-someone-else&lt;/a&gt;.
 Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
-действительно ВЫ, прибавляется.&lt;/p&gt;
+действительно вы, прибавляется.&lt;/p&gt;
 
 &lt;p&gt;Github в &lt;a href=&#34;https://github.com/blog/2144-gpg-signature-verification&#34;&gt;апреле прошлого
 года&lt;/a&gt; начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Создать подпись и настроить git очень просто. Итак, давайте сделаем это:&lt;/p&gt;
 
@@ -136,8 +136,7 @@ set -gx GPG_TTY (tty)
 &lt;li&gt;&lt;a href=&#34;https://blog.erincall.com/p/signing-your-git-commits-with-gpg&#34;&gt;Signing Your Git Commits With GPG&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc&#34;&gt;Github : Signing commits using GPG (Ubuntu/Mac)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b&#34;&gt;Automatic Git commit signing with GPG on OSX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
