@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/melekes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://homeonrails.com
+  * I am melekes (https://keybase.io/melekes) on keybase.
+  * I have a public key ASA1kz6kxvacyRSjua9gxErX7nt2n46FvBFB-OfWYp572go
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012035933ea4c6f69cc914a3b9af60c44ad7ee7b769f8e85bc1141f8e7d6629e7bda0a",
+            "host": "keybase.io",
+            "kid": "012035933ea4c6f69cc914a3b9af60c44ad7ee7b769f8e85bc1141f8e7d6629e7bda0a",
+            "uid": "bf25bca672608f5f63af6909fa93e019",
+            "username": "melekes"
+        },
+        "service": {
+            "hostname": "homeonrails.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1484384105,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1484383979,
+        "hash": "d58f5261a3c53255e82749b2483b80809f93b1d773981ab3d8e5db722cf465d1d3b04041a4d4b0f0176de69c1b9345c23624b7d92f76a1f491a8ec181f4f5cfe",
+        "seqno": 799271
+    },
+    "prev": "63da5bb0e5c279567b5850cf9609613fcf3bc23e4244c5a255000dffccac1bd6",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgNZM+pMb2nMkUo7mvYMRK1+57dp+OhbwRQfjn1mKee9oKp3BheWxvYWTFAvV7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMzU5MzNlYTRjNmY2OWNjOTE0YTNiOWFmNjBjNDRhZDdlZTdiNzY5ZjhlODViYzExNDFmOGU3ZDY2MjllN2JkYTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzU5MzNlYTRjNmY2OWNjOTE0YTNiOWFmNjBjNDRhZDdlZTdiNzY5ZjhlODViYzExNDFmOGU3ZDY2MjllN2JkYTBhIiwidWlkIjoiYmYyNWJjYTY3MjYwOGY1ZjYzYWY2OTA5ZmE5M2UwMTkiLCJ1c2VybmFtZSI6Im1lbGVrZXMifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImhvbWVvbnJhaWxzLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODQzODQxMDUsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4NDM4Mzk3OSwiaGFzaCI6ImQ1OGY1MjYxYTNjNTMyNTVlODI3NDliMjQ4M2I4MDgwOWY5M2IxZDc3Mzk4MWFiM2Q4ZTVkYjcyMmNmNDY1ZDFkM2IwNDA0MWE0ZDRiMGYwMTc2ZGU2OWMxYjkzNDVjMjM2MjRiN2Q5MmY3NmExZjQ5MWE4ZWMxODFmNGY1Y2ZlIiwic2Vxbm8iOjc5OTI3MX0sInByZXYiOiI2M2RhNWJiMGU1YzI3OTU2N2I1ODUwY2Y5NjA5NjEzZmNmM2JjMjNlNDI0NGM1YTI1NTAwMGRmZmNjYWMxYmQ2Iiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA+DFYAqdW2CbiCFo2eNQZJIjdmNX4nZvr5zqF6RlI48NonQQMyNdzD7ZbbNNECgksP+5ZoopiMtZJzBdvShJcD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINCmvTKK+x0DtzZe/Hb381fQRbTsi1M2+J46OoUEmI0Ro3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/melekes
+
+==================================================================
