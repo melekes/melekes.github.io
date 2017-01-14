@@ -10,6 +10,136 @@
     <atom:link href="http://homeonrails.com/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Signing Git Commits</title>
+      <link>http://homeonrails.com/2017/01/signing-git-commits/</link>
+      <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/01/signing-git-commits/</guid>
+      <description>
+
+&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
+давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
+возможны такие смешные поделки как
+&lt;a href=&#34;https://github.com/jayphelps/git-blame-someone-else&#34;&gt;git-blame-someone-else&lt;/a&gt;.
+Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
+действительно ВЫ, прибавляется.&lt;/p&gt;
+
+&lt;p&gt;Github в &lt;a href=&#34;https://github.com/blog/2144-gpg-signature-verification&#34;&gt;апреле прошлого
+года&lt;/a&gt; начал показывать
+зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Создать подпись и настроить git очень просто. Итак, давайте сделаем это:&lt;/p&gt;
+
+&lt;h3 id=&#34;1-создаем-подпись&#34;&gt;1. Создаем подпись&lt;/h3&gt;
+
+&lt;p&gt;Ставим gpg:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Ubuntu
+sudo apt-get install gpa seahorse
+# Mac
+brew install gpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Создаем RSA пару (публичный и приватный ключ):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gpg --gen-key
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(размер не ниже 2048, но и &lt;a href=&#34;https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096&#34;&gt;больше не особо
+нужно&lt;/a&gt;; срок
+годности по желанию)&lt;/p&gt;
+
+&lt;p&gt;Копируем полученный публичный ключ на &lt;a href=&#34;https://github.com/settings/keys&#34;&gt;Github&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys --keyid-format LONG
+
+-------------------------------
+sec   2048R/&amp;lt;COPY_LONG_KEY&amp;gt;  2017-01-14 [expires: 2019-01-14]
+uid                          User Name &amp;lt;user.name@email.com&amp;gt;
+ssb   2048R/098AA7C27DD57ACC 2017-01-14
+
+gpg --armor --export &amp;lt;PASTE_LONG_KEY_HERE&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-настраиваем-git&#34;&gt;2. Настраиваем git&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys
+
+-------------------------------
+sec   2048R/&amp;lt;COPY_SHORT_KEY&amp;gt; 2017-01-14 [expires: 2019-01-14]
+uid                          User Name &amp;lt;user.name@email.com&amp;gt;
+ssb   2048R/7DD57ACC         2017-01-14
+
+git config --global user.signingKey &amp;lt;PASTE_SHORT_KEY_HERE&amp;gt;
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(можно настроить индивидуально под каждый репозиторий).&lt;/p&gt;
+
+&lt;h3 id=&#34;3-кэшируем-пароль&#34;&gt;3. Кэшируем пароль&lt;/h3&gt;
+
+&lt;p&gt;чтобы не вводить его каждый раз при подписи.&lt;/p&gt;
+
+&lt;p&gt;Если вы пользователь Mac OS, то ставим &lt;a href=&#34;https://gpgtools.org/&#34;&gt;GPG Suite&lt;/a&gt;,
+который интегрируется с Mac OS keychain.&lt;/p&gt;
+
+&lt;p&gt;Если пользуетесь Linux, то придется воспользоваться встроенным &lt;code&gt;gpg-agent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Создаем конфиг &lt;code&gt;.gnupg/gpg-agent.conf&lt;/code&gt; со следующим содержимым:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;default-cache-ttl 28800
+max-cache-ttl 28800
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;28800 - 8 часов (кто-то ставит 1 час).&lt;/p&gt;
+
+&lt;p&gt;В конфиге &lt;code&gt;.gnupg/gpg.conf&lt;/code&gt; указываем:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;use-agent
+batch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;batch&lt;/code&gt; убирает противные сообщения вида: &lt;code&gt;You need a passphrase to unlock the
+secret key&lt;/code&gt;. Да, они по неведомой причине появляются даже, если агент
+закэшировал пароль.&lt;/p&gt;
+
+&lt;p&gt;Не забываем запустить &lt;code&gt;gpg-agent&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;fish:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if not begin
+    # Is the agent running already? Does the agent-info file exist, and if so,
+    # is there a process with the pid given in the file?
+    [ -f ~/.gpg-agent-info ]
+    and kill -0 (cut -d : -f 2 ~/.gpg-agent-info) ^/dev/null
+end
+    # no, it is not running. Start it!
+    gpg-agent --daemon --no-grab --write-env-file ~/.gpg-agent-info &amp;gt;/dev/null ^&amp;amp;1
+end
+# get the agent info from the info file, and export it so GPG can see it.
+set -gx GPG_AGENT_INFO (cut -c 16- ~/.gpg-agent-info)
+set -gx GPG_TTY (tty)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;или &lt;a href=&#34;https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40&#34;&gt;bash&lt;/a&gt;
+или напрямую &lt;code&gt;gpg-agent --daemon&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-коммитим-что-угодно-и-идем-смотреть-результат-на-github&#34;&gt;4. Коммитим что угодно и идем смотреть результат на Github&lt;/h2&gt;
+
+&lt;p&gt;Материалы:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.erincall.com/p/signing-your-git-commits-with-gpg&#34;&gt;Signing Your Git Commits With GPG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc&#34;&gt;Github : Signing commits using GPG (Ubuntu/Mac)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b&#34;&gt;Automatic Git commit signing with GPG on OSX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Copy and paste between Vim and OS</title>
       <link>http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>

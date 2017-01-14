@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Signing Git Commits"/>
+<meta name="twitter:description" content="Решили у себя в команде, что будем подписывать коммиты и тэги. У git&rsquo;а уже давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому возможны такие смешные поделки как git-blame-someone-else. Если же вы подписываете коммит своей подписью, то уверенности в том, что автор действительно ВЫ, прибавляется.
+Github в апреле прошлого года начал показывать зеленый бейджик когда коммит подписан. Вот как он выглядит:
+Создать подпись и настроить git очень просто."/>
+
+
+
+  	<meta property="og:title" content=" Signing Git Commits &middot;  Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2017/01/signing-git-commits/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2017-01-14T21:14:14&#43;04:00" />
+
+    
+    <meta property="og:article:tag" content="git" />
+    
+    <meta property="og:article:tag" content="tutorials" />
+    
+    
+
+    <title>
+       Signing Git Commits &middot;  Home on Rails
+    </title>
+
+    <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.18.1" />
+
+    <link rel="canonical" href="http://homeonrails.com/2017/01/signing-git-commits/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/about">About me</a>
+            </li>
+        
+            <h3>Explore</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/most-popular-posts">Most popular posts</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://speakerdeck.com/melekes">Talks</a>
+            </li>
+        
+            <h3>Follow Me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/melekes">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/akaliaev">Twitter timeline</a>
+            </li>
+        
+            <h3>Contact Me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.linkedin.com/in/melekes">LinkedIn</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://Keybase.io/melekes">Keybase (secure msg)</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com/"><img src="http://homeonrails.com/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Signing Git Commits</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-01-14T21:14:14&#43;04:00">
+            Jan 14, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.com/tags/git/">#git</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.com/tags/tutorials/">#tutorials</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>Решили у себя в команде, что будем подписывать коммиты и тэги. У git&rsquo;а уже
+давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
+возможны такие смешные поделки как
+<a href="https://github.com/jayphelps/git-blame-someone-else">git-blame-someone-else</a>.
+Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
+действительно ВЫ, прибавляется.</p>
+
+<p>Github в <a href="https://github.com/blog/2144-gpg-signature-verification">апреле прошлого
+года</a> начал показывать
+зеленый бейджик когда коммит подписан. Вот как он выглядит:</p>
+
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png" alt="" title=""/></p>
+
+<p>Создать подпись и настроить git очень просто. Итак, давайте сделаем это:</p>
+
+<h3 id="1-создаем-подпись">1. Создаем подпись</h3>
+
+<p>Ставим gpg:</p>
+
+<pre><code># Ubuntu
+sudo apt-get install gpa seahorse
+# Mac
+brew install gpg
+</code></pre>
+
+<p>Создаем RSA пару (публичный и приватный ключ):</p>
+
+<pre><code>gpg --gen-key
+</code></pre>
+
+<p>(размер не ниже 2048, но и <a href="https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096">больше не особо
+нужно</a>; срок
+годности по желанию)</p>
+
+<p>Копируем полученный публичный ключ на <a href="https://github.com/settings/keys">Github</a>:</p>
+
+<pre><code>gpg --list-secret-keys --keyid-format LONG
+
+-------------------------------
+sec   2048R/&lt;COPY_LONG_KEY&gt;  2017-01-14 [expires: 2019-01-14]
+uid                          User Name &lt;user.name@email.com&gt;
+ssb   2048R/098AA7C27DD57ACC 2017-01-14
+
+gpg --armor --export &lt;PASTE_LONG_KEY_HERE&gt;
+</code></pre>
+
+<h3 id="2-настраиваем-git">2. Настраиваем git</h3>
+
+<pre><code>gpg --list-secret-keys
+
+-------------------------------
+sec   2048R/&lt;COPY_SHORT_KEY&gt; 2017-01-14 [expires: 2019-01-14]
+uid                          User Name &lt;user.name@email.com&gt;
+ssb   2048R/7DD57ACC         2017-01-14
+
+git config --global user.signingKey &lt;PASTE_SHORT_KEY_HERE&gt;
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
+</code></pre>
+
+<p>(можно настроить индивидуально под каждый репозиторий).</p>
+
+<h3 id="3-кэшируем-пароль">3. Кэшируем пароль</h3>
+
+<p>чтобы не вводить его каждый раз при подписи.</p>
+
+<p>Если вы пользователь Mac OS, то ставим <a href="https://gpgtools.org/">GPG Suite</a>,
+который интегрируется с Mac OS keychain.</p>
+
+<p>Если пользуетесь Linux, то придется воспользоваться встроенным <code>gpg-agent</code>.</p>
+
+<p>Создаем конфиг <code>.gnupg/gpg-agent.conf</code> со следующим содержимым:</p>
+
+<pre><code>default-cache-ttl 28800
+max-cache-ttl 28800
+</code></pre>
+
+<p>28800 - 8 часов (кто-то ставит 1 час).</p>
+
+<p>В конфиге <code>.gnupg/gpg.conf</code> указываем:</p>
+
+<pre><code>use-agent
+batch
+</code></pre>
+
+<p><code>batch</code> убирает противные сообщения вида: <code>You need a passphrase to unlock the
+secret key</code>. Да, они по неведомой причине появляются даже, если агент
+закэшировал пароль.</p>
+
+<p>Не забываем запустить <code>gpg-agent</code>:</p>
+
+<p>fish:</p>
+
+<pre><code>if not begin
+    # Is the agent running already? Does the agent-info file exist, and if so,
+    # is there a process with the pid given in the file?
+    [ -f ~/.gpg-agent-info ]
+    and kill -0 (cut -d : -f 2 ~/.gpg-agent-info) ^/dev/null
+end
+    # no, it is not running. Start it!
+    gpg-agent --daemon --no-grab --write-env-file ~/.gpg-agent-info &gt;/dev/null ^&amp;1
+end
+# get the agent info from the info file, and export it so GPG can see it.
+set -gx GPG_AGENT_INFO (cut -c 16- ~/.gpg-agent-info)
+set -gx GPG_TTY (tty)
+</code></pre>
+
+<p>или <a href="https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40">bash</a>
+или напрямую <code>gpg-agent --daemon</code>.</p>
+
+<h2 id="4-коммитим-что-угодно-и-идем-смотреть-результат-на-github">4. Коммитим что угодно и идем смотреть результат на Github</h2>
+
+<p>Материалы:</p>
+
+<ul>
+<li><a href="https://blog.erincall.com/p/signing-your-git-commits-with-gpg">Signing Your Git Commits With GPG</a></li>
+<li><a href="https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc">Github : Signing commits using GPG (Ubuntu/Mac)</a></li>
+<li><a href="https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b">Automatic Git commit signing with GPG on OSX</a></li>
+</ul>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://homeonrails.com/" style="background-image: url(http://homeonrails.com/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com/">Anton Kaliaev</a></h4>
+  
+  <p>Software engineer, blogger, public speaker, traveler</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Signing%20Git%20Commits&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2017%2f01%2fsigning-git-commits%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2017%2f01%2fsigning-git-commits%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2017%2f01%2fsigning-git-commits%2f&amp;description=Signing%20Git%20Commits"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2017%2f01%2fsigning-git-commits%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'homeonrails';
+  var disqus_url = 'http:\/\/homeonrails.com\/2017\/01\/signing-git-commits\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.com/js/index.js"></script>
+    
+</body>
+</html>
+

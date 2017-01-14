@@ -7,8 +7,138 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Tue, 10 Jan 2017 09:54:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jan 2017 21:14:14 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Signing Git Commits</title>
+      <link>http://homeonrails.com/2017/01/signing-git-commits/</link>
+      <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/01/signing-git-commits/</guid>
+      <description>
+
+&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
+давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
+возможны такие смешные поделки как
+&lt;a href=&#34;https://github.com/jayphelps/git-blame-someone-else&#34;&gt;git-blame-someone-else&lt;/a&gt;.
+Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
+действительно ВЫ, прибавляется.&lt;/p&gt;
+
+&lt;p&gt;Github в &lt;a href=&#34;https://github.com/blog/2144-gpg-signature-verification&#34;&gt;апреле прошлого
+года&lt;/a&gt; начал показывать
+зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Создать подпись и настроить git очень просто. Итак, давайте сделаем это:&lt;/p&gt;
+
+&lt;h3 id=&#34;1-создаем-подпись&#34;&gt;1. Создаем подпись&lt;/h3&gt;
+
+&lt;p&gt;Ставим gpg:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Ubuntu
+sudo apt-get install gpa seahorse
+# Mac
+brew install gpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Создаем RSA пару (публичный и приватный ключ):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gpg --gen-key
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(размер не ниже 2048, но и &lt;a href=&#34;https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096&#34;&gt;больше не особо
+нужно&lt;/a&gt;; срок
+годности по желанию)&lt;/p&gt;
+
+&lt;p&gt;Копируем полученный публичный ключ на &lt;a href=&#34;https://github.com/settings/keys&#34;&gt;Github&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys --keyid-format LONG
+
+-------------------------------
+sec   2048R/&amp;lt;COPY_LONG_KEY&amp;gt;  2017-01-14 [expires: 2019-01-14]
+uid                          User Name &amp;lt;user.name@email.com&amp;gt;
+ssb   2048R/098AA7C27DD57ACC 2017-01-14
+
+gpg --armor --export &amp;lt;PASTE_LONG_KEY_HERE&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-настраиваем-git&#34;&gt;2. Настраиваем git&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys
+
+-------------------------------
+sec   2048R/&amp;lt;COPY_SHORT_KEY&amp;gt; 2017-01-14 [expires: 2019-01-14]
+uid                          User Name &amp;lt;user.name@email.com&amp;gt;
+ssb   2048R/7DD57ACC         2017-01-14
+
+git config --global user.signingKey &amp;lt;PASTE_SHORT_KEY_HERE&amp;gt;
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(можно настроить индивидуально под каждый репозиторий).&lt;/p&gt;
+
+&lt;h3 id=&#34;3-кэшируем-пароль&#34;&gt;3. Кэшируем пароль&lt;/h3&gt;
+
+&lt;p&gt;чтобы не вводить его каждый раз при подписи.&lt;/p&gt;
+
+&lt;p&gt;Если вы пользователь Mac OS, то ставим &lt;a href=&#34;https://gpgtools.org/&#34;&gt;GPG Suite&lt;/a&gt;,
+который интегрируется с Mac OS keychain.&lt;/p&gt;
+
+&lt;p&gt;Если пользуетесь Linux, то придется воспользоваться встроенным &lt;code&gt;gpg-agent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Создаем конфиг &lt;code&gt;.gnupg/gpg-agent.conf&lt;/code&gt; со следующим содержимым:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;default-cache-ttl 28800
+max-cache-ttl 28800
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;28800 - 8 часов (кто-то ставит 1 час).&lt;/p&gt;
+
+&lt;p&gt;В конфиге &lt;code&gt;.gnupg/gpg.conf&lt;/code&gt; указываем:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;use-agent
+batch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;batch&lt;/code&gt; убирает противные сообщения вида: &lt;code&gt;You need a passphrase to unlock the
+secret key&lt;/code&gt;. Да, они по неведомой причине появляются даже, если агент
+закэшировал пароль.&lt;/p&gt;
+
+&lt;p&gt;Не забываем запустить &lt;code&gt;gpg-agent&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;fish:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if not begin
+    # Is the agent running already? Does the agent-info file exist, and if so,
+    # is there a process with the pid given in the file?
+    [ -f ~/.gpg-agent-info ]
+    and kill -0 (cut -d : -f 2 ~/.gpg-agent-info) ^/dev/null
+end
+    # no, it is not running. Start it!
+    gpg-agent --daemon --no-grab --write-env-file ~/.gpg-agent-info &amp;gt;/dev/null ^&amp;amp;1
+end
+# get the agent info from the info file, and export it so GPG can see it.
+set -gx GPG_AGENT_INFO (cut -c 16- ~/.gpg-agent-info)
+set -gx GPG_TTY (tty)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;или &lt;a href=&#34;https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40&#34;&gt;bash&lt;/a&gt;
+или напрямую &lt;code&gt;gpg-agent --daemon&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-коммитим-что-угодно-и-идем-смотреть-результат-на-github&#34;&gt;4. Коммитим что угодно и идем смотреть результат на Github&lt;/h2&gt;
+
+&lt;p&gt;Материалы:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.erincall.com/p/signing-your-git-commits-with-gpg&#34;&gt;Signing Your Git Commits With GPG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc&#34;&gt;Github : Signing commits using GPG (Ubuntu/Mac)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b&#34;&gt;Automatic Git commit signing with GPG on OSX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Monthly Art #16</title>
@@ -711,74 +841,6 @@ which is similar to Momentum, but more minimalistic and streamlined.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&#34;&gt;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Hope you will find something for you. Cheers!&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>The Best of Strange Loop 2016</title>
-      <link>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
-      <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
-conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
-YouTube&lt;/a&gt;.
-Again, thank you to organizers for sharing them. I think, I have found real
-gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-agility-robustness-clojure-spec&#34;&gt;1. Agility &amp;amp; Robustness: Clojure spec&lt;/h1&gt;
-
-&lt;p&gt;by Stuart Halloway (40 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VNTQ-M_uSo8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;2-reasoning-about-performance-in-the-context-of-search&#34;&gt;2. Reasoning about performance (in the context of search)&lt;/h1&gt;
-
-&lt;p&gt;by Dan Luu (30 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/80LKF2qph6I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;3-point-free-or-die-tacit-programming-in-haskell-and-beyond&#34;&gt;3. Point-Free or Die: Tacit Programming in Haskell and Beyond&lt;/h1&gt;
-
-&lt;p&gt;by Amar Shah (36 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/seVSlKazsNk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-graphql-designing-a-data-language&#34;&gt;4. GraphQL: Designing a Data Language&lt;/h1&gt;
-
-&lt;p&gt;by Lee Byron (40 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Oh5oC98ztvI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;5-runtime-scheduling-theory-and-reality&#34;&gt;5. Runtime scheduling: theory and reality&lt;/h1&gt;
-
-&lt;p&gt;by Eben Freeman (42 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8g9fG7cApbc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
-
-&lt;p&gt;If you are curious about data structures, watch &lt;a href=&#34;https://www.youtube.com/watch?v=jdn617M3-P4&#34;&gt;&amp;ldquo;Exotic Functional Data
-Structures: Hitchhiker Trees&amp;rdquo; by David
-Greenberg&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There is a nice intro to data processing systems - &lt;a href=&#34;https://www.youtube.com/watch?v=oaxBY-e9ZSg&#34;&gt;&amp;ldquo;Deep dive into
-Unbounded Data Processing Systems&amp;rdquo; by Monal
-Daxini&lt;/a&gt;. Apparently, Netflix is
-switching from their own custom solution, which uses Kafka and Samza, to Flink
-and thinking about Apache Beam.&lt;/p&gt;
-
-&lt;p&gt;If you are writing distributed task scheduler, watch &lt;a href=&#34;https://www.youtube.com/watch?v=s3GfXTnzG_Y&#34;&gt;&amp;ldquo;Building a Distributed
-Task Scheduler With Akka, Kafka, and Cassandra&amp;rdquo; by David van
-Geest&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you want to know how Golang detect data races (hint: using vector clocks),
-take a look at &lt;a href=&#34;https://www.youtube.com/watch?v=5erqWdlhQLA&#34;&gt;&amp;rdquo;&amp;ldquo;go test -race&amp;rdquo; Under the Hood&amp;rdquo; by Kavya
-Joshi&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And there is one more good &lt;a href=&#34;https://www.youtube.com/watch?v=B1-gS0oEtYc&#34;&gt;talk on CQRS and Event Sourcing by Bobby
-Calderwood&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://homeonrails.com/2017/01/signing-git-commits/</loc>
+    <lastmod>2017-01-14T21:14:14+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2017/01/monthly-art-number-16/</loc>
     <lastmod>2017-01-10T09:54:11+00:00</lastmod>
   </url>
@@ -812,7 +817,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/git/</loc>
-    <lastmod>2014-04-15T14:58:08+00:00</lastmod>
+    <lastmod>2017-01-14T21:14:14+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -860,7 +865,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2017-01-10T09:54:11+00:00</lastmod>
+    <lastmod>2017-01-14T21:14:14+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -968,7 +973,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2017-01-10T09:54:11+00:00</lastmod>
+    <lastmod>2017-01-14T21:14:14+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1141,7 +1146,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/tutorials/</loc>
-    <lastmod>2014-01-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-14T21:14:14+04:00</lastmod>
     <priority>0</priority>
   </url>
   
