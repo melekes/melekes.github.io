@@ -10,7 +10,7 @@
     <atom:link href="http://homeonrails.com/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Signing Git Commits</title>
+      <title>Подписываем git коммиты</title>
       <link>http://homeonrails.com/2017/01/signing-git-commits/</link>
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
       
@@ -84,7 +84,7 @@ git config --global tag.gpgsign true
 &lt;p&gt;чтобы не вводить его каждый раз при подписи.&lt;/p&gt;
 
 &lt;p&gt;Если вы пользователь Mac OS, то ставим &lt;a href=&#34;https://gpgtools.org/&#34;&gt;GPG Suite&lt;/a&gt;,
-который интегрируется с Mac OS keychain.&lt;/p&gt;
+который интегрируется с Mac OS keychain. Переходим к шагу 4.&lt;/p&gt;
 
 &lt;p&gt;Если пользуетесь Linux, то придется воспользоваться встроенным &lt;code&gt;gpg-agent&lt;/code&gt;.&lt;/p&gt;
 
