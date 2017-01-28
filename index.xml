@@ -7,8 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Wed, 18 Jan 2017 20:46:24 +0400</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jan 2017 14:32:24 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Lingualeo Contest</title>
+      <link>http://homeonrails.com/2017/01/lingualeo-contest/</link>
+      <pubDate>Sat, 28 Jan 2017 14:32:24 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/01/lingualeo-contest/</guid>
+      <description>&lt;p&gt;If you still don&amp;rsquo;t know, Lingualeo and The British Council are conducting a
+&lt;a href=&#34;http://education.lingualeo.com/&#34;&gt;contest&lt;/a&gt; from Jan 25 to Feb 8.&lt;/p&gt;
+
+&lt;p&gt;Here is my submission:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I was always fascinated by the future of humanity. People, who live for a very
+long time and almost never get sick. People, who close to death, transforming
+their brain into digital form and existing on the net, or in the body of the
+robot. People, who travel across the galaxy, exploring new planets and
+horizons. People, who appreciate life and exist in harmony with nature.&lt;/p&gt;
+
+&lt;p&gt;Institute of Ageing and Chronic Disease, University of Liverpool - one of the
+groups, who are investigating the aging process. Take for example their work of
+2015 (&amp;ldquo;Insights into the evolution of longevity from the bowhead whale
+genome.&amp;ldquo;), where they mapped the genome for the bowhead whale and discovered
+unique genes behind its longevity (more than 200 years): the ERCC1 gene, which
+is believed to repair DNA, increase cancer resistance and slow ageing, and the
+PCNA gene, which is also linked to DNA repair.&lt;/p&gt;
+
+&lt;p&gt;Or their recent work, &amp;ldquo;Systematic analysis of the gerontome reveals links
+between aging and age-related diseases.&amp;ldquo;, which shows the relationship between
+aging and age-related diseases (ARDs). In short, human aging-related genes
+showed a considerable overlap with ARDs.&lt;/p&gt;
+
+&lt;p&gt;In the future, when genetic modification at birth will become the standard de
+facto, the contribution of this institute and their colleagues from the USA,
+Germany, Portugal and other countries will prove invaluable. Changing or adding
+a pair of genes will result in people who live longer, do not have hereditary
+diseases and consequently, live a happy and a joyful life.&lt;/p&gt;
+
+&lt;p&gt;With all that said, I want to say thank you to all the scientists behind those
+works. You are awesome!&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pcwww.liv.ac.uk/~aging/&#34;&gt;http://pcwww.liv.ac.uk/~aging/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/25565328&#34;&gt;http://www.ncbi.nlm.nih.gov/pubmed/25565328&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/27594432&#34;&gt;http://www.ncbi.nlm.nih.gov/pubmed/27594432&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Best books of 2016</title>
@@ -803,57 +853,6 @@ being motivated and engaged in the classroom.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/melekes/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/melekes&#34;&gt;SpeakerDeck&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>The Best of Erlang User Conference 2016</title>
-      <link>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
-      <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
-      <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
-sharing them with the community.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
-these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-erlang-and-deep-learning&#34;&gt;1. Erlang and Deep Learning&lt;/h1&gt;
-
-&lt;p&gt;by Garrett Smith (47 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/iMhBEVCgPdg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;An example of a very good presentation. After watching, I immediately wanted to learn more about deep learning.&lt;/p&gt;
-
-&lt;h1 id=&#34;2-rethinking-the-language-runtime-for-scale&#34;&gt;2. Rethinking the Language Runtime for Scale&lt;/h1&gt;
-
-&lt;p&gt;by Christopher Meiklejohn (45 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SXT_fVJOkD0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Christopher continues his series of presentations about the Lasp lang and its runtime system.&lt;/p&gt;
-
-&lt;h1 id=&#34;3-going-barking-mad-with-dalmatinerdb&#34;&gt;3. Going Barking Mad with DalmatinerDB&lt;/h1&gt;
-
-&lt;p&gt;by Steven Acreman and Heinz Gies (42 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/1lC8m3omo4I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-think-outside-the-vm-unobtrusive-performance-measurement&#34;&gt;4. Think Outside the VM: Unobtrusive Performance Measurement&lt;/h1&gt;
-
-&lt;p&gt;by Julian Squires (44 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xP2yzaYdjpo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
-
-&lt;p&gt;If you are an Erlang/Elixir/LFE developer and want to help, watch &lt;a href=&#34;https://www.youtube.com/watch?v=Z28SDd9bXcE&#34;&gt;How things are, and how they could be by Fred Hebert&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Russel Brown has a &lt;a href=&#34;https://www.youtube.com/watch?v=f20882ZSdkU&#34;&gt;nice talk on CRDT in Riak&lt;/a&gt; - what they&amp;rsquo;ve already implemented and future plans.&lt;/p&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t know what LFE is, watch &lt;a href=&#34;https://www.youtube.com/watch?v=x2ysisqgd2g&#34;&gt;LFE: A Real Lisp in the Erlang Ecosystem by Robert Virding&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

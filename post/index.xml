@@ -7,8 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Wed, 18 Jan 2017 20:46:24 +0400</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jan 2017 14:32:24 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Lingualeo Contest</title>
+      <link>http://homeonrails.com/2017/01/lingualeo-contest/</link>
+      <pubDate>Sat, 28 Jan 2017 14:32:24 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/01/lingualeo-contest/</guid>
+      <description>&lt;p&gt;If you still don&amp;rsquo;t know, Lingualeo and The British Council are conducting a
+&lt;a href=&#34;http://education.lingualeo.com/&#34;&gt;contest&lt;/a&gt; from Jan 25 to Feb 8.&lt;/p&gt;
+
+&lt;p&gt;Here is my submission:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I was always fascinated by the future of humanity. People, who live for a very
+long time and almost never get sick. People, who close to death, transforming
+their brain into digital form and existing on the net, or in the body of the
+robot. People, who travel across the galaxy, exploring new planets and
+horizons. People, who appreciate life and exist in harmony with nature.&lt;/p&gt;
+
+&lt;p&gt;Institute of Ageing and Chronic Disease, University of Liverpool - one of the
+groups, who are investigating the aging process. Take for example their work of
+2015 (&amp;ldquo;Insights into the evolution of longevity from the bowhead whale
+genome.&amp;ldquo;), where they mapped the genome for the bowhead whale and discovered
+unique genes behind its longevity (more than 200 years): the ERCC1 gene, which
+is believed to repair DNA, increase cancer resistance and slow ageing, and the
+PCNA gene, which is also linked to DNA repair.&lt;/p&gt;
+
+&lt;p&gt;Or their recent work, &amp;ldquo;Systematic analysis of the gerontome reveals links
+between aging and age-related diseases.&amp;ldquo;, which shows the relationship between
+aging and age-related diseases (ARDs). In short, human aging-related genes
+showed a considerable overlap with ARDs.&lt;/p&gt;
+
+&lt;p&gt;In the future, when genetic modification at birth will become the standard de
+facto, the contribution of this institute and their colleagues from the USA,
+Germany, Portugal and other countries will prove invaluable. Changing or adding
+a pair of genes will result in people who live longer, do not have hereditary
+diseases and consequently, live a happy and a joyful life.&lt;/p&gt;
+
+&lt;p&gt;With all that said, I want to say thank you to all the scientists behind those
+works. You are awesome!&lt;/p&gt;
+
+&lt;p&gt;Links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pcwww.liv.ac.uk/~aging/&#34;&gt;http://pcwww.liv.ac.uk/~aging/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/25565328&#34;&gt;http://www.ncbi.nlm.nih.gov/pubmed/25565328&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/27594432&#34;&gt;http://www.ncbi.nlm.nih.gov/pubmed/27594432&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Best books of 2016</title>
@@ -837,74 +887,6 @@ which is similar to Momentum, but more minimalistic and streamlined.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&#34;&gt;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Hope you will find something for you. Cheers!&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>The Best of Strange Loop 2016</title>
-      <link>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
-      <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
-conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
-YouTube&lt;/a&gt;.
-Again, thank you to organizers for sharing them. I think, I have found real
-gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-agility-robustness-clojure-spec&#34;&gt;1. Agility &amp;amp; Robustness: Clojure spec&lt;/h1&gt;
-
-&lt;p&gt;by Stuart Halloway (40 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VNTQ-M_uSo8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;2-reasoning-about-performance-in-the-context-of-search&#34;&gt;2. Reasoning about performance (in the context of search)&lt;/h1&gt;
-
-&lt;p&gt;by Dan Luu (30 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/80LKF2qph6I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;3-point-free-or-die-tacit-programming-in-haskell-and-beyond&#34;&gt;3. Point-Free or Die: Tacit Programming in Haskell and Beyond&lt;/h1&gt;
-
-&lt;p&gt;by Amar Shah (36 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/seVSlKazsNk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-graphql-designing-a-data-language&#34;&gt;4. GraphQL: Designing a Data Language&lt;/h1&gt;
-
-&lt;p&gt;by Lee Byron (40 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Oh5oC98ztvI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;5-runtime-scheduling-theory-and-reality&#34;&gt;5. Runtime scheduling: theory and reality&lt;/h1&gt;
-
-&lt;p&gt;by Eben Freeman (42 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8g9fG7cApbc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
-
-&lt;p&gt;If you are curious about data structures, watch &lt;a href=&#34;https://www.youtube.com/watch?v=jdn617M3-P4&#34;&gt;&amp;ldquo;Exotic Functional Data
-Structures: Hitchhiker Trees&amp;rdquo; by David
-Greenberg&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There is a nice intro to data processing systems - &lt;a href=&#34;https://www.youtube.com/watch?v=oaxBY-e9ZSg&#34;&gt;&amp;ldquo;Deep dive into
-Unbounded Data Processing Systems&amp;rdquo; by Monal
-Daxini&lt;/a&gt;. Apparently, Netflix is
-switching from their own custom solution, which uses Kafka and Samza, to Flink
-and thinking about Apache Beam.&lt;/p&gt;
-
-&lt;p&gt;If you are writing distributed task scheduler, watch &lt;a href=&#34;https://www.youtube.com/watch?v=s3GfXTnzG_Y&#34;&gt;&amp;ldquo;Building a Distributed
-Task Scheduler With Akka, Kafka, and Cassandra&amp;rdquo; by David van
-Geest&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you want to know how Golang detect data races (hint: using vector clocks),
-take a look at &lt;a href=&#34;https://www.youtube.com/watch?v=5erqWdlhQLA&#34;&gt;&amp;rdquo;&amp;ldquo;go test -race&amp;rdquo; Under the Hood&amp;rdquo; by Kavya
-Joshi&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And there is one more good &lt;a href=&#34;https://www.youtube.com/watch?v=B1-gS0oEtYc&#34;&gt;talk on CQRS and Event Sourcing by Bobby
-Calderwood&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

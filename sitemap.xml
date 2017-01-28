@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://homeonrails.com/2017/01/lingualeo-contest/</loc>
+    <lastmod>2017-01-28T14:32:24+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2017/01/best-books-of-2016/</loc>
     <lastmod>2017-01-18T20:46:24+04:00</lastmod>
   </url>
@@ -750,7 +755,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/contests/</loc>
-    <lastmod>2014-11-07T22:05:06+00:00</lastmod>
+    <lastmod>2017-01-28T14:32:24+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -870,7 +875,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2017-01-18T20:46:24+04:00</lastmod>
+    <lastmod>2017-01-28T14:32:24+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -978,7 +983,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2017-01-18T20:46:24+04:00</lastmod>
+    <lastmod>2017-01-28T14:32:24+04:00</lastmod>
     <priority>0</priority>
   </url>
   
