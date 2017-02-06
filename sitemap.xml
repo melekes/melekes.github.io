@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</loc>
+    <lastmod>2017-02-06T10:54:24+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2017/01/lingualeo-contest/</loc>
     <lastmod>2017-01-28T14:32:24+04:00</lastmod>
   </url>
@@ -742,6 +747,12 @@
   </url>
   
   <url>
+    <loc>http://homeonrails.com/tags/ci/</loc>
+    <lastmod>2017-02-06T10:54:24+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/tags/clojure/</loc>
     <lastmod>2016-06-18T13:44:21+00:00</lastmod>
     <priority>0</priority>
@@ -838,6 +849,12 @@
   </url>
   
   <url>
+    <loc>http://homeonrails.com/tags/golang/</loc>
+    <lastmod>2017-02-06T10:54:24+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/tags/guides/</loc>
     <lastmod>2014-09-17T15:22:17+00:00</lastmod>
     <priority>0</priority>
@@ -875,7 +892,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2017-01-28T14:32:24+04:00</lastmod>
+    <lastmod>2017-02-06T10:54:24+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -983,7 +1000,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2017-01-28T14:32:24+04:00</lastmod>
+    <lastmod>2017-02-06T10:54:24+04:00</lastmod>
     <priority>0</priority>
   </url>
   

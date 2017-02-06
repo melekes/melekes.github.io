@@ -7,8 +7,84 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Sat, 28 Jan 2017 14:32:24 +0400</lastBuildDate>
+    <lastBuildDate>Mon, 06 Feb 2017 10:54:24 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CircleCI config for multipackage Golang projects</title>
+      <link>http://homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</link>
+      <pubDate>Mon, 06 Feb 2017 10:54:24 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</guid>
+      <description>&lt;p&gt;Multipackage Golang project - project, consisting of several packages. When
+testing you usually do something like &lt;code&gt;go test ./...&lt;/code&gt;, when getting all the
+dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be a Go package at the
+root level.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are using &lt;a href=&#34;https://github.com/Masterminds/glide&#34;&gt;glide&lt;/a&gt; or other package
+manager:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+machine:
+  environment:
+    PROJECT_GOPATH: &amp;quot;${HOME}/.go_project&amp;quot;
+    PROJECT_PARENT_PATH: &amp;quot;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&amp;quot;
+    PROJECT_PATH: &amp;quot;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&amp;quot;
+    GOPATH: &amp;quot;${HOME}/.go_workspace:/usr/local/go_workspace:${PROJECT_GOPATH}&amp;quot;
+
+dependencies:
+  pre:
+    - go get -u -v github.com/Masterminds/glide
+  override:
+    - mkdir -p &amp;quot;$PROJECT_PARENT_PATH&amp;quot;
+    - ln -sf &amp;quot;$HOME/$CIRCLE_PROJECT_REPONAME/&amp;quot; &amp;quot;$PROJECT_PATH&amp;quot;
+    - glide install
+  post:
+    - go version
+    - glide -v
+
+test:
+  override:
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; go test -v $(glide novendor)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Also, if you want to store your test&amp;rsquo;s output as CircleCI artifact on S3:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;test:
+  override:
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; go test -v $(glide novendor) 2&amp;gt;&amp;amp;1 | tee test.log
+  post:
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; mv test.log &amp;quot;${CIRCLE_ARTIFACTS}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;$(glide novendor)&lt;/code&gt; could be replaced with &lt;code&gt;$(shell go list ./... | grep -v
+&#39;/vendor/&#39;)&lt;/code&gt;. The former is just shorter.&lt;/p&gt;
+
+&lt;p&gt;You might be asking yourself: where is the example using simple &lt;code&gt;go get&lt;/code&gt;? I
+won&amp;rsquo;t give you one because &lt;a href=&#34;https://discuss.circleci.com/t/using-own-packages-in-go-project/4073/8&#34;&gt;I was not able to get &lt;code&gt;go get&lt;/code&gt; working on CircleCI
+for our
+  project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The errors were as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package _/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks: unrecognized import path &amp;quot;_/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks&amp;quot; (import path does not begin with hostname)
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;One small advice:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;install &lt;a href=&#34;https://github.com/adrienverge/yamllint&#34;&gt;yamllint&lt;/a&gt; and check your
+config file. If your config contains the syntax errors, CircleCI will output
+&amp;ldquo;Action failed: Configure the build&amp;rdquo;. Very descriptive, right?&lt;/p&gt;
+
+&lt;p&gt;Resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://subosito.com/posts/golang-circleci/&#34;&gt;https://subosito.com/posts/golang-circleci/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Lingualeo Contest</title>
@@ -821,72 +897,6 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Russel Brown has a &lt;a href=&#34;https://www.youtube.com/watch?v=f20882ZSdkU&#34;&gt;nice talk on CRDT in Riak&lt;/a&gt; - what they&amp;rsquo;ve already implemented and future plans.&lt;/p&gt;
 
 &lt;p&gt;If you don&amp;rsquo;t know what LFE is, watch &lt;a href=&#34;https://www.youtube.com/watch?v=x2ysisqgd2g&#34;&gt;LFE: A Real Lisp in the Erlang Ecosystem by Robert Virding&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>5 New Tab Google Chrome extensions for productivity freaks</title>
-      <link>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</link>
-      <pubDate>Tue, 18 Oct 2016 17:40:16 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;1-mortality&#34;&gt;1. Mortality&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/mortality.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Mortality is a new tab extension that reminds you of your precise age. A
-bitter-sweet motivational tool; it illustrates how little time we have. Circles
-represent months, for the average lifespan of 80 years. As you age, the circles
-fill, and are split into the main Chapters of your life.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;My current one. Highly motivating.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/mortality-new-tab/eeedcpdcehnikgkhbobmkjcipjhlbmpn&#34;&gt;https://chrome.google.com/webstore/detail/mortality-new-tab/eeedcpdcehnikgkhbobmkjcipjhlbmpn&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;2-motivation&#34;&gt;2. Motivation&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/motivation.gif&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;If Mortality is too much for you, try this small extension. &lt;strong&gt;Just a counter&lt;/strong&gt;,
-nothing more.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/motivation/ofdgfpchbidcgncgfpdlpclnpaemakoj&#34;&gt;https://chrome.google.com/webstore/detail/motivation/ofdgfpchbidcgncgfpdlpclnpaemakoj&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;3-dayboard-new-tab-page&#34;&gt;3. Dayboard - New Tab Page&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/dayboard.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VHfWzt94tVQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;strong&gt;ToDo list&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Focus mode allow you to focus on a particular task. In some way, it combines
-Momentum and Wunderlist together, but lacks Momentum&amp;rsquo;s wallpaper and Wunderlist
-sync.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/dayboard-new-tab-page/kimodcegbhclamjcbifgfaldeengbgij&#34;&gt;https://chrome.google.com/webstore/detail/dayboard-new-tab-page/kimodcegbhclamjcbifgfaldeengbgij&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;4-wunderlist-new-tab&#34;&gt;4. Wunderlist New Tab&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/wunderlist.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ToDo list with a background&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/wunderlist-new-tab/fgikemaeelgbhjnhnnahcpkjpafaeion?hl=en&#34;&gt;https://chrome.google.com/webstore/detail/wunderlist-new-tab/fgikemaeelgbhjnhnnahcpkjpafaeion?hl=en&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;5-momentum&#34;&gt;5. Momentum&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-10-18-5-new-tab-google-chrome-extensions-for-productivity-freaks/momentum.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Personal dashboard&lt;/strong&gt; with a different wallpaper every day, ability to set a daily
-goal and other features. There is a new extension,
-&lt;a href=&#34;https://chrome.google.com/webstore/detail/leoh-new-tab/ijhhakihjccpanbibbcceofpjnebokcb&#34;&gt;Leoh&lt;/a&gt;,
-which is similar to Momentum, but more minimalistic and streamlined.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&#34;&gt;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Hope you will find something for you. Cheers!&lt;/p&gt;</description>
     </item>
     
   </channel>
