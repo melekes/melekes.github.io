@@ -19,7 +19,8 @@
       <description>&lt;p&gt;Multipackage Golang project - project, consisting of several packages. When
 testing you usually do something like &lt;code&gt;go test ./...&lt;/code&gt;, when getting all the
 dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be a Go package at the
-root level.&lt;/p&gt;
+root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&gt;1&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/tendermint/tendermint&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
