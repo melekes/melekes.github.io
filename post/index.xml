@@ -7,8 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Mon, 06 Feb 2017 10:54:24 +0400</lastBuildDate>
+    <lastBuildDate>Wed, 08 Feb 2017 12:07:24 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Кто с кем играет: кошка со мной или я с ней?</title>
+      <link>http://homeonrails.com/2017/02/whos-playing-with-whom/</link>
+      <pubDate>Wed, 08 Feb 2017 12:07:24 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/02/whos-playing-with-whom/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Если кошка мурлычет и трется о хозяйские ноги, нам кажется, что она благодарна за заботу и такое поведение - признак тепла и приязни. На самом деле она, скорее всего, втирает в вас свои гормоны, заявляя свои права (на вас, разумеется), что имеет целью отвадить других кошек. С точки зрения кошки, вы - что-то вроде прислуги, обязанность которой несколько раз в день подавать еду, и она, втирая в вас свой запах, предупреждает остальных, что у вас уже есть законная хозяйка.&lt;/p&gt;
+
+&lt;p&gt;Как писал в XVI в. философ Мишель де Монтень, &amp;ldquo;когда я играю со своей кошкой, откуда мне знать, что это не она со мной играет, а я с ней?&amp;rdquo;&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Это отрывок из книги &amp;ldquo;Будущее разума&amp;rdquo; Митио Каку. Он, как и вся книга, мне очень понравились.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-02-08-whos-playing-with-whom/fom_cover.jpg&#34; alt=&#34;&#34; title=&#34;Будущее разума&#34;/&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B5_%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0_(%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0)&#34;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.litres.ru/mitio-kaku/buduschee-razuma/chitat-onlayn/&#34;&gt;Litres&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/review/show/1558056645&#34;&gt;Мой отзыв на Goodreads&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;Начало просто бесподобное. Автор рассказывает об эволюции мозга, некоторых известных принципах его работы, интересных фактах (например, что если разорвать связь левым и правым полушарием, то каждая половина будет обладать &amp;ldquo;собственным разумом&amp;rdquo;).
+Понравилось, как автор смешивает его любимые фантастические фильмы, добавляет последние исследования и пытается предсказать будущее.
+Читается очень легко.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>CircleCI config for multipackage Golang projects</title>
@@ -847,57 +874,6 @@ being motivated and engaged in the classroom.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/melekes/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/melekes&#34;&gt;SpeakerDeck&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>The Best of Erlang User Conference 2016</title>
-      <link>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
-      <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
-      <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
-sharing them with the community.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
-these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-erlang-and-deep-learning&#34;&gt;1. Erlang and Deep Learning&lt;/h1&gt;
-
-&lt;p&gt;by Garrett Smith (47 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/iMhBEVCgPdg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;An example of a very good presentation. After watching, I immediately wanted to learn more about deep learning.&lt;/p&gt;
-
-&lt;h1 id=&#34;2-rethinking-the-language-runtime-for-scale&#34;&gt;2. Rethinking the Language Runtime for Scale&lt;/h1&gt;
-
-&lt;p&gt;by Christopher Meiklejohn (45 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SXT_fVJOkD0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Christopher continues his series of presentations about the Lasp lang and its runtime system.&lt;/p&gt;
-
-&lt;h1 id=&#34;3-going-barking-mad-with-dalmatinerdb&#34;&gt;3. Going Barking Mad with DalmatinerDB&lt;/h1&gt;
-
-&lt;p&gt;by Steven Acreman and Heinz Gies (42 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/1lC8m3omo4I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-think-outside-the-vm-unobtrusive-performance-measurement&#34;&gt;4. Think Outside the VM: Unobtrusive Performance Measurement&lt;/h1&gt;
-
-&lt;p&gt;by Julian Squires (44 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xP2yzaYdjpo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
-
-&lt;p&gt;If you are an Erlang/Elixir/LFE developer and want to help, watch &lt;a href=&#34;https://www.youtube.com/watch?v=Z28SDd9bXcE&#34;&gt;How things are, and how they could be by Fred Hebert&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Russel Brown has a &lt;a href=&#34;https://www.youtube.com/watch?v=f20882ZSdkU&#34;&gt;nice talk on CRDT in Riak&lt;/a&gt; - what they&amp;rsquo;ve already implemented and future plans.&lt;/p&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t know what LFE is, watch &lt;a href=&#34;https://www.youtube.com/watch?v=x2ysisqgd2g&#34;&gt;LFE: A Real Lisp in the Erlang Ecosystem by Robert Virding&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>
