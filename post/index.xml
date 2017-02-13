@@ -7,8 +7,76 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Wed, 08 Feb 2017 12:07:24 +0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 Feb 2017 11:32:11 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>January Picks</title>
+      <link>http://homeonrails.com/2017/02/january-picks/</link>
+      <pubDate>Mon, 13 Feb 2017 11:32:11 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/02/january-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;might be the best selfie of the year and it&amp;#39;s only Jan 16th. Via reddit. &lt;a href=&#34;https://t.co/61H2VqBjv7&#34;&gt;pic.twitter.com/61H2VqBjv7&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Weintraub (@colliderfrosty) &lt;a href=&#34;https://twitter.com/colliderfrosty/status/821070925432963075&#34;&gt;January 16, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.defstartup.org/2017/01/18/why-rethinkdb-failed.html&#34;&gt;RethinkDB: why we failed&lt;/a&gt;
+Sad story. Surely you have already read. If not, go do it. It&amp;rsquo;s worth of your
+time, I promise.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://widgetsandshit.com/teddziuba/2010/12/the-3-basic-tools-of-systems-engineering.html&#34;&gt;The 3 Basic Tools of Systems Engineering&lt;/a&gt;
+&amp;ldquo;There are three basic tools you can use to solve a technical problem: money,
+time, and code. This seems obvious, but the critical point is that you must
+try them in that order.&amp;rdquo; &lt;a href=&#34;https://blog.reifyworks.com/developers-stop-undervaluing-software-2db16b0f5641#.6oaj424ic&#34;&gt;Developers: Stop undervaluing
+software&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;might be a good addition to this article.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.yegor256.com/2017/01/24/career-advice.html&#34;&gt;16 Don&amp;rsquo;ts of Career Growth&lt;/a&gt;
+Terrible bits of advice if you look from the company&amp;rsquo;s perspective. Egoistic.
+Very brutal. The best that I have ever seen so far.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MC1EKLQ2Wmg&#34;&gt;GOTO 2012 • Mythbusting Modern Hardware to Gain &amp;lsquo;Mechanical Sympathy&amp;rsquo; • Martin Thompson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MC1EKLQ2Wmg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=WDIkqP4JbkE&#34;&gt;code::dive conference 2014 - Scott Meyers: Cpu Caches and Why You Care&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WDIkqP4JbkE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://grishaev.me/moda&#34;&gt;Мода&lt;/a&gt;
+&amp;ldquo;Будут востребованны алгоритмы, протоколы и БД, самоорганизация,
+ответсвенность и самообучение. Во веки веков будет востребовано умение
+доводить дело до конца.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ru.hexlet.io/blog/posts/how-to-test-code&#34;&gt;Разработка → Начинаем писать тесты (правильно)&lt;/a&gt;
+&amp;ldquo;Так как же лучше написать тест? Надеюсь, вам уже стало очевидно, что нужно
+найти достаточно высокую точку входа в нашу программу, которая не зависит от
+внутренней реализации, и при этом выполняет поставленную задачу.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Кто с кем играет: кошка со мной или я с ней?</title>
@@ -816,64 +884,6 @@ being motivated and engaged in the classroom.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/itvnQ2QB4yc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCDgUAAHgsV2fFZQm2fIWBnA&#34;&gt;Prince Ea channel on YouTube&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hire me</title>
-      <link>http://homeonrails.com/2016/10/hire-me/</link>
-      <pubDate>Wed, 26 Oct 2016 19:12:16 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/10/hire-me/</guid>
-      <description>&lt;p&gt;For the past two years, I&amp;rsquo;ve been working full time at FunBox as an &lt;strong&gt;Erlang developer&lt;/strong&gt;. I&amp;rsquo;ve learned so much during that time - the Erlang language itself and the tooling (observer, recon and &lt;a href=&#34;http://homeonrails.com/2016/05/profiling-in-erlang/&#34;&gt;others&lt;/a&gt;), Hadoop, HDFS and even some team management skills (thanks to @gumayunov).&lt;/p&gt;
-
-&lt;p&gt;I am grateful for the opportunity that FunBox has given me. But once a while you need to move on and I did. So I&amp;rsquo;m looking for a new job.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;me&#34;&gt;Me&lt;/h2&gt;
-
-&lt;p&gt;I’m primary interested in system programming (right now I’m writing a &lt;a href=&#34;https://github.com/melekes/OS-bitch&#34;&gt;hobby OS&lt;/a&gt; in Rust) and infrastructure.&lt;/p&gt;
-
-&lt;p&gt;This may seem strange to somebody because I started my career as a web developer. However, as years went by, I’ve realized I&amp;rsquo;m enjoying system programming more (OS insides and tools, building SaaS, debugging and fixing complex bugs using Linux utilities like strace, iostat, tcpdump and others).&lt;/p&gt;
-
-&lt;p&gt;Besides all of the above, I have also interest in:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;streaming/batch solutions (Hadoop/Spark/…)&lt;/li&gt;
-&lt;li&gt;distributed programming (e.g. distributed DB)&lt;/li&gt;
-&lt;li&gt;compilers&lt;/li&gt;
-&lt;li&gt;NLP&lt;/li&gt;
-&lt;li&gt;ML&lt;/li&gt;
-&lt;li&gt;AI&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;One day I might want to become an architect. I like to think about application&amp;rsquo;s architecture and ways to improve it. But this won&amp;rsquo;t happen very soon cause of my little experience.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Possibility of relocation&lt;/strong&gt;: yes, but remote is preferable &lt;br&gt;
-&lt;strong&gt;Require visa sponsorship&lt;/strong&gt;: yes&lt;/p&gt;
-
-&lt;h2 id=&#34;you&#34;&gt;You&lt;/h2&gt;
-
-&lt;p&gt;The following should describe you, the company:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You must support remote work. My parents mean a lot to me and I want to be able to visit them a couple months every year.&lt;/li&gt;
-&lt;li&gt;You invest time and money in your employee&amp;rsquo;s education (Wednesday meetups, buying tech books and paying for a conference once a year would be nice)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bonus: if you are doing some bioengineering or financial stuff (transaction processing, cryptocurrencies), this is a plus.&lt;/p&gt;
-
-&lt;h2 id=&#34;contact-me&#34;&gt;Contact me&lt;/h2&gt;
-
-&lt;p&gt;If you think I will be a good add to your team, &lt;strong&gt;please contact me&lt;/strong&gt; via anton.kalyaev at gmail.com. Thank you!&lt;/p&gt;
-
-&lt;p&gt;Additional links:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.linkedin.com/in/melekes&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/melekes/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/melekes&#34;&gt;SpeakerDeck&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
   </channel>

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://homeonrails.com/2017/02/january-picks/</loc>
+    <lastmod>2017-02-13T11:32:11+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2017/02/whos-playing-with-whom/</loc>
     <lastmod>2017-02-08T12:07:24+04:00</lastmod>
   </url>
@@ -897,7 +902,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2017-02-08T12:07:24+04:00</lastmod>
+    <lastmod>2017-02-13T11:32:11+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -993,7 +998,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/picks/</loc>
-    <lastmod>2017-01-07T10:54:24+02:00</lastmod>
+    <lastmod>2017-02-13T11:32:11+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1005,7 +1010,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2017-02-08T12:07:24+04:00</lastmod>
+    <lastmod>2017-02-13T11:32:11+04:00</lastmod>
     <priority>0</priority>
   </url>
   

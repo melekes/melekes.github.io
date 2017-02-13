@@ -10,6 +10,74 @@
     <atom:link href="http://homeonrails.com/tags/picks/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>January Picks</title>
+      <link>http://homeonrails.com/2017/02/january-picks/</link>
+      <pubDate>Mon, 13 Feb 2017 11:32:11 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/02/january-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;might be the best selfie of the year and it&amp;#39;s only Jan 16th. Via reddit. &lt;a href=&#34;https://t.co/61H2VqBjv7&#34;&gt;pic.twitter.com/61H2VqBjv7&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Weintraub (@colliderfrosty) &lt;a href=&#34;https://twitter.com/colliderfrosty/status/821070925432963075&#34;&gt;January 16, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.defstartup.org/2017/01/18/why-rethinkdb-failed.html&#34;&gt;RethinkDB: why we failed&lt;/a&gt;
+Sad story. Surely you have already read. If not, go do it. It&amp;rsquo;s worth of your
+time, I promise.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://widgetsandshit.com/teddziuba/2010/12/the-3-basic-tools-of-systems-engineering.html&#34;&gt;The 3 Basic Tools of Systems Engineering&lt;/a&gt;
+&amp;ldquo;There are three basic tools you can use to solve a technical problem: money,
+time, and code. This seems obvious, but the critical point is that you must
+try them in that order.&amp;rdquo; &lt;a href=&#34;https://blog.reifyworks.com/developers-stop-undervaluing-software-2db16b0f5641#.6oaj424ic&#34;&gt;Developers: Stop undervaluing
+software&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;might be a good addition to this article.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.yegor256.com/2017/01/24/career-advice.html&#34;&gt;16 Don&amp;rsquo;ts of Career Growth&lt;/a&gt;
+Terrible bits of advice if you look from the company&amp;rsquo;s perspective. Egoistic.
+Very brutal. The best that I have ever seen so far.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MC1EKLQ2Wmg&#34;&gt;GOTO 2012 • Mythbusting Modern Hardware to Gain &amp;lsquo;Mechanical Sympathy&amp;rsquo; • Martin Thompson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MC1EKLQ2Wmg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=WDIkqP4JbkE&#34;&gt;code::dive conference 2014 - Scott Meyers: Cpu Caches and Why You Care&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WDIkqP4JbkE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://grishaev.me/moda&#34;&gt;Мода&lt;/a&gt;
+&amp;ldquo;Будут востребованны алгоритмы, протоколы и БД, самоорганизация,
+ответсвенность и самообучение. Во веки веков будет востребовано умение
+доводить дело до конца.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ru.hexlet.io/blog/posts/how-to-test-code&#34;&gt;Разработка → Начинаем писать тесты (правильно)&lt;/a&gt;
+&amp;ldquo;Так как же лучше написать тест? Надеюсь, вам уже стало очевидно, что нужно
+найти достаточно высокую точку входа в нашу программу, которая не зависит от
+внутренней реализации, и при этом выполняет поставленную задачу.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
       <title>December Picks</title>
       <link>http://homeonrails.com/2017/01/december-picks/</link>
       <pubDate>Sat, 07 Jan 2017 10:54:24 +0200</pubDate>
@@ -712,49 +780,6 @@ The best explanation of the coordinated omission problem I&amp;rsquo;ve seen so 
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=k_IaWe1FJ4I&#34;&gt;Мастер класс А Рыбака (Badoo) &amp;ldquo;Про то, что я бы хотел, чтобы мне рассказали, пока я учился&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>September picks</title>
-      <link>http://homeonrails.com/2015/10/september-picks/</link>
-      <pubDate>Wed, 07 Oct 2015 11:14:55 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2015/10/september-picks/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Vandals choose &lt;a href=&#34;https://twitter.com/hashtag/Java?src=hash&#34;&gt;#Java&lt;/a&gt; to maximize damage thanks to its verbosity. &lt;a href=&#34;http://t.co/OwHTFZMNGq&#34;&gt;pic.twitter.com/OwHTFZMNGq&lt;/a&gt;&lt;/p&gt;&amp;mdash; Hildeberto Mendonça (@htmfilho) &lt;a href=&#34;https://twitter.com/htmfilho/status/645610733196189696&#34;&gt;20 сентября 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cockroachlabs.com/blog/how-cockroachdb-distributes-atomic-transactions/&#34;&gt;How CockroachDB Does Distributed, Atomic Transactions&lt;/a&gt;
-In short: they place new values near the original ones and use some kind of a
-switch (&amp;ldquo;transaction record&amp;rdquo;) to flip between old and new values.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://solnic.eu/2015/09/18/ditch-your-orm.html&#34;&gt;Ditch Your ORM&lt;/a&gt;
-This could be an eye opener for those who are working with ORM. Author had
-been working with &lt;a href=&#34;http://datamapper.org/&#34;&gt;Data Mapper&lt;/a&gt; project for over 4 years.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://coding-geek.com/how-databases-work/&#34;&gt;How does a relational database work&lt;/a&gt;
-Fantastic article! If you&amp;rsquo;ve always wanted to know how relational DBs work, this
-is the best place to start. (&lt;a href=&#34;http://habrahabr.ru/company/mailru/blog/266811/&#34;&gt;Russian&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://antirez.com/news/94&#34;&gt;Clarifications about Redis and Memcached&lt;/a&gt;
-Excellent article, which explains some of the differences between Redis and
-Memcached.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;presentations&#34;&gt;Presentations&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/imcsummit/imcs2015-2-bus4-myth-about-inmemory-databases-busted&#34;&gt;4 Myths about In-Memory Databases Busted&lt;/a&gt;
-A very good presentation, which compares Aerospike, Couchbase, Redis and Cassandra.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
