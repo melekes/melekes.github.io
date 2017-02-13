@@ -7,8 +7,57 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Mon, 13 Feb 2017 11:32:11 +0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 Feb 2017 12:13:45 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Monthly Art #17</title>
+      <link>http://homeonrails.com/2017/02/monthly-art-number-17/</link>
+      <pubDate>Mon, 13 Feb 2017 12:13:45 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/02/monthly-art-number-17/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;movie-kubo-and-the-two-strings-2016&#34;&gt;Movie: Kubo and the Two Strings (2016)&lt;/h3&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/p4-6qJzeb3A&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.imdb.com/title/tt4302938/&#34;&gt;IMDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Kubo_and_the_Two_Strings&#34;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kinopoisk.ru/film/882290/&#34;&gt;Kinopoisk.ru&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Very colorful, beautiful and visually stunning animation movie.&lt;/p&gt;
+
+&lt;h3 id=&#34;ted-terry-moore-how-to-tie-your-shoes&#34;&gt;TED: Terry Moore: How to tie your shoes&lt;/h3&gt;
+
+&lt;iframe src=&#34;https://embed.ted.com/talks/terry_moore_how_to_tie_your_shoes&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;This video is revelation! 28 years of pain, but not more. Note: if you are a woman, you probably already know.&lt;/p&gt;
+
+&lt;h3 id=&#34;video-how-the-inventor-of-mario-designs-a-game&#34;&gt;Video: How the inventor of Mario designs a game&lt;/h3&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/K-NBcP0YUQI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I never would have thought that the first level of the game Mario is so well designed before watching this video.&lt;/p&gt;
+
+&lt;h3 id=&#34;article-get-more-done-with-the-rule-of-three-http-www-artofmanliness-com-2017-01-09-work-deliberately-instead-reactively-rule-3-на-русском-https-vc-ru-p-make-day-productive&#34;&gt;Article: &lt;a href=&#34;http://www.artofmanliness.com/2017/01/09/work-deliberately-instead-reactively-rule-3/&#34;&gt;Get more done with &amp;ldquo;the rule of three&amp;rdquo;&lt;/a&gt; &lt;a href=&#34;https://vc.ru/p/make-day-productive&#34;&gt;На русском&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Has been practicing this rule of three for the last month - it works great!&lt;/p&gt;
+
+&lt;h3 id=&#34;quote-of-the-month&#34;&gt;Quote of the month:&lt;/h3&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t design your life, someone else will design it for you.&lt;/p&gt;
+
+&lt;h3 id=&#34;статья-о-глупости-и-необходимости-объяснять-http-maximilyahov-ru-blog-all-stupid-news&#34;&gt;Статья: &lt;a href=&#34;http://maximilyahov.ru/blog/all/stupid-news/&#34;&gt;О глупости и необходимости объяснять&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Почему большинство СМИ не заслуживают вашего времени.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>January Picks</title>
@@ -36,11 +85,8 @@ time, I promise.&lt;/p&gt;&lt;/li&gt;
 &amp;ldquo;There are three basic tools you can use to solve a technical problem: money,
 time, and code. This seems obvious, but the critical point is that you must
 try them in that order.&amp;rdquo; &lt;a href=&#34;https://blog.reifyworks.com/developers-stop-undervaluing-software-2db16b0f5641#.6oaj424ic&#34;&gt;Developers: Stop undervaluing
-software&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;might be a good addition to this article.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+software&lt;/a&gt;
+might be a good addition to this article.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.yegor256.com/2017/01/24/career-advice.html&#34;&gt;16 Don&amp;rsquo;ts of Career Growth&lt;/a&gt;
 Terrible bits of advice if you look from the company&amp;rsquo;s perspective. Egoistic.
@@ -839,57 +885,6 @@ testing, fault injection) and tactics are very useful.
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://medium.com/@shiroginne/%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D0%B0%D0%BC-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B8%D1%89%D1%83%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83-c4df8f7caf1f#.ung9wu4n0&#34;&gt;Советы программистам, которые ищут работу&lt;/a&gt;
 Один из самых лучших постов по данной теме.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Monthly Art #14</title>
-      <link>http://homeonrails.com/2016/11/monthly-art-number-14/</link>
-      <pubDate>Fri, 11 Nov 2016 13:24:39 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/11/monthly-art-number-14/</guid>
-      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
-last month. Whether it was a full length movie, short film, music album, book
-or even a painting.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;movie-mr-church-2016&#34;&gt;Movie - Mr. Church (2016)&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wySiVNV71IQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;That&amp;rsquo;s the tough one. I can&amp;rsquo;t say this movie has some particular subject.
-Instead, I think, it teaches you many small things like passion, love, life and
-death.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt4196848/&#34;&gt;http://www.imdb.com/title/tt4196848/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/mr_church/&#34;&gt;https://www.rottentomatoes.com/m/mr_church/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/860683/&#34;&gt;https://www.kinopoisk.ru/film/860683/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;video-a-writer-and-three-script-editors-walk-into-a-bar&#34;&gt;Video - A Writer and Three Script Editors Walk Into a Bar&lt;/h2&gt;
-
-&lt;iframe src=&#34;https://player.vimeo.com/video/179713937?color=f0a400&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;video-the-first-principles-method-explained-by-elon-musk&#34;&gt;Video - The First Principles Method Explained by Elon Musk&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NV3sBlRgzTI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;One must reason from fundamental truths, rather than by analogy.&lt;/p&gt;
-
-&lt;h2 id=&#34;documentary-propaganda-2012&#34;&gt;Documentary - Propaganda (2012)&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/hQLfkhwkEbo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=tLFO0PcHHMA&#34;&gt;На русском&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The film tells about propaganda, which is used to turn one part of society into powerless and foolish consumers, the other - to slave labor, and the third - to nothing. All for the sake of extracting super-profits for the elite.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt2279306/&#34;&gt;http://www.imdb.com/title/tt2279306/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/propaganda_2013/&#34;&gt;https://www.rottentomatoes.com/m/propaganda_2013/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/752178/&#34;&gt;https://www.kinopoisk.ru/film/752178/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
