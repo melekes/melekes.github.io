@@ -7,8 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Sun, 05 Mar 2017 12:00:12 +0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 Mar 2017 16:23:05 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>February Picks</title>
+      <link>http://homeonrails.com/2017/03/february-picks/</link>
+      <pubDate>Fri, 10 Mar 2017 16:23:05 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/03/february-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The most important professional programming skill is being able to move on. Example: &amp;quot;I moved on from hating JavaScript to hating Go&amp;quot;.&lt;/p&gt;&amp;mdash; Aleksey Shipilëv (@shipilev) &lt;a href=&#34;https://twitter.com/shipilev/status/835779166217912321&#34;&gt;February 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://gusc.lv/2013/03/system-developers-glossary-also-for-dummies&#34;&gt;System Developers Glossary (also for dummies)&lt;/a&gt;
+word, dword, qword, registers. Added it to bookmarks.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@oherrala/quickcheck-or-fuzzing-which-one-to-use-98d200e9609b#.mfuqm0bmc&#34;&gt;QuickCheck or Fuzzing? Which one to use?&lt;/a&gt;
+Finally, somebody was able to explain the difference clearly. Rays of goodness to the author.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://antirez.com/news/112&#34;&gt;The mythical 10x programmer&lt;/a&gt;
+Demystifying the myth about the 10x programmer, antirez shares the list of
+qualities, which as he believes are the most important when we&amp;rsquo;re talking
+about productivity:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bare programming abilities: getting sub-tasks done&lt;/li&gt;
+&lt;li&gt;Experience: pattern matching&lt;/li&gt;
+&lt;li&gt;Focus: actual time VS hypothetical time&lt;/li&gt;
+&lt;li&gt;Design sacrifice: killing 5% to get 90%&lt;/li&gt;
+&lt;li&gt;Simplicity&lt;/li&gt;
+&lt;li&gt;Perfectionism, or how to kill your productivity and bias your designs&lt;/li&gt;
+&lt;li&gt;Low level: understanding the machine&lt;/li&gt;
+&lt;li&gt;Debugging skills&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://reedbeta.com/blog/programmers-intro-to-unicode/&#34;&gt;A Programmer’s Introduction to Unicode&lt;/a&gt;
+Love the maps!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://stripe.com/blog/idempotency&#34;&gt;Designing robust and predictable APIs with idempotency&lt;/a&gt;
+Guaranteeing “exactly once” semantics by using idempotency keys.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/321802/&#34;&gt;Дмитрий Сорин, Senior Software Engineer в Atlassian, поделился впечатлениями о пяти годах работы в «Яндексе»&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Podcasts I am listening to</title>
@@ -60,7 +116,7 @@ or standing in the line at the local store.&lt;/p&gt;
 &lt;p&gt;What I&amp;rsquo;ve tried to listen: The Naked Scientists, StarTalk Radio, The
 Productivityist, Stuff You Should Know, How to Do Everything, WTF with Marc
 Maron, Accidental Tech, Planet Money, 99% Invisible, Radiolab, The Joe Rogan
-Experience, a16z, The Art of Marginess, Back to Work.&lt;/p&gt;
+Experience, a16z, The Art of Manliness, Back to Work.&lt;/p&gt;
 
 &lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
 
@@ -73,7 +129,7 @@ Experience, a16z, The Art of Marginess, Back to Work.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/ru/podcast/putesestvia-podcast-travel/id968476151?mt=2&#34;&gt;Путешествия&lt;/a&gt; &lt;code&gt;#optionally&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Что я пробовал слушать: Радио-Т, GolangShow, Разбор полётов, Как делают игры. Не зашёл ни один.&lt;/p&gt;
+&lt;p&gt;Что я пробовал слушать: Радио-Т, GolangShow, Разбор полётов, Как делают игры.&lt;/p&gt;
 
 &lt;h2 id=&#34;what-app-i-am-using&#34;&gt;What app I am using&lt;/h2&gt;
 
@@ -876,57 +932,6 @@ testing, fault injection) and tactics are very useful.
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://medium.com/@shiroginne/%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D0%B0%D0%BC-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B8%D1%89%D1%83%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83-c4df8f7caf1f#.ung9wu4n0&#34;&gt;Советы программистам, которые ищут работу&lt;/a&gt;
 Один из самых лучших постов по данной теме.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Monthly Art #14</title>
-      <link>http://homeonrails.com/2016/11/monthly-art-number-14/</link>
-      <pubDate>Fri, 11 Nov 2016 13:24:39 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/11/monthly-art-number-14/</guid>
-      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
-last month. Whether it was a full length movie, short film, music album, book
-or even a painting.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;movie-mr-church-2016&#34;&gt;Movie - Mr. Church (2016)&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wySiVNV71IQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;That&amp;rsquo;s the tough one. I can&amp;rsquo;t say this movie has some particular subject.
-Instead, I think, it teaches you many small things like passion, love, life and
-death.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt4196848/&#34;&gt;http://www.imdb.com/title/tt4196848/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/mr_church/&#34;&gt;https://www.rottentomatoes.com/m/mr_church/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/860683/&#34;&gt;https://www.kinopoisk.ru/film/860683/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;video-a-writer-and-three-script-editors-walk-into-a-bar&#34;&gt;Video - A Writer and Three Script Editors Walk Into a Bar&lt;/h2&gt;
-
-&lt;iframe src=&#34;https://player.vimeo.com/video/179713937?color=f0a400&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;video-the-first-principles-method-explained-by-elon-musk&#34;&gt;Video - The First Principles Method Explained by Elon Musk&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NV3sBlRgzTI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;One must reason from fundamental truths, rather than by analogy.&lt;/p&gt;
-
-&lt;h2 id=&#34;documentary-propaganda-2012&#34;&gt;Documentary - Propaganda (2012)&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/hQLfkhwkEbo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=tLFO0PcHHMA&#34;&gt;На русском&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The film tells about propaganda, which is used to turn one part of society into powerless and foolish consumers, the other - to slave labor, and the third - to nothing. All for the sake of extracting super-profits for the elite.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt2279306/&#34;&gt;http://www.imdb.com/title/tt2279306/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/propaganda_2013/&#34;&gt;https://www.rottentomatoes.com/m/propaganda_2013/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/752178/&#34;&gt;https://www.kinopoisk.ru/film/752178/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     

@@ -10,6 +10,62 @@
     <atom:link href="http://homeonrails.com/tags/picks/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>February Picks</title>
+      <link>http://homeonrails.com/2017/03/february-picks/</link>
+      <pubDate>Fri, 10 Mar 2017 16:23:05 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/03/february-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The most important professional programming skill is being able to move on. Example: &amp;quot;I moved on from hating JavaScript to hating Go&amp;quot;.&lt;/p&gt;&amp;mdash; Aleksey Shipilëv (@shipilev) &lt;a href=&#34;https://twitter.com/shipilev/status/835779166217912321&#34;&gt;February 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+
+&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://gusc.lv/2013/03/system-developers-glossary-also-for-dummies&#34;&gt;System Developers Glossary (also for dummies)&lt;/a&gt;
+word, dword, qword, registers. Added it to bookmarks.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@oherrala/quickcheck-or-fuzzing-which-one-to-use-98d200e9609b#.mfuqm0bmc&#34;&gt;QuickCheck or Fuzzing? Which one to use?&lt;/a&gt;
+Finally, somebody was able to explain the difference clearly. Rays of goodness to the author.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://antirez.com/news/112&#34;&gt;The mythical 10x programmer&lt;/a&gt;
+Demystifying the myth about the 10x programmer, antirez shares the list of
+qualities, which as he believes are the most important when we&amp;rsquo;re talking
+about productivity:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bare programming abilities: getting sub-tasks done&lt;/li&gt;
+&lt;li&gt;Experience: pattern matching&lt;/li&gt;
+&lt;li&gt;Focus: actual time VS hypothetical time&lt;/li&gt;
+&lt;li&gt;Design sacrifice: killing 5% to get 90%&lt;/li&gt;
+&lt;li&gt;Simplicity&lt;/li&gt;
+&lt;li&gt;Perfectionism, or how to kill your productivity and bias your designs&lt;/li&gt;
+&lt;li&gt;Low level: understanding the machine&lt;/li&gt;
+&lt;li&gt;Debugging skills&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://reedbeta.com/blog/programmers-intro-to-unicode/&#34;&gt;A Programmer’s Introduction to Unicode&lt;/a&gt;
+Love the maps!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://stripe.com/blog/idempotency&#34;&gt;Designing robust and predictable APIs with idempotency&lt;/a&gt;
+Guaranteeing “exactly once” semantics by using idempotency keys.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+
+&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/321802/&#34;&gt;Дмитрий Сорин, Senior Software Engineer в Atlassian, поделился впечатлениями о пяти годах работы в «Яндексе»&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
       <title>January Picks</title>
       <link>http://homeonrails.com/2017/02/january-picks/</link>
       <pubDate>Mon, 13 Feb 2017 11:32:11 +0400</pubDate>
@@ -738,45 +794,6 @@ solution, which he propose, looks very interesting.&lt;/p&gt;&lt;/li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://medium.com/@pismenny/%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9-%D0%BA%D0%BE%D0%B4-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF-%D1%81%D0%B0%D0%BB%D1%84%D0%B5%D1%82%D0%BA%D0%B8-74f0dd50a98a#.95nv9lbd6&#34;&gt;Хорошо читаемый код умещается на салфетке&lt;/a&gt;
 Неплохой способ понять, насколько прост и понятен код у вас перед глазами.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>October picks</title>
-      <link>http://homeonrails.com/2015/11/october-picks/</link>
-      <pubDate>Mon, 02 Nov 2015 23:34:32 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2015/11/october-picks/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Happy Halloween! &lt;a href=&#34;https://t.co/KptTZkFJX8&#34;&gt;pic.twitter.com/KptTZkFJX8&lt;/a&gt;&lt;/p&gt;&amp;mdash; Practical Developer (@ThePracticalDev) &lt;a href=&#34;https://twitter.com/ThePracticalDev/status/660584764282417152&#34;&gt;31 октября 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://coding-geek.com/how-does-a-hashmap-work-in-java/&#34;&gt;How does a HashMap work in JAVA&lt;/a&gt;
-Deep dive into the most popular data structure out there.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://videlalvaro.github.io/2015/02/programming-myths.html&#34;&gt;HARMFUL GOTOS, PREMATURE OPTIMIZATIONS, AND PROGRAMMING MYTHS ARE THE ROOT OF ALL EVIL&lt;/a&gt;
-Fascinating read about common programming myths. Found a good quote of Alan
-Kay there - &amp;ldquo;The biggest problem we have as human beings is that we confuse
-our beliefs with reality&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://highscalability.com/blog/2015/10/5/your-load-generator-is-probably-lying-to-you-take-the-red-pi.html&#34;&gt;Your Load Generator Is Probably Lying To You - Take The Red Pill And Find Out Why&lt;/a&gt;
-The best explanation of the coordinated omission problem I&amp;rsquo;ve seen so far.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;видео&#34;&gt;Видео&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=k_IaWe1FJ4I&#34;&gt;Мастер класс А Рыбака (Badoo) &amp;ldquo;Про то, что я бы хотел, чтобы мне рассказали, пока я учился&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
