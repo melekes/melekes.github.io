@@ -221,15 +221,18 @@ machine:
     PROJECT_GOPATH: &quot;${HOME}/.go_project&quot;
     PROJECT_PARENT_PATH: &quot;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&quot;
     PROJECT_PATH: &quot;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&quot;
-    GOPATH: &quot;${HOME}/.go_workspace:/usr/local/go_workspace:${PROJECT_GOPATH}&quot;
+    GOPATH: &quot;${PROJECT_GOPATH}&quot;
+    GO15VENDOREXPERIMENT: 1
 
 dependencies:
+  cache_directories:
+    - &quot;~/.glide&quot;
   pre:
     - go get -u -v github.com/Masterminds/glide
   override:
     - mkdir -p &quot;$PROJECT_PARENT_PATH&quot;
     - ln -sf &quot;$HOME/$CIRCLE_PROJECT_REPONAME/&quot; &quot;$PROJECT_PATH&quot;
-    - glide install
+    - cd &quot;$PROJECT_PATH&quot; &amp;&amp; glide install
   post:
     - go version
     - glide -v

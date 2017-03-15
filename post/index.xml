@@ -7,8 +7,115 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Fri, 10 Mar 2017 16:33:29 +0400</lastBuildDate>
+    <lastBuildDate>Wed, 15 Mar 2017 10:21:49 +0400</lastBuildDate>
     <atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Удаленная работа</title>
+      <link>http://homeonrails.com/2017/03/remote-work/</link>
+      <pubDate>Wed, 15 Mar 2017 10:21:49 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/03/remote-work/</guid>
+      <description>&lt;p&gt;Вот уже третий месяц как я работаю удаленно на американский стартап. Хотелось
+бы поделиться с вами впечатлениями от удаленной работы. 3 месяца - не такой уж
+и большой срок. Но до этого я 6 лет работал в офисе, лишь изредка путешествуя и
+работая удаленно, и контраст показался мне настолько разительным, что я не
+удержался!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;абсолютная-свобода-в-планировании&#34;&gt;Абсолютная свобода в планировании&lt;/h3&gt;
+
+&lt;p&gt;В большинстве компаний с офисом есть часы, в которые тебе необходимо быть на
+рабочем месте. Это обладает рядом преимуществ:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Внешняя дисциплина. Как ни крути, а к 9 часам надо быть на рабочем месте.
+Конечно, можно отложить начало работы выпив чашечку чая и поболтав с
+коллегами, но рано или поздно начнешь работать.&lt;/li&gt;
+&lt;li&gt;Коммуникация. Коллеги могут тебя достать физически, если вы работаете в
+одном офисе (а чаще всего так и есть).&lt;/li&gt;
+&lt;li&gt;[в дерьмовых компаниях] менеджер видит, что Вася на месте и работает.
+Конечно, мы то с вами понимаем, что важен лишь результат. Не работайте в
+таких компаниях, пожалуйста.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Если работаешь удаленно, то дисциплинировать себя придется самому. Помогают
+всякие ритуалы типа утренней пробежки, рабочей одежды, кабинета/отдельной
+комнаты. Лучше конечно снять офис со знакомыми, если таковые имеются.&lt;/p&gt;
+
+&lt;p&gt;Что касается коммуникации, да, качество проседает. Но и со звонками/сообщениями
+в Slack можно жить.&lt;/p&gt;
+
+&lt;p&gt;Однако в отсутствии фиксированных часов приходит свобода планирования. Удобнее
+всего просыпаться в 9, ложиться в 1 ночи - пожалуйста. Не любишь вечером ходить
+в качалку, а предпочитаешь обед - пожалуйста. Предпочитаешь вообще ничего не
+делать и получать деньги - -пожалуйста-фиг тебе. В некоторых компаниях можно
+договориться с начальством о гибком графике.&lt;/p&gt;
+
+&lt;p&gt;Плюс, не надо отпрашиваться на часок если требуется срочно отъехать по делам.&lt;/p&gt;
+
+&lt;h3 id=&#34;положительное-подкрепление&#34;&gt;Положительное подкрепление&lt;/h3&gt;
+
+&lt;p&gt;Не знаю, особенность ли это русской разработки ПО. В забугорных компаниях,
+когда ты выполнил задачу, тебя обязательно похвалят:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;great job ..&lt;/li&gt;
+&lt;li&gt;awesome work ..&lt;/li&gt;
+&lt;li&gt;you are crushing it ..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;P.S. я знаю разницу между похвалой и положительным подкреплением. Здесь хвалят
+не тебя конкретно (типа Вася, ты заебись программист), а твою работу.&lt;/p&gt;
+
+&lt;p&gt;В русских же компаниях зачастую отношение такое, что решать задачи - это работа
+Васи. Зачем его хвалить за это? Максимум премию дать в конце месяца, чтобы
+знал, что признаем его заслуги. Премия это хорошо безусловно, но это немного
+другое. Это внешнее вознаграждение (extrinsic reward). Я же говорю об
+отсутствии внутреннего вознаграждения (intristic reward). Порой достаточно лишь
+пары добрых слов.&lt;/p&gt;
+
+&lt;p&gt;Мотивирует выполнять работу хорошо. Да и просто приятно.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://file.scirp.org/pdf/AJIBM_2014011309335174.pdf&#34;&gt;The impact of Positive Reinforcement on Employees’ Performance in Organizations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ип&#34;&gt;ИП&lt;/h3&gt;
+
+&lt;p&gt;Придется разбираться с вопросами налогообложения. Как открыть ИП, какую форму
+выбрать, бухгалтерия, банк, валютный контроль. Доходит иногда до безумия - не
+знаешь как подписывать счёт: на каждом листе или нет? Задалбываешь банк,
+находишь информацию в интернете, разбираешься, учишься. Сравните это со
+стандартной работой в офисе, где вам приносят пару бумаг с наклеечками где надо
+поставить подпись. Плюс в том, что становишься более самостоятельным,
+ответственным (&amp;ldquo;незнание закона не освобождает от уплаты налогов&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;Я подготовил документы с помощью Контур.Эльбы, госпошлину заплатил на сайте
+nalog.ru. Обслуживаюсь у Модульбанка и Контур.Эльба на данный момент.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ВАЖНО&lt;/strong&gt;: налоговые каникулы отсчитываются календарными годами. Так что не
+спешите зарегистрировать ИП в декабре. Не повторяйте мою ошибку.&lt;/p&gt;
+
+&lt;p&gt;Изначально, мне вообще американская компания предлагала трудоустройство как
+физ.лицу. Для этого как я понимаю пришлось бы искать бухгалтера, который бы
+делал взносы за меня в ПФР и тому подобное. &lt;strong&gt;Если у кого есть юрист, который
+может проконсультировать по данному вопросу, напишите пожалуйста&lt;/strong&gt;. Пока
+остановился на контрактной работе.&lt;/p&gt;
+
+&lt;p&gt;Также остался вопрос с долей в компании. С точки зрения российского
+законодательства, есть ли какие-то преграды запрещающие мне становится
+акционером? И как эти бумаги правильно оформить?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nalog.ru/rn73/ip/interest/reg_ip/petition/&#34;&gt;ПОРЯДОК РЕГИСТРАЦИИ ИНДИВИДУАЛЬНОГО ПРЕДПРИНИМАТЕЛЯ (Ульяновская область)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://e-kontur.ru/enquiry/198&#34;&gt;Налоговые каникулы ИП&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://e-kontur.ru/enquiry/4&#34;&gt;Регистрируем ИП: подготовка документов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ksoftware.livejournal.com/312267.html&#34;&gt;Как официально получить валюту из-за рубежа&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://news.banks.eu/archives/267&#34;&gt;Тонкости SWIFT – переводов из России в Европу&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Monthly Art #18</title>
@@ -345,15 +452,18 @@ machine:
     PROJECT_GOPATH: &amp;quot;${HOME}/.go_project&amp;quot;
     PROJECT_PARENT_PATH: &amp;quot;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&amp;quot;
     PROJECT_PATH: &amp;quot;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&amp;quot;
-    GOPATH: &amp;quot;${HOME}/.go_workspace:/usr/local/go_workspace:${PROJECT_GOPATH}&amp;quot;
+    GOPATH: &amp;quot;${PROJECT_GOPATH}&amp;quot;
+    GO15VENDOREXPERIMENT: 1
 
 dependencies:
+  cache_directories:
+    - &amp;quot;~/.glide&amp;quot;
   pre:
     - go get -u -v github.com/Masterminds/glide
   override:
     - mkdir -p &amp;quot;$PROJECT_PARENT_PATH&amp;quot;
     - ln -sf &amp;quot;$HOME/$CIRCLE_PROJECT_REPONAME/&amp;quot; &amp;quot;$PROJECT_PATH&amp;quot;
-    - glide install
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; glide install
   post:
     - go version
     - glide -v
@@ -877,46 +987,6 @@ want to duplicate the content.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Удачи нам в новом году!&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Monthly Art #15</title>
-      <link>http://homeonrails.com/2016/12/monthly-art-number-15/</link>
-      <pubDate>Tue, 13 Dec 2016 16:40:11 +0000</pubDate>
-      
-      <guid>http://homeonrails.com/2016/12/monthly-art-number-15/</guid>
-      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
-last month. Whether it was a full length movie, short film, music album, book
-or even a painting.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;documentary-going-clear-scientology-and-the-prison-of-belief-2015&#34;&gt;Documentary - Going Clear: Scientology and the Prison of Belief (2015)&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ixgd38EZIR0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;IMDB: &lt;a href=&#34;http://www.imdb.com/title/tt4257858&#34;&gt;http://www.imdb.com/title/tt4257858&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rotten Tomatoes: &lt;a href=&#34;https://www.rottentomatoes.com/m/going_clear_scientology_and_the_prison_of_belief_2015/&#34;&gt;https://www.rottentomatoes.com/m/going_clear_scientology_and_the_prison_of_belief_2015/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kinopoisk.ru: &lt;a href=&#34;https://www.kinopoisk.ru/film/885326/&#34;&gt;https://www.kinopoisk.ru/film/885326/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It scares me sometimes what religion could do to a person, a group of people, a
-government or the world. I am not going to talk about it here because this blog
-is not what&amp;rsquo;s this about.&lt;/p&gt;
-
-&lt;h2 id=&#34;ted-talk-10-things-you-didn-t-know-about-orgasm-2009&#34;&gt;TED talk - 10 things you didn&amp;rsquo;t know about orgasm (2009)&lt;/h2&gt;
-
-&lt;iframe src=&#34;https://embed.ted.com/talks/mary_roach_10_things_you_didn_t_know_about_orgasm&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Incredibly funny :D&lt;/p&gt;
-
-&lt;h2 id=&#34;ru-видео-самая-быстрая-история-русского-искусства-xx-века&#34;&gt;[RU] Видео - Самая быстрая история русского искусства XX века&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/tDxrdnk4e5g&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Узнал, что за черным квадратом оказывается что-то другое было нарисовано! А я
-то неуч думал, что это просто черный квадрат :)&lt;/p&gt;</description>
     </item>
     
   </channel>
