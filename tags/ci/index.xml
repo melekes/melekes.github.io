@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ci on Home on Rails</title>
+    <link>http://homeonrails.com/tags/ci/index.xml</link>
+    <description>Recent content in Ci on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <atom:link href="http://homeonrails.com/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CircleCI config for multipackage Golang projects</title>
+      <link>http://homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</link>
+      <pubDate>Mon, 06 Feb 2017 10:54:24 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</guid>
+      <description>&lt;p&gt;Multipackage Golang project - project, consisting of several packages. When
+testing you usually do something like &lt;code&gt;go test ./...&lt;/code&gt;, when getting all the
+dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be a Go package at the
+root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&gt;1&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/tendermint/tendermint&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are using &lt;a href=&#34;https://github.com/Masterminds/glide&#34;&gt;glide&lt;/a&gt; or other package
+manager:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+machine:
+  environment:
+    PROJECT_GOPATH: &amp;quot;${HOME}/.go_project&amp;quot;
+    PROJECT_PARENT_PATH: &amp;quot;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&amp;quot;
+    PROJECT_PATH: &amp;quot;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&amp;quot;
+    GOPATH: &amp;quot;${PROJECT_GOPATH}&amp;quot;
+    GO15VENDOREXPERIMENT: 1
+
+dependencies:
+  cache_directories:
+    - &amp;quot;~/.glide&amp;quot;
+  pre:
+    - go get -u -v github.com/Masterminds/glide
+  override:
+    - mkdir -p &amp;quot;$PROJECT_PARENT_PATH&amp;quot;
+    - ln -sf &amp;quot;$HOME/$CIRCLE_PROJECT_REPONAME/&amp;quot; &amp;quot;$PROJECT_PATH&amp;quot;
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; glide install
+  post:
+    - go version
+    - glide -v
+
+test:
+  override:
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; go test -v $(glide novendor)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Also, if you want to store your test&amp;rsquo;s output as CircleCI artifact on S3:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;test:
+  override:
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; go test -v $(glide novendor) 2&amp;gt;&amp;amp;1 | tee test.log
+  post:
+    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; mv test.log &amp;quot;${CIRCLE_ARTIFACTS}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;$(glide novendor)&lt;/code&gt; could be replaced with &lt;code&gt;$(shell go list ./... | grep -v
+&#39;/vendor/&#39;)&lt;/code&gt;. The former is just shorter.&lt;/p&gt;
+
+&lt;p&gt;You might be asking yourself: where is the example using simple &lt;code&gt;go get&lt;/code&gt;? I
+won&amp;rsquo;t give you one because &lt;a href=&#34;https://discuss.circleci.com/t/using-own-packages-in-go-project/4073/8&#34;&gt;I was not able to get &lt;code&gt;go get&lt;/code&gt; working on CircleCI
+for our
+  project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The errors were as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package _/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks: unrecognized import path &amp;quot;_/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks&amp;quot; (import path does not begin with hostname)
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;One small advice:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;install &lt;a href=&#34;https://github.com/adrienverge/yamllint&#34;&gt;yamllint&lt;/a&gt; and check your
+config file. If your config contains the syntax errors, CircleCI will output
+&amp;ldquo;Action failed: Configure the build&amp;rdquo;. Very descriptive, right?&lt;/p&gt;
+
+&lt;p&gt;Resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://subosito.com/posts/golang-circleci/&#34;&gt;https://subosito.com/posts/golang-circleci/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
