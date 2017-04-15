@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hackaton on Home on Rails</title>
-    <link>http://homeonrails.com/tags/hackaton/index.xml</link>
+    <link>http://homeonrails.com/tags/hackaton/</link>
     <description>Recent content in Hackaton on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/hackaton/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/hackaton/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>По следам RailsRumble 2013</title>
@@ -15,54 +18,7 @@
       <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</guid>
-      <description>&lt;p&gt;В этом году я в очередной раз участвовал в
-&lt;a href=&#34;http://railsrumble.com&#34;&gt;RailsRumble&lt;/a&gt;. Если кто не в курсе, RailsRumble
-- это 48 часовой хакатон, в рамках которого команды со всего света соревнуются
-между собой путем написания Web-приложений на Ruby on Rails
-(или любого другого &#34;Rack based&#34; Web фреймворка). Идеи самые
-разнообразные! Например, есть приложение для сравнения новостей из
-разных источников (The New York Times VS Fox News), приложение для
-организаторов конференций, приложение которое показывает треки из видео
-на YouTube или Vimeo.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&amp;nbsp;
-
-&lt;div align=&#34;center&#34;&gt;
-  &lt;a href=&#34;http://booksviabooks.com&#34; title=&#34;BooksViaBooks&#34;&gt;
-    &lt;img class=&#34;img-rounded&#34;
-    src=&#34;http://homeonrails.com/images/posts/2013-10-23-in-the-wake-of-railsrumble2013/booksviabooks.png&#34;
-    alt=&#34;BooksViaBooks&#34;/ width=&#34;450&#34;&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-
-&amp;nbsp;
-
-&lt;p&gt;Мы вместе с Андреем Кулаковым, Дмитрием Висловым и Михаилом Столбовым
-написали сервис &lt;a href=&#34;http://booksviabooks.com&#34;&gt;BooksViaBooks&lt;/a&gt;, который
-позволяет довольно легко посмотреть рекомендации автора по конкретной
-книге.&lt;/p&gt;
-
-&lt;p&gt;Нередко, когда вы читаете книгу, автор советует вам издания других авторов: &#34;Если вы еще не прочитали данную книгу, советую незамедлительно сделать это&#34; или &#34;Чтобы узнать больше об области X, рекомендую прочесть книгу X&#34;.
-К сожалению, многие авторы не публикуют список своих рекомендаций в конце книги, так что вам приходится либо заново просматривать книгу, либо делать заметки на полях по мере прочтения&#34;.&lt;/p&gt;
-
-&lt;p&gt;Чтобы упростить себе и другим людям жизнь, мы и решили создать
-BooksViaBooks.&lt;/p&gt;
-
-&lt;p&gt;Почему я уже второй раз участвую в данном мероприятии? Все очень
-просто:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Есть возможность попробовать какие-то новые технологии (связи книг хранятся в Neo4j)&lt;/li&gt;
-  &lt;li&gt;Есть возможность попробовать себя в другой роли (дизайн BooksViaBooks разработан Андреем Кулаковым - Ruby разработчиком)&lt;/li&gt;
-  &lt;li&gt;Это весело (можно программировать и, вместе с этим, смотреть Time with Finn &amp; Jake :) )&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Вообще от России выступало порядка 10-15 команд. Подробнее в посте на
-&lt;a href=&#34;http://habrahabr.ru/post/198426/&#34;&gt;habrahabr.ru&lt;/a&gt;. Если вам приглянулось какое-либо приложение, можно
-проголосовать за него добавив в Favorites.&lt;/p&gt;
-</description>
+      <description>В этом году я в очередной раз участвовал в RailsRumble. Если кто не в курсе, RailsRumble - это 48 часовой хакатон, в рамках которого команды со всего света соревнуются между собой путем написания Web-приложений на Ruby on Rails (или любого другого &#34;Rack based&#34; Web фреймворка). Идеи самые разнообразные! Например, есть приложение для сравнения новостей из разных источников (The New York Times VS Fox News), приложение для организаторов конференций, приложение которое показывает треки из видео на YouTube или Vimeo.</description>
     </item>
     
   </channel>

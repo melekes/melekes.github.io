@@ -2,12 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Picks on Home on Rails</title>
-    <link>http://homeonrails.com/tags/picks/index.xml</link>
+    <link>http://homeonrails.com/tags/picks/</link>
     <description>Recent content in Picks on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/picks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2017 23:22:09 +0400</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/picks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>March Picks</title>
+      <link>http://homeonrails.com/2017/04/march-picks/</link>
+      <pubDate>Sat, 15 Apr 2017 23:22:09 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/04/march-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>February Picks</title>
@@ -17,52 +31,7 @@
       <guid>http://homeonrails.com/2017/03/february-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The most important professional programming skill is being able to move on. Example: &amp;quot;I moved on from hating JavaScript to hating Go&amp;quot;.&lt;/p&gt;&amp;mdash; Aleksey Shipilëv (@shipilev) &lt;a href=&#34;https://twitter.com/shipilev/status/835779166217912321&#34;&gt;February 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://gusc.lv/2013/03/system-developers-glossary-also-for-dummies&#34;&gt;System Developers Glossary (also for dummies)&lt;/a&gt;
-word, dword, qword, registers. Added it to bookmarks.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@oherrala/quickcheck-or-fuzzing-which-one-to-use-98d200e9609b#.mfuqm0bmc&#34;&gt;QuickCheck or Fuzzing? Which one to use?&lt;/a&gt;
-Finally, somebody was able to explain the difference clearly. Rays of goodness to the author.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://antirez.com/news/112&#34;&gt;The mythical 10x programmer&lt;/a&gt;
-Demystifying the myth about the 10x programmer, antirez shares the list of
-qualities, which as he believes are the most important when we&amp;rsquo;re talking
-about productivity:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bare programming abilities: getting sub-tasks done&lt;/li&gt;
-&lt;li&gt;Experience: pattern matching&lt;/li&gt;
-&lt;li&gt;Focus: actual time VS hypothetical time&lt;/li&gt;
-&lt;li&gt;Design sacrifice: killing 5% to get 90%&lt;/li&gt;
-&lt;li&gt;Simplicity&lt;/li&gt;
-&lt;li&gt;Perfectionism, or how to kill your productivity and bias your designs&lt;/li&gt;
-&lt;li&gt;Low level: understanding the machine&lt;/li&gt;
-&lt;li&gt;Debugging skills&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://reedbeta.com/blog/programmers-intro-to-unicode/&#34;&gt;A Programmer’s Introduction to Unicode&lt;/a&gt;
-Love the maps!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://stripe.com/blog/idempotency&#34;&gt;Designing robust and predictable APIs with idempotency&lt;/a&gt;
-Guaranteeing “exactly once” semantics by using idempotency keys.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/321802/&#34;&gt;Дмитрий Сорин, Senior Software Engineer в Atlassian, поделился впечатлениями о пяти годах работы в «Яндексе»&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -73,61 +42,7 @@ Guaranteeing “exactly once” semantics by using idempotency keys.&lt;/p&gt;&l
       <guid>http://homeonrails.com/2017/02/january-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;might be the best selfie of the year and it&amp;#39;s only Jan 16th. Via reddit. &lt;a href=&#34;https://t.co/61H2VqBjv7&#34;&gt;pic.twitter.com/61H2VqBjv7&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Weintraub (@colliderfrosty) &lt;a href=&#34;https://twitter.com/colliderfrosty/status/821070925432963075&#34;&gt;January 16, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.defstartup.org/2017/01/18/why-rethinkdb-failed.html&#34;&gt;RethinkDB: why we failed&lt;/a&gt;
-Sad story. Surely you have already read. If not, go do it. It&amp;rsquo;s worth of your
-time, I promise.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://widgetsandshit.com/teddziuba/2010/12/the-3-basic-tools-of-systems-engineering.html&#34;&gt;The 3 Basic Tools of Systems Engineering&lt;/a&gt;
-&amp;ldquo;There are three basic tools you can use to solve a technical problem: money,
-time, and code. This seems obvious, but the critical point is that you must
-try them in that order.&amp;rdquo; &lt;a href=&#34;https://blog.reifyworks.com/developers-stop-undervaluing-software-2db16b0f5641#.6oaj424ic&#34;&gt;Developers: Stop undervaluing
-software&lt;/a&gt;
-might be a good addition to this article.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.yegor256.com/2017/01/24/career-advice.html&#34;&gt;16 Don&amp;rsquo;ts of Career Growth&lt;/a&gt;
-Terrible bits of advice if you look from the company&amp;rsquo;s perspective. Egoistic.
-Very brutal. The best that I have ever seen so far.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MC1EKLQ2Wmg&#34;&gt;GOTO 2012 • Mythbusting Modern Hardware to Gain &amp;lsquo;Mechanical Sympathy&amp;rsquo; • Martin Thompson&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MC1EKLQ2Wmg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=WDIkqP4JbkE&#34;&gt;code::dive conference 2014 - Scott Meyers: Cpu Caches and Why You Care&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WDIkqP4JbkE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://grishaev.me/moda&#34;&gt;Мода&lt;/a&gt;
-&amp;ldquo;Будут востребованны алгоритмы, протоколы и БД, самоорганизация,
-ответсвенность и самообучение. Во веки веков будет востребовано умение
-доводить дело до конца.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ru.hexlet.io/blog/posts/how-to-test-code&#34;&gt;Разработка → Начинаем писать тесты (правильно)&lt;/a&gt;
-&amp;ldquo;Так как же лучше написать тест? Надеюсь, вам уже стало очевидно, что нужно
-найти достаточно высокую точку входа в нашу программу, которая не зависит от
-внутренней реализации, и при этом выполняет поставленную задачу.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -138,62 +53,7 @@ Very brutal. The best that I have ever seen so far.&lt;/p&gt;&lt;/li&gt;
       <guid>http://homeonrails.com/2017/01/december-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The CIA remotely accessed Russian hacker&amp;#39;s webcam moments before hack, first images have been revealed &lt;a href=&#34;https://t.co/RycQD8RYX1&#34;&gt;pic.twitter.com/RycQD8RYX1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Science Cat (@DrScienceCat) &lt;a href=&#34;https://twitter.com/DrScienceCat/status/809473634259636225&#34;&gt;15 декабря 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://preshing.com/20120612/an-introduction-to-lock-free-programming/&#34;&gt;An Introduction to Lock-Free Programming&lt;/a&gt;
-I don&amp;rsquo;t know much about you, but I always wanted to know what people mean by
-lock-free programming. Here is the best article I was able to find.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html&#34;&gt;Cap&amp;rsquo;n Proto, FlatBuffers, and SBE&lt;/a&gt;
-What serialization protocol will you choose for your next project? Be aware
-of the author&amp;rsquo;s bias towards his own solution (Cap&amp;rsquo;n Proto).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ericdykstra.me/blog/improving-as-an-intermediate-programmer&#34;&gt;How Does One Improve as an Intermediate Programmer?&lt;/a&gt;
-&amp;ldquo;Maybe the discipline is still too young to have formalized ways of
-performance improvement like classical music training or sports training.&amp;rdquo; Do
-you think it&amp;rsquo;s true? Personally, I tend to agree with Eric.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.bradfieldcs.com/in-2017-learn-every-language-59b11f68eee#.ib8fx7xzm&#34;&gt;In 2017, learn &lt;em&gt;every&lt;/em&gt; language&lt;/a&gt;
-Do not have plans for 2017? How about learning &lt;em&gt;every&lt;/em&gt; language :)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=3wyd6J3yjcs&#34;&gt;The Silver Bullet Syndrome by Hadi Hariri&lt;/a&gt;
-This is probably the second funniest dev talk after the famous &amp;ldquo;Wat&amp;rdquo; talk by
-Gary Bernhardt. Must watch!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3wyd6J3yjcs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rX0ItVEVjHc&#34;&gt;CppCon 2014: Mike Acton &amp;ldquo;Data-Oriented Design and C++&amp;rdquo;&lt;/a&gt;
-Ok, this is something paradigm shifting. Data-oriented versus object-oriented
-design.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/rX0ItVEVjHc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://antonz.ru/interest/&#34;&gt;Сделайте себе интересно&lt;/a&gt;
-&amp;ldquo;Это конспект лекции Людвига Быстроновского об интересе и контринтуитивном
-решении задач. Людвиг рассказывает, когда возникает интерес, какие приемы
-помогают не потерять его, чем вреден «поток» и как разрыв шаблона приводит к
-успеху.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -204,53 +64,7 @@ design.&lt;/li&gt;
       <guid>http://homeonrails.com/2016/12/november-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Truth bomb 💣💥👌 &lt;a href=&#34;https://twitter.com/hashtag/JSConfAU16?src=hash&#34;&gt;#JSConfAU16&lt;/a&gt; &lt;a href=&#34;https://t.co/mq3B1Un9Fl&#34;&gt;pic.twitter.com/mq3B1Un9Fl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Melissa Kaulfuss 🎄 (@MelissaKaulfuss) &lt;a href=&#34;https://twitter.com/MelissaKaulfuss/status/804209991510937600&#34;&gt;1 декабря 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://dave.cheney.net/2016/08/20/solid-go-design&#34;&gt;SOLID Go Design&lt;/a&gt;
-Want to see how do these principles apply to a language written ~ 7 years
-after the acronym &amp;ldquo;SOLID&amp;rdquo; was first introduced to the public?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bravenewgeek.com/you-are-not-paid-to-write-code/&#34;&gt;You Are Not Paid to Write Code&lt;/a&gt;
-&amp;ldquo;you are not paid to write code. You have never been paid to write code. In
-fact, code is a nasty byproduct of being a software engineer.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=03GsLxVdVzU&#34;&gt;Designing for Performance&lt;/a&gt;
-You will hear about latency, throughput, queuing theory, dangers of
-abstractions and much more.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/03GsLxVdVzU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=kDh5BrqiGhI&#34;&gt;The Verification of a Distributed System&lt;/a&gt;
-We are all writing distributed systems. And while most of us probably do not
-need formal specifications, other methods (unit, integration, property-based
-testing, fault injection) and tactics are very useful.
-&lt;a href=&#34;https://github.com/CaitieM20/TheVerificationOfDistributedSystem&#34;&gt;https://github.com/CaitieM20/TheVerificationOfDistributedSystem&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/kDh5BrqiGhI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://medium.com/@shiroginne/%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D0%B0%D0%BC-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B8%D1%89%D1%83%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83-c4df8f7caf1f#.ung9wu4n0&#34;&gt;Советы программистам, которые ищут работу&lt;/a&gt;
-Один из самых лучших постов по данной теме.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -261,41 +75,7 @@ testing, fault injection) and tactics are very useful.
       <guid>http://homeonrails.com/2016/11/october-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;We all know what&amp;#39;s coming. &lt;a href=&#34;https://t.co/4P2GcWt09D&#34;&gt;pic.twitter.com/4P2GcWt09D&lt;/a&gt;&lt;/p&gt;&amp;mdash; Adam (@AdamWhitcroft) &lt;a href=&#34;https://twitter.com/AdamWhitcroft/status/791718192506953728&#34;&gt;27 октября 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://danluu.com/hn-comments/&#34;&gt;Hacker News comments&lt;/a&gt;
-&amp;ldquo;I compiled a very abbreviated list of comments I like because comments seem to get lost.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/the-hoard/how-kafkas-storage-internals-work-3a29b02e026#.t3um9zqs0&#34;&gt;How Kafka’s Storage Internals Work&lt;/a&gt;
-Want to know how Kafka stores data? Then read this small article.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@FunctionalWorks/relocating-to-london-12754053c81e#.xgbknzar5&#34;&gt;Relocating to London&lt;/a&gt;
-The bottom line is that £30,000 annual salary in London equals to £8,500 in savings (50000 RUB per month). If you want to save more, there are options: &lt;a href=&#34;https://hackerlife.co/blog/compare-cities-cost/London-United-Kingdom&#34;&gt;work in USA&lt;/a&gt;, remote work for a USA company, another options?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/caitiem20/a-brief-history-of-distributed-programming-rpc&#34;&gt;A Brief History of Distributed Programming: RPC&lt;/a&gt;
-Although, we have some solutions (Finagle, gRPC), we are still in the beginning.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://bvz.name/blog/all/lyudvig-kazan-2016/&#34;&gt;Людвиг, Казань, 2016&lt;/a&gt;
-&amp;ldquo;Слишком сложные проекты — это хорошо. Условия для качественного роста.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -306,49 +86,7 @@ Although, we have some solutions (Finagle, gRPC), we are still in the beginning.
       <guid>http://homeonrails.com/2016/10/september-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Most important, have the courage to follow your heart and intuition.&amp;quot; Remembering Steve and the many ways he changed our world. &lt;a href=&#34;https://t.co/ONAuEoq3uU&#34;&gt;pic.twitter.com/ONAuEoq3uU&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Cook (@tim_cook) &lt;a href=&#34;https://twitter.com/tim_cook/status/783662822819401728&#34;&gt;5 октября 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;As many of you already know, I was traveling in China. And I didn&amp;rsquo;t have much
-time to read articles. That&amp;rsquo;s why it&amp;rsquo;s only 4 articles and 1 video.&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://medium.baqend.com/real-time-stream-processors-a-survey-and-decision-guidance-6d248f692056#.v6o6r3wm7&#34;&gt;Scalable Stream Processing: A Survey of Storm, Samza, Spark and Flink&lt;/a&gt;
-Very good overview of the stream processing solutions.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HjASqh5z8ck&#34;&gt;PolyConf 16: Why System Programming is for Everyone / Julia Evans&lt;/a&gt;
-strace, opensnoop, tcpdump, dstat, ngrep, &amp;hellip; I love that she is not afraid
-to experiment, like &amp;ldquo;write a keyboard driver&amp;rdquo; or &amp;ldquo;write a tcp stack&amp;rdquo;. Maybe I
-will follow in her steps and try to write these things too. There is a
-transcript of the same talk (I believe)
-&lt;a href=&#34;http://jvns.ca/blog/2016/09/17/strange-loop-talk/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://tonsky.livejournal.com/308320.html&#34;&gt;Голые короли IT&lt;/a&gt;
-В очередной раз говорят, что не нужно слепо следовать за хайпом, даже если во
-главе стоят ваши кумиры.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://grishaev.me/business-game&#34;&gt;Бизнес как игра&lt;/a&gt;
-Прочел книгу. Мне также очень понравилась. Спасибо Ивану за наводку!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://lifehacker.ru/2016/09/27/lichnaja-effektivnost/&#34;&gt;О личной эффективности&lt;/a&gt;
-Добротный пост про личную эффективность.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -359,46 +97,7 @@ transcript of the same talk (I believe)
       <guid>http://homeonrails.com/2016/08/july-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://t.co/jm7KvT7XXW&#34;&gt;pic.twitter.com/jm7KvT7XXW&lt;/a&gt;&lt;/p&gt;&amp;mdash; Max Jazz (@maxjazzz) &lt;a href=&#34;https://twitter.com/maxjazzz/status/758234340753018880&#34;&gt;27 июля 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://joeduffyblog.com/2016/02/07/the-error-model/&#34;&gt;The Error Model&lt;/a&gt;
-This is a long read, but it will pay off. Error codes,
-unchecked exceptions, checked exceptions: The Good, The
-Bad and Ugly.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://developers.soundcloud.com/blog/synchronous-communication-for-microservices-current-status-and-learnings&#34;&gt;Synchronous communication for microservices: current status and learnings&lt;/a&gt;
-Learn why SoundCloud stopped writing client libraries.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://antirez.com/news/109&#34;&gt;Random notes on improving the Redis LRU algorithm&lt;/a&gt;
-&amp;ldquo;The key with the least probability of being accessed in
-the future should be removed from the data set. There is
-only one problem: Redis and other caches are not able to
-predict the future.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ZgdS0EUmn70&#34;&gt;Intro to Architecture and Systems Design Interviews&lt;/a&gt;
-If you&amp;rsquo;re preparing for an interview, this video might help you in the architecture part.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/306590/&#34;&gt;Быстрые TCP сокеты на Erlang&lt;/a&gt;
-&amp;ldquo;В этой статье я предлагаю оптимизации, которые позволяют улучшить три составляющие работы с TCP: приём соединений, получение сообщений и ответ на них.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -409,41 +108,7 @@ If you&amp;rsquo;re preparing for an interview, this video might help you in the
       <guid>http://homeonrails.com/2016/07/june-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;ru&#34; dir=&#34;ltr&#34;&gt;Когда твой кот освоил программирование и мутит приложуху &lt;a href=&#34;https://t.co/dzyPvhc5eL&#34;&gt;pic.twitter.com/dzyPvhc5eL&lt;/a&gt;&lt;/p&gt;&amp;mdash; BuzzFeed Russia (@BuzzFeedRU) &lt;a href=&#34;https://twitter.com/BuzzFeedRU/status/749909386890321920&#34;&gt;4 июля 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html&#34;&gt;Design Of A Modern Cache&lt;/a&gt;
-&amp;ldquo;In this article we will explore the modern methods used by Caffeine, an open-source Java caching library, that yield high hit rates and excellent concurrency. These ideas can be translated to your favorite language and hopefully some readers will be inspired to do just that.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bravenewgeek.com/you-cannot-have-exactly-once-delivery/&#34;&gt;You Cannot Have Exactly-Once Delivery&lt;/a&gt;
-Probably the best place to start exploring the topic: &amp;ldquo;delivery guarantees in distributed systems&amp;rdquo;. You&amp;rsquo;re encouraged to follow the links in the article.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html&#34;&gt;How to do distributed locking&lt;/a&gt;
-Critics of the Redlock algorithm by Martin Kleppmann.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;presentations&#34;&gt;Presentations&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/barnbarn/infrastructure-security-how-hard-could-it-be-right&#34;&gt;Infrastructure Security: How Hard Could it Be, Right? by Ben Hughes&lt;/a&gt;
-I know nothing about infrastructure security and this is a big topic. Anyway, it is interesting to take a look from time to time.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/303802/&#34;&gt;Big Data головного мозга&lt;/a&gt;
-Отличная статья, описывающая чем Hadoop является, а чем нет.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -454,42 +119,7 @@ I know nothing about infrastructure security and this is a big topic. Anyway, it
       <guid>http://homeonrails.com/2016/06/may-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;when your shower uses github more than you &lt;a href=&#34;https://t.co/K21qAZbRRC&#34;&gt;pic.twitter.com/K21qAZbRRC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Visual Idiot (@idiot) &lt;a href=&#34;https://twitter.com/idiot/status/740505961555742721&#34;&gt;8 июня 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tech.zalando.de/blog/apache-showdown-flink-vs.-spark/&#34;&gt;Apache Showdown: Flink vs. Spark&lt;/a&gt;
-If you&amp;rsquo;re looking into stream processing solutions, you may want to check this out. It gives a nice overview of differences between Apache Spark and Flink.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://alexott.blogspot.ru/2016/06/notes-on-practical-machine-learning.html&#34;&gt;Notes on practical machine learning&lt;/a&gt;
-&lt;a href=&#34;https://alexott-ru.blogspot.ru/2016/06/blog-post.html&#34;&gt;ru-RU&lt;/a&gt;
-How to get good results when using machine learning and the steps required. Lots of very good points.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://flyingfrogblog.blogspot.ru/2016/05/disadvantages-of-purely-functional.html&#34;&gt;Disadvantages of purely functional programming&lt;/a&gt;
-Notice the word &amp;ldquo;purely&amp;rdquo;. I tend to agree with the author on 1, 2, 4, 8 and 9.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloud.google.com/blog/big-data/2016/05/no-shard-left-behind-dynamic-work-rebalancing-in-google-cloud-dataflow&#34;&gt;No shard left behind: dynamic work rebalancing in Google Cloud Dataflow&lt;/a&gt;
-If you&amp;rsquo;re working with one of the MapReduce frameworks, it might be interesting for you to see how Google Dataflow implemented dynamic work rebalancing as a way of dealing with stragglers. It reminds me &lt;a href=&#34;https://jlouisramblings.blogspot.ru/2013/01/how-erlang-does-scheduling.html&#34;&gt;work-stealing in Erlang&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@allo/%D0%BE-%D0%BF%D1%80%D0%B8%D0%BE%D1%80%D0%B8%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-7f0556b49fcb#.e0yc5a48y&#34;&gt;О приоритизации&lt;/a&gt;
-1) Почему важно отказываться от некоторых задач
-2) Почему важно делать некоторые задачи не на 100%&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://grishaev.me/python&#34;&gt;Размышления о Питоне&lt;/a&gt;
-Clojure захватывает умы питонистов! Плюсы / минусы языка.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -500,55 +130,7 @@ Clojure захватывает умы питонистов! Плюсы / мин�
       <guid>http://homeonrails.com/2016/05/april-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Docker. &lt;a href=&#34;https://t.co/43yvyT8A14&#34;&gt;pic.twitter.com/43yvyT8A14&lt;/a&gt;&lt;/p&gt;&amp;mdash; Robert (@kventil) &lt;a href=&#34;https://twitter.com/kventil/status/725645207799209984&#34;&gt;28 апреля 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://coffeenco.de/articles/lockless_concurrency.html&#34;&gt;Gentle Introduction to Lockless Concurrency&lt;/a&gt;
-If you, like me, struggle with the term &amp;ldquo;lock-free&amp;rdquo; and want to know and explore the subject - this might come in handy.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.freecodecamp.com/being-a-developer-after-40-3c5dd112210c#.8myi69h2i&#34;&gt;Being A Developer After 40&lt;/a&gt;
-&lt;a href=&#34;https://habrahabr.ru/post/282674/&#34;&gt;ru-RU&lt;/a&gt;
-&amp;ldquo;Hi everyone, I am a forty-two years old self-taught developer, and this is my story.&amp;rdquo; And people love stories.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.evanmiller.org/elixir-ram-and-the-template-of-doom.html&#34;&gt;Elixir RAM and the Template of Doom&lt;/a&gt;
-Hint: Erlang also does these optimizations since both Erlang and Elixir use the same virtual machine.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://tonsky.me/blog/interactive-development/&#34;&gt;The Blessing of Interactive Development&lt;/a&gt;
-&amp;ldquo;I like to reflect on how my own writing process has evolved over the years.&amp;rdquo; If you want to know how Clojure developers write their code, take a look at this article (and watch video at the end).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rFejpH_tAHM&#34;&gt;Simplicity is Complicated by Rob Pike&lt;/a&gt;
-I&amp;rsquo;ve probably watched this talk 3 times :) It&amp;rsquo;s worth of your time, trust me.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/google/xi-editor&#34;&gt;Xi Editor&lt;/a&gt;
-A modern editor with a backend written in Rust. Powered by Google. Very early stage, though.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kite.com/&#34;&gt;Your programming copilot&lt;/a&gt;
-&amp;ldquo;Kite augments your coding environment with all the internet’s programming knowledge.&amp;rdquo; Can&amp;rsquo;t wait to try it! So, if you have one extra invitation, please contact me.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.furfur.me/furfur/heros/heroes-furfur/217349-kak-ya-rabotala-na-ferme-kannabisa&#34;&gt;ЛИЧНЫЙ ОПЫТ: КАК Я РАБОТАЛА НА ФЕРМЕ МАРИХУАНЫ&lt;/a&gt;
-Читается как книга, только очень маленькая.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -559,62 +141,7 @@ A modern editor with a backend written in Rust. Powered by Google. Very early st
       <guid>http://homeonrails.com/2016/04/march-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Remember to leave positive feedback and say thanks too. &lt;a href=&#34;https://t.co/5byOuQpi92&#34;&gt;pic.twitter.com/5byOuQpi92&lt;/a&gt;&lt;/p&gt;&amp;mdash; Anna Pawlicka (@AnnaPawlicka) &lt;a href=&#34;https://twitter.com/AnnaPawlicka/status/709978859005988864&#34;&gt;16 марта 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://llogiq.github.io/2016/02/28/java-rust.html&#34;&gt;Comparing Rust and Java&lt;/a&gt;
-Very thoughtful comparison. Great read!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://alarmingdevelopment.org/?p=893&#34;&gt;The Future Programming Manifesto&lt;/a&gt;
-&amp;ldquo;Rewarding programmers for their ability to handle complexity selects for
-those who love it.&amp;rdquo; Makes me think.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://m.signalvnoise.com/manufacturing-quality-time-fe043fa7b7a1#.e5tu7l90a&#34;&gt;Manufacturing quality time&lt;/a&gt;
-&lt;a href=&#34;http://lifehacker.ru/2016/03/14/manufacturing-quality-time/&#34;&gt;ru-RU&lt;/a&gt;
-You can hate @dhh or worship him, but he most certainly has a couple of very
-good points about time management.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/life-learning/facebook-turned-me-down-the-job-rejection-letter-that-turned-into-a-4-billion-check-962c658d876c#.tegs8nnbh&#34;&gt;‘Facebook turned me down’ — the job rejection letter that turned into a $4 billion check&lt;/a&gt;
-“If you haven&amp;rsquo;t found it yet, keep looking. Don&amp;rsquo;t settle. As with all matters
-of the heart, you&amp;rsquo;ll know when you find it. And, like any great relationship,
-it just gets better and better as the years roll on.” ― Steve Jobs&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/java-vs-c-performance&#34;&gt;Java vs. C/C++ Performance by Cliff Click&lt;/a&gt;
-The speaker clearly outlines the strengths of both languages and dispels some
-prejudices programmers have about them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://eax.me/avoid-nosql/&#34;&gt;Почему эти ваши модные NoSQL решения не так уж хороши&lt;/a&gt;
-Спорно конечно, потому как все зависит от задачи. Но в целом, поддерживаю :)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;видео&#34;&gt;Видео&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Mx22NaWmFhk&#34;&gt;RSCONF: Andrey Listochkin - Качество. Как делать свою работу хорошо.&lt;/a&gt;
-&amp;ldquo;Попытайтесь владеть тем, что вы делаете&amp;rdquo;. Можно посмотреть только ради
-шуток. Вообщем включайте, не пожалеете.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xPFRUM_oDKA&#34;&gt;KharkivJS #5 2015 — Andrey Listochkin — Anti hype как не гнаться за технологиями и начать жить&lt;/a&gt;
-60% - paid, 30% - research/education, 10% - pet projects. У каждого могут
-быть свои пропорции, у докладчика такие.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -625,42 +152,7 @@ prejudices programmers have about them.&lt;/li&gt;
       <guid>http://homeonrails.com/2016/03/february-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Four stages of JS developer:&lt;br&gt;1. I can’t make JS do what I want&lt;br&gt;2. I can make JS do what I want&lt;br&gt;3. I know what JS wants&lt;br&gt;4. I am JS&lt;/p&gt;&amp;mdash; Dmitry Baranovskiy (@DmitryBaranovsk) &lt;a href=&#34;https://twitter.com/DmitryBaranovsk/status/700242822876663808&#34;&gt;18 февраля 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@jlouis666/how-to-build-stable-systems-6fe9dcf32fc4#.fmcmt0s3i&#34;&gt;How to build stable systems — An incomplete opinionated guide.&lt;/a&gt;
-Great article! Topics are process &amp;amp; people, system planning, setup,
-development, picking a database, picking a programming language,
-configuration and operations.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://queue.acm.org/detail.cfm?id=2889274&#34;&gt;The Verification of a Distributed System&lt;/a&gt;
-Distributed systems are hard. Only lazy people do not talk about it. Far fewer
-people write about how to reduce and control the complexity of the system
-being developed. Topics are formal specification languages, model checking,
-monitoring, canaries, unit and integration tests and fault injection.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/alex/what-happens-when&#34;&gt;What happens when&amp;hellip;&lt;/a&gt; An attempt
-to answer the age old interview question &amp;ldquo;What happens when you type
-google.com into your browser and press enter?&amp;rdquo; (&lt;a href=&#34;https://habrahabr.ru/post/251373/&#34;&gt;Часть на
-русском&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dou.ua/lenta/articles/why-need-junior/&#34;&gt;Стоит ли брать на работу джуниоров&lt;/a&gt;
-Хорошим джуном кашу не испортишь. Понравилось, как автор раскладывает все по
-полочкам, подробно обсуждая каждый аспект работы джуниора.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -671,50 +163,7 @@ google.com into your browser and press enter?&amp;rdquo; (&lt;a href=&#34;https:
       <guid>http://homeonrails.com/2016/02/january-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Put Haskell on your resume even if you don&amp;#39;t know it. When asked, say your resume is lazy and you&amp;#39;ll learn it when results are needed.&lt;/p&gt;&amp;mdash; Kyrylo Perevozchykov (@axique) &lt;a href=&#34;https://twitter.com/axique/status/679713633715286021&#34;&gt;23 декабря 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/this-is-not-a-monad-tutorial/interview-with-jesper-louis-andersen-about-erlang-haskell-ocaml-go-idris-the-jvm-software-and-5628fe591295&#34;&gt;Interview with Jesper Louis Andersen about Erlang, Haskell, OCaml, Go, Idris, the JVM, software and protocol design — PART II&lt;/a&gt;
-What are the advantages of the Erlang VM over the JVM? Why Erlang/OTP do not
-have a default gen_pool implementation? How Clojure’s “procotols” could help
-Erlang? Answers to these and many more questions you will find in the article
-above.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://joearms.github.io/2016/01/28/A-Badass-Way-To-Connect-Programs-Together.html&#34;&gt;A Badass Way to Connect Programs Together&lt;/a&gt;
-Another interesting binary protocol - OSC. I am curious how it compares to
-thrift and others.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://thesz.livejournal.com/1468493.html&#34;&gt;Для Хаскеля нет простых веб-фреймворков&lt;/a&gt;
-Печально, что сказать.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.forbes.ru/svoi-biznes/startapy/310613-dva-fokusa-kak-startapu-proiti-dolinu-smerti&#34;&gt;Два фокуса: как стартапу пройти «долину смерти»&lt;/a&gt;
-Захватывающая и поучительная история о стартапе &lt;a href=&#34;http://elementaree.ru/&#34;&gt;http://elementaree.ru/&lt;/a&gt;
-(конструктор еды).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;видео&#34;&gt;Видео&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=2HbUhMxtDYI&#34;&gt;Ruby в видео-рекламе. Николай Рекубратский, Virool.&lt;/a&gt;
-&amp;ldquo;Virool — платформа для видео-рекламы в интернете. Мы обрабатываем сотни
-миллионов событий каждый час. Я расскажу, как мы используем Ruby, чтобы
-сохранить этот поток, обработать его за считанные секунды и увидеть картину
-происходящего в реальном времени. Вы узнаете, как JRuby, Celluloid, Logstah,
-Apache Kafka и другие инструменты помогают нам в этом.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -725,31 +174,7 @@ Apache Kafka и другие инструменты помогают нам в �
       <guid>http://homeonrails.com/2016/01/december-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;First attempt at async programming. &lt;a href=&#34;https://t.co/u5YwRqBuou&#34;&gt;pic.twitter.com/u5YwRqBuou&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sampson (@jonathansampson) &lt;a href=&#34;https://twitter.com/jonathansampson/status/676487374495342592&#34;&gt;14 декабря 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://danluu.com/file-consistency/&#34;&gt;Files Are Hard&lt;/a&gt;
-Fantastic read! Reminded me Aphyr&amp;rsquo;s series, where he shows that DBs do not
-work as intended sometimes.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://engineering.snapdeal.com/how-were-building-a-system-to-scale-for-billions-of-requests-per-day-201512/&#34;&gt;How we’re building a system to scale for billions of requests per day&lt;/a&gt;
-It&amp;rsquo;s good to see what people are choosing for their projects from time to
-time. Lots of advices, although some of them are only applicable if your app
-is supposed to handle tons of RPS.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.vividcortex.com/blog/why-percentiles-dont-work-the-way-you-think&#34;&gt;Why Percentiles Don’t Work the Way you Think&lt;/a&gt;
-&amp;ldquo;There’s a big problem with most time series data and percentiles. The issue
-is that time series databases are almost always storing aggregate metrics
-over time ranges, not the full population of events that were originally
-measured.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -760,41 +185,238 @@ measured.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
       <guid>http://homeonrails.com/2015/12/november-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>October picks</title>
+      <link>http://homeonrails.com/2015/11/october-picks/</link>
+      <pubDate>Mon, 02 Nov 2015 23:34:32 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/11/october-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Programming &lt;a href=&#34;https://t.co/YR9e8cDrJs&#34;&gt;pic.twitter.com/YR9e8cDrJs&lt;/a&gt;&lt;/p&gt;&amp;mdash; Luis Solano (@luisobo) &lt;a href=&#34;https://twitter.com/luisobo/status/662750626875592704&#34;&gt;6 ноября 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>September picks</title>
+      <link>http://homeonrails.com/2015/10/september-picks/</link>
+      <pubDate>Wed, 07 Oct 2015 11:14:55 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/10/september-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>August picks</title>
+      <link>http://homeonrails.com/2015/09/august-picks/</link>
+      <pubDate>Mon, 07 Sep 2015 19:48:02 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/09/august-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>July Picks</title>
+      <link>http://homeonrails.com/2015/08/july-picks/</link>
+      <pubDate>Tue, 04 Aug 2015 09:07:21 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/08/july-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://medium.com/@treystout/engineering-principles-c58f5f8c264b&#34;&gt;Engineering Principles&lt;/a&gt;
-A very good list of the core principles every engineer should have. If your
-team doesn&amp;rsquo;t have any, just take these.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>June picks</title>
+      <link>http://homeonrails.com/2015/07/june-picks/</link>
+      <pubDate>Fri, 03 Jul 2015 10:59:59 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/07/june-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>May Picks</title>
+      <link>http://homeonrails.com/2015/06/may-picks/</link>
+      <pubDate>Mon, 01 Jun 2015 22:04:31 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/06/may-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.infoq.com/presentations/abstract-algebra-analytics&#34;&gt;Add ALL the Things: Abstract Algebra Meets Analytics by Avi Bryant&lt;/a&gt;
-Probably the best explanation of how Min-hash and HyperLogLog algorithms work (more or less).&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>April picks</title>
+      <link>http://homeonrails.com/2015/05/april-picks/</link>
+      <pubDate>Wed, 06 May 2015 23:19:11 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/05/april-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=qDNPQo9UmJA&#34;&gt;From REST to CQRS with Clojure, Kafka, &amp;amp; Datomic by Bobby Calderwood&lt;/a&gt;
-This is completely different comparing to what I am used to. And that&amp;rsquo;s why
-this video is here. Many of the disadvantages of REST seem reasonable and
-solution, which he propose, looks very interesting.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March picks</title>
+      <link>http://homeonrails.com/2015/04/march-picks/</link>
+      <pubDate>Tue, 14 Apr 2015 11:22:15 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/04/march-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February Picks (2)</title>
+      <link>http://homeonrails.com/2015/03/february-picks/</link>
+      <pubDate>Mon, 02 Mar 2015 13:47:59 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/03/february-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February picks</title>
+      <link>http://homeonrails.com/2015/02/february-picks/</link>
+      <pubDate>Mon, 02 Feb 2015 10:45:11 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/02/february-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://medium.com/@pismenny/%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9-%D0%BA%D0%BE%D0%B4-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF-%D1%81%D0%B0%D0%BB%D1%84%D0%B5%D1%82%D0%BA%D0%B8-74f0dd50a98a#.95nv9lbd6&#34;&gt;Хорошо читаемый код умещается на салфетке&lt;/a&gt;
-Неплохой способ понять, насколько прост и понятен код у вас перед глазами.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>January picks</title>
+      <link>http://homeonrails.com/2015/01/january-picks/</link>
+      <pubDate>Tue, 06 Jan 2015 12:19:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/01/january-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>November picks</title>
+      <link>http://homeonrails.com/2014/12/november-picks/</link>
+      <pubDate>Mon, 01 Dec 2014 17:20:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/12/november-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>September picks</title>
+      <link>http://homeonrails.com/2014/10/september-picks/</link>
+      <pubDate>Wed, 01 Oct 2014 14:47:51 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/10/september-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>July Picks</title>
+      <link>http://homeonrails.com/2014/08/july-picks/</link>
+      <pubDate>Tue, 05 Aug 2014 20:45:46 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/08/july-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>June picks</title>
+      <link>http://homeonrails.com/2014/07/june-picks/</link>
+      <pubDate>Wed, 02 Jul 2014 19:31:15 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/07/june-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>May picks</title>
+      <link>http://homeonrails.com/2014/06/may-picks/</link>
+      <pubDate>Tue, 03 Jun 2014 09:58:07 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/06/may-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>April picks</title>
+      <link>http://homeonrails.com/2014/05/april-picks/</link>
+      <pubDate>Sat, 03 May 2014 10:31:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/05/april-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March picks</title>
+      <link>http://homeonrails.com/2014/04/march-picks/</link>
+      <pubDate>Sat, 05 Apr 2014 13:47:43 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/04/march-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February picks</title>
+      <link>http://homeonrails.com/2014/03/february-picks/</link>
+      <pubDate>Mon, 10 Mar 2014 11:45:03 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/03/february-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>January picks</title>
+      <link>http://homeonrails.com/2014/02/january-picks/</link>
+      <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/02/january-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>December picks</title>
+      <link>http://homeonrails.com/2014/01/december-picks/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/01/december-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

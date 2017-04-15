@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding Style on Home on Rails</title>
-    <link>http://homeonrails.com/tags/coding-style/index.xml</link>
+    <link>http://homeonrails.com/tags/coding-style/</link>
     <description>Recent content in Coding Style on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/coding-style/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Apr 2014 14:58:08 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/coding-style/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Почему стоит писать почему</title>
@@ -25,71 +28,7 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
     raise NoSlidesError if no slides
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Что сделали, то и пишем:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;добавили - added&lt;/li&gt;
-&lt;li&gt;удалили - removed&lt;/li&gt;
-&lt;li&gt;отрефакторили - refactored&lt;/li&gt;
-&lt;li&gt;&amp;hellip; ну вы поняли.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Это позволяет быстро понять что было сделано в рамках данного коммита.&lt;/p&gt;
-
-&lt;p&gt;Со временем я осознал, что у данного подхода есть один серьезный
-минус - он не отвечает на вопрос &amp;ldquo;Почему это было сделано?&amp;rdquo;. Позже я
-убедился, что в некоторых ситуациях &lt;strong&gt;это способно сильно осложнить
-жизнь простому разработчику&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Рассмотрим случай выше. Непонятно почему мы бросаем исключение, а не
-логгируем ошибку. Мы уже не можем быстро поменять данную
-функциональность. Приходится самому додумывать причину. Словом &lt;strong&gt;при
-отсутствии причины внесения изменений увеличивается стоимость поддержки
-данного кода&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
-Author: Anton Kaliaev ...
-Date:   Mon Apr 14 13:20:06 2014 +0400
-
-    raise NoSlidesError if no slides
-
-    This is exceptional situation because if there are no slides, layout
-    looses it&#39;s meaning.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Теперь становится ясно, что в случае отсутствия слайдов лейаут теряет свой
-смысл. Мы ожидаем, что будет присутствовать хотя бы один слайд.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Прошу вас, не вдавайтесь в терминологию предметной области. Для интересующихся
-лишь отмечу, что исключение обрабатывается уровнем выше.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Еще пара советов:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;не используйте &lt;code&gt;git commit -m &amp;quot;&amp;quot;&lt;/code&gt;. Она(команда) принуждает вас писать короткие
-сообщения (например, &amp;ldquo;fixed nil error&amp;rdquo;)&lt;/li&gt;
-&lt;li&gt;по возможности ссылайтесь на внешние источники информации (номер тикета,
-ссылка на баг в Airbrake, ссылка на статью в интернете и т.п.)&lt;/li&gt;
-&lt;li&gt;первая строка не должна быть длиннее 72 символов. Следующее после нее
-расширенное описание может быть любой длинны. В качестве разделителя идет пустая
-строка.&lt;/li&gt;
-&lt;li&gt;если вы пользуетесь Vim, то можно добавить проверку правописания и ограничение
-длины текста добавив это в ваш &lt;code&gt;~/.vimrc&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;  autocmd Filetype gitcommit setlocal spell textwidth=72
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Полезные ссылки:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://mislav.uniqpath.com/2014/02/hidden-documentation/&#34;&gt;Every line of code is always documented&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message&#34;&gt;5 Useful Tips For A Better Commit Message&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Отдельное спасибо &lt;a href=&#34;https://twitter.com/plugin73&#34;&gt;@plugin73&lt;/a&gt; и &lt;a href=&#34;https://twitter.com/SavelyevAndrey&#34;&gt;@SavelyevAndrey&lt;/a&gt; за ревью&lt;/em&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

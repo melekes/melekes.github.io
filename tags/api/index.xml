@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api on Home on Rails</title>
-    <link>http://homeonrails.com/tags/api/index.xml</link>
+    <link>http://homeonrails.com/tags/api/</link>
     <description>Recent content in Api on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Mar 2014 13:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Fast Rails API</title>
@@ -23,72 +26,7 @@ ending by using Fragment caching. Also there is list of tools for
 profiling applications (stackprof, etc.). All techniques are quite
 famous.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;script async=&#34;true&#34; class=&#34;speakerdeck-embed&#34; data-id=&#34;b618391085100131b8c566a463623da4&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;       &lt;/script&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;what-we-ve-tried&#34;&gt;What we&amp;rsquo;ve tried&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Connection pool
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://devcenter.heroku.com/articles/concurrency-and-database-connections&#34;&gt;Concurrency and Database Connections in Ruby with ActiveRecord&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rails-api/rails-api&#34;&gt;Rails-api&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Do not load &lt;code&gt;rails/all&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Establish DB connection after fork/new thread was created&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/kzk/unicorn-worker-killer&#34;&gt;Unicorn worker killer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Postgresql tuning
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://postgresql.leopard.in.ua/html/&#34;&gt;Работа с PostgreSQL: настройка и масштабирование Алексея Васильева&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://momjian.us/main/writings/pgsql/hw_performance/&#34;&gt;PostgreSQL Hardware Performance Tuning by Bruce Momjian&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://raghavt.blogspot.ru/2012/04/caching-in-postgresql.html&#34;&gt;Caching in PostgreSQL&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Rails 4&lt;/li&gt;
-&lt;li&gt;Ruby 2.1.0&lt;/li&gt;
-&lt;li&gt;Fragment caching
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://devcenter.heroku.com/articles/caching-strategies&#34;&gt;Caching Strategies for Rails&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://signalvnoise.com/posts/3113-how-key-based-cache-expiration-works&#34;&gt;How key-based cache expiration works&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rails-api/active_model_serializers&#34;&gt;Active Model Serializers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ohler55/oj&#34;&gt;Oj&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Do not instantiate AR objects
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://brainspec.com/blog/2012/09/28/lightning-json-in-rails/&#34;&gt;Lightning JSON in Rails&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Try &lt;a href=&#34;https://github.com/tmm1/gctools&#34;&gt;OOBGC - Out-of-Band GC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Try different web server (e.g. Puma)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If we missed something, please share your ideas in comments.&lt;/p&gt;
-
-&lt;h2 id=&#34;profiling-tools&#34;&gt;Profiling tools&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tmm1/stackprof&#34;&gt;Stackprof&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/miniprofiler/rack-mini-profiler&#34;&gt;Rack Mini Profiler&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/flyerhzm/bullet&#34;&gt;Bullet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wvanbergen/request-log-analyzer&#34;&gt;Request log analyzer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://newrelic.com/&#34;&gt;NewRelic&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;On the penultimate slide is the title slide of the &lt;a href=&#34;http://www.slideshare.net/maxlapshin/rails-26416461&#34;&gt;presentation&lt;/a&gt; of Max
-Lapshin, which briefly tells that to solve certain problems (such as when you need to
-keep a large number of clients) more appropriate solution might be using
-another technologies/languages (Erlang in particular).&lt;/p&gt;
-
-&lt;p&gt;UPD. Ideas from comments&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Try &lt;a href=&#34;http://api.rubyonrails.org/classes/ActionController/ConditionalGet.html&#34;&gt;Conditional Get&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

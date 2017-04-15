@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logging on Home on Rails</title>
-    <link>http://homeonrails.com/tags/logging/index.xml</link>
+    <link>http://homeonrails.com/tags/logging/</link>
     <description>Recent content in Logging on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Apr 2016 11:25:45 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Chokecherry Or The Story About 1000000 Timeouts</title>
@@ -27,107 +30,7 @@ backend.&lt;/p&gt;
 &lt;li&gt;&amp;ldquo;Do I need it?&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;the-story-about-1000000-timeouts&#34;&gt;The Story About 1000000 Timeouts&lt;/h2&gt;
-
-&lt;p&gt;We use lager in almost all of our applications. And it works pretty well most
-of the time, except the cases where it doesn&amp;rsquo;t.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;It all started one day when we were experiencing a &lt;strong&gt;peak load&lt;/strong&gt; in one of the
-applications (we&amp;rsquo;ll call it FortKnox). So, FortKnox was processing a lot of
-data and producing a lot of logs (particularly, info messages). As
-shown on a picture below, we were writing logs to a file on disk.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-24-chokecherry/app1.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Then we started seeing &lt;strong&gt;random exits&lt;/strong&gt; (timeouts in calls to &lt;code&gt;lager:info&lt;/code&gt;)
-from many places. These led to different parts (gen_servers, gen_fsms, etc.) of
-FortKnox crashing. Some of them got restarted by their supervisor. But it was
-clear that this won&amp;rsquo;t last long. Indeed, at some point, it all came down to the
-application&amp;rsquo;s supervisor and &lt;strong&gt;whole node stopped working&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;This is what happened. &lt;strong&gt;Hard disk was not able to handle so much writes&lt;/strong&gt; (even in
-the presence of OS caches). &lt;a href=&#34;https://github.com/basho/lager/blob/ec43800bd5bf0286c5d591fbda0b2d22fccf4d7b/src/lager_file_backend.erl#L257&#34;&gt;file:write&lt;/a&gt; became slower and lager&amp;rsquo;s
-message box started to grow in size. The behavior for lager, in that case, is
-to switch to synchronous mode (see
-&lt;a href=&#34;https://github.com/basho/lager#overload-protection&#34;&gt;https://github.com/basho/lager#overload-protection&lt;/a&gt; for details), what he did.
-That&amp;rsquo;s how we came to the random exits.&lt;/p&gt;
-
-&lt;p&gt;Possible solutions were (&lt;a href=&#34;https://groups.google.com/forum/#!topic/erlang-russian/8xEeffAV8sc&#34;&gt;discussion on erlang-russian&lt;/a&gt;):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;RAM disk&lt;/del&gt; (high cost of maintenance)&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;configure lager in such a way, that would fix the problem&lt;/del&gt; (no way to do that)&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;use tmpfs for &lt;code&gt;/tmp&lt;/code&gt;&lt;/del&gt; (low cost of maintenance; difficult to setup syncing tmpfs to disk; some logs still could be lost)&lt;/li&gt;
-&lt;li&gt;create a thin wrapper around lager (low cost of maintenance; easy to setup; some logs may be dropped)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;on-lager-settings&#34;&gt;On lager settings&lt;/h3&gt;
-
-&lt;p&gt;lager has many settings and we could play with them. For example, we could turn
-off synchronous mode.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;What will happen then is lager&amp;rsquo;s mailbox start growing and, eventually, when
-there will be no more free memory, node will crash.&lt;/p&gt;
-
-&lt;p&gt;{% blockquote %}
-For performance, the file backend does delayed writes, although it will sync at
-specific log levels, configured via the `sync_on&amp;rsquo; option. By default the error
-level or above will trigger a sync.
-{% endblockquote %}&lt;/p&gt;
-
-&lt;p&gt;Keep in mind that there were an exessive amount of info messages, so no &lt;code&gt;fsync&lt;/code&gt;
-calls (&lt;a href=&#34;https://github.com/basho/lager/blob/1159f9262fb589ce2ec310eb7dec5ac03b1fee16/src/lager_file_backend.erl#L262&#34;&gt;file:datasync&lt;/a&gt;) were made (we didn&amp;rsquo;t change the default).&lt;/p&gt;
-
-&lt;p&gt;So &lt;strong&gt;there was no simple solution&lt;/strong&gt; for this problem. &lt;strong&gt;That&amp;rsquo;s why we created
-chokecherry&lt;/strong&gt;. What follows is how it works.&lt;/p&gt;
-
-&lt;h2 id=&#34;chokecherry&#34;&gt;Chokecherry&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-24-chokecherry/app4.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;shaper&lt;/strong&gt; accumulates incoming messages in the queue. If the queue size
-exceeds &lt;code&gt;log_queue_capacity&lt;/code&gt; within a certain time period (1 second), it sends
-an error_report &amp;ldquo;chokecherry dropped N messages in the last second&amp;rdquo;, and drops
-messages from the end of the queue, while receiving new ones and maintaining
-the maximum size of the queue.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;writer&lt;/strong&gt; pulls messages from &lt;strong&gt;shaper&lt;/strong&gt; and transmits them to lager.&lt;/p&gt;
-
-&lt;p&gt;Default settings are as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[
-    {chokecherry, [
-        {shaper, [
-            {timeout, 1000},
-            {log_queue_capacity, 10000}
-        ]}
-    ]}
-].
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;do-you-need-it&#34;&gt;Do you need it&lt;/h2&gt;
-
-&lt;p&gt;If your application produces a lot of logs and you can afford to lose some
-(i.e. stable work of an application is more important to you) - &lt;strong&gt;yes&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the above story, we were writing logs to a file using &lt;code&gt;lager_file_backend&lt;/code&gt;.
-This doesn&amp;rsquo;t mean that a similar story could not happen to you if you&amp;rsquo;re using
-a different backend. So it may be applicable to other backends likewise.&lt;/p&gt;
-
-&lt;h2 id=&#34;source-code&#34;&gt;Source code&lt;/h2&gt;
-
-&lt;p&gt;Currently, we are only &amp;ldquo;shaping&amp;rdquo; info messages. If you think we should do it
-for warning and error, or make it optional, let us know.&lt;/p&gt;
-
-&lt;p&gt;Source code: &lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

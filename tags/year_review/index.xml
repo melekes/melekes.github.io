@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Year_review on Home on Rails</title>
-    <link>http://homeonrails.com/tags/year_review/index.xml</link>
+    <link>http://homeonrails.com/tags/year_review/</link>
     <description>Recent content in Year_review on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/year_review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Dec 2016 22:45:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/year_review/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Итоги 2016 года</title>
@@ -20,50 +23,7 @@
 обязательно должен быть канун НГ. Просто так удобней. Еще можно попробовать
 подводить итоги чаще - скажем, раз в квартал. Интересно, кто-то так делает?&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Итак, в 2016 я:&lt;/p&gt;
-
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; поменял &lt;a href=&#34;https://www.linkedin.com/in/melekes&#34;&gt;работу&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; оформил ИП&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; путешествовал по Китаю &lt;a href=&#34;http://homeonrails.com/2016/10/one-month-in-china/&#34;&gt;один месяц&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; начал учить новый язык (китайский)&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; в течении пары месяцев плавал на озере 3 раза в неделю&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; написал 53 статьи в блог&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; попробовал акройогу&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; провел &lt;a href=&#34;http://homeonrails.com/2016/08/backendsecret-week/&#34;&gt;неделю @backendsecret в твиттере&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; погулял по Астане в Казахстане&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; прочел чуть больше &lt;a href=&#34;https://www.goodreads.com/user_challenges/4160345&#34;&gt;40 книг&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Пара полезных упражнений:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Запишите три вещи, которые вам особенно запомнились и доставили вам массу
-удовольствия в этом году. Запишите их как цели и повторите в следующем году.
-Профит, хехе :)&lt;/li&gt;
-&lt;li&gt;Отправьте будущему себе (самой) письмо &lt;a href=&#34;https://www.futureme.org/&#34;&gt;https://www.futureme.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Пара советов:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Ставьте цели, используя &lt;a href=&#34;https://ru.wikipedia.org/wiki/SMART&#34;&gt;SMART&lt;/a&gt;.
-Некоторых целей в прошлом году не достиг, потому как они были какие-то
-неопределенные и без каких-либо шагов&lt;/li&gt;
-&lt;li&gt;Собственно, запишите хотя бы первый шаг к достижению цели&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;в 2017 я обещаю:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;[] прочесть 50 книг&lt;/li&gt;
-&lt;li&gt;[] подтянуть вождение&lt;/li&gt;
-&lt;li&gt;[] принять участие в заплыве через Волгу&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Удачи нам в новом году!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

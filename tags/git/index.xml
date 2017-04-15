@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on Home on Rails</title>
-    <link>http://homeonrails.com/tags/git/index.xml</link>
+    <link>http://homeonrails.com/tags/git/</link>
     <description>Recent content in Git on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jan 2017 21:14:14 +0400</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Подписываем git коммиты</title>
@@ -28,114 +31,7 @@
 
 &lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Создать подпись и настроить git очень просто. Итак, давайте сделаем это:&lt;/p&gt;
-
-&lt;h3 id=&#34;1-создаем-подпись&#34;&gt;1. Создаем подпись&lt;/h3&gt;
-
-&lt;p&gt;Ставим gpg:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Ubuntu
-sudo apt-get install gpa seahorse
-# Mac
-brew install gpg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Создаем RSA пару (публичный и приватный ключ):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gpg --gen-key
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(размер не ниже 2048, но и &lt;a href=&#34;https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096&#34;&gt;больше не особо
-нужно&lt;/a&gt;; срок
-годности по желанию)&lt;/p&gt;
-
-&lt;p&gt;Копируем полученный публичный ключ на &lt;a href=&#34;https://github.com/settings/keys&#34;&gt;Github&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys --keyid-format LONG
-
--------------------------------
-sec   2048R/&amp;lt;COPY_LONG_KEY&amp;gt;  2017-01-14 [expires: 2019-01-14]
-uid                          User Name &amp;lt;user.name@email.com&amp;gt;
-ssb   2048R/098AA7C27DD57ACC 2017-01-14
-
-gpg --armor --export &amp;lt;PASTE_LONG_KEY_HERE&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;2-настраиваем-git&#34;&gt;2. Настраиваем git&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys
-
--------------------------------
-sec   2048R/&amp;lt;COPY_SHORT_KEY&amp;gt; 2017-01-14 [expires: 2019-01-14]
-uid                          User Name &amp;lt;user.name@email.com&amp;gt;
-ssb   2048R/7DD57ACC         2017-01-14
-
-git config --global user.signingKey &amp;lt;PASTE_SHORT_KEY_HERE&amp;gt;
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(можно настроить индивидуально под каждый репозиторий).&lt;/p&gt;
-
-&lt;h3 id=&#34;3-кэшируем-пароль&#34;&gt;3. Кэшируем пароль&lt;/h3&gt;
-
-&lt;p&gt;чтобы не вводить его каждый раз при подписи.&lt;/p&gt;
-
-&lt;p&gt;Если вы пользователь Mac OS, то ставим &lt;a href=&#34;https://gpgtools.org/&#34;&gt;GPG Suite&lt;/a&gt;,
-который интегрируется с Mac OS keychain. Переходим к шагу 4.&lt;/p&gt;
-
-&lt;p&gt;Если пользуетесь Linux, то придется воспользоваться встроенным &lt;code&gt;gpg-agent&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Создаем конфиг &lt;code&gt;.gnupg/gpg-agent.conf&lt;/code&gt; со следующим содержимым:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;default-cache-ttl 28800
-max-cache-ttl 28800
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;28800 - 8 часов (кто-то ставит 1 час).&lt;/p&gt;
-
-&lt;p&gt;В конфиге &lt;code&gt;.gnupg/gpg.conf&lt;/code&gt; указываем:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;use-agent
-batch
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;batch&lt;/code&gt; убирает противные сообщения вида: &lt;code&gt;You need a passphrase to unlock the
-secret key&lt;/code&gt;. Да, они по неведомой причине появляются даже, если агент
-закэшировал пароль.&lt;/p&gt;
-
-&lt;p&gt;Не забываем запустить &lt;code&gt;gpg-agent&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;fish:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;if not begin
-    # Is the agent running already? Does the agent-info file exist, and if so,
-    # is there a process with the pid given in the file?
-    [ -f ~/.gpg-agent-info ]
-    and kill -0 (cut -d : -f 2 ~/.gpg-agent-info) ^/dev/null
-end
-    # no, it is not running. Start it!
-    gpg-agent --daemon --no-grab --write-env-file ~/.gpg-agent-info &amp;gt;/dev/null ^&amp;amp;1
-end
-# get the agent info from the info file, and export it so GPG can see it.
-set -gx GPG_AGENT_INFO (cut -c 16- ~/.gpg-agent-info)
-set -gx GPG_TTY (tty)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;или &lt;a href=&#34;https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40&#34;&gt;bash&lt;/a&gt;
-или напрямую &lt;code&gt;gpg-agent --daemon&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;4-коммитим-что-угодно-и-идем-смотреть-результат-на-github&#34;&gt;4. Коммитим что угодно и идем смотреть результат на Github&lt;/h2&gt;
-
-&lt;p&gt;Материалы:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.erincall.com/p/signing-your-git-commits-with-gpg&#34;&gt;Signing Your Git Commits With GPG&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc&#34;&gt;Github : Signing commits using GPG (Ubuntu/Mac)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b&#34;&gt;Automatic Git commit signing with GPG on OSX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -154,71 +50,7 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
     raise NoSlidesError if no slides
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Что сделали, то и пишем:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;добавили - added&lt;/li&gt;
-&lt;li&gt;удалили - removed&lt;/li&gt;
-&lt;li&gt;отрефакторили - refactored&lt;/li&gt;
-&lt;li&gt;&amp;hellip; ну вы поняли.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Это позволяет быстро понять что было сделано в рамках данного коммита.&lt;/p&gt;
-
-&lt;p&gt;Со временем я осознал, что у данного подхода есть один серьезный
-минус - он не отвечает на вопрос &amp;ldquo;Почему это было сделано?&amp;rdquo;. Позже я
-убедился, что в некоторых ситуациях &lt;strong&gt;это способно сильно осложнить
-жизнь простому разработчику&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Рассмотрим случай выше. Непонятно почему мы бросаем исключение, а не
-логгируем ошибку. Мы уже не можем быстро поменять данную
-функциональность. Приходится самому додумывать причину. Словом &lt;strong&gt;при
-отсутствии причины внесения изменений увеличивается стоимость поддержки
-данного кода&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
-Author: Anton Kaliaev ...
-Date:   Mon Apr 14 13:20:06 2014 +0400
-
-    raise NoSlidesError if no slides
-
-    This is exceptional situation because if there are no slides, layout
-    looses it&#39;s meaning.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Теперь становится ясно, что в случае отсутствия слайдов лейаут теряет свой
-смысл. Мы ожидаем, что будет присутствовать хотя бы один слайд.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Прошу вас, не вдавайтесь в терминологию предметной области. Для интересующихся
-лишь отмечу, что исключение обрабатывается уровнем выше.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Еще пара советов:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;не используйте &lt;code&gt;git commit -m &amp;quot;&amp;quot;&lt;/code&gt;. Она(команда) принуждает вас писать короткие
-сообщения (например, &amp;ldquo;fixed nil error&amp;rdquo;)&lt;/li&gt;
-&lt;li&gt;по возможности ссылайтесь на внешние источники информации (номер тикета,
-ссылка на баг в Airbrake, ссылка на статью в интернете и т.п.)&lt;/li&gt;
-&lt;li&gt;первая строка не должна быть длиннее 72 символов. Следующее после нее
-расширенное описание может быть любой длинны. В качестве разделителя идет пустая
-строка.&lt;/li&gt;
-&lt;li&gt;если вы пользуетесь Vim, то можно добавить проверку правописания и ограничение
-длины текста добавив это в ваш &lt;code&gt;~/.vimrc&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;  autocmd Filetype gitcommit setlocal spell textwidth=72
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Полезные ссылки:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://mislav.uniqpath.com/2014/02/hidden-documentation/&#34;&gt;Every line of code is always documented&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message&#34;&gt;5 Useful Tips For A Better Commit Message&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Отдельное спасибо &lt;a href=&#34;https://twitter.com/plugin73&#34;&gt;@plugin73&lt;/a&gt; и &lt;a href=&#34;https://twitter.com/SavelyevAndrey&#34;&gt;@SavelyevAndrey&lt;/a&gt; за ревью&lt;/em&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -234,88 +66,7 @@ feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Сначала надо получить список наиболее часто используемых команд:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;history | awk &#39;{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] &amp;quot; &amp;quot; CMD[a]/count*100 &amp;quot;% &amp;quot; a;}&#39; | grep -v &amp;quot;./&amp;quot; | column -c3 -s &amp;quot; &amp;quot; -t | sort -nr | nl |  head -n10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;awk&lt;/code&gt; сохраняет команду и количество ее вхождений в
-историю. Затем результат печатается, фильтруются скрипты вида
-&lt;code&gt;./something&lt;/code&gt;, сортируется и обрезается до нужной длины.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://linux.byexamples.com/archives/332/what-is-your-10-common-linux-commands/&#34;&gt;Источник&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Пример вывода:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;13185  31.8532%   git
-21430  14.3014%   gst
-3706   7.301406071%   vim
-4687   6.87069%   cd
-5618   6.18062%   vagrant
-6404   4.0404%    sudo
-7252   2.52025%   tmux
-8232   2.32023%   g
-9197   1.9702%    ls
-10190  1.90019%   gc
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Основываясь на выводе выше, можно сказать что я очень часто пользуюсь
-git, так что неплохо бы создать алиас для него и команд ниже.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias g=&amp;quot;git&amp;quot;
-alias v=&amp;quot;vim&amp;quot;
-alias l=&amp;quot;ls -al&amp;quot;
-alias c=&amp;quot;git commit -m&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Мне очень нравятся однобуквенные алиасы. Хотя на многое их явно не
-хватит.&lt;/p&gt;
-
-&lt;p&gt;Также можно проанализировать только команды vagrant&amp;rsquo;а (subcommands) или любой
-другой программы слегка модифицировав предыдущий скрипт:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;history|grep vagrant| awk &#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &amp;quot; &amp;quot; CMD[a]/count*100 &amp;quot;% &amp;quot; a;}&#39; | grep -v &amp;quot;./&amp;quot; | column -c3 -s &amp;quot; &amp;quot; -t | sort -nr | nl |  head -n10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Пример вывода:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1   193  23.9752%   ssh
-2   166  20.6211%   up
-3   98   12.1739%   halt
-4   63   7.82609%   reload
-5   37   4.59627%   destroy
-6   31   3.85093%   TEAMOCIL=1;
-7   18   2.23602%   provision
-8   14   1.73913%   box
-9   9    1.11801%   solo
-10  8    0.993789%  -r
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Для vagrant мы заведем такой набор:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias v=&amp;quot;vagrant&amp;quot;
-alias vst=&amp;quot;vagrant status&amp;quot;
-alias vup=&amp;quot;vagrant up&amp;quot;
-alias vpr=&amp;quot;vagrant provision&amp;quot;
-alias vhl=&amp;quot;vagrant halt&amp;quot;
-alias vre=&amp;quot;vagrant reload&amp;quot;
-alias vssh=&amp;quot;vagrant ssh&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Если вы пользуетесь zsh, то рекомендую взглянуть на &lt;a href=&#34;https://github.com/robbyrussell/oh-my-zsh&#34;&gt;oh-my-zsh&lt;/a&gt;, которая
-предлагает большое количесво плагинов с алиасами и автодополнением.
-Конечно, они во многом избыточны (стоит хотя бы взглянуть на &lt;a href=&#34;http://jasonm23.github.io/oh-my-git-aliases.html&#34;&gt;список
-команд плагина git&lt;/a&gt;), но если вас это устраивает, то можно смело их
-использовать.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Как результат, мы повышаем продуктивность и, что немаловажно, снижаем нагрузку на наши
-пальцы.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;P.S. очень рекомендую посмотреть доклад &lt;a href=&#34;http://www.youtube.com/watch?v=SkdrYWhh-8s&#34;&gt;Ben Orenstein - Write code faster: expert-level vim (Railsberry 2012)&lt;/a&gt;,
-в котором Бен рассказывает очень правильные подходы в работе с vim&amp;rsquo;ом. Даже если вы не
-пользуетесь vim&amp;rsquo;ом, многие вещи можно переложить на ваш любимый редактор, будь то Emacs, Sublime или любой другой.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

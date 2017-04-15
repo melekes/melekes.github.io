@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Home on Rails</title>
-    <link>http://homeonrails.com/tags/security/index.xml</link>
+    <link>http://homeonrails.com/tags/security/</link>
     <description>Recent content in Security on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jul 2016 16:28:03 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Выбираем VPN</title>
@@ -17,27 +20,7 @@
       <guid>http://homeonrails.com/2016/07/choosing-a-vpn/</guid>
       <description>&lt;p&gt;Недавно пришлось выбирать VPN сервис (чтобы безопасно в интернетах лазить общедоступных; в кафешке там или аэропорту).&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Вот сайт (бывший когда-то таблицей в Google Sheet): &lt;a href=&#34;https://thatoneprivacysite.net&#34;&gt;https://thatoneprivacysite.net&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Можно довольно легко подобрать VPN сервис по требуемым характеристикам.&lt;/p&gt;
-
-&lt;p&gt;Я выбирал из двух в итоге:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.privateinternetaccess.com/&#34;&gt;https://www.privateinternetaccess.com/&lt;/a&gt;
-&lt;strong&gt;Плюсы&lt;/strong&gt;: много серверов, приложения для популярных платформ, низкая стоимость (40 USD / год).
-&lt;strong&gt;Минусы&lt;/strong&gt;: компания зарегистрирована в США, так что, если что, вас сразу сдадут дяде Сэму.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://nordvpn.com&#34;&gt;https://nordvpn.com&lt;/a&gt;
-&lt;strong&gt;Плюсы&lt;/strong&gt;: компания зарегистрирована в Панаме, приложения для популярных платформ.
-&lt;strong&gt;Минусы&lt;/strong&gt;: выше стоимость (69 USD / год), меньше серверов, по секурности есть пробелы - IPv6 Leak.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Остановился пока на privateinternetaccess.&lt;/p&gt;
-
-&lt;p&gt;Вообще на том же сайте очень хорошо написано как выбрать VPN (&lt;a href=&#34;https://thatoneprivacysite.net/choosing-the-best-vpn-for-you/&#34;&gt;https://thatoneprivacysite.net/choosing-the-best-vpn-for-you/&lt;/a&gt;).&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -55,175 +38,7 @@
 little drawback. Next, we will discuss three small pieces of code,
 which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;1-vulnerabilities-in-code&#34;&gt;#1 - Vulnerabilities in code&lt;/h3&gt;
-
-&lt;p&gt;Let&amp;rsquo;s take a closer look at two methods from the controller:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def show_with_fragments
-  constant = get_constant_from_param
-  if constant
-    obj = constant.find(params[:id])
-    data = obj.attributes
-    data.merge!(:telecasts =&amp;gt; obj.telecasts.map(&amp;amp;:as_json)) if obj.is_a?(TvShow::Programme)
-    data.merge!(:seasons =&amp;gt; obj.seasons.map(&amp;amp;:as_json)) if obj.is_a?(TvShow::Serial)
-    render :json =&amp;gt; data
-  else
-    render :json =&amp;gt; {}
-  end
-end
-
-private
-
-def get_constant_from_param(type = nil)
-  param = type || params[:type]
-  begin
-    constant = param.constantize
-    constant if constant &amp;lt; ActiveRecord::Base
-  rescue NameError
-    nil
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So, what happens here?&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;We receive the type of the model (&lt;code&gt;params[:type]&lt;/code&gt;) and convert string
-to a constant using &lt;a href=&#34;http://apidock.com/rails/v3.2.8/ActiveSupport/Inflector/constantize&#34;&gt;constantize&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;We find the record with a given id (&lt;code&gt;params[:id]&lt;/code&gt;) and select all its
-attributes and attributes of the associated objects.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;We expect that the &lt;code&gt;type&lt;/code&gt; will be either &amp;ldquo;TvShow::Programme&amp;rdquo; or &amp;ldquo;TvShow::Serial&amp;rdquo;.
-But what if &lt;code&gt;type&lt;/code&gt; will be &amp;ldquo;User&amp;rdquo;. We will get access to all the attributes of the
-&lt;code&gt;User&lt;/code&gt; model. This is a serious security issue in our application.&lt;/p&gt;
-
-&lt;p&gt;The first step is to limit &lt;code&gt;type&lt;/code&gt; to the &lt;code&gt;TvShow&lt;/code&gt; class descendants only.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def show_with_fragments
-  constant = get_constant_from_param
-  unless constant.is_a?(TvShow)
-    raise ArgumentError, “type should be TvShow class descendant”
-  end
-  if constant
-    obj = constant.find(params[:id])
-    data = obj.attributes
-    data.merge!(:telecasts =&amp;gt; obj.telecasts.map(&amp;amp;:as_json)) if obj.is_a?(TvShow::Programme)
-    data.merge!(:seasons =&amp;gt; obj.seasons.map(&amp;amp;:as_json)) if obj.is_a?(TvShow::Serial)
-    render :json =&amp;gt; data
-  else
-    render :json =&amp;gt; {}
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The code above violates &lt;a href=&#34;http://en.wikipedia.org/wiki/Open/closed_principle&#34;&gt;OCP&lt;/a&gt;
-principe. Because we want to take advantage of polymorphism,
-lets move the logic of getting the attributes of associated
-objects into the classes themselves (see &lt;code&gt;complete_attributes_json&lt;/code&gt; method).
-This will allow us to remove all those ugly is_a? checks.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def show_with_fragments
-  constant = get_constant_from_param
-  unless constant.is_a?(TvShow)
-    raise ArgumentError, “type param should be TvShow accessor class”
-  end
-  if constant
-    obj = constant.find(params[:id])
-    render :json =&amp;gt; obj.complete_attributes_json
-  else
-    render :json =&amp;gt; {}
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Looks better, right?&lt;/p&gt;
-
-&lt;h3 id=&#34;2-take-advantage-of-yaml-language&#34;&gt;#2 - Take advantage of YAML language&lt;/h3&gt;
-
-&lt;p&gt;Despite the fact that most of rails applications (and others) using
-&lt;a href=&#34;http://en.wikipedia.org/wiki/YAML&#34;&gt;YAML&lt;/a&gt; to store the translations and settings,
-not many of us knows all its features. Two features that
-distinguish YAML from the capabilities of other data serialization languages
-​​are Relational trees and Data Typing. The most interesting is the first one.
-It allows us to attach the anchors (&amp;amp;) on the elements and refer to them
-using references (*). To understand this, it is useful to imagine
-a document as a tree.&lt;/p&gt;
-
-&lt;p&gt;For example, here is some common locale file &lt;code&gt;config/locales/en.yml&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;en:
-  helpers:
-    submit:
-      product:
-        create: &#39;Create it&#39;
-        update: &#39;Save it&#39;
-      product_item:
-        create: &#39;Create it&#39;
-        update: &#39;Save it&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What if we could define the translations for helpers &lt;code&gt;create&lt;/code&gt; and &lt;code&gt;update&lt;/code&gt;
-in one place, and then use them in other cases. Usually these translations
-rarely changes, so, in this case, this is just what we need.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;en:
-  helpers:
-    submit:
-      product:
-        create: &amp;amp;create &#39;Create it&#39;
-        update: &amp;amp;update &#39;Save it&#39;
-      product_item:
-        create: *create
-        update: *update
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here we have created two anchors and referred to them inside product_item
-through two links. Advantages: avoiding possible errors (define
-in one place) and compactness. Also, in future, if the translation will needs
-to be changed, we wont spend much time to perform the appropriate changes.&lt;/p&gt;
-
-&lt;p&gt;You can anchor not only tree nodes, but also the whole branches:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;common: &amp;amp;COMMON
-  adapter: postgresql
-  encoding: unicode
-  pool: 10
-
-development:
-  &amp;lt;&amp;lt;: *COMMON
-  database: db_name
-  username: postgres
-  password:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;3-look-for-existing-method-before-writing-your-own&#34;&gt;#3 - Look for existing method before writing your own&lt;/h3&gt;
-
-&lt;p&gt;Maybe I&amp;rsquo;m repeating myself, but this is exactly the case where repetition
-will only benefit.&lt;/p&gt;
-
-&lt;p&gt;Before you write any functionality, that is not relevant to the
-application&amp;rsquo;s business logic, it is always better to look, maybe someone
-has already implemented it. And very often it is. All we are know the
-advantages of using existing solutions (libraries). And I think, if you like
-it (you can not see any obstacles - performance, memory, that can stop you),
-it is better to use it.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def keys_to_symbols(data)
-  res = {}
-  data.each do |k, v|
-    res[k.to_sym] = v.is_a?(Hash) ? keys_to_symbols(v) : v
-  end
-  res
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I found this method in one controller. It takes the hash and symbolize all
-the keys. This functionality already implemented in the &lt;code&gt;active_support&lt;/code&gt; gem,
-which is also enabled by default in rails. The method we are looking for -
-&lt;a href=&#34;http://apidock.com/rails/Hash/symbolize_keys&#34;&gt;symbolize_keys&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

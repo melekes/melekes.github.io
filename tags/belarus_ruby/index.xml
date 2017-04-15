@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Belarus_ruby on Home on Rails</title>
-    <link>http://homeonrails.com/tags/belarus_ruby/index.xml</link>
+    <link>http://homeonrails.com/tags/belarus_ruby/</link>
     <description>Recent content in Belarus_ruby on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/belarus_ruby/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jul 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/belarus_ruby/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Выступление на Belarus Ruby Meetup 2013</title>
@@ -15,52 +18,8 @@
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
-      <description>&lt;p&gt;  Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где
-прошла очередная встреча ruby разработчиков &lt;a href=&#34;http://lanyrd.com/2013/belarus-ruby/&#34; target=&#34;_blank&#34;&gt;Belarus Ruby Meetup&lt;/a&gt;. Формат
-встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске.
-Однако, есть ряд особенностей и интересных вещей, о которых грех
-не упомянуть.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;  Скорее всего ввиду близости к Европе, среди спикеров регулярно
-появляются иностранные докладчики (на прошедшей встречи одним из них был
-Piotr Sarnacki (Warsaw), Rails контрибьютор и энтузиаст Ember.js, который рассказал
-про устройство Travis CI. Видео доступно по &lt;a href=&#34;http://youtu.be/RitU7AWb1JA&#34; target=&#34;_blank&#34;&gt;ссылке&lt;/a&gt;). Были также докладчики из
-Аргентины. С ними связывались по скайпу - своего рода телемост. Мне кажется с
-появлением таких продуктов как Skype и Google Hangouts такой формат докладов наберет
-большую популярность, особенно когда нет возможности физически добраться до места.
-Едиственным требованием является хороший интернет канал.&lt;/p&gt;
-
-&lt;p&gt;  В этом году мероприятие проходило в &lt;a href=&#34;http://me100.by/&#34; target=&#34;_blank&#34;&gt;ME100&lt;/a&gt; - насколько я понял, одно из бывших
-заводских помещений. Мне импонирует не столько место, сколько смена обстановки. Я
-не говорю, что надоело слушать доклады в чьем-либо офисе. Просто это было
-определенно чем-то новым :) Причем, места проведения каждый раз ротируются.
-К примеру, один из митапов проходил на свежем воздухе, где у участников также была
-возможность пострелять из лука! Неожиданно, правда?&lt;/p&gt;
-
-&lt;div align=&#34;left&#34;&gt;
-  &lt;img width=&#34;70%&#34; class=&#34;img-polaroid&#34; src=&#34;http://homeonrails.com/images/posts/2013-07-28-speaking-at-belarus-ruby-meetup/me100.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;h3&gt;О Минске&lt;/h3&gt;
-
-&lt;p&gt;  Город мне понравился. Там может быть не так много достопримечательностей по
-сравнению с тем же Киевом, но они и не требуются. Это город для жизни. Вкусная и
-натуральная еда (одна картошка чего стоит, ммм), обилие парков и приветливые люди.
-Быть может я чего-то не заметил, но оно и к лучшему - впечатления не испортил.&lt;/p&gt;
-
-&lt;h3&gt;Сам доклад&lt;/h3&gt;
-
-&lt;p&gt;Слайды&lt;/p&gt;
-
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;68536f2088ba0130648822000a1e8e93&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Видео&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/D6LXW3ZisB8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
+      <description>Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где прошла очередная встреча ruby разработчиков Belarus Ruby Meetup. Формат встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске. Однако, есть ряд особенностей и интересных вещей, о которых грех не упомянуть.
+  Скорее всего ввиду близости к Европе, среди спикеров регулярно появляются иностранные докладчики (на прошедшей встречи одним из них был Piotr Sarnacki (Warsaw), Rails контрибьютор и энтузиаст Ember.</description>
     </item>
     
   </channel>

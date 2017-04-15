@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://homeonrails.com/2017/04/march-picks/</loc>
+    <lastmod>2017-04-15T23:22:09+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2017/03/remote-work/</loc>
     <lastmod>2017-03-15T10:21:49+04:00</lastmod>
   </url>
@@ -776,6 +781,11 @@
   </url>
   
   <url>
+    <loc>http://homeonrails.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/tags/chrome/</loc>
     <lastmod>2016-10-18T17:40:16+00:00</lastmod>
     <priority>0</priority>
@@ -933,7 +943,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2017-03-15T10:21:49+04:00</lastmod>
+    <lastmod>2017-04-15T23:22:09+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1029,7 +1039,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/picks/</loc>
-    <lastmod>2017-03-10T16:23:05+04:00</lastmod>
+    <lastmod>2017-04-15T23:22:09+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1041,7 +1051,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2017-03-15T10:21:49+04:00</lastmod>
+    <lastmod>2017-04-15T23:22:09+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1161,6 +1171,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

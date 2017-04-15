@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on Home on Rails</title>
-    <link>http://homeonrails.com/tags/books/index.xml</link>
+    <link>http://homeonrails.com/tags/books/</link>
     <description>Recent content in Books on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2017 12:07:24 +0400</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Кто с кем играет: кошка со мной или я с ней?</title>
@@ -15,25 +18,7 @@
       <pubDate>Wed, 08 Feb 2017 12:07:24 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/02/whos-playing-with-whom/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Если кошка мурлычет и трется о хозяйские ноги, нам кажется, что она благодарна за заботу и такое поведение - признак тепла и приязни. На самом деле она, скорее всего, втирает в вас свои гормоны, заявляя свои права (на вас, разумеется), что имеет целью отвадить других кошек. С точки зрения кошки, вы - что-то вроде прислуги, обязанность которой несколько раз в день подавать еду, и она, втирая в вас свой запах, предупреждает остальных, что у вас уже есть законная хозяйка.&lt;/p&gt;
-
-&lt;p&gt;Как писал в XVI в. философ Мишель де Монтень, &amp;ldquo;когда я играю со своей кошкой, откуда мне знать, что это не она со мной играет, а я с ней?&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Это отрывок из книги &amp;ldquo;Будущее разума&amp;rdquo; Митио Каку. Он, как и вся книга, мне очень понравились.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-02-08-whos-playing-with-whom/fom_cover.jpg&#34; alt=&#34;&#34; title=&#34;Будущее разума&#34;/&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B5_%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0_(%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0)&#34;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.litres.ru/mitio-kaku/buduschee-razuma/chitat-onlayn/&#34;&gt;Litres&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/review/show/1558056645&#34;&gt;Мой отзыв на Goodreads&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;Начало просто бесподобное. Автор рассказывает об эволюции мозга, некоторых известных принципах его работы, интересных фактах (например, что если разорвать связь левым и правым полушарием, то каждая половина будет обладать &amp;ldquo;собственным разумом&amp;rdquo;).
-Понравилось, как автор смешивает его любимые фантастические фильмы, добавляет последние исследования и пытается предсказать будущее.
-Читается очень легко.&lt;/p&gt;
-</description>
+      <description>&amp;ldquo;Если кошка мурлычет и трется о хозяйские ноги, нам кажется, что она благодарна за заботу и такое поведение - признак тепла и приязни. На самом деле она, скорее всего, втирает в вас свои гормоны, заявляя свои права (на вас, разумеется), что имеет целью отвадить других кошек. С точки зрения кошки, вы - что-то вроде прислуги, обязанность которой несколько раз в день подавать еду, и она, втирая в вас свой запах, предупреждает остальных, что у вас уже есть законная хозяйка.</description>
     </item>
     
     <item>
@@ -47,73 +32,7 @@
 
 &lt;p&gt;Wanted to share the best books I&amp;rsquo;ve read in 2016.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Although few of the books were simply ridiculous and senseless, the majority
-fulfilled my hopes. To weed out crap, I read reviews on &lt;a href=&#34;https://www.goodreads.com&#34;&gt;Goodreads&lt;/a&gt;, &lt;a href=&#34;https://www.ozon.ru&#34;&gt;Ozon.ru&lt;/a&gt;, &lt;a href=&#34;https://www.litres.ru&#34;&gt;Litres&lt;/a&gt;. &lt;em&gt;Know something else worth doing?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;However, on Goodreads sometimes a book&amp;rsquo;s top comment has only 1 star and 555
-likes (read &amp;ldquo;this book is a complete disaster, DO NOT READ&amp;rdquo;). But when you read
-it, you like it so much you could barely take a break. But that happens rarely.
-Average rating is quite adequate.&lt;/p&gt;
-
-&lt;h3 id=&#34;nonfiction&#34;&gt;Nonfiction&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/10884.Einstein&#34;&gt;Einstein: His Life and Universe by Walter Isaacson&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/einstein.jpg&#34; alt=&#34;&#34; title=&#34;Einstein: His Life and Universe by Walter Isaacson&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;Excellent written biography of the remarkable man! I think the author really
-managed to understand Einstein. Not sure I fully understood the general theory
-of relativity. Although, the basics are written using a very simple language. I
-took many notes from the book.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/97411.Letters_from_a_Stoic&#34;&gt;Letters from a Stoic by Seneca, Robin Campbell&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/seneca.jpg&#34; alt=&#34;&#34; title=&#34;Letters from a Stoic by Seneca, Robin Campbell&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;Liked it very much. I think I just became a fan of stoicism.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/66354.Flow&#34;&gt;Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/flow.jpg&#34; alt=&#34;&#34; title=&#34;Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;A must-read book. I would like to read it in my eighteens. Now, when I am 27, I
-haven&amp;rsquo;t learned much from this book. On TED the author only gives the basic
-idea: the connection of happiness and flow. In the book, this topic is covered
-in greater detail and many life examples are given.&lt;/p&gt;
-
-&lt;h3 id=&#34;business&#34;&gt;Business&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/28437799&#34;&gt;Бизнес как игра by Сергей Абдульманов, Дмитрий Борисов, Дмитрий Кибкало&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/business_like_a_game.jpg&#34; alt=&#34;&#34; title=&#34;Бизнес как игра by Сергей Абдульманов, Дмитрий Борисов, Дмитрий Кибкало&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Мой отзыв:&lt;/p&gt;
-
-&lt;p&gt;Без воды, с юмором, дельными советами и жизненными историями.&lt;/p&gt;
-
-&lt;p&gt;There are no other editions, except Russian. Sorry, English reading folks.&lt;/p&gt;
-
-&lt;h3 id=&#34;programming&#34;&gt;Programming&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/18467564-seven-concurrency-models-in-seven-weeks&#34;&gt;Seven Concurrency Models in Seven Weeks: When Threads Unravel by Paul Butcher&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/7models7weeks.jpg&#34; alt=&#34;&#34; title=&#34;Seven Concurrency Models in Seven Weeks: When Threads Unravel by Paul Butcher&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;Another must-read to expand the horizons.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;If you like these, you might want to check out &lt;a href=&#34;https://www.goodreads.com/review/list/24729949?read_at=2016&amp;amp;sort=rating&#34;&gt;the whole list of the things I&amp;rsquo;ve read on Goodreads&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -136,35 +55,7 @@ in greater detail and many life examples are given.&lt;/p&gt;
 адаптируется (или перестраивается) к появившимся постоянным дозам никотина
 после того как человек начинает курить.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;{% blockquote %}
-Есть нейроны системы вознаграждения, они способны выделять дофамин. На их мембранах есть рецепторы к ацетилхолину. Когда человек курит, в мозг проникает никотин, он связывается с ацетилхолиновыми рецепторами и возбуждает их. Нейроны в ответ на это начинают выделять больше дофамина. Человек счастлив и хорошо соображает.
-{% endblockquote %}&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-01-30-smoking-and-brain/who_knew2.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;{% blockquote %}
-А дальше еще интереснее. Если человек начинает постоянно подстегивать свою систему вознаграждения, то нейроны привыкают, что вещества, подобного ацетилхолину, в мозге теперь все время много, и начинают перестраивать свои ацетилхолиновые рецепторы в соответствии с этими обстоятельствами.
-{% endblockquote %}&lt;/p&gt;
-
-&lt;p&gt;{% blockquote %}
-Так или иначе результат от обоих молекулярных перестроек один и тот же: если поступление никотина теперь внезапно прекратится, то в ближайшие несколько недель, пока мозг не перестроится обратно, собственного ацетилхолина человеку будет нехватать не то что на чувство счастья, а вообще на поддержание более или менее приемлемого уровня работы мозга.
-{% endblockquote %}&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-01-30-smoking-and-brain/who_knew3.gif&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Ссылки:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.litres.ru/asya-kazanceva/kak-mozg-zastavlyaet-nas-delat-gluposti/&#34;&gt;http://www.litres.ru/asya-kazanceva/kak-mozg-zastavlyaet-nas-delat-gluposti/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ozon.ru/context/detail/id/24922231/&#34;&gt;https://www.ozon.ru/context/detail/id/24922231/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bookmate.com/books/JF4FCgm5&#34;&gt;https://bookmate.com/books/JF4FCgm5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/19540212&#34;&gt;Ссылка на исследование&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/review/show/1502394685&#34;&gt;Мой отзыв на goodreads&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;А какие из недавно прочитанных книг вам запомнились больше всего?&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -181,56 +72,7 @@ in greater detail and many life examples are given.&lt;/p&gt;
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
 Distributed Erlang).&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-05-28-zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/book.jpg&#34; alt=&#34;&#34;/ width=&#34;270&#34; title=&#34;Изучай Erlang во имя добра!&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Вот лишь часть того, что я почерпнул из данной книги:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;используйте ctrl-a / ctrl-e в командной строке для перехода в начало / конец строки;&lt;/li&gt;
-&lt;li&gt;;(,) и andalso(orelse) различаются в работе при построении защитных выражений (guards). Например, &lt;code&gt;when C1 ; C2&lt;/code&gt; не упадет с ошибкой, если первое условие (C1) покрашится, а вычислит второе (C2);&lt;/li&gt;
-&lt;li&gt;старайтесь избегать “true&amp;rdquo; веток в условных операторах, если есть возможность покрыть все варианты (пример: &lt;code&gt;X &amp;gt;= 0, X &amp;lt; 0&lt;/code&gt;);&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.erlang.se/~bjorn/&#34;&gt;Björn Gustavsson&lt;/a&gt; из команды Erlang OTP рекомендует использовать gb_sets почти во всех случаях, ordsets, когда вам нужно простое представление и sets, когда требуется строгое сравнение =:= ;&lt;/li&gt;
-&lt;li&gt;references используются, в том числе, потому что Pid может поменяться пока мы дожидаемся ответа на сообщение (процесс упал и был перезапущен супервизором);&lt;/li&gt;
-&lt;li&gt;[ETS] ordered_set проигрывает по скорости рандомного чтения set, поэтому должен использоваться только для range queries;&lt;/li&gt;
-&lt;li&gt;[EUnit] &lt;code&gt;?_assert&lt;/code&gt; исполняется не сразу, а после генерации теста.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;{% blockquote %}
-Симметричная мультипроцессорность появилась в Erlang не сразу, а была добавлена в 2000 годах (ее можно отключить с помощью &lt;code&gt;erl -smp disable&lt;/code&gt;)
-{% endblockquote %}&lt;/p&gt;
-
-&lt;h1 id=&#34;distributed-erlang&#34;&gt;Distributed Erlang&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;узлы в Erlang общаются по TCP соединению, и, если у вас большое сообщение, остальные сообщения будут ждать очень долго. Хуже того, heartbeat сообщения могут не дойти до узла и Erlang посчитает, что узел умер;&lt;/li&gt;
-&lt;li&gt;большое количество связей (link) между узлами не есть хорошо, так как приведет к всплеску количества сообщений при падении одного из них;&lt;/li&gt;
-&lt;li&gt;4369 порт закреплен за &lt;a href=&#34;http://www.erlang.org/doc/man/epmd.html&#34;&gt;epmd&lt;/a&gt;. range для портов узлов можно установить через inet_dist_listen_min(max);&lt;/li&gt;
-&lt;li&gt;в консоли можно использовать net_kernel:connect для связи с узлом;&lt;/li&gt;
-&lt;li&gt;{global, Name} медленно разрешает конфликты имен (3 стратегии) и потерю связи с узлами. Он подходит для небольшого количества регистраций, которые нечасто меняются с течением времени;&lt;/li&gt;
-&lt;li&gt;распределенные приложения OTP (OTP Distributed Applications) делают упор на то, что ошибки в основном происходят по вине аппаратного обеспечения, а не разделения сети. Если у вас по другому - OTP не для вас. Они (приложения) служат для организации failover и backover;&lt;/li&gt;
-&lt;li&gt;если планируется использовать горячую замену кода (hot code reloading), то записи (records) лучше не выставлять наружу (только в рамках модуля). Иначе - боль.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;{% blockquote %}
-Версии Erlang &amp;gt;= R15B01 позволяют использовать реестры помимо local и global - {via, МодульРеестра, Имя}
-{% endblockquote %}&lt;/p&gt;
-
-&lt;h1 id=&#34;mnesia&#34;&gt;Mnesia&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;хорошей идеей будет добавить префикс к названию таблиц в mnesia (так как они шарятся по всему кластеру);&lt;/li&gt;
-&lt;li&gt;при написании большого приложения лучше разделить логику приложения и код mnesia (чтобы, к примеру, иметь возможность заменить транзакции на синхронные);&lt;/li&gt;
-&lt;li&gt;tv:start() - GUI для просмотра таблиц.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Полезные ссылки:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ferd.ca/&#34;&gt;Блог автора книги&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://learnyousomeerlang.com/&#34;&gt;Сама книга&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -243,25 +85,7 @@ Distributed Erlang).&lt;/p&gt;
 советов, инструментов, скриптов или просто умных мыслей из определенной книги.
 Читать книгу или нет? Это решать вам самим.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-05-23-zamietki-na-poliakh-proghrammirovaniie-v-erlang/book.jpg&#34; alt=&#34;&#34;/ width=&#34;304&#34; title=&#34;Программирование в Erlang&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Вот что советуют Франческо Чезарини и Симон Томпсон в своей книге &lt;a href=&#34;http://www.ozon.ru/context/detail/id/30671701/?partner=akalyaev&#34;&gt;&amp;ldquo;Программирование в Erlang&amp;rdquo;&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;не меняйте приоритет процессу (за редким исключением, когда вы точно понимаете что делаете и зачем);&lt;/li&gt;
-&lt;li&gt;не пропускайте сообщения в receive;&lt;/li&gt;
-&lt;li&gt;не увлекайтесь =/= и =:= (равенство с проверкой по типу) - они засоряют код;&lt;/li&gt;
-&lt;li&gt;создавайте процесс на &amp;ldquo;сущность&amp;rdquo; (например, сообщение, входящий файл);&lt;/li&gt;
-&lt;li&gt;используйте spawn_link и spawn_monitor, а не &lt;code&gt;link(spawn(...))&lt;/code&gt; - первые атомарны;&lt;/li&gt;
-&lt;li&gt;не копируйте MaxR / MaxT из модуля в модуль - их нужно выбирать с умом (&lt;a href=&#34;http://www.erlang.org/doc/man/supervisor.html&#34;&gt;http://www.erlang.org/doc/man/supervisor.html&lt;/a&gt;);&lt;/li&gt;
-&lt;li&gt;используйте circuit breakers (&lt;a href=&#34;https://github.com/jlouis/fuse&#34;&gt;https://github.com/jlouis/fuse&lt;/a&gt;, &lt;a href=&#34;https://github.com/klarna/circuit_breaker&#34;&gt;https://github.com/klarna/circuit_breaker&lt;/a&gt;);&lt;/li&gt;
-&lt;li&gt;не используйте infinity;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;file:write(&amp;quot;/tmp/procs.txt&amp;quot;, erlang:system_info(procs))&lt;/code&gt; - дамп информации обо всех процессах;&lt;/li&gt;
-&lt;li&gt;не используйте Erlang для передачи больших кусков данных;&lt;/li&gt;
-&lt;li&gt;рекомендуется отключать swap (лучше, чтобы сразу все свалилось).&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -283,158 +107,7 @@ Distributed Erlang).&lt;/p&gt;
 (англ. The Catcher inthe Rye). Автор написал его, вспоминая свои ощущения от
 книги, которую он перечитывал раз в 5 лет на протяжении 40 лет.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Внимание: в тексте присутствует ненормативная лексика. Материал опубликован с согласия автора. &lt;a href=&#34;https://www.goodreads.com/review/show/181040262&#34;&gt;Оригинальный отзыв&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;запись в журнале&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;сегодня мне исполнилось 15. все тлен, как обычно. я не могу поверить насколько
-дерьмово все вокруг меня. как будто я окружен зомби. я не могу поговорить ни с
-одним из моих так называемых друзей, я не могу поговорить с Джейми, я не могу
-поговорить с моими родителями. все равно никто не будет слушать. не могу
-дождаться когда свалю из Оринджа [1]! меня тошнит от этого места. вокруг одни
-лицемеры. вокруг все так ярко и солнечно и бессмысленно. ЧЕРТ, жизнь полна
-дерьма.&lt;/p&gt;
-
-&lt;p&gt;хотя есть одна хорошая вещь в моей жизни. только что прочитал книгу &amp;ldquo;Над
-пропастью во ржи&amp;rdquo;. я потрясен! я не понимаю, как книга, написанная десятилетия
-назад, могла так точно сказать, что я сам хотел бы сказать. как будто автор
-прочел мои мысли и записал их все в эту книгу. чувства, которые я даже не
-понимал, что испытываю, были на страницах книги! я думаю это мой любимый роман
-всех времен. который не рассказывает о многом, потому что уже и так есть тонна
-претенциозного дерьма, и я держу пари, миссис Дюрхем заставит нас прочесть его
-все. господи, как же я ненавижу эту стерву.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;запись в журнале&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Сегодня мне исполнилось 20. жизнь прекрасна, как обычно. только что просмотрел
-утреннее &amp;ldquo;проснись-и-испеки&amp;rdquo; шоу, светит солнце, погода в Сан-Диего отличная, и
-сегодня вечером я еду к Робу и Грегу, чтобы уничтожить их (&lt;em&gt;прим. пер.&lt;/em&gt;
-выиграть в игру). Грегг говорит, что Жоэль будет там (да!), но она, наверное,
-приведет это ничтожество, Пита, с собой. однажды я сорвусь и наваляю ему как
-следует. &amp;ldquo;я играю в группе&amp;rdquo;&amp;hellip; катись ты, Пит, куда подальше! все равно я
-никогда не буду слушать ваши записи.&lt;/p&gt;
-
-&lt;p&gt;на повестке дня сегодня только спортзал и класс американской литературы. класс
-в целом неплох, хотя ему далеко до основопологающих исследований Хелберштама
-[2]. или исследования Давидовой на тему современного постмодернизма из прошлого
-семестра. в том классе было по-настоящему интересно! взрыв мозга. так много
-вещей, над которыми можно поразмышлять. литература на прочтение в классе
-ничего. задали прочесть &amp;ldquo;Над пропастью во ржи&amp;rdquo; и &amp;hellip; она ужасна. не могу
-поверить, что мне она когда-то нравилась. Колфилд [3] еще та плакса. книга
-поверхностная. повествование, стилистика, характеры героев никуда не годятся,
-одно клише за другим. он думает, что он такой бунтарь-без-причины, а в
-действительности всего лишь представляет собой беспочвенную, стереотипную
-мужественность и гендерный эссенциализм. полностью пустой и бессмысленный.
-думаю мое эссе позаимствует некоторые техники из постмодернизма, чтобы показать
-как на самом деле просто написана эта банальщина. я собираюсь вывернуть наружу
-все дерьмо из этого романа!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;запись в журнале&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;сегодня мне исполнилось 25. еще одно серое, дождливое утро в Сан-Франциско.
-лучше бы Кристофер проснулся побыстрее, мне действительно нужно поговорить с
-ним после всего того дерьма прошлой ночью. на самом деле я рад, что он все еще
-спит, у меня чертовски болит горло. плюс сегодня утром проводится &amp;ldquo;Еда вместо
-бомб&amp;rdquo; [4] и нужно прибраться на кухне. Джон, вероятно, уже трудится на работе -
-типичный трудоголик. наверняка пацаны из Висконсина до сих пор зависают в
-гостиной. пора им свалить! или научиться принимать душ. здесь им не ночлежка!&lt;/p&gt;
-
-&lt;p&gt;Этим утром я проснулся пораньше и пролистал &amp;ldquo;Над пропастью во ржи&amp;rdquo;. помню, что
-в колледже ненавидел эту книгу по какой-то причине. вероятно, она была
-недостаточно постмодернистской. или &amp;ldquo;бросающей вызов&amp;rdquo;. каким зазнавшимся
-идиотом я был. это прекрасная книга. она изменила мою жизнь, когда я был еще
-ребенком. я не уверен, что выжил бы в Ориндж без нее. повторное чтение
-некоторых глав напомнило прежние тревожные мысли обо всем говне в этом мире, с
-которым детям приходится иметь дело. не уверен, что существует еще одна такая
-же проницательная и наполненная смыслом книга. и такая же веселая! та глава с
-подстриганием-пальцев-ног восхитительна. Эксли [5] такой душка. идеальный
-роман. очень &amp;ldquo;человечный&amp;rdquo;, как мне кажется.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;запись в журнале&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;сегодня мне исполнилось 30. голова раскалывается с похмелья! мой день рождения
-вчера вечером прошел отлично. даже удалось постоять за вертушками (спасибо
-Кредди за то, что уступил их на время). я, должно быть, пообщался с полудюжиной
-человек. к сожалению, ничего супервеселого. думаю эта большая вечеринка станет
-последней. пора что-то менять. у меня еще вся жизнь впереди! завтра я пойду в
-AIG и подам заявление на увольнение. не хочу больше работать кредитным
-менеджером, это не по мне. если Эрика поможет мне устроиться в Центр помощи
-бездомным детям, то так тому и быть. хотя перспектива смены большой комнаты на
-душный чулан не радует. но мне же 30 лет черт возьми! я должен сделать что-то
-значимое в своей жизни. она не может состоять только из бухла, наркотиков,
-секса и оплаты аренды друзей, когда у них проблемы. пора что-то менять.&lt;/p&gt;
-
-&lt;p&gt;Вчера перед началом тусовки я открыл &amp;ldquo;Над пропастью во ржи&amp;rdquo; и прочитал
-некоторые из моих любимых абзацев. она меня вдохновила! серьезно, это
-классический роман. он полон смысла. я вдвойне старше Колфилда, но чувствую что
-все еще связан с ним какой-то невидимой нитью. моя жизнь скоро изменится и
-мировоззрение, описанное в этой книге, является сердцем этих изменений. я тебя
-люблю, Холден Колфилд. еще не поздно научиться кое-чему у тебя, чтобы найти
-какой-то смысл в жизни.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;запись в журнале&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;сегодня мне исполнилось 35. прошла очередная тяжелая, грустная, но при этом
-приносящая глубокое удовлетворение неделя. каждый день происходит что-то
-значимое, что-то очень эмоциональное и настоящее. Иногда я нахожу себя в позе
-эмбриона из-за увиденных вещей. работать с людьми, которые наркозависимы,
-подвергались насилию или умирают, тяжело. но в этом есть своя красота. трудно
-поверить в то, что я имею дело со всем этим. слава богу у меня есть хорошие
-друзья, с кем можно поговорить о таких вещах. в любом случае. Марси хочет
-завести ребенка. не знаю, что и думать по этому поводу. мир в котором мы живем
-такой ебанутый, хочу ли я привнести новую жизнь в него? не знаю. звучит как-то
-эгоистично. она думает что рождение ребенка привнесет больше смысла в ее жизнь?
-в моей смысла предостаточно. не уверен, что смогу взять на себя такую
-ответственность.&lt;/p&gt;
-
-&lt;p&gt;вчера, после неловкой беседы с Марси, пролистал &amp;ldquo;Над пропастью во ржи&amp;rdquo;.
-угнетающее чтиво. Колфилд очень беспокойный. не уверен, что понимаю его теперь.
-почему он так разозлился? он не видел ничего в этом мире и что мир может
-реально сделать с людьми. мне хотелось бы полюбить его снова, воссоздать то
-чувство связи между нами, но теперь его презрение и гнев кажутся такими
-бессмысленными, такими наивными. в действительности у него все не так плохо,
-есть вещи и похуже. не знаю чтобы я делал с таким ребенком. стыдно об этом
-говорить, но я периодически дремал пока читал эту книгу. ох уж этот
-эмоциональный эгоцентризм молодости! но подожди, Колфилд. все станет еще
-сложнее как только ты повзрослеешь.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;запись в журнале&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;сегодня мне исполнилось 40. когда это я стал боссом? как будто я проснулся в
-один день и превратился в старика. &amp;ldquo;руководитель&amp;rdquo;? что это вообще значит?
-иногда мне кажется как будто я притворяюсь руководителем и, однажды, кто-то
-выяснит это и донесет на меня. на прошлой неделе я провернул большое дело в
-Совете, я хорошо подготовился и все голоса распределились в точности как я и
-планировал. у каждого есть свои скрытые интересы и простой способ добиться
-своей цели - распознать и манипулировать ими. некоторые люди встали и начали
-хлопать в ладоши, а затем вся комната присоединилась, даже члены совета,
-которые голосовали против моего ходатайства. лицемеры. опыт был удивительным в
-своем роде, но он также заставил меня почувствовать себя странно, отстраненно
-от самого себя. теперь я государственный деятель, адвокат, ставленник мэра. не
-переношу его. неужели это я? я достиг чего-то и удовлетворен этим&amp;hellip; но я
-что-то упустил, что-то реальное. господи боже, так вот он какой, кризис
-среднего возраста. странные ощущения, как будто знаешь все что нужно: о мире, о
-людях вокруг тебя, о том как они связаны, но все равно это лишь крупица.
-тревожные мысли. ты точно вырос из этого?&lt;/p&gt;
-
-&lt;p&gt;я начал перечитывать &amp;ldquo;Над пропастью во ржи&amp;rdquo;. так странно — во время некоторых
-частей, я чувствовал, что вот-вот заплачу. замечательный и трогательный роман.
-я чувствую, что действительно понимаю Холдена, как будто он мой наставник, мой
-сын, мой брат, мой друг&amp;hellip; я сам. я думаю о нем и верю, что те перемены в мире
-и в самом себе могут произойти. должны произойти. в этом вся соль жизни, не так
-ли?&lt;/p&gt;
-
-&lt;p&gt;Примечания:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Ориндж - округ в Южной Калифорнии, США.&lt;/li&gt;
-&lt;li&gt;David Halberstam - американский журналист и историк.&lt;/li&gt;
-&lt;li&gt;Колфилд - главный персонаж романа &amp;ldquo;Над пропастью во ржи&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Еда вместо бомб - несвязанные друг с другом независимые группы активистов, бесплатно раздающие веганскую и вегетарианскую еду.&lt;/li&gt;
-&lt;li&gt;Эксли - сосед Колфилда по общежитию.&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -457,172 +130,7 @@ AIG и подам заявление на увольнение. не хочу б
 В итоге, я решил прочесть всю (ну почти всю) линейку и вот какое мнение я
 составил о каждой книге.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;1-выйди-из-зоны-комфорта-брайн-трейси&#34;&gt;1. Выйди из зоны комфорта (Брайн Трейси)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/eat-that-frog.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Выйди из зоны комфорта (Брайн Трейси)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Через всю книгу идёт одна простая мысль: к сложной задаче, которую вам рано или
-поздно придется сделать, лучше приступать без отлагательств. К примеру, если
-надо позвонить вашему заказчику и обсудить недавное падение вашего сервиса, то
-надо собраться с силами и позвонить ему в начале дня. В противном случае, вы
-можете придумать &amp;ldquo;более важные&amp;rdquo; дела и так и не занятся &lt;strong&gt;действительно
-важной&lt;/strong&gt; задачей.&lt;/p&gt;
-
-&lt;p&gt;Большинство из идей в данной книге есть в &amp;ldquo;6. Тайм-драйв (Глеб
-Архангельский)&amp;ldquo;, так что советую прочитать последнюю.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 3 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;2-ловушки-мышления-чип-хиз-и-дэн-хиз&#34;&gt;2. Ловушки мышления (Чип Хиз и Дэн Хиз)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/decisive.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Ловушки мышления (Чип Хиз и Дэн Хиз)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;В книге рассматриваются ошибки, которые люди совершают при выборе того или иного
-решения, и даются советы, которые могут помочь сделать правильный выбор.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;К примеру, в начале изложены 4 врага решения проблем:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Искусственные рамки (&amp;ldquo;Уволиться мне или нет?&amp;rdquo;)&lt;/li&gt;
-&lt;li&gt;Предвзятость&lt;/li&gt;
-&lt;li&gt;Эмоции&lt;/li&gt;
-&lt;li&gt;Самонадеянность&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;и способы борьбы с ними.&lt;/p&gt;
-
-&lt;p&gt;В целом хорошая книга с интересными историями.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 4 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;3-сила-воли-келли-макгонигал&#34;&gt;3. Сила воли (Келли Макгонигал)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/willpower.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Сила воли (Келли Макгонигал)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Если честно, книга написана для домохозяек, которым как-то надо заставить себя
-встать на беговую дорожку и сбросить пару килограммов. Поймите меня правильно,
-цель сама по себе достойная, но от книги с таким сильным названием ожидаешь
-чего-то большего. Единственное, что понравилось - это описание механизма работы
-нашего мозга, когда мы испытываем нашу силу воли (например думаем, покупать или
-нет вторую плитку шоколада). Здесь в работу вступают 2 области: старая кора
-(&amp;ldquo;хочу&amp;rdquo;) и префронтальная кора (&amp;ldquo;а тебе это надо?&amp;rdquo;).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 2 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;4-высшая-цель-майкл-рэй&#34;&gt;4. Высшая цель (Майкл Рэй)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/the_highest_goal.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Высшая цель (Майкл Рэй)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;В чем смысл моей жизни?&amp;rdquo; - сложный вопрос и автор пытается ответить на него.
-Он не дает конкретный ответ, потому как его (единственно правильного ответа)
-очевидно не существует. Вместо этого Майкл дает читателю набор определенных
-правил на каждый день и советов, которые помогут вам прожить более счастливую
-жизнь.&lt;/p&gt;
-
-&lt;p&gt;Вот всего лишь несколько из них:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;будьте внимательны&lt;/li&gt;
-&lt;li&gt;задавайте тупые вопросы&lt;/li&gt;
-&lt;li&gt;следуйте своему сердцу&lt;/li&gt;
-&lt;li&gt;не ожидайте ничего&lt;/li&gt;
-&lt;li&gt;избавьтесь от гласа суждения&lt;/li&gt;
-&lt;li&gt;не волнуйтесь, а действуйте&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 4 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;5-никогда-не-ешь-в-одиночку-кейт-феррацци-и-тал-рэз&#34;&gt;5. Никогда не ешь в одиночку (Кейт Феррацци и Тал Рэз)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/nevereatalone.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Никогда не ешь в одиночку (Кейт Феррацци и Тал Рэз)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Иллюстрация всем известной поговорки &amp;ldquo;Не имей сто рублей, а имей сто друзей&amp;rdquo;. В
-первой части Кейт рассказывает о его пути к успеху и какое важное значение для
-него имел &amp;ldquo;круг влияния&amp;rdquo; (в простонародье - круг друзей). Во второй части книги
-идёт речь о том, как завязать знакомство с нужным тебе человеком. Оказывается,
-есть даже специальный термин для всего этого - &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D1%82%D0%B2%D0%BE%D1%80%D0%BA%D0%B8%D0%BD%D0%B3&#34;&gt;Нетворкинг&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 3 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;6-тайм-драйв-глеб-архангельский&#34;&gt;6. Тайм-драйв (Глеб Архангельский)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/timedrive.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Тайм-драйв (Глеб Архангельский)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Лучшая книга по тайм-менеджменту, которую я читал! Количество полезной
-информации в расчёте на 1 страницу просто зашкаливает. Глеб собрал лучшие
-практики (свои и общепринятые) и выпустил прекрасную книгу.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 5 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;7-психология-убеждения-роберт-чалдини-стив-мартин-и-ноа-гольдштейн&#34;&gt;7. Психология убеждения (Роберт Чалдини, Стив Мартин и Ноа Гольдштейн)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/yes.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Психология убеждения (Роберт Чалдини, Стив Мартин и Ноа Гольдштейн)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;50 разных историй (исследований) о том, как всего пара слов в предложении может
-кардинально повлиять на ситуацию. К примеру, в одном из национальных парков в
-Америке столкнулись с проблемой: посетители воровали кору окаменелого дерева на
-память и знаки с надписями наподобие &amp;ldquo;не воровать&amp;rdquo; или &amp;ldquo;берегите природу&amp;rdquo;
-&lt;strong&gt;способствовали большему числу краж&lt;/strong&gt;, а не снижали их число. В итоге авторам
-удалось снизить процент краж.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 4 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;8-как-привести-дела-в-порядок-дэвид-аллен&#34;&gt;8. Как привести дела в порядок (Дэвид Аллен)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/gtd.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Как привести дела в порядок (Дэвид Аллен)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Классика жанра.&lt;/p&gt;
-
-&lt;p&gt;В ней описываются основные концепции GTD (Getting Things Done).
-Дэвид предлагает проверенную временем систему, состоящую из 5 простых шагов:&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Сложите все задачи в одно место&lt;/li&gt;
-&lt;li&gt;Фильтруйте, делегируйте&lt;/li&gt;
-&lt;li&gt;Создайте проект под каждую задачу&lt;/li&gt;
-&lt;li&gt;Каждую неделю проводите анализ и, возможно, пересмотр задач&lt;/li&gt;
-&lt;li&gt;Действуйте&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Поклонникам Аллена читать рекомендуется, остальным - по желанию.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 3 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;9-удовольствие-от-х-стивен-строгац&#34;&gt;9. Удовольствие от Х (Стивен Строгац)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; style=&#34;float: left; margin-top: 25px; margin-right: 15px;&#34; src=&#34;http://homeonrails.com/images/posts/2014-11-30-best-books-for-self-development/joy_of_x.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; title=&#34;Удовольствие от Х (Стивен Строгац)&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Всегда приятно читать автора, который может сложные вещи объяснить на пальцах.
-Если математика вас всегда пугала (всякие интегралы, пределы и т.п.), то
-рекомендую обратить свое внимание на данный труд.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Личная оценка: 4 из 5&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;P.S. Приятного чтения :)&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

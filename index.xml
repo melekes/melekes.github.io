@@ -2,13 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Rails</title>
-    <link>http://homeonrails.com/index.xml</link>
+    <link>http://homeonrails.com/</link>
     <description>Recent content on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Wed, 15 Mar 2017 10:21:49 +0400</lastBuildDate>
-    <atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2017 23:22:09 +0400</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>March Picks</title>
+      <link>http://homeonrails.com/2017/04/march-picks/</link>
+      <pubDate>Sat, 15 Apr 2017 23:22:09 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2017/04/march-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Удаленная работа</title>
@@ -22,99 +35,7 @@
 работая удаленно, и контраст показался мне настолько разительным, что я не
 удержался!&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;абсолютная-свобода-в-планировании&#34;&gt;Абсолютная свобода в планировании&lt;/h3&gt;
-
-&lt;p&gt;В большинстве компаний с офисом есть часы, в которые тебе необходимо быть на
-рабочем месте. Это обладает рядом преимуществ:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Внешняя дисциплина. Как ни крути, а к 9 часам надо быть на рабочем месте.
-Конечно, можно отложить начало работы выпив чашечку чая и поболтав с
-коллегами, но рано или поздно начнешь работать.&lt;/li&gt;
-&lt;li&gt;Коммуникация. Коллеги могут тебя достать физически, если вы работаете в
-одном офисе (а чаще всего так и есть).&lt;/li&gt;
-&lt;li&gt;[в дерьмовых компаниях] менеджер видит, что Вася на месте и работает.
-Конечно, мы то с вами понимаем, что важен лишь результат. Не работайте в
-таких компаниях, пожалуйста.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Если работаешь удаленно, то дисциплинировать себя придется самому. Помогают
-всякие ритуалы типа утренней пробежки, рабочей одежды, кабинета/отдельной
-комнаты. Лучше конечно снять офис со знакомыми, если таковые имеются.&lt;/p&gt;
-
-&lt;p&gt;Что касается коммуникации, да, качество проседает. Но и со звонками/сообщениями
-в Slack можно жить.&lt;/p&gt;
-
-&lt;p&gt;Однако в отсутствии фиксированных часов приходит свобода планирования. Удобнее
-всего просыпаться в 9, ложиться в 1 ночи - пожалуйста. Не любишь вечером ходить
-в качалку, а предпочитаешь обед - пожалуйста. Предпочитаешь вообще ничего не
-делать и получать деньги - &lt;del&gt;пожалуйста&lt;/del&gt; фиг тебе. В некоторых компаниях можно
-договориться с начальством о гибком графике.&lt;/p&gt;
-
-&lt;p&gt;Плюс, не надо отпрашиваться на часок если требуется срочно отъехать по делам.&lt;/p&gt;
-
-&lt;h3 id=&#34;положительное-подкрепление&#34;&gt;Положительное подкрепление&lt;/h3&gt;
-
-&lt;p&gt;Не знаю, особенность ли это русской разработки ПО. В забугорных компаниях,
-когда ты выполнил задачу, тебя обязательно похвалят:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;great job ..&lt;/li&gt;
-&lt;li&gt;awesome work ..&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;P.S. я знаю разницу между похвалой и положительным подкреплением. Здесь хвалят
-не тебя конкретно (типа Вася, ты заебись программист), а твою работу.&lt;/p&gt;
-
-&lt;p&gt;В русских же компаниях зачастую отношение такое, что решать задачи - это работа
-Васи. Зачем его хвалить за это? Максимум премию дать в конце месяца, чтобы
-знал, что признаем его заслуги. Премия это хорошо безусловно, но это немного
-другое. Это внешнее вознаграждение (extrinsic reward). Я же говорю об
-отсутствии внутреннего вознаграждения (intristic reward). Порой достаточно лишь
-пары добрых слов.&lt;/p&gt;
-
-&lt;p&gt;Мотивирует выполнять работу хорошо. Да и просто приятно.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://file.scirp.org/pdf/AJIBM_2014011309335174.pdf&#34;&gt;The impact of Positive Reinforcement on Employees’ Performance in Organizations&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ип&#34;&gt;ИП&lt;/h3&gt;
-
-&lt;p&gt;Придется разбираться с вопросами налогообложения. Как открыть ИП, какую форму
-выбрать, бухгалтерия, банк, валютный контроль. Доходит иногда до безумия - не
-знаешь как подписывать счёт: на каждом листе или нет? Задалбываешь банк,
-находишь информацию в интернете, разбираешься, учишься. Сравните это со
-стандартной работой в офисе, где вам приносят пару бумаг с наклеечками где надо
-поставить подпись. Плюс в том, что становишься более самостоятельным,
-ответственным (&amp;ldquo;незнание закона не освобождает от уплаты налогов&amp;rdquo;).&lt;/p&gt;
-
-&lt;p&gt;Я подготовил документы на регистрацию ИП с помощью Контур.Эльбы, госпошлину
-заплатил на сайте &lt;a href=&#34;https://www.nalog.ru&#34;&gt;https://www.nalog.ru&lt;/a&gt;. Обслуживаюсь у Модульбанка и
-Контур.Эльба на данный момент. Счета формирую в &lt;a href=&#34;https://invoice-generator.com&#34;&gt;https://invoice-generator.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ВАЖНО&lt;/strong&gt;: налоговые каникулы отсчитываются календарными годами. Так что не
-спешите зарегистрировать ИП в декабре. Не повторяйте мою ошибку.&lt;/p&gt;
-
-&lt;p&gt;Изначально, мне вообще американская компания предлагала трудоустройство как
-физ.лицу. Для этого как я понимаю пришлось бы искать бухгалтера, который бы
-делал взносы за меня в ПФР и тому подобное. &lt;strong&gt;Если у кого есть юрист, который
-может проконсультировать по данному вопросу, напишите пожалуйста&lt;/strong&gt;. Пока
-остановился на контрактной работе.&lt;/p&gt;
-
-&lt;p&gt;Также остался вопрос с долей в компании. С точки зрения российского
-законодательства, есть ли какие-то преграды запрещающие мне становится
-держателем опциона на акции? И как эти бумаги правильно оформить?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.nalog.ru/rn73/ip/interest/reg_ip/petition/&#34;&gt;ПОРЯДОК РЕГИСТРАЦИИ ИНДИВИДУАЛЬНОГО ПРЕДПРИНИМАТЕЛЯ (Ульяновская область)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://e-kontur.ru/enquiry/198&#34;&gt;Налоговые каникулы ИП&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://e-kontur.ru/enquiry/4&#34;&gt;Регистрируем ИП: подготовка документов&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ksoftware.livejournal.com/312267.html&#34;&gt;Как официально получить валюту из-за рубежа&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://news.banks.eu/archives/267&#34;&gt;Тонкости SWIFT – переводов из России в Европу&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -127,35 +48,7 @@
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;movie-inside-i-m-dancing-2004&#34;&gt;Movie: Inside I&amp;rsquo;m Dancing (2004)&lt;/h3&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/m2X4M3WT0W4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.imdb.com/title/tt0417791/&#34;&gt;IMDB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Inside_I&#39;m_Dancing&#34;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kinopoisk.ru/film/84014/&#34;&gt;Kinopoisk.ru&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You need to learn to appreciate what you have.&lt;/p&gt;
-
-&lt;h3 id=&#34;video-how-martin-luther-king-jr-wrote-i-have-a-dream&#34;&gt;Video: How Martin Luther King Jr. Wrote &amp;lsquo;I Have A Dream&amp;rsquo;&lt;/h3&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/RIZLJMOhQCE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&#34;article-cities-and-ambition-by-paul-graham-http-www-paulgraham-com-cities-html&#34;&gt;Article: &lt;a href=&#34;http://www.paulgraham.com/cities.html&#34;&gt;Cities and Ambition by Paul Graham&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;It is interesting to hear big cities heaving their own personality, almost like a real person, on the other hand affecting every person living in it.&lt;/p&gt;
-
-&lt;h3 id=&#34;article-a-nihilist-s-guide-to-meaning-by-kevin-simler-http-www-meltingasphalt-com-a-nihilists-guide-to-meaning&#34;&gt;Article: &lt;a href=&#34;http://www.meltingasphalt.com/a-nihilists-guide-to-meaning/&#34;&gt;A Nihilist&amp;rsquo;s Guide to Meaning by Kevin Simler&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&amp;ldquo;Existence, he says, is fundamentally playful. It&amp;rsquo;s less like a journey, and more like a piece of music or a dance.&amp;rdquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;quote-of-the-month&#34;&gt;Quote of the month:&lt;/h3&gt;
-
-&lt;p&gt;&amp;ldquo;The best way to predict the future is to invent it.&amp;rdquo; - Alan Kay&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -166,52 +59,7 @@ or even a painting.&lt;/p&gt;
       <guid>http://homeonrails.com/2017/03/february-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The most important professional programming skill is being able to move on. Example: &amp;quot;I moved on from hating JavaScript to hating Go&amp;quot;.&lt;/p&gt;&amp;mdash; Aleksey Shipilëv (@shipilev) &lt;a href=&#34;https://twitter.com/shipilev/status/835779166217912321&#34;&gt;February 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://gusc.lv/2013/03/system-developers-glossary-also-for-dummies&#34;&gt;System Developers Glossary (also for dummies)&lt;/a&gt;
-word, dword, qword, registers. Added it to bookmarks.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@oherrala/quickcheck-or-fuzzing-which-one-to-use-98d200e9609b#.mfuqm0bmc&#34;&gt;QuickCheck or Fuzzing? Which one to use?&lt;/a&gt;
-Finally, somebody was able to explain the difference clearly. Rays of goodness to the author.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://antirez.com/news/112&#34;&gt;The mythical 10x programmer&lt;/a&gt;
-Demystifying the myth about the 10x programmer, antirez shares the list of
-qualities, which as he believes are the most important when we&amp;rsquo;re talking
-about productivity:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bare programming abilities: getting sub-tasks done&lt;/li&gt;
-&lt;li&gt;Experience: pattern matching&lt;/li&gt;
-&lt;li&gt;Focus: actual time VS hypothetical time&lt;/li&gt;
-&lt;li&gt;Design sacrifice: killing 5% to get 90%&lt;/li&gt;
-&lt;li&gt;Simplicity&lt;/li&gt;
-&lt;li&gt;Perfectionism, or how to kill your productivity and bias your designs&lt;/li&gt;
-&lt;li&gt;Low level: understanding the machine&lt;/li&gt;
-&lt;li&gt;Debugging skills&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://reedbeta.com/blog/programmers-intro-to-unicode/&#34;&gt;A Programmer’s Introduction to Unicode&lt;/a&gt;
-Love the maps!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://stripe.com/blog/idempotency&#34;&gt;Designing robust and predictable APIs with idempotency&lt;/a&gt;
-Guaranteeing “exactly once” semantics by using idempotency keys.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/321802/&#34;&gt;Дмитрий Сорин, Senior Software Engineer в Atlassian, поделился впечатлениями о пяти годах работы в «Яндексе»&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -220,72 +68,7 @@ Guaranteeing “exactly once” semantics by using idempotency keys.&lt;/p&gt;&l
       <pubDate>Sun, 05 Mar 2017 12:00:12 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/03/podcasts-i-am-listening-to/</guid>
-      <description>
-
-&lt;p&gt;I am in constant search of useful information and considering podcasts as one
-of the sources. Please note the word useful. I do not listen to podcasts where
-the hosts tell the story of how they hang out yesterday in the pub! And you
-could be surprised of how many of such podcasts are out there. A huge number!
-Otherwise, podcasts are very convenient. You can listen to them while on the go
-or standing in the line at the local store.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;#must&lt;/code&gt; - I listen every episode&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;#selectively&lt;/code&gt; - depending on whether I find the topic interesting or not&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;#optionally&lt;/code&gt; - depending on the mood&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;p&gt;In the order of importance:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://tim.blog/podcast/&#34;&gt;The Tim Ferriss Show&lt;/a&gt; &lt;code&gt;#must&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://longnow.org/seminars/podcast/&#34;&gt;Seminars About Long-Term Thinking Audio Podcast&lt;/a&gt; &lt;code&gt;#must&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ecorner.stanford.edu/podcasts/etl&#34;&gt;Entrepreneurial Thought Leaders&lt;/a&gt; &lt;code&gt;#must&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.samharris.org/podcast&#34;&gt;The Waking Up with Sam Harris&lt;/a&gt; &lt;code&gt;#selectively&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.dancarlin.com/hardcore-history-series/&#34;&gt;Hardcore History with Dan Carlin&lt;/a&gt; &lt;code&gt;#optionally&lt;/code&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://freakonomics.com/archive/&#34;&gt;Freakonomics Radio&lt;/a&gt; &lt;code&gt;#selectively&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/&#34;&gt;Software Engineering Radio&lt;/a&gt; &lt;code&gt;#selectively&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.eslpod.com/&#34;&gt;English as a Second Language (ESL) Podcast&lt;/a&gt; &lt;code&gt;#must&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Under review&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.npr.org/podcasts/510308/hidden-brain&#34;&gt;Hidden Brain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.relay.fm/cortex&#34;&gt;Cortex&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.theallusionist.org/&#34;&gt;The Allusionist&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;What I&amp;rsquo;ve tried to listen: The Naked Scientists, StarTalk Radio, The
-Productivityist, Stuff You Should Know, How to Do Everything, WTF with Marc
-Maron, Accidental Tech, Planet Money, 99% Invisible, Radiolab, The Joe Rogan
-Experience, a16z, The Art of Manliness, Back to Work.&lt;/p&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://devzen.ru/&#34;&gt;DevZen&lt;/a&gt; &lt;code&gt;#must&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ru.hexlet.io/blog/categories/podcast&#34;&gt;Хекслет&lt;/a&gt; &lt;code&gt;#must&lt;/code&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ctocast.com/&#34;&gt;CTOcast&lt;/a&gt; &lt;code&gt;#must&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/ru/podcast/putesestvia-podcast-travel/id968476151?mt=2&#34;&gt;Путешествия&lt;/a&gt; &lt;code&gt;#optionally&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Что я пробовал слушать: Радио-Т, GolangShow, Разбор полётов, Как делают игры.&lt;/p&gt;
-
-&lt;h2 id=&#34;what-app-i-am-using&#34;&gt;What app I am using&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://overcast.fm/&#34;&gt;Overcast&lt;/a&gt;, which recently got a major update. People say
-&lt;a href=&#34;http://www.shiftyjelly.com/pocketcasts/&#34;&gt;Pocket Casts&lt;/a&gt; is also good.&lt;/p&gt;
-
-&lt;p&gt;Feel free to recommend me something :)&lt;/p&gt;
-</description>
+      <description>I am in constant search of useful information and considering podcasts as one of the sources. Please note the word useful. I do not listen to podcasts where the hosts tell the story of how they hang out yesterday in the pub! And you could be surprised of how many of such podcasts are out there. A huge number! Otherwise, podcasts are very convenient. You can listen to them while on the go or standing in the line at the local store.</description>
     </item>
     
     <item>
@@ -298,43 +81,7 @@ Experience, a16z, The Art of Manliness, Back to Work.&lt;/p&gt;
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;movie-kubo-and-the-two-strings-2016&#34;&gt;Movie: Kubo and the Two Strings (2016)&lt;/h3&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/p4-6qJzeb3A&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.imdb.com/title/tt4302938/&#34;&gt;IMDB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Kubo_and_the_Two_Strings&#34;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kinopoisk.ru/film/882290/&#34;&gt;Kinopoisk.ru&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Very colorful, beautiful and visually stunning animation movie.&lt;/p&gt;
-
-&lt;h3 id=&#34;ted-terry-moore-how-to-tie-your-shoes&#34;&gt;TED: Terry Moore: How to tie your shoes&lt;/h3&gt;
-
-&lt;iframe src=&#34;https://embed.ted.com/talks/terry_moore_how_to_tie_your_shoes&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;This video is revelation! 28 years of pain, but not more. Note: if you are a woman, you probably already know.&lt;/p&gt;
-
-&lt;h3 id=&#34;video-how-the-inventor-of-mario-designs-a-game&#34;&gt;Video: How the inventor of Mario designs a game&lt;/h3&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/K-NBcP0YUQI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I never would have thought that the first level of the game Mario is so well designed before watching this video.&lt;/p&gt;
-
-&lt;h3 id=&#34;article-get-more-done-with-the-rule-of-three-http-www-artofmanliness-com-2017-01-09-work-deliberately-instead-reactively-rule-3-на-русском-https-vc-ru-p-make-day-productive&#34;&gt;Article: &lt;a href=&#34;http://www.artofmanliness.com/2017/01/09/work-deliberately-instead-reactively-rule-3/&#34;&gt;Get more done with &amp;ldquo;the rule of three&amp;rdquo;&lt;/a&gt; &lt;a href=&#34;https://vc.ru/p/make-day-productive&#34;&gt;На русском&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Has been practicing this rule of three for the last month - it works great!&lt;/p&gt;
-
-&lt;h3 id=&#34;quote-of-the-month&#34;&gt;Quote of the month:&lt;/h3&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t design your life, someone else will design it for you.&lt;/p&gt;
-
-&lt;h3 id=&#34;статья-о-глупости-и-необходимости-объяснять-http-maximilyahov-ru-blog-all-stupid-news&#34;&gt;Статья: &lt;a href=&#34;http://maximilyahov.ru/blog/all/stupid-news/&#34;&gt;О глупости и необходимости объяснять&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Почему большинство СМИ не заслуживают вашего времени.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -345,61 +92,7 @@ or even a painting.&lt;/p&gt;
       <guid>http://homeonrails.com/2017/02/january-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;might be the best selfie of the year and it&amp;#39;s only Jan 16th. Via reddit. &lt;a href=&#34;https://t.co/61H2VqBjv7&#34;&gt;pic.twitter.com/61H2VqBjv7&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steven Weintraub (@colliderfrosty) &lt;a href=&#34;https://twitter.com/colliderfrosty/status/821070925432963075&#34;&gt;January 16, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.defstartup.org/2017/01/18/why-rethinkdb-failed.html&#34;&gt;RethinkDB: why we failed&lt;/a&gt;
-Sad story. Surely you have already read. If not, go do it. It&amp;rsquo;s worth of your
-time, I promise.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://widgetsandshit.com/teddziuba/2010/12/the-3-basic-tools-of-systems-engineering.html&#34;&gt;The 3 Basic Tools of Systems Engineering&lt;/a&gt;
-&amp;ldquo;There are three basic tools you can use to solve a technical problem: money,
-time, and code. This seems obvious, but the critical point is that you must
-try them in that order.&amp;rdquo; &lt;a href=&#34;https://blog.reifyworks.com/developers-stop-undervaluing-software-2db16b0f5641#.6oaj424ic&#34;&gt;Developers: Stop undervaluing
-software&lt;/a&gt;
-might be a good addition to this article.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.yegor256.com/2017/01/24/career-advice.html&#34;&gt;16 Don&amp;rsquo;ts of Career Growth&lt;/a&gt;
-Terrible bits of advice if you look from the company&amp;rsquo;s perspective. Egoistic.
-Very brutal. The best that I have ever seen so far.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MC1EKLQ2Wmg&#34;&gt;GOTO 2012 • Mythbusting Modern Hardware to Gain &amp;lsquo;Mechanical Sympathy&amp;rsquo; • Martin Thompson&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MC1EKLQ2Wmg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=WDIkqP4JbkE&#34;&gt;code::dive conference 2014 - Scott Meyers: Cpu Caches and Why You Care&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WDIkqP4JbkE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://grishaev.me/moda&#34;&gt;Мода&lt;/a&gt;
-&amp;ldquo;Будут востребованны алгоритмы, протоколы и БД, самоорганизация,
-ответсвенность и самообучение. Во веки веков будет востребовано умение
-доводить дело до конца.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ru.hexlet.io/blog/posts/how-to-test-code&#34;&gt;Разработка → Начинаем писать тесты (правильно)&lt;/a&gt;
-&amp;ldquo;Так как же лучше написать тест? Надеюсь, вам уже стало очевидно, что нужно
-найти достаточно высокую точку входа в нашу программу, которая не зависит от
-внутренней реализации, и при этом выполняет поставленную задачу.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -408,25 +101,7 @@ Very brutal. The best that I have ever seen so far.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Wed, 08 Feb 2017 12:07:24 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/02/whos-playing-with-whom/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Если кошка мурлычет и трется о хозяйские ноги, нам кажется, что она благодарна за заботу и такое поведение - признак тепла и приязни. На самом деле она, скорее всего, втирает в вас свои гормоны, заявляя свои права (на вас, разумеется), что имеет целью отвадить других кошек. С точки зрения кошки, вы - что-то вроде прислуги, обязанность которой несколько раз в день подавать еду, и она, втирая в вас свой запах, предупреждает остальных, что у вас уже есть законная хозяйка.&lt;/p&gt;
-
-&lt;p&gt;Как писал в XVI в. философ Мишель де Монтень, &amp;ldquo;когда я играю со своей кошкой, откуда мне знать, что это не она со мной играет, а я с ней?&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Это отрывок из книги &amp;ldquo;Будущее разума&amp;rdquo; Митио Каку. Он, как и вся книга, мне очень понравились.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-02-08-whos-playing-with-whom/fom_cover.jpg&#34; alt=&#34;&#34; title=&#34;Будущее разума&#34;/&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B5_%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0_(%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0)&#34;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.litres.ru/mitio-kaku/buduschee-razuma/chitat-onlayn/&#34;&gt;Litres&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/review/show/1558056645&#34;&gt;Мой отзыв на Goodreads&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;Начало просто бесподобное. Автор рассказывает об эволюции мозга, некоторых известных принципах его работы, интересных фактах (например, что если разорвать связь левым и правым полушарием, то каждая половина будет обладать &amp;ldquo;собственным разумом&amp;rdquo;).
-Понравилось, как автор смешивает его любимые фантастические фильмы, добавляет последние исследования и пытается предсказать будущее.
-Читается очень легко.&lt;/p&gt;
-</description>
+      <description>&amp;ldquo;Если кошка мурлычет и трется о хозяйские ноги, нам кажется, что она благодарна за заботу и такое поведение - признак тепла и приязни. На самом деле она, скорее всего, втирает в вас свои гормоны, заявляя свои права (на вас, разумеется), что имеет целью отвадить других кошек. С точки зрения кошки, вы - что-то вроде прислуги, обязанность которой несколько раз в день подавать еду, и она, втирая в вас свой запах, предупреждает остальных, что у вас уже есть законная хозяйка.</description>
     </item>
     
     <item>
@@ -441,72 +116,7 @@ dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be
 root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&gt;1&lt;/a&gt;,
 &lt;a href=&#34;https://github.com/tendermint/tendermint&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are using &lt;a href=&#34;https://github.com/Masterminds/glide&#34;&gt;glide&lt;/a&gt; or other package
-manager:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
-machine:
-  environment:
-    PROJECT_GOPATH: &amp;quot;${HOME}/.go_project&amp;quot;
-    PROJECT_PARENT_PATH: &amp;quot;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&amp;quot;
-    PROJECT_PATH: &amp;quot;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&amp;quot;
-    GOPATH: &amp;quot;${PROJECT_GOPATH}&amp;quot;
-    GO15VENDOREXPERIMENT: 1
-
-dependencies:
-  cache_directories:
-    - &amp;quot;~/.glide&amp;quot;
-  pre:
-    - go get -u -v github.com/Masterminds/glide
-  override:
-    - mkdir -p &amp;quot;$PROJECT_PARENT_PATH&amp;quot;
-    - ln -sf &amp;quot;$HOME/$CIRCLE_PROJECT_REPONAME/&amp;quot; &amp;quot;$PROJECT_PATH&amp;quot;
-    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; glide install
-  post:
-    - go version
-    - glide -v
-
-test:
-  override:
-    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; go test -v $(glide novendor)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Also, if you want to store your test&amp;rsquo;s output as CircleCI artifact on S3:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;test:
-  override:
-    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; go test -v $(glide novendor) 2&amp;gt;&amp;amp;1 | tee test.log
-  post:
-    - cd &amp;quot;$PROJECT_PATH&amp;quot; &amp;amp;&amp;amp; mv test.log &amp;quot;${CIRCLE_ARTIFACTS}&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;$(glide novendor)&lt;/code&gt; could be replaced with &lt;code&gt;$(shell go list ./... | grep -v
-&#39;/vendor/&#39;)&lt;/code&gt;. The former is just shorter.&lt;/p&gt;
-
-&lt;p&gt;You might be asking yourself: where is the example using simple &lt;code&gt;go get&lt;/code&gt;? I
-won&amp;rsquo;t give you one because &lt;a href=&#34;https://discuss.circleci.com/t/using-own-packages-in-go-project/4073/8&#34;&gt;I was not able to get &lt;code&gt;go get&lt;/code&gt; working on CircleCI
-for our
-  project&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The errors were as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;package _/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks: unrecognized import path &amp;quot;_/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks&amp;quot; (import path does not begin with hostname)
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;One small advice:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;install &lt;a href=&#34;https://github.com/adrienverge/yamllint&#34;&gt;yamllint&lt;/a&gt; and check your
-config file. If your config contains the syntax errors, CircleCI will output
-&amp;ldquo;Action failed: Configure the build&amp;rdquo;. Very descriptive, right?&lt;/p&gt;
-
-&lt;p&gt;Resources:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://subosito.com/posts/golang-circleci/&#34;&gt;https://subosito.com/posts/golang-circleci/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -520,43 +130,7 @@ config file. If your config contains the syntax errors, CircleCI will output
 
 &lt;p&gt;Here is my submission:&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I was always fascinated by the future of humanity. People, who live for a very
-long time and almost never get sick. People, who close to death, transforming
-their brain into digital form and existing on the net, or in the body of the
-robot. People, who travel across the galaxy, exploring new planets and
-horizons. People, who appreciate life and exist in harmony with nature.&lt;/p&gt;
-
-&lt;p&gt;Institute of Ageing and Chronic Disease, University of Liverpool - one of the
-groups, who are investigating the aging process. Take for example their work of
-2015 (&amp;ldquo;Insights into the evolution of longevity from the bowhead whale
-genome.&amp;ldquo;), where they mapped the genome for the bowhead whale and discovered
-unique genes behind its longevity (more than 200 years): the ERCC1 gene, which
-is believed to repair DNA, increase cancer resistance and slow ageing, and the
-PCNA gene, which is also linked to DNA repair.&lt;/p&gt;
-
-&lt;p&gt;Or their recent work, &amp;ldquo;Systematic analysis of the gerontome reveals links
-between aging and age-related diseases.&amp;ldquo;, which shows the relationship between
-aging and age-related diseases (ARDs). In short, human aging-related genes
-showed a considerable overlap with ARDs.&lt;/p&gt;
-
-&lt;p&gt;In the future, when genetic modification at birth will become the standard de
-facto, the contribution of this institute and their colleagues from the USA,
-Germany, Portugal and other countries will prove invaluable. Changing or adding
-a pair of genes will result in people who live longer, do not have hereditary
-diseases and consequently, live a happy and a joyful life.&lt;/p&gt;
-
-&lt;p&gt;With all that said, I want to say thank you to all the scientists behind those
-works. You are awesome!&lt;/p&gt;
-
-&lt;p&gt;Links:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://pcwww.liv.ac.uk/~aging/&#34;&gt;http://pcwww.liv.ac.uk/~aging/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/25565328&#34;&gt;http://www.ncbi.nlm.nih.gov/pubmed/25565328&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/27594432&#34;&gt;http://www.ncbi.nlm.nih.gov/pubmed/27594432&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -570,73 +144,7 @@ works. You are awesome!&lt;/p&gt;
 
 &lt;p&gt;Wanted to share the best books I&amp;rsquo;ve read in 2016.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Although few of the books were simply ridiculous and senseless, the majority
-fulfilled my hopes. To weed out crap, I read reviews on &lt;a href=&#34;https://www.goodreads.com&#34;&gt;Goodreads&lt;/a&gt;, &lt;a href=&#34;https://www.ozon.ru&#34;&gt;Ozon.ru&lt;/a&gt;, &lt;a href=&#34;https://www.litres.ru&#34;&gt;Litres&lt;/a&gt;. &lt;em&gt;Know something else worth doing?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;However, on Goodreads sometimes a book&amp;rsquo;s top comment has only 1 star and 555
-likes (read &amp;ldquo;this book is a complete disaster, DO NOT READ&amp;rdquo;). But when you read
-it, you like it so much you could barely take a break. But that happens rarely.
-Average rating is quite adequate.&lt;/p&gt;
-
-&lt;h3 id=&#34;nonfiction&#34;&gt;Nonfiction&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/10884.Einstein&#34;&gt;Einstein: His Life and Universe by Walter Isaacson&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/einstein.jpg&#34; alt=&#34;&#34; title=&#34;Einstein: His Life and Universe by Walter Isaacson&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;Excellent written biography of the remarkable man! I think the author really
-managed to understand Einstein. Not sure I fully understood the general theory
-of relativity. Although, the basics are written using a very simple language. I
-took many notes from the book.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/97411.Letters_from_a_Stoic&#34;&gt;Letters from a Stoic by Seneca, Robin Campbell&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/seneca.jpg&#34; alt=&#34;&#34; title=&#34;Letters from a Stoic by Seneca, Robin Campbell&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;Liked it very much. I think I just became a fan of stoicism.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/66354.Flow&#34;&gt;Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/flow.jpg&#34; alt=&#34;&#34; title=&#34;Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;A must-read book. I would like to read it in my eighteens. Now, when I am 27, I
-haven&amp;rsquo;t learned much from this book. On TED the author only gives the basic
-idea: the connection of happiness and flow. In the book, this topic is covered
-in greater detail and many life examples are given.&lt;/p&gt;
-
-&lt;h3 id=&#34;business&#34;&gt;Business&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/28437799&#34;&gt;Бизнес как игра by Сергей Абдульманов, Дмитрий Борисов, Дмитрий Кибкало&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/business_like_a_game.jpg&#34; alt=&#34;&#34; title=&#34;Бизнес как игра by Сергей Абдульманов, Дмитрий Борисов, Дмитрий Кибкало&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Мой отзыв:&lt;/p&gt;
-
-&lt;p&gt;Без воды, с юмором, дельными советами и жизненными историями.&lt;/p&gt;
-
-&lt;p&gt;There are no other editions, except Russian. Sorry, English reading folks.&lt;/p&gt;
-
-&lt;h3 id=&#34;programming&#34;&gt;Programming&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/18467564-seven-concurrency-models-in-seven-weeks&#34;&gt;Seven Concurrency Models in Seven Weeks: When Threads Unravel by Paul Butcher&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/7models7weeks.jpg&#34; alt=&#34;&#34; title=&#34;Seven Concurrency Models in Seven Weeks: When Threads Unravel by Paul Butcher&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My review:&lt;/p&gt;
-
-&lt;p&gt;Another must-read to expand the horizons.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;If you like these, you might want to check out &lt;a href=&#34;https://www.goodreads.com/review/list/24729949?read_at=2016&amp;amp;sort=rating&#34;&gt;the whole list of the things I&amp;rsquo;ve read on Goodreads&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -658,114 +166,7 @@ in greater detail and many life examples are given.&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Создать подпись и настроить git очень просто. Итак, давайте сделаем это:&lt;/p&gt;
-
-&lt;h3 id=&#34;1-создаем-подпись&#34;&gt;1. Создаем подпись&lt;/h3&gt;
-
-&lt;p&gt;Ставим gpg:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Ubuntu
-sudo apt-get install gpa seahorse
-# Mac
-brew install gpg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Создаем RSA пару (публичный и приватный ключ):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gpg --gen-key
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(размер не ниже 2048, но и &lt;a href=&#34;https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096&#34;&gt;больше не особо
-нужно&lt;/a&gt;; срок
-годности по желанию)&lt;/p&gt;
-
-&lt;p&gt;Копируем полученный публичный ключ на &lt;a href=&#34;https://github.com/settings/keys&#34;&gt;Github&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys --keyid-format LONG
-
--------------------------------
-sec   2048R/&amp;lt;COPY_LONG_KEY&amp;gt;  2017-01-14 [expires: 2019-01-14]
-uid                          User Name &amp;lt;user.name@email.com&amp;gt;
-ssb   2048R/098AA7C27DD57ACC 2017-01-14
-
-gpg --armor --export &amp;lt;PASTE_LONG_KEY_HERE&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;2-настраиваем-git&#34;&gt;2. Настраиваем git&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;gpg --list-secret-keys
-
--------------------------------
-sec   2048R/&amp;lt;COPY_SHORT_KEY&amp;gt; 2017-01-14 [expires: 2019-01-14]
-uid                          User Name &amp;lt;user.name@email.com&amp;gt;
-ssb   2048R/7DD57ACC         2017-01-14
-
-git config --global user.signingKey &amp;lt;PASTE_SHORT_KEY_HERE&amp;gt;
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(можно настроить индивидуально под каждый репозиторий).&lt;/p&gt;
-
-&lt;h3 id=&#34;3-кэшируем-пароль&#34;&gt;3. Кэшируем пароль&lt;/h3&gt;
-
-&lt;p&gt;чтобы не вводить его каждый раз при подписи.&lt;/p&gt;
-
-&lt;p&gt;Если вы пользователь Mac OS, то ставим &lt;a href=&#34;https://gpgtools.org/&#34;&gt;GPG Suite&lt;/a&gt;,
-который интегрируется с Mac OS keychain. Переходим к шагу 4.&lt;/p&gt;
-
-&lt;p&gt;Если пользуетесь Linux, то придется воспользоваться встроенным &lt;code&gt;gpg-agent&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Создаем конфиг &lt;code&gt;.gnupg/gpg-agent.conf&lt;/code&gt; со следующим содержимым:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;default-cache-ttl 28800
-max-cache-ttl 28800
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;28800 - 8 часов (кто-то ставит 1 час).&lt;/p&gt;
-
-&lt;p&gt;В конфиге &lt;code&gt;.gnupg/gpg.conf&lt;/code&gt; указываем:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;use-agent
-batch
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;batch&lt;/code&gt; убирает противные сообщения вида: &lt;code&gt;You need a passphrase to unlock the
-secret key&lt;/code&gt;. Да, они по неведомой причине появляются даже, если агент
-закэшировал пароль.&lt;/p&gt;
-
-&lt;p&gt;Не забываем запустить &lt;code&gt;gpg-agent&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;fish:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;if not begin
-    # Is the agent running already? Does the agent-info file exist, and if so,
-    # is there a process with the pid given in the file?
-    [ -f ~/.gpg-agent-info ]
-    and kill -0 (cut -d : -f 2 ~/.gpg-agent-info) ^/dev/null
-end
-    # no, it is not running. Start it!
-    gpg-agent --daemon --no-grab --write-env-file ~/.gpg-agent-info &amp;gt;/dev/null ^&amp;amp;1
-end
-# get the agent info from the info file, and export it so GPG can see it.
-set -gx GPG_AGENT_INFO (cut -c 16- ~/.gpg-agent-info)
-set -gx GPG_TTY (tty)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;или &lt;a href=&#34;https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40&#34;&gt;bash&lt;/a&gt;
-или напрямую &lt;code&gt;gpg-agent --daemon&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;4-коммитим-что-угодно-и-идем-смотреть-результат-на-github&#34;&gt;4. Коммитим что угодно и идем смотреть результат на Github&lt;/h2&gt;
-
-&lt;p&gt;Материалы:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.erincall.com/p/signing-your-git-commits-with-gpg&#34;&gt;Signing Your Git Commits With GPG&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc&#34;&gt;Github : Signing commits using GPG (Ubuntu/Mac)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b&#34;&gt;Automatic Git commit signing with GPG on OSX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -778,52 +179,7 @@ set -gx GPG_TTY (tty)
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;documentary-before-the-flood-2016&#34;&gt;Documentary - Before the Flood (2016)&lt;/h2&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D9xFFyUOpXo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.beforetheflood.com/&#34;&gt;https://www.beforetheflood.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.imdb.com/title/tt5929776/&#34;&gt;IMDB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.rottentomatoes.com/m/before_the_flood_2016/&#34;&gt;Rotten Tomatoes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kinopoisk.ru/film/1002696/&#34;&gt;Kinopoisk.ru&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;ldquo;Paradise that has been degraded and destroyed. We&amp;rsquo;re knowingly doing this. I
-just want to know how far we have gone and is there anything we can do to stop
-it.&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;ted-laura-vanderkam-how-to-gain-control-of-your-free-time&#34;&gt;TED - Laura Vanderkam: How to gain control of your free time&lt;/h2&gt;
-
-&lt;iframe src=&#34;https://embed.ted.com/talks/laura_vanderkam_how_to_gain_control_of_your_free_time&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&amp;ldquo;Time is highly elastic. We cannot make more time. But time will stretch to
-accommodate what we will put into it.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Every minute is my choice.&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;book-harry-potter-and-the-methods-of-rationality&#34;&gt;Book - Harry Potter and the Methods of Rationality&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-10-monthly-art-number-16/hpmor.jpg&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hpmor.com/&#34;&gt;http://hpmor.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://hpmor.ru/&#34;&gt;http://hpmor.ru/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Harry_Potter_and_the_Methods_of_Rationality&#34;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/10016013-harry-potter-and-the-methods-of-rationality&#34;&gt;Goodreads&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Great book! It&amp;rsquo;s what you dream of while watching the next &amp;ldquo;Lord of the Rings&amp;rdquo;,
-placing your hand across the face (facepalm) when the main character doing
-something completely illogical.&lt;/p&gt;
-
-&lt;h2 id=&#34;article-taming-the-mammoth-why-you-should-stop-caring-what-other-people-think-http-waitbutwhy-com-2014-06-taming-mammoth-let-peoples-opinions-run-life-html&#34;&gt;Article -  &lt;a href=&#34;http://waitbutwhy.com/2014/06/taming-mammoth-let-peoples-opinions-run-life.html&#34;&gt;Taming the Mammoth: Why You Should Stop Caring What Other People Think&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;You&amp;rsquo;ve probably been told that many times, but it won&amp;rsquo;t hurt to read about this
-problem again and you will find glorious pictures (as always with
-waitbutwhy.com).&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -834,62 +190,7 @@ waitbutwhy.com).&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2017/01/december-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ru&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The CIA remotely accessed Russian hacker&amp;#39;s webcam moments before hack, first images have been revealed &lt;a href=&#34;https://t.co/RycQD8RYX1&#34;&gt;pic.twitter.com/RycQD8RYX1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Science Cat (@DrScienceCat) &lt;a href=&#34;https://twitter.com/DrScienceCat/status/809473634259636225&#34;&gt;15 декабря 2016 г.&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;
-
-&lt;h3 id=&#34;articles&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://preshing.com/20120612/an-introduction-to-lock-free-programming/&#34;&gt;An Introduction to Lock-Free Programming&lt;/a&gt;
-I don&amp;rsquo;t know much about you, but I always wanted to know what people mean by
-lock-free programming. Here is the best article I was able to find.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html&#34;&gt;Cap&amp;rsquo;n Proto, FlatBuffers, and SBE&lt;/a&gt;
-What serialization protocol will you choose for your next project? Be aware
-of the author&amp;rsquo;s bias towards his own solution (Cap&amp;rsquo;n Proto).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ericdykstra.me/blog/improving-as-an-intermediate-programmer&#34;&gt;How Does One Improve as an Intermediate Programmer?&lt;/a&gt;
-&amp;ldquo;Maybe the discipline is still too young to have formalized ways of
-performance improvement like classical music training or sports training.&amp;rdquo; Do
-you think it&amp;rsquo;s true? Personally, I tend to agree with Eric.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.bradfieldcs.com/in-2017-learn-every-language-59b11f68eee#.ib8fx7xzm&#34;&gt;In 2017, learn &lt;em&gt;every&lt;/em&gt; language&lt;/a&gt;
-Do not have plans for 2017? How about learning &lt;em&gt;every&lt;/em&gt; language :)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=3wyd6J3yjcs&#34;&gt;The Silver Bullet Syndrome by Hadi Hariri&lt;/a&gt;
-This is probably the second funniest dev talk after the famous &amp;ldquo;Wat&amp;rdquo; talk by
-Gary Bernhardt. Must watch!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3wyd6J3yjcs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rX0ItVEVjHc&#34;&gt;CppCon 2014: Mike Acton &amp;ldquo;Data-Oriented Design and C++&amp;rdquo;&lt;/a&gt;
-Ok, this is something paradigm shifting. Data-oriented versus object-oriented
-design.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/rX0ItVEVjHc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;на-русском&#34;&gt;На русском&lt;/h2&gt;
-
-&lt;h3 id=&#34;статьи&#34;&gt;Статьи&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://antonz.ru/interest/&#34;&gt;Сделайте себе интересно&lt;/a&gt;
-&amp;ldquo;Это конспект лекции Людвига Быстроновского об интересе и контринтуитивном
-решении задач. Людвиг рассказывает, когда возникает интерес, какие приемы
-помогают не потерять его, чем вреден «поток» и как разрыв шаблона приводит к
-успеху.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -898,27 +199,11 @@ design.&lt;/li&gt;
       <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/about/</guid>
-      <description>&lt;p&gt;Hi! My name is Anton Kaliaev.&lt;/p&gt;
-
-&lt;p&gt;&lt;img style=&#34;border-radius: 125px; width: 240px;&#34; src=&#34;http://homeonrails.com/images/pic.jpeg&#34; alt=&#34;portrait&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;I am an enthusiastic developer, who likes to grow every day in different areas
-of expertise and apply that knowledge in everyday life.&lt;/p&gt;
-
-&lt;p&gt;My open source work is available on &lt;a href=&#34;https://github.com/melekes/&#34;&gt;GitHub&lt;/a&gt;, my
-talks are on &lt;a href=&#34;https://speakerdeck.com/melekes&#34;&gt;Speaker Deck&lt;/a&gt;, my work history
-is on &lt;a href=&#34;http://www.linkedin.com/in/melekes&#34;&gt;LinkedIn&lt;/a&gt;, and my thoughts are
-on &lt;a href=&#34;https://twitter.com/akaliaev&#34;&gt;Twitter&lt;/a&gt;. You’re also welcome to say
-hello at &lt;a href=&#34;mailto:anton.kalyaev@gmail.com&#34;&gt;anton.kalyaev@gmail.com&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;Proudly supporting:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://neovim.io/&#34;&gt;Neovim&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://devzen.ru/&#34;&gt;DevZen Podcast&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ru.hexlet.io/blog/categories/podcast&#34;&gt;Hexlet Podcast&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Hi! My name is Anton Kaliaev.
+I am an enthusiastic developer, who likes to grow every day in different areas of expertise and apply that knowledge in everyday life.
+My open source work is available on GitHub, my talks are on Speaker Deck, my work history is on LinkedIn, and my thoughts are on Twitter. You’re also welcome to say hello at anton.kalyaev@gmail.com!
+Proudly supporting:
+ Neovim DevZen Podcast Hexlet Podcast  </description>
     </item>
     
     <item>
@@ -927,60 +212,1815 @@ hello at &lt;a href=&#34;mailto:anton.kalyaev@gmail.com&#34;&gt;anton.kalyaev@gm
       <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/pgp/</guid>
-      <description>&lt;pre&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG v2
+      <description>-----BEGIN PGP PUBLIC KEY BLOCK----- Version: GnuPG v2 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 pQxA9qGnUkZ65Tb4PukxfALmVQ== =BTtP -----END PGP PUBLIC KEY BLOCK-----  </description>
+    </item>
+    
+    <item>
+      <title>Best motivational videos</title>
+      <link>http://homeonrails.com/2016/12/best-motivational-videos/</link>
+      <pubDate>Thu, 29 Dec 2016 11:54:48 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/best-motivational-videos/</guid>
+      <description>&lt;p&gt;Best motivational videos related to life (in general).&lt;/p&gt;
 
-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
-pQxA9qGnUkZ65Tb4PukxfALmVQ==
-=BTtP
------END PGP PUBLIC KEY BLOCK-----
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Итоги 2016 года</title>
+      <link>http://homeonrails.com/2016/12/2016-results/</link>
+      <pubDate>Wed, 28 Dec 2016 22:45:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/2016-results/</guid>
+      <description>&lt;p&gt;Под конец уходящего года принято подводить некоторые итоги: что удалось, что не
+удалось сделать, поставить цели на следующий год. В принципе, это не
+обязательно должен быть канун НГ. Просто так удобней. Еще можно попробовать
+подводить итоги чаще - скажем, раз в квартал. Интересно, кто-то так делает?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #15</title>
+      <link>http://homeonrails.com/2016/12/monthly-art-number-15/</link>
+      <pubDate>Tue, 13 Dec 2016 16:40:11 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/monthly-art-number-15/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>November Picks</title>
+      <link>http://homeonrails.com/2016/12/november-picks/</link>
+      <pubDate>Tue, 13 Dec 2016 12:06:13 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/12/november-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #14</title>
+      <link>http://homeonrails.com/2016/11/monthly-art-number-14/</link>
+      <pubDate>Fri, 11 Nov 2016 13:24:39 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/11/monthly-art-number-14/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>October Picks</title>
+      <link>http://homeonrails.com/2016/11/october-picks/</link>
+      <pubDate>Fri, 11 Nov 2016 12:20:03 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/11/october-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prince Ea</title>
+      <link>http://homeonrails.com/2016/11/prince-ea/</link>
+      <pubDate>Fri, 04 Nov 2016 23:14:20 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/11/prince-ea/</guid>
+      <description>&lt;p&gt;There are actually not many great motivational videos on the Internet. But this
+guy, this guy has some style.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hire me</title>
+      <link>http://homeonrails.com/2016/10/hire-me/</link>
+      <pubDate>Wed, 26 Oct 2016 19:12:16 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/hire-me/</guid>
+      <description>&lt;p&gt;For the past two years, I&amp;rsquo;ve been working full time at FunBox as an &lt;strong&gt;Erlang developer&lt;/strong&gt;. I&amp;rsquo;ve learned so much during that time - the Erlang language itself and the tooling (observer, recon and &lt;a href=&#34;http://homeonrails.com/2016/05/profiling-in-erlang/&#34;&gt;others&lt;/a&gt;), Hadoop, HDFS and even some team management skills (thanks to @gumayunov).&lt;/p&gt;
+
+&lt;p&gt;I am grateful for the opportunity that FunBox has given me. But once a while you need to move on and I did. So I&amp;rsquo;m looking for a new job.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Erlang User Conference 2016</title>
+      <link>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
+      <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
+      <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
+sharing them with the community.&lt;/p&gt;
+
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>5 New Tab Google Chrome extensions for productivity freaks</title>
+      <link>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</link>
+      <pubDate>Tue, 18 Oct 2016 17:40:16 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Strange Loop 2016</title>
+      <link>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
+      <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
+conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
+YouTube&lt;/a&gt;.
+Again, thank you to organizers for sharing them. I think, I have found real
+gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #13</title>
+      <link>http://homeonrails.com/2016/10/monthly-art-number-13/</link>
+      <pubDate>Tue, 11 Oct 2016 12:06:49 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/monthly-art-number-13/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>September Picks</title>
+      <link>http://homeonrails.com/2016/10/september-picks/</link>
+      <pubDate>Tue, 11 Oct 2016 10:47:37 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/september-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Обязательные приложения для путешествия по Китаю</title>
+      <link>http://homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</link>
+      <pubDate>Fri, 07 Oct 2016 12:17:02 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заповедник Хуанлун. Как добраться из Цзючжайгоу плюс карта</title>
+      <link>http://homeonrails.com/2016/10/huanglong/</link>
+      <pubDate>Thu, 06 Oct 2016 22:58:27 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/huanglong/</guid>
+      <description>&lt;blockquote&gt;
+Хуанлун (кит. трад. 黃龍, упр. 黄龙, пиньинь: Huánglóng), «Жёлтый дракон» — живописная заповедная местность, известная своими травертиновыми террасами (из известкового туфа), многочисленными озёрами, различных цветов и форм. &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%B0%D0%BD%D0%BB%D1%83%D0%BD_(%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA&#34;&gt;Википедия&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Один месяц в Китае</title>
+      <link>http://homeonrails.com/2016/10/one-month-in-china/</link>
+      <pubDate>Thu, 06 Oct 2016 13:00:41 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/10/one-month-in-china/</guid>
+      <description>&lt;p&gt;Недавно вернулся из Китая, где прожил один месяц. Никакой работы, просто
+путешествуя из города в город. Иногда это были деревни, иногда заповедники.
+Другие люди, другая еда, да все другое. Этим меня и покорил Китай. Но не будем
+забегать вперед.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Непереносимость глютена? Аллерготесты в Ульяновске</title>
+      <link>http://homeonrails.com/2016/08/gluten-intolerance/</link>
+      <pubDate>Thu, 25 Aug 2016 10:02:36 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/08/gluten-intolerance/</guid>
+      <description>&lt;p&gt;Так как я собираюсь в Китай, решил проверить, до сих пор ли у меня пищевая
+аллергия на рыбу. Последние аллергопробы делал лет 14 назад. Заодно добавил
+некоторые морепродукты и глютен (&lt;strong&gt;по совету медсестры лаборатории&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Неделя @backendsecret в твиттере</title>
+      <link>http://homeonrails.com/2016/08/backendsecret-week/</link>
+      <pubDate>Sat, 20 Aug 2016 22:05:30 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/08/backendsecret-week/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-08-20-backendsecret-week/week.jpg&#34; alt=&#34;&#34; width=&#34;360px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Прошлую неделю (08.08 - 14.08) вел коллективный твиттер-аккаунт для бэкенд-разработчиков
+&lt;a href=&#34;https://twitter.com/backendsecret&#34;&gt;https://twitter.com/backendsecret&lt;/a&gt;. Интересный опыт ;) Когда ты спрашиваешь о
+чем-то или делишься мыслями с большой аудиторией (~ 2500 подписчиков). Правда,
+времени это отнимает реально много!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>July Picks</title>
+      <link>http://homeonrails.com/2016/08/july-picks/</link>
+      <pubDate>Sat, 13 Aug 2016 13:02:05 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/08/july-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #12</title>
+      <link>http://homeonrails.com/2016/08/monthly-art-number-12/</link>
+      <pubDate>Sat, 13 Aug 2016 11:26:40 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/08/monthly-art-number-12/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Правильный подход к выбору работы</title>
+      <link>http://homeonrails.com/2016/07/how-to-choose-a-job-correctly/</link>
+      <pubDate>Fri, 29 Jul 2016 11:22:34 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/07/how-to-choose-a-job-correctly/</guid>
+      <description>&lt;p&gt;На свою первую работу в качестве программиста я устроился чисто случайно. Один
+из преподавателей в универе предложил под его руководством написать CRM систему
+для довольно известной сети бытовой техники. Недолго раздумывая (~ 1 день), я
+согласился. Т.е &lt;strong&gt;на то, чем я буду заниматься с 9 до 18 каждый день на
+протяжении 1 с лишним года, ушел лишь 1 день&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>June Picks</title>
+      <link>http://homeonrails.com/2016/07/june-picks/</link>
+      <pubDate>Mon, 11 Jul 2016 12:44:33 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/07/june-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #11</title>
+      <link>http://homeonrails.com/2016/07/monthly-art-number-11/</link>
+      <pubDate>Mon, 11 Jul 2016 12:16:47 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/07/monthly-art-number-11/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Отзыв о стуле Salli Chin</title>
+      <link>http://homeonrails.com/2016/07/salli-chin-review/</link>
+      <pubDate>Sat, 09 Jul 2016 10:03:59 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/07/salli-chin-review/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-09-salli-chin-review/salli1.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>On the importance of unification</title>
+      <link>http://homeonrails.com/2016/07/on-the-importance-of-unification/</link>
+      <pubDate>Tue, 05 Jul 2016 16:24:36 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/07/on-the-importance-of-unification/</guid>
+      <description>&lt;p&gt;Unification, for me, means having one way or instrument (not always the best)
+to deal with a problem. And, in some cases, it is crucial.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png&#34; alt=&#34;It&#39;s important to have only one instrument for solving a problem.&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why Do You Need a Pool</title>
+      <link>http://homeonrails.com/2016/07/why-do-you-need-a-pool/</link>
+      <pubDate>Mon, 04 Jul 2016 12:35:52 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/07/why-do-you-need-a-pool/</guid>
+      <description>&lt;p&gt;There are a number of reasons you may want to use a pool of workers in your application.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Выбираем VPN</title>
+      <link>http://homeonrails.com/2016/07/choosing-a-vpn/</link>
+      <pubDate>Sun, 03 Jul 2016 16:28:03 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/07/choosing-a-vpn/</guid>
+      <description>&lt;p&gt;Недавно пришлось выбирать VPN сервис (чтобы безопасно в интернетах лазить общедоступных; в кафешке там или аэропорту).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Clojure/west 2016</title>
+      <link>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</link>
+      <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
+wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
+Clojure conference in the western United States and all about this language, as
+you may guess.&lt;/p&gt;
+
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mothly Art #10</title>
+      <link>http://homeonrails.com/2016/06/mothly-art-number-10/</link>
+      <pubDate>Sat, 11 Jun 2016 11:35:48 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/06/mothly-art-number-10/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>May Picks</title>
+      <link>http://homeonrails.com/2016/06/may-picks/</link>
+      <pubDate>Sat, 11 Jun 2016 10:40:07 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/06/may-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Profiling in Erlang</title>
+      <link>http://homeonrails.com/2016/05/profiling-in-erlang/</link>
+      <pubDate>Wed, 25 May 2016 11:41:44 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/05/profiling-in-erlang/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://homeonrails.com/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf&#34; title=&#34;Скачать PDF на русском&#34;&gt;
+  На русском
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The list of available instruments:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fprof, eprof, cover, cprof (shipped with erlang)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;top&lt;/code&gt;-like utilities: third party &lt;a href=&#34;https://github.com/zaa/entop&#34;&gt;entop&lt;/a&gt; и &lt;a href=&#34;http://erlang.org/doc/apps/observer/etop_ug.html&#34;&gt;etop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/virtan/eep/&#34;&gt;eep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ferd.github.io/recon/&#34;&gt;recon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/proger/eflame&#34;&gt;eflame&lt;/a&gt; and &lt;a href=&#34;https://github.com/slfritchie/eflame&#34;&gt;eflame2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/massemanet/eper&#34;&gt;eper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timer:tc/3&lt;/code&gt;, &lt;code&gt;statistics/1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/slfritchie/159a8ce1f49fc03c77c6&#34;&gt;latency_histogram_tracer.erl&lt;/a&gt; (requires &lt;code&gt;folsom_metrics&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to be productive with almost any text editor</title>
+      <link>http://homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</link>
+      <pubDate>Mon, 23 May 2016 12:02:11 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://homeonrails.com/pdfs/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/how_to_be_productive_with_almost_any_editor_ru_RU.pdf&#34; title=&#34;Скачать PDF на русском&#34;&gt;
+  На русском
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What makes us productive when working with code in the editor? Every day, there
+is a new shining plugin, that allows us to do something useful by pressing only
+2 keystrokes. Don&amp;rsquo;t get me wrong, I&amp;rsquo;m not against plugins. Hell, I have at
+least 40 of them (&lt;a href=&#34;https://git.io/vrg64&#34;&gt;https://git.io/vrg64&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;But, are all of them equally useful? I am certain that some tricks outperform
+others in terms of productivity (&lt;strong&gt;20% results in 80% boost&lt;/strong&gt;). These could be
+features, built into the editor. You just don&amp;rsquo;t know about them. Here, I&amp;rsquo;ve
+tried to collect &lt;strong&gt;the most important ones&lt;/strong&gt;, which don&amp;rsquo;t require you to read a
+pile of docs and much time to learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #9</title>
+      <link>http://homeonrails.com/2016/05/monthly-art-number-9/</link>
+      <pubDate>Tue, 10 May 2016 22:02:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/05/monthly-art-number-9/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>April Picks</title>
+      <link>http://homeonrails.com/2016/05/april-picks/</link>
+      <pubDate>Tue, 10 May 2016 20:43:40 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/05/april-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TrueColor in Gnome Terminal, Tmux and Neovim</title>
+      <link>http://homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
+      <pubDate>Wed, 04 May 2016 11:41:10 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
+      <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
+can see, most of the editors and terminals now support TrueColor (16 million
+colors).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim: Open current line on Atlassian Stash (Bitbucket Server)</title>
+      <link>http://homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</link>
+      <pubDate>Thu, 28 Apr 2016 11:47:36 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</guid>
+      <description>&lt;p&gt;This is based on Felix Geisendörfer &lt;a href=&#34;http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html&#34;&gt;Vim Trick: Open current line on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Как стартовать Erlang приложение</title>
+      <link>http://homeonrails.com/2016/04/how-do-i-start-erlang-application/</link>
+      <pubDate>Mon, 25 Apr 2016 10:38:13 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/04/how-do-i-start-erlang-application/</guid>
+      <description>&lt;p&gt;Подразумевается, что у вас уже есть какое-то приложение и вы используете 3й
+rebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chokecherry Or The Story About 1000000 Timeouts</title>
+      <link>http://homeonrails.com/2016/04/chokecherry/</link>
+      <pubDate>Sun, 24 Apr 2016 11:25:45 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/04/chokecherry/</guid>
+      <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
+logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
+backend.&lt;/p&gt;
+
+&lt;p&gt;This article tells a story behind this library. Down below you&amp;rsquo;ll find answers to the following questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Why it was created?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;How it works?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Do I need it?&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #8</title>
+      <link>http://homeonrails.com/2016/04/monthly-art-number-8/</link>
+      <pubDate>Tue, 12 Apr 2016 10:39:35 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/04/monthly-art-number-8/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Picks</title>
+      <link>http://homeonrails.com/2016/04/march-picks/</link>
+      <pubDate>Mon, 11 Apr 2016 22:00:55 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/04/march-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Зависла Erlang нода. Что делать?</title>
+      <link>http://homeonrails.com/2016/04/erlang-node-freezes-now-what/</link>
+      <pubDate>Tue, 05 Apr 2016 15:50:31 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Erlang Factory SF Bay 2016</title>
+      <link>http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
+      <pubDate>Thu, 31 Mar 2016 10:49:23 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
+      <description>&lt;p&gt;Annual &lt;a href=&#34;http://www.erlang-factory.com/sfbay2016&#34;&gt;Erlang Factory SF Bay Area
+2016&lt;/a&gt; conference ended only 3 weeks
+ago. There were many great speakers and presentations. What I specifically like
+about it, is that videos are available almost immediately. As usual, I am
+publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
+&lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #7</title>
+      <link>http://homeonrails.com/2016/03/monthly-art-number-7/</link>
+      <pubDate>Sat, 12 Mar 2016 23:41:05 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/03/monthly-art-number-7/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February Picks</title>
+      <link>http://homeonrails.com/2016/03/february-picks/</link>
+      <pubDate>Sat, 12 Mar 2016 22:12:38 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/03/february-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #6</title>
+      <link>http://homeonrails.com/2016/02/monthly-art-number-6/</link>
+      <pubDate>Wed, 10 Feb 2016 22:48:15 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/02/monthly-art-number-6/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>January picks</title>
+      <link>http://homeonrails.com/2016/02/january-picks/</link>
+      <pubDate>Wed, 10 Feb 2016 22:09:20 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/02/january-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Супер-пупер крутые статьи для разработчиков</title>
+      <link>http://homeonrails.com/2016/02/super-puper-articles/</link>
+      <pubDate>Sat, 06 Feb 2016 18:20:37 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/02/super-puper-articles/</guid>
+      <description>&lt;p&gt;Решил поделиться с вами статьями, которые оказали на меня, как программиста,
+наибольшее влияние.&lt;/p&gt;
+
+&lt;p&gt;Большинство обычных статей сейчас валяются где-то на задворках памяти, либо
+вообще улетучились, словно я их никогда и ни читал. Но было несколько
+особенных, которые запомнились надолго.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Про курение и мозг</title>
+      <link>http://homeonrails.com/2016/01/smoking-and-brain/</link>
+      <pubDate>Sat, 30 Jan 2016 11:54:13 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/01/smoking-and-brain/</guid>
+      <description>&lt;p&gt;Недавно прочел книгу Аси Казанцевой &amp;ldquo;Кто бы мог подумать! Как мозг заставляет
+нас делать глупости&amp;rdquo;. Прекрасный образчик научпопа. Автор простым языком
+описывает, как та или иная вещь влияет на наш мозг, и как это в свою очередь
+сказывается на нашем поведении. Больше всех мне понравились первые главы про
+вредные привычки (алкоголе, табаке) и глава про стресс (описание процессов,
+происходящих в нашем теле). Остальные показались мне не слишком интересными, и
+я их пролистывал.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-01-30-smoking-and-brain/who_knew1.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Одна из удивительных вещей, которая мне отдельно запомнилась: как наш мозг
+адаптируется (или перестраивается) к появившимся постоянным дозам никотина
+после того как человек начинает курить.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Лучшие доклады fpconf 2015</title>
+      <link>http://homeonrails.com/2016/01/the-best-of-fpconf-2015/</link>
+      <pubDate>Sat, 23 Jan 2016 11:15:07 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/01/the-best-of-fpconf-2015/</guid>
+      <description>&lt;p&gt;В прошлом году состоялась первая конференция, посвященная функциональному
+программированию - &lt;a href=&#34;http://fpconf.ru/&#34;&gt;fpconf&lt;/a&gt;. Судя по рассказам моих
+знакомых, подобралась неплохая компания и было несколько действительно крутых
+докладов. К счастью, вам не надо смотреть все выложенные видео, чтобы найти те
+самые доклады.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Дисклеймер: выбранные материалы и степень их крутости отражают личное мнение
+автора. Ваше мнение может отличаться.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Don Hertzfeldt</title>
+      <link>http://homeonrails.com/2016/01/don-hertzfeldt/</link>
+      <pubDate>Sat, 16 Jan 2016 11:51:55 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/01/don-hertzfeldt/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Don Hertzfeldt (born August 1, 1976) is a two-time Academy Award nominated
+animator, writer, and independent filmmaker. He is the creator of many animated
+films, including It&amp;rsquo;s Such a Beautiful Day, World of Tomorrow, The Meaning of
+Life, and Rejected. His films have received over 250 awards and have been
+presented around the world. Seven of his films have competed at the Sundance
+Film Festival, a festival record. He is also the only filmmaker to have won the
+Sundance Film Festival&amp;rsquo;s Grand Jury Prize for Short Film twice.&lt;/p&gt;
+
+&lt;p&gt;Hertzfeldt&amp;rsquo;s short films have been described as &amp;ldquo;&lt;strong&gt;some of the most influential
+animation ever created&lt;/strong&gt;,&amp;rdquo; and &amp;ldquo;&lt;strong&gt;some of the most vital and expressive animation
+of the millennium&lt;/strong&gt;.&amp;ldquo;&amp;rdquo; - Wikipedia&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #5</title>
+      <link>http://homeonrails.com/2016/01/monthly-art-number-5/</link>
+      <pubDate>Sat, 16 Jan 2016 11:30:22 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/01/monthly-art-number-5/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>December picks</title>
+      <link>http://homeonrails.com/2016/01/december-picks/</link>
+      <pubDate>Fri, 15 Jan 2016 21:15:49 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/01/december-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Советы собирающимся в Гонконг</title>
+      <link>http://homeonrails.com/2016/01/advices-for-hong-kong-travellers/</link>
+      <pubDate>Sun, 10 Jan 2016 20:57:21 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2016/01/advices-for-hong-kong-travellers/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-01-10-advices-for-hong-kong-travellers/hongkong.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Еще немного про именование переменных</title>
+      <link>http://homeonrails.com/2015/12/a-little-more-on-variable-naming/</link>
+      <pubDate>Mon, 14 Dec 2015 15:33:33 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/12/a-little-more-on-variable-naming/</guid>
+      <description>&lt;p&gt;Вообще, после того, как вы прочитаете &amp;ldquo;Совершенный код&amp;rdquo; Стива Макконнелла,
+вопросов как назвать ту или иную переменную быть не должно. Но есть некоторые
+моменты, которые не освещены в книге и нуждаются в обсуждении.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of RICON 2015</title>
+      <link>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</link>
+      <pubDate>Sun, 13 Dec 2015 10:16:59 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ricon.io/index.html&#34;&gt;RICON&lt;/a&gt; is all about distributed systems. There
+are a lot of academic (Phd) talks and a few practical ones. I&amp;rsquo;ve chosen 3 out
+of 37 videos, which I liked the most. Hope you&amp;rsquo;ll enjoy these too. &lt;em&gt;Disclaimer:
+your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #4</title>
+      <link>http://homeonrails.com/2015/12/monthly-art-number-4/</link>
+      <pubDate>Sat, 12 Dec 2015 13:55:10 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/12/monthly-art-number-4/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>November picks</title>
+      <link>http://homeonrails.com/2015/12/november-picks/</link>
+      <pubDate>Wed, 09 Dec 2015 19:43:27 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/12/november-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #3</title>
+      <link>http://homeonrails.com/2015/11/monthly-art-number-3/</link>
+      <pubDate>Tue, 10 Nov 2015 20:37:40 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/11/monthly-art-number-3/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Strange Loop 2015</title>
+      <link>http://homeonrails.com/2015/11/the-best-of-strange-loop-2015/</link>
+      <pubDate>Sat, 07 Nov 2015 16:10:26 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/11/the-best-of-strange-loop-2015/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is my top 5 &amp;ldquo;every year&amp;rdquo;
+conferences. There were &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaCIl5eU53uPBnRJ9rbIH32R&#34;&gt;many
+videos&lt;/a&gt;
+uploaded this year. Again, kudos to organizers for them. I think, I have found
+real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>October picks</title>
+      <link>http://homeonrails.com/2015/11/october-picks/</link>
+      <pubDate>Mon, 02 Nov 2015 23:34:32 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/11/october-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Не верь своему тимлиду</title>
+      <link>http://homeonrails.com/2015/10/dont-trust-your-devlead/</link>
+      <pubDate>Thu, 22 Oct 2015 10:16:35 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/10/dont-trust-your-devlead/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Не верь своему тимлиду&amp;rdquo; или когда не стоит слепо верить словам вашего тимлида.&lt;/p&gt;
+
+&lt;div style=&#34;align:center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Redis дропает события? Что?</title>
+      <link>http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</link>
+      <pubDate>Mon, 19 Oct 2015 14:00:26 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Redis дропает события? Что?&amp;rdquo; или поучительная история о том, как важно читать
+документацию.&lt;/p&gt;
+
+&lt;div style=&#34;align:center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #2</title>
+      <link>http://homeonrails.com/2015/10/monthly-art-number-2/</link>
+      <pubDate>Sun, 11 Oct 2015 11:33:09 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/10/monthly-art-number-2/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>September picks</title>
+      <link>http://homeonrails.com/2015/10/september-picks/</link>
+      <pubDate>Wed, 07 Oct 2015 11:14:55 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/10/september-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Best of Curry On 2015</title>
+      <link>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</link>
+      <pubDate>Mon, 14 Sep 2015 23:19:10 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
+(first time this year), which took place in Prague earlier in July. Despite its
+age, many good speakers happened to be there. Here is the list of my favorite
+talks. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monthly Art #1</title>
+      <link>http://homeonrails.com/2015/09/monthly-art-number-1/</link>
+      <pubDate>Thu, 10 Sep 2015 21:30:10 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/09/monthly-art-number-1/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>August picks</title>
+      <link>http://homeonrails.com/2015/09/august-picks/</link>
+      <pubDate>Mon, 07 Sep 2015 19:48:02 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/09/august-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The best of Erlang User Conference 2015</title>
+      <link>http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</link>
+      <pubDate>Mon, 10 Aug 2015 11:53:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</guid>
+      <description>&lt;p&gt;It’s been a few months since this year’s Erlang User Conference 2015, so most
+of the videos are now online (kudos to organizers). Here is a short list of my
+favorite talks. Enjoy!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>July Picks</title>
+      <link>http://homeonrails.com/2015/08/july-picks/</link>
+      <pubDate>Tue, 04 Aug 2015 09:07:21 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/08/july-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>From Ruby To Erlang. Beginner&#39;s mistakes</title>
+      <link>http://homeonrails.com/2015/08/from-ruby-to-erlang/</link>
+      <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
+months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
+are very different languages: OOP vs functional, mutable vs immutable and so
+on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is also true).&lt;/p&gt;
+
+&lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
+that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
+      <link>http://homeonrails.com/2015/07/testing-reducer/</link>
+      <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/07/testing-reducer/</guid>
+      <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
+project. Even though, it was pretty easy, I do confronted with a couple of
+errors.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>tmux / Автоматическое восстановление сессии</title>
+      <link>http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</link>
+      <pubDate>Fri, 17 Jul 2015 10:35:07 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
+      <description>&lt;p&gt;Не так давно собрался с силами, и настроил у себя в tmux автоматическое
+сохранение и восстановление последней сессии. По прошествии месяца могу с
+уверенностью сказать - просто бомба!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>June picks</title>
+      <link>http://homeonrails.com/2015/07/june-picks/</link>
+      <pubDate>Fri, 03 Jul 2015 10:59:59 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/07/june-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>4 Vim Plugins Nobody Knows About</title>
+      <link>http://homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</link>
+      <pubDate>Thu, 04 Jun 2015 22:53:15 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using these four plugins for a really long time. And they are
+wonderful. But each time coming on Github and seeing the number of stars, I
+think that few people actually know about them.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>May Picks</title>
+      <link>http://homeonrails.com/2015/06/may-picks/</link>
+      <pubDate>Mon, 01 Jun 2015 22:04:31 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/06/may-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заметки на полях: Изучай Erlang во имя добра!</title>
+      <link>http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</link>
+      <pubDate>Thu, 28 May 2015 11:51:25 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ferd&#34;&gt;Фред Хеберт&lt;/a&gt; - широко известный в Erlang сообществе
+программист. Он не только написал дюжину полезных утилит и приложений, но и
+замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;rdquo;&lt;/a&gt;, которая, к тому же,
+доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
+только начинает изучать Erlang. Но и более опытные разработчики с большой
+вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
+Distributed Erlang).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заметки на полях: Программирование в Erlang</title>
+      <link>http://homeonrails.com/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</link>
+      <pubDate>Sat, 23 May 2015 15:35:04 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</guid>
+      <description>&lt;p&gt;Решил начать новую серию постов. Каждая статья будет представлять из себя набор
+советов, инструментов, скриптов или просто умных мыслей из определенной книги.
+Читать книгу или нет? Это решать вам самим.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Erlang, HBase и Thrift</title>
+      <link>http://homeonrails.com/2015/05/erlang-hbase-and-thrift/</link>
+      <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
+      <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
+начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;REST&lt;/li&gt;
+&lt;li&gt;Thrift&lt;/li&gt;
+&lt;li&gt;C/C++ Apache HBase Client&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Разрабатываем ruby gem в docker контейнере</title>
+      <link>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
+      <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34; alt=&#34;&#34;/ width=&#34;450&#34; title=&#34;Разрабатываем ruby gem в docker контейнере&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,
+что я являюсь старым приверженцем Vagrant&amp;rsquo;а, на днях мне все же захотелось
+попробовать docker для одного из своих проектов -
+&lt;a href=&#34;https://github.com/kaize/valle&#34;&gt;Valle&lt;/a&gt;. Не без препонов, но все же удалось
+встроить docker в процесс. Далее последует руководство по разработке Ruby гема
+с использованием docker&amp;rsquo;а.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>April picks</title>
+      <link>http://homeonrails.com/2015/05/april-picks/</link>
+      <pubDate>Wed, 06 May 2015 23:19:11 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/05/april-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March picks</title>
+      <link>http://homeonrails.com/2015/04/march-picks/</link>
+      <pubDate>Tue, 14 Apr 2015 11:22:15 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/04/march-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Опции meck:new</title>
+      <link>http://homeonrails.com/2015/03/meck-new-options/</link>
+      <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/03/meck-new-options/</guid>
+      <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February Picks (2)</title>
+      <link>http://homeonrails.com/2015/03/february-picks/</link>
+      <pubDate>Mon, 02 Mar 2015 13:47:59 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/03/february-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shamrock</title>
+      <link>http://homeonrails.com/2015/02/shamrock/</link>
+      <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/02/shamrock/</guid>
+      <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
+и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
+написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
+сервер&lt;/a&gt;
+или выбрать один из существующих, и стартовать его на время тестов(а). А можно
+взять готовую библиотеку - &lt;a href=&#34;https://github.com/jsl/shamrock&#34;&gt;Shamrock&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Тестируем HTTP клиент на Java</title>
+      <link>http://homeonrails.com/2015/02/testing-http-client-in-java/</link>
+      <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/02/testing-http-client-in-java/</guid>
+      <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
+на Java. Он совсем простой и состоит буквально из одного метода -
+&lt;a href=&#34;https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.
+Поэтому я решил не использовать Apache&amp;rsquo;s HTTPClient и другие библиотеки, вроде
+Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
+нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February picks</title>
+      <link>http://homeonrails.com/2015/02/february-picks/</link>
+      <pubDate>Mon, 02 Feb 2015 10:45:11 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/02/february-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Как мнение о книге может меняться в течение 40 лет</title>
+      <link>http://homeonrails.com/2015/01/how-opinion-about-the-book-may-change-in-40-years/</link>
+      <pubDate>Sat, 17 Jan 2015 12:00:12 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/01/how-opinion-about-the-book-may-change-in-40-years/</guid>
+      <description>&lt;p style=&#34;margin-bottom:0;&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-01-17-how-opinion-about-the-book-may-change-in-40-years/catcher.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;Как мнение о книге может меняться в течение 40 лет&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;small&gt;&lt;a href=&#34;http://tulinovr.deviantart.com/art/rye-129185839&#34;&gt;(рисунок TulinovR с deviantart.com)&lt;/a&gt;&lt;/small&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Бывает, что книга, которую вы только что прочли, вам не понравилась. Но что
+будет через 5 лет? Изменится ли ваше мнение о ней? А через 10 лет? Ниже
+представлен перевод отзыва Mark Monday о книге &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B4_%D0%BF%D1%80%D0%BE%D0%BF%D0%B0%D1%81%D1%82%D1%8C%D1%8E_%D0%B2%D0%BE_%D1%80%D0%B6%D0%B8&#34;&gt;&amp;ldquo;Над пропастью во ржи&amp;rdquo;&lt;/a&gt;
+(англ. The Catcher inthe Rye). Автор написал его, вспоминая свои ощущения от
+книги, которую он перечитывал раз в 5 лет на протяжении 40 лет.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Writing to HBase from Hadoop Mapper</title>
+      <link>http://homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
+      <pubDate>Fri, 16 Jan 2015 15:48:49 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
+      <description>&lt;p&gt;Although Hadoop and HBase are often used together, not so many resources
+devoted to interaction between them. In the book &lt;a href=&#34;http://shop.oreilly.com/product/0636920014348.do&#34;&gt;&amp;ldquo;HBase: The Definitive
+Guide&amp;rdquo;&lt;/a&gt; there is a chapter
+named &amp;ldquo;MapReduce Integration&amp;rdquo;, which sheds some light on this. I would like to
+give you another example of the MR task that reads and writes to the same HBase
+table.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>January picks</title>
+      <link>http://homeonrails.com/2015/01/january-picks/</link>
+      <pubDate>Tue, 06 Jan 2015 12:19:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2015/01/january-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>5 Great Tools To Share Knowledge In a Team</title>
+      <link>http://homeonrails.com/2014/12/5-best-tools-to-share-knowledge-in-a-team/</link>
+      <pubDate>Sat, 13 Dec 2014 17:57:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/12/5-best-tools-to-share-knowledge-in-a-team/</guid>
+      <description>&lt;p&gt;Sharing knowledge in a team is one of the important factors of success of all
+its members and the company as a whole. What it can be? Any sorts of things:
+articles, videos, slides, thoughts on a particular tool - generally, any piece
+of useful information that you would like to share with your colleagues.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s why it&amp;rsquo;s important:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Each member of the team is &lt;strong&gt;growing&lt;/strong&gt; as a professional;&lt;/li&gt;
+&lt;li&gt;You &lt;strong&gt;communicate&lt;/strong&gt; with each other (this is especially important for
+distributed teams);&lt;/li&gt;
+&lt;li&gt;The senior colleagues share their &lt;strong&gt;experience&lt;/strong&gt; with the younger ones (by
+posting links to useful books or other materials and discussing certain
+decisions they&amp;rsquo;ve made in comments).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Specially for you guys, I picked the 5 best tools to help you put your team
+back on track.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>November picks</title>
+      <link>http://homeonrails.com/2014/12/november-picks/</link>
+      <pubDate>Mon, 01 Dec 2014 17:20:19 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/12/november-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Лучшие книги для саморазвития</title>
+      <link>http://homeonrails.com/2014/11/best-books-for-self-development/</link>
+      <pubDate>Sun, 30 Nov 2014 16:02:05 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/11/best-books-for-self-development/</guid>
+      <description>&lt;p&gt;Давненько я не писал о книгах, которые прочитал за прошедшее время. Что ж,
+давайте исправим это.&lt;/p&gt;
+
+&lt;p&gt;Недавно, один из моих друзей прислал мне &lt;a href=&#34;http://blog.mann-ivanov-ferber.ru/2014/06/18/luchshie-knigi-dlya-samorazvitiya/&#34;&gt;список книг&lt;/a&gt; для
+саморазвития по версии издательства Манн, Иванов и Фербер. Из всего списка я был
+знаком только с одной книгой - &amp;ldquo;Высшая цель&amp;rdquo;, которую прочитал будучи в гостях у
+&lt;a href=&#34;http://health-samurai.ru/&#34;&gt;Health Samurai&lt;/a&gt; в прекрасном городе на Неве.&lt;/p&gt;
+
+&lt;p&gt;Что же до остальных - о них я даже не слышал. А ведь большинство из низ обещало
+помочь эффективно распоряжаться своим временем, укрепить силу воли, избежать
+некоторых ловушек сознания и, в целом, стать успешнее. Звучит недурно, правда?
+В итоге, я решил прочесть всю (ну почти всю) линейку и вот какое мнение я
+составил о каждой книге.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stop Killing Developers Creativity</title>
+      <link>http://homeonrails.com/2014/11/stop-killing-developers-creativity/</link>
+      <pubDate>Sat, 22 Nov 2014 17:53:57 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/11/stop-killing-developers-creativity/</guid>
+      <description>&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Carlos?&lt;/p&gt;
+&lt;p style=&#34;color:#800000&#34;&gt;Carlos: Yes.&lt;/p&gt;
+&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Hi, my name is Andrea! You will be working on project X. Before you
+start, make sure you read pages A, B, and &#34;How do we work with tickets in Jira&#34;
+in our wiki.&lt;/p&gt;
+&lt;p style=&#34;color:#800000&#34;&gt;Carlos: No problem.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;When you start working on a ticket, press &amp;lsquo;Start Progress&amp;rsquo; - this will
+change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&amp;rsquo;re getting distracted from your work
+for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Carlos reads to himself&lt;/p&gt;
+
+&lt;p&gt;2 hours later&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Хайку о мозге</title>
+      <link>http://homeonrails.com/2014/11/brain-haiku-contest/</link>
+      <pubDate>Fri, 07 Nov 2014 22:05:06 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/11/brain-haiku-contest/</guid>
+      <description>&lt;p&gt;Сегодня принял участие в конкурсе от &lt;a href=&#34;http://www.lumosity.com/&#34;&gt;Lumosity&lt;/a&gt;. Для
+участия нужно было сочинить &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83&#34;&gt;хайку&lt;/a&gt; о своём мозге - что делает его
+уникальным, что тебе больше всего нравится в нём. Если честно, я уже и не помню
+когда в последний раз сочинял что-либо. Я имею ввиду реальную поэзию, а не тост
+на дне рождения у друга (тут конечно мы все мастера :).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Топ 3 ответов при собеседовании</title>
+      <link>http://homeonrails.com/2014/10/top-3-answers-at-interview/</link>
+      <pubDate>Sat, 04 Oct 2014 20:42:38 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/10/top-3-answers-at-interview/</guid>
+      <description>&lt;p&gt;Ни для кого не секрет, чтобы найти подходящего вам по всем параметрам
+сотрудника, нужно прособеседовать немалое количество кандидатов. К нам в Undev
+довольно часто приходят программисты, желающие попробовать себя в той или иной
+ипостаси. Иногда попадаются выдающиеся кадры! Представляю вам тройку лучших
+ответов на вопросы при собеседовании на моей памяти.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>September picks</title>
+      <link>http://homeonrails.com/2014/10/september-picks/</link>
+      <pubDate>Wed, 01 Oct 2014 14:47:51 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/10/september-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Краткий гайд по путешествиям</title>
+      <link>http://homeonrails.com/2014/09/short-traveling-guide/</link>
+      <pubDate>Wed, 17 Sep 2014 15:22:17 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/09/short-traveling-guide/</guid>
+      <description>&lt;p&gt;Частенько мне задают вопросы типа &amp;ldquo;Как съездить в другую страну не покупая
+тур?&amp;ldquo;. Так вот, я и решил написать заметку, где будет ясная последовательность
+шагов: что где посмотреть, о чем надо помнить и так далее.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>July Picks</title>
+      <link>http://homeonrails.com/2014/08/july-picks/</link>
+      <pubDate>Tue, 05 Aug 2014 20:45:46 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/08/july-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fish shell</title>
+      <link>http://homeonrails.com/2014/07/fish-shell/</link>
+      <pubDate>Tue, 15 Jul 2014 18:20:50 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/07/fish-shell/</guid>
+      <description>&lt;p&gt;Не так давно у меня появилось немножко свободного времени, и я решил посмотреть
+аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
+напротив, многие его фишки, включая подсветку, дополнение по Tab и
+автоматическое раскрытие путей, пришлись мне по душе.&lt;/p&gt;
+
+&lt;p&gt;Одновременно с этим &lt;a href=&#34;https://twitter.com/saratovsource&#34;&gt;@saratovsource&lt;/a&gt;
+намекнул, что пересел на Fish shell около полугода назад и вполне доволен.&lt;/p&gt;
+
+&lt;p&gt;{% img /images/posts/2014-07-15-fish-shell/logo.png %}&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Most popular posts</title>
+      <link>http://homeonrails.com/most-popular-posts/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>http://homeonrails.com/most-popular-posts/</guid>
+      <description>EN:
+ How to be productive with almost any text editor Why Do You Need a Pool Profiling in Erlang On the importance of unification Validating nested associations in Rails  RU:
+ Правильный подход к выбору работы Супер-пупер крутые статьи для разработчиков  Ещё из забавного:
+ Топ 3 ответов при собеседовании Отзыв о стуле Salli Chin Один месяц в Китае 5 New Tab Google Chrome extensions for productivity freaks  </description>
+    </item>
+    
+    <item>
+      <title>June picks</title>
+      <link>http://homeonrails.com/2014/07/june-picks/</link>
+      <pubDate>Wed, 02 Jul 2014 19:31:15 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/07/june-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim: Connect to Clojure nREPL inside the VM</title>
+      <link>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
+      <pubDate>Wed, 04 Jun 2014 12:11:45 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
+      <description>&lt;p&gt;For Vim to talk to nREPL we will be using fantastic
+&lt;a href=&#34;https://github.com/tpope/vim-fireplace&#34;&gt;fireplace.vim&lt;/a&gt; plugin. If you have
+Clojure installed locally, this plugin will connect to its nREPL automatically
+based on &lt;code&gt;.nrepl-port&lt;/code&gt;. But if you, like me, have Clojure inside the VM
+(VirtualBox or VMWare, or something else), you need to connect to its nREPL
+manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>May picks</title>
+      <link>http://homeonrails.com/2014/06/may-picks/</link>
+      <pubDate>Tue, 03 Jun 2014 09:58:07 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/06/may-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>April picks</title>
+      <link>http://homeonrails.com/2014/05/april-picks/</link>
+      <pubDate>Sat, 03 May 2014 10:31:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/05/april-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Почему стоит писать почему</title>
+      <link>http://homeonrails.com/2014/04/why-should-i-write-why/</link>
+      <pubDate>Tue, 15 Apr 2014 14:58:08 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/04/why-should-i-write-why/</guid>
+      <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
+&amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
+Author: Anton Kaliaev ...
+Date:   Mon Apr 14 13:20:06 2014 +0400
+
+    raise NoSlidesError if no slides
 &lt;/code&gt;&lt;/pre&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March picks</title>
+      <link>http://homeonrails.com/2014/04/march-picks/</link>
+      <pubDate>Sat, 05 Apr 2014 13:47:43 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/04/march-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ruby speed quiz explained</title>
+      <link>http://homeonrails.com/2014/04/ruby-speed-quiz-explained/</link>
+      <pubDate>Tue, 01 Apr 2014 23:47:38 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/04/ruby-speed-quiz-explained/</guid>
+      <description>&lt;p&gt;At the end of &lt;a href=&#34;http://homeonrails.com/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
+I did not expect that more than 900 Rubyists will give it a shot. I
+was surprised. Thanks to all who participated!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ruby speed quiz</title>
+      <link>http://homeonrails.com/2014/03/ruby-speed-quiz/</link>
+      <pubDate>Fri, 28 Mar 2014 12:13:48 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/03/ruby-speed-quiz/</guid>
+      <description>&lt;p&gt;For each case choose the fastest option.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February picks</title>
+      <link>http://homeonrails.com/2014/03/february-picks/</link>
+      <pubDate>Mon, 10 Mar 2014 11:45:03 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/03/february-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fast Rails API</title>
+      <link>http://homeonrails.com/2014/03/fast-rails-api/</link>
+      <pubDate>Sun, 09 Mar 2014 13:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
+      <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
+colleagues.&lt;/p&gt;
+
+&lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
+ending by using Fragment caching. Also there is list of tools for
+profiling applications (stackprof, etc.). All techniques are quite
+famous.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>January picks</title>
+      <link>http://homeonrails.com/2014/02/january-picks/</link>
+      <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/02/january-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>December picks</title>
+      <link>http://homeonrails.com/2014/01/december-picks/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/01/december-picks/</guid>
+      <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Copy and paste between Vim and OS</title>
+      <link>http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>
+      <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
+      <description>&lt;p&gt;When I first encountered this problem it slightly
+puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
+&lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;ldquo;- I asked myself. Indeed, the majority of source code editors
+able to do this. And yes, I got used to this dammit!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Покатушки 2013 - Банско, Болгария</title>
+      <link>http://homeonrails.com/2014/01/riding-in-bansko-2013/</link>
+      <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2014/01/riding-in-bansko-2013/</guid>
+      <description>На улице плюс 6, ярко светит послеобеденное солнце, в воздухе витают запахи печенных лепешек и кофе. Таким мне предстал небольшой и уютный городок Банско, расположенный у подножья Пирин. Это популярный у туристов из Европы и самих болгар горнолыжный курорт.
+&amp;nbsp;   &amp;nbsp; Поближе познакомиться с курортом можно здесь (цены там же). Отмечу только лишь то, что в начале и конце сезона цены ниже в 2 раза (на ски-пассы, одежду). Официально сезон начался в прошлом году 14 декабря.</description>
+    </item>
+    
+    <item>
+      <title>По следам RailsRumble 2013</title>
+      <link>http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</link>
+      <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</guid>
+      <description>В этом году я в очередной раз участвовал в RailsRumble. Если кто не в курсе, RailsRumble - это 48 часовой хакатон, в рамках которого команды со всего света соревнуются между собой путем написания Web-приложений на Ruby on Rails (или любого другого &#34;Rack based&#34; Web фреймворка). Идеи самые разнообразные! Например, есть приложение для сравнения новостей из разных источников (The New York Times VS Fox News), приложение для организаторов конференций, приложение которое показывает треки из видео на YouTube или Vimeo.</description>
+    </item>
+    
+    <item>
+      <title>10 команд, которыми вы пользуетесь чаще всего</title>
+      <link>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</link>
+      <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
+      <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
+замечать, что набираете некоторые команды по многу раз. Неужели вам не
+лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
+feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
+продуктивности своей работы, то в командной оболочке linux есть отличное средство,
+которое нам поможет - алиасы.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Выступление на Belarus Ruby Meetup 2013</title>
+      <link>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</link>
+      <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
+      <description>Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где прошла очередная встреча ruby разработчиков Belarus Ruby Meetup. Формат встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске. Однако, есть ряд особенностей и интересных вещей, о которых грех не упомянуть.
+  Скорее всего ввиду близости к Европе, среди спикеров регулярно появляются иностранные докладчики (на прошедшей встречи одним из них был Piotr Sarnacki (Warsaw), Rails контрибьютор и энтузиаст Ember.</description>
+    </item>
+    
+    <item>
+      <title>Готовые Vim сборки VS свои детища</title>
+      <link>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
+      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
+      <description>Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые возможности вкупе с расширенной плагинами функциональностью. В противоположность им, есть чистый .vimrc и ваша фантазия.
+ Что лучше выбрать для старта? Сборки позволяют быстро спрыгнуть с IDE на Vim. Хотя некоторые опытные вимеры считают, что правильным путем является &#34;Начало с нуля&#34;, когда вы постепенно улучшаете Vim каждый день, уча и привнося что-то новое.
+I still think the right path is to start with an unconfigured, stock Vim distribution, but to each their own.</description>
+    </item>
+    
+    <item>
+      <title>Об интерфейсе</title>
+      <link>http://homeonrails.com/2013/02/about-interface/</link>
+      <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/02/about-interface/</guid>
+      <description>&lt;p&gt;Проектирование взаимодействия все еще является достаточно молодой дисциплиной.
+Тем не менее, ее изучение может принести некоторую выгоду. Если вы разработчик,
+то она заставит вас взглянуть на продукт под другим углом, что в перспективе,
+откроет перед вами пути по улучшению пользовательского опыта.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kaizen philosophy (Initial commit)</title>
+      <link>http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</guid>
+      <description>&lt;p&gt;Обучение новичков всегда было не таким уж легким делом. Когда в команду
+приходят новые люди, их необходимо познакомить с основными подходами, техниками
+и интрументами, принятыми на вооружении. Каждая компания подходит к этому по
+разному. Кто-то проводит обучающие семинары, кто-то - отдает новоприбывших в
+руки более опытных коллег. (aka team leaders)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t do this at home on Rails #3</title>
+      <link>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
+      <pubDate>Sat, 05 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Languages: Ruby&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A lot of time has passed since my last post, so I decided to fix this
+little drawback. Next, we will discuss three small pieces of code,
+which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ruby&#39;s GC (RU)</title>
+      <link>http://homeonrails.com/2012/11/rubys-gc-ru/</link>
+      <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/11/rubys-gc-ru/</guid>
+      <description>&lt;p&gt;В последнее время в Кайдзен проходит все больше и больше внутренних докладов, в
+рамках которых каждый делится своими знаниями в той или иной области (к примеру
+доклад Александра Кириллова @saratovsource &lt;a href=&#34;http://www.slideshare.net/ssusercdd0ed/securing-rails-applications&#34;&gt;Securing Rails
+Applications&lt;/a&gt;).
+Докладчику это позволяет лишний раз потренироваться в искусстве публичных
+выступлений, аудитории же - набраться полезных знаний. Один из таких докладов я
+и представляю на ваш суд.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Null migration, or What to do when there are too many migrations</title>
+      <link>http://homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
+      <pubDate>Sun, 18 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
+      <description>&lt;p&gt;Migrations are probably one of the most killer features of ActiveRecord.
+They allow you to design the architecture of the database along with the
+growth of your project. If you change your data model (&lt;a href=&#34;http://martinfowler.com/eaaCatalog/domainModel.html&#34;&gt;Domain Model&lt;/a&gt;),
+you reflect that change in code and write a migration (or several migrations),
+which will make the necessary actions on your database schema. This may be
+creating a new table, deleting a column or adding an unique index.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tired of copying FactoryGirl sequences from project to project?</title>
+      <link>http://homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</link>
+      <pubDate>Thu, 15 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</guid>
+      <description>&lt;p&gt;Take a look at the
+&lt;a href=&#34;http://rubygems.org/gems/factory_girl_sequences&#34;&gt;factory_girl_sequences&lt;/a&gt; gem,
+which provides a basic set of the most common sequences.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t do this at home on Rails #2</title>
+      <link>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
+      <pubDate>Sat, 10 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Languages: Ruby&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Now is the time to break down the next three examples of code that look
+slightly chapped, and just beg to be retouched. Despite the apparent
+complexity, by running a series of easy refactorings, we can significantly
+improve the code: reduce the size, improve the readability and even
+increase its speed. Who knows?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AssociationCountValidator</title>
+      <link>http://homeonrails.com/2012/10/associationcountvalidator/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/10/associationcountvalidator/</guid>
+      <description>&lt;p&gt;As a result of my &lt;a href=&#34;http://homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
+about validating nested associations, I wrote custom validator for Rails 3.
+It is intended to help you to validate records count in a given association.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Validating nested associations in Rails</title>
+      <link>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</link>
+      <pubDate>Mon, 08 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
+This can be a simple form for one object, or the form for many related objects.
+Usually it is a parent-children relations. If you are not familiar with such terms
+as &lt;a href=&#34;http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#M001605&#34;&gt;form_for&lt;/a&gt;
+or &lt;a href=&#34;http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html#M002132&#34;&gt;accepts_nested_attributes_for&lt;/a&gt;,
+I strongly recommend taking a look at this article &lt;a href=&#34;http://rubysource.com/complex-rails-forms-with-nested-attributes/&#34;&gt;Complex Rails Forms with Nested Attributes&lt;/a&gt;,
+written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Автоматизация тестирования в RoR</title>
+      <link>http://homeonrails.com/2012/09/test-automation-in-ror/</link>
+      <pubDate>Sun, 30 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/09/test-automation-in-ror/</guid>
+      <description>&lt;p&gt;Буквально вчера я вернулся с конференции веб-разработчиков ЧЕБИТ&amp;rsquo;12-10. В этом
+году она проходила в баре &amp;ldquo;Манхеттен&amp;rdquo;, что придавало ей нотку закрытого
+подпольного казино для &amp;ldquo;своих&amp;rdquo;. Огромное спасибо за приглашение поучавствовать
+от Данила Письменного (@pismenny) и Ассоциации Региональных Веб-Разработчиков.
+Также хотелось бы отдельно упомянуть Александра Рожнова (@NOX_73) и
+поблагодарить за надежную доставку!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t do this at home on Rails #1</title>
+      <link>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
+      <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Languages: Ruby&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;These series of articles will be dedicated to every day code, that I am working on.
+This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

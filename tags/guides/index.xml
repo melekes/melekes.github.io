@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guides on Home on Rails</title>
-    <link>http://homeonrails.com/tags/guides/index.xml</link>
+    <link>http://homeonrails.com/tags/guides/</link>
     <description>Recent content in Guides on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/guides/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Sep 2014 15:22:17 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/guides/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Краткий гайд по путешествиям</title>
@@ -19,99 +22,7 @@
 тур?&amp;ldquo;. Так вот, я и решил написать заметку, где будет ясная последовательность
 шагов: что где посмотреть, о чем надо помнить и так далее.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;0-выбираем-куда-поехать&#34;&gt;0. Выбираем куда поехать&lt;/h2&gt;
-
-&lt;h2 id=&#34;1-покупаем-авиабилеты&#34;&gt;1. Покупаем авиабилеты&lt;/h2&gt;
-
-&lt;p&gt;Я в основном смотрю цены на 3 крупных агрегаторах:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.aviasales.ru/&#34;&gt;aviasales&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.skyscanner.ru/&#34;&gt;skyscanner&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.momondo.com/&#34;&gt;momondo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Недавно наткнулся на замечательный сервис, который помогает с выбором места в
-самолете - &lt;a href=&#34;http://www.seatguru.com/&#34;&gt;seatguru&lt;/a&gt;. Вы вбиваете номер своего рейса
-и получаете схему сидений в самолете. Желтым цветом выделены места, на которых
-вам может быть не очень комфортно лететь; к примеру, места прямо перед аварийным
-выходом, у которых нет возможности откинуть спинку сиденья.&lt;/p&gt;
-
-&lt;h2 id=&#34;2-ищем-жилье&#34;&gt;2. Ищем жилье&lt;/h2&gt;
-
-&lt;p&gt;Самый известный сервис - &lt;a href=&#34;http://www.booking.com/&#34;&gt;Booking.com&lt;/a&gt;. Иногда имеет
-смысл заглянуть на другие поисковики (типа &lt;a href=&#34;https://www.airbnb.com/&#34;&gt;Airbnb&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;При поиске конкретного вида можно зайти на специализированные сайты. Для
-хостелов есть вот такие:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.hostels.com/&#34;&gt;http://www.hostels.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.hostelsclub.com/&#34;&gt;http://www.hostelsclub.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;В Европе сейчас очень популярен сервис под названием
-&lt;a href=&#34;https://www.couchsurfing.org&#34;&gt;Couchsurfing&lt;/a&gt; - в переводе с английского &amp;ldquo;аренда
-дивана&amp;rdquo;. С помощью него можно довольно легко найти место для ночевки. Иногда это
-даже не диван, а отдельная комната с большой кроватью (обычно указывается в
-описании). Плюс некоторые хозяева не прочь показать родной город и рассказать об
-его истории. Существует также аналогичный сервис для передвижения по Европе -
-&lt;a href=&#34;http://www.blablacar.com/&#34;&gt;Bla Bla Car&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;3-оформляем-визу&#34;&gt;3. Оформляем визу&lt;/h2&gt;
-
-&lt;p&gt;Виза делается в визовом центре или в посольстве той страны, в которую мы
-собираемся поехать. В целом все довольно просто:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Заполняем анкету на получение визы&lt;/li&gt;
-&lt;li&gt;Собираем остальные необходимые документы: выписка со счета банка, бронь
-отеля, фотографии и т.п.&lt;/li&gt;
-&lt;li&gt;Распечатываем и относим документы в визовый центр (в случае с посольством надо
-предварительно записаться на прием)&lt;/li&gt;
-&lt;li&gt;Платим визовый сбор + сервисный сбор&lt;/li&gt;
-&lt;li&gt;Через неделю приходим и забираем паспорт&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Для жителей российской глубинки зачастую бывает дешевле и быстрее съездить в
-ближайший крупный город (например Самару, Москву и т.п.) или
-попросить друзей отвезти/забрать документы.&lt;/p&gt;
-
-&lt;p&gt;Для жителей Москвы и области существует серсис по доставке
-виз на дом - &lt;a href=&#34;https://www.visatohome.ru/&#34;&gt;visatohome&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;4-вспоминаем-о-еще-паре-мелочей&#34;&gt;4. Вспоминаем о еще паре мелочей&lt;/h2&gt;
-
-&lt;h3 id=&#34;а-страховка&#34;&gt;а) Страховка&lt;/h3&gt;
-
-&lt;p&gt;У большинства страховых компаний сейчас можно оформить полис онлайн.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.alfastrah.ru/&#34;&gt;http://www.alfastrah.ru/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.renins.com/&#34;&gt;http://www.renins.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;б-прививки-если-требуются-базовый-набор-лекарственных-средств&#34;&gt;б) Прививки (если требуются) + базовый набор лекарственных средств&lt;/h3&gt;
-
-&lt;h3 id=&#34;в-наличные&#34;&gt;в) Наличные&lt;/h3&gt;
-
-&lt;p&gt;Мне кажется сейчас даже в самой большой дыре можно найти банкомат. Недавно был
-на острове Флорес в Индонезии. Там от деревни до ближайшего банкомата 12 км. -
-на байке несколько минут.&lt;/p&gt;
-
-&lt;p&gt;Обычно имеет смысл взять с собой 100 баксов/евро наличными для мелких трат по
-пути.&lt;/p&gt;
-
-&lt;h2 id=&#34;5-другие-вопросы&#34;&gt;5. Другие вопросы&lt;/h2&gt;
-
-&lt;p&gt;Вообще есть куча форумов для путешественников, где можно найти ответы на все
-интересующие вас вопросы, типа как добраться от аэропорта в центр, что
-обязательно к посещению и другие). Я перед поездкой обычно пролистываю &lt;a href=&#34;http://forum.awd.ru/&#34;&gt;Форум
-Винского&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Счастливого пути!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

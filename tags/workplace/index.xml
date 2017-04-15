@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workplace on Home on Rails</title>
-    <link>http://homeonrails.com/tags/workplace/index.xml</link>
+    <link>http://homeonrails.com/tags/workplace/</link>
     <description>Recent content in Workplace on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/workplace/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2016 10:03:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/workplace/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Отзыв о стуле Salli Chin</title>
@@ -17,58 +20,7 @@
       <guid>http://homeonrails.com/2016/07/salli-chin-review/</guid>
       <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-09-salli-chin-review/salli1.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Несколько дней тестировал данный стул - &lt;a href=&#34;http://salli.com/en/salli-chin&#34;&gt;http://salli.com/en/salli-chin&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ну как стул, седло. Придумал его мужик из Финляндии, любитель верховой езды. Если зайти на &lt;a href=&#34;http://salli.com/en&#34;&gt;их сайт&lt;/a&gt;, можно увидеть кучу плюшек:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;здоровая поясница&lt;/li&gt;
-&lt;li&gt;гениталии не сдавливаются (актуально для мужиков)&lt;/li&gt;
-&lt;li&gt;меньше шанс заработать геморрой&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Чувствуешь себя реально как в седле на лошади :) То, что спина ровная,
-замечаешь сразу. По другому сидеть попросту не получается. При этом чуть
-напрягается пресс. Но это даже хорошо (в обычном кресле он почти всегда в
-расслабленном состоянии).&lt;/p&gt;
-
-&lt;p&gt;Непонятно зачем спинка. Облокотиться на нее не получается. Только потянуться
-разве что, хотя опять же лучше встать, пройтись.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-09-salli-chin-review/salli2.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Сидеть удобно, но &lt;strong&gt;некий дискомфорт все же присутствует&lt;/strong&gt; (по крайней мере у
-меня). Думается, это из-за того что стул состоит из 2 половинок и ветви
-седалищной кости упираются в ребра частей стула. Долго сидеть на нем не
-получалось, максимум минут 40.&lt;/p&gt;
-
-&lt;p&gt;Еще плюсы:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;вставать легче (так как стул выше)&lt;/li&gt;
-&lt;li&gt;кресло регулируется по высоте и наклону&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-09-salli-chin-review/salli3.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Еще минусы:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;стоимость (~ 30 000 руб.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Я бы сказал, что стулья данной серии не для всех и неплохо бы посидеть на нем
-день-два перед покупкой. У ergostol.ru есть помещение (&amp;ldquo;шоу-рум&amp;rdquo;) в Москве,
-может можно договорится на пару дней взять оттуда.&lt;/p&gt;
-
-&lt;p&gt;Еще отзывы:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://irecommend.ru/content/ortopedicheskii-stul-ne-dlya-vsekh&#34;&gt;http://irecommend.ru/content/ortopedicheskii-stul-ne-dlya-vsekh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ladywow.ru/nashe-zdorove/stul-sedlo-dlya-nashej-spiny/&#34;&gt;http://www.ladywow.ru/nashe-zdorove/stul-sedlo-dlya-nashej-spiny/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

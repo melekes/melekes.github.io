@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thrift on Home on Rails</title>
-    <link>http://homeonrails.com/tags/thrift/index.xml</link>
+    <link>http://homeonrails.com/tags/thrift/</link>
     <description>Recent content in Thrift on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/thrift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 May 2015 13:30:47 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/thrift/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Erlang, HBase и Thrift</title>
@@ -24,196 +27,7 @@
 &lt;li&gt;C/C++ Apache HBase Client&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Истории ради отмечу, что когда-то, давным давно, был шлюз для &lt;a href=&#34;http://en.wikipedia.org/wiki/Apache_Avro&#34;&gt;Avro&lt;/a&gt;. Но в
-начале 2013 он канул в лету.&lt;/p&gt;
-
-&lt;p&gt;{% blockquote &lt;a href=&#34;http://comments.gmane.org/gmane.comp.java.hadoop.hbase.user/32617&#34;&gt;http://comments.gmane.org/gmane.comp.java.hadoop.hbase.user/32617&lt;/a&gt; %}
-We removed the Avro gateway because the implementation as contributed was a work in progress that was not subsequently maintained.
-{% endblockquote %}&lt;/p&gt;
-
-&lt;p&gt;Третья опция отпадает, потому как ссылка битая - &lt;a href=&#34;http://hbase.apache.org/book.html#c&#34;&gt;см. официальную
-документацию&lt;/a&gt;. Видимо, в Facebook решили прекратить поддержку этого клиента.
-Тем более, по &lt;a href=&#34;http://stackoverflow.com/a/13755031/820520&#34;&gt;словам пользователя stackoverflow&lt;/a&gt;, под капотом он (клиент)
-вызывал Thrift API. А еще один уровень нам ни к чему.&lt;/p&gt;
-
-&lt;p&gt;Таким образом, остаются REST и Thrift.&lt;/p&gt;
-
-&lt;h1 id=&#34;rest&#34;&gt;Rest&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.apache.org/hadoop/Hbase/Stargate&#34;&gt;Stargate&lt;/a&gt; (REST сервер) поддерживает 3 формата передачи данных - XML, JSON
-и protobufs. В целом он выглядит довольно симпатично, но а) проигрывает
-thrift&amp;rsquo;у по скорости (особенно xml и json, которые тащат за собой схему) б)
-могут отсутствовать некоторые параметры для требуемого вам метода.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-05-16-erlang-hbase-and-thrift/thrift-vs-rest1.png&#34; alt=&#34;&#34;/ width=&#34;450&#34; title=&#34;Program completion time (in seconds)&#34;&gt;
-&lt;small&gt;
-(Program completion time (in seconds) &lt;a href=&#34;http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/&#34;&gt;http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/&lt;/a&gt;&lt;/a&gt;)
-&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;Например, в protobuf схеме вы не найдете &lt;code&gt;filter&lt;/code&gt;, которые может быть нужен при выполнении &lt;code&gt;Scan&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-proto&#34;&gt;message Scanner {
-  optional bytes startRow = 1;
-  optional bytes endRow = 2;
-  repeated bytes columns = 3;
-  optional int32 batch = 4;
-  optional int64 startTime = 5;
-  optional int64 endTime = 6;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Хотя в XML схеме он присутствует:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;complexType name=&amp;quot;Scanner&amp;quot;&amp;gt;
-    ...
-    &amp;lt;sequence&amp;gt;
-        &amp;lt;element name=&amp;quot;filter&amp;quot; type=&amp;quot;string&amp;quot; minOccurs=&amp;quot;0&amp;quot; maxOccurs=&amp;quot;1&amp;quot;&amp;gt;&amp;lt;/element&amp;gt;
-    &amp;lt;/sequence&amp;gt;
-    &amp;lt;attribute name=&amp;quot;startRow&amp;quot; type=&amp;quot;base64Binary&amp;quot;&amp;gt;&amp;lt;/attribute&amp;gt;
-    &amp;lt;attribute name=&amp;quot;endRow&amp;quot; type=&amp;quot;base64Binary&amp;quot;&amp;gt;&amp;lt;/attribute&amp;gt;
-    ...
-&amp;lt;/complexType&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Если скорость для вас не критична, можно смело выбирать REST (REST плюс
-protobufs может быть неплохим выбором). Хотя, лучше перед этим убедиться, что
-все требуемые параметры (для ваших запросов) присутствуют и проблем здесь не
-возникнет.&lt;/p&gt;
-
-&lt;h1 id=&#34;thrift&#34;&gt;Thrift&lt;/h1&gt;
-
-&lt;p&gt;У Thrift 2 недостатка:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://thrift.apache.org/lib/erl&#34;&gt;документации&lt;/a&gt; считай нет&lt;/li&gt;
-&lt;li&gt;выглядит он ужасно (просьба любителей прекрасного кода на время
-просмотра запастись успокоительными средствами)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Давайте рассмотрим типовые операции при работе с HBase.&lt;/p&gt;
-
-&lt;p&gt;Для начала создадим тестовую табличку:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ~/hbase/bin/hbase shell
-...
-hbase(main):001:0&amp;gt; create &#39;users&#39;, &#39;data&#39;
-hbase(main):007:0&amp;gt; put &#39;users&#39;, &#39;mike&#39;, &#39;data:age&#39;, 15
-hbase(main):007:0&amp;gt; put &#39;users&#39;, &#39;mike&#39;, &#39;data:sex&#39;, &#39;male&#39;
-hbase(main):007:0&amp;gt; put &#39;users&#39;, &#39;caleb&#39;, &#39;data:age&#39;, 21
-hbase(main):007:0&amp;gt; put &#39;users&#39;, &#39;caleb&#39;, &#39;data:sex&#39;, &#39;male&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;get&#34;&gt;Get&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;{ok, C0} = thrift_client_util:new(&amp;quot;localhost&amp;quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
-{C1, {ok, Results}} = thrift_client:call(C0, getRowWithColumns, [&amp;quot;users&amp;quot;, &amp;quot;mike&amp;quot;, [&amp;quot;data:age&amp;quot;, &amp;quot;data:sex&amp;quot;], dict:new()]),
-=&amp;gt; [{&#39;TRowResult&#39;,&amp;lt;&amp;lt;&amp;quot;mike&amp;quot;&amp;gt;&amp;gt;,
-               {dict,2,16,16,8,80,48,
-                     {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
-                     \{\{[],[],
-                       [[&amp;lt;&amp;lt;&amp;quot;data:sex&amp;quot;&amp;gt;&amp;gt;|{&#39;TCell&#39;,&amp;lt;&amp;lt;&amp;quot;male&amp;quot;&amp;gt;&amp;gt;,1432370741107}]],
-                       [],[],[],[],[],[],[],[],[],[],[],[],...\}\}},
-               undefined}]
-thrift_client:close(C1).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;В первой строке мы устанавливаем соединение. Стоит обратить внимание на 2 вещи:
-connect_timeout - таймаут на соединение, и hbase_thrift - имя нашего приложения
-(обычно == OTP application name). Далее мы забираем строку с интересующими нас
-столбцами по ключу.&lt;/p&gt;
-
-&lt;h3 id=&#34;put&#34;&gt;Put&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;{ok, C0} = thrift_client_util:new(&amp;quot;localhost&amp;quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
-Mutations = [#&#39;Mutation&#39;{column= &amp;quot;data:age&amp;quot;, value= &amp;lt;&amp;lt;&amp;quot;17&amp;quot;&amp;gt;&amp;gt;}]
-{C1, {ok, _}} = thrift_client:call(C0, mutateRow, [&amp;quot;users&amp;quot;, &amp;quot;mike&amp;quot;, Mutations, dict:new()]),
-thrift_client:close(C1).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Новое значение для столбца в записи #&amp;lsquo;Mutation&amp;rsquo; может быть либо строкой, либо
-binary (&amp;lt;&amp;lt;&amp;ldquo;17&amp;rdquo;&amp;gt;&amp;gt;).&lt;/p&gt;
-
-&lt;h3 id=&#34;scan&#34;&gt;Scan&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;{ok, C0} = thrift_client_util:new(&amp;quot;localhost&amp;quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
-Scan = #&#39;TScan&#39;{&#39;columns&#39;=[&amp;quot;data:sex&amp;quot;]},
-{C1, {ok, ScannerId}} = thrift_client:call(C0, scannerOpenWithScan, [&amp;quot;users&amp;quot;, Scan, dict:new()]),
-{C2, {ok, Results}} = thrift_client:call(C1, scannerGetList, [ScannerId, 10]),
-=&amp;gt; [#&#39;TRowResult&#39;{row = &amp;lt;&amp;lt;&amp;quot;caleb&amp;quot;&amp;gt;&amp;gt;,
-               columns = {dict,1,16,16,8,80,48,
-                               {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
-                               \{\{[],[],
-                                 [[&amp;lt;&amp;lt;&amp;quot;data:sex&amp;quot;&amp;gt;&amp;gt;|
-                                   #&#39;TCell&#39;{value = &amp;lt;&amp;lt;&amp;quot;male&amp;quot;&amp;gt;&amp;gt;,timestamp = 1432372800621}]],
-                                 [],[],[],[],[],[],[],[],[],[],[],[],...\}\}},
-               sortedColumns = undefined},
-    #&#39;TRowResult&#39;{row = &amp;lt;&amp;lt;&amp;quot;mike&amp;quot;&amp;gt;&amp;gt;,
-               columns = {dict,1,16,16,8,80,48,
-                               {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
-                               \{\{[],[],
-                                 [[&amp;lt;&amp;lt;&amp;quot;data:sex&amp;quot;&amp;gt;&amp;gt;|
-                                   #&#39;TCell&#39;{value = &amp;lt;&amp;lt;&amp;quot;male&amp;quot;&amp;gt;&amp;gt;,timestamp = 1432370741107}]],
-                                 [],[],[],[],[],[],[],[],[],[],[],...\}\}},
-               sortedColumns = undefined}]
-{C3, {ok, _}} = thrift_client:call(C2, scannerClose, [ScannerId]),
-thrift_client:close(C3).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;У #&amp;lsquo;Scan&amp;rsquo; можно задать не только столбцы, но и другие параметры: стартовую
-строку, конечную строку, фильтр (рассмотрен ниже).&lt;/p&gt;
-
-&lt;h3 id=&#34;scan-с-фильтром-и-начальной-строкой&#34;&gt;Scan с фильтром и начальной строкой&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;{ok, C0} = thrift_client_util:new(&amp;quot;localhost&amp;quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
-FilterString = &amp;quot;(SingleColumnValueFilter(&#39;data&#39;, &#39;sex&#39;, =, &#39;binary:male&#39;, true, true))&amp;quot;,
-Scan = #&#39;TScan&#39;{&#39;filterString&#39;=FilterString,&#39;startRow&#39;=&amp;quot;caleb1&amp;quot;,&#39;columns&#39;=[&amp;quot;data:sex&amp;quot;]},
-{C1, {ok, ScannerId}} = thrift_client:call(C0, scannerOpenWithScan, [&amp;quot;users&amp;quot;, Scan, dict:new()]),
-{C2, {ok, Results}} = thrift_client:call(C1, scannerGetList, [ScannerId, 10]),
-=&amp;gt; [#&#39;TRowResult&#39;{row = &amp;lt;&amp;lt;&amp;quot;mike&amp;quot;&amp;gt;&amp;gt;,
-               columns = {dict,1,16,16,8,80,48,
-                               {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
-                               \{\{[],[],
-                                 [[&amp;lt;&amp;lt;&amp;quot;data:sex&amp;quot;&amp;gt;&amp;gt;|
-                                   #&#39;TCell&#39;{value = &amp;lt;&amp;lt;&amp;quot;male&amp;quot;&amp;gt;&amp;gt;,timestamp = 1432370741107}]],
-                                 [],[],[],[],[],[],[],[],[],[],[],[],...\}\}},
-               sortedColumns = undefined}]
-{C3, {ok, _}} = thrift_client:call(C2, scannerClose, [ScannerId]),
-thrift_client:close(C3).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Здесь мы фильтруем всех пользователей по атрибуту sex. Последние 2 параметра
-сообщают HBase, что надо исключить из результирующей выборки строки, где данный
-атрибут отсутствует и забрать только последнюю версию (по умолчанию HBase
-хранит 5 версий). &lt;a href=&#34;https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/filter/SingleColumnValueFilter.html&#34;&gt;Документация по
-SingleColumnValueFilter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Обратите также внимание на значение startRow - &lt;code&gt;caleb1&lt;/code&gt;. Постфикс (1 байт в
-конце) нужен для того, чтобы не включать данную строку в результат.&lt;/p&gt;
-
-&lt;h3 id=&#34;delete&#34;&gt;Delete&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-erlang&#34;&gt;{ok, C0} = thrift_client_util:new(&amp;quot;localhost&amp;quot;, 9090, hbase_thrift, [{connect_timeout, 5000}]),
-{C1, {ok, _}} = thrift_client:call(C0, deleteAll, [&amp;quot;users&amp;quot;, &amp;quot;caleb&amp;quot;, &amp;quot;data:age&amp;quot;, dict:new()]),
-thrift_client:close(C1).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;удалит столбец age (все версии) у пользователя caleb.&lt;/p&gt;
-
-&lt;h1 id=&#34;заключение&#34;&gt;Заключение&lt;/h1&gt;
-
-&lt;p&gt;С Thrift&amp;rsquo;ом работать можно, если приноровиться. Конечно, проблемы еще есть
-(&lt;a href=&#34;https://issues.apache.org/jira/browse/THRIFT-2842https://issues.apache.org/jira/browse/THRIFT-2842&#34;&gt;https://issues.apache.org/jira/browse/THRIFT-2842https://issues.apache.org/jira/browse/THRIFT-2842&lt;/a&gt;),
-но они решаются.&lt;/p&gt;
-
-&lt;p&gt;Полезные ссылки:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://wiki.apache.org/hadoop/Hbase/ThriftApi&#34;&gt;http://wiki.apache.org/hadoop/Hbase/ThriftApi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://rambocoder.com/?p=142&#34;&gt;http://rambocoder.com/?p=142&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kungfooguru.wordpress.com/2009/08/31/erlang-thrift-and-hbase/&#34;&gt;http://kungfooguru.wordpress.com/2009/08/31/erlang-thrift-and-hbase/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

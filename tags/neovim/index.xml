@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neovim on Home on Rails</title>
-    <link>http://homeonrails.com/tags/neovim/index.xml</link>
+    <link>http://homeonrails.com/tags/neovim/</link>
     <description>Recent content in Neovim on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jul 2015 10:35:07 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>tmux / Автоматическое восстановление сессии</title>
@@ -19,80 +22,7 @@
 сохранение и восстановление последней сессии. По прошествии месяца могу с
 уверенностью сказать - просто бомба!&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-07-17-tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/ILKC62E3GC.jpg&#34; alt=&#34;&#34;/ width=&#34;694&#34; title=&#34;tmux / Автоматическое восстановление сессии&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Представьте себе, вы выключили компьютер (не все так поступают, я знаю) и
-отправились домой. Вечером, отправив жену готовить борщ, и удобно устроившись
-на любимом диване, предварительно включив теплый ламповый свет, вы открываете
-свой лэптоп, запускаете shell и вуаля - &lt;strong&gt;все сплиты на том же самом месте, где
-они и были в последний раз. Более того, Vim уже запущен и курсор стоит на той
-же строке, где он и был в последний раз&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Для того, чтобы данное чудо заработало и у вас, нам потребуется &lt;a href=&#34;https://github.com/tmux-plugins/tpm&#34;&gt;Tmux Plugin
-Manager&lt;/a&gt; (сокращенно, tpm):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;(примечание: нужен tmux &amp;gt;= 1.9)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Теперь добавим следующее в конец .tmux.conf:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# .tmux.conf
-
-set -g @plugin &#39;tmux-plugins/tpm&#39;
-set -g @plugin &#39;tmux-plugins/tmux-sensible&#39;
-set -g @plugin &#39;tmux-plugins/tmux-resurrect&#39;
-set -g @plugin &#39;tmux-plugins/tmux-continuum&#39;
-
-run &#39;~/.tmux/plugins/tpm/tpm&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Далее остается только загрузить наши изменения и установить плагины:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ tmux source ~/.tmux.conf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Для установки плагинов нажмите &lt;code&gt;prefix - I&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Для комфортной работы стоит добавить пару опций. По умолчанию, tmux-continuum
-(плагин, который автоматически сохраняет tmux окружение) не восстанавливает его
-при запуске tmux. Что ж, исправим это недоразумение:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# .tmux.conf
-
-set -g @continuum-restore &#39;on&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Для того, чтобы при загрузке восстанавливались Vim (Neovim) сессии, нужно&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;установить плагин &lt;a href=&#34;https://github.com/tpope/vim-obsession&#34;&gt;https://github.com/tpope/vim-obsession&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;добавить пару строк в .tmux.conf:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;# .tmux.conf
-
-# for vim
-set -g @resurrect-strategy-vim &#39;session&#39;
-# for neovim
-set -g @resurrect-strategy-nvim &#39;session&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Стоит отметить, что можно стартовать не только Vim, но и любые другие программы
-- ssh, psql, rails console, которые были запущены в прошлый раз. Для этого,
-  правда, надо добавить их в конфиг:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# .tmux.conf
-
-set -g @resurrect-processes &#39;ssh psql mysql sqlite3&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Также у данного плагина (&lt;a href=&#34;https://github.com/tmux-plugins/tmux-resurrect&#34;&gt;https://github.com/tmux-plugins/tmux-resurrect&lt;/a&gt;) есть и
-несколько интересных экспериментальный опций, таких как сохранение истории для
-каждого сплита и сохранение его содержимого.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

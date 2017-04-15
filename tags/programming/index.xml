@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Home on Rails</title>
-    <link>http://homeonrails.com/tags/programming/index.xml</link>
+    <link>http://homeonrails.com/tags/programming/</link>
     <description>Recent content in Programming on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Oct 2016 13:33:36 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>The Best of Erlang User Conference 2016</title>
@@ -21,43 +24,7 @@ sharing them with the community.&lt;/p&gt;
 &lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-erlang-and-deep-learning&#34;&gt;1. Erlang and Deep Learning&lt;/h1&gt;
-
-&lt;p&gt;by Garrett Smith (47 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/iMhBEVCgPdg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;An example of a very good presentation. After watching, I immediately wanted to learn more about deep learning.&lt;/p&gt;
-
-&lt;h1 id=&#34;2-rethinking-the-language-runtime-for-scale&#34;&gt;2. Rethinking the Language Runtime for Scale&lt;/h1&gt;
-
-&lt;p&gt;by Christopher Meiklejohn (45 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SXT_fVJOkD0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Christopher continues his series of presentations about the Lasp lang and its runtime system.&lt;/p&gt;
-
-&lt;h1 id=&#34;3-going-barking-mad-with-dalmatinerdb&#34;&gt;3. Going Barking Mad with DalmatinerDB&lt;/h1&gt;
-
-&lt;p&gt;by Steven Acreman and Heinz Gies (42 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/1lC8m3omo4I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-think-outside-the-vm-unobtrusive-performance-measurement&#34;&gt;4. Think Outside the VM: Unobtrusive Performance Measurement&lt;/h1&gt;
-
-&lt;p&gt;by Julian Squires (44 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xP2yzaYdjpo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
-
-&lt;p&gt;If you are an Erlang/Elixir/LFE developer and want to help, watch &lt;a href=&#34;https://www.youtube.com/watch?v=Z28SDd9bXcE&#34;&gt;How things are, and how they could be by Fred Hebert&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Russel Brown has a &lt;a href=&#34;https://www.youtube.com/watch?v=f20882ZSdkU&#34;&gt;nice talk on CRDT in Riak&lt;/a&gt; - what they&amp;rsquo;ve already implemented and future plans.&lt;/p&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t know what LFE is, watch &lt;a href=&#34;https://www.youtube.com/watch?v=x2ysisqgd2g&#34;&gt;LFE: A Real Lisp in the Erlang Ecosystem by Robert Virding&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,60 +39,7 @@ YouTube&lt;/a&gt;.
 Again, thank you to organizers for sharing them. I think, I have found real
 gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-agility-robustness-clojure-spec&#34;&gt;1. Agility &amp;amp; Robustness: Clojure spec&lt;/h1&gt;
-
-&lt;p&gt;by Stuart Halloway (40 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VNTQ-M_uSo8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;2-reasoning-about-performance-in-the-context-of-search&#34;&gt;2. Reasoning about performance (in the context of search)&lt;/h1&gt;
-
-&lt;p&gt;by Dan Luu (30 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/80LKF2qph6I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;3-point-free-or-die-tacit-programming-in-haskell-and-beyond&#34;&gt;3. Point-Free or Die: Tacit Programming in Haskell and Beyond&lt;/h1&gt;
-
-&lt;p&gt;by Amar Shah (36 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/seVSlKazsNk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-graphql-designing-a-data-language&#34;&gt;4. GraphQL: Designing a Data Language&lt;/h1&gt;
-
-&lt;p&gt;by Lee Byron (40 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Oh5oC98ztvI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;5-runtime-scheduling-theory-and-reality&#34;&gt;5. Runtime scheduling: theory and reality&lt;/h1&gt;
-
-&lt;p&gt;by Eben Freeman (42 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8g9fG7cApbc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;want-more&#34;&gt;Want more?&lt;/h2&gt;
-
-&lt;p&gt;If you are curious about data structures, watch &lt;a href=&#34;https://www.youtube.com/watch?v=jdn617M3-P4&#34;&gt;&amp;ldquo;Exotic Functional Data
-Structures: Hitchhiker Trees&amp;rdquo; by David
-Greenberg&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There is a nice intro to data processing systems - &lt;a href=&#34;https://www.youtube.com/watch?v=oaxBY-e9ZSg&#34;&gt;&amp;ldquo;Deep dive into
-Unbounded Data Processing Systems&amp;rdquo; by Monal
-Daxini&lt;/a&gt;. Apparently, Netflix is
-switching from their own custom solution, which uses Kafka and Samza, to Flink
-and thinking about Apache Beam.&lt;/p&gt;
-
-&lt;p&gt;If you are writing distributed task scheduler, watch &lt;a href=&#34;https://www.youtube.com/watch?v=s3GfXTnzG_Y&#34;&gt;&amp;ldquo;Building a Distributed
-Task Scheduler With Akka, Kafka, and Cassandra&amp;rdquo; by David van
-Geest&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you want to know how Golang detect data races (hint: using vector clocks),
-take a look at &lt;a href=&#34;https://www.youtube.com/watch?v=5erqWdlhQLA&#34;&gt;&amp;rdquo;&amp;ldquo;go test -race&amp;rdquo; Under the Hood&amp;rdquo; by Kavya
-Joshi&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And there is one more good &lt;a href=&#34;https://www.youtube.com/watch?v=B1-gS0oEtYc&#34;&gt;talk on CQRS and Event Sourcing by Bobby
-Calderwood&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -139,53 +53,7 @@ to deal with a problem. And, in some cases, it is crucial.&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png&#34; alt=&#34;It&#39;s important to have only one instrument for solving a problem.&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;example-1&#34;&gt;Example #1&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;rsquo;s look at the design of the Go programming language. In one of my favorite
-talks, &amp;ldquo;Simplicity is Complicated&amp;rdquo;, Rob Pike says: &amp;ldquo;A lot of people have asked
-for things like map and filter to be built into Go and we said no&amp;rdquo;. He gave
-  this example while talking about the expense feature(s) may have, but I think
-  it also applies to the quote below.&lt;/p&gt;
-
-&lt;p&gt;{% blockquote Rob Pike %}
-If there is a lot of features, you may look at the line of code, write it one
-way. &amp;ldquo;Uu, I could do something different.&amp;rdquo; You might even spend half an hour
-playing with a few lines of code&amp;hellip; and it&amp;rsquo;s kind of a waste of time to do it,
-but worse, when you come back to the program later, you have to recreate that
-thought process.&lt;/p&gt;
-
-&lt;p&gt;Preferable to have just one way, or at least fewer, simpler ways.
-{% endblockquote %}&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/rFejpH_tAHM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Highly recommend watching this video.&lt;/p&gt;
-
-&lt;h2 id=&#34;example-2&#34;&gt;Example #2&lt;/h2&gt;
-
-&lt;p&gt;At FunBox, the company I was working for, we had only one way to deploy the
-code - &lt;a href=&#34;https://github.com/capistrano/capistrano&#34;&gt;Capistrano&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We were using many languages (Ruby, Erlang, Clojure, Elixir). Each of those was
-packaged differently (raw, release, .tar, release), but there was only one
-deploy method. And it was great! &lt;strong&gt;You, as the programmer, do not think how to
-deploy a project&lt;/strong&gt;, you simply type &lt;code&gt;bundle exec cap production deploy&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Capistrano itself may not be the best choice, but it&amp;rsquo;s not so important,
-comparing to what we&amp;rsquo;re talking about.&lt;/p&gt;
-
-&lt;h2 id=&#34;example-3&#34;&gt;Example #3&lt;/h2&gt;
-
-&lt;p&gt;Another example may be using &lt;a href=&#34;http://linux.die.net/man/1/make&#34;&gt;make&lt;/a&gt; as a build
-tool for all of your projects. Again, if you have many languages (e.g.
-JavaScript on the frontend and Go on the backend), the cost of having 2
-different ways to test/build/etc. may be too high. To ease the development, you
-could create a Makefile and have a single target for testing (say, &lt;code&gt;make
-test&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;If you have any comments, you could leave them below or send me an email.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -196,53 +64,7 @@ test&lt;/code&gt;).&lt;/p&gt;
       <guid>http://homeonrails.com/2016/07/why-do-you-need-a-pool/</guid>
       <description>&lt;p&gt;There are a number of reasons you may want to use a pool of workers in your application.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1) Distribute work across all available CPUs.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For that, we create fixed number of threads with the desired level of
-parallelism = the number of available cores of the host&amp;rsquo;s CPU. &lt;em&gt;Example in
-Java.&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;ExecutorService executor = Executors.newFixedThreadPool(4);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This may require some tuning. A number of threads could be increased or
-decreased. Alternately, you could switch to
-&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html#newWorkStealingPool--&#34;&gt;WorkStealingPool&lt;/a&gt;
-if fork/join model better suits your needs. Refer to
-  &lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html&#34;&gt;https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html&lt;/a&gt;
-  for more information.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2) Open N connections to an external resource (typically, a database)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This gives us a lot of benefits (some of them are not so obvious):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;we do not spend time on opening the connections (if we&amp;rsquo;re creating a TCP connection, handshake could take &lt;a href=&#34;https://www.quora.com/How-long-does-tcp-connection-setup-time-take-on-average&#34;&gt;up to 750 ms&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;it is much easier to support the code since all operations with the particular resource happen in one place&lt;/li&gt;
-&lt;li&gt;it is much easier to analyze the current application&amp;rsquo;s state (number of connections, etc.)&lt;/li&gt;
-&lt;li&gt;we improve throughput by sharing the network latency&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I think, only the last one requires explanation, others are pretty obvious.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Our friend Barney here wants to buy some beer, so he takes a long walk to the nearest store. It will take him &lt;code&gt;3 * (t1 + t2)&lt;/code&gt; to buy 3 beers.&lt;/p&gt;
-
-&lt;p&gt;t1 is a network latency, t2 - processing time.&lt;/p&gt;
-
-&lt;p&gt;What if instead, he and his buddies will go to the store together. &lt;strong&gt;Even if the store has only one cash register (like Redis) and the cashier serve them in turn, they will buy 3 beers in &lt;code&gt;t1 + 3 * t2&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Most often t1 much greater than t2. Therefore, &lt;code&gt;t1 + 3 * t2&lt;/code&gt; &amp;lt; &lt;code&gt;3 * (t1 + t2)&lt;/code&gt;.
-In other words, it is better to send N requests in parallel comparing to
-sending one by one because the network latency is greater than time to process
-a request.&lt;/p&gt;
-
-&lt;p&gt;If you have any comments, you could leave them below or send me an email.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -258,55 +80,7 @@ about it, is that videos are available almost immediately. As usual, I am
 publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
 &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-jamshid-mahdavi-an-erlang-based-philosophy-for-service-reliability-1&#34;&gt;1. Jamshid Mahdavi - An Erlang based Philosophy for Service Reliability 1&lt;/h1&gt;
-
-&lt;p&gt;by Jamshid Mahdavi, WhatsApp Inc. (45 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/tW49z8HqsNw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Great talk from the WhatsApp engineer on how they make this app so bulletproof.&lt;/p&gt;
-
-&lt;h1 id=&#34;2-a-brief-history-of-time&#34;&gt;2. A Brief History of Time&lt;/h1&gt;
-
-&lt;p&gt;by Fred Hebert aka ferd (45 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WoUn2XQvGDw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;An excursion into the history of different civilizations and their calendars. Fascinating!&lt;/p&gt;
-
-&lt;h1 id=&#34;3-reactive-programming-with-elixir-and-rethinkdb&#34;&gt;3. Reactive Programming With Elixir And RethinkDB&lt;/h1&gt;
-
-&lt;p&gt;by Peter Hamilton, RethinkDB (36 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/6K0Tjvn6PV8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Peter talks about one of the ways to build a reliable processing pipeline which
-stores intermediate results inside RethinkDB. You will need something like this
-if it&amp;rsquo;s undesirable to restart the whole pipeline from the beginning.&lt;/p&gt;
-
-&lt;h1 id=&#34;4-keynote-phoenix-and-elm-making-the-web-functional&#34;&gt;4. Keynote Phoenix and Elm – Making the Web Functional&lt;/h1&gt;
-
-&lt;p&gt;by Chris McCord and Evan Czaplicki (55 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/XJ9ckqCMiKk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Feel free to skip the Elm part if you are already familiar with this language.&lt;/p&gt;
-
-&lt;h1 id=&#34;5-high-performance-erlang-pitfalls-and-solutions&#34;&gt;5. High Performance Erlang Pitfalls and Solutions&lt;/h1&gt;
-
-&lt;p&gt;by MZSPEED team, MachineZone Inc. (47 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SPZV2h_r4U0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;How would you build a fast data processing system in Erlang? The presenters
-tell a story about their attempts in building one and the difficulties they
-faced along the way.&lt;/p&gt;
-
-&lt;p&gt;Also there were 2 talks on &lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS&lt;/a&gt;, which seems interesting.&lt;/p&gt;
-
-&lt;p&gt;If are planning to use Kafka with Erlang, you should probably watch &lt;a href=&#34;https://youtu.be/FTLTbB8BlYc&#34;&gt;this talk&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -324,82 +98,7 @@ faced along the way.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Дисклеймер: выбранные материалы и степень их крутости отражают личное мнение
 автора. Ваше мнение может отличаться.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-clojure-data-dsl-s-для-web-разработки&#34;&gt;1. Clojure Data DSL&amp;rsquo;s для web разработки&lt;/h1&gt;
-
-&lt;p&gt;Николай Рыжиков (46 мин)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/urQ5o754TU4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Код и данные, как Инь и Янь, и граница между ними при пристальном взгляде начинает исчезать. На примере web стэка для clojure мы познакомимся c Data DSL - hiccup, honeysql, prismatic schema, в режиме реального времени попробуем написать свои DSL и познать Дао.&lt;/p&gt;
-
-&lt;h1 id=&#34;2-фронтенд-без-грусти&#34;&gt;2. Фронтенд без грусти&lt;/h1&gt;
-
-&lt;p&gt;Никита Прокопов (50 мин)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/cRWrrHPrk9g&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Писать веб-приложение — то еще занятие: медленно, сложно, да и платформа скорее мешает, чем помогает. В докладе мы ответим:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Как функциональный подход помогает делать веб-приложения?&lt;/li&gt;
-&lt;li&gt;Может ли база данных быть иммутабельной?&lt;/li&gt;
-&lt;li&gt;Зачем вообще на фронте база данных?&lt;/li&gt;
-&lt;li&gt;Что интересного можно сделать с такими инструментами?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Причем не вообще, а на конкретных примерах ClojureScript и DataScript.&lt;/p&gt;
-
-&lt;h1 id=&#34;3-scala-performance-для-сомневающихся&#34;&gt;3. Scala performance для сомневающихся&lt;/h1&gt;
-
-&lt;p&gt;Роман Гребенников (48 мин)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/__PLkxx6Yko&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Язык Scala нынче модный: тут вам и паттерн матчинг, и рекурсия, и коллекции, обильно приправленные лямбдами, а также много других страшных слов из мира функционального программирования, для понимания которых не нужна ученая степень по математике. И все эти плюшки органично переплетены в такой язык, начав писать на котором, очень тяжело перестать.
-Но волшебство функциональной легкости заканчивается с фразой &amp;ldquo;а почему я переписал 100 строк лапши на Java в однострочник на Scala, но оно стало работать в 3 раза медленнее?&amp;rdquo;, и мечта о прекрасном языке превращается в тыкву. Суровая реальность грязным сапогом как бы говорит нам, что абстракции языков высокого уровня могут скрывать монстров и всё удобство имеет свою цену. И если вы делаете на Scala не простое CRUD-приложение, а что-то, хоть отдаленно связанное с нагрузкой, необходимо хорошо понимать, во что именно вам обходятся все вот эти монады-шмонады.
-Доклад может открыть глаза на возможные подводные камни производительности людям, практикующим программирование на Scala. В процессе будет рассказано:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;об интеграции jmh и sbt;&lt;/li&gt;
-&lt;li&gt;о том, как заставить scalac рассказывать о том, что он там наоптимизировал;&lt;/li&gt;
-&lt;li&gt;о тайнах паттерн-матчинга, хвостовой рекурсии и scala-коллекций;&lt;/li&gt;
-&lt;li&gt;об умном HotSpot, который геройски все это оптимизирует.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;P.S. Этот доклад Роман читает не впервые, так что возможно вы его уже смотрели.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;4-самурайский-путь-молодого-scala-программиста&#34;&gt;4. Самурайский путь молодого Scala-программиста&lt;/h1&gt;
-
-&lt;p&gt;Сергей Лобин (45 мин)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Pu3D5GQ6UEg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;История о том:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Как в &amp;ldquo;Спутнике&amp;rdquo; появилась Scala.&lt;/li&gt;
-&lt;li&gt;Как написать функциональный поиск.&lt;/li&gt;
-&lt;li&gt;Какие мы набили шишки на пути в бой.&lt;/li&gt;
-&lt;li&gt;Правда ли что Scala такая прожорливая.&lt;/li&gt;
-&lt;li&gt;Плюсы и минусы разработки на Scala.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;5-f-type-providers-the-current-state&#34;&gt;5. F# TYPE PROVIDERS: THE CURRENT STATE&lt;/h1&gt;
-
-&lt;p&gt;Сергей Тихон (33 мин)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/gsrSoZQUV-A&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;F# Type Providers это механизм позволяющий упростить интеграцию кода и данных и является альтернативой подходу кодо-генерации. В докладе будут рассмотрены:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Code Quotations и принципы работы type provider&amp;rsquo;ов.&lt;/li&gt;
-&lt;li&gt;Обзор существующих type provider&amp;rsquo;ов.&lt;/li&gt;
-&lt;li&gt;Особенности разработки собственных type provider&amp;rsquo;ов.&lt;/li&gt;
-&lt;li&gt;Нововведения F# 4.0 для type provider&amp;rsquo;ов.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -412,122 +111,7 @@ faced along the way.&lt;/p&gt;
 вопросов как назвать ту или иную переменную быть не должно. Но есть некоторые
 моменты, которые не освещены в книге и нуждаются в обсуждении.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;меры-ms-min&#34;&gt;Меры (ms, min)&lt;/h2&gt;
-
-&lt;p&gt;Недавно пришлось залезть в исходники HBase, чтобы выяснить в каких единицах мне
-нужно задать TTL. В документации я этого не нашел :( Вот, например, одна строка из теста:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;protected static final int TTL = 86400;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;small&gt;(&lt;a href=&#34;https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35&#34;&gt;https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35&lt;/a&gt;)&lt;/small&gt;&lt;/p&gt;
-
-&lt;div style=&#34;align:center&#34;&gt;
-  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-12-14-a-little-more-on-variable-naming/wtf.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Что это? Минуты, секунды, миллисекунды? Как я должен понять это?&lt;/p&gt;
-
-&lt;p&gt;Какие варианты я вижу:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Писать единицы в названии: &lt;code&gt;TTL_IN_SEC&lt;/code&gt; - так себе, думаю тут все согласны.&lt;/li&gt;
-&lt;li&gt;Писать рядом комментарий: &lt;code&gt;TTL = 86400; // sec&lt;/code&gt; - уже лучше, но ненамного; пока придерживаюсь этого варианта.&lt;/li&gt;
-&lt;li&gt;Использовать структуры языка: &lt;code&gt;-define(TTL, {86400, sec});&lt;/code&gt;.
-Для тех, кто не знает, это определение константы в Erlang&amp;rsquo;e. Здесь мы
-складываем значение и единицу в кортеж (tuple). Очевидный минус в том, что
-нужно будет переписать код для работы с ними.&lt;/li&gt;
-&lt;li&gt;Предоставить стандартный класс, кот. явно задает единицу измерения для любых
-промежутков времени и методы для преобразования одних единиц в другие. К
-примеру, &lt;a href=&#34;https://golang.org/pkg/time&#34;&gt;time&lt;/a&gt; в Golang:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func Sleep(d Duration)
-
-type Duration int64
-const (
-  Nanosecond  Duration = 1
-  Microsecond          = 1000 * Nanosecond
-  Millisecond          = 1000 * Microsecond
-  Second               = 1000 * Millisecond
-  Minute               = 60 * Second
-  Hour                 = 60 * Minute
-)
-
-// example
-time.Sleep(time.Second * 2)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;В Ruby есть библиотека &lt;a href=&#34;http://api.rubyonrails.org/v2.3/classes/ActiveSupport/CoreExtensions/Numeric/Time.html&#34;&gt;ActiveSupport&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;TTL = 20.seconds
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Кстати, TTL для отдельного столбца &lt;a href=&#34;https://github.com/apache/hbase/blob/master/hbase-client/src/main/java/org/apache/hadoop/hbase/client/Mutation.java#L444&#34;&gt;задается в
-мс&lt;/a&gt;.
-В примере выше оказались секунды.&lt;/p&gt;
-
-&lt;h2 id=&#34;переменные-под-прикрытием&#34;&gt;Переменные под прикрытием&lt;/h2&gt;
-
-&lt;p&gt;Зачастую вижу в коде в одном месте переменная называется &lt;code&gt;list_id&lt;/code&gt;, а в функции
-куда она передается - &lt;code&gt;dest_id&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# first_class.rb
-list_id = 1
-call(list_id, ...)
-
-# second_class.rb
-def call(dest_id)
-  ...
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Плохо, что при этом теряется частичка смысла. Глядя на код во втором случае, мы
-уже не знаем ID чего передается в функцию. Нам приходится вспоминать, или
-строить догадки, или возвращаться в то место, где происходит вызов функции
-(&lt;code&gt;first_class.rb&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;За этим однозначно нужно следить. В нашем примере можно было обозвать
-переменную &lt;code&gt;dest_list_id&lt;/code&gt; в &lt;code&gt;second_class.rb&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Похожую мысль в своем &lt;a href=&#34;http://tonsky.livejournal.com/304954.html&#34;&gt;ЖЖ&lt;/a&gt; недавно
-высказал &lt;a href=&#34;https://twitter.com/nikitonsky&#34;&gt;Никита Прокопов&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;какои-тип&#34;&gt;Какой тип?&lt;/h2&gt;
-
-&lt;p&gt;В языках со строгой типизацией (в частности, в Erlang) мы получим ошибку в
-рантайме, если попытаемся склеить число со списком:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1 ++ &amp;quot;abc&amp;quot;.
-** exception error: bad argument
-     in operator  ++/2
-        called as 1 ++ &amp;quot;abc&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;потому что отсутствует автоматическое приведение типов. Проблема тут в том, что
-ты не можешь узнать тип переменной исходя из ее имени:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;call(ListId,...) -&amp;gt;
-  Str = integer_to_list(ListId),
-  ...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;сюда в результате рефакторинга может прийти строка и все попадает нафиг.&lt;/p&gt;
-
-&lt;p&gt;Опытным путем было установлено, что добавление типа к имени переменной помогает
-избегать подобных багов.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;call(ListIdStr,...) -&amp;gt;
-  ...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Еще конечно выручает &lt;a href=&#34;http://www.erlang.org/doc/man/dialyzer.html&#34;&gt;dialyzer&lt;/a&gt;
-или его аналоги: &lt;a href=&#34;https://andreacensi.github.io/contracts/&#34;&gt;PyContracts&lt;/a&gt;,
-&lt;a href=&#34;http://typedclojure.org/&#34;&gt;Typed Clojure&lt;/a&gt;. Ну или статическая типизация.&lt;/p&gt;
-
-&lt;p&gt;Если у вас есть замечания или дополнения, welcome to комментарии.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -541,52 +125,7 @@ are a lot of academic (Phd) talks and a few practical ones. I&amp;rsquo;ve chose
 of 37 videos, which I liked the most. Hope you&amp;rsquo;ll enjoy these too. &lt;em&gt;Disclaimer:
 your experience may vary.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-dynamiq-an-implementation-of-a-fanout-queue-on-top-of-riak&#34;&gt;1. Dynamiq - An implementation of a fanout / queue on top of Riak&lt;/h1&gt;
-
-&lt;p&gt;by Sean Kelly, Tapjoy (47 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KKk_je4GCqs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;In his talk, Sean explains why they have decided to write their own queue and
-not to use existing solutions (such as NSQ or Kafka). After that he presents
-the result and lessons they have learned on the way.&lt;/p&gt;
-
-&lt;h1 id=&#34;2-writing-distributed-systems-is-hard&#34;&gt;2. Writing distributed systems is hard&lt;/h1&gt;
-
-&lt;p&gt;by Ben Hindman, Founder Mesosphere, Inc. (1 hour 2 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/K76WZkkBO2c&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;3-distributed-transactions-the-fairness-isolation-throughput-tradeoff&#34;&gt;3. Distributed Transactions - The Fairness Isolation Throughput Tradeoff&lt;/h1&gt;
-
-&lt;p&gt;by Jose Faleiro, Yale University (45 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/5GvvkmrKKrM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;em&gt;WARNING: his English is not perfect&lt;/em&gt;. But if you&amp;rsquo;re interested in distributed
-transactions (in DBs) - must watch.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://youtu.be/N2472uS5Y6M?t=17m31s&#34;&gt;The good news&lt;/a&gt; from Uber: they are getting out of HTTP + Json business because:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HTTP is slow, complex, and inconsistent&lt;/li&gt;
-&lt;li&gt;JSON is hard to validate, awkward in non-node&lt;/li&gt;
-&lt;li&gt;Thrift is ok, but generated code is bad&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That&amp;rsquo;s why they wrote &lt;a href=&#34;https://github.com/uber/thriftrw-node&#34;&gt;https://github.com/uber/thriftrw-node&lt;/a&gt; and
-&lt;a href=&#34;https://github.com/uber/thriftrw-python&#34;&gt;https://github.com/uber/thriftrw-python&lt;/a&gt; libraries.&lt;/p&gt;
-
-&lt;p&gt;Also there are some &lt;a href=&#34;https://youtu.be/GT8JbaRyrsc?t=28m34s&#34;&gt;great lessons&lt;/a&gt; from Noah Gift:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ORMs are just horrible&lt;/li&gt;
-&lt;li&gt;Really do take backups seriously&lt;/li&gt;
-&lt;li&gt;Erlang and Riak are really good combination&lt;/li&gt;
-&lt;li&gt;Be ok with constantly failing in every way possible: Hiring, Software, Product Market fit, Technology&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -601,31 +140,7 @@ videos&lt;/a&gt;
 uploaded this year. Again, kudos to organizers for them. I think, I have found
 real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-building-scalable-stateful-services&#34;&gt;1. Building Scalable Stateful Services&lt;/h1&gt;
-
-&lt;p&gt;by Caitie McCaffrey (35 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/H0i_bXKwujQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;2-transactions-myths-surprises-and-opportunities&#34;&gt;2. Transactions: myths, surprises and opportunities&lt;/h1&gt;
-
-&lt;p&gt;by Martin Kleppmann (41 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/5ZjhNTM8XU8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;3-i-see-what-you-mean&#34;&gt;3. I See What You Mean&lt;/h1&gt;
-
-&lt;p&gt;by Peter Alvaro (52 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/R2Aa4PivG0g&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-eve&#34;&gt;4. Eve&lt;/h1&gt;
-
-&lt;p&gt;by Chris Granger (46 min)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/5V1ynVyud4M&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -639,37 +154,7 @@ real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&g
 age, many good speakers happened to be there. Here is the list of my favorite
 talks. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-pull-push-please-stop-polluting-our-imperative-languages-with-pure-concepts&#34;&gt;1. Pull Push: Please stop polluting our imperative languages with pure concepts&lt;/h1&gt;
-
-&lt;p&gt;by Ron Pressler (&lt;strong&gt;45 min&lt;/strong&gt;)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/449j7oKQVkc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;2-some-things-that-macros-do&#34;&gt;2. Some Things That Macros Do&lt;/h1&gt;
-
-&lt;p&gt;by Zach Tellman (&lt;strong&gt;40 min&lt;/strong&gt;)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/o69H0MXCNxw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;3-pony-making-it-easy-to-write-efficient-concurrent-data-race-free-programs&#34;&gt;3. Pony: Making it easy to write efficient, concurrent, data race free programs&lt;/h1&gt;
-
-&lt;p&gt;by Sylvan Clebsch, Sebastian Blessing (&lt;strong&gt;46 min&lt;/strong&gt;)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KvLjy8w1G_U&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&#34;4-keynote-what-if-anything-have-we-learned-from-c&#34;&gt;4. [Keynote] What – if anything – have we learned from C++?&lt;/h1&gt;
-
-&lt;p&gt;by Bjarne Stroustrup (&lt;strong&gt;1 hour 30 min&lt;/strong&gt;)&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/2egL4y_VpYg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;This is my fantastic four. However, I also enjoyed &lt;a href=&#34;https://www.youtube.com/watch?v=AWeT_G04a0A&#34;&gt;the talk&lt;/a&gt; about
-dependent types in Idris, &lt;a href=&#34;https://www.youtube.com/watch?v=vzzABBxo44g&#34;&gt;tips for VM writers&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/watch?v=oYk8CKH7OhE&#34;&gt;user-focused design in
-Elm&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

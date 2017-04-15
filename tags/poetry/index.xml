@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Poetry on Home on Rails</title>
-    <link>http://homeonrails.com/tags/poetry/index.xml</link>
+    <link>http://homeonrails.com/tags/poetry/</link>
     <description>Recent content in Poetry on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Nov 2014 22:05:06 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Хайку о мозге</title>
@@ -21,49 +24,7 @@
 когда в последний раз сочинял что-либо. Я имею ввиду реальную поэзию, а не тост
 на дне рождения у друга (тут конечно мы все мастера :).&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;{% blockquote %}
-Хайку – национальная японская форма поэзии, жанр поэтической миниатюры, просто, лаконично, ёмко и достоверно изображающий природу и человека в их нерасторжимом единстве.
-{% endblockquote %}&lt;/p&gt;
-
-&lt;p&gt;Вот что у меня получилось:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://lumosityhaikucontest.com.strutta.com/entry/8015050&#34;&gt;1. Партия в шахматы&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;https://d3t0gve8zpraeo.cloudfront.net/5384fe6adfe16fadd134cddaa9eaa25ac0bbde5e.jpg&#34; alt=&#34;Chess game&#34;/ width=&#34;450&#34; title=&#34;Chess game&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;won my first chess game  &lt;br /&gt;
-brain produces dopamine  &lt;br /&gt;
-today&amp;rsquo;s meal smells good&lt;/p&gt;
-
-&lt;p&gt;Вольный перевод на русский:&lt;/p&gt;
-
-&lt;p&gt;выиграл партию в шахматы  &lt;br /&gt;
-мозг вырабатывает дофамин  &lt;br /&gt;
-обед сегодня пахнет чудесно&lt;/p&gt;
-
-&lt;p&gt;Про дофамин и его роль в системе поощрения можно почитать &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%84%D0%B0%D0%BC%D0%B8%D0%BD&#34;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://lumosityhaikucontest.com.strutta.com/entry/8015123&#34;&gt;2. Победи своих врагов&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;https://d3t0gve8zpraeo.cloudfront.net/0d4b16e40cc389576729b6b53208ac44ccb8aeca.jpg&#34; alt=&#34;Defeat your enemies&#34;/ width=&#34;450&#34; title=&#34;Defeat your enemies&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;pan stands on the stove  &lt;br /&gt;
-my lunch will be ready soon&amp;hellip;  &lt;br /&gt;
-my enemy&amp;rsquo;s brain&lt;/p&gt;
-
-&lt;p&gt;Вольный перевод на русский:&lt;/p&gt;
-
-&lt;p&gt;на плите стоит кастрюля  &lt;br /&gt;
-мой обед будет скоро готов  &lt;br /&gt;
-мозг моего врага&lt;/p&gt;
-
-&lt;p&gt;Поедание мозга здесь является метафорой, хотя некоторые археологические находки
-подтверждают, что траурные ритуалы европейских неандертальцев включали
-употребление мозга (&lt;a href=&#34;http://www.barnesandnoble.com/w/the-aztec-treasure-house-evan-s-connell/1110887560?displayonly=chp&amp;amp;ean=9781582432533&#34;&gt;1&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://lumosityhaikucontest.com.strutta.com/&#34;&gt;Ссылка на конкурс&lt;/a&gt;. Призы включают Kindle и пожизненную подписку на Lumosity.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

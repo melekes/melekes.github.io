@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mrunit on Home on Rails</title>
-    <link>http://homeonrails.com/tags/mrunit/index.xml</link>
+    <link>http://homeonrails.com/tags/mrunit/</link>
     <description>Recent content in Mrunit on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/mrunit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/mrunit/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
@@ -19,77 +22,7 @@
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I started out by looking at &lt;a href=&#34;https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial&#34;&gt;this
-tutorial&lt;/a&gt;
-and found out it is a bit outdated. So I will post a necessary steps here.&lt;/p&gt;
-
-&lt;p&gt;First thing to do is, obviously, add mrunit as a dependency to your project:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
-  &amp;lt;groupId&amp;gt;org.apache.mrunit&amp;lt;/groupId&amp;gt;
-  &amp;lt;artifactId&amp;gt;mrunit&amp;lt;/artifactId&amp;gt;
-  &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt;
-  &amp;lt;classifier&amp;gt;hadoop2&amp;lt;/classifier&amp;gt;
-  &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
-&amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;This is for Maven and Hadoop 2.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Next step is to write a simple test case:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Test
-public void returnsMaximumIntegerInValues() throws IOException,
-    InterruptedException {
-    new ReduceDriver&amp;lt;Text, IntWritable, Text, IntWritable&amp;gt;()
-        .withReducer(new MaxTemperatureReducer())
-        .withInput(new Text(&amp;quot;1950&amp;quot;),
-            Arrays.asList(new IntWritable(10), new IntWritable(5)))
-        .withOutput(new Text(&amp;quot;1950&amp;quot;), new IntWritable(10))
-        .runTest();
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Back to our story. So, I ended up with something like this:&lt;/p&gt;
-
-&lt;p&gt;{% gist e878b351daa8dd17bfae CatMaxAgesReducerTest.java %}&lt;/p&gt;
-
-&lt;p&gt;After running, I encountered the following error:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;No applicable class implementing Serialization in conf at io.serializations: class org.apache.hadoop.hbase.client.Put&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Because we use HBase to store our data and this reducer outputs its result to
-HBase table, Hadoop is telling us that he doesn&amp;rsquo;t know how to serialize our
-data. That is why we need to help it. Inside &lt;code&gt;setUp&lt;/code&gt; set the
-&lt;code&gt;io.serializations&lt;/code&gt; variable:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;conf.setStrings(&amp;quot;io.serializations&amp;quot;, new String[]{conf.get(&amp;quot;io.serializations&amp;quot;), MutationSerialization.class.getName(), ResultSerialization.class.getName()});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Apart from tests, you will hardly see such a code, because
-&lt;a href=&#34;https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.html&#34;&gt;TableMapReduceUtil&lt;/a&gt;
-hides many details from you.&lt;/p&gt;
-
-&lt;p&gt;When you do this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;TableMapReduceUtil.initTableReducerJob(
-    Bytes.toBytes(&amp;quot;animals&amp;quot;),
-    CatMaxAgesReducer.class,
-    job
-);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;it sets all the necessary settings required to a Reducer to work.&lt;/p&gt;
-
-&lt;p&gt;Useful links:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial&#34;&gt;https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ctrl-r.org/?p=291&#34;&gt;http://www.ctrl-r.org/?p=291&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.cloudera.com/blog/2013/09/how-to-test-hbase-applications-using-popular-tools/&#34;&gt;http://blog.cloudera.com/blog/2013/09/how-to-test-hbase-applications-using-popular-tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

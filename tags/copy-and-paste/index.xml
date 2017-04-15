@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Copy And Paste on Home on Rails</title>
-    <link>http://homeonrails.com/tags/copy-and-paste/index.xml</link>
+    <link>http://homeonrails.com/tags/copy-and-paste/</link>
     <description>Recent content in Copy And Paste on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/copy-and-paste/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jan 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/copy-and-paste/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Copy and paste between Vim and OS</title>
@@ -20,67 +23,7 @@ puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to co
 &lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;ldquo;- I asked myself. Indeed, the majority of source code editors
 able to do this. And yes, I got used to this dammit!&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Well, Vim is primarily a console text editor. Of course, there is a GUI version - GVim (or MacVim for MacOS), but most prefer to stay in the console, where we can use such wonderful tools as &lt;a href=&#34;http://en.wikipedia.org/wiki/Tmux&#34;&gt;tmux&lt;/a&gt; and &lt;a href=&#34;https://github.com/remiprev/teamocil&#34;&gt;teamochil&lt;/a&gt; *.&lt;/p&gt;
-
-&lt;h3 id=&#34;first-attempt&#34;&gt;First attempt&lt;/h3&gt;
-
-&lt;p&gt;The first more or less acceptable solution offered &lt;a href=&#34;https://twitter.com/gumayunov&#34;&gt;Victor Gumayunov&lt;/a&gt;. Few people know, but if you press and hold &lt;code&gt;ctrl + alt&lt;/code&gt;, you will be able to select a text block using the mouse and, by clicking its right button, copy it.&lt;/p&gt;
-
-&lt;h3 id=&#34;second-attempt&#34;&gt;Second attempt&lt;/h3&gt;
-
-&lt;p&gt;And at first, it suited me. But it has lasted a short time and I started
-looking for other ways out. The next approach was to use of custom bindings for tmux, which use xclip utility (pbcopy on MacOS) to copy the contents of the system&amp;rsquo;s buffer into tmux&amp;rsquo;s buffer and back.&lt;/p&gt;
-
-&lt;p&gt;For this you was have to write:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# move x clipboard into tmux paste buffer
-bind C-p run &amp;quot;tmux set-buffer \&amp;quot;$(xclip -o)\&amp;quot;; tmux paste-buffer&amp;quot;
-# move tmux copy buffer into x clipboard
-bind C-y run &amp;quot;tmux save-buffer - | xclip -i&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in your &lt;code&gt;.tmux.conf&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;But do not rush to do it :)&lt;/p&gt;
-
-&lt;h3 id=&#34;third-attempt-the-lucky-one&#34;&gt;Third attempt (the lucky one)&lt;/h3&gt;
-
-&lt;p&gt;While getting to know Vim more tightly, I learned that it has support
-for system buffer. To work with it, Vim has two registers &lt;code&gt;*&lt;/code&gt; and &lt;code&gt;+&lt;/code&gt;
-(see &lt;code&gt;:h registers&lt;/code&gt;). &amp;ldquo;Sounds great&amp;rdquo; - I thought.&lt;/p&gt;
-
-&lt;p&gt;One catch - Vim must be compiled with &lt;code&gt;+clipboard&lt;/code&gt;. To check whether you have support for clipboard run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ vim --version | grep clipboard
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The easiest way to fix this &lt;strong&gt;for most Linux&amp;rsquo;es&lt;/strong&gt; is to install GVim (but continue to use its console version).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install vim-gnome
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;For MacOS&lt;/strong&gt; you can get Vim with &lt;code&gt;+clipboard&lt;/code&gt; via Homebrew or download and install MacVim &lt;a href=&#34;http://code.google.com/p/macvim/downloads/list&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ brew install vim
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Look inside /Applications/MacVim.app/Contents/MacOS, and you’ll see that the app provides two binaries: MacVim, which launches the GUI, and Vim, which runs in the Terminal with the same feature set. Both versions include the &lt;code&gt;+clipboard&lt;/code&gt; feature.&lt;/p&gt;
-
-&lt;p&gt;The last thing left to do - something to get rid of the need to
-to type &lt;code&gt;&amp;quot;*p&lt;/code&gt; and &lt;code&gt;&amp;quot;*y&lt;/code&gt; prefixes. I don&amp;rsquo;t want copy and paste between Vim and OS was some special occasion, I want everything to be transparent to the user. It turned out, you just need to add this line to your &lt;code&gt;.vimrc&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;set clipboard=unnamed &amp;quot; or unnamedplus if you have X11
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now all operations such as &lt;code&gt;yy&lt;/code&gt;, &lt;code&gt;D&lt;/code&gt;, and &lt;code&gt;p&lt;/code&gt; work with the clipboard. No need to prefix them with &lt;code&gt;&amp;quot;*&lt;/code&gt; or &lt;code&gt;&amp;quot;+&lt;/code&gt;. Sounds like magic, right?!&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/x19YZF4YfLs&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt;       &lt;/iframe&gt;
-
-&lt;p&gt;* these utilities are among the best in my humble opinion and they are helping me every day&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

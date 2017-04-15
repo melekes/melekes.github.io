@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Debugging on Home on Rails</title>
-    <link>http://homeonrails.com/tags/debugging/index.xml</link>
+    <link>http://homeonrails.com/tags/debugging/</link>
     <description>Recent content in Debugging on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://homeonrails.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2016 15:50:31 +0000</lastBuildDate>
+    
+	<atom:link href="http://homeonrails.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Зависла Erlang нода. Что делать?</title>
@@ -17,161 +20,7 @@
       <guid>http://homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
       <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Пишу статью по горячим следам. Пару дней назад тестировал работу приложения при
-пропаже соединения с Redis&amp;rsquo;ом. Так вот, после возобновления соединения
-(успешном переподключении), через раз приложение зависало полностью. Ни
-консолью подрубиться, ничего&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Обычно такое происходит, если вы используете C-расширение, оформленное в виде
-NIF, и оно в один прекрасный момент блокируется. Шедулер Erlang в таком случае
-не может прервать выполнение потока, как он поступил бы в случае с Erlang
-кодом.&lt;/p&gt;
-
-&lt;p&gt;Всякие Linux утилиты (типа &lt;code&gt;strace&lt;/code&gt;) нам мало о чем скажут. Как дебажить
-C-расширения в Erlang тоже непонятно (отдельно - понятно, &lt;code&gt;gdb&lt;/code&gt; и тому
-подобное). Если знаете - напишите плиз.&lt;/p&gt;
-
-&lt;p&gt;Зато мы можем послать сигнал виртуальной машине Erlang и она создаст crash dump:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ kill -SIGUSR1 &amp;lt;pid&amp;gt;
-
-Crash dump is being written to: erl_crash.dump...done
-Received SIGUSR1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Смотреть на него без дополнительных утилит еще более болезненно, чем на вывод
-&lt;code&gt;tcpdump&lt;/code&gt; без &lt;a href=&#34;https://www.wireshark.org/&#34;&gt;Wireshark&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;анализируем-crashdump&#34;&gt;Анализируем crashdump&lt;/h2&gt;
-
-&lt;p&gt;Мне известны по крайней мере 2 инструмента: crashdump_viewer и recon.&lt;/p&gt;
-
-&lt;h3 id=&#34;crashdump-viewer&#34;&gt;crashdump_viewer&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://erlang.org/doc/apps/observer/crashdump_ug.html&#34;&gt;http://erlang.org/doc/apps/observer/crashdump_ug.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ erl
-&amp;gt; crashdump_viewer:start().
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug1.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Общая информация.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug2.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Список процессов.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug3.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Информация по одному из немногих запущенных процессов с большим количеством
-редукций. Чтобы найти конкретный процесс, внутри которого произошла блокировка,
-пришлось просмотреть несколько штук (количество запущенных процессов обычно =
-числу ядер).&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug4.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;stackdump процесса.&lt;/p&gt;
-
-&lt;p&gt;Как видно из 2-й картинки выше мы заблокировались на
-&lt;code&gt;hierdis:pipeline_cleaner/4&lt;/code&gt; (см. &amp;ldquo;Continuation pointer&amp;rdquo;).
-&lt;a href=&#34;https://github.com/funbox/hierdis&#34;&gt;Hierdis&lt;/a&gt; - это клиент для Redis, который мы
-используем. Далее оставалось делом техники воспроизвести вызов (подсмотреть
-аргументы можно либо в crashdump_viewer, либо используя
-&lt;a href=&#34;https://ferd.github.io/recon/recon_trace.html&#34;&gt;recon_trace&lt;/a&gt;) в самом клиенте и
-найти конкретную причину (&lt;a href=&#34;https://github.com/funbox/hierdis/pull/1&#34;&gt;PR&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h3 id=&#34;recon&#34;&gt;recon&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://ferd.github.io/recon/&#34;&gt;https://ferd.github.io/recon/&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./recon/scripts/erl_crashdump_analyzer.sh &amp;lt;crashdump&amp;gt;
-
-analyzing erl_crash.dump, generated on:  Tue Apr 5 12:30:26 2016
-
-Slogan: Received SIGUSR1
-
-Memory:
-===
-  processes: 374 Mb
-  processes_used: 374 Mb
-  system: 14 Mb
-  atom: 0 Mb
-  atom_used: 0 Mb
-  binary: 0 Mb
-  code: 8 Mb
-  ets: 0 Mb
-  ---
-  total: 388 Mb
-
-Different message queue lengths (5 largest different):
-===
-      3 1
-    217 0
-
-Error logger queue length:
-===
-0
-
-File descriptors open:
-===
-  UDP:  2
-  TCP:  8
-  Files:  4
-  ---
-  Total:  14
-
-Number of processes:
-===
-220
-
-Processes Heap+Stack memory sizes (words) used in the VM (5 largest different):
-===
-      1 10695351
-      2 8912793
-      1 3581853
-      1 2487399
-      2 2072833
-
-Processes OldHeap memory sizes (words) used in the VM (5 largest different):
-===
-      1 7427328
-      1 514838
-      1 121536
-      2 28690
-      1 10958
-
-Process States when crashing (sum):
-===
-      4 Current Process Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ACTIVE | RUNNING
-      4 Current Process Running
-      3 Internal ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX
-      2 Internal ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | TRAP_EXIT
-     90 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL
-      4 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ACTIVE | RUNNING
-      3 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | IN_PRQ_NORMAL | ACTIVE | IN_RUNQ
-    118 Internal ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT
-      4 Running
-      3 Scheduled
-    213 Waiting
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Он дает общую картину того, что происходит.&lt;/p&gt;
-
-&lt;p&gt;Вообще recon довольно полезная библиотека. В ней можно найти различные модули
-для инспекции состояния ноды, трассировки и т.д.&lt;/p&gt;
-
-&lt;p&gt;Вот например скрипт, который показывает работающие (running) процессы с
-количеством сообщений в mailbox&amp;rsquo;е &amp;gt;= &lt;code&gt;threshold&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ awk -v threshold=1 -f ./recon/script/queue_fun.awk erl_crash.dump                                                                                                                                         MESSAGE QUEUE LENGTH: CURRENT FUNCTION
-======================================
-1: gen_server:loop/6
-1: gen:do_call/4
-1: gen:do_call/4
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
