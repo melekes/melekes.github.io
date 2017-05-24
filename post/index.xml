@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Sun, 21 May 2017 14:25:41 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 24 May 2017 23:10:09 +0200</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>April Picks</title>
+      <link>http://homeonrails.com/2017/05/april-picks/</link>
+      <pubDate>Wed, 24 May 2017 23:10:09 +0200</pubDate>
+      
+      <guid>http://homeonrails.com/2017/05/april-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Drive in France</title>
