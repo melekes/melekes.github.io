@@ -14,29 +14,28 @@
 
 
 
-<meta name="twitter:title" content="July Picks"/>
-<meta name="twitter:description" content="&ldquo;Random picks from all over the Internet&rdquo;.
-
-"/>
-
+<meta name="twitter:title" content="Abstracting the logger interface in Go"/>
+<meta name="twitter:description" content="Wrote a blog post a few days ago for my company&rsquo;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
+https://tendermint.com/blog/abstracting-the-logger-interface-in-go"/>
 
 
-  	<meta property="og:title" content=" July Picks &middot;  Home on Rails" />
+
+  	<meta property="og:title" content=" Abstracting the logger interface in Go &middot;  Home on Rails" />
   	<meta property="og:site_name" content="Home on Rails" />
-  	<meta property="og:url" content="http://homeonrails.com/2016/08/july-picks/" />
+  	<meta property="og:url" content="http://homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/" />
 
     
   	<meta property="og:type" content="article" />
 
-    <meta property="og:article:published_time" content="2016-08-13T13:02:05Z" />
+    <meta property="og:article:published_time" content="2017-06-06T22:35:01&#43;02:00" />
 
     
-    <meta property="og:article:tag" content="picks" />
+    <meta property="og:article:tag" content="golang" />
     
     
 
     <title>
-       July Picks &middot;  Home on Rails
+       Abstracting the logger interface in Go &middot;  Home on Rails
     </title>
 
     <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
@@ -60,7 +59,7 @@
     
     <meta name="generator" content="Hugo 0.21" />
 
-    <link rel="canonical" href="http://homeonrails.com/2016/08/july-picks/" />
+    <link rel="canonical" href="http://homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/" />
 
     
     <script>
@@ -180,64 +179,28 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">July Picks</h1>
+        <h1 class="post-title">Abstracting the logger interface in Go</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2016-08-13T13:02:05Z">
-            Aug 13, 2016
+          <time class="post-date" datetime="2017-06-06T22:35:01&#43;02:00">
+            Jun 6, 2017
           </time>
         
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/picks/">#picks</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com/tags/golang/">#golang</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>&ldquo;Random picks from all over the Internet&rdquo;.</p>
+      <p>Wrote a blog post a few days ago for my company&rsquo;s blog about our experience of
+moving from a static logger to an interface and adapter for the go-kit log
+package.</p>
 
-<p></p>
+<p><a href="https://tendermint.com/blog/abstracting-the-logger-interface-in-go">https://tendermint.com/blog/abstracting-the-logger-interface-in-go</a></p>
 
-<p><blockquote class="twitter-tweet" data-lang="ru"><p lang="und" dir="ltr"><a href="https://t.co/jm7KvT7XXW">pic.twitter.com/jm7KvT7XXW</a></p>&mdash; Max Jazz (@maxjazzz) <a href="https://twitter.com/maxjazzz/status/758234340753018880">27 июля 2016 г.</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<h2 id="english">English</h2>
-
-<h3 id="articles">Articles</h3>
-
-<ul>
-<li><p><a href="http://joeduffyblog.com/2016/02/07/the-error-model/">The Error Model</a>
-This is a long read, but it will pay off. Error codes,
-unchecked exceptions, checked exceptions: The Good, The
-Bad and Ugly.</p></li>
-
-<li><p><a href="https://developers.soundcloud.com/blog/synchronous-communication-for-microservices-current-status-and-learnings">Synchronous communication for microservices: current status and learnings</a>
-Learn why SoundCloud stopped writing client libraries.</p></li>
-
-<li><p><a href="http://antirez.com/news/109">Random notes on improving the Redis LRU algorithm</a>
-&ldquo;The key with the least probability of being accessed in
-the future should be removed from the data set. There is
-only one problem: Redis and other caches are not able to
-predict the future.&rdquo;</p></li>
-</ul>
-
-<h3 id="videos">Videos</h3>
-
-<ul>
-<li><a href="https://www.youtube.com/watch?v=ZgdS0EUmn70">Intro to Architecture and Systems Design Interviews</a>
-If you&rsquo;re preparing for an interview, this video might help you in the architecture part.</li>
-</ul>
-
-<h2 id="на-русском">На русском</h2>
-
-<h3 id="статьи">Статьи</h3>
-
-<ul>
-<li><a href="https://habrahabr.ru/post/306590/">Быстрые TCP сокеты на Erlang</a>
-&ldquo;В этой статье я предлагаю оптимизации, которые позволяют улучшить три составляющие работы с TCP: приём соединений, получение сообщений и ответ на них.&rdquo;</li>
-</ul>
     </section>
 
 
@@ -272,19 +235,19 @@ If you&rsquo;re preparing for an interview, this video might help you in the arc
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=July%20Picks&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2016%2f08%2fjuly-picks%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Abstracting%20the%20logger%20interface%20in%20Go&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2017%2f06%2fabstracting-the-logger-interface-in-go%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2016%2f08%2fjuly-picks%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2017%2f06%2fabstracting-the-logger-interface-in-go%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2016%2f08%2fjuly-picks%2f&amp;description=July%20Picks"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2017%2f06%2fabstracting-the-logger-interface-in-go%2f&amp;description=Abstracting%20the%20logger%20interface%20in%20Go"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2016%2f08%2fjuly-picks%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2017%2f06%2fabstracting-the-logger-interface-in-go%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -297,7 +260,7 @@ If you&rsquo;re preparing for an interview, this video might help you in the arc
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   var disqus_shortname = 'homeonrails';
-  var disqus_url = 'http:\/\/homeonrails.com\/2016\/08\/july-picks\/';
+  var disqus_url = 'http:\/\/homeonrails.com\/2017\/06\/abstracting-the-logger-interface-in-go\/';
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
