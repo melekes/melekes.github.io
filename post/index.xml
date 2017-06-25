@@ -7,19 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Sun, 25 Jun 2017 11:37:01 +0400</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jun 2017 15:57:01 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Indian movies weekend</title>
-      <link>http://homeonrails.com/2017/06/indian-movies-weekend/</link>
-      <pubDate>Sun, 25 Jun 2017 11:37:01 +0400</pubDate>
+      <title>Велосипедный маршрут №2 по Ульяновской области</title>
+      <link>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2/</link>
+      <pubDate>Sun, 25 Jun 2017 15:57:01 +0400</pubDate>
       
-      <guid>http://homeonrails.com/2017/06/indian-movies-weekend/</guid>
-      <description>On my way from Berlin to Warsaw I&amp;rsquo;ve met 2 really cool guys from India - Winny and Raghav. They asked me to recommend 3 Russian movies to them and I did. Then I asked to return a favor. I watched all of them and they are amazing. No wonder they all have a very good score on IMDB. So, thank you guys!
-Swades (2004)  A project manager from NASA decides to go to India to find his nanny.</description>
+      <guid>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2/</guid>
+      <description>(Cycling route in Ulyanovsk Oblast #2)
+Сложность (difficulty): легко (easy)
+Протяженность в одну сторону (distance, one way): 9.6км (6.7 miles)
+Сначала любуемся домами богатых жителей Ульяновска, проезжаем кружок по лыжной базе &amp;ldquo;Заря&amp;rdquo; (внимание: штраф 20тр, но всем пофиг; главное не наглеть и пропускать спортсменов). Далее едем в парк 40лет ВЛКСМ и назад через лес. Большая часть пролегает по сосновому лесу, так что воздух там отличный.
+(First we look at the homes of wealthy people of Ulyanovsk, passing around a ski training base &amp;ldquo;Zarya&amp;rdquo; (note: the fine is 20000 RUB, but nobody cares; the important thing is to respect others and give way to athletes).</description>
     </item>
     
     <item>
@@ -34,10 +37,10 @@ https://tendermint.com/blog/abstracting-the-logger-interface-in-go</description>
     
     <item>
       <title>Велосипедный маршрут №1 по Ульяновской области</title>
-      <link>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2016/</link>
+      <link>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast/</link>
       <pubDate>Thu, 01 Jun 2017 01:46:01 +0200</pubDate>
       
-      <guid>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2016/</guid>
+      <guid>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast/</guid>
       <description>(Cycling route in Ulyanovsk Oblast)
 Сложность (difficulty): легко (easy)
 Протяженность в одну сторону (distance, one way): 17.7км (11.268 miles)
