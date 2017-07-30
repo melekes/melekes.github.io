@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Thu, 13 Jul 2017 09:43:29 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jul 2017 11:48:01 -0500</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Brazilian movies weekend</title>
+      <link>http://homeonrails.com/2017/07/brazilian-movies-weekend/</link>
+      <pubDate>Sun, 30 Jul 2017 11:48:01 -0500</pubDate>
+      
+      <guid>http://homeonrails.com/2017/07/brazilian-movies-weekend/</guid>
+      <description>On the contrary to Indian movies, Brazilian movies are full of pain, struggle, and tears. These movies deeply reflect the history of their country, uncovering all the problems which exist even upon today. They were recommended to me by an architect from Brazil I&amp;rsquo;ve met in Lithuania.
+Central Station (1998)  &amp;ldquo;An emotive journey of a former school teacher, who writes letters for illiterate people, and a young boy, whose mother has just died, as they search for the father he never knew.</description>
+    </item>
     
     <item>
       <title>Monthly Art #21</title>
@@ -66,7 +76,7 @@ Swades (2004)  A project manager from NASA decides to go to India to find his na
       
       <guid>http://homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</guid>
       <description>Wrote a blog post a few days ago for my company&amp;rsquo;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
-https://tendermint.com/blog/abstracting-the-logger-interface-in-go</description>
+https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7</description>
     </item>
     
     <item>
