@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Sat, 04 Nov 2017 23:07:33 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 29 Nov 2017 14:05:09 -0500</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>November Tech Picks</title>
+      <link>http://homeonrails.com/2017/11/november-tech-picks/</link>
+      <pubDate>Wed, 29 Nov 2017 14:05:09 -0500</pubDate>
+      
+      <guid>http://homeonrails.com/2017/11/november-tech-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Monthly Art #24</title>
