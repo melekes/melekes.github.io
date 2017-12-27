@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Mon, 11 Dec 2017 23:48:31 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 26 Dec 2017 21:15:01 -0500</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My favorite books of 2017</title>
+      <link>http://homeonrails.com/2017/12/my-favorite-books-of-2017/</link>
+      <pubDate>Tue, 26 Dec 2017 21:15:01 -0500</pubDate>
+      
+      <guid>http://homeonrails.com/2017/12/my-favorite-books-of-2017/</guid>
+      <description>(image from Goodreads https://www.goodreads.com/user/year_in_books/2017/24729949)
+This year I’ve set a very ambitious goal for me, which is to read fifty books. And I almost did it. Never thought it would be possible to even read forty books. The key here, as many of you know, is to find one hour in evening or before you go to sleep (depending on what works best for you) and spend it reading.
+If you are looking for something to spend a few good evenings, I highly recommend these 5 books:</description>
+    </item>
     
     <item>
       <title>Заметка о безопасности</title>
