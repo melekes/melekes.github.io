@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-
-
     
         <meta name="twitter:card" content="summary"/>
     
@@ -15,37 +13,37 @@
 
 
 <meta name="twitter:title" content="Ruby&#39;s GC (RU)"/>
-<meta name="twitter:description" content="В последнее время в Кайдзен проходит все больше и больше внутренних докладов, в
-рамках которых каждый делится своими знаниями в той или иной области (к примеру
-доклад Александра Кириллова @saratovsource Securing Rails
-Applications).
-Докладчику это позволяет лишний раз потренироваться в искусстве публичных
-выступлений, аудитории же - набраться полезных знаний. Один из таких докладов я
-и представляю на ваш суд.
-
-"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@akaliaev"/>
 
 
 
-  	<meta property="og:title" content=" Ruby&#39;s GC (RU) &middot;  Home on Rails" />
+  	<meta property="og:title" content="Ruby&#39;s GC (RU) &middot; Home on Rails" />
   	<meta property="og:site_name" content="Home on Rails" />
   	<meta property="og:url" content="http://homeonrails.com/2012/11/rubys-gc-ru/" />
 
     
+        
+            <meta property="og:image" content="/images/cover.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-
-    <meta property="og:article:published_time" content="2012-11-23T00:00:00Z" />
+    <meta property="article:published_time" content="2012-11-23T00:00:00Z" />
 
     
-    <meta property="og:article:tag" content="talks" />
+    <meta property="article:tag" content="talks" />
     
     
 
-    <title>
-       Ruby&#39;s GC (RU) &middot;  Home on Rails
-    </title>
+    <title>Ruby&#39;s GC (RU) &middot; Home on Rails</title>
 
-    <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
+    
+    <meta name="description" content="&lt;p&gt;В последнее время в Кайдзен проходит все больше и больше внутренних докладов, в
+рамках которых каждый делится своими знаниями в той или иной области (к приме" />
+    
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,8 +53,15 @@ Applications).
 
     <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
 
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
 
     
       
@@ -67,6 +72,66 @@ Applications).
     <meta name="generator" content="Hugo 0.31.1" />
 
     <link rel="canonical" href="http://homeonrails.com/2012/11/rubys-gc-ru/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://homeonrails.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://homeonrails.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://homeonrails.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Ruby&#39;s GC (RU),
+    "name": Ruby&#39;s GC (RU),
+    "wordCount": 95,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://homeonrails.com/2012/11/rubys-gc-ru/,
+    "datePublished": 2012-11-23T00:00Z,
+    "dateModified": 2012-11-23T00:00Z,
+    
+    "keywords": talks,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://homeonrails.com/2012/11/rubys-gc-ru/
+    }
+}
+    </script>
+    
+
+
+    
 
     
     <script>
@@ -149,8 +214,9 @@ Applications).
             	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
             </li>
         
+        
     </ul>
-    
+
     
     <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
     
@@ -159,7 +225,6 @@ Applications).
 
 
  <div class="site-wrapper">
-
 
 
 
@@ -196,7 +261,7 @@ Applications).
           </time>
         
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/talks/">#talks</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/talks/">#talks</a></span>
          
         </section>
     </header>
@@ -225,27 +290,30 @@ Applications</a>).
 
 
     
-    <figure class="author-image">
-        <a class="img" href="http://homeonrails.com/" style="background-image: url(http://homeonrails.com/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
-    </figure>
-    
-
-    
 
 
 
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://homeonrails.com/" style="background-image: url(/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
+</figure>
 
 
 <section class="author">
   <h4><a href="http://homeonrails.com/">Anton Kaliaev</a></h4>
   
-  <p>Software engineer, blogger, public speaker, traveler</p>
+  <p>Read <a href="http://homeonrails.com/">more posts</a> by this author.</p>
   
   <div class="author-meta">
     <span class="author-location icon-location">Ulyanovsk, Russia</span>
     <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
   </div>
 </section>
+
 
 
 
@@ -275,16 +343,28 @@ Applications</a>).
     
 
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-  var disqus_shortname = 'homeonrails';
-  var disqus_url = 'http:\/\/homeonrails.com\/2012\/11\/rubys-gc-ru\/';
-  (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "http:\/\/homeonrails.com\/2012\/11\/rubys-gc-ru\/";  
+this.page.identifier = "http:\/\/homeonrails.com\/2012\/11\/rubys-gc-ru\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://homeonrails.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
 
 
 
@@ -293,8 +373,30 @@ Applications</a>).
 </article>
 
 </main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/">
+          <section class="post">
+              <h2>Don&#39;t do this at home on Rails #3</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="http://homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/">
+          <section class="post">
+              <h2>Null migration, or What to do when there are too many migrations</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
         
         <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
         

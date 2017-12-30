@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-
-
     
         <meta name="twitter:card" content="summary"/>
     
@@ -15,31 +13,37 @@
 
 
 <meta name="twitter:title" content="Заметка о безопасности"/>
-<meta name="twitter:description" content="English
-Недавно начал все больше интересоваться темой безопасности. Наверное, я, как и многие люди из поколения Y, выросшие во времена бума компьютерных технологий, Сноудена и fsociety всегда был параноиком по части безопасности, но, признаться честно, я мало что делал для обеспечения ее как таковой. AdBlock, HTTPS Everywhere, и еще пара плагинов для Chrome - джентльменский набор нуба, так сказать.
-Но грядут новые времена. Времена, где твои криптоденежки можно увести у тебя из под носа просто подсунув тебе фейковую версию кошелька."/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@akaliaev"/>
 
 
 
-  	<meta property="og:title" content=" Заметка о безопасности &middot;  Home on Rails" />
+  	<meta property="og:title" content="Заметка о безопасности &middot; Home on Rails" />
   	<meta property="og:site_name" content="Home on Rails" />
   	<meta property="og:url" content="http://homeonrails.com/2017/12/note-on-security/" />
 
     
+        
+            <meta property="og:image" content="/images/cover.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-
-    <meta property="og:article:published_time" content="2017-12-11T23:48:31-05:00" />
+    <meta property="article:published_time" content="2017-12-11T23:48:31-05:00" />
 
     
-    <meta property="og:article:tag" content="security" />
+    <meta property="article:tag" content="security" />
     
     
 
-    <title>
-       Заметка о безопасности &middot;  Home on Rails
-    </title>
+    <title>Заметка о безопасности &middot; Home on Rails</title>
 
-    <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
+    
+    <meta name="description" content="English
+Недавно начал все больше интересоваться темой безопасности. Наверное, я, как и многие люди из поколения Y, выросшие во времена бума компьютерных техноло" />
+    
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,8 +53,15 @@
 
     <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
 
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
 
     
       
@@ -61,6 +72,66 @@
     <meta name="generator" content="Hugo 0.31.1" />
 
     <link rel="canonical" href="http://homeonrails.com/2017/12/note-on-security/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://homeonrails.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://homeonrails.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://homeonrails.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Заметка о безопасности,
+    "name": Заметка о безопасности,
+    "wordCount": 400,
+    "timeRequired": "PT2M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://homeonrails.com/2017/12/note-on-security/,
+    "datePublished": 2017-12-11T23:48Z,
+    "dateModified": 2017-12-11T23:48Z,
+    
+    "keywords": security,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://homeonrails.com/2017/12/note-on-security/
+    }
+}
+    </script>
+    
+
+
+    
 
     
     <script>
@@ -143,8 +214,9 @@
             	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
             </li>
         
+        
     </ul>
-    
+
     
     <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
     
@@ -153,7 +225,6 @@
 
 
  <div class="site-wrapper">
-
 
 
 
@@ -190,7 +261,7 @@
           </time>
         
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/security/">#security</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/security/">#security</a></span>
          
         </section>
     </header>
@@ -340,27 +411,30 @@ c ScriptSafe, отключенным Javascript и Cookies.</p>
 
 
     
-    <figure class="author-image">
-        <a class="img" href="http://homeonrails.com/" style="background-image: url(http://homeonrails.com/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
-    </figure>
-    
-
-    
 
 
 
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://homeonrails.com/" style="background-image: url(/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
+</figure>
 
 
 <section class="author">
   <h4><a href="http://homeonrails.com/">Anton Kaliaev</a></h4>
   
-  <p>Software engineer, blogger, public speaker, traveler</p>
+  <p>Read <a href="http://homeonrails.com/">more posts</a> by this author.</p>
   
   <div class="author-meta">
     <span class="author-location icon-location">Ulyanovsk, Russia</span>
     <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
   </div>
 </section>
+
 
 
 
@@ -390,16 +464,28 @@ c ScriptSafe, отключенным Javascript и Cookies.</p>
     
 
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-  var disqus_shortname = 'homeonrails';
-  var disqus_url = 'http:\/\/homeonrails.com\/2017\/12\/note-on-security\/';
-  (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "http:\/\/homeonrails.com\/2017\/12\/note-on-security\/";  
+this.page.identifier = "http:\/\/homeonrails.com\/2017\/12\/note-on-security\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://homeonrails.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
 
 
 
@@ -408,8 +494,30 @@ c ScriptSafe, отключенным Javascript и Cookies.</p>
 </article>
 
 </main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="http://homeonrails.com/2017/12/my-favorite-books-of-2017/">
+          <section class="post">
+              <h2>My favorite books of 2017</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="http://homeonrails.com/2017/12/monthly-art-number-25/">
+          <section class="post">
+              <h2>Monthly Art #25</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
         
         <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
         

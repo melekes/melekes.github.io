@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-
-
     
         <meta name="twitter:card" content="summary"/>
     
@@ -15,42 +13,46 @@
 
 
 <meta name="twitter:title" content="Copy and paste between Vim and OS"/>
-<meta name="twitter:description" content="When I first encountered this problem it slightly
-puzzled me. &ldquo;Why can not I press ctrl-c to copy the text and
-ctrl-v to paste?&ldquo;- I asked myself. Indeed, the majority of source code editors
-able to do this. And yes, I got used to this dammit!
-
-"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@akaliaev"/>
 
 
 
-  	<meta property="og:title" content=" Copy and paste between Vim and OS &middot;  Home on Rails" />
+  	<meta property="og:title" content="Copy and paste between Vim and OS &middot; Home on Rails" />
   	<meta property="og:site_name" content="Home on Rails" />
   	<meta property="og:url" content="http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/" />
 
     
+        
+            <meta property="og:image" content="/images/cover.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2014-01-09T00:00:00Z" />
 
-    <meta property="og:article:published_time" content="2014-01-09T00:00:00Z" />
-
     
-    <meta property="og:article:tag" content="tutorials" />
+    <meta property="article:tag" content="tutorials" />
     
-    <meta property="og:article:tag" content="vim" />
+    <meta property="article:tag" content="vim" />
     
-    <meta property="og:article:tag" content="os" />
+    <meta property="article:tag" content="os" />
     
-    <meta property="og:article:tag" content="copy-and-paste" />
+    <meta property="article:tag" content="copy-and-paste" />
     
-    <meta property="og:article:tag" content="vimrc" />
+    <meta property="article:tag" content="vimrc" />
     
     
 
-    <title>
-       Copy and paste between Vim and OS &middot;  Home on Rails
-    </title>
+    <title>Copy and paste between Vim and OS &middot; Home on Rails</title>
 
-    <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
+    
+    <meta name="description" content="&lt;p&gt;When I first encountered this problem it slightly
+puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
+&lt;code&gt;ctrl-v&lt;/code&gt; to past" />
+    
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,8 +62,15 @@ able to do this. And yes, I got used to this dammit!
 
     <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
 
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
 
     
       
@@ -72,6 +81,66 @@ able to do this. And yes, I got used to this dammit!
     <meta name="generator" content="Hugo 0.31.1" />
 
     <link rel="canonical" href="http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://homeonrails.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://homeonrails.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://homeonrails.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Copy and paste between Vim and OS,
+    "name": Copy and paste between Vim and OS,
+    "wordCount": 492,
+    "timeRequired": "PT3M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/,
+    "datePublished": 2014-01-09T00:00Z,
+    "dateModified": 2014-01-09T00:00Z,
+    
+    "keywords": tutorials, vim, os, copy-and-paste, vimrc,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/
+    }
+}
+    </script>
+    
+
+
+    
 
     
     <script>
@@ -154,8 +223,9 @@ able to do this. And yes, I got used to this dammit!
             	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
             </li>
         
+        
     </ul>
-    
+
     
     <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
     
@@ -164,7 +234,6 @@ able to do this. And yes, I got used to this dammit!
 
 
  <div class="site-wrapper">
-
 
 
 
@@ -201,15 +270,15 @@ able to do this. And yes, I got used to this dammit!
           </time>
         
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/tutorials/">#tutorials</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/tutorials/">#tutorials</a></span>
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/vim/">#vim</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/vim/">#vim</a></span>
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/os/">#os</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/os/">#os</a></span>
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/copy-and-paste/">#copy-and-paste</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/copy-and-paste/">#copy-and-paste</a></span>
          
-          <span class="post-tag small"><a href="http://homeonrails.com/tags/vimrc/">#vimrc</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/vimrc/">#vimrc</a></span>
          
         </section>
     </header>
@@ -288,27 +357,30 @@ to type <code>&quot;*p</code> and <code>&quot;*y</code> prefixes. I don&rsquo;t 
 
 
     
-    <figure class="author-image">
-        <a class="img" href="http://homeonrails.com/" style="background-image: url(http://homeonrails.com/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
-    </figure>
-    
-
-    
 
 
 
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://homeonrails.com/" style="background-image: url(/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
+</figure>
 
 
 <section class="author">
   <h4><a href="http://homeonrails.com/">Anton Kaliaev</a></h4>
   
-  <p>Software engineer, blogger, public speaker, traveler</p>
+  <p>Read <a href="http://homeonrails.com/">more posts</a> by this author.</p>
   
   <div class="author-meta">
     <span class="author-location icon-location">Ulyanovsk, Russia</span>
     <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
   </div>
 </section>
+
 
 
 
@@ -338,16 +410,28 @@ to type <code>&quot;*p</code> and <code>&quot;*y</code> prefixes. I don&rsquo;t 
     
 
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-  var disqus_shortname = 'homeonrails';
-  var disqus_url = 'http:\/\/homeonrails.com\/2014\/01\/copy-and-paste-between-vim-and-os\/';
-  (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "http:\/\/homeonrails.com\/2014\/01\/copy-and-paste-between-vim-and-os\/";  
+this.page.identifier = "http:\/\/homeonrails.com\/2014\/01\/copy-and-paste-between-vim-and-os\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://homeonrails.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
 
 
 
@@ -356,8 +440,30 @@ to type <code>&quot;*p</code> and <code>&quot;*y</code> prefixes. I don&rsquo;t 
 </article>
 
 </main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="http://homeonrails.com/2014/01/december-picks/">
+          <section class="post">
+              <h2>December picks</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="http://homeonrails.com/2014/01/riding-in-bansko-2013/">
+          <section class="post">
+              <h2>Покатушки 2013 - Банско, Болгария</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Home on Rails</a> All rights reserved - 2017</section>
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
         
         <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
         
