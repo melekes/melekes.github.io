@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 06 Jun 2017 22:35:01 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 13:20:11 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Debugging the Memory Leak in Tendermint</title>
+      <link>http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</link>
+      <pubDate>Sat, 03 Mar 2018 13:20:11 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</guid>
+      <description>This article was originally published on [Medium]](https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420).
+I have spent the last week looking for clues and writing test cases in order to find and fix the memory leak in Tendermint. For those of you who don’t know, Tendermint Core is a Byzantine Fault Tolerant (BFT) middleware that takes a state transition machine — written in any programming language — and securely replicates it on many machines. It is also the foundation of Cosmos — our solution for scaling blockchains.</description>
+    </item>
     
     <item>
       <title>Abstracting the logger interface in Go</title>

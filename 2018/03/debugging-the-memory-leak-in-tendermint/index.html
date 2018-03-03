@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Debugging the Memory Leak in Tendermint"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@akaliaev"/>
+
+
+
+  	<meta property="og:title" content="Debugging the Memory Leak in Tendermint &middot; Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/" />
+
+    
+        
+            <meta property="og:image" content="/images/cover.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-03-03T13:20:11&#43;04:00" />
+
+    
+    <meta property="article:tag" content="debugging" />
+    
+    <meta property="article:tag" content="golang" />
+    
+    
+
+    <title>Debugging the Memory Leak in Tendermint &middot; Home on Rails</title>
+
+    
+    <meta name="description" content="This article was originally published on [Medium]](https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420).
+I have spent the last week" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+      
+          <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.36" />
+
+    <link rel="canonical" href="http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://homeonrails.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://homeonrails.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://homeonrails.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Debugging the Memory Leak in Tendermint,
+    "name": Debugging the Memory Leak in Tendermint,
+    "wordCount": 978,
+    "timeRequired": "PT5M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/,
+    "datePublished": 2018-03-03T13:20Z,
+    "dateModified": 2018-03-03T13:20Z,
+    
+    "keywords": debugging, golang,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/about">About me</a>
+            </li>
+        
+            <h3>Explore</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/most-popular-posts">Most popular posts</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://speakerdeck.com/melekes">Talks</a>
+            </li>
+        
+            <h3>Follow Me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/melekes">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/akaliaev">Twitter timeline</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://www.goodreads.com/melekes">Goodreads books</a>
+            </li>
+        
+            <h3>Contact Me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.linkedin.com/in/melekes">LinkedIn</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://Keybase.io/melekes">Keybase (secure msg)</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com/"><img src="http://homeonrails.com/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Debugging the Memory Leak in Tendermint</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-03-03T13:20:11&#43;04:00">
+            Mar 3, 2018
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/debugging/">#debugging</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/golang/">#golang</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p><em>This article was originally published on [Medium]](<a href="https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420">https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420</a>).</em></p>
+
+<p>I have spent the last week looking for clues and writing test cases in order to
+find and fix the memory leak in
+<a href="https://github.com/tendermint/tendermint/">Tendermint</a>. For those of you who
+don’t know, Tendermint Core is a Byzantine Fault Tolerant (BFT) middleware that
+takes a state transition machine — written in any programming language — and
+securely replicates it on many machines. It is also the foundation of
+<a href="https://cosmos.network/">Cosmos</a> — our solution for scaling blockchains.</p>
+
+<p>Finding a memory leak in Go is not an easy task. However, there is a common set
+of questions, answers to which will hopefully help you identify the source of a
+leak. Here is the list:</p>
+
+<h2 id="detecting-troubleshooting-and-fixing-a-memory-leak-in-go">Detecting, Troubleshooting, and Fixing a Memory Leak in Go</h2>
+
+<p>The immediate questions to ask are:</p>
+
+<ul>
+<li>Where is memory leaking to? (<code>go tool pprof</code> with <code>-base</code> flag)</li>
+<li>Why is new memory being allocated? (code specific)</li>
+<li>Is the number of goroutines growing or not? (<code>runtime.NumGoroutine()</code>)</li>
+<li>If the number of goroutines is growing, which of them are new? (leaktest or
+<code>pprof.Lookup(&quot;goroutine&quot;).WriteTo(os.Stdout, 1)</code>)</li>
+<li>If the number of goroutines is not growing, what object(s) hold a reference
+to the leaking memory? (<code>go tool pprof</code> with <code>-base</code> flag and reading code)</li>
+</ul>
+
+<p>If you want to know the whole story, please keep reading.</p>
+
+<h2 id="part-1-discovery">Part 1. Discovery</h2>
+
+<p>It all started with one of our users <a href="https://github.com/cosmos/gaia/issues/108">reporting a memory
+leak</a> (thanks Martin), while he was
+trying to sync with the latest testnet (<code>gaia-2</code>). And 615MB after just a few
+minutes at block ~230k certainly does sound like one. Jeez!</p>
+
+<p>First thing I did is try to replicate this manually by spinning up a new node
+and connecting to the same testnet. I took advantage of existing
+<code>http://localhost:46657/write_heap_profile?filename=_</code> RPC endpoint and created
+two heap dumps: one at the start, another after approximately 10 minutes of
+syncing. Then I compared them using <code>go tool pprof</code>.</p>
+
+<pre><code class="language-sh">go tool pprof -base /tmp/mem1.mprof /tmp/mem2.mprof
+</code></pre>
+
+<p>Immediately I noticed <a href="https://github.com/cosmos/gaia/issues/108#issuecomment-358742047">a lot of
+memory</a> is
+occupied by <code>newChannel</code> and <code>RepeatTimer</code>. The trail went all the way up to
+the <code>reconnectToPeer</code> function. That was weird because we’re not creating any
+new peers (some of them were just failing due to timeouts and Tendermint tried
+to reconnect).</p>
+
+<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2018-03-03-debugging-the-memory-leak-in-tendermint/1.png" alt="" title=""/>
+<img class="img-rounded" src="http://homeonrails.com/images/posts/2018-03-03-debugging-the-memory-leak-in-tendermint/2.png" alt="" title=""/></p>
+
+<h2 id="part-2-mistake">Part 2. Mistake</h2>
+
+<p>Here I made a mistake. I thought I pinpointed the exact place where the memory
+is leaking. So I went and wrote a test case for <code>p2p/Switch</code>, where I create a
+peer, close the connection (simulate a timeout), wait until Tendermint
+reconnects and repeat this 100 times. Before and after, I took snapshots of the
+heap and later used them to find where memory is going.</p>
+
+<p>The test-case looked like this:</p>
+
+<pre><code class="language-go">// memory heap before
+f, err := os.Create(“/tmp/mem1.mprof”)
+if err != nil {
+  t.Fatal(err)
+}
+pprof.WriteHeapProfile(f)
+f.Close()
+
+// create a peer
+// simulate failure by closing the connection
+// wait until Tendermint reconnects to peer
+// repeat 100 times
+
+// call GC manually
+runtime.GC()
+
+// memory heap after
+f, err := os.Create(“/tmp/mem2.mprof”)
+if err != nil {
+  t.Fatal(err)
+}
+pprof.WriteHeapProfile(f)
+f.Close()
+</code></pre>
+
+<p>Indeed, the test showed leaking <code>newChannel</code> and <code>RepeatTimer</code>. But I still had
+no clue about why this was happening. I spent a few days reading various
+resources and source code, trying different instruments and <a href="https://stackoverflow.com/questions/48499573/is-there-a-way-to-know-who-holds-a-reference-to-an-object-in-go">asking
+people</a>
+for advice on StackOverflow.</p>
+
+<p>One advice was particularly interesting: <strong>look for running goroutines</strong>. So at the
+end of the test, I added:</p>
+
+<pre><code class="language-go">time.Sleep(10 * time.Second)
+pprof.Lookup(“goroutine”).WriteTo(os.Stdout, 1)
+</code></pre>
+
+<p><em>In the process, I also discovered a great
+tool — <a href="https://github.com/fortytw2/leaktest">leaktest</a>, which does almost the
+same, except it removes runtime and testing related goroutines, so it’s easy to
+spot leaking goroutines. Plus it makes a test fail if in the end there are
+still some goroutines running.</em></p>
+
+<p>No useful results. However, now I knew it was not goroutines that were the
+issue. I figured out there must be something wrong with my test case. Of
+course! How could I be so stupid? The culprit was testing using <code>TestReactor</code>
+(<a href="https://martinfowler.com/articles/mocksArentStubs.html">spy</a>), which <a href="https://github.com/tendermint/tendermint/blob/747b73cb95dab52ee1076ce83dcc92dca86ef93a/p2p/switch_test.go#L73">keeps track of peers</a> and <a href="https://github.com/tendermint/tendermint/blob/747b73cb95dab52ee1076ce83dcc92dca86ef93a/p2p/switch_test.go#L67">does not remove them</a>.</p>
+
+<pre><code class="language-go">tr.peersAdded = append(tr.peersAdded, peer)
+</code></pre>
+
+<p><code>TestReactor</code> was the one holding reference to all peers (both added and
+removed). This is why Go was not able to garbage collect them.</p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ti3mWTKXIgk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>The mistake I was talking above was <strong>jumping to a unit test instead of writing
+an integration test</strong>. Then it all became clear. I knew what I needed to do. I
+should have written the same test case but for the whole program (basically
+wrapping <code>main.main()</code>) rather than something, which is using a <a href="https://martinfowler.com/articles/mocksArentStubs.html">spy</a>
+(<code>TestReactor</code>).</p>
+
+<h2 id="part-3-happy-ending">Part 3. Happy Ending</h2>
+
+<p>In case of Tendermint, the entry point (analogue of <code>main.main()</code>) is creating
+and running a <code>Node</code>.</p>
+
+<pre><code class="language-go">// create &amp; start node
+n, err := DefaultNewNode(config, log.TestingLogger())
+...
+// memory heap before
+f, err := os.Create(“/tmp/mem1.mprof”)
+if err != nil {
+  t.Fatal(err)
+}
+pprof.WriteHeapProfile(f)
+f.Close()
+// stop a peer 100 times
+// call GC manually
+runtime.GC()
+// memory heap after
+f, err := os.Create(“/tmp/mem2.mprof”)
+if err != nil {
+  t.Fatal(err)
+}
+pprof.WriteHeapProfile(f)
+f.Close()
+// stop node
+n.Stop()
+// dump all running goroutines
+time.Sleep(10 * time.Second)
+pprof.Lookup(“goroutine”).WriteTo(os.Stdout, 1)
+</code></pre>
+
+<p>2 minutes later I discovered the real reason:</p>
+
+<pre><code>114 @ 0x42f2bc 0x42f3ae 0x440794 0x4403b9 0x468002 0x9fe32d 0x9ff78f 0xa025ed 0x45e571
+# 0x4403b8 sync.runtime_Semacquire+0x38 /usr/lib/go-1.9/src/runtime/sema.go:56
+# 0x468001 sync.(*WaitGroup).Wait+0x71 /usr/lib/go-1.9/src/sync/waitgroup.go:131
+# 0x9fe32c github.com/tendermint/tendermint/vendor/github.com/tendermint/tmlibs/clist.(*CList).FrontWait+0x2c /home/vagrant/go/src/github.com/tendermint/tendermint/vendor/github.com/tendermint/tmlibs/clist/clist.go:233
+# 0x9ff78e github.com/tendermint/tendermint/mempool.(*Mempool).TxsFrontWait+0x2e /home/vagrant/go/src/github.com/tendermint/tendermint/mempool/mempool.go:184
+# 0xa025ec github.com/tendermint/tendermint/mempool.(*MempoolReactor).broadcastTxRoutine+0x25c /home/vagrant/go/src/github.com/tendermint/tendermint/mempool/reactor.go:120
+</code></pre>
+
+<p><code>MempoolReactor</code> creates a broadcast routine for each peer. It can block on an
+empty <code>CList</code> forever unless there are transactions coming in. And since there
+are no transactions during sync, this goroutine will just sit there, holding
+onto the peer too. If we’re constantly reconnecting to some peer, old instances
+are not garbage collected, leading to the memory leak.</p>
+
+<p>The leak was <a href="https://github.com/tendermint/tendermint/pull/1173">successfully
+fixed</a> and included in the
+next release of Tendermint (0.16).</p>
+
+<p><strong>Lessons learned</strong>:</p>
+
+<ul>
+<li>avoid unnecessary blocking</li>
+<li>use leaktest in integration tests (especially if code is spawning new goroutines)</li>
+</ul>
+
+<p>Resources:</p>
+
+<ul>
+<li><a href="https://medium.com/golangspec/goroutine-leak-400063aef468">Goroutine leak</a></li>
+<li><a href="https://blog.golang.org/profiling-go-programs">Profiling Go Programs</a></li>
+<li><a href="https://www.youtube.com/watch?v=ydWFpcoYraU">Finding Memory Leaks in Go Programs — Oleg Shaldybin</a></li>
+</ul>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://homeonrails.com/" style="background-image: url(/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com/">Anton Kaliaev</a></h4>
+  
+  <p>Read <a href="http://homeonrails.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ulyanovsk, Russia</span>
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Debugging%20the%20Memory%20Leak%20in%20Tendermint&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2018%2f03%2fdebugging-the-memory-leak-in-tendermint%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2018%2f03%2fdebugging-the-memory-leak-in-tendermint%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2018%2f03%2fdebugging-the-memory-leak-in-tendermint%2f&amp;description=Debugging%20the%20Memory%20Leak%20in%20Tendermint"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2018%2f03%2fdebugging-the-memory-leak-in-tendermint%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "http:\/\/homeonrails.com\/2018\/03\/debugging-the-memory-leak-in-tendermint\/";  
+this.page.identifier = "http:\/\/homeonrails.com\/2018\/03\/debugging-the-memory-leak-in-tendermint\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://homeonrails.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="http://homeonrails.com/2018/03/monthly-art-number-28/">
+          <section class="post">
+              <h2>Monthly Art #28</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.com/js/index.js"></script>
+    
+</body>
+</html>
+
