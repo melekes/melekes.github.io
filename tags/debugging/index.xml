@@ -7,28 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 03 Mar 2018 13:47:11 +0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 13:20:11 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Choosing a type for blockchain height (beware of unsigned integers)</title>
-      <link>http://homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</link>
-      <pubDate>Sat, 03 Mar 2018 13:47:11 +0400</pubDate>
-      
-      <guid>http://homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Before &lt;a href=&#34;https://github.com/tendermint/tendermint/pull/914&#34;&gt;this pull request&lt;/a&gt;,
-it was a mess. ABCI was using a &lt;code&gt;uint64&lt;/code&gt; height on EndBlock. Tendermint Core
-was using the same type for TxResult. Block and BlockStore, however, were using
-&lt;code&gt;int&lt;/code&gt; heights (remember that &lt;code&gt;int&lt;/code&gt; is different depending on the processor
-architecture: &lt;code&gt;int32&lt;/code&gt; for x86, &lt;code&gt;int64&lt;/code&gt; for amd64). There was no single standard
-across our repositories as for what type to use for blockchain height.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Debugging the Memory Leak in Tendermint</title>

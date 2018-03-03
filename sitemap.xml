@@ -936,6 +936,12 @@
   </url>
   
   <url>
+    <loc>http://homeonrails.com/tags/blockchain/</loc>
+    <lastmod>2018-03-03T13:47:11+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/tags/books/</loc>
     <lastmod>2017-12-26T21:15:01-05:00</lastmod>
     <priority>0</priority>
@@ -1002,7 +1008,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/debugging/</loc>
-    <lastmod>2018-03-03T13:47:11+04:00</lastmod>
+    <lastmod>2018-03-03T13:20:11+04:00</lastmod>
     <priority>0</priority>
   </url>
   
