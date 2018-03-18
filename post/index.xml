@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 03 Mar 2018 13:47:11 +0400</lastBuildDate>
+    <lastBuildDate>Sun, 18 Mar 2018 17:46:32 +0300</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Строительные компании Ульяновской области (частные дома / офисные здания)</title>
+      <link>http://homeonrails.com/2018/03/construction-companies-in-ulsk-oblast/</link>
+      <pubDate>Sun, 18 Mar 2018 17:46:32 +0300</pubDate>
+      
+      <guid>http://homeonrails.com/2018/03/construction-companies-in-ulsk-oblast/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Choosing a type for blockchain height (beware of unsigned integers)</title>
