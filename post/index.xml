@@ -27,6 +27,16 @@ About ALGOL 60 which introduced recursion and enabled him to express his quick s
     </item>
     
     <item>
+      <title>Where should I declare my constant?</title>
+      <link>http://homeonrails.com/2018/03/where-should-i-declare-my-constant/</link>
+      <pubDate>Thu, 29 Mar 2018 15:18:47 +0200</pubDate>
+      
+      <guid>http://homeonrails.com/2018/03/where-should-i-declare-my-constant/</guid>
+      <description>This article was originally published on Medium.
+Quick question: where should I declare my constant? Most developers would say: “top of the file”. And that would be the wrong answer. As for the majority of the questions in software engineering, the right answer is “it depends”. I would try to prove to you, in this post, that, if the constant is private and is used only in one place, it’s far better to declare it right above the line, where it’s used.</description>
+    </item>
+    
+    <item>
       <title>Строительные компании Ульяновской области (частные дома / офисные здания)</title>
       <link>http://homeonrails.com/2018/03/construction-companies-in-ulsk-oblast/</link>
       <pubDate>Sun, 18 Mar 2018 17:46:32 +0300</pubDate>
