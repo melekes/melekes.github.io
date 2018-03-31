@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://homeonrails.com/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</loc>
+    <lastmod>2018-03-31T15:46:21+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</loc>
     <lastmod>2018-03-30T13:22:31+02:00</lastmod>
   </url>
@@ -1131,7 +1136,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2018-03-30T13:22:31+02:00</lastmod>
+    <lastmod>2018-03-31T15:46:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1233,7 +1238,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/papers/</loc>
-    <lastmod>2018-03-30T13:22:31+02:00</lastmod>
+    <lastmod>2018-03-31T15:46:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1257,7 +1262,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2018-03-30T13:22:31+02:00</lastmod>
+    <lastmod>2018-03-31T15:46:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1275,7 +1280,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/programming/</loc>
-    <lastmod>2018-03-30T13:22:31+02:00</lastmod>
+    <lastmod>2018-03-31T15:46:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
