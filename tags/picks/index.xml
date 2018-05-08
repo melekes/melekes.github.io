@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 02 Apr 2018 12:21:09 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 08 May 2018 18:20:01 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/tags/picks/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>April Tech Picks</title>
+      <link>http://homeonrails.com/2018/05/april-tech-picks/</link>
+      <pubDate>Tue, 08 May 2018 18:20:01 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2018/05/april-tech-picks/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>March Tech Picks</title>
