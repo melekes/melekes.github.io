@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 03 Jun 2018 12:22:51 +0400</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jun 2018 17:08:21 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Better Open-Source With Tokenized Github</title>
+      <link>http://homeonrails.com/2018/06/better-open-source-with-tokenized-github/</link>
+      <pubDate>Wed, 06 Jun 2018 17:08:21 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2018/06/better-open-source-with-tokenized-github/</guid>
+      <description>In the light of the recent news, I wanted to share an idea I had just recently.
+Every popular open-source project on Github eventually becomes overwhelmed by the number of issues. That&amp;rsquo;s because it&amp;rsquo;s so easy to create one. You are not required to understand the project. You are not required to read the documentation. All you need is a Github account.
+And this is an example of the amplification attack.</description>
+    </item>
     
     <item>
       <title>Monthly Art #31</title>
