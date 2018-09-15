@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://homeonrails.com/2018/09/apps-for-distributed-team/</loc>
+    <lastmod>2018-09-15T17:33:21+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2018/09/monthly-art-number-33/</loc>
     <lastmod>2018-09-08T14:22:51+04:00</lastmod>
   </url>
@@ -993,6 +998,12 @@
   </url>
   
   <url>
+    <loc>http://homeonrails.com/tags/apps/</loc>
+    <lastmod>2018-09-15T17:33:21+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/tags/art/</loc>
     <lastmod>2018-09-08T14:22:51+04:00</lastmod>
     <priority>0</priority>
@@ -1090,6 +1101,12 @@
   <url>
     <loc>http://homeonrails.com/tags/debugging/</loc>
     <lastmod>2018-03-03T13:20:11+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/tags/distributed/</loc>
+    <lastmod>2018-09-15T17:33:21+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1197,7 +1214,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2018-09-08T14:22:51+04:00</lastmod>
+    <lastmod>2018-09-15T17:33:21+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1329,7 +1346,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2018-09-08T14:22:51+04:00</lastmod>
+    <lastmod>2018-09-15T17:33:21+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1377,7 +1394,7 @@
   
   <url>
     <loc>http://homeonrails.com/tags/remote/</loc>
-    <lastmod>2017-10-12T20:57:11+04:00</lastmod>
+    <lastmod>2018-09-15T17:33:21+04:00</lastmod>
     <priority>0</priority>
   </url>
   
