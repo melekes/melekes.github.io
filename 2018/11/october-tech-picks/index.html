@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Monthly Art #35"/>
+<meta name="twitter:title" content="October Tech Picks"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@akaliaev"/>
 
 
 
-  	<meta property="og:title" content="Monthly Art #35 &middot; Home on Rails" />
+  	<meta property="og:title" content="October Tech Picks &middot; Home on Rails" />
   	<meta property="og:site_name" content="Home on Rails" />
-  	<meta property="og:url" content="http://homeonrails.com/2018/11/monthly-art-number-35/" />
+  	<meta property="og:url" content="http://homeonrails.com/2018/11/october-tech-picks/" />
 
     
         
@@ -31,18 +31,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2018-11-03T19:24:51&#43;04:00" />
+    <meta property="article:published_time" content="2018-11-04T09:03:09&#43;04:00" />
 
     
-    <meta property="article:tag" content="art" />
+    <meta property="article:tag" content="picks" />
     
     
 
-    <title>Monthly Art #35 &middot; Home on Rails</title>
+    <title>October Tech Picks &middot; Home on Rails</title>
 
     
-    <meta name="description" content="&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
-last month. Whether it was a full length movie, short film, music al" />
+    <meta name="description" content="&lt;p&gt;&amp;ldquo;Excellent hand-picked articles &amp;amp; videos about programming from all over the Internet&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -71,7 +72,7 @@ last month. Whether it was a full length movie, short film, music al" />
     
     <meta name="generator" content="Hugo 0.49.2" />
 
-    <link rel="canonical" href="http://homeonrails.com/2018/11/monthly-art-number-35/" />
+    <link rel="canonical" href="http://homeonrails.com/2018/11/october-tech-picks/" />
 
     
       
@@ -108,23 +109,23 @@ last month. Whether it was a full length movie, short film, music al" />
             
         ]
     },
-    "headline": Monthly Art #35,
-    "name": Monthly Art #35,
-    "wordCount": 399,
-    "timeRequired": "PT2M",
+    "headline": October Tech Picks,
+    "name": October Tech Picks,
+    "wordCount": 202,
+    "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": en
     },
-    "url": http://homeonrails.com/2018/11/monthly-art-number-35/,
-    "datePublished": 2018-11-03T19:24Z,
-    "dateModified": 2018-11-03T19:24Z,
+    "url": http://homeonrails.com/2018/11/october-tech-picks/,
+    "datePublished": 2018-11-04T09:03Z,
+    "dateModified": 2018-11-04T09:03Z,
     
-    "keywords": art,
+    "keywords": picks,
     "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": http://homeonrails.com/2018/11/monthly-art-number-35/
+        "@id": http://homeonrails.com/2018/11/october-tech-picks/
     }
 }
     </script>
@@ -248,112 +249,83 @@ last month. Whether it was a full length movie, short film, music al" />
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Monthly Art #35</h1>
+        <h1 class="post-title">October Tech Picks</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2018-11-03T19:24:51&#43;04:00">
-            Nov 3, 2018
+          <time class="post-date" datetime="2018-11-04T09:03:09&#43;04:00">
+            Nov 4, 2018
           </time>
         
          
-          <span class="post-tag small"><a href="http://homeonrails.com//tags/art/">#art</a></span>
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/picks/">#picks</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>This is a monthly &ldquo;newsletter&rdquo;, containing a list of what I enjoyed the most
-last month. Whether it was a full length movie, short film, music album, book
-or even a painting.</p>
+      <p>&ldquo;Excellent hand-picked articles &amp; videos about programming from all over the Internet&rdquo;.</p>
 
-<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Here&#39;s a dystopian vision of the future: A real announcement I recorded on the Beijing-Shanghai bullet train. (I&#39;ve subtitled it so you can watch in silence.) <a href="https://t.co/ZoRWtdcSMy">pic.twitter.com/ZoRWtdcSMy</a></p>&mdash; James O&#39;Malley (@Psythor) <a href="https://twitter.com/Psythor/status/1056811593177227264?ref_src=twsrc%5Etfw">October 29, 2018</a></blockquote>
+<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> defer makes you sloppy. Try to avoid when dealing with mutexes</p>&mdash; Anton Kaliaev (@akaliaev) <a href="https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p><blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">defer + mutexes makes you forget that<br><br>a) while we&#39;re locked, nobody else can access the object (unless its read lock) -&gt; better to unlock earlier<br>b) when you put more code &amp; call other functions between lock / unlock, it becomes easier to deadlock<br>c) defers are slow</p>&mdash; Anton Kaliaev (@akaliaev) <a href="https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p><blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">More times you don&#39;t need a defer <a href="https://t.co/DYrbJQJwgS">pic.twitter.com/DYrbJQJwgS</a></p>&mdash; Anton Kaliaev (@akaliaev) <a href="https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
 <p></p>
 
-<p><strong>What I am watching</strong></p>
+<p><strong>Articles</strong></p>
 
 <ul>
-<li>Cinema Paradiso (1988)</li>
+<li><a href="https://www.divio.com/blog/documentation/">What nobody tells you about documentation</a></li>
 </ul>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w_pmmJo5ho8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>The plot itself is straightforward - successful director returns home after ~
-30 years and remembers his childhood. But the stories themselves and the
-atmosphere make you feel. A masterpiece directed by Giuseppe Tornatore.</p>
+<p>Must read for anyone writing docs.</p>
 
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Cinema_Paradiso">Wikipedia</a></li>
-
-<li><p><a href="https://www.imdb.com/title/tt0095765/">IMDb</a></p></li>
-
-<li><p>The silent drama of photography</p></li>
+<li><a href="http://antirez.com/news/124">Writing system software: code comments.</a></li>
 </ul>
 
-<div style="max-width:854px;height:480px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/sebastiao_salgado_the_silent_drama_of_photography" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-
-<p>Sebastio Salgado tells a story of his life and how he&rsquo;s changing a world. Very
-powerful video. I would encourage you to read some of <a href="https://www.goodreads.com/author/show/796690.Sebasti_o_Salgado">his
-books</a> or watch
-<a href="https://www.imdb.com/title/tt3674140/">the &ldquo;The Salt of the Earth&rdquo;
-documentary</a> directed by his son,
-Juliano Ribeiro Salgado.</p>
+<p>Must read for anyone writing code.</p>
 
 <ul>
-<li>[RU] Лучшие в своём деле: Евгений Чичваркин | ЛСД #3</li>
+<li><p><a href="https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1">You don&rsquo;t need standup</a></p>
+
+<ol>
+<li>No stand-ups</li>
+<li>No planning at regular intervals</li>
+<li>No retros</li>
+<li>All meetings are optional</li>
+</ol></li>
 </ul>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Lk4FQGiZBqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p><strong>What I am reading</strong></p>
+<p>This may sound extreme. But there is some logic to this madness.</p>
 
 <ul>
-<li><a href="https://www.theverge.com/2018/5/17/17344250/google-x-selfish-ledger-video-data-privacy">Google selfish ledger is an unsettling vision of silicon valley social engineering</a></li>
+<li><a href="http://tonsky.me/blog/disenchantment/">Software disenchantment</a></li>
 </ul>
 
-<p>This internal video from 2016 shows a Google concept for how total data
-collection could reshape society.</p>
+<p>&ldquo;where we are today is bullshit. As engineers, we can, and should, and will do better.&rdquo;</p>
 
-<p>So far I&rsquo;ve met two kinds of people. Ones who are horrified of the future where
-AI guides you in everyday decisions. Others are like &ldquo;Oh, this AI will just
-tell me what pasta to order.&ldquo;.</p>
-
-<p>Maybe for most people, the truth is somewhere in the middle. You still decide
-who to date, what to wear to the prom, but you are fine if AI orders food for
-you.</p>
+<p><strong>Threads</strong></p>
 
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Escapism">Escapism</a></li>
+<li><a href="https://www.indiehackers.com/forum/what-are-the-unsolved-issues-of-remote-working-and-distributed-teams-ec37ec323e">What are the unsolved issues of Remote Working and Distributed Teams?</a></li>
 </ul>
 
-<p>&ldquo;Escapism is the avoidance of unpleasant, boring, arduous, scary, or banal
-aspects of daily life.[2] It can also be used as a term to define the actions
-people take to help relieve persistent feelings of depression or general
-sadness.&rdquo;</p>
+<p><strong>Videos</strong></p>
 
 <ul>
-<li><p>Books</p>
-
-<ul>
-<li>The Lord of the Rings <sup>5</sup>&frasl;<sub>5</sub></li>
-<li><a href="https://www.goodreads.com/book/show/23460459-sebasti-o-salgado">Sebastio Salgado: Genesis</a> <sup>5</sup>&frasl;<sub>5</sub></li>
-<li><a href="https://www.goodreads.com/book/show/25491.Escape_from_Freedom">Escape from freedom by Erich Fromm</a> <sup>5</sup>&frasl;<sub>5</sub></li>
-<li><a href="https://www.goodreads.com/book/show/14142.The_Art_of_Loving">The Art of Loving by Erich Fromm</a> <sup>5</sup>&frasl;<sub>5</sub></li>
-<li><a href="https://www.goodreads.com/book/show/890.Of_Mice_and_Men">Of Mice and Men by John Steinbeck</a> <sup>4</sup>&frasl;<sub>5</sub></li>
-<li><a href="https://www.goodreads.com/book/show/41744541----">Обои-убийцы, ядовитая вода и стул-обольститель</a> <sup>4</sup>&frasl;<sub>5</sub></li>
-<li><a href="https://www.goodreads.com/book/show/2051925.A_Walk_Across_England">A Walk Across England: A Walk of 382 Miles in 11 Days from the West Coast to the East Coast of England
-by Richard Long</a> <sup>3</sup>&frasl;<sub>5</sub></li>
-<li><a href="https://www.goodreads.com/book/show/12855707-martin-parr-in-india">Martin Parr In India: 1984 2009 by Martin Parr</a> <sup>2</sup>&frasl;<sub>5</sub></li>
-</ul></li>
+<li>&ldquo;Uncle&rdquo; Bob Martin - &ldquo;The Future of Programming&rdquo;</li>
 </ul>
 
-<p>So long</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ecIWPzGEbFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">An Amazing Teacher&hellip; <a href="https://t.co/LWsnirOJes">pic.twitter.com/LWsnirOJes</a></p>&mdash; Dr. Kash Sirinanda (@kashthefuturist) <a href="https://twitter.com/kashthefuturist/status/1053786418835795969?ref_src=twsrc%5Etfw">October 20, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>Reflection on the history of programming (from 1948).</p>
     </section>
 
 
@@ -391,19 +363,19 @@ by Richard Long</a> <sup>3</sup>&frasl;<sub>5</sub></li>
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Monthly%20Art%20%2335&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2fmonthly-art-number-35%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=October%20Tech%20Picks&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2foctober-tech-picks%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2fmonthly-art-number-35%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2foctober-tech-picks%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2fmonthly-art-number-35%2f&amp;description=Monthly%20Art%20%2335"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2foctober-tech-picks%2f&amp;description=October%20Tech%20Picks"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2fmonthly-art-number-35%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2018%2f11%2foctober-tech-picks%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -420,8 +392,8 @@ by Richard Long</a> <sup>3</sup>&frasl;<sub>5</sub></li>
 
 
 var disqus_config = function () {
-this.page.url = "http:\/\/homeonrails.com\/2018\/11\/monthly-art-number-35\/";  
-this.page.identifier = "http:\/\/homeonrails.com\/2018\/11\/monthly-art-number-35\/"; 
+this.page.url = "http:\/\/homeonrails.com\/2018\/11\/october-tech-picks\/";  
+this.page.identifier = "http:\/\/homeonrails.com\/2018\/11\/october-tech-picks\/"; 
 };
 
 (function() { 
@@ -448,17 +420,10 @@ s.setAttribute('data-timestamp', +new Date());
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="http://homeonrails.com/2018/11/october-tech-picks/">
-          <section class="post">
-              <h2>October Tech Picks</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="http://homeonrails.com/2018/10/monthly-art-number-34/">
+      <a class="read-next-story prev" style="no-cover" href="http://homeonrails.com/2018/11/monthly-art-number-35/">
           <section class="post">
-              <h2>Monthly Art #34</h2>
+              <h2>Monthly Art #35</h2>
           </section>
       </a>
   
