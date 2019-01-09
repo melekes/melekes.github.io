@@ -29,9 +29,7 @@
 slightly chapped, and just beg to be retouched. Despite the apparent
 complexity, by running a series of easy refactorings, we can significantly
 improve the code: reduce the size, improve the readability and even
-increase its speed. Who knows?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+increase its speed. Who knows?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +46,7 @@ increase its speed. Who knows?&lt;/p&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;These series of articles will be dedicated to every day code, that I am working on.
-This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;</description>
     </item>
     
   </channel>

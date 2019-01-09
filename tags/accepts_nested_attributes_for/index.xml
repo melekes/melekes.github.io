@@ -20,9 +20,7 @@
       <guid>http://homeonrails.com/2012/10/associationcountvalidator/</guid>
       <description>&lt;p&gt;As a result of my &lt;a href=&#34;http://homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
-It is intended to help you to validate records count in a given association.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +37,7 @@ Usually it is a parent-children relations. If you are not familiar with such ter
 as &lt;a href=&#34;http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#M001605&#34;&gt;form_for&lt;/a&gt;
 or &lt;a href=&#34;http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html#M002132&#34;&gt;accepts_nested_attributes_for&lt;/a&gt;,
 I strongly recommend taking a look at this article &lt;a href=&#34;http://rubysource.com/complex-rails-forms-with-nested-attributes/&#34;&gt;Complex Rails Forms with Nested Attributes&lt;/a&gt;,
-written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;</description>
     </item>
     
   </channel>

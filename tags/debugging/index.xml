@@ -30,9 +30,7 @@ securely replicates it on many machines. It is also the foundation of
 
 &lt;p&gt;Finding a memory leak in Go is not an easy task. However, there is a common set
 of questions, answers to which will hopefully help you identify the source of a
-leak. Here is the list:&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+leak. Here is the list:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,9 +39,7 @@ leak. Here is the list:&lt;/p&gt;
       <pubDate>Tue, 05 Apr 2016 15:50:31 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

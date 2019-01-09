@@ -20,9 +20,7 @@
       <guid>http://homeonrails.com/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
-errors.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+errors.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,9 +29,7 @@ errors.&lt;/p&gt;
       <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/03/meck-new-options/</guid>
-      <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -47,9 +43,7 @@ errors.&lt;/p&gt;
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
 сервер&lt;/a&gt;
 или выбрать один из существующих, и стартовать его на время тестов(а). А можно
-взять готовую библиотеку - &lt;a href=&#34;https://github.com/jsl/shamrock&#34;&gt;Shamrock&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+взять готовую библиотеку - &lt;a href=&#34;https://github.com/jsl/shamrock&#34;&gt;Shamrock&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,9 +57,7 @@ errors.&lt;/p&gt;
 &lt;a href=&#34;https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.
 Поэтому я решил не использовать Apache&amp;rsquo;s HTTPClient и другие библиотеки, вроде
 Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
-нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;</description>
     </item>
     
   </channel>

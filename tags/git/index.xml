@@ -29,9 +29,7 @@
 года&lt;/a&gt; начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +46,7 @@ Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
 
     raise NoSlidesError if no slides
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -64,9 +60,7 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
 лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
 feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
-которое нам поможет - алиасы.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
     
   </channel>

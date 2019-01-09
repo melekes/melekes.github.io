@@ -25,9 +25,7 @@ it was a mess. ABCI was using a &lt;code&gt;uint64&lt;/code&gt; height on EndBlo
 was using the same type for TxResult. Block and BlockStore, however, were using
 &lt;code&gt;int&lt;/code&gt; heights (remember that &lt;code&gt;int&lt;/code&gt; is different depending on the processor
 architecture: &lt;code&gt;int32&lt;/code&gt; for x86, &lt;code&gt;int64&lt;/code&gt; for amd64). There was no single standard
-across our repositories as for what type to use for blockchain height.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+across our repositories as for what type to use for blockchain height.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +46,7 @@ securely replicates it on many machines. It is also the foundation of
 
 &lt;p&gt;Finding a memory leak in Go is not an easy task. However, there is a common set
 of questions, answers to which will hopefully help you identify the source of a
-leak. Here is the list:&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+leak. Here is the list:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -73,9 +69,7 @@ https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7<
 testing you usually do something like &lt;code&gt;go test ./...&lt;/code&gt;, when getting all the
 dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be a Go package at the
 root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&gt;1&lt;/a&gt;,
-&lt;a href=&#34;https://github.com/tendermint/tendermint&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;a href=&#34;https://github.com/tendermint/tendermint&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

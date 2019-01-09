@@ -23,9 +23,7 @@
 Clojure installed locally, this plugin will connect to its nREPL automatically
 based on &lt;code&gt;.nrepl-port&lt;/code&gt;. But if you, like me, have Clojure inside the VM
 (VirtualBox or VMWare, or something else), you need to connect to its nREPL
-manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -24,9 +24,7 @@ are very different languages: OOP vs functional, mutable vs immutable and so
 on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is also true).&lt;/p&gt;
 
 &lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
-that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,9 +40,7 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;
 попробовать docker для одного из своих проектов -
 &lt;a href=&#34;https://github.com/kaize/valle&#34;&gt;Valle&lt;/a&gt;. Не без препонов, но все же удалось
 встроить docker в процесс. Далее последует руководство по разработке Ruby гема
-с использованием docker&amp;rsquo;а.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+с использованием docker&amp;rsquo;а.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,9 +54,7 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
 сервер&lt;/a&gt;
 или выбрать один из существующих, и стартовать его на время тестов(а). А можно
-взять готовую библиотеку - &lt;a href=&#34;https://github.com/jsl/shamrock&#34;&gt;Shamrock&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+взять готовую библиотеку - &lt;a href=&#34;https://github.com/jsl/shamrock&#34;&gt;Shamrock&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,9 +65,7 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;
       <guid>http://homeonrails.com/2014/04/ruby-speed-quiz-explained/</guid>
       <description>&lt;p&gt;At the end of &lt;a href=&#34;http://homeonrails.com/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
 I did not expect that more than 900 Rubyists will give it a shot. I
-was surprised. Thanks to all who participated!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+was surprised. Thanks to all who participated!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -82,9 +74,7 @@ was surprised. Thanks to all who participated!&lt;/p&gt;
       <pubDate>Fri, 28 Mar 2014 12:13:48 +0000</pubDate>
       
       <guid>http://homeonrails.com/2014/03/ruby-speed-quiz/</guid>
-      <description>&lt;p&gt;For each case choose the fastest option.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;For each case choose the fastest option.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -100,9 +90,7 @@ was surprised. Thanks to all who participated!&lt;/p&gt;
 
 &lt;p&gt;A lot of time has passed since my last post, so I decided to fix this
 little drawback. Next, we will discuss three small pieces of code,
-which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -116,9 +104,7 @@ They allow you to design the architecture of the database along with the
 growth of your project. If you change your data model (&lt;a href=&#34;http://martinfowler.com/eaaCatalog/domainModel.html&#34;&gt;Domain Model&lt;/a&gt;),
 you reflect that change in code and write a migration (or several migrations),
 which will make the necessary actions on your database schema. This may be
-creating a new table, deleting a column or adding an unique index.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+creating a new table, deleting a column or adding an unique index.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -129,9 +115,7 @@ creating a new table, deleting a column or adding an unique index.&lt;/p&gt;
       <guid>http://homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</guid>
       <description>&lt;p&gt;Take a look at the
 &lt;a href=&#34;http://rubygems.org/gems/factory_girl_sequences&#34;&gt;factory_girl_sequences&lt;/a&gt; gem,
-which provides a basic set of the most common sequences.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+which provides a basic set of the most common sequences.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -151,9 +135,7 @@ which provides a basic set of the most common sequences.&lt;/p&gt;
 slightly chapped, and just beg to be retouched. Despite the apparent
 complexity, by running a series of easy refactorings, we can significantly
 improve the code: reduce the size, improve the readability and even
-increase its speed. Who knows?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+increase its speed. Who knows?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -164,9 +146,7 @@ increase its speed. Who knows?&lt;/p&gt;
       <guid>http://homeonrails.com/2012/10/associationcountvalidator/</guid>
       <description>&lt;p&gt;As a result of my &lt;a href=&#34;http://homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
-It is intended to help you to validate records count in a given association.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -183,9 +163,7 @@ Usually it is a parent-children relations. If you are not familiar with such ter
 as &lt;a href=&#34;http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#M001605&#34;&gt;form_for&lt;/a&gt;
 or &lt;a href=&#34;http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html#M002132&#34;&gt;accepts_nested_attributes_for&lt;/a&gt;,
 I strongly recommend taking a look at this article &lt;a href=&#34;http://rubysource.com/complex-rails-forms-with-nested-attributes/&#34;&gt;Complex Rails Forms with Nested Attributes&lt;/a&gt;,
-written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -202,9 +180,7 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;These series of articles will be dedicated to every day code, that I am working on.
-This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;</description>
     </item>
     
   </channel>

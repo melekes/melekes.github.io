@@ -23,9 +23,7 @@ They allow you to design the architecture of the database along with the
 growth of your project. If you change your data model (&lt;a href=&#34;http://martinfowler.com/eaaCatalog/domainModel.html&#34;&gt;Domain Model&lt;/a&gt;),
 you reflect that change in code and write a migration (or several migrations),
 which will make the necessary actions on your database schema. This may be
-creating a new table, deleting a column or adding an unique index.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+creating a new table, deleting a column or adding an unique index.&lt;/p&gt;</description>
     </item>
     
   </channel>

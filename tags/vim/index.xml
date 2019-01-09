@@ -31,9 +31,7 @@ least 40 of them (&lt;a href=&#34;https://git.io/vrg64&#34;&gt;https://git.io/vr
 others in terms of productivity (&lt;strong&gt;20% results in 80% boost&lt;/strong&gt;). These could be
 features, built into the editor. You just don&amp;rsquo;t know about them. Here, I&amp;rsquo;ve
 tried to collect &lt;strong&gt;the most important ones&lt;/strong&gt;, which don&amp;rsquo;t require you to read a
-pile of docs and much time to learn.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+pile of docs and much time to learn.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,9 +54,7 @@ colors).&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -67,9 +63,7 @@ colors).&lt;/p&gt;
       <pubDate>Thu, 28 Apr 2016 11:47:36 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</guid>
-      <description>&lt;p&gt;This is based on Felix Geisendörfer &lt;a href=&#34;http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html&#34;&gt;Vim Trick: Open current line on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is based on Felix Geisendörfer &lt;a href=&#34;http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html&#34;&gt;Vim Trick: Open current line on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,9 +74,7 @@ colors).&lt;/p&gt;
       <guid>http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
       <description>&lt;p&gt;Не так давно собрался с силами, и настроил у себя в tmux автоматическое
 сохранение и восстановление последней сессии. По прошествии месяца могу с
-уверенностью сказать - просто бомба!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+уверенностью сказать - просто бомба!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,9 +85,7 @@ colors).&lt;/p&gt;
       <guid>http://homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been using these four plugins for a really long time. And they are
 wonderful. But each time coming on Github and seeing the number of stars, I
-think that few people actually know about them.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+think that few people actually know about them.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,9 +99,7 @@ think that few people actually know about them.&lt;/p&gt;
 Clojure installed locally, this plugin will connect to its nREPL automatically
 based on &lt;code&gt;.nrepl-port&lt;/code&gt;. But if you, like me, have Clojure inside the VM
 (VirtualBox or VMWare, or something else), you need to connect to its nREPL
-manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -123,9 +111,7 @@ manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
 &lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;ldquo;- I asked myself. Indeed, the majority of source code editors
-able to do this. And yes, I got used to this dammit!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -135,7 +121,7 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;
       
       <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
       <description>Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые возможности вкупе с расширенной плагинами функциональностью. В противоположность им, есть чистый .vimrc и ваша фантазия.
- Что лучше выбрать для старта? Сборки позволяют быстро спрыгнуть с IDE на Vim. Хотя некоторые опытные вимеры считают, что правильным путем является &#34;Начало с нуля&#34;, когда вы постепенно улучшаете Vim каждый день, уча и привнося что-то новое.
+HUGOMORE42 Что лучше выбрать для старта? Сборки позволяют быстро спрыгнуть с IDE на Vim. Хотя некоторые опытные вимеры считают, что правильным путем является &#34;Начало с нуля&#34;, когда вы постепенно улучшаете Vim каждый день, уча и привнося что-то новое.
 I still think the right path is to start with an unconfigured, stock Vim distribution, but to each their own.</description>
     </item>
     

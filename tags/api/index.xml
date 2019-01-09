@@ -24,9 +24,7 @@ colleagues.&lt;/p&gt;
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
 ending by using Fragment caching. Also there is list of tools for
 profiling applications (stackprof, etc.). All techniques are quite
-famous.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+famous.&lt;/p&gt;</description>
     </item>
     
   </channel>

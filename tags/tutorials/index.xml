@@ -29,9 +29,7 @@
 года&lt;/a&gt; начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,9 +41,7 @@
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
 &lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;ldquo;- I asked myself. Indeed, the majority of source code editors
-able to do this. And yes, I got used to this dammit!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,9 +64,7 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;
 лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
 feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
-которое нам поможет - алиасы.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -81,9 +75,7 @@ feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь
       <guid>http://homeonrails.com/2012/10/associationcountvalidator/</guid>
       <description>&lt;p&gt;As a result of my &lt;a href=&#34;http://homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
-It is intended to help you to validate records count in a given association.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -100,9 +92,7 @@ Usually it is a parent-children relations. If you are not familiar with such ter
 as &lt;a href=&#34;http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#M001605&#34;&gt;form_for&lt;/a&gt;
 or &lt;a href=&#34;http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html#M002132&#34;&gt;accepts_nested_attributes_for&lt;/a&gt;,
 I strongly recommend taking a look at this article &lt;a href=&#34;http://rubysource.com/complex-rails-forms-with-nested-attributes/&#34;&gt;Complex Rails Forms with Nested Attributes&lt;/a&gt;,
-written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;</description>
     </item>
     
   </channel>

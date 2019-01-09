@@ -23,9 +23,7 @@ devoted to interaction between them. In the book &lt;a href=&#34;http://shop.ore
 Guide&amp;rdquo;&lt;/a&gt; there is a chapter
 named &amp;ldquo;MapReduce Integration&amp;rdquo;, which sheds some light on this. I would like to
 give you another example of the MR task that reads and writes to the same HBase
-table.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+table.&lt;/p&gt;</description>
     </item>
     
   </channel>

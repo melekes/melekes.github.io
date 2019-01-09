@@ -18,7 +18,10 @@
       <pubDate>Tue, 18 Oct 2016 17:40:16 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description>1. Mortality &amp;ldquo;Mortality is a new tab extension that reminds you of your precise age. A bitter-sweet motivational tool; it illustrates how little time we have. Circles represent months, for the average lifespan of 80 years. As you age, the circles fill, and are split into the main Chapters of your life.&amp;rdquo;
+My current one. Highly motivating.
+https://chrome.google.com/webstore/detail/mortality-new-tab/eeedcpdcehnikgkhbobmkjcipjhlbmpn
+2. Motivation If Mortality is too much for you, try this small extension.</description>
     </item>
     
     <item>
@@ -40,9 +43,7 @@ least 40 of them (&lt;a href=&#34;https://git.io/vrg64&#34;&gt;https://git.io/vr
 others in terms of productivity (&lt;strong&gt;20% results in 80% boost&lt;/strong&gt;). These could be
 features, built into the editor. You just don&amp;rsquo;t know about them. Here, I&amp;rsquo;ve
 tried to collect &lt;strong&gt;the most important ones&lt;/strong&gt;, which don&amp;rsquo;t require you to read a
-pile of docs and much time to learn.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+pile of docs and much time to learn.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,9 +57,7 @@ pile of docs and much time to learn.&lt;/p&gt;
 лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
 feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
-которое нам поможет - алиасы.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
     
   </channel>

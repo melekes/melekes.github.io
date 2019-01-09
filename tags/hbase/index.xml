@@ -20,9 +20,7 @@
       <guid>http://homeonrails.com/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
-errors.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+errors.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,9 +36,7 @@ errors.&lt;/p&gt;
 &lt;li&gt;REST&lt;/li&gt;
 &lt;li&gt;Thrift&lt;/li&gt;
 &lt;li&gt;C/C++ Apache HBase Client&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ol&gt;</description>
     </item>
     
     <item>
@@ -54,9 +50,7 @@ devoted to interaction between them. In the book &lt;a href=&#34;http://shop.ore
 Guide&amp;rdquo;&lt;/a&gt; there is a chapter
 named &amp;ldquo;MapReduce Integration&amp;rdquo;, which sheds some light on this. I would like to
 give you another example of the MR task that reads and writes to the same HBase
-table.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+table.&lt;/p&gt;</description>
     </item>
     
   </channel>

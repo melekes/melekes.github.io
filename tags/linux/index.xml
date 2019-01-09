@@ -25,9 +25,7 @@
   &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,9 +39,7 @@
 лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
 feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
-которое нам поможет - алиасы.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
     
   </channel>
