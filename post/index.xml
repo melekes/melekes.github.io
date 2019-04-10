@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 07 Mar 2019 16:07:21 +0400</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2019 09:18:59 +0200</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Коротко о Tendermint и Cosmos Network</title>
+      <link>http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/</link>
+      <pubDate>Wed, 10 Apr 2019 09:18:59 +0200</pubDate>
+      
+      <guid>http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/</guid>
+      <description>Ниже приведен текст заметки, которая была написана при подготовке к участию в подкасте &amp;ldquo;Базовый Блок&amp;rdquo;. Это не в коем случае не исчерпывающий источник, а лишь короткий обзор включающий плюсы и минусы Tendermint, Cosmos. Также упоминается проект Polkadot.
+Tendermint Tendermint это алгоритм консенсуса устойчивый к византийским падениям. Византийские падения для тех кто не знает, это какие-то злоумышленные действия. Алгоритм был придуман в 2014 году Джае Квоном, который был озабочен проблемой высокого энергопотребления сети Bitcoin’а.</description>
+    </item>
     
     <item>
       <title>Monthly Art #38</title>

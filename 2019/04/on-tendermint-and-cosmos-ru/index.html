@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Коротко о Tendermint и Cosmos Network"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@akaliaev"/>
+
+
+
+  	<meta property="og:title" content="Коротко о Tendermint и Cosmos Network &middot; Home on Rails" />
+  	<meta property="og:site_name" content="Home on Rails" />
+  	<meta property="og:url" content="http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/" />
+
+    
+        
+            <meta property="og:image" content="/images/cover.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2019-04-10T09:18:59&#43;02:00" />
+
+    
+    <meta property="article:tag" content="tendermint" />
+    
+    <meta property="article:tag" content="cosmos" />
+    
+    
+
+    <title>Коротко о Tendermint и Cosmos Network &middot; Home on Rails</title>
+
+    
+    <meta name="description" content="Ниже приведен текст заметки, которая была написана при подготовке к участию в подкасте &amp;ldquo;Базовый Блок&amp;rdquo;. Это не в коем случае не исчерпывающий источни" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://homeonrails.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://homeonrails.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+      
+          <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.54.0" />
+
+    <link rel="canonical" href="http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://homeonrails.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://homeonrails.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://homeonrails.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Коротко о Tendermint и Cosmos Network,
+    "name": Коротко о Tendermint и Cosmos Network,
+    "wordCount": 960,
+    "timeRequired": "PT5M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/,
+    "datePublished": 2019-04-10T09:18Z,
+    "dateModified": 2019-04-10T09:18Z,
+    
+    "keywords": tendermint, cosmos,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35080566-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+        
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/about">About me</a>
+            </li>
+        
+            <h3>Explore</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/most-popular-posts">Most popular posts</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://speakerdeck.com/melekes">Talks</a>
+            </li>
+        
+            <h3>Follow Me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/melekes">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/akaliaev">Twitter timeline</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://www.goodreads.com/melekes">Goodreads books</a>
+            </li>
+        
+            <h3>Contact Me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.linkedin.com/in/melekes">LinkedIn</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://Keybase.io/melekes">Keybase (secure msg)</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://homeonrails.com/"><img src="http://homeonrails.com/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Коротко о Tendermint и Cosmos Network</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2019-04-10T09:18:59&#43;02:00">
+            Apr 10, 2019
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/tendermint/">#tendermint</a></span>
+         
+          <span class="post-tag small"><a href="http://homeonrails.com//tags/cosmos/">#cosmos</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>Ниже приведен текст заметки, которая была написана при подготовке к участию в
+подкасте <a href="https://basicblockradio.com/">&ldquo;Базовый Блок&rdquo;</a>. Это не в коем случае
+не исчерпывающий источник, а лишь короткий обзор включающий плюсы и минусы
+Tendermint, Cosmos. Также упоминается проект Polkadot.</p>
+
+<h2 id="tendermint">Tendermint</h2>
+
+<p>Tendermint это алгоритм консенсуса устойчивый к византийским падениям.
+Византийские падения для тех кто не знает, это какие-то злоумышленные действия.
+Алгоритм был придуман в 2014 году Джае Квоном, который был озабочен проблемой
+высокого энергопотребления сети Bitcoin’а. В отличие от Nakamoto консенсуса,
+где выбирается цепочка с <a href="https://medium.com/coinmonks/a-primer-on-blockchain-design-89605b287a5a">самым большым количеством
+работы</a>,
+в Tendermint выбирается цепочка где за блок проголосовало <sup>2</sup>&frasl;<sub>3</sub> участников сети.
+Это упрощенная версия. Здесь я использую слово блок для понимания, на самом
+деле это может быть чем угодно (any value).</p>
+
+<p>В чем принципиальные отличия:</p>
+
+<ul>
+<li>выбор делается в пользу безопасности (safety) нежели доступности
+(availability) как в сети Bitcoin. Это значит, если <sup>2</sup>&frasl;<sub>3</sub> голосов не
+набирается, консенсус становится на паузу и ждет. Для более осведомленных
+товарищей, алгоритм безопасен в условиях асинхронной коммуникации и живуч?
+(т.е блоки создаются) в условиях частичной синхронности сети (safe in async
+network and requires partially synchronous network for liveness).</li>
+<li>Но если <sup>2</sup>&frasl;<sub>3</sub> набирается, блок можно считать окончательным. Т.е тебе не нужно
+ждать 10 или 100 блоков (probabilistic finality), чтобы убедиться что
+транзакция не будет откачена.</li>
+<li>Нет гонки за создание блока (энергозатраты минимальны). В данный момент в
+качестве алгоритма выбора ноды которая будет создавать блок используется
+циклический перебор взвешенный согласно доле криптовалюты. Это необязательно
+криптовалюты должна быть, могут быть просто попугаи. Т.е если у ноды A 100
+попугаев, у ноды B и C по 10 попугаев, то A будет чаще назначаться создателем
+блока.
+<a href="https://tendermint.com/docs/spec/reactors/consensus/proposer-selection.html#requirements-for-proposer-selection">спецификация</a></li>
+</ul>
+
+<p>Для более подробного ознакомления читай <a href="https://blog.cosmos.network/tendermint-explained-bringing-bft-based-pos-to-the-public-blockchain-domain-f22e274a0fdb">Tendermint Explained — Bringing
+BFT-based PoS to the Public Blockchain
+Domain</a></p>
+
+<p>Tendermint относится к семейству <a href="https://hackernoon.com/a-hitchhikers-guide-to-consensus-algorithms-d81aae3eb0e3">BFT
+алгоритмов</a>.
+Другие реализации - это
+<a href="https://twitter.com/zmanian/status/1089618263674212353">HoneyBadgerBFT</a>,
+Hyperledger (PBFT).</p>
+
+<p>Раз это подкаст без буллшита :) расскажу про отрицательные стороны.</p>
+
+<p>В чем минусы алгоритма:</p>
+
+<ol>
+<li>Если нода, которая должна создать блок, его не создает, мы ждем некоторое
+время перед тем как начать новый раунд.</li>
+<li>Алгоритм плохо масштабируется так как за каждый блок должно проголосовать
+<sup>2</sup>&frasl;<sub>3</sub> сети. Редко какой BFT алгоритм может работать с 1000 и более нодами.</li>
+</ol>
+
+<p>В чем плюсы:</p>
+
+<ol>
+<li>Прост в понимании (проще чем PBFT)</li>
+<li>Довольно быстрый</li>
+<li>Блок не может быть отменен после того как <sup>2</sup>&frasl;<sub>3</sub> проголосовало за него и закоммитило (instant finality)</li>
+</ol>
+
+<p>Когда люди говорят о Tendermint, чаще всего речь идет о утилите
+<a href="https://github.com/tendermint/tendermint/">https://github.com/tendermint/tendermint/</a> включающей вышеупомянутый алгоритм.
+Помимо нее, она также включает p2p сеть, хранилище незакоммиченных транзакций
+(mempool), RPC и интерфейс ABCI. ABCI - интерфейс (схема в protobuf по сути),
+который позволяет разделить консенсус и логику приложения. То есть ты как
+разработчик пишешь приложение на любом языке, Tendermint заботиться обо всем
+остальном. <strong>Это очень крутая концепция</strong>.</p>
+
+<p>В будущем планируется предоставить приложению возможность менять алгоритм
+выбора ноды создателя блока, совмещенные подписи (BLS) и многое другое.</p>
+
+<p>Чтобы узнать больше, смотрите <a href="https://github.com/tendermint/awesome">https://github.com/tendermint/awesome</a>.</p>
+
+<h2 id="cosmos-network">Cosmos Network</h2>
+
+<p>Космос призван решить проблему отсутствия коммуникации между независимыми
+блокчейнами. Делает он это посредством нового протокола (IBC). Вроде TCP/IP,
+только для блокчейнов. Кто (блокчейн А) отправляет кому (блокчейн B) что (100
+попугаев) + заголовок блока + доказательство merkle перехода в новый стейт.</p>
+
+<p>IBC данный момент находится в разработке - <a href="https://github.com/cosmos/ics">https://github.com/cosmos/ics</a></p>
+
+<p>Чтобы следить за состоянием балансов блокчейнов и уменьшить количество связей
+между ними, были придуманы хабы (аналог свича в Интернете). Собственно недавно
+был запущен первый хаб (Cosmos Hub). Чтобы вы понимали, “аналогичные” вещи есть
+и в Polkadot (там это называется Relay), Ethereum 2.0 (beacon chain), Near
+protocol (beacon chain).</p>
+
+<p>Cosmos также предоставляет <a href="https://cosmos.network/sdk">SDK</a>, написанный как и
+Tendermint на языке Go, для разработки приложений. В него включены модуль
+переводов, модуль управления (governance), IBC модуль чтобы взаимодействовать с
+другими блокчейнами. Позже будут добавлены другие модули (например NFT).</p>
+
+<p>Аналогично с Tendermint, приведу основные минусы:</p>
+
+<ol>
+<li>Если ты посылаешь IBC транзакцию из блокчейна А в блокчейн B через хаб, ты
+должен доверять валидаторам (нодам которые участвуют в консенсусе) блокчейна
+A, хаба и блокчейна B.
+<a href="https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43">https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43</a>
+Это одна из неразрешенных проблем. Я предлагаю прочитать статью Александра
+из near protocol, которая будет прикреплена в ссылках. Если коротко, то
+лучшее что пока придумали это переодически делать копии блоков (snapshots) и
+иметь процессы (fisherman; рыбак) которые следят за корректностью. Если
+рыбак замечает неправильный переход в новое состояние, он посылает
+challenge. Если challenge подтверждается, то реле (или бекон цепочка)
+откатывается до последней копии (snapshot) и blockchain B тоже откатывается.
+Плюс использовать erasure codes (коды стирания) для решения проблемы
+доступности блоков. В космосе можно создать хаб который будет требовать зоны
+использовать erasure codes и только принимать IBC транзакции с
+доказательствами доступности. Вопрос в приоритетах. О Polkadot, Near
+protocol и Ethereum 2.0 можно поговорить отдельно. &ldquo;cosmos purposely focuses
+on enabling chains to economically integrate without politically
+integrating. $BNB holders can remain only broadly disinterested in the
+preferences of $ATOM holders. Governance decisions by $DOT holders affect
+every parachain&rdquo;(<a href="https://twitter.com/zmanian/status/1113444044435099648">https://twitter.com/zmanian/status/1113444044435099648</a>)</li>
+<li>Требуется instant finality (не минус, скорее требование). В случае с
+Биткоином например придется написать адаптер который ждет <sup>6</sup>&frasl;<sub>10</sub> блоков перед
+тем как считать транзакцию закоммиченной.</li>
+</ol>
+
+<p>В чем плюсы:</p>
+
+<ol>
+<li>Любой блокчейн может присоединиться.</li>
+<li>Единый простой протокол для общения.</li>
+<li>Гибкая структура. Например, блокчейн A может общаться напрямую с блокчейном B.</li>
+<li>Пользователи не должны платить за общую безопасность сети. О чем я? Когда вы
+переводите средства в Ethereum 1.0 / Bitcoin, вы платите единую комиссию
+валидаторам. Но возможно (в случае игры или котиков например), вам не нужен
+такой высокий уровень безопасности. В космосе у игры будет свой возможно
+меньший по размеру набор валидаторов, нежели у хаба или блокчейна который
+занимается переводами.</li>
+</ol>
+
+<p>В чем инновация космоса</p>
+
+<ol>
+<li>Простой и надежный BFT консенсус алгоритм. Как я уже говорил разработка началась в 2014 году</li>
+<li>Экономика Proof of Stake</li>
+<li>IBC</li>
+</ol>
+
+<h3 id="cosmos-vs-polkadot">Cosmos vs Polkadot</h3>
+
+<ul>
+<li><a href="https://forum.cosmos.network/t/polkadot-vs-cosmos/1397/2">Техническое сравнение</a></li>
+<li><a href="https://tokeneconomy.co/the-state-of-crypto-interoperability-explained-in-pictures-654cfe4cc167">Более абстрактно и с
+картинками</a></li>
+<li><a href="https://twitter.com/jleni/status/1113464955020480512">Одно из опасений</a></li>
+<li>Cosmos написан на Go (простой для изучения, в меру производительный),
+Polkadot - на Rust (высокопроизводительный, но порог входа в язык намного
+выше)</li>
+<li>на длинной дистанции проекты реализуют лучшие части друг друга.</li>
+</ul>
+
+<p>Чтобы узнать больше, смотрите <a href="https://cosmos.network/">https://cosmos.network/</a> и <a href="https://github.com/cosmos/awesome">https://github.com/cosmos/awesome</a>.</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://homeonrails.com/" style="background-image: url(/images/logo.png)"><span class="hidden">Anton Kaliaev's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="http://homeonrails.com/">Anton Kaliaev</a></h4>
+  
+  <p>Read <a href="http://homeonrails.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="http://homeonrails.com">http://homeonrails.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%d0%9a%d0%be%d1%80%d0%be%d1%82%d0%ba%d0%be%20%d0%be%20Tendermint%20%d0%b8%20Cosmos%20Network&nbsp;-&nbsp;Home%20on%20Rails&amp;url=http%3a%2f%2fhomeonrails.com%2f2019%2f04%2fon-tendermint-and-cosmos-ru%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fhomeonrails.com%2f2019%2f04%2fon-tendermint-and-cosmos-ru%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fhomeonrails.com%2f2019%2f04%2fon-tendermint-and-cosmos-ru%2f&amp;description=%d0%9a%d0%be%d1%80%d0%be%d1%82%d0%ba%d0%be%20%d0%be%20Tendermint%20%d0%b8%20Cosmos%20Network"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fhomeonrails.com%2f2019%2f04%2fon-tendermint-and-cosmos-ru%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "http:\/\/homeonrails.com\/2019\/04\/on-tendermint-and-cosmos-ru\/";  
+this.page.identifier = "http:\/\/homeonrails.com\/2019\/04\/on-tendermint-and-cosmos-ru\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://homeonrails.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="http://homeonrails.com/2019/03/monthly-art-number-38/">
+          <section class="post">
+              <h2>Monthly Art #38</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://homeonrails.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://homeonrails.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://homeonrails.com/js/index.js"></script>
+    
+</body>
+</html>
+
