@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://homeonrails.com/2019/04/basicblockradio-68-corrections/</loc>
+    <lastmod>2019-04-15T09:00:12+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/</loc>
     <lastmod>2019-04-10T09:18:59+02:00</lastmod>
   </url>
@@ -1265,7 +1270,7 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2019-04-10T09:18:59+02:00</lastmod>
+    <lastmod>2019-04-15T09:00:12+04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1390,6 +1395,12 @@
   </url>
   
   <url>
+    <loc>http://homeonrails.com/tags/podcast/</loc>
+    <lastmod>2019-04-15T09:00:12+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://homeonrails.com/tags/poetry/</loc>
     <lastmod>2014-11-07T22:05:06+00:00</lastmod>
     <priority>0</priority>
@@ -1397,7 +1408,7 @@
   
   <url>
     <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2019-04-10T09:18:59+02:00</lastmod>
+    <lastmod>2019-04-15T09:00:12+04:00</lastmod>
     <priority>0</priority>
   </url>
   
