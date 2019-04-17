@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ski Resort on Home on Rails</title>
+    <title>ski-resort on Home on Rails</title>
     <link>http://homeonrails.com/tags/ski-resort/</link>
-    <description>Recent content in Ski Resort on Home on Rails</description>
+    <description>Recent content in ski-resort on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
@@ -18,8 +18,20 @@
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2014/01/riding-in-bansko-2013/</guid>
-      <description>На улице плюс 6, ярко светит послеобеденное солнце, в воздухе витают запахи печенных лепешек и кофе. Таким мне предстал небольшой и уютный городок Банско, расположенный у подножья Пирин. Это популярный у туристов из Европы и самих болгар горнолыжный курорт.
-&amp;nbsp;  HUGOMORE42 &amp;nbsp; Поближе познакомиться с курортом можно здесь (цены там же). Отмечу только лишь то, что в начале и конце сезона цены ниже в 2 раза (на ски-пассы, одежду).</description>
+      <description>
+&lt;p&gt;На улице плюс 6, ярко светит послеобеденное солнце, в воздухе витают запахи печенных
+лепешек и кофе. Таким мне предстал небольшой и уютный городок Банско, расположенный у
+подножья Пирин. Это популярный у туристов из Европы и самих болгар горнолыжный курорт.&lt;/p&gt;
+
+&amp;nbsp;
+
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34;
+  src=&#34;http://homeonrails.com/images/posts/2014-01-09-riding-in-bansko-2013/1.JPG&#34;
+  alt=&#34;BooksViaBooks&#34;/ width=&#34;450&#34;&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
   </channel>

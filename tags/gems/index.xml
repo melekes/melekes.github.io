@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gems on Home on Rails</title>
+    <title>gems on Home on Rails</title>
     <link>http://homeonrails.com/tags/gems/</link>
-    <description>Recent content in Gems on Home on Rails</description>
+    <description>Recent content in gems on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>

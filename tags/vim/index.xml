@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vim on Home on Rails</title>
+    <title>vim on Home on Rails</title>
     <link>http://homeonrails.com/tags/vim/</link>
-    <description>Recent content in Vim on Home on Rails</description>
+    <description>Recent content in vim on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
@@ -120,9 +120,12 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
-      <description>Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые возможности вкупе с расширенной плагинами функциональностью. В противоположность им, есть чистый .vimrc и ваша фантазия.
-HUGOMORE42 Что лучше выбрать для старта? Сборки позволяют быстро спрыгнуть с IDE на Vim. Хотя некоторые опытные вимеры считают, что правильным путем является &#34;Начало с нуля&#34;, когда вы постепенно улучшаете Vim каждый день, уча и привнося что-то новое.
-I still think the right path is to start with an unconfigured, stock Vim distribution, but to each their own.</description>
+      <description>
+&lt;p&gt;Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
+возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
+есть чистый .vimrc и ваша фантазия.&lt;/p&gt;
+
+</description>
     </item>
     
   </channel>

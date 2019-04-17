@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 15 Apr 2019 22:00:21 +0400</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 20:00:12 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lessons learned from my first podcast appearance</title>
+      <link>http://homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</link>
+      <pubDate>Wed, 17 Apr 2019 20:00:12 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</guid>
+      <description>&lt;p&gt;A few days ago I was invited to be a guest on the &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Basic
+Block&amp;rdquo;&lt;/a&gt; podcast - probably the most popular
+crypto podcast in Russia. In spite of me writing a note on what I&amp;rsquo;m going to
+say &amp;amp; key points, which you can read
+&lt;a href=&#34;http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru&#34;&gt;here&lt;/a&gt;, I sucked at it. At least
+that&amp;rsquo;s how I felt after doing it. Fortunately, Basic block radio is one of the
+few podcasts, where authors take on the hard job of editing an episode. Thanks
+guys! So what you end up listening is the edited (often abridged) version, not
+the original conversation.&lt;/p&gt;
+
+&lt;p&gt;You can listen to the episode with me &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Monthly Art #39</title>
@@ -331,10 +350,7 @@ Quick question: where should I declare my constant? Most developers would say: �
       <pubDate>Sun, 18 Mar 2018 17:46:32 +0300</pubDate>
       
       <guid>http://homeonrails.com/2018/03/construction-companies-in-ulsk-oblast/</guid>
-      <description>Грандхаус Специализируются на кирпиче. Есть архитектор. Разработка проекта стоит 160р за м2. Ездили смотреть их дом - кладка ровная (по шаблону), стены внутри тоже. В целом очень хорошо.
-Усадьба Специализируются на дереве. Не были у них
-Мастерок Ездили в офис на верхней террасе. Никого не было.
-Ульяновское строительное обьединение Олег Николаевич (архитектор / он же начальник) встретил нас с самого порога как лучших друзей. Рассказал о последних новинках в строительстве домов.</description>
+      <description></description>
     </item>
     
     <item>
@@ -948,10 +964,7 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
       <pubDate>Tue, 18 Oct 2016 17:40:16 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
-      <description>1. Mortality &amp;ldquo;Mortality is a new tab extension that reminds you of your precise age. A bitter-sweet motivational tool; it illustrates how little time we have. Circles represent months, for the average lifespan of 80 years. As you age, the circles fill, and are split into the main Chapters of your life.&amp;rdquo;
-My current one. Highly motivating.
-https://chrome.google.com/webstore/detail/mortality-new-tab/eeedcpdcehnikgkhbobmkjcipjhlbmpn
-2. Motivation If Mortality is too much for you, try this small extension.</description>
+      <description></description>
     </item>
     
     <item>
@@ -993,12 +1006,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Fri, 07 Oct 2016 12:17:02 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</guid>
-      <description>China Trains Билеты на поезд
-Интуитивный интерфейс, показывает сколько осталось мест (это важно). Можно использовать только для информации, если неохота дополнительно платить 40 юаней за бронь.
-https://www.travelchinaguide.com/china-trains/
- 
-Ctrip отели, билеты на поезд или самолёт, статус рейса
-Заметил, что цены на отели выше, чем в Qunar.com. Но зато оно (приложение и сайт) на английском и принимает карты помимо UnionPay. Напомню, что в Китае наши обычные карточки (Visa, Mastercard) не принимаются (за исключением банкоматов, где можно снять наличность).</description>
+      <description></description>
     </item>
     
     <item>
@@ -2199,8 +2207,20 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2014/01/riding-in-bansko-2013/</guid>
-      <description>На улице плюс 6, ярко светит послеобеденное солнце, в воздухе витают запахи печенных лепешек и кофе. Таким мне предстал небольшой и уютный городок Банско, расположенный у подножья Пирин. Это популярный у туристов из Европы и самих болгар горнолыжный курорт.
-&amp;nbsp;  HUGOMORE42 &amp;nbsp; Поближе познакомиться с курортом можно здесь (цены там же). Отмечу только лишь то, что в начале и конце сезона цены ниже в 2 раза (на ски-пассы, одежду).</description>
+      <description>
+&lt;p&gt;На улице плюс 6, ярко светит послеобеденное солнце, в воздухе витают запахи печенных
+лепешек и кофе. Таким мне предстал небольшой и уютный городок Банско, расположенный у
+подножья Пирин. Это популярный у туристов из Европы и самих болгар горнолыжный курорт.&lt;/p&gt;
+
+&amp;nbsp;
+
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img class=&#34;img-rounded&#34;
+  src=&#34;http://homeonrails.com/images/posts/2014-01-09-riding-in-bansko-2013/1.JPG&#34;
+  alt=&#34;BooksViaBooks&#34;/ width=&#34;450&#34;&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
@@ -2209,7 +2229,18 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
       <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</guid>
-      <description>В этом году я в очередной раз участвовал в RailsRumble. Если кто не в курсе, RailsRumble - это 48 часовой хакатон, в рамках которого команды со всего света соревнуются между собой путем написания Web-приложений на Ruby on Rails (или любого другого &#34;Rack based&#34; Web фреймворка). Идеи самые разнообразные! Например, есть приложение для сравнения новостей из разных источников (The New York Times VS Fox News), приложение для организаторов конференций, приложение которое показывает треки из видео на YouTube или Vimeo.</description>
+      <description>
+&lt;p&gt;В этом году я в очередной раз участвовал в
+&lt;a href=&#34;http://railsrumble.com&#34;&gt;RailsRumble&lt;/a&gt;. Если кто не в курсе, RailsRumble
+- это 48 часовой хакатон, в рамках которого команды со всего света соревнуются
+между собой путем написания Web-приложений на Ruby on Rails
+(или любого другого &#34;Rack based&#34; Web фреймворка). Идеи самые
+разнообразные! Например, есть приложение для сравнения новостей из
+разных источников (The New York Times VS Fox News), приложение для
+организаторов конференций, приложение которое показывает треки из видео
+на YouTube или Vimeo.&lt;/p&gt;
+
+</description>
     </item>
     
     <item>
@@ -2232,8 +2263,14 @@ feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
-      <description>Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где прошла очередная встреча ruby разработчиков Belarus Ruby Meetup. Формат встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске. Однако, есть ряд особенностей и интересных вещей, о которых грех не упомянуть.
-HUGOMORE42  Скорее всего ввиду близости к Европе, среди спикеров регулярно появляются иностранные докладчики (на прошедшей встречи одним из них был Piotr Sarnacki (Warsaw), Rails контрибьютор и энтузиаст Ember.</description>
+      <description>
+&lt;p&gt;  Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где
+прошла очередная встреча ruby разработчиков &lt;a href=&#34;http://lanyrd.com/2013/belarus-ruby/&#34; target=&#34;_blank&#34;&gt;Belarus Ruby Meetup&lt;/a&gt;. Формат
+встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске.
+Однако, есть ряд особенностей и интересных вещей, о которых грех
+не упомянуть.&lt;/p&gt;
+
+</description>
     </item>
     
     <item>
@@ -2242,9 +2279,12 @@ HUGOMORE42  Скорее всего ввиду близости к Европе,
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
-      <description>Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые возможности вкупе с расширенной плагинами функциональностью. В противоположность им, есть чистый .vimrc и ваша фантазия.
-HUGOMORE42 Что лучше выбрать для старта? Сборки позволяют быстро спрыгнуть с IDE на Vim. Хотя некоторые опытные вимеры считают, что правильным путем является &#34;Начало с нуля&#34;, когда вы постепенно улучшаете Vim каждый день, уча и привнося что-то новое.
-I still think the right path is to start with an unconfigured, stock Vim distribution, but to each their own.</description>
+      <description>
+&lt;p&gt;Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
+возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
+есть чистый .vimrc и ваша фантазия.&lt;/p&gt;
+
+</description>
     </item>
     
     <item>

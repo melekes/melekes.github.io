@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Talks on Home on Rails</title>
+    <title>talks on Home on Rails</title>
     <link>http://homeonrails.com/tags/talks/</link>
-    <description>Recent content in Talks on Home on Rails</description>
+    <description>Recent content in talks on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
@@ -152,8 +152,14 @@ famous.&lt;/p&gt;</description>
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
-      <description>Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где прошла очередная встреча ruby разработчиков Belarus Ruby Meetup. Формат встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске. Однако, есть ряд особенностей и интересных вещей, о которых грех не упомянуть.
-HUGOMORE42  Скорее всего ввиду близости к Европе, среди спикеров регулярно появляются иностранные докладчики (на прошедшей встречи одним из них был Piotr Sarnacki (Warsaw), Rails контрибьютор и энтузиаст Ember.</description>
+      <description>
+&lt;p&gt;  Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где
+прошла очередная встреча ruby разработчиков &lt;a href=&#34;http://lanyrd.com/2013/belarus-ruby/&#34; target=&#34;_blank&#34;&gt;Belarus Ruby Meetup&lt;/a&gt;. Формат
+встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске.
+Однако, есть ряд особенностей и интересных вещей, о которых грех
+не упомянуть.&lt;/p&gt;
+
+</description>
     </item>
     
     <item>
@@ -162,9 +168,12 @@ HUGOMORE42  Скорее всего ввиду близости к Европе,
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
-      <description>Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые возможности вкупе с расширенной плагинами функциональностью. В противоположность им, есть чистый .vimrc и ваша фантазия.
-HUGOMORE42 Что лучше выбрать для старта? Сборки позволяют быстро спрыгнуть с IDE на Vim. Хотя некоторые опытные вимеры считают, что правильным путем является &#34;Начало с нуля&#34;, когда вы постепенно улучшаете Vim каждый день, уча и привнося что-то новое.
-I still think the right path is to start with an unconfigured, stock Vim distribution, but to each their own.</description>
+      <description>
+&lt;p&gt;Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
+возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
+есть чистый .vimrc и ваша фантазия.&lt;/p&gt;
+
+</description>
     </item>
     
     <item>
