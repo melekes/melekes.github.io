@@ -71,7 +71,7 @@
       
       
     
-    <meta name="generator" content="Hugo 0.55.1" />
+    <meta name="generator" content="Hugo 0.55.6" />
 
     <link rel="canonical" href="http://homeonrails.com/2019/04/basicblockradio-68-corrections/" />
 
@@ -112,7 +112,7 @@
     },
     "headline": "Базовый Блок 68: поправки и дополнения",
     "name": "Базовый Блок 68: поправки и дополнения",
-    "wordCount":  464 ,
+    "wordCount":  524 ,
     "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
@@ -295,10 +295,22 @@ decentralization</a>.</p>
 <p>в Tendermint есть похожая механика, где за генерацию блока участники получают награду</p>
 </blockquote>
 
-<p>В Cosmos, да. Помимо награды за блок есть также комиссии транзакций. Малая
-часть достается валидатору (у некоторых валидаторов сейчас установлена 0%
-комиссия), большая часть уходит делегаторам. См.
-<a href="https://blog.cosmos.network/economics-of-proof-of-stake-bridging-the-economic-system-of-old-into-the-new-age-of-blockchains-3f17824e91db">Cosmos Validator Economics - Bridging the Economic System of Old into the New Age of Blockchains</a></p>
+<p>В Cosmos Hub, да. Помимо награды за блок есть также комиссии транзакций и
+инфляция. Малая часть достается валидатору (у некоторых валидаторов сейчас
+установлена 0% комиссия), большая часть уходит делегаторам.</p>
+
+<p>См. <a href="https://blog.cosmos.network/economics-of-proof-of-stake-bridging-the-economic-system-of-old-into-the-new-age-of-blockchains-3f17824e91db">Cosmos Validator Economics - Bridging the Economic System of Old into the New Age of Blockchains</a></p>
+
+<p>Если более подробно, то награда за блок и инфляционные атомы распределяются так:</p>
+
+<ul>
+<li><code>baseProposerReward</code> - создателю блока</li>
+<li><code>bonusProposerReward * fractionPrecommits</code> - бонус за включение голосов других валидаторов</li>
+<li><code>(1 - baseProposerReward - (bonusProposerReward * fractionPrecommits))</code> - бонус всем валидаторам (сотне) пропорционально их ставке</li>
+<li><code>communityTax</code> - в общий пул</li>
+</ul>
+
+<p>Схема может претерпеть изменения <a href="https://github.com/cosmos/cosmos-sdk/issues/3529">Proposal: alter uptime &amp; precommit inclusion incentives</a>.</p>
 
 <blockquote>
 <p>Sybil attacks в Tendermint</p>

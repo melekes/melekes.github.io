@@ -76,7 +76,7 @@
       
       
     
-    <meta name="generator" content="Hugo 0.55.1" />
+    <meta name="generator" content="Hugo 0.55.6" />
 
     <link rel="canonical" href="http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/" />
 
@@ -319,8 +319,8 @@ set -g @continuum-restore 'on'
 
 <ol>
 <li>установить плагин <a href="https://github.com/tpope/vim-obsession">https://github.com/tpope/vim-obsession</a></li>
-<li>добавить пару строк в .tmux.conf:</li>
-</ol>
+
+<li><p>добавить пару строк в .tmux.conf:</p>
 
 <pre><code># .tmux.conf
 
@@ -328,7 +328,8 @@ set -g @continuum-restore 'on'
 set -g @resurrect-strategy-vim 'session'
 # for neovim
 set -g @resurrect-strategy-nvim 'session'
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p>Стоит отметить, что можно стартовать не только Vim, но и любые другие программы
 - ssh, psql, rails console, которые были запущены в прошлый раз. Для этого,

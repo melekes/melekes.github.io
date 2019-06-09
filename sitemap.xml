@@ -4,25 +4,36 @@
   
   <url>
     <loc>http://homeonrails.com/</loc>
-    <lastmod>2019-04-17T20:00:12+04:00</lastmod>
+    <lastmod>2019-06-09T09:36:16+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/2019/06/monthly-art-number-40/</loc>
+    <lastmod>2019-06-09T09:36:16+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/post/</loc>
+    <lastmod>2019-06-09T09:36:16+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/tags/</loc>
+    <lastmod>2019-06-09T09:36:16+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/tags/art/</loc>
+    <lastmod>2019-06-09T09:36:16+04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</loc>
     <lastmod>2019-04-17T20:00:12+04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2019-04-17T20:00:12+04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://homeonrails.com/tags/</loc>
-    <lastmod>2019-04-17T20:00:12+04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -34,12 +45,6 @@
   <url>
     <loc>http://homeonrails.com/2019/04/monthly-art-number-39/</loc>
     <lastmod>2019-04-15T22:00:21+04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://homeonrails.com/tags/art/</loc>
-    <lastmod>2019-04-15T22:00:21+04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
