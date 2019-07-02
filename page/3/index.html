@@ -664,6 +664,8 @@
     
         
     
+        
+    
 
     
 
@@ -683,6 +685,43 @@
 </nav>
 
     </div>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="http://homeonrails.com/2018/06/may-tech-picks/">May Tech Picks (Blockchain Edition)</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p>&ldquo;Random picks from all over the Internet&rdquo;.</p> <a class="read-more" href="http://homeonrails.com/2018/06/may-tech-picks/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Anton Kaliaev
+                 
+        
+
+        on
+            
+                <a href="http://homeonrails.com//tags/picks/">#picks</a>,
+            
+        
+        <time class="post-date" datetime="2018-06-03T12:05:09&#43;04:00">
+            3 Jun 2018
+        </time>
+    </footer>
+</article>
 
     
         <article class="post post">
@@ -1026,52 +1065,6 @@ Quick question: where should I declare my constant? Most developers would say: â
         
         <time class="post-date" datetime="2018-03-18T17:46:32&#43;03:00">
             18 Mar 2018
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/">Choosing a type for blockchain height (beware of unsigned integers)</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><em>This article was originally published on <a href="https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d">Medium</a>.</em></p>
-
-<p>Before <a href="https://github.com/tendermint/tendermint/pull/914">this pull request</a>,
-it was a mess. ABCI was using a <code>uint64</code> height on EndBlock. Tendermint Core
-was using the same type for TxResult. Block and BlockStore, however, were using
-<code>int</code> heights (remember that <code>int</code> is different depending on the processor
-architecture: <code>int32</code> for x86, <code>int64</code> for amd64). There was no single standard
-across our repositories as for what type to use for blockchain height.</p> <a class="read-more" href="http://homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/blockchain/">#blockchain</a>,
-            
-                <a href="http://homeonrails.com//tags/golang/">#golang</a>,
-            
-        
-        <time class="post-date" datetime="2018-03-03T13:47:11&#43;04:00">
-            3 Mar 2018
         </time>
     </footer>
 </article>
