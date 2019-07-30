@@ -69,7 +69,7 @@
       
       
     
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.56.0" />
 
     <link rel="canonical" href="http://homeonrails.com/2015/12/a-little-more-on-variable-naming/" />
 
@@ -282,26 +282,27 @@
 Для тех, кто не знает, это определение константы в Erlang&rsquo;e. Здесь мы
 складываем значение и единицу в кортеж (tuple). Очевидный минус в том, что
 нужно будет переписать код для работы с ними.</li>
-<li>Предоставить стандартный класс, кот. явно задает единицу измерения для любых
+
+<li><p>Предоставить стандартный класс, кот. явно задает единицу измерения для любых
 промежутков времени и методы для преобразования одних единиц в другие. К
-примеру, <a href="https://golang.org/pkg/time">time</a> в Golang:</li>
-</ol>
+примеру, <a href="https://golang.org/pkg/time">time</a> в Golang:</p>
 
 <pre><code class="language-go">func Sleep(d Duration)
 
 type Duration int64
 const (
-  Nanosecond  Duration = 1
-  Microsecond          = 1000 * Nanosecond
-  Millisecond          = 1000 * Microsecond
-  Second               = 1000 * Millisecond
-  Minute               = 60 * Second
-  Hour                 = 60 * Minute
+Nanosecond  Duration = 1
+Microsecond          = 1000 * Nanosecond
+Millisecond          = 1000 * Microsecond
+Second               = 1000 * Millisecond
+Minute               = 60 * Second
+Hour                 = 60 * Minute
 )
 
 // example
 time.Sleep(time.Second * 2)
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p>В Ruby есть библиотека <a href="http://api.rubyonrails.org/v2.3/classes/ActiveSupport/CoreExtensions/Numeric/Time.html">ActiveSupport</a>:</p>
 

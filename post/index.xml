@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 18 Jul 2019 10:36:50 +0400</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 11:12:01 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GopherCon Europe 2019</title>
+      <link>http://homeonrails.com/2019/07/gophercon-europe-2019/</link>
+      <pubDate>Tue, 30 Jul 2019 11:12:01 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2019/07/gophercon-europe-2019/</guid>
+      <description>&lt;p&gt;Videos from GopherCon Europe 2019 are up. Shoot out for organizers for sharing
+them! As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll
+enjoy these too.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Money talk или как занять места бизнес класса на галере</title>

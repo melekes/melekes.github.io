@@ -72,7 +72,7 @@
       
       
     
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.56.0" />
 
     <link rel="canonical" href="http://homeonrails.com/2015/03/meck-new-options/" />
 
@@ -263,20 +263,18 @@
       <p>Документация по <a href="https://github.com/eproxus/meck">meck</a>&hellip; скажем так, не блещет. Давайте разберем опции <code>meck:new</code>.</p>
 
 <ul>
-<li><code>passthrough</code> пробрасывает функции meck-модуля (string_meck) в оригинальный модуль (string)</li>
-</ul>
+<li><p><code>passthrough</code> пробрасывает функции meck-модуля (string_meck) в оригинальный модуль (string)</p>
 
 <pre><code class="language-erlang">meck:new(string, [passthrough]),
 meck:expect(string, char_at,
-    fun(0) -&gt;
-        $a;
-    (Pos) -&gt;
-        meck:passthrough([Pos])
+fun(0) -&gt;
+    $a;
+(Pos) -&gt;
+    meck:passthrough([Pos])
 end),
 ?assert(meck:validate(string)).
-</code></pre>
+</code></pre></li>
 
-<ul>
 <li><p><code>no_link</code> не связывать meck процесс с вызывающим процессом. В зависимости от значения используется либо <code>gen_server:start_link</code>, либо <code>gen_server:start</code>. По умолчанию при падении вызывающего процесса meck выгрузит все модули. <strong>Не понимаю зачем может потребоваться не связывать эти процессы.</strong></p></li>
 
 <li><p><code>unstick</code> для мокинга stdlib, kernel или compiler. По умолчанию Erlang запрещает перезагружать данные модули в целях безопасности.</p></li>
@@ -289,8 +287,7 @@ end),
 
 <li><p><code>non_strict</code> позволяет создать expectation для несуществующей функции или даже создать несуществующий модуль. <strong>Не думаю, что эта хорошая практика.</strong></p></li>
 
-<li><p><code>{stub_all, '{@link ret_spec()}'}</code> замокает все функции модуля и будет возвращать то, что указано вторым параметром.</p></li>
-</ul>
+<li><p><code>{stub_all, '{@link ret_spec()}'}</code> замокает все функции модуля и будет возвращать то, что указано вторым параметром.</p>
 
 <pre><code class="language-erlang">meck:new(string, [stub_all]),
 ?assertEqual(ok, string:colorize()).
@@ -309,7 +306,8 @@ meck:new(string, [{stub_all, meck:loop([$a, $b, $c])}]),
 ?assertEqual($b, string:char_at(2)),
 ?assertEqual($c, string:char_at(3)),
 ?assertEqual($a, string:char_at(4)). %% заметили разницу между seq?
-</code></pre>
+</code></pre></li>
+</ul>
     </section>
 
 
