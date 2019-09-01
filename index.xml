@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 30 Jul 2019 11:12:01 +0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 10:27:54 +0400</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monthly Art #42</title>
+      <link>http://homeonrails.com/2019/09/monthly-art-number-42/</link>
+      <pubDate>Sun, 01 Sep 2019 10:27:54 +0400</pubDate>
+      
+      <guid>http://homeonrails.com/2019/09/monthly-art-number-42/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Brazilian couple planted 4 million trees within 18 years to form a large forest. &lt;a href=&#34;https://t.co/FZPRyaw0Vz&#34;&gt;pic.twitter.com/FZPRyaw0Vz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Physics &amp;amp; Astronomy Zone (@ZonePhysics) &lt;a href=&#34;https://twitter.com/ZonePhysics/status/1166138313352175617?ref_src=twsrc%5Etfw&#34;&gt;August 27, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GopherCon Europe 2019</title>
