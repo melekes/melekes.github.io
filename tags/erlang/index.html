@@ -1,705 +1,86 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
 <head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.58.3" />
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    
-    <meta name="twitter:card" content="summary"/>
-    
-    <meta name="twitter:image" content="/images/cover.png"/>
-    
-
-
-
-<meta name="twitter:title" content="erlang"/>
-<meta name="twitter:description" content="Magic unicorns, steep rabbits, fat cats discussing software development"/>
-<meta name="twitter:site" content="@akaliaev"/>
-
-
-
-  	<meta property="og:title" content="erlang &middot; Home on Rails" />
-  	<meta property="og:site_name" content="Home on Rails" />
-  	<meta property="og:url" content="http://homeonrails.com/tags/erlang/" />
-
-    
-        
-            <meta property="og:image" content="/images/cover.png"/>
-        
-    
-
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
-    
-
-    <title>erlang &middot; Home on Rails</title>
-
-    
-    <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
-    
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="http://homeonrails.com/images/favicon.ico">
-	  <link rel="apple-touch-icon" href="http://homeonrails.com/images/apple-touch-icon.png" />
-
-    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
-
-    
-
-    
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-        
-        <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-      
-          <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
-      
-      
-        <link href="http://homeonrails.com/tags/erlang/index.xml" rel="alternate" type="application/rss+xml" title="erlang &middot; Home on Rails" />
-      
-    
-    <meta name="generator" content="Hugo 0.58.3" />
-
-    <link rel="canonical" href="http://homeonrails.com/tags/erlang/" />
-
-    
-      
-    
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Website",
-    "publisher": {
-        "@type": "Person",
-        "name":  null ,
-        
-        "image": {
-            "@type": "ImageObject",
-            "url": "http://homeonrails.com/images/logo.png",
-            "width": 250,
-            "height": 250
-        },
-        
-        "url": "http://homeonrails.com",
-        "sameAs": [
-            
-            
-             
-             
-             
-             
-             
-            
-        ]
-    },
-    "url": "http://homeonrails.com/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://homeonrails.com/"
-    },
-    "description": "Magic unicorns, steep rabbits, fat cats discussing software development"
-}
-  </script>
-    
-
-
-    
-
-    
-
-    
-        
-    
-</head>
-<body class="nav-closed">
-
-  <div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        
-        
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/">Blog</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/about">About me</a>
-            </li>
-        
-            <h3>Explore</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/most-popular-posts">Most popular posts</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://speakerdeck.com/melekes">Talks</a>
-            </li>
-        
-            <h3>Follow Me</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="https://github.com/melekes">Github repos</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://twitter.com/akaliaev">Twitter timeline</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://www.goodreads.com/melekes">Goodreads books</a>
-            </li>
-        
-            <h3>Contact Me</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="http://www.linkedin.com/in/melekes">LinkedIn</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://Keybase.io/melekes">Keybase (secure msg)</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
-            </li>
-        
-        
-    </ul>
-
-    
-    <a class="subscribe-button icon-feed" href="http://homeonrails.com/tags/erlang/index.xml">Subscribe</a>
-    
-</div>
-<span class="nav-cover"></span>
-
-
- <div class="site-wrapper">
-
-
-
-
-	 
-  <header class="main-header tag-head" style="background-image: url(/images/cover.png)">
   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <nav class="main-nav overlay clearfix">
-      
-        <a class="blog-logo" href="http://homeonrails.com/"><img src="http://homeonrails.com/images/logo.png" alt="Home" /></a>
-      
-      
-          <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
-      
+  <title>erlang &middot; Home on Rails</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://homeonrails.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
+
+  
+  <link href="http://homeonrails.com/tags/erlang/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+  
+</head>
+
+  <body class="theme-base-0d ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://homeonrails.com/"><h1>Home on Rails</h1></a>
+      <p class="lead">
+       Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://homeonrails.com/">Home</a> </li>
+        <li><a href="http://homeonrails.com/pgp/"> PGP Pub Key </a></li><li><a href="http://homeonrails.com/about"> About me </a></li><li><a href="https://github.com/melekes"> Github </a></li><li><a href="https://www.goodreads.com/melekes"> Goodreads </a></li><li><a href="http://www.linkedin.com/in/melekes"> LinkedIn </a></li><li><a href="http://homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://speakerdeck.com/melekes"> Slides </a></li><li><a href="https://twitter.com/akaliaev"> Twitter </a></li>
+      </ul>
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">erlang</h1>
-            <h2 class="page-description">
-                
-            </h2>
-        </div>
-    </div>
-</header>
 
-<main class="content" role="main">
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <ul class="posts">
+<li>
+    <span><a href="http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/">The Best of Erlang User Conference 2016</a> <time class="pull-right post-list" datetime="2016-10-20T13:33:36Z">Thu, Oct 20, 2016</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2016/05/profiling-in-erlang/">Profiling in Erlang</a> <time class="pull-right post-list" datetime="2016-05-25T11:41:44Z">Wed, May 25, 2016</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2016/04/how-do-i-start-erlang-application/">Как стартовать Erlang приложение</a> <time class="pull-right post-list" datetime="2016-04-25T10:38:13Z">Mon, Apr 25, 2016</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2016/04/chokecherry/">Chokecherry Or The Story About 1000000 Timeouts</a> <time class="pull-right post-list" datetime="2016-04-24T11:25:45Z">Sun, Apr 24, 2016</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2016/04/erlang-node-freezes-now-what/">Зависла Erlang нода. Что делать?</a> <time class="pull-right post-list" datetime="2016-04-05T15:50:31Z">Tue, Apr 5, 2016</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/">The Best of Erlang Factory SF Bay 2016</a> <time class="pull-right post-list" datetime="2016-03-31T10:49:23Z">Thu, Mar 31, 2016</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2015/10/dont-trust-your-devlead/">Не верь своему тимлиду</a> <time class="pull-right post-list" datetime="2015-10-22T10:16:35Z">Thu, Oct 22, 2015</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/">The best of Erlang User Conference 2015</a> <time class="pull-right post-list" datetime="2015-08-10T11:53:19Z">Mon, Aug 10, 2015</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2015/08/from-ruby-to-erlang/">From Ruby To Erlang. Beginner&#39;s mistakes</a> <time class="pull-right post-list" datetime="2015-08-03T15:09:10Z">Mon, Aug 3, 2015</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/">Заметки на полях: Изучай Erlang во имя добра!</a> <time class="pull-right post-list" datetime="2015-05-28T11:51:25Z">Thu, May 28, 2015</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/">Заметки на полях: Программирование в Erlang</a> <time class="pull-right post-list" datetime="2015-05-23T15:35:04Z">Sat, May 23, 2015</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2015/05/erlang-hbase-and-thrift/">Erlang, HBase и Thrift</a> <time class="pull-right post-list" datetime="2015-05-23T13:30:47Z">Sat, May 23, 2015</time></span>
+  </li><li>
+    <span><a href="http://homeonrails.com/2015/03/meck-new-options/">Опции meck:new</a> <time class="pull-right post-list" datetime="2015-03-03T11:04:41Z">Tue, Mar 3, 2015</time></span>
+  </li>
+</ul>
+    </main>
+
     
-
-	<div class="extra-pagination inner">
-    <nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 2</span>
-	
-	    <a class="older-posts" href="http://homeonrails.com/tags/erlang/page/2/">Older Posts &rarr;</a>
-	
-</nav>
-
-	</div>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/">The Best of Erlang User Conference 2016</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Videos from Erlang User Conference 2016 are up. Thank you to organizers for
-sharing them with the community.</p>
-
-<p>As usual, I am publishing the talks, which I liked the most. Hope you&rsquo;ll enjoy
-these too. <em>Disclaimer: your experience may vary.</em></p> <a class="read-more" href="http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-                <a href="http://homeonrails.com//tags/programming/">#programming</a>,
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2016-10-20T13:33:36Z">
-            20 Oct 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/05/profiling-in-erlang/">Profiling in Erlang</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><a href="http://homeonrails.com/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf" title="Скачать PDF на русском">
-  На русском
-</a></p>
-
-<p>The list of available instruments:</p>
-
-<ul>
-<li>fprof, eprof, cover, cprof (shipped with erlang)</li>
-<li><code>top</code>-like utilities: third party <a href="https://github.com/zaa/entop">entop</a> и <a href="http://erlang.org/doc/apps/observer/etop_ug.html">etop</a></li>
-<li><a href="https://github.com/virtan/eep/">eep</a></li>
-<li><a href="https://ferd.github.io/recon/">recon</a></li>
-<li><a href="https://github.com/proger/eflame">eflame</a> and <a href="https://github.com/slfritchie/eflame">eflame2</a></li>
-<li><a href="https://github.com/massemanet/eper">eper</a></li>
-<li><code>timer:tc/3</code>, <code>statistics/1</code></li>
-<li><a href="https://gist.github.com/slfritchie/159a8ce1f49fc03c77c6">latency_histogram_tracer.erl</a> (requires <code>folsom_metrics</code>)</li>
-</ul> <a class="read-more" href="http://homeonrails.com/2016/05/profiling-in-erlang/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2016-05-25T11:41:44Z">
-            25 May 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/04/how-do-i-start-erlang-application/">Как стартовать Erlang приложение</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Подразумевается, что у вас уже есть какое-то приложение и вы используете 3й
-rebar.</p> <a class="read-more" href="http://homeonrails.com/2016/04/how-do-i-start-erlang-application/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2016-04-25T10:38:13Z">
-            25 Apr 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/04/chokecherry/">Chokecherry Or The Story About 1000000 Timeouts</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Chokecherry (<a href="https://github.com/funbox/chokecherry">https://github.com/funbox/chokecherry</a>) is a wrapper around lager
-logger which limits the volume of info messages irrespectively of the lager&rsquo;s
-backend.</p>
-
-<p>This article tells a story behind this library. Down below you&rsquo;ll find answers to the following questions:</p>
-
-<ul>
-<li>&ldquo;Why it was created?&rdquo;</li>
-<li>&ldquo;How it works?&rdquo;</li>
-<li>&ldquo;Do I need it?&rdquo;</li>
-</ul> <a class="read-more" href="http://homeonrails.com/2016/04/chokecherry/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-                <a href="http://homeonrails.com//tags/logging/">#logging</a>,
-            
-        
-        <time class="post-date" datetime="2016-04-24T11:25:45Z">
-            24 Apr 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/04/erlang-node-freezes-now-what/">Зависла Erlang нода. Что делать?</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg" alt="" width="100%" title=""/></p> <a class="read-more" href="http://homeonrails.com/2016/04/erlang-node-freezes-now-what/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-                <a href="http://homeonrails.com//tags/debugging/">#debugging</a>,
-            
-        
-        <time class="post-date" datetime="2016-04-05T15:50:31Z">
-            5 Apr 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/">The Best of Erlang Factory SF Bay 2016</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Annual <a href="http://www.erlang-factory.com/sfbay2016">Erlang Factory SF Bay Area
-2016</a> conference ended only 3 weeks
-ago. There were many great speakers and presentations. What I specifically like
-about it, is that videos are available almost immediately. As usual, I am
-publishing the talks, which I liked the most. Hope you&rsquo;ll enjoy these too.
-<em>Disclaimer: your experience may vary.</em></p> <a class="read-more" href="http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-                <a href="http://homeonrails.com//tags/programming/">#programming</a>,
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2016-03-31T10:49:23Z">
-            31 Mar 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2015/10/dont-trust-your-devlead/">Не верь своему тимлиду</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>&ldquo;Не верь своему тимлиду&rdquo; или когда не стоит слепо верить словам вашего тимлида.</p>
-
-<div style="align:center">
-  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png" alt="" width="100%" title=""/>
-</div>
-
-<p><br/></p> <a class="read-more" href="http://homeonrails.com/2015/10/dont-trust-your-devlead/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-                <a href="http://homeonrails.com//tags/profiling/">#profiling</a>,
-            
-        
-        <time class="post-date" datetime="2015-10-22T10:16:35Z">
-            22 Oct 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/">The best of Erlang User Conference 2015</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>It’s been a few months since this year’s Erlang User Conference 2015, so most
-of the videos are now online (kudos to organizers). Here is a short list of my
-favorite talks. Enjoy!</p> <a class="read-more" href="http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2015-08-10T11:53:19Z">
-            10 Aug 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2015/08/from-ruby-to-erlang/">From Ruby To Erlang. Beginner&#39;s mistakes</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>I&rsquo;ve  been programming full-time using Erlang for a while already (about eight
-months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
-are very different languages: OOP vs functional, mutable vs immutable and so
-on. Also, there are things you won&rsquo;t find in Ruby (the opposite is also true).</p>
-
-<p>In this post I want to show you the mistakes that I&rsquo;ve made and the lessons
-that I&rsquo;ve learned during the transition.</p> <a class="read-more" href="http://homeonrails.com/2015/08/from-ruby-to-erlang/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/ruby/">#ruby</a>,
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2015-08-03T15:09:10Z">
-            3 Aug 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/">Заметки на полях: Изучай Erlang во имя добра!</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><a href="https://github.com/ferd">Фред Хеберт</a> - широко известный в Erlang сообществе
-программист. Он не только написал дюжину полезных утилит и приложений, но и
-замечательную книгу <a href="http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev">&ldquo;Изучай Erlang во имя добра!&rdquo;</a>, которая, к тому же,
-доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
-только начинает изучать Erlang. Но и более опытные разработчики с большой
-вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
-Distributed Erlang).</p> <a class="read-more" href="http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/books/">#books</a>,
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2015-05-28T11:51:25Z">
-            28 May 2015
-        </time>
-    </footer>
-</article>
-
-	
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 2</span>
-	
-	    <a class="older-posts" href="http://homeonrails.com/tags/erlang/page/2/">Older Posts &rarr;</a>
-	
-</nav>
-
-</main>
-
-
-
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
-        
-        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
-        
-    </footer>
-    </div>
-    <script type="text/javascript" src="http://homeonrails.com/js/jquery.js"></script>
-    <script type="text/javascript" src="http://homeonrails.com/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="http://homeonrails.com/js/index.js"></script>
-    
-</body>
+  </body>
 </html>
