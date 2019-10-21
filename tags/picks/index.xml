@@ -20,14 +20,16 @@
       <guid>http://homeonrails.com/2018/11/october-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Excellent hand-picked articles &amp;amp; videos about programming from all over the Internet&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; defer makes you sloppy. Try to avoid when dealing with mutexes&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; defer makes you sloppy. Try to avoid when dealing with mutexes&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;defer + mutexes makes you forget that&lt;br&gt;&lt;br&gt;a) while we&amp;#39;re locked, nobody else can access the object (unless its read lock) -&amp;gt; better to unlock earlier&lt;br&gt;b) when you put more code &amp;amp; call other functions between lock / unlock, it becomes easier to deadlock&lt;br&gt;c) defers are slow&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More times you don&amp;#39;t need a defer &lt;a href=&#34;https://t.co/DYrbJQJwgS&#34;&gt;pic.twitter.com/DYrbJQJwgS&lt;/a&gt;&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;defer + mutexes makes you forget that&lt;br&gt;&lt;br&gt;a) while we&amp;#39;re locked, nobody else can access the object (unless its read lock) -&amp;gt; better to unlock earlier&lt;br&gt;b) when you put more code &amp;amp; call other functions between lock / unlock, it becomes easier to deadlock&lt;br&gt;c) defers are slow&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More times you don&amp;#39;t need a defer &lt;a href=&#34;https://t.co/DYrbJQJwgS&#34;&gt;pic.twitter.com/DYrbJQJwgS&lt;/a&gt;&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
     
     <item>

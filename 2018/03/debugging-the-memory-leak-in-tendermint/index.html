@@ -169,7 +169,11 @@ course! How could I be so stupid? The culprit was testing using <code>TestReacto
 <p><code>TestReactor</code> was the one holding reference to all peers (both added and
 removed). This is why Go was not able to garbage collect them.</p>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ti3mWTKXIgk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Ti3mWTKXIgk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 
 <p>The mistake I was talking above was <strong>jumping to a unit test instead of writing
 an integration test</strong>. Then it all became clear. I knew what I needed to do. I
