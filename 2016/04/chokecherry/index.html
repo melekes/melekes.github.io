@@ -124,11 +124,11 @@ off synchronous mode.</p>
 
 <p>What will happen then is lager's mailbox start growing and, eventually, when
 there will be no more free memory, node will crash.</p>
-<p>{% blockquote %}
-For performance, the file backend does delayed writes, although it will sync at
-specific log levels, configured via the `sync_on&rsquo; option. By default the error
-level or above will trigger a sync.
-{% endblockquote %}</p>
+<blockquote>
+<p>For performance, the file backend does delayed writes, although it will sync
+at specific log levels, configured via the `sync_on&rsquo; option. By default the
+error level or above will trigger a sync.</p>
+</blockquote>
 <p>Keep in mind that there were an exessive amount of info messages, so no <code>fsync</code>
 calls (<a href="https://github.com/basho/lager/blob/1159f9262fb589ce2ec310eb7dec5ac03b1fee16/src/lager_file_backend.erl#L262">file:datasync</a>) were made (we didn't change the default).</p>
 <p>So <strong>there was no simple solution</strong> for this problem. <strong>That's why we created
