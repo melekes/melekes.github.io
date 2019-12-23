@@ -19,8 +19,9 @@
       
       <guid>http://homeonrails.com/2015/10/dont-trust-your-devlead/</guid>
       <description>&lt;p&gt;&amp;ldquo;Не верь своему тимлиду&amp;rdquo; или когда не стоит слепо верить словам вашего тимлида.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
+&lt;figure&gt;
+    &lt;img src=&#34;http://homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png&#34;/&gt; 
+&lt;/figure&gt;</description>
     </item>
     
   </channel>

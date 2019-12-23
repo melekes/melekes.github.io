@@ -61,7 +61,10 @@
     <div class="post">
   <h1>Зависла Erlang нода. Что делать?</h1>
   <time datetime=2016-04-05T15:50:31Z class="post-date">Tue, Apr 5, 2016</time>
-  <!-- raw HTML omitted -->
+  <figure>
+    <img src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg"/> 
+</figure>
+
 <p>Пишу статью по горячим следам. Пару дней назад тестировал работу приложения при
 пропаже соединения с Redis'ом. Так вот, после возобновления соединения
 (успешном переподключении), через раз приложение зависало полностью. Ни
@@ -86,16 +89,28 @@ Received SIGUSR1
 <p><a href="http://erlang.org/doc/apps/observer/crashdump_ug.html">http://erlang.org/doc/apps/observer/crashdump_ug.html</a></p>
 <pre><code>$ erl
 &gt; crashdump_viewer:start().
-</code></pre><!-- raw HTML omitted -->
+</code></pre><figure>
+    <img src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug1.png"/> 
+</figure>
+
 <p>Общая информация.</p>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug2.png"/> 
+</figure>
+
 <p>Список процессов.</p>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug3.png"/> 
+</figure>
+
 <p>Информация по одному из немногих запущенных процессов с большим количеством
 редукций. Чтобы найти конкретный процесс, внутри которого произошла блокировка,
 пришлось просмотреть несколько штук (количество запущенных процессов обычно =
 числу ядер).</p>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug4.png"/> 
+</figure>
+
 <p>stackdump процесса.</p>
 <p>Как видно из 2-й картинки выше мы заблокировались на
 <code>hierdis:pipeline_cleaner/4</code> (см. &ldquo;Continuation pointer&rdquo;).

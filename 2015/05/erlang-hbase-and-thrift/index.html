@@ -83,10 +83,12 @@ We removed the Avro gateway because the implementation as contributed was a work
 и protobufs. В целом он выглядит довольно симпатично, но а) проигрывает
 thrift'у по скорости (особенно xml и json, которые тащат за собой схему) б)
 могут отсутствовать некоторые параметры для требуемого вам метода.</p>
-<p>&lt;img class=&quot;img-rounded&rdquo; src=&rdquo;/images/posts/2015-05-16-erlang-hbase-and-thrift/thrift-vs-rest1.png&rdquo; alt=&rdquo;&quot;/ width=&quot;450&rdquo; title=&quot;Program completion time (in seconds)&ldquo;&gt;
-<!-- raw HTML omitted -->
-(Program completion time (in seconds) <!-- raw HTML omitted --><a href="http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/">http://blog.cloudera.com/blog/2014/04/how-to-use-the-hbase-thrift-interface-part-3-using-scans/</a><!-- raw HTML omitted -->)
-<!-- raw HTML omitted --></p>
+<figure>
+    <img src="http://homeonrails.com/images/posts/2015-05-16-erlang-hbase-and-thrift/thrift-vs-rest1.png"/> <figcaption>
+            <h4>(Program completion time (in seconds)</h4>
+        </figcaption>
+</figure>
+
 <p>Например, в protobuf схеме вы не найдете <code>filter</code>, которые может быть нужен при выполнении <code>Scan</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-proto" data-lang="proto"><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">Scanner</span> {<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">optional</span> <span style="color:#66d9ef">bytes</span> startRow <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">

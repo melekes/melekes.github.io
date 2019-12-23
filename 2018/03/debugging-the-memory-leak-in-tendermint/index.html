@@ -101,7 +101,14 @@ occupied by <code>newChannel</code> and <code>RepeatTimer</code>. The trail went
 the <code>reconnectToPeer</code> function. That was weird because we’re not creating any
 new peers (some of them were just failing due to timeouts and Tendermint tried
 to reconnect).</p>
-<!-- raw HTML omitted -->
+<p><figure>
+    <img src="http://homeonrails.com/images/posts/2018-03-03-debugging-the-memory-leak-in-tendermint/1.png"/> 
+</figure>
+
+<figure>
+    <img src="http://homeonrails.com/images/posts/2018-03-03-debugging-the-memory-leak-in-tendermint/2.png"/> 
+</figure>
+</p>
 <h2 id="part-2mistake">Part 2. Mistake</h2>
 <p>Here I made a mistake. I thought I pinpointed the exact place where the memory
 is leaking. So I went and wrote a test case for <code>p2p/Switch</code>, where I create a

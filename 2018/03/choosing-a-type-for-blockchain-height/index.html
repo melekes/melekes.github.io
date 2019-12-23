@@ -109,7 +109,10 @@ check for underflow or make a mistake at some point.</li>
 <blockquote>
 <p>I am just saying that if we decrement an uninitialized height uint64(0), all of a sudden that’s a quick mess up. if we have code that can check if <code>height &lt;= 0</code> then we are set with <code>int64</code>. but with <code>uint64</code> only code Jesus can help us</p>
 </blockquote>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2018-03-03-choosing-a-type-for-blockchain-height/jesus.jpg"/> 
+</figure>
+
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 <span style="color:#f92672">import</span> (
     <span style="color:#e6db74">&#34;fmt&#34;</span>

@@ -63,15 +63,20 @@
   <time datetime=2015-10-19T14:00:26Z class="post-date">Mon, Oct 19, 2015</time>
   <p>&ldquo;Redis дропает события? Что?&rdquo; или поучительная история о том, как важно читать
 документацию.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg"/> 
+</figure>
+
 <p>В один дождливый и прохладный осенний день мы увидели слишком маленькое
 значение одной из метрик нашего приложения. Оно занималось (1) отправкой
 текстовых сообщений через специальный шлюз и приемом отчетов о доставке. Отчеты
 (2) публиковались в Redis через Redis Pub/Sub и (3) вычитывались отдельным
 демоном (Listener), который (4) отмечал факт получения или неполучения
 абонентом смс в БД (Postgresql).</p>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/app.png"/> 
+</figure>
+
 <p>В статистике значилось: <strong>&ldquo;отправлено 20000, доставлено 122&rdquo;</strong>. По необъяснимой
 причине мы недополучали большую часть отчетов.</p>
 <p>Сначала я предположил, что они просто не доходят до Redis, но посмотрев логи
@@ -82,13 +87,18 @@
 overcoming  of  output  buffer  limits&rdquo;, мы поняли что скорее всего так и есть.</p>
 <p>Я был удивлен. Опыта работы с Redis у меня было не так уж и много, но мне все
 равно казалось это нереальным.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/wat.png"/> 
+</figure>
+
 <p>Думалось, что он будет хранить данные в списке так долго как сможет.
 Оказывается, Redis Pub/Sub вообще не хранит никаких данных (есть буфер). В
 идеале, он старается раскидать данные с сокета &ldquo;издателя&rdquo; (Publisher's socket)
 по сокетам подписчиков (Subscribers sockets) на одной итерации <a href="https://en.wikipedia.org/wiki/Event_loop">event loop</a>.</p>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/pub-sub.png"/> 
+</figure>
+
 <p>Так что же про буферы. У Redis есть буфер с soft limit = 8MB и hard limit =
 32MB. Также есть по 1 буферу на каждое TCP соединение.</p>
 <p>Размеры буферов можно узнать так:</p>

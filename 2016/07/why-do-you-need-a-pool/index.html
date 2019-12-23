@@ -82,11 +82,17 @@ for more information.</p>
 <li>we improve throughput by sharing the network latency</li>
 </ul>
 <p>I think, only the last one requires explanation, others are pretty obvious.</p>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif"/> 
+</figure>
+
 <p>Our friend Barney here wants to buy some beer, so he takes a long walk to the nearest store. It will take him <code>3 * (t1 + t2)</code> to buy 3 beers.</p>
 <p>t1 is a network latency, t2 - processing time.</p>
 <p>What if instead, he and his buddies will go to the store together. <strong>Even if the store has only one cash register (like Redis) and the cashier serve them in turn, they will buy 3 beers in <code>t1 + 3 * t2</code></strong>.</p>
-<!-- raw HTML omitted -->
+<figure>
+    <img src="http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif"/> 
+</figure>
+
 <p>Most often t1 much greater than t2. Therefore, <code>t1 + 3 * t2</code> &lt; <code>3 * (t1 + t2)</code>.
 In other words, it is better to send N requests in parallel comparing to
 sending one by one because the network latency is greater than time to process
