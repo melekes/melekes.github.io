@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -52,36 +61,26 @@
     <div class="post">
   <h1>How to be productive with almost any text editor</h1>
   <time datetime=2016-05-23T12:02:11Z class="post-date">Mon, May 23, 2016</time>
-  <p><a href="http://homeonrails.com/pdfs/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/how_to_be_productive_with_almost_any_editor_ru_RU.pdf" title="Скачать PDF на русском">
-  На русском
-</a></p>
-
+  <!-- raw HTML omitted -->
 <p>What makes us productive when working with code in the editor? Every day, there
 is a new shining plugin, that allows us to do something useful by pressing only
-2 keystrokes. Don&rsquo;t get me wrong, I&rsquo;m not against plugins. Hell, I have at
-least 40 of them (<a href="https://git.io/vrg64">https://git.io/vrg64</a>).</p>
-
+2 keystrokes. Don't get me wrong, I'm not against plugins. Hell, I have at
+least 40 of them (<a href="https://git.io/vrg64)">https://git.io/vrg64)</a>.</p>
 <p>But, are all of them equally useful? I am certain that some tricks outperform
 others in terms of productivity (<strong>20% results in 80% boost</strong>). These could be
-features, built into the editor. You just don&rsquo;t know about them. Here, I&rsquo;ve
-tried to collect <strong>the most important ones</strong>, which don&rsquo;t require you to read a
+features, built into the editor. You just don't know about them. Here, I've
+tried to collect <strong>the most important ones</strong>, which don't require you to read a
 pile of docs and much time to learn.</p>
-
 <p>There is no research (not to my knowledge) to backup the list below. If you
 think I missed something, leave a comment or two.</p>
-
-<p>In addition, I&rsquo;ve compared the 5 most popular editors (vim, emacs, idea,
+<p>In addition, I've compared the 5 most popular editors (vim, emacs, idea,
 sublime text and atom). I hope it will be interesting for you to see how your
 editor is doing relative to others.</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/trends.png" alt="" width="100%" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>Your humble servant is using Vim at his regular job, so you may notice a
 certain predisposition. But I try to be open - the second attempt to master
 Spacemacs? <a href="https://github.com/google/xi-editor">https://github.com/google/xi-editor</a> ? Who knows..</p>
-
 <h2 id="1-fast-switching-between-the-last-two-files">1. Fast switching between the last two files</h2>
-
 <table>
 <thead>
 <tr>
@@ -89,70 +88,55 @@ Spacemacs? <a href="https://github.com/google/xi-editor">https://github.com/goog
 <th>Mapping</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Vim</td>
 <td><code>nnoremap &lt;leader&gt;&lt;leader&gt; &lt;C-^&gt;</code></td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Emacs</td>
 <td><code>(global-set-key (kbd &quot;M-o&quot;)  'mode-line-other-buffer)</code></td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Idea</td>
 <td>Ctrl + Tab / Ctrl + Shift + Tab</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Sublime Text</td>
 <td>Ctrl + Tab / Ctrl + Shift + Tab</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Atom</td>
 <td>Ctrl + Tab / Ctrl + Shift + Tab</td>
 </tr>
 </tbody>
 </table>
-
 <p>Emacs:</p>
-
 <ul>
 <li><a href="https://www.emacswiki.org/emacs/SwitchingBuffers#toc5">https://www.emacswiki.org/emacs/SwitchingBuffers#toc5</a></li>
 <li><a href="http://emacsredux.com/blog/2013/04/28/switch-to-previous-buffer/">http://emacsredux.com/blog/2013/04/28/switch-to-previous-buffer/</a></li>
 </ul>
-
 <p>Idea:</p>
-
 <ul>
 <li><a href="http://blog.jetbrains.com/webide/2013/02/navigating-between-files-in-the-ide-best-practices/">http://blog.jetbrains.com/webide/2013/02/navigating-between-files-in-the-ide-best-practices/</a></li>
 </ul>
-
 <h2 id="2-running-tests-without-leaving-the-editor">2. Running tests without leaving the editor</h2>
-
 <table>
 <thead>
 <tr>
@@ -160,57 +144,46 @@ Spacemacs? <a href="https://github.com/google/xi-editor">https://github.com/goog
 <th>The way</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Vim</td>
 <td><a href="https://github.com/janko-m/vim-test">https://github.com/janko-m/vim-test</a></td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
 </tr>
-
 <tr>
 <td>Emacs</td>
 <td>no uniform interface, but there are packages for different languages</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
 </tr>
-
 <tr>
 <td>Idea</td>
 <td>through the UI plus Ctrl + R to restart</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
 </tr>
-
 <tr>
 <td>Sublime Text</td>
 <td>no uniform interface, but there are packages for different languages</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
 </tr>
-
 <tr>
 <td>Atom</td>
 <td>no uniform interface, but there are packages for different languages</td>
 </tr>
 </tbody>
 </table>
-
 <p>Emacs:</p>
-
 <ul>
 <li>clojure - <a href="https://github.com/clojure-emacs/cider">https://github.com/clojure-emacs/cider</a></li>
 <li>ruby - <a href="https://github.com/pezra/rspec-mode">https://github.com/pezra/rspec-mode</a></li>
@@ -218,33 +191,25 @@ Spacemacs? <a href="https://github.com/google/xi-editor">https://github.com/goog
 <li>python - <a href="https://github.com/ionrock/pytest-el">https://github.com/ionrock/pytest-el</a></li>
 <li>golang - <a href="https://github.com/nlamirault/gotest.el">https://github.com/nlamirault/gotest.el</a></li>
 </ul>
-
 <p>Idea:</p>
-
 <ul>
-<li>for some languages, you&rsquo;ll need to configure Idea, e.g. golang - <a href="https://github.com/go-lang-plugin-org/go-lang-idea-plugin/wiki/Documentation">https://github.com/go-lang-plugin-org/go-lang-idea-plugin/wiki/Documentation</a></li>
+<li>for some languages, you'll need to configure Idea, e.g. golang - <a href="https://github.com/go-lang-plugin-org/go-lang-idea-plugin/wiki/Documentation">https://github.com/go-lang-plugin-org/go-lang-idea-plugin/wiki/Documentation</a></li>
 <li><a href="https://www.jetbrains.com/help/idea/2016.1/rerunning-tests.html">https://www.jetbrains.com/help/idea/2016.1/rerunning-tests.html</a></li>
 </ul>
-
 <p>Sublime Text:</p>
-
 <ul>
 <li>ruby - <a href="https://github.com/maltize/sublime-text-2-ruby-tests">https://github.com/maltize/sublime-text-2-ruby-tests</a></li>
 <li>python - <a href="https://damnwidget.github.io/anaconda/tests_runner/">https://damnwidget.github.io/anaconda/tests_runner/</a></li>
 <li>scala - <a href="https://github.com/jarhart/SublimeSBT">https://github.com/jarhart/SublimeSBT</a></li>
 </ul>
-
 <p>Atom:</p>
-
 <ul>
 <li>ruby - <a href="https://github.com/moxley/atom-ruby-test">https://github.com/moxley/atom-ruby-test</a></li>
 <li>elixir - <a href="https://github.com/indiejames/atom-iex">https://github.com/indiejames/atom-iex</a></li>
 <li>(many) - <a href="https://atom.io/packages/script">https://atom.io/packages/script</a></li>
 <li><a href="http://brendankemp.com/essays/atom-is-ready-to-be-your-editor/">http://brendankemp.com/essays/atom-is-ready-to-be-your-editor/</a></li>
 </ul>
-
 <h2 id="3-terminal-emulator">3. Terminal emulator</h2>
-
 <table>
 <thead>
 <tr>
@@ -252,96 +217,73 @@ Spacemacs? <a href="https://github.com/google/xi-editor">https://github.com/goog
 <th>Terminal emulator</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Vim</td>
 <td>no</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
 </tr>
-
 <tr>
 <td>Neovim</td>
 <td>yes</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
 </tr>
-
 <tr>
 <td>Emacs</td>
 <td>yes</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
 </tr>
-
 <tr>
 <td>Idea</td>
 <td>yes</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
 </tr>
-
 <tr>
 <td>Sublime Text</td>
 <td>yes</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
 </tr>
-
 <tr>
 <td>Atom</td>
 <td>yes</td>
 </tr>
 </tbody>
 </table>
-
 <p><em>Note on terminal text editors</em></p>
-
 <p>You can easily switch to the actual terminal using Ctrl + z (this will suspend
 the editor) and get back by entering fg. However, I would say that it is not
-the same as having a terminal emulator running in an editor&rsquo;s window below. The
-reason is simple - context. Most often, <strong>you&rsquo;ll want to look at the output of
-some command and the code at the same time</strong>. For example, seeing an error&rsquo;s
+the same as having a terminal emulator running in an editor's window below. The
+reason is simple - context. Most often, <strong>you'll want to look at the output of
+some command and the code at the same time</strong>. For example, seeing an error's
 stack trace and the code at the same time is far better than performing these
 actions in turn (you could easily forget the exact line number or some other
 detail).</p>
-
-<p>If you don&rsquo;t want to type fg, there is a hack:</p>
-
+<p>If you don't want to type fg, there is a hack:</p>
 <p>zsh: <a href="https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/fancy-ctrl-z/fancy-ctrl-z.plugin.zsh">https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/fancy-ctrl-z/fancy-ctrl-z.plugin.zsh</a></p>
-
 <p>fish:</p>
-
 <pre><code>bind \ck 'if test -z (commandline) ; fg %; else ; clear; commandline &quot;&quot;; end'
-</code></pre>
-
-<p>Another advantage of having a terminal emulator: copy-pasting between the
+</code></pre><p>Another advantage of having a terminal emulator: copy-pasting between the
 terminal emulator and your code is much easier, and you <strong>get completion in the
 code for things in the terminal</strong> (thanks to
 <a href="https://www.reddit.com/user/somebodddy">somebodddy</a>).</p>
-
 <p>Sublime Text: <a href="https://packagecontrol.io/packages/Terminal">https://packagecontrol.io/packages/Terminal</a></p>
-
 <p>Atom: <a href="https://atom.io/packages/term3">https://atom.io/packages/term3</a></p>
-
 <h2 id="4-go-to-definition">4. Go to definition</h2>
-
 <table>
 <thead>
 <tr>
@@ -349,73 +291,56 @@ code for things in the terminal</strong> (thanks to
 <th>Mapping</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Vim</td>
 <td>Ctrl + ] / Ctrl - T using ctags</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Emacs</td>
 <td>M-. / M-* using ctags</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Idea</td>
 <td>Ctrl + B or Ctrl + click / Ctrl + Tab</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Sublime Text</td>
 <td>Ctrl + click / Ctrl + right click</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Atom</td>
 <td>Ctrl + Alt + down / Ctrl + Alt + up</td>
 </tr>
 </tbody>
 </table>
-
 <p>Emacs:</p>
-
 <ul>
 <li><a href="https://www.emacswiki.org/emacs/EmacsTags">https://www.emacswiki.org/emacs/EmacsTags</a></li>
 <li><a href="https://github.com/jacktasia/dumb-jump">https://github.com/jacktasia/dumb-jump</a> (uses <code>ag</code>)</li>
 </ul>
-
 <p>Sublime Text: <a href="https://gist.github.com/kendellfab/6135193#gistcomment-1768760">https://gist.github.com/kendellfab/6135193#gistcomment-1768760</a></p>
-
 <p>Atom: <a href="https://github.com/atom/symbols-view">https://github.com/atom/symbols-view</a></p>
-
 <p>Generating tags using git hooks: <a href="http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html">http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html</a></p>
-
 <h2 id="5-repl-advanced">5. REPL (Advanced)</h2>
-
 <p>If you have a REPL alongside the editor - excellent! You can eval some code or
-lookup some documentation (<a href="http://tonsky.me/blog/interactive-development/">http://tonsky.me/blog/interactive-development/</a>).</p>
-
+lookup some documentation (<a href="http://tonsky.me/blog/interactive-development/)">http://tonsky.me/blog/interactive-development/)</a>.</p>
 <table>
 <thead>
 <tr>
@@ -423,100 +348,76 @@ lookup some documentation (<a href="http://tonsky.me/blog/interactive-developmen
 <th>REPL</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Vim</td>
 <td>yes (few languages)</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Neovim</td>
 <td>yes (many languages)</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Emacs</td>
 <td>yes (many languages)</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Idea</td>
 <td>yes (many languages)</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Sublime Text</td>
 <td>yes (many languages)</td>
 </tr>
-
 <tr>
 <td>&mdash;&mdash;&mdash;&mdash;</td>
 <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
 </tr>
-
 <tr>
 <td>Atom</td>
 <td>yes (few languages)</td>
 </tr>
 </tbody>
 </table>
-
 <p>Vim:</p>
-
 <ul>
 <li>clojure: <a href="https://github.com/tpope/vim-fireplace">https://github.com/tpope/vim-fireplace</a></li>
 </ul>
-
 <p>If language has a command-line REPL, you can always execute: <code>:!&lt;repl&gt;</code> (e.g. <code>:!irb</code>).</p>
-
 <p>Neovim: <a href="https://github.com/kassio/neoterm">https://github.com/kassio/neoterm</a></p>
-
 <p>Emacs:</p>
-
 <ul>
 <li>ruby - <a href="https://github.com/dgutov/robe">https://github.com/dgutov/robe</a></li>
 <li>scala - <a href="https://github.com/ensime/ensime-emacs">https://github.com/ensime/ensime-emacs</a></li>
 <li>clojure - <a href="https://github.com/clojure-emacs/cider">https://github.com/clojure-emacs/cider</a></li>
 </ul>
-
 <p>Idea:</p>
-
 <ul>
 <li>clojure - <a href="https://cursive-ide.com/">https://cursive-ide.com/</a></li>
 </ul>
-
 <p>Sublime Text: <a href="https://packagecontrol.io/packages/SublimeREPL">https://packagecontrol.io/packages/SublimeREPL</a></p>
-
 <p>Atom:</p>
-
 <ul>
 <li>clojure - <a href="https://atom.io/packages/proto-repl">https://atom.io/packages/proto-repl</a></li>
 <li>haskell - <a href="https://atom.io/packages/ide-haskell-repl">https://atom.io/packages/ide-haskell-repl</a></li>
 </ul>
-
 <h2 id="the-end-list">The end list</h2>
-
 <ol>
 <li>Fast switching between the last two files</li>
 <li>Running tests without leaving the editor</li>
@@ -524,18 +425,20 @@ lookup some documentation (<a href="http://tonsky.me/blog/interactive-developmen
 <li>Go to definition</li>
 <li>REPL (Advanced)</li>
 </ol>
-
 <p>3 and 5 could be alternatively solved using a terminal multiplexer. For
 example, my favorite <a href="https://tmux.github.io/">https://tmux.github.io/</a> .</p>
-
 <h2 id="bonus">Bonus</h2>
-
-<p>1) Do not repeat yourself (&ldquo;.&rdquo; in Vim, macros [atom - <a href="https://atom.io/packages/atom-keyboard-macros]">https://atom.io/packages/atom-keyboard-macros]</a>)</p>
-
-<p>2) Operate on objects: blocks, functions, etc., not individual characters (motions and text objects <a href="https://github.com/kana/vim-textobj-user/wiki">https://github.com/kana/vim-textobj-user/wiki</a> in Vim)</p>
-
-<p>3) Quickly navigate through code using AceJump-like plugins</p>
-
+<ol>
+<li>
+<p>Do not repeat yourself (&quot;.&rdquo; in Vim, macros [atom - <a href="https://atom.io/packages/atom-keyboard-macros">https://atom.io/packages/atom-keyboard-macros</a>])</p>
+</li>
+<li>
+<p>Operate on objects: blocks, functions, etc., not individual characters (motions and text objects <a href="https://github.com/kana/vim-textobj-user/wiki">https://github.com/kana/vim-textobj-user/wiki</a> in Vim)</p>
+</li>
+<li>
+<p>Quickly navigate through code using AceJump-like plugins</p>
+</li>
+</ol>
 <ul>
 <li>vim - <a href="https://github.com/easymotion/vim-easymotion">https://github.com/easymotion/vim-easymotion</a></li>
 <li>idea - <a href="https://github.com/johnlindquist/AceJump">https://github.com/johnlindquist/AceJump</a></li>
@@ -543,13 +446,12 @@ example, my favorite <a href="https://tmux.github.io/">https://tmux.github.io/</
 <li>sublime text - <a href="https://packagecontrol.io/packages/EasyMotion">https://packagecontrol.io/packages/EasyMotion</a></li>
 <li>atom - <a href="https://atom.io/packages/jumpy">https://atom.io/packages/jumpy</a></li>
 </ul>
-
 <p>My current use of <code>vim-easymotion</code> reduced to only one <a href="https://git.io/vrzAE">https://git.io/vrzAE</a>
 mapping that allows me to jump to any location in the current file. Simple and
 effective!</p>
-
-<p>4) Use multiple selection/cursors</p>
-
+<ol start="4">
+<li>Use multiple selection/cursors</li>
+</ol>
 <ul>
 <li>vim - <a href="https://github.com/terryma/vim-multiple-cursors">https://github.com/terryma/vim-multiple-cursors</a></li>
 <li>idea - F6 and the rest</li>
@@ -557,9 +459,9 @@ effective!</p>
 <li>sublime text - Ctrl + D</li>
 <li>atom - Ctrl + D</li>
 </ul>
-
-<p>5) Open files using fuzzy search</p>
-
+<ol start="5">
+<li>Open files using fuzzy search</li>
+</ol>
 <ul>
 <li>vim - <a href="https://github.com/junegunn/fzf.vim">https://github.com/junegunn/fzf.vim</a></li>
 <li>idea - Shift + Ctrl + O (<a href="https://www.jetbrains.com/help/idea/2016.1/navigating-to-class-file-or-symbol-by-name.html">https://www.jetbrains.com/help/idea/2016.1/navigating-to-class-file-or-symbol-by-name.html</a>)</li>
@@ -567,25 +469,21 @@ effective!</p>
 <li>sublime text - Ctrl + P (<a href="http://docs.sublimetext.info/en/latest/file_management/file_management.html">http://docs.sublimetext.info/en/latest/file_management/file_management.html</a>)</li>
 <li>atom - <a href="https://github.com/atom/fuzzy-finder">https://github.com/atom/fuzzy-finder</a></li>
 </ul>
-
 <h2 id="conclusion">Conclusion</h2>
-
-<p>As you can see, each of the editors does the job. Some slightly better, others
-- a little worse.</p>
-
+<p>As you can see, each of the editors does the job. Some slightly better, others</p>
+<ul>
+<li>a little worse.</li>
+</ul>
 <p>Another finding: Vim is best suited for polyglot developers
 (<a href="http://searchsoftwarequality.techtarget.com/definition/polyglot-programming">http://searchsoftwarequality.techtarget.com/definition/polyglot-programming</a>)
 because it provides plugins and unified interface for multiple languages. Emacs
 offers more power, but you need to configure all the packages to make mappings
 the same. It may be a good idea for Spacemacs, is it?</p>
-
 <p>Useful links:</p>
-
 <ul>
 <li><a href="https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/">https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/</a></li>
 <li><a href="https://danielmiessler.com/blog/enhancements-to-shell-and-vim-productivity/">https://danielmiessler.com/blog/enhancements-to-shell-and-vim-productivity/</a></li>
 </ul>
-
 <p>Did I miss something? You can leave a comment or send me an email.</p>
 </div>
 

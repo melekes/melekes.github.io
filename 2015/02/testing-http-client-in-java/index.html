@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -55,38 +64,29 @@
   <p>Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
 <a href="https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java">Gist</a>.
-Поэтому я решил не использовать Apache&rsquo;s HTTPClient и другие библиотеки, вроде
+Поэтому я решил не использовать Apache's HTTPClient и другие библиотеки, вроде
 Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
 нежели простые HTTP запросы, рассмотрел бы другие варианты.</p>
-
 <p>Для тестирования нам понадобятся следующие библиотеки:</p>
-
 <ul>
 <li>JUnit</li>
 <li><a href="https://github.com/mockito/mockito">Mockito</a></li>
 <li><a href="https://code.google.com/p/powermock/">PowerMock</a></li>
 </ul>
-
 <p>{% gist 63b9084d3804f72be2d7 HttpClientTest.java %}</p>
-
 <p>На мой взгляд, код получился очень понятным и не требует детального пояснения.</p>
-
 <p>Единственное, стоит пожалуй разъяснить зачем нужны аннотации сверху класса.
 Первая из них - <code>@RunWith</code>, заменяет стандартный JUnit runner тестов на
-PowerMock&rsquo;овский. Вторая аннотация - <code>@PrepareForTest</code>, подготавливает классы для
+PowerMock'овский. Вторая аннотация - <code>@PrepareForTest</code>, подготавливает классы для
 тестов, так как они (классы) будут возвращать mock-объект (URL) или являются
 final (HttpClient). <a href="https://powermock.googlecode.com/svn/docs/powermock-1.3.5/apidocs/org/powermock/core/classloader/annotations/PrepareForTest.html">Документация по @PrepareForTest</a></p>
-
-<p>Пример JSON&rsquo;а, возвращаемого в случае успешного ответа:</p>
-
+<p>Пример JSON'а, возвращаемого в случае успешного ответа:</p>
 <p>{% gist 63b9084d3804f72be2d7 search.json %}</p>
-
 <p>Файл <code>search.json</code> необходимо поместить по следующему пути:
 <code>src/test/resources/http_client/search.json</code>. Иначе, если вы напутаете с
 путями, <code>getResourceAsStream</code> вернет <code>null</code>.</p>
-
 <p>Если вы знаете best practices по написанию тестов на Java, или используете
-другую библиотеку, которая позволяет убрать часть mock&rsquo;ов из кода теста, я буду
+другую библиотеку, которая позволяет убрать часть mock'ов из кода теста, я буду
 рад если вы оставите комментарий.</p>
 </div>
 

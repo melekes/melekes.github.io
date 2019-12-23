@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>talks on Home on Rails</title>
@@ -19,7 +19,7 @@
       
       <guid>http://homeonrails.com/2019/07/gophercon-europe-2019/</guid>
       <description>&lt;p&gt;Videos from GopherCon Europe 2019 are up. Shoot out for organizers for sharing
-them! As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll
+them! As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll
 enjoy these too.&lt;/p&gt;</description>
     </item>
     
@@ -31,8 +31,7 @@ enjoy these too.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -55,12 +54,11 @@ gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt
       <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
+      <description>&lt;p&gt;I&#39;ve recently decided to give Clojure another try and, as a part of my
 wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
 Clojure conference in the western United States and all about this language, as
 you may guess.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -74,7 +72,7 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
 2016&lt;/a&gt; conference ended only 3 weeks
 ago. There were many great speakers and presentations. What I specifically like
 about it, is that videos are available almost immediately. As usual, I am
-publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
+publishing the talks, which I liked the most. Hope you&#39;ll enjoy these too.
 &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -89,7 +87,6 @@ publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these 
 знакомых, подобралась неплохая компания и было несколько действительно крутых
 докладов. К счастью, вам не надо смотреть все выложенные видео, чтобы найти те
 самые доклады.&lt;/p&gt;
-
 &lt;p&gt;&lt;em&gt;Дисклеймер: выбранные материалы и степень их крутости отражают личное мнение
 автора. Ваше мнение может отличаться.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
@@ -101,8 +98,8 @@ publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these 
       
       <guid>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.ricon.io/index.html&#34;&gt;RICON&lt;/a&gt; is all about distributed systems. There
-are a lot of academic (Phd) talks and a few practical ones. I&amp;rsquo;ve chosen 3 out
-of 37 videos, which I liked the most. Hope you&amp;rsquo;ll enjoy these too. &lt;em&gt;Disclaimer:
+are a lot of academic (Phd) talks and a few practical ones. I&#39;ve chosen 3 out
+of 37 videos, which I liked the most. Hope you&#39;ll enjoy these too. &lt;em&gt;Disclaimer:
 your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -125,7 +122,7 @@ real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&g
       <pubDate>Mon, 14 Sep 2015 23:19:10 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
-      <description>&lt;p&gt;If you haven&amp;rsquo;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
+      <description>&lt;p&gt;If you haven&#39;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
 (first time this year), which took place in Prague earlier in July. Despite its
 age, many good speakers happened to be there. Here is the list of my favorite
 talks. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
@@ -150,7 +147,6 @@ favorite talks. Enjoy!&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
       <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
 colleagues.&lt;/p&gt;
-
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
 ending by using Fragment caching. Also there is list of tools for
 profiling applications (stackprof, etc.). All techniques are quite
@@ -233,7 +229,7 @@ Applications&lt;/a&gt;).
       <pubDate>Sun, 30 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2012/09/test-automation-in-ror/</guid>
-      <description>&lt;p&gt;Буквально вчера я вернулся с конференции веб-разработчиков ЧЕБИТ&amp;rsquo;12-10. В этом
+      <description>&lt;p&gt;Буквально вчера я вернулся с конференции веб-разработчиков ЧЕБИТ&#39;12-10. В этом
 году она проходила в баре &amp;ldquo;Манхеттен&amp;rdquo;, что придавало ей нотку закрытого
 подпольного казино для &amp;ldquo;своих&amp;rdquo;. Огромное спасибо за приглашение поучавствовать
 от Данила Письменного (@pismenny) и Ассоциации Региональных Веб-Разработчиков.

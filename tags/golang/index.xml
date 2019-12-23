@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>golang on Home on Rails</title>
@@ -19,7 +19,6 @@
       
       <guid>http://homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
 &lt;p&gt;Before &lt;a href=&#34;https://github.com/tendermint/tendermint/pull/914&#34;&gt;this pull request&lt;/a&gt;,
 it was a mess. ABCI was using a &lt;code&gt;uint64&lt;/code&gt; height on EndBlock. Tendermint Core
 was using the same type for TxResult. Block and BlockStore, however, were using
@@ -35,7 +34,6 @@ across our repositories as for what type to use for blockchain height.&lt;/p&gt;
       
       <guid>http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
 &lt;p&gt;I have spent the last week looking for clues and writing test cases in order to
 find and fix the memory leak in
 &lt;a href=&#34;https://github.com/tendermint/tendermint/&#34;&gt;Tendermint&lt;/a&gt;. For those of you who
@@ -43,7 +41,6 @@ don’t know, Tendermint Core is a Byzantine Fault Tolerant (BFT) middleware tha
 takes a state transition machine — written in any programming language — and
 securely replicates it on many machines. It is also the foundation of
 &lt;a href=&#34;https://cosmos.network/&#34;&gt;Cosmos&lt;/a&gt; — our solution for scaling blockchains.&lt;/p&gt;
-
 &lt;p&gt;Finding a memory leak in Go is not an easy task. However, there is a common set
 of questions, answers to which will hopefully help you identify the source of a
 leak. Here is the list:&lt;/p&gt;</description>
@@ -55,7 +52,7 @@ leak. Here is the list:&lt;/p&gt;</description>
       <pubDate>Tue, 06 Jun 2017 22:35:01 +0200</pubDate>
       
       <guid>http://homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</guid>
-      <description>Wrote a blog post a few days ago for my company&amp;rsquo;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
+      <description>Wrote a blog post a few days ago for my company&#39;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
 https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7</description>
     </item>
     

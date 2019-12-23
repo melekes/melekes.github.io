@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,24 +63,16 @@
   <time datetime=2013-07-28T00:00:00Z class="post-date">Sun, Jul 28, 2013</time>
   <p>Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
-лень каждый раз набирать <code>vagrant up</code> или <code>git checkout
-feature/awesome-feature</code>? Если да и вы стремитесь к повышению
+лень каждый раз набирать <code>vagrant up</code> или <code>git checkout feature/awesome-feature</code>? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.</p>
-
 <p>Сначала надо получить список наиболее часто используемых команд:</p>
-
-<pre><code class="language-bash">history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] &quot; &quot; CMD[a]/count*100 &quot;% &quot; a;}' | grep -v &quot;./&quot; | column -c3 -s &quot; &quot; -t | sort -nr | nl |  head -n10
-</code></pre>
-
-<p><code>awk</code> сохраняет команду и количество ее вхождений в
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history | awk <span style="color:#e6db74">&#39;{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
+</code></pre></div><p><code>awk</code> сохраняет команду и количество ее вхождений в
 историю. Затем результат печатается, фильтруются скрипты вида
 <code>./something</code>, сортируется и обрезается до нужной длины.</p>
-
 <p><a href="http://linux.byexamples.com/archives/332/what-is-your-10-common-linux-commands/">Источник</a></p>
-
 <p>Пример вывода:</p>
-
 <pre><code>13185  31.8532%   git
 21430  14.3014%   gst
 3706   7.301406071%   vim
@@ -82,28 +83,18 @@ feature/awesome-feature</code>? Если да и вы стремитесь к п
 8232   2.32023%   g
 9197   1.9702%    ls
 10190  1.90019%   gc
-</code></pre>
-
-<p>Основываясь на выводе выше, можно сказать что я очень часто пользуюсь
+</code></pre><p>Основываясь на выводе выше, можно сказать что я очень часто пользуюсь
 git, так что неплохо бы создать алиас для него и команд ниже.</p>
-
-<pre><code class="language-bash">alias g=&quot;git&quot;
-alias v=&quot;vim&quot;
-alias l=&quot;ls -al&quot;
-alias c=&quot;git commit -m&quot;
-</code></pre>
-
-<p>Мне очень нравятся однобуквенные алиасы. Хотя на многое их явно не
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias g<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git&#34;</span>
+alias v<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vim&#34;</span>
+alias l<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ls -al&#34;</span>
+alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git commit -m&#34;</span>
+</code></pre></div><p>Мне очень нравятся однобуквенные алиасы. Хотя на многое их явно не
 хватит.</p>
-
-<p>Также можно проанализировать только команды vagrant&rsquo;а (subcommands) или любой
+<p>Также можно проанализировать только команды vagrant'а (subcommands) или любой
 другой программы слегка модифицировав предыдущий скрипт:</p>
-
-<pre><code class="language-bash">history|grep vagrant| awk '{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &quot; &quot; CMD[a]/count*100 &quot;% &quot; a;}' | grep -v &quot;./&quot; | column -c3 -s &quot; &quot; -t | sort -nr | nl |  head -n10
-</code></pre>
-
-<p>Пример вывода:</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history|grep vagrant| awk <span style="color:#e6db74">&#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
+</code></pre></div><p>Пример вывода:</p>
 <pre><code>1   193  23.9752%   ssh
 2   166  20.6211%   up
 3   98   12.1739%   halt
@@ -114,31 +105,24 @@ alias c=&quot;git commit -m&quot;
 8   14   1.73913%   box
 9   9    1.11801%   solo
 10  8    0.993789%  -r
-</code></pre>
-
-<p>Для vagrant мы заведем такой набор:</p>
-
-<pre><code class="language-bash">alias v=&quot;vagrant&quot;
-alias vst=&quot;vagrant status&quot;
-alias vup=&quot;vagrant up&quot;
-alias vpr=&quot;vagrant provision&quot;
-alias vhl=&quot;vagrant halt&quot;
-alias vre=&quot;vagrant reload&quot;
-alias vssh=&quot;vagrant ssh&quot;
-</code></pre>
-
-<p>Если вы пользуетесь zsh, то рекомендую взглянуть на <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, которая
+</code></pre><p>Для vagrant мы заведем такой набор:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias v<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant&#34;</span>
+alias vst<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant status&#34;</span>
+alias vup<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant up&#34;</span>
+alias vpr<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant provision&#34;</span>
+alias vhl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant halt&#34;</span>
+alias vre<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant reload&#34;</span>
+alias vssh<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant ssh&#34;</span>
+</code></pre></div><p>Если вы пользуетесь zsh, то рекомендую взглянуть на <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, которая
 предлагает большое количесво плагинов с алиасами и автодополнением.
 Конечно, они во многом избыточны (стоит хотя бы взглянуть на <a href="http://jasonm23.github.io/oh-my-git-aliases.html">список
 команд плагина git</a>), но если вас это устраивает, то можно смело их
 использовать.</p>
-
 <p><strong>Как результат, мы повышаем продуктивность и, что немаловажно, снижаем нагрузку на наши
 пальцы.</strong></p>
-
 <p>P.S. очень рекомендую посмотреть доклад <a href="http://www.youtube.com/watch?v=SkdrYWhh-8s">Ben Orenstein - Write code faster: expert-level vim (Railsberry 2012)</a>,
-в котором Бен рассказывает очень правильные подходы в работе с vim&rsquo;ом. Даже если вы не
-пользуетесь vim&rsquo;ом, многие вещи можно переложить на ваш любимый редактор, будь то Emacs, Sublime или любой другой.</p>
+в котором Бен рассказывает очень правильные подходы в работе с vim'ом. Даже если вы не
+пользуетесь vim'ом, многие вещи можно переложить на ваш любимый редактор, будь то Emacs, Sublime или любой другой.</p>
 </div>
 
 <h2>Comments</h2>

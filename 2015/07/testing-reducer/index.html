@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -55,13 +64,10 @@
   <p>Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.</p>
-
 <p>I started out by looking at <a href="https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial">this
 tutorial</a>
 and found out it is a bit outdated. So I will post a necessary steps here.</p>
-
 <p>First thing to do is, obviously, add mrunit as a dependency to your project:</p>
-
 <pre><code>&lt;dependency&gt;
   &lt;groupId&gt;org.apache.mrunit&lt;/groupId&gt;
   &lt;artifactId&gt;mrunit&lt;/artifactId&gt;
@@ -69,57 +75,38 @@ and found out it is a bit outdated. So I will post a necessary steps here.</p>
   &lt;classifier&gt;hadoop2&lt;/classifier&gt;
   &lt;scope&gt;test&lt;/scope&gt;
 &lt;/dependency&gt;
-</code></pre>
-
-<p><em>This is for Maven and Hadoop 2.</em></p>
-
+</code></pre><p><em>This is for Maven and Hadoop 2.</em></p>
 <p>Next step is to write a simple test case:</p>
-
-<pre><code class="language-java">@Test
-public void returnsMaximumIntegerInValues() throws IOException,
-    InterruptedException {
-    new ReduceDriver&lt;Text, IntWritable, Text, IntWritable&gt;()
-        .withReducer(new MaxTemperatureReducer())
-        .withInput(new Text(&quot;1950&quot;),
-            Arrays.asList(new IntWritable(10), new IntWritable(5)))
-        .withOutput(new Text(&quot;1950&quot;), new IntWritable(10))
-        .runTest();
-}
-</code></pre>
-
-<p>Back to our story. So, I ended up with something like this:</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Test</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">returnsMaximumIntegerInValues</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IOException<span style="color:#f92672">,</span>
+    InterruptedException <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">new</span> ReduceDriver<span style="color:#f92672">&lt;</span>Text<span style="color:#f92672">,</span> IntWritable<span style="color:#f92672">,</span> Text<span style="color:#f92672">,</span> IntWritable<span style="color:#f92672">&gt;</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">withReducer</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> MaxTemperatureReducer<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">withInput</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Text<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1950&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span>
+            Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> IntWritable<span style="color:#f92672">(</span>10<span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> IntWritable<span style="color:#f92672">(</span>5<span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">withOutput</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Text<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1950&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> IntWritable<span style="color:#f92672">(</span>10<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">runTest</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Back to our story. So, I ended up with something like this:</p>
 <p>{% gist e878b351daa8dd17bfae CatMaxAgesReducerTest.java %}</p>
-
 <p>After running, I encountered the following error:</p>
-
 <p><strong>No applicable class implementing Serialization in conf at io.serializations: class org.apache.hadoop.hbase.client.Put</strong></p>
-
 <p>Because we use HBase to store our data and this reducer outputs its result to
-HBase table, Hadoop is telling us that he doesn&rsquo;t know how to serialize our
+HBase table, Hadoop is telling us that he doesn't know how to serialize our
 data. That is why we need to help it. Inside <code>setUp</code> set the
 <code>io.serializations</code> variable:</p>
-
-<pre><code class="language-java">conf.setStrings(&quot;io.serializations&quot;, new String[]{conf.get(&quot;io.serializations&quot;), MutationSerialization.class.getName(), ResultSerialization.class.getName()});
-</code></pre>
-
-<p>Apart from tests, you will hardly see such a code, because
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">conf<span style="color:#f92672">.</span><span style="color:#a6e22e">setStrings</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[</span><span style="color:#f92672">]</span><span style="color:#f92672">{</span>conf<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> MutationSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> ResultSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+</code></pre></div><p>Apart from tests, you will hardly see such a code, because
 <a href="https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.html">TableMapReduceUtil</a>
 hides many details from you.</p>
-
 <p>When you do this:</p>
-
-<pre><code class="language-java">TableMapReduceUtil.initTableReducerJob(
-    Bytes.toBytes(&quot;animals&quot;),
-    CatMaxAgesReducer.class,
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">TableMapReduceUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">initTableReducerJob</span><span style="color:#f92672">(</span>
+    Bytes<span style="color:#f92672">.</span><span style="color:#a6e22e">toBytes</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;animals&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span>
+    CatMaxAgesReducer<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span>
     job
-);
-</code></pre>
-
-<p>it sets all the necessary settings required to a Reducer to work.</p>
-
+<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+</code></pre></div><p>it sets all the necessary settings required to a Reducer to work.</p>
 <p>Useful links:</p>
-
 <ul>
 <li><a href="https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial">https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial</a></li>
 <li><a href="http://www.ctrl-r.org/?p=291">http://www.ctrl-r.org/?p=291</a></li>

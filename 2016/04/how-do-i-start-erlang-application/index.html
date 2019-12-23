@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,49 +63,37 @@
   <time datetime=2016-04-25T10:38:13Z class="post-date">Mon, Apr 25, 2016</time>
   <p>Подразумевается, что у вас уже есть какое-то приложение и вы используете 3й
 rebar.</p>
-
 <p><em>Disclaimer: этот способ, который принят у меня в компании и которого
 придерживаюсь я. Он не претендует на звание &ldquo;единственно правильный способ&rdquo;.
 Если вы видите явные недочеты, пишите в комментариях.</em></p>
+<h1 id="----">Как запускаем приложение при разработке</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># Makefile
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> all compile run
 
-<h1 id="как-запускаем-приложение-при-разработке">Как запускаем приложение при разработке</h1>
+REBAR<span style="color:#f92672">=</span>./rebar3
 
-<pre><code class="language-makefile"># Makefile
+<span style="color:#a6e22e">all</span><span style="color:#f92672">:</span> compile
 
-.PHONY: all compile run
+<span style="color:#a6e22e">compile</span><span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">$(</span>REBAR<span style="color:#66d9ef">)</span> compile
 
-REBAR=./rebar3
-
-all: compile
-
-compile:
-    $(REBAR) compile
-
-run: compile
+<span style="color:#a6e22e">run</span><span style="color:#f92672">:</span> compile
 		erl -pa _build/default/lib/*/ebin -config config/sys.config -args_file config/vm.args -boot start_sasl -s sync -s yourawesomeapp
-</code></pre>
-
-<p>sasl нужен для более красивых и подробных сообщениях об ошибках и не только:
+</code></pre></div><p>sasl нужен для более красивых и подробных сообщениях об ошибках и не только:
 запуск, перезапуск, падение частей приложения.</p>
-
 <p><a href="https://github.com/rustyio/sync">https://github.com/rustyio/sync</a> перекомпилирует и перезагружает код налету.</p>
-
 <p><code>-s yourawesomeapp</code> попытается вызвать <code>yourawesomeapp:start()</code>, так что нужен файл следующего содержания (если у вас его еще нет):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">-module(yourawesomeapp).
 
-<pre><code class="language-erlang">-module(yourawesomeapp).
+-export([start<span style="color:#f92672">/</span><span style="color:#ae81ff">0</span>]).
 
--export([start/0]).
-
--spec start() -&gt; 'ok'.
-start() -&gt;
-    {ok, _} = application:ensure_all_started(yourawesomeapp),
+-spec start() <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> &#39;ok&#39;.
+<span style="color:#a6e22e">start</span>() <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+    {ok, _} <span style="color:#f92672">=</span> application:<span style="color:#a6e22e">ensure_all_started</span>(yourawesomeapp),
     ok.
-</code></pre>
-
-<p>ensure_all_started удостоверится, что все зависимости вашего приложения запущены.</p>
-
+</code></pre></div><p>ensure_all_started удостоверится, что все зависимости вашего приложения запущены.</p>
 <p>Плохой практикой считается старт зависимостей вручную:</p>
-
 <pre><code>% ПЛОХО
 % yourawesomeapp_app.erl
 
@@ -120,68 +117,60 @@ start(_StartType, _StartArgs) -&gt;
                  ]},
   ...
  ]}.
-</code></pre>
-
-<pre><code class="language-erlang">% config/sys.config
-
+</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/sys.config
+</span><span style="color:#75715e"></span>
 [
     {yourawesomeapp, [
     ]},
 
-    %% SASL config
-    {sasl, [
-        {sasl_error_logger, {file, &quot;log/sasl-error.log&quot;}},
+    <span style="color:#75715e">%% SASL config
+</span><span style="color:#75715e"></span>    {sasl, [
+        {sasl_error_logger, {file, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">log/sasl-error.log</span><span style="color:#e6db74">&#34;</span>}},
         {errlog_type, error},
-        {error_logger_mf_dir, &quot;log/sasl&quot;},
-        {error_logger_mf_maxbytes, 10485760},
-        {error_logger_mf_maxfiles, 5}
+        {error_logger_mf_dir, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">log/sasl</span><span style="color:#e6db74">&#34;</span>},
+        {error_logger_mf_maxbytes, <span style="color:#ae81ff">10485760</span>},
+        {error_logger_mf_maxfiles, <span style="color:#ae81ff">5</span>}
     ]}
 ].
-</code></pre>
-
-<pre><code class="language-erlang">% config/vm.args
-
-## Name of the node
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/vm.args
+</span><span style="color:#75715e"></span>
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Name <span style="color:#66d9ef">of</span> the node
 -sname yourawesomeapp
 
-## Cookie for distributed erlang
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Cookie for distributed erlang
 -setcookie XXX
 
-## Heartbeat management; auto-restarts VM if it dies or becomes unresponsive
-## (Disabled by default..use with caution!)
-##-heart
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Heartbeat management; auto<span style="color:#f92672">-</span>restarts VM <span style="color:#66d9ef">if</span> it dies <span style="color:#f92672">or</span> becomes unresponsive
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> (Disabled by default..use with caution<span style="color:#f92672">!</span>)
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">-</span>heart
 
-## Enable kernel poll and a few async threads
-+K true
-+A 10
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Enable kernel poll <span style="color:#f92672">and</span> a few async threads
+<span style="color:#f92672">+</span>K true
+<span style="color:#f92672">+</span>A <span style="color:#ae81ff">10</span>
 
-## Distribution buffer busy limit (dist_buf_busy_limit)
-+zdbbl 8192
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Distribution buffer busy limit (dist_buf_busy_limit)
+<span style="color:#f92672">+</span>zdbbl <span style="color:#ae81ff">8192</span>
 
-## Sets mapping for warning messages
-+W w
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Sets mapping for warning messages
+<span style="color:#f92672">+</span>W w
 
-## Sets  the number of scheduler threads to create and scheduler
-## threads to set online when SMP support has been enabled.
-#+S 2:2
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Sets  the number <span style="color:#66d9ef">of</span> scheduler threads to create <span style="color:#f92672">and</span> scheduler
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> threads to set online <span style="color:#66d9ef">when</span> SMP support has been enabled.
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">+</span>S <span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>
 
-## Increase number of concurrent ports/sockets
-##-env ERL_MAX_PORTS 4096
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Increase number <span style="color:#66d9ef">of</span> concurrent ports<span style="color:#f92672">/</span>sockets
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">-</span>env ERL_MAX_PORTS <span style="color:#ae81ff">4096</span>
 
-## Tweak GC to run more often
-##-env ERL_FULLSWEEP_AFTER 10
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Tweak GC to run more often
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">-</span>env ERL_FULLSWEEP_AFTER <span style="color:#ae81ff">10</span>
 
-## Application libraries
-##-env ERL_LIBS /srv/projects/yourawesomeapp
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Application libraries
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">-</span>env ERL_LIBS <span style="color:#f92672">/</span>srv<span style="color:#f92672">/</span>projects<span style="color:#f92672">/</span>yourawesomeapp
 
-## Increase the maximum number of simultaneously existing processes
-+P 1048576
-</code></pre>
-
-<h1 id="как-запускаем-приложение-в-продакшене">Как запускаем приложение в продакшене</h1>
-
+<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#960050;background-color:#1e0010">#</span> Increase the maximum number <span style="color:#66d9ef">of</span> simultaneously existing processes
+<span style="color:#f92672">+</span>P <span style="color:#ae81ff">1048576</span>
+</code></pre></div><h1 id="----1">Как запускаем приложение в продакшене</h1>
 <p>Тут все зависит от того, релизы у вас или нет. Если релизы, при сборке вы просто указываете нужные vm.args и sys.config:</p>
-
 <pre><code>{relx, [
     {release, {yourawesomeapp, &quot;1.0.0&quot;},
      %% list of apps to include
@@ -204,13 +193,9 @@ start(_StartType, _StartArgs) -&gt;
         ]}
     ]}
 ]}.
-</code></pre>
-
-<p>Если нет, можно указать vm.args и sys.config посредством ключей к <code>erl</code> (см.
+</code></pre><p>Если нет, можно указать vm.args и sys.config посредством ключей к <code>erl</code> (см.
 make run) или использовать переменные окружения: ARGS_FILE и CONFIG_FILE.</p>
-
 <p>Полезные ссылки:</p>
-
 <ul>
 <li><a href="https://howistart.org/posts/erlang/1">Короткий туториал от настройки среды до создания релиза</a></li>
 <li><a href="https://github.com/juise/myapp">Описание разных способов создать релиз</a></li>

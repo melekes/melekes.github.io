@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>networking on Home on Rails</title>
@@ -20,12 +20,8 @@
       <guid>http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</guid>
       <description>&lt;p&gt;&amp;ldquo;Redis дропает события? Что?&amp;rdquo; или поучительная история о том, как важно читать
 документацию.&lt;/p&gt;
-
-&lt;div style=&#34;align:center&#34;&gt;
-  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
   </channel>

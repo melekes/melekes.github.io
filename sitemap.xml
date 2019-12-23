@@ -1,6 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://homeonrails.com/</loc>
+    <lastmod>2019-10-21T10:54:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/2019/10/japan/</loc>
+    <lastmod>2019-10-21T10:54:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/post/</loc>
+    <lastmod>2019-10-21T10:54:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/tags/</loc>
+    <lastmod>2019-10-21T10:54:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://homeonrails.com/tags/traveling/</loc>
+    <lastmod>2019-10-21T10:54:29-05:00</lastmod>
+  </url>
   
   <url>
     <loc>http://homeonrails.com/tags/art/</loc>
@@ -8,22 +33,7 @@
   </url>
   
   <url>
-    <loc>http://homeonrails.com/</loc>
-    <lastmod>2019-10-20T11:54:29-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://homeonrails.com/2019/10/monthly-art-number-43/</loc>
-    <lastmod>2019-10-20T11:54:29-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://homeonrails.com/post/</loc>
-    <lastmod>2019-10-20T11:54:29-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://homeonrails.com/tags/</loc>
     <lastmod>2019-10-20T11:54:29-05:00</lastmod>
   </url>
   
@@ -324,11 +334,6 @@
   
   <url>
     <loc>http://homeonrails.com/2017/12/bus-to-monte-alban/</loc>
-    <lastmod>2017-12-30T18:38:01-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://homeonrails.com/tags/traveling/</loc>
     <lastmod>2017-12-30T18:38:01-05:00</lastmod>
   </url>
   

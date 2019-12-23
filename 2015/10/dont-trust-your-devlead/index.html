@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,112 +62,81 @@
   <h1>Не верь своему тимлиду</h1>
   <time datetime=2015-10-22T10:16:35Z class="post-date">Thu, Oct 22, 2015</time>
   <p>&ldquo;Не верь своему тимлиду&rdquo; или когда не стоит слепо верить словам вашего тимлида.</p>
-
-<div style="align:center">
-  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png" alt="" width="100%" title=""/>
-</div>
-
-<p><br/></p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>Большинство моих читателей находится в подчинении у тимлида или VP of
 Engineering, словом у человека, умудренного опытом или, по крайней мере,
 знающего побольше своих подчиненных. И это нормально. И ты доверяешь опыту
 данного человека, но бывают случаи, когда стоит все же проверить прав он или
 нет.</p>
-
 <p>Так вот, приключился давеча со мной забавный случай. В одном из пулл-реквестов
 VP of Engineering мне написал: &ldquo;Тут можно сильно разогнать, используя в
-качестве аккумулятора dict и обновляя значения через dict:update.&ldquo;.</p>
-
+качестве аккумулятора dict и обновляя значения через dict:update.&quot;.</p>
 <p>А вот и код, о котором идет речь:</p>
-
-<pre><code class="language-erlang">% for every Item in Items, коих около 5000
-NewAcc = case gb_sets:is_member(RangeStart, RangeStarts) of
-  false -&gt;
-    case lists:keyfind(norange, 1, Acc) of
-      {norange, List} -&gt; [{norange, [Item|List]}|lists:keydelete(norange, 1, Acc)];
-      false -&gt; [{norange, [Item]}|Acc]
-    end;
-  true -&gt;
-    case lists:keyfind(RangeStart, 1, Acc) of
-      {RangeStart, List} -&gt; [{RangeStart, [Item|List]}|lists:keydelete(RangeStart, 1, Acc)];
-      false -&gt; [{RangeStart, [Item]}|Acc]
-    end
-end,
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
+</span><span style="color:#75715e"></span>NewAcc <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
+  false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#66d9ef">case</span> lists:<span style="color:#a6e22e">keyfind</span>(norange, <span style="color:#ae81ff">1</span>, Acc) <span style="color:#66d9ef">of</span>
+      {norange, List} <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{norange, [Item|List]}|lists:<span style="color:#a6e22e">keydelete</span>(norange, <span style="color:#ae81ff">1</span>, Acc)];
+      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{norange, [Item]}|Acc]
+    <span style="color:#66d9ef">end</span>;
+  true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#66d9ef">case</span> lists:<span style="color:#a6e22e">keyfind</span>(RangeStart, <span style="color:#ae81ff">1</span>, Acc) <span style="color:#66d9ef">of</span>
+      {RangeStart, List} <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{RangeStart, [Item|List]}|lists:<span style="color:#a6e22e">keydelete</span>(RangeStart, <span style="color:#ae81ff">1</span>, Acc)];
+      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{RangeStart, [Item]}|Acc]
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>,
 ...
-% позже возвращаем результирующий список
-NewAcc
-</code></pre>
-
-<p>Обратите внимание, что элементы range хранятся в списках и все операции (за
+<span style="color:#75715e">% позже возвращаем результирующий список
+</span><span style="color:#75715e"></span>NewAcc
+</code></pre></div><p>Обратите внимание, что элементы range хранятся в списках и все операции (за
 исключением поиска в сбалансированном дереве) производятся над списками.</p>
-
 <p>Я решил проверить, действительно ли использование dict способно повысить
 производительность данного кода (т.е. сократить время выполнения). Для начала
 замерил скорость работы со списками:</p>
-
 <pre><code>Range: 398 - 7667 mics
 Median: 1798 mics
 Average: 1846 mics
-</code></pre>
-
-<p>Потом попробовал <code>dict:append_list</code>:</p>
-
-<pre><code class="language-erlang">% for every Item in Items, коих около 5000
-NewAcc = case gb_sets:is_member(RangeStart, RangeStarts) of
-  false -&gt;
-    case dict:is_key(norange, Acc) of
-      false -&gt; dict:append(norange, Item, Acc);
-      true -&gt; dict:append_list(norange, [Item], Acc)
-    end;
-  true -&gt;
-    case dict:is_key(RangeStart, Acc) of
-      false -&gt; dict:append(RangeStart, Item, Acc);
-      true -&gt; dict:append_list(RangeStart, [Item], Acc)
-    end
-end,
+</code></pre><p>Потом попробовал <code>dict:append_list</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
+</span><span style="color:#75715e"></span>NewAcc <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
+  false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#66d9ef">case</span> dict:<span style="color:#a6e22e">is_key</span>(norange, Acc) <span style="color:#66d9ef">of</span>
+      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append</span>(norange, Item, Acc);
+      true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append_list</span>(norange, [Item], Acc)
+    <span style="color:#66d9ef">end</span>;
+  true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#66d9ef">case</span> dict:<span style="color:#a6e22e">is_key</span>(RangeStart, Acc) <span style="color:#66d9ef">of</span>
+      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append</span>(RangeStart, Item, Acc);
+      true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append_list</span>(RangeStart, [Item], Acc)
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>,
 ...
-% позже возвращаем результирующий список
-dict:to_list(NewAcc)
-</code></pre>
-
-<pre><code>Range: 61466 - 94095 mics
+<span style="color:#75715e">% позже возвращаем результирующий список
+</span><span style="color:#75715e"></span>dict:<span style="color:#a6e22e">to_list</span>(NewAcc)
+</code></pre></div><pre><code>Range: 61466 - 94095 mics
 Median: 67062 mics
 Average: 68343 mics
-</code></pre>
-
-<p>Он оказался значительно медленнее (из-за того, что списки склеиваются с помощью <code>++</code>).</p>
-
+</code></pre><p>Он оказался значительно медленнее (из-за того, что списки склеиваются с помощью <code>++</code>).</p>
 <p>Затем попробовал <code>dict:update</code>:</p>
-
-<pre><code class="language-erlang">% for every Item in Items, коих около 5000
-Key = case gb_sets:is_member(RangeStart, RangeStarts) of
-  false -&gt; norange;
-  true -&gt; RangeStart
-end,
-NewAcc = dict:update(Key, fun(List) -&gt; [Item|List] end, [Item], Acc),
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
+</span><span style="color:#75715e"></span>Key <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
+  false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> norange;
+  true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> RangeStart
+<span style="color:#66d9ef">end</span>,
+NewAcc <span style="color:#f92672">=</span> dict:<span style="color:#a6e22e">update</span>(Key, <span style="color:#66d9ef">fun</span>(List) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [Item|List] <span style="color:#66d9ef">end</span>, [Item], Acc),
 ...
-% позже возвращаем результирующий список
-dict:to_list(NewAcc)
-</code></pre>
-
-<pre><code>Range: 4044 - 11357 mics
+<span style="color:#75715e">% позже возвращаем результирующий список
+</span><span style="color:#75715e"></span>dict:<span style="color:#a6e22e">to_list</span>(NewAcc)
+</code></pre></div><pre><code>Range: 4044 - 11357 mics
 Median: 4672 mics
 Average: 4963 mics
-</code></pre>
-
-<p>Кода меньше в разы, но по скорости уступает, а на данном участке нам важна была
+</code></pre><p>Кода меньше в разы, но по скорости уступает, а на данном участке нам важна была
 именно скорость.</p>
-
-<p><div style="align:center">
-  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/avgs.png" alt="" width="100%" title=""/>
-</div>
-(<em>создал диаграмму с помощью R</em>)</p>
-
+<!-- raw HTML omitted -->
 <p>Конкретные цифры не так важны, ибо они зависят от множества факторов, включая
-размер входящего списка Items, количества RangeStart&rsquo;ов, машинку, на которой
+размер входящего списка Items, количества RangeStart'ов, машинку, на которой
 это все запускается, версию Erlang и т.п.</p>
-
 <p>Что важно, так это то, что профессионал своего дела должен уметь распознать
 таковые моменты, когда стоит проверить указания или советы вашего тимлида. Я не
 думаю, что есть конкретные условия или признаки, которые подскажут вам

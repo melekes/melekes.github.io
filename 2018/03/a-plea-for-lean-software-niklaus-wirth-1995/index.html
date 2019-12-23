@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -52,73 +61,63 @@
     <div class="post">
   <h1>A Plea for Lean Software by Niklaus Wirth (1995)</h1>
   <time datetime=2018-03-31T15:46:21&#43;0200 class="post-date">Sat, Mar 31, 2018</time>
-  <p><img class="img-rounded" src="http://homeonrails.com/images/posts/2018-03-31-a-plea-for-lean-software-niklaus-wirth-1995/plea.jpg" alt="" title="Plea for Greek Independence by Eugène Delacroix (1826)"/></p>
-
+  <!-- raw HTML omitted -->
 <p>In 1889, <a href="https://en.wikipedia.org/wiki/Anton_Chekhov">Anton Chekhov</a> writes to
 his brother Alexander: &ldquo;My advice: in the play try to be original and as clever
 as possible, but do not be afraid to seem silly; we need free-thinking, but
 only the freethinker who is not afraid to write nonsense. Do not grind it, but
 be clumsy and impudent. Brevity is the soul of wit.”</p>
-
 <p>I think we can apply the same principles to academic papers as well.</p>
-
 <p>One of the papers, that is concise, well thought and just fun to read
 is A Plea for Lean Software by Niklaus Wirth (1995). It is only five pages
 long, but it touches a great variety of topics including software complexity,
 language design, and others.</p>
-
 <blockquote>
 <p>“With a touch of humor, the following two laws reflect the state of the art admirably well:</p>
-
-<p>1) Software expands to fill the available memory. (Parkinson)</p>
-
-<p>2) Software is getting slower more rapidly than hardware becomes faster. (Reiser)”</p>
 </blockquote>
-
+<blockquote>
+<ol>
+<li>Software expands to fill the available memory. (Parkinson)</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>Software is getting slower more rapidly than hardware becomes faster. (Reiser)”</li>
+</ol>
+</blockquote>
 <p>Nowadays computers have so much memory the prevailing style of developing
 programs seems to become “ship something, which works more or less, quick and,
 later, fix it&rdquo;. Why the web page takes 1GB of RAM? Why <a href="https://medium.com/@matt.at.ably/wheres-all-my-cpu-and-memory-gone-the-answer-slack-9e5c39207cab">the desktop
 client</a>
 takes 1GB of RAM?</p>
-
 <blockquote>
 <p>“What drives software toward complexity? A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want. Another important reason lies in monolithic design. Increased hardware power has undoubtedly been the primary incentive for vendors to tackle more complex problems, and more complex problems inevitably require more complex solutions.”</p>
 </blockquote>
-
 <p>First and third points are still valid and will never go away. Microservices
 architecture, which became super popular lately, is intended to solve the
 second point. At the same time, it brings the new problems and challenges
 (<a href="https://martinfowler.com/articles/microservice-trade-offs.html">distribution, operational complexity,
 &hellip;</a>).</p>
-
 <blockquote>
 <p>“Customer dependence is more profitable than customer education.”</p>
 </blockquote>
-
 <p>Here he complains about the lack of intuitive, easy to use products. This seems
 to be improving over time due to increased competition.</p>
-
 <blockquote>
 <p>“Time pressure is probably the foremost reason behind the emergence of bulky software.”</p>
 </blockquote>
-
 <p>At the same time, he acknowledges that first product in a niche has a
 considerable advantage:</p>
-
 <blockquote>
 <p>“The tendency to adopt the “first” as the de facto standard is a deplorable phenomenon, based on the same time pressure.”</p>
 </blockquote>
-
 <p>On C and C++ programming languages:</p>
-
 <blockquote>
 <p>“Given this situation, programmers struggle with a language that discourages structured thinking and disciplined programs construction (and denies basic compiler support). They also resort to makeshift tools that chiefly add to software’s bulk.”</p>
 </blockquote>
-
 <p>C++ has improved a lot apparently since then, but (as far as my limited
 knowledge of C++ goes) it still lacks Algebraic Data Types, Type Inference, and
 some other things, making new languages like Rust more attractive.</p>
-
 <p>The original paper is available <a href="https://cr.yp.to/bib/1995/wirth.pdf">here</a>.</p>
 
 </div>

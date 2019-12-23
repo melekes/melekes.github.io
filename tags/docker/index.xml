@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on Home on Rails</title>
@@ -18,14 +18,13 @@
       <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34; alt=&#34;&#34;/ width=&#34;450&#34; title=&#34;Разрабатываем ruby gem в docker контейнере&#34;&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&amp;lt;img class=&amp;quot;img-rounded&amp;rdquo; src=&amp;rdquo;/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&amp;rdquo; alt=&amp;rdquo;&amp;quot;/ width=&amp;quot;450&amp;rdquo; title=&amp;quot;Разрабатываем ruby gem в docker контейнере&amp;quot;&amp;gt;&lt;/p&gt;
 &lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,
-что я являюсь старым приверженцем Vagrant&amp;rsquo;а, на днях мне все же захотелось
+что я являюсь старым приверженцем Vagrant&#39;а, на днях мне все же захотелось
 попробовать docker для одного из своих проектов -
 &lt;a href=&#34;https://github.com/kaize/valle&#34;&gt;Valle&lt;/a&gt;. Не без препонов, но все же удалось
 встроить docker в процесс. Далее последует руководство по разработке Ruby гема
-с использованием docker&amp;rsquo;а.&lt;/p&gt;</description>
+с использованием docker&#39;а.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -57,78 +66,56 @@
 знакомых, подобралась неплохая компания и было несколько действительно крутых
 докладов. К счастью, вам не надо смотреть все выложенные видео, чтобы найти те
 самые доклады.</p>
-
 <p><em>Дисклеймер: выбранные материалы и степень их крутости отражают личное мнение
 автора. Ваше мнение может отличаться.</em></p>
-
-<h1 id="1-clojure-data-dsl-s-для-web-разработки">1. Clojure Data DSL&rsquo;s для web разработки</h1>
-
+<h1 id="1-clojure-data-dsls--web-">1. Clojure Data DSL's для web разработки</h1>
 <p>Николай Рыжиков (46 мин)</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/urQ5o754TU4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>Код и данные, как Инь и Янь, и граница между ними при пристальном взгляде начинает исчезать. На примере web стэка для clojure мы познакомимся c Data DSL - hiccup, honeysql, prismatic schema, в режиме реального времени попробуем написать свои DSL и познать Дао.</p>
-
-<h1 id="2-фронтенд-без-грусти">2. Фронтенд без грусти</h1>
-
+<h1 id="2---">2. Фронтенд без грусти</h1>
 <p>Никита Прокопов (50 мин)</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/cRWrrHPrk9g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>Писать веб-приложение — то еще занятие: медленно, сложно, да и платформа скорее мешает, чем помогает. В докладе мы ответим:</p>
-
 <ul>
 <li>Как функциональный подход помогает делать веб-приложения?</li>
 <li>Может ли база данных быть иммутабельной?</li>
 <li>Зачем вообще на фронте база данных?</li>
 <li>Что интересного можно сделать с такими инструментами?</li>
 </ul>
-
 <p>Причем не вообще, а на конкретных примерах ClojureScript и DataScript.</p>
-
-<h1 id="3-scala-performance-для-сомневающихся">3. Scala performance для сомневающихся</h1>
-
+<h1 id="3-scala-performance--">3. Scala performance для сомневающихся</h1>
 <p>Роман Гребенников (48 мин)</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/%5c_%5c_PLkxx6Yko" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>Язык Scala нынче модный: тут вам и паттерн матчинг, и рекурсия, и коллекции, обильно приправленные лямбдами, а также много других страшных слов из мира функционального программирования, для понимания которых не нужна ученая степень по математике. И все эти плюшки органично переплетены в такой язык, начав писать на котором, очень тяжело перестать.
-Но волшебство функциональной легкости заканчивается с фразой &ldquo;а почему я переписал 100 строк лапши на Java в однострочник на Scala, но оно стало работать в 3 раза медленнее?&rdquo;, и мечта о прекрасном языке превращается в тыкву. Суровая реальность грязным сапогом как бы говорит нам, что абстракции языков высокого уровня могут скрывать монстров и всё удобство имеет свою цену. И если вы делаете на Scala не простое CRUD-приложение, а что-то, хоть отдаленно связанное с нагрузкой, необходимо хорошо понимать, во что именно вам обходятся все вот эти монады-шмонады.
+Но волшебство функциональной легкости заканчивается с фразой &ldquo;а почему я переписал 100 строк лапши на Java в однострочник на Scala, но оно стало работать в 3 раза медленнее?&quot;, и мечта о прекрасном языке превращается в тыкву. Суровая реальность грязным сапогом как бы говорит нам, что абстракции языков высокого уровня могут скрывать монстров и всё удобство имеет свою цену. И если вы делаете на Scala не простое CRUD-приложение, а что-то, хоть отдаленно связанное с нагрузкой, необходимо хорошо понимать, во что именно вам обходятся все вот эти монады-шмонады.
 Доклад может открыть глаза на возможные подводные камни производительности людям, практикующим программирование на Scala. В процессе будет рассказано:</p>
-
 <ul>
 <li>об интеграции jmh и sbt;</li>
 <li>о том, как заставить scalac рассказывать о том, что он там наоптимизировал;</li>
 <li>о тайнах паттерн-матчинга, хвостовой рекурсии и scala-коллекций;</li>
 <li>об умном HotSpot, который геройски все это оптимизирует.</li>
 </ul>
-
 <p><em>P.S. Этот доклад Роман читает не впервые, так что возможно вы его уже смотрели.</em></p>
-
-<h1 id="4-самурайский-путь-молодого-scala-программиста">4. Самурайский путь молодого Scala-программиста</h1>
-
+<h1 id="4----scala">4. Самурайский путь молодого Scala-программиста</h1>
 <p>Сергей Лобин (45 мин)</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/Pu3D5GQ6UEg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>История о том:</p>
-
 <ul>
 <li>Как в &ldquo;Спутнике&rdquo; появилась Scala.</li>
 <li>Как написать функциональный поиск.</li>
@@ -136,24 +123,19 @@
 <li>Правда ли что Scala такая прожорливая.</li>
 <li>Плюсы и минусы разработки на Scala.</li>
 </ul>
-
 <h1 id="5-f-type-providers-the-current-state">5. F# TYPE PROVIDERS: THE CURRENT STATE</h1>
-
 <p>Сергей Тихон (33 мин)</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/gsrSoZQUV-A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>F# Type Providers это механизм позволяющий упростить интеграцию кода и данных и является альтернативой подходу кодо-генерации. В докладе будут рассмотрены:</p>
-
 <ul>
-<li>Code Quotations и принципы работы type provider&rsquo;ов.</li>
-<li>Обзор существующих type provider&rsquo;ов.</li>
-<li>Особенности разработки собственных type provider&rsquo;ов.</li>
-<li>Нововведения F# 4.0 для type provider&rsquo;ов.</li>
+<li>Code Quotations и принципы работы type provider'ов.</li>
+<li>Обзор существующих type provider'ов.</li>
+<li>Особенности разработки собственных type provider'ов.</li>
+<li>Нововведения F# 4.0 для type provider'ов.</li>
 </ul>
 </div>
 

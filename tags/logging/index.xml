@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>logging on Home on Rails</title>
@@ -19,11 +19,9 @@
       
       <guid>http://homeonrails.com/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
-logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
+logger which limits the volume of info messages irrespectively of the lager&#39;s
 backend.&lt;/p&gt;
-
-&lt;p&gt;This article tells a story behind this library. Down below you&amp;rsquo;ll find answers to the following questions:&lt;/p&gt;
-
+&lt;p&gt;This article tells a story behind this library. Down below you&#39;ll find answers to the following questions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Why it was created?&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;How it works?&amp;rdquo;&lt;/li&gt;

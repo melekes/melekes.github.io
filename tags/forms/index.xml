@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>forms on Home on Rails</title>
@@ -30,7 +30,6 @@ It is intended to help you to validate records count in a given association.&lt;
       
       <guid>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
 Usually it is a parent-children relations. If you are not familiar with such terms

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,85 +63,62 @@
   <time datetime=2019-04-15T09:00:12&#43;0400 class="post-date">Mon, Apr 15, 2019</time>
   <p>Сегодня опубликовали выпуск со мной в подкасте <a href="https://basicblockradio.com/e068/">&ldquo;Базовый
 Блок&rdquo;</a>.</p>
-
 <p>Учитывая, что это был мой первый опыт участия в подкасте, вышло неплохо. НО я
 допустил несколько ошибок (ввиду волнения, ошибки перевода, тысячу других
 отмазок можно придумать) и хотелось бы их разобрать.</p>
-
 <blockquote>
 <p>в распределенных системах есть два основных понятия - безопасность (safety) и доступность (availability)</p>
 </blockquote>
-
 <p>Availability это из
 <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_CAP">CAP</a>
 теоремы. Правильно - Liveness (живучесть).
 <a href="https://en.wikipedia.org/wiki/Liveness">https://en.wikipedia.org/wiki/Liveness</a></p>
-
 <p>См. также <a href="https://en.wikipedia.org/wiki/Safety_property">https://en.wikipedia.org/wiki/Safety_property</a></p>
-
 <blockquote>
 <p>ты можешь экономикой или инструментами воздействовать (на децентрализацию стейка)</p>
 </blockquote>
-
 <p>См. <a href="https://forum.cosmos.network/t/on-the-decentralization-of-the-cosmos-hub/1726">On the decentralization of the Cosmos
 Hub</a>
 и <a href="https://forum.cosmos.network/t/research-slashing-incentives-for-validator-decentralization/1835">RESEARCH: Slashing incentives for validator
 decentralization</a>.</p>
-
 <blockquote>
 <p>в Tendermint есть похожая механика, где за генерацию блока участники получают награду</p>
 </blockquote>
-
 <p>В Cosmos Hub, да. Помимо награды за блок есть также комиссии транзакций и
 инфляция. Малая часть достается валидатору (у некоторых валидаторов сейчас
 установлена 0% комиссия), большая часть уходит делегаторам.</p>
-
 <p>См. <a href="https://blog.cosmos.network/economics-of-proof-of-stake-bridging-the-economic-system-of-old-into-the-new-age-of-blockchains-3f17824e91db">Cosmos Validator Economics - Bridging the Economic System of Old into the New Age of Blockchains</a></p>
-
 <p>Если более подробно, то награда за блок и инфляционные атомы распределяются так:</p>
-
 <ul>
 <li><code>baseProposerReward</code> - создателю блока</li>
 <li><code>bonusProposerReward * fractionPrecommits</code> - бонус за включение голосов других валидаторов</li>
 <li><code>(1 - baseProposerReward - (bonusProposerReward * fractionPrecommits))</code> - бонус всем валидаторам (сотне) пропорционально их ставке</li>
 <li><code>communityTax</code> - в общий пул</li>
 </ul>
-
 <p>Схема может претерпеть изменения <a href="https://github.com/cosmos/cosmos-sdk/issues/3529">Proposal: alter uptime &amp; precommit inclusion incentives</a>.</p>
-
 <blockquote>
 <p>Sybil attacks в Tendermint</p>
 </blockquote>
-
 <p>Можно рассматривать <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%A1%D0%B8%D0%B2%D0%B8%D0%BB%D0%BB%D1%8B">атаку Сивиллы</a> на двух уровнях:</p>
-
 <ul>
 <li>уровне алгоритма</li>
 <li>сетевом уровне</li>
 </ul>
-
 <p>На уровне алгоритма, как и в любом другом PoS алгоритме, чтобы стать
 валидатором (участвовать в консенсусе) тебе нужно <strong>купить</strong> попугаев и если ты
 отступаешь от протокола (например, голосуешь за форк и основную цепочку), ты
 можешь лишиться части или всех попугаев (slashing).</p>
-
 <p>На сетевом уровне, можно пользоваться инструментами Cloudflare или Google или
 блокировать по IP.</p>
-
 <blockquote>
 <p>типичный пример отсылки транзакции из Bitcoin в Ethereum в сети Cosmos</p>
 </blockquote>
-
 <p>Напишу отдельную статью, чтобы было понятнее и самому прояснить некоторые
 вопросы для себя. Если вкратце, то:</p>
-
 <pre><code>Bob -&gt; [Ethereum Smart Contract] -&gt; [Eth 1.0 Zone] -&gt; [Cosmos Hub] -&gt; [Bitcoin Zone]
 
 [Bitcoin Zone] -&gt; [Binance DEX] -&gt; [Bitcoin Zone] -&gt; Bitcoin Contract -&gt; Alisa
-</code></pre>
-
-<p>Боб хочет отправить 55 ETH на свой счет в Bitcoin Zone:</p>
-
+</code></pre><p>Боб хочет отправить 55 ETH на свой счет в Bitcoin Zone:</p>
 <ol>
 <li>Он отправляет эквивалент 55 ETH на смарт контракт.</li>
 <li>Eth 1.0 Zone ждет 100 блоков чтобы убедиться что транзакция не будет откачена</li>
@@ -140,9 +126,7 @@ decentralization</a>.</p>
 <li>Боб посылает 55 CETH в Bitcoin Zone. 55 CETH сжигаются на Eth 1.0 Zone! IBC транзакция уходит в Cosmos Hub и далее в Bitcoin Zone.</li>
 <li>55CETH начисляются на счет Боба в Bitcoin Zone. Т.е 55CETH теперь существуют в Bitcoin Zone!</li>
 </ol>
-
 <p>Боб хочет отправить 1 BTC Алисе:</p>
-
 <ol>
 <li>Он отправляет эквивалент 1 BTC в ETH (скажем 900 ETH) на смарт контракт.</li>
 <li>Eth 1.0 Zone ждет 100 блоков чтобы убедиться что транзакция не будет откачена</li>

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -52,42 +61,29 @@
     <div class="post">
   <h1>Подписываем git коммиты</h1>
   <time datetime=2017-01-14T21:14:14&#43;0400 class="post-date">Sat, Jan 14, 2017</time>
-  <p>Решили у себя в команде, что будем подписывать коммиты и тэги. У git&rsquo;а уже
+  <p>Решили у себя в команде, что будем подписывать коммиты и тэги. У git'а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
 возможны такие смешные поделки как
 <a href="https://github.com/jayphelps/git-blame-someone-else">git-blame-someone-else</a>.
 Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
 действительно вы, прибавляется.</p>
-
 <p>Github в <a href="https://github.com/blog/2144-gpg-signature-verification">апреле прошлого
 года</a> начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png" alt="" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>Создать подпись и настроить git очень просто. Итак, давайте сделаем это:</p>
-
-<h3 id="1-создаем-подпись">1. Создаем подпись</h3>
-
+<h3 id="1--">1. Создаем подпись</h3>
 <p>Ставим gpg:</p>
-
 <pre><code># Ubuntu
 sudo apt-get install gpa seahorse
 # Mac
 brew install gpg
-</code></pre>
-
-<p>Создаем RSA пару (публичный и приватный ключ):</p>
-
+</code></pre><p>Создаем RSA пару (публичный и приватный ключ):</p>
 <pre><code>gpg --gen-key
-</code></pre>
-
-<p>(размер не ниже 2048, но и <a href="https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096">больше не особо
+</code></pre><p>(размер не ниже 2048, но и <a href="https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096">больше не особо
 нужно</a>; срок
 годности по желанию)</p>
-
 <p>Копируем полученный публичный ключ на <a href="https://github.com/settings/keys">Github</a>:</p>
-
 <pre><code>gpg --list-secret-keys --keyid-format LONG
 
 -------------------------------
@@ -96,10 +92,7 @@ uid                          User Name &lt;user.name@email.com&gt;
 ssb   2048R/098AA7C27DD57ACC 2017-01-14
 
 gpg --armor --export &lt;PASTE_LONG_KEY_HERE&gt;
-</code></pre>
-
-<h3 id="2-настраиваем-git">2. Настраиваем git</h3>
-
+</code></pre><h3 id="2--git">2. Настраиваем git</h3>
 <pre><code>gpg --list-secret-keys
 
 -------------------------------
@@ -110,41 +103,23 @@ ssb   2048R/7DD57ACC         2017-01-14
 git config --global user.signingKey &lt;PASTE_SHORT_KEY_HERE&gt;
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
-</code></pre>
-
-<p>(можно настроить индивидуально под каждый репозиторий).</p>
-
-<h3 id="3-кэшируем-пароль">3. Кэшируем пароль</h3>
-
+</code></pre><p>(можно настроить индивидуально под каждый репозиторий).</p>
+<h3 id="3--">3. Кэшируем пароль</h3>
 <p>чтобы не вводить его каждый раз при подписи.</p>
-
 <p>Если вы пользователь Mac OS, то ставим <a href="https://gpgtools.org/">GPG Suite</a>,
 который интегрируется с Mac OS keychain. Переходим к шагу 4.</p>
-
 <p>Если пользуетесь Linux, то придется воспользоваться встроенным <code>gpg-agent</code>.</p>
-
 <p>Создаем конфиг <code>.gnupg/gpg-agent.conf</code> со следующим содержимым:</p>
-
 <pre><code>default-cache-ttl 28800
 max-cache-ttl 28800
-</code></pre>
-
-<p>28800 - 8 часов (кто-то ставит 1 час).</p>
-
+</code></pre><p>28800 - 8 часов (кто-то ставит 1 час).</p>
 <p>В конфиге <code>.gnupg/gpg.conf</code> указываем:</p>
-
 <pre><code>use-agent
 batch
-</code></pre>
-
-<p><code>batch</code> убирает противные сообщения вида: <code>You need a passphrase to unlock the
-secret key</code>. Да, они по неведомой причине появляются даже, если агент
+</code></pre><p><code>batch</code> убирает противные сообщения вида: <code>You need a passphrase to unlock the secret key</code>. Да, они по неведомой причине появляются даже, если агент
 закэшировал пароль.</p>
-
 <p>Не забываем запустить <code>gpg-agent</code>:</p>
-
 <p>fish:</p>
-
 <pre><code>if not begin
     # Is the agent running already? Does the agent-info file exist, and if so,
     # is there a process with the pid given in the file?
@@ -157,15 +132,10 @@ end
 # get the agent info from the info file, and export it so GPG can see it.
 set -gx GPG_AGENT_INFO (cut -c 16- ~/.gpg-agent-info)
 set -gx GPG_TTY (tty)
-</code></pre>
-
-<p>или <a href="https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40">bash</a>
+</code></pre><p>или <a href="https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40">bash</a>
 или напрямую <code>gpg-agent --daemon</code>.</p>
-
-<h2 id="4-коммитим-что-угодно-и-идем-смотреть-результат-на-github">4. Коммитим что угодно и идем смотреть результат на Github</h2>
-
+<h2 id="4---------github">4. Коммитим что угодно и идем смотреть результат на Github</h2>
 <p>Материалы:</p>
-
 <ul>
 <li><a href="https://blog.erincall.com/p/signing-your-git-commits-with-gpg">Signing Your Git Commits With GPG</a></li>
 <li><a href="https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc">Github : Signing commits using GPG (Ubuntu/Mac)</a></li>

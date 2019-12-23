@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ruby-on-rails on Home on Rails</title>
@@ -18,7 +18,7 @@
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/02/shamrock/</guid>
-      <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
+      <description>&lt;p&gt;Бывают случаи, когда WebMock&#39;а недостаточно, или же вы просто не любите stub&#39;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
 сервер&lt;/a&gt;
@@ -34,7 +34,6 @@
       <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
       <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
 colleagues.&lt;/p&gt;
-
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
 ending by using Fragment caching. Also there is list of tools for
 profiling applications (stackprof, etc.). All techniques are quite
@@ -49,12 +48,11 @@ famous.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
-&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;A lot of time has passed since my last post, so I decided to fix this
 little drawback. Next, we will discuss three small pieces of code,
-which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;</description>
+which smells not very good. Let&#39;s see what we can do about it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,11 +77,9 @@ creating a new table, deleting a column or adding an unique index.&lt;/p&gt;</de
       <guid>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
-&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;Now is the time to break down the next three examples of code that look
 slightly chapped, and just beg to be retouched. Despite the apparent
 complexity, by running a series of easy refactorings, we can significantly
@@ -109,7 +105,6 @@ It is intended to help you to validate records count in a given association.&lt;
       
       <guid>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
 Usually it is a parent-children relations. If you are not familiar with such terms
@@ -127,11 +122,9 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
       <guid>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
-&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;These series of articles will be dedicated to every day code, that I am working on.
 This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;</description>
     </item>

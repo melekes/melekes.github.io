@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,80 +63,50 @@
   <time datetime=2015-10-19T14:00:26Z class="post-date">Mon, Oct 19, 2015</time>
   <p>&ldquo;Redis дропает события? Что?&rdquo; или поучительная история о том, как важно читать
 документацию.</p>
-
-<div style="align:center">
-  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg" alt="" width="100%" title=""/>
-</div>
-
-<p><br/></p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>В один дождливый и прохладный осенний день мы увидели слишком маленькое
 значение одной из метрик нашего приложения. Оно занималось (1) отправкой
 текстовых сообщений через специальный шлюз и приемом отчетов о доставке. Отчеты
 (2) публиковались в Redis через Redis Pub/Sub и (3) вычитывались отдельным
 демоном (Listener), который (4) отмечал факт получения или неполучения
 абонентом смс в БД (Postgresql).</p>
-
-<div style="align:center">
-  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/app.png" alt="" style="width:400px;" title=""/>
-</div>
-
+<!-- raw HTML omitted -->
 <p>В статистике значилось: <strong>&ldquo;отправлено 20000, доставлено 122&rdquo;</strong>. По необъяснимой
 причине мы недополучали большую часть отчетов.</p>
-
 <p>Сначала я предположил, что они просто не доходят до Redis, но посмотрев логи
 убедился в обратном. Далее подозрение пало на Listener и мой тимлид высказал
 предположение о том, что он (Listener) не успевает вычитывать все публикуемые
 события и <strong>Redis их дропает</strong>.</p>
-
 <p>Увидев в логе Redis строчку &ldquo;Client XXX scheduled  to  be  closed  ASAP  for
 overcoming  of  output  buffer  limits&rdquo;, мы поняли что скорее всего так и есть.</p>
-
 <p>Я был удивлен. Опыта работы с Redis у меня было не так уж и много, но мне все
 равно казалось это нереальным.</p>
-
-<div style="align:center">
-  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/wat.png" alt="" style="width:400px;" title=""/>
-</div>
-
-<p><br/></p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>Думалось, что он будет хранить данные в списке так долго как сможет.
 Оказывается, Redis Pub/Sub вообще не хранит никаких данных (есть буфер). В
-идеале, он старается раскидать данные с сокета &ldquo;издателя&rdquo; (Publisher&rsquo;s socket)
+идеале, он старается раскидать данные с сокета &ldquo;издателя&rdquo; (Publisher's socket)
 по сокетам подписчиков (Subscribers sockets) на одной итерации <a href="https://en.wikipedia.org/wiki/Event_loop">event loop</a>.</p>
-
-<div style="align:center">
-  <img class="img-rounded" src="http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/pub-sub.png" alt="" style="width:450px;" title=""/>
-</div>
-
+<!-- raw HTML omitted -->
 <p>Так что же про буферы. У Redis есть буфер с soft limit = 8MB и hard limit =
 32MB. Также есть по 1 буферу на каждое TCP соединение.</p>
-
 <p>Размеры буферов можно узнать так:</p>
-
 <pre><code>$ cat /proc/sys/net/ipv4/tcp_rmem # publisher's socket
 $ cat /proc/sys/net/ipv4/tcp_wmem # subscribers sockets
-</code></pre>
-
-<p>В нашем случае размер и того, и другого = 4MB.</p>
-
+</code></pre><p>В нашем случае размер и того, и другого = 4MB.</p>
 <p>Если подписчик не успевает вычитывать данные, буфер справа в какой-то момент
 заполнится и TCP запретит дальнейшую запись в него. Redis пометит буфер как
 &ldquo;non-writable&rdquo; и начнет заполнять свой буфер.</p>
-
-<p>Если размер буфера Redis&rsquo;а превысит 32MB или в течении 60 секунд будет больше
+<p>Если размер буфера Redis'а превысит 32MB или в течении 60 секунд будет больше
 8MB, то Redis закроет соединение. Об этом честно написано в <a href="http://redis.io/topics/clients">документации
 Redis</a> см. &ldquo;Output buffers limits&rdquo;. Правда,
 нигде не написано, что перед тем как соединение будет закрыто часть сообщений
 будут потеряны.</p>
-
 <p>В нашем случае Redis действительно закрывал соединение, но Listener
-переподнимался Upstart&rsquo;ом и тут же подписывался заново, продолжая выгребать
+переподнимался Upstart'ом и тут же подписывался заново, продолжая выгребать
 лишь часть отчетов.</p>
-
 <p>Как решили: оптимизировали выборку и запись в БД, распараллелили Listener.</p>
-
 <p>Вывод для себя сделал такой - <strong>перед тем как использовать
 инструмент, прочитай документацию</strong>. В серьезных продуктах обычно расписано
 все, включая разнообразные <a href="https://en.wikipedia.org/wiki/Corner_case">corner case</a>.</p>

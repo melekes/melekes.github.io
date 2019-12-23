@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -58,137 +67,98 @@ growth of your project. If you change your data model (<a href="http://martinfow
 you reflect that change in code and write a migration (or several migrations),
 which will make the necessary actions on your database schema. This may be
 creating a new table, deleting a column or adding an unique index.</p>
-
 <p><strong>UPD (2015-02-15)</strong>: recently I have discovered a gem called
 <a href="https://github.com/jalkoby/squasher">squasher</a>, which, I presume, does exactly
 what this article describes, so check it before continuing reading.</p>
-
 <p>There are many benefits of using migrations, which you should definitely know
 about. For example, independency from a particular database or the ability to
 easily switch between different states of the database using the rake commands
 <code>db:migrate</code> and <code>db:rollback</code>. More detailed information about them you could
 find in the <a href="http://guides.rubyonrails.org/migrations.html">RailsGuides Migrations</a> article.</p>
-
 <h2 id="the-problem">The problem</h2>
-
 <p>Sooner or later, especially in the long-running projects, <strong>the number of
 migrations exceeds any acceptable norms</strong>. When they are 50, it is perfectly
 acceptable. But in really big projects, their number can be up to 500 or even more.</p>
-
 <h2 id="what-can-we-do">What can we do?</h2>
-
 <p>Create a <strong>null migration</strong> (or initial migration) - migration, which contains
 all previous migrations, i.e. the current state of the database schema
 (<code>db/schema.rb</code> or <code>db/sctructure.sql</code>, depending on the format). Thus,
 we get <strong>one migration instead of several hundred</strong>.</p>
-
 <p>Pros:</p>
-
 <ul>
 <li>only one migration</li>
 <li>increased the speed and, consequently, reduced the time for running migrations</li>
 </ul>
-
 <p>Cons:</p>
-
 <ul>
 <li>large size of the null migration</li>
 <li>all migrations merged into one, so we cannot switch between them any more</li>
 </ul>
-
 <p>Let me remind you that the format of the database schema is defined in
 <code>config/application.rb</code> file using <code>config.active_record.schema_format</code> parameter.
 Possible values ​​are <code>:ruby</code> ​​or <code>:sql</code>. The default is <code>:ruby</code>. The main difference
 between them is that the second one goes with support for the functions specific
 to a particular database (e.g., PostgreSQL sequences).</p>
-
 <p>Next, I will show how you can create a null migration.</p>
-
-<h2 id="creating-a-null-migration-schema-format-ruby">Creating a null migration (schema format - <code>:ruby</code>)</h2>
-
+<h2 id="creating-a-null-migration-schema-format--ruby">Creating a null migration (schema format - <code>:ruby</code>)</h2>
 <ol>
 <li>Dump your schema</li>
 <li>Create a migration</li>
 <li>Change migration timestamp</li>
 <li>Remove previous migrations</li>
 </ol>
-
 <h3 id="1-dump-your-schema">1. Dump your schema</h3>
-
 <p>In most cases, you should already have a file <code>db/schema.rb</code>. If not, use the following rake task:</p>
-
-<pre><code class="language-bash">&gt; rake db:schema:dump
-</code></pre>
-
-<p>It should do the job.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rake db:schema:dump
+</code></pre></div><p>It should do the job.</p>
 <h3 id="2-create-a-migration">2. Create a migration</h3>
-
 <p>Create a new migration named <code>NullMigration</code> using Rails generator:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rails g migration NullMigration
+</code></pre></div><p>Open the newly created migration. It should look something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">up</span>
+  <span style="color:#66d9ef">end</span>
 
-<pre><code class="language-bash">&gt; rails g migration NullMigration
-</code></pre>
-
-<p>Open the newly created migration. It should look something like this:</p>
-
-<pre><code class="language-ruby">class NullMigration &lt; ActiveRecord::Migration
-  def up
-  end
-
-  def down
-  end
-end
-</code></pre>
-
-<p>Now copy the contents of the <code>ActiveRecord::Schema.define</code> block from a file <code>db/schema.rb</code> into the method <code>up</code>.</p>
-
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">down</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>Now copy the contents of the <code>ActiveRecord::Schema.define</code> block from a file <code>db/schema.rb</code> into the method <code>up</code>.</p>
 <p>It remains to take care of the method <code>down</code>, which is responsible for
 rolling back our migration. Sure, we can go through all migrations and
 copy the content of all <code>down</code> methods, but it is too expensive. Instead,
-let&rsquo;s make our first migration irreversible, especially, there is no much
+let's make our first migration irreversible, especially, there is no much
 sense in rolling back to an empty database (we can always delete and create the required
 database using the rake command <code>db:drop db:create</code>).</p>
-
 <p>As a result, the migration should look like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">up</span>
+    create_table <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">table</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">:force</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">true</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>
+    <span style="color:#f92672">...</span>
+  <span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby">class NullMigration &lt; ActiveRecord::Migration
-  def up
-    create_table &quot;table&quot;, :force =&gt; true do |t|
-    ...
-  end
-
-  def down
-    raise ActiveRecord::IrreversibleMigration
-  end
-end
-</code></pre>
-
-<h3 id="3-change-migration-timestamp">3. Change migration timestamp</h3>
-
-<p>Now, if you&rsquo;d try to run a migration, you will get an error, because we already
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">down</span>
+    <span style="color:#66d9ef">raise</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">IrreversibleMigration</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><h3 id="3-change-migration-timestamp">3. Change migration timestamp</h3>
+<p>Now, if you'd try to run a migration, you will get an error, because we already
 have all the structures (tables, indexes) in our database. ActiveRecord checks
 migration state (whether it was executed or not) by looking into
 <code>schema_migrations</code> table. This table basically holds the timestamps of
 all executed migrations.</p>
-
 <p>So, if we do not want ActiveRecord to run our null migration, we either
 need to manually insert its timestamp or change it (timestamp) to the last
 executed migration timestamp, which is much easier to do.</p>
-
-<p>Let&rsquo;s do this.</p>
-
+<p>Let's do this.</p>
 <ol>
 <li>Find the file with the last executed migration (migration before the null migration) and copy its timestamp</li>
 <li>Replace the null migration timestamp with it.</li>
 </ol>
-
 <p>Alternatively, you can find the required timestamp inside the
 <code>ActiveRecord::Schema.define(:version =&gt; 20120925084251)</code> block (or at the end of
 <code>null_schema.sql</code> in case of <code>:sql</code> schema format)</p>
-
 <p>Example (using the command line):</p>
-
-<pre><code class="language-bash">&gt; ls db/migrate
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; ls db/migrate
 
 20120925084251_add_state_to_task_topics.rb
 20121120080714_null_migration.rb
@@ -198,67 +168,46 @@ executed migration timestamp, which is much easier to do.</p>
 
 20120925084251_add_state_to_task_topics.rb
 20120925084251_null_migration.rb
-</code></pre>
-
-<h3 id="4-remove-previous-migrations">4. Remove previous migrations</h3>
-
+</code></pre></div><h3 id="4-remove-previous-migrations">4. Remove previous migrations</h3>
 <p>Now you only have to remove the previous migrations. I think this you can do without my help :)</p>
-
-<h2 id="creating-a-null-migration-schema-format-sql">Creating a null migration (schema format - <code>:sql</code>)</h2>
-
+<h2 id="creating-a-null-migration-schema-format--sql">Creating a null migration (schema format - <code>:sql</code>)</h2>
 <ol>
 <li>Dump your schema</li>
 <li>Create a migration</li>
 <li>Change migration timestamp</li>
 <li>Remove previous migrations</li>
 </ol>
-
-<h3 id="1-dump-your-schema-1">1. Dump your schema</h3>
-
+<h3 id="1-dump-your-schema1">1. Dump your schema</h3>
 <p>This step is not much different from the above, with the exception of the
 schema file - <code>db/structure.sql</code> and rake command to dump the database:</p>
-
-<pre><code class="language-bash">&gt; rake db:structure:dump
-</code></pre>
-
-<p>Would like to note that, unlike the command <code>rake db:schema:dump</code>, which uses
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rake db:structure:dump
+</code></pre></div><p>Would like to note that, unlike the command <code>rake db:schema:dump</code>, which uses
 built-in ActiveRecord schema dumper, this command uses special tools
 specific to a particular database (for example, pg_dump for PostgreSQL).</p>
-
-<h3 id="2-create-a-migration-1">2. Create a migration</h3>
-
+<h3 id="2-create-a-migration1">2. Create a migration</h3>
 <p>Create a migration (see a similar step above). Next, copy the file
 <code>db/structure.sql</code> into folder <code>db/migrate</code> and rename it to <code>null_schema.sql</code>.</p>
-
 <p>Our migration would look like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">up</span>
+    file_data <span style="color:#f92672">=</span> <span style="color:#66d9ef">File</span><span style="color:#f92672">.</span>read(<span style="color:#e6db74">&#39;db/migrate/null_schema.sql&#39;</span>)
+    <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span><span style="color:#f92672">.</span>connection<span style="color:#f92672">.</span>execute file_data
+  <span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby">class NullMigration &lt; ActiveRecord::Migration
-  def up
-    file_data = File.read('db/migrate/null_schema.sql')
-    ActiveRecord::Base.connection.execute file_data
-  end
-
-  def down
-    raise ActiveRecord::IrreversibleMigration
-  end
-end
-</code></pre>
-
-<h3 id="3-change-migration-timestamp-1">3. Change migration timestamp</h3>
-
-<h3 id="4-remove-previous-migrations-1">4. Remove previous migrations</h3>
-
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">down</span>
+    <span style="color:#66d9ef">raise</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">IrreversibleMigration</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><h3 id="3-change-migration-timestamp1">3. Change migration timestamp</h3>
+<h3 id="4-remove-previous-migrations1">4. Remove previous migrations</h3>
 <h2 id="wrapping-up">Wrapping Up</h2>
-
 <p>Creating a null migration - a convenient way to get rid of a large number
 of migrations. Therefore, we become able to restart the database development
 cycle, i.e. to start from scratch.</p>
-
 <p>I believe that null migration was invented a long time ago, but I could
 not find anything on the internet on this subject, so decided to share with
 you. If you have any questions or additions, be sure to leave them
 in the comments to this article.</p>
-
 <p><em>Thank you to Alexey Astafyev, Alexander Rozhnov and Igor Kuznetsov for reviewing this post.</em></p>
 </div>
 

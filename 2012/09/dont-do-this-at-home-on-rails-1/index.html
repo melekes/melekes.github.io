@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,109 +63,77 @@
   <time datetime=2012-09-23T00:00:00Z class="post-date">Sun, Sep 23, 2012</time>
   <ul>
 <li>Languages: Ruby</li>
-<li>Difficulty: <span class="label label-success">Easy</span></li>
+<li>Difficulty: <!-- raw HTML omitted -->Easy<!-- raw HTML omitted --></li>
 </ul>
-
 <h2 id="intro">Intro</h2>
-
 <p>These series of articles will be dedicated to every day code, that I am working on.
 This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.</p>
-
 <h2 id="examples">Examples</h2>
-
-<h3 id="1-avoid-duplication">#1 - avoid duplication</h3>
-
+<h3 id="1--avoid-duplication">#1 - avoid duplication</h3>
 <p>The first example is a scope, that fetches the records within a given range.
 If the <code>date</code> param passed to this block responds to the <code>first</code> and <code>last</code> methods,
 these are considered as start and end dates. Otherwise, it selects records for that date plus 1 day.</p>
-
-<pre><code class="language-ruby">scope :at_date, lambda { |date|
-  if date.respond_to?(:last) &amp;&amp; date.respond_to?(:first)
-    where(&quot;created_at &gt;= ? AND created_at &lt;= ?&quot;, date.first, date.last)
-  else
-    where(&quot;created_at &gt;= ? AND created_at &lt;= ?&quot;, date, date + 1.day)
-  end
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>date<span style="color:#f92672">|</span>
+  <span style="color:#66d9ef">if</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:last</span>) <span style="color:#f92672">&amp;&amp;</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:first</span>)
+    where(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">created_at &gt;= ? AND created_at &lt;= ?</span><span style="color:#e6db74">&#34;</span>, date<span style="color:#f92672">.</span>first, date<span style="color:#f92672">.</span>last)
+  <span style="color:#66d9ef">else</span>
+    where(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">created_at &gt;= ? AND created_at &lt;= ?</span><span style="color:#e6db74">&#34;</span>, date, date <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>day)
+  <span style="color:#66d9ef">end</span>
 }
-</code></pre>
-
-<p>What could you say about this code? Is it well written? This code has many flaws.
+</code></pre></div><p>What could you say about this code? Is it well written? This code has many flaws.
 The first thing that caches the eye is duplicated <code>where</code> condition.
 Just imagine, each time you want to change the query, you will need to update these 2 lines.
 Lets fix this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>date<span style="color:#f92672">|</span>
+  <span style="color:#66d9ef">if</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:last</span>) <span style="color:#f92672">&amp;&amp;</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:first</span>)
+    date_start <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>first
+    date_end <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>last
+  <span style="color:#66d9ef">else</span>
+    date_start <span style="color:#f92672">=</span> date
+    date_end <span style="color:#f92672">=</span> date_start <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>day
+  <span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby">scope :at_date, lambda { |date|
-  if date.respond_to?(:last) &amp;&amp; date.respond_to?(:first)
-    date_start = date.first
-    date_end = date.last
-  else
-    date_start = date
-    date_end = date_start + 1.day
-  end
-
-  where(&quot;created_at &gt;= ? AND created_at &lt;= ?&quot;, date_start, date_end)
+  where(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">created_at &gt;= ? AND created_at &lt;= ?</span><span style="color:#e6db74">&#34;</span>, date_start, date_end)
 }
-</code></pre>
-
-<p>Good, but that&rsquo;s not all.</p>
-
+</code></pre></div><p>Good, but that's not all.</p>
 <p>It seems to me very confusing, that <code>date</code> param could be
 either <code>Array</code> or <code>DateTime</code>. Strictly speaking, it could be anything;
-e.g <code>String</code> - it&rsquo;s also responds to <code>first/last</code> methods, so as a result
+e.g <code>String</code> - it's also responds to <code>first/last</code> methods, so as a result
 we will get this query <code>created_at &gt;= 2 and created_at &lt;= 3</code> for date = &lsquo;2012-09-23&rsquo;.</p>
-
-<p>But wait, ActiveRecord&rsquo;s query interface also supports ranges as an arguments,
+<p>But wait, ActiveRecord's query interface also supports ranges as an arguments,
 so we could write something like this: <code>where(created_at: date.first..date.last)</code>,
 which will generate a query <code>created_at BETWEEN &lt;date.first&gt; AND &lt;date.last&gt;</code>.</p>
-
-<pre><code class="language-ruby">scope :at_date, lambda { |range|
-  where(created_at: range)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>range<span style="color:#f92672">|</span>
+  where(<span style="color:#e6db74">created_at</span>: range)
 }
-</code></pre>
-
-<h3 id="2-try-to-search-for-existing-method-first">#2 - try to search for existing method first</h3>
-
+</code></pre></div><h3 id="2--try-to-search-for-existing-method-first">#2 - try to search for existing method first</h3>
 <p>The second slice of code selects the channels, locked by the current user and
 free channels.</p>
-
-<pre><code class="language-ruby">cu = current_user
-locked = channels.select{ |ch| ch.is_locked_by?(cu) }
-free   = channels.select{ |ch| !ch.is_locked_by?(cu) }
-</code></pre>
-
-<p>Did you notice the reverse condition? Every time I see the code,
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">cu <span style="color:#f92672">=</span> current_user
+locked <span style="color:#f92672">=</span> channels<span style="color:#f92672">.</span>select{ <span style="color:#f92672">|</span>ch<span style="color:#f92672">|</span> ch<span style="color:#f92672">.</span>is_locked_by?(cu) }
+free   <span style="color:#f92672">=</span> channels<span style="color:#f92672">.</span>select{ <span style="color:#f92672">|</span>ch<span style="color:#f92672">|</span> <span style="color:#f92672">!</span>ch<span style="color:#f92672">.</span>is_locked_by?(cu) }
+</code></pre></div><p>Did you notice the reverse condition? Every time I see the code,
 who looks like this, I thought, it should be already a method for this in ruby.
 In fact, ruby and rails has a greater collection of methods. Take a look at <code>ActiveSupport</code>
 methods <a href="http://apidock.com/rails/ActiveSupport">http://apidock.com/rails/ActiveSupport</a>. But what about our case? After a few minutes
-of searching, I&rsquo;ve found <code>partition</code> method (<a href="http://apidock.com/ruby/Enumerable/partition">Doc</a>),
+of searching, I've found <code>partition</code> method (<a href="http://apidock.com/ruby/Enumerable/partition">Doc</a>),
 which does exactly just we want to - splits collection into two arrays by a given condition.</p>
-
-<pre><code class="language-ruby">locked, unlocked = channels.partition { |ch| ch.is_locked_by?(current_user) }
-</code></pre>
-
-<h3 id="3-think-about-what-you-are-writing-right-now">#3 - think about what you are writing right now</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">locked, unlocked <span style="color:#f92672">=</span> channels<span style="color:#f92672">.</span>partition { <span style="color:#f92672">|</span>ch<span style="color:#f92672">|</span> ch<span style="color:#f92672">.</span>is_locked_by?(current_user) }
+</code></pre></div><h3 id="3--think-about-what-you-are-writing-right-now">#3 - think about what you are writing right now</h3>
 <p>The third method is a simple method inside some model.</p>
-
-<pre><code class="language-ruby">def has_description?
-  !self.description.blank?
-end
-</code></pre>
-
-<p>I know what you are thinking right now - it&rsquo;s not my :)</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">has_description?</span>
+  <span style="color:#f92672">!</span>self<span style="color:#f92672">.</span>description<span style="color:#f92672">.</span>blank?
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>I know what you are thinking right now - it's not my :)</p>
 <p>There are two drawbacks in the code above. The one significant is that there is already a
 method for this in <code>ActiveRecord</code>. Rails creates a method called <code>&quot;{attribute}?&quot;</code>,
 which checks whether a field is defined or not. So we could remove <code>has_description?</code>
 method with <code>description?</code>.</p>
-
-<p>Note: you don&rsquo;t have to use <code>self</code> inside the model methods, because we already in the context of an object.</p>
-
-<p>And that&rsquo;s all for today. Hope you&rsquo;ve caught something for you!</p>
-
+<p>Note: you don't have to use <code>self</code> inside the model methods, because we already in the context of an object.</p>
+<p>And that's all for today. Hope you've caught something for you!</p>
 <h2 id="follow-up">Follow up</h2>
-
 <ul>
-<li><a href="http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2">Don&rsquo;t do this at home on Rails #2</a></li>
+<li><a href="http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2">Don't do this at home on Rails #2</a></li>
 </ul>
 </div>
 

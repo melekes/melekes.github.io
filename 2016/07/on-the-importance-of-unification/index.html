@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,57 +63,42 @@
   <time datetime=2016-07-05T16:24:36Z class="post-date">Tue, Jul 5, 2016</time>
   <p>Unification, for me, means having one way or instrument (not always the best)
 to deal with a problem. And, in some cases, it is crucial.</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png" alt="It's important to have only one instrument for solving a problem." width="100%" title=""/></p>
-
+<!-- raw HTML omitted -->
 <h2 id="example-1">Example #1</h2>
-
-<p>Let&rsquo;s look at the design of the Go programming language. In one of my favorite
+<p>Let's look at the design of the Go programming language. In one of my favorite
 talks, &ldquo;Simplicity is Complicated&rdquo;, Rob Pike says: &ldquo;A lot of people have asked
 for things like map and filter to be built into Go and we said no&rdquo;. He gave
-  this example while talking about the expense feature(s) may have, but I think
-  it also applies to the quote below.</p>
-
+this example while talking about the expense feature(s) may have, but I think
+it also applies to the quote below.</p>
 <p>{% blockquote Rob Pike %}
 If there is a lot of features, you may look at the line of code, write it one
 way. &ldquo;Uu, I could do something different.&rdquo; You might even spend half an hour
-playing with a few lines of code&hellip; and it&rsquo;s kind of a waste of time to do it,
+playing with a few lines of code&hellip; and it's kind of a waste of time to do it,
 but worse, when you come back to the program later, you have to recreate that
 thought process.</p>
-
 <p>Preferable to have just one way, or at least fewer, simpler ways.
 {% endblockquote %}</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/rFejpH_tAHM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>Highly recommend watching this video.</p>
-
 <h2 id="example-2">Example #2</h2>
-
 <p>At FunBox, the company I was working for, we had only one way to deploy the
 code - <a href="https://github.com/capistrano/capistrano">Capistrano</a>.</p>
-
 <p>We were using many languages (Ruby, Erlang, Clojure, Elixir). Each of those was
 packaged differently (raw, release, .tar, release), but there was only one
 deploy method. And it was great! <strong>You, as the programmer, do not think how to
 deploy a project</strong>, you simply type <code>bundle exec cap production deploy</code>.</p>
-
-<p>Capistrano itself may not be the best choice, but it&rsquo;s not so important,
-comparing to what we&rsquo;re talking about.</p>
-
+<p>Capistrano itself may not be the best choice, but it's not so important,
+comparing to what we're talking about.</p>
 <h2 id="example-3">Example #3</h2>
-
 <p>Another example may be using <a href="http://linux.die.net/man/1/make">make</a> as a build
 tool for all of your projects. Again, if you have many languages (e.g.
 JavaScript on the frontend and Go on the backend), the cost of having 2
 different ways to test/build/etc. may be too high. To ease the development, you
-could create a Makefile and have a single target for testing (say, <code>make
-test</code>).</p>
-
+could create a Makefile and have a single target for testing (say, <code>make test</code>).</p>
 <p>If you have any comments, you could leave them below or send me an email.</p>
 </div>
 

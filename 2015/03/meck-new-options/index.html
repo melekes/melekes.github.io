@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,53 +62,58 @@
   <h1>Опции meck:new</h1>
   <time datetime=2015-03-03T11:04:41Z class="post-date">Tue, Mar 3, 2015</time>
   <p>Документация по <a href="https://github.com/eproxus/meck">meck</a>&hellip; скажем так, не блещет. Давайте разберем опции <code>meck:new</code>.</p>
-
 <ul>
-<li><p><code>passthrough</code> пробрасывает функции meck-модуля (string_meck) в оригинальный модуль (string)</p>
-
-<pre><code class="language-erlang">meck:new(string, [passthrough]),
-meck:expect(string, char_at,
-fun(0) -&gt;
-    $a;
-(Pos) -&gt;
-    meck:passthrough([Pos])
-end),
-?assert(meck:validate(string)).
-</code></pre></li>
-
-<li><p><code>no_link</code> не связывать meck процесс с вызывающим процессом. В зависимости от значения используется либо <code>gen_server:start_link</code>, либо <code>gen_server:start</code>. По умолчанию при падении вызывающего процесса meck выгрузит все модули. <strong>Не понимаю зачем может потребоваться не связывать эти процессы.</strong></p></li>
-
-<li><p><code>unstick</code> для мокинга stdlib, kernel или compiler. По умолчанию Erlang запрещает перезагружать данные модули в целях безопасности.</p></li>
-
-<li><p><code>no_passthrough_cover</code> запрещает отслеживать покрытие тестами passthrough вызовов. <strong>Видимо когда-то были проблемы при взаимодействии cover и meck и, в результате, родилась данная опция.</strong></p></li>
-
-<li><p><code>{spawn_opt, list()}</code> позволяет указать <code>spawn_opt</code> для <code>gen_server:start_link</code>. Подробнее <a href="http://erlang.org/doc/man/erlang.html#spawn_opt-4">http://erlang.org/doc/man/erlang.html#spawn_opt-4</a></p></li>
-
-<li><p><code>no_history</code> - не записывать историю.</p></li>
-
-<li><p><code>non_strict</code> позволяет создать expectation для несуществующей функции или даже создать несуществующий модуль. <strong>Не думаю, что эта хорошая практика.</strong></p></li>
-
-<li><p><code>{stub_all, '{@link ret_spec()}'}</code> замокает все функции модуля и будет возвращать то, что указано вторым параметром.</p>
-
-<pre><code class="language-erlang">meck:new(string, [stub_all]),
-?assertEqual(ok, string:colorize()).
-
-meck:new(string, [{stub_all, true}]),
-?assertEqual(true, string:contains($a)).
-
-meck:new(string, [{stub_all, meck:seq([$a, $b, $c])}]),
-?assertEqual($a, string:char_at(1)),
-?assertEqual($b, string:char_at(2)),
-?assertEqual($c, string:char_at(3)),
-?assertEqual($c, string:char_at(4)).
-
-meck:new(string, [{stub_all, meck:loop([$a, $b, $c])}]),
-?assertEqual($a, string:char_at(1)),
-?assertEqual($b, string:char_at(2)),
-?assertEqual($c, string:char_at(3)),
-?assertEqual($a, string:char_at(4)). %% заметили разницу между seq?
-</code></pre></li>
+<li><code>passthrough</code> пробрасывает функции meck-модуля (string_meck) в оригинальный модуль (string)</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">meck:<span style="color:#a6e22e">new</span>(string, [passthrough]),
+meck:<span style="color:#a6e22e">expect</span>(string, char_at,
+    <span style="color:#66d9ef">fun</span>(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#e6db74">$a</span>;
+    (Pos) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+        meck:<span style="color:#a6e22e">passthrough</span>([Pos])
+<span style="color:#66d9ef">end</span>),
+<span style="color:#f92672">?</span>assert(meck:<span style="color:#a6e22e">validate</span>(string)).
+</code></pre></div><ul>
+<li>
+<p><code>no_link</code> не связывать meck процесс с вызывающим процессом. В зависимости от значения используется либо <code>gen_server:start_link</code>, либо <code>gen_server:start</code>. По умолчанию при падении вызывающего процесса meck выгрузит все модули. <strong>Не понимаю зачем может потребоваться не связывать эти процессы.</strong></p>
+</li>
+<li>
+<p><code>unstick</code> для мокинга stdlib, kernel или compiler. По умолчанию Erlang запрещает перезагружать данные модули в целях безопасности.</p>
+</li>
+<li>
+<p><code>no_passthrough_cover</code> запрещает отслеживать покрытие тестами passthrough вызовов. <strong>Видимо когда-то были проблемы при взаимодействии cover и meck и, в результате, родилась данная опция.</strong></p>
+</li>
+<li>
+<p><code>{spawn_opt, list()}</code> позволяет указать <code>spawn_opt</code> для <code>gen_server:start_link</code>. Подробнее <a href="http://erlang.org/doc/man/erlang.html#spawn_opt-4">http://erlang.org/doc/man/erlang.html#spawn_opt-4</a></p>
+</li>
+<li>
+<p><code>no_history</code> - не записывать историю.</p>
+</li>
+<li>
+<p><code>non_strict</code> позволяет создать expectation для несуществующей функции или даже создать несуществующий модуль. <strong>Не думаю, что эта хорошая практика.</strong></p>
+</li>
+<li>
+<p><code>{stub_all, '{@link ret_spec()}'}</code> замокает все функции модуля и будет возвращать то, что указано вторым параметром.</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">meck:<span style="color:#a6e22e">new</span>(string, [stub_all]),
+<span style="color:#f92672">?</span>assertEqual(ok, string:<span style="color:#a6e22e">colorize</span>()).
+
+meck:<span style="color:#a6e22e">new</span>(string, [{stub_all, true}]),
+<span style="color:#f92672">?</span>assertEqual(true, string:<span style="color:#a6e22e">contains</span>(<span style="color:#e6db74">$a</span>)).
+
+meck:<span style="color:#a6e22e">new</span>(string, [{stub_all, meck:<span style="color:#a6e22e">seq</span>([<span style="color:#e6db74">$a</span>, <span style="color:#e6db74">$b</span>, <span style="color:#e6db74">$c</span>])}]),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$a</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">1</span>)),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$b</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">2</span>)),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$c</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">3</span>)),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$c</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">4</span>)).
+
+meck:<span style="color:#a6e22e">new</span>(string, [{stub_all, meck:<span style="color:#a6e22e">loop</span>([<span style="color:#e6db74">$a</span>, <span style="color:#e6db74">$b</span>, <span style="color:#e6db74">$c</span>])}]),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$a</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">1</span>)),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$b</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">2</span>)),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$c</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">3</span>)),
+<span style="color:#f92672">?</span>assertEqual(<span style="color:#e6db74">$a</span>, string:<span style="color:#a6e22e">char_at</span>(<span style="color:#ae81ff">4</span>)). <span style="color:#75715e">%% заметили разницу между seq?
+</span></code></pre></div>
 </div>
 
 <h2>Comments</h2>

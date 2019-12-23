@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>time-tracking on Home on Rails</title>
@@ -18,17 +18,10 @@
       <pubDate>Sat, 22 Nov 2014 17:53:57 +0000</pubDate>
       
       <guid>http://homeonrails.com/2014/11/stop-killing-developers-creativity/</guid>
-      <description>&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Carlos?&lt;/p&gt;
-&lt;p style=&#34;color:#800000&#34;&gt;Carlos: Yes.&lt;/p&gt;
-&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Hi, my name is Andrea! You will be working on project X. Before you
-start, make sure you read pages A, B, and &#34;How do we work with tickets in Jira&#34;
-in our wiki.&lt;/p&gt;
-&lt;p style=&#34;color:#800000&#34;&gt;Carlos: No problem.&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&amp;ldquo;When you start working on a ticket, press &amp;lsquo;Start Progress&amp;rsquo; - this will
-change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&amp;rsquo;re getting distracted from your work
+change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&#39;re getting distracted from your work
 for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Carlos reads to himself&lt;/p&gt;
-
 &lt;p&gt;2 hours later&amp;hellip;&lt;/p&gt;</description>
     </item>
     

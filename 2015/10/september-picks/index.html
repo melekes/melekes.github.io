@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,35 +62,34 @@
   <h1>September picks</h1>
   <time datetime=2015-10-07T11:14:55Z class="post-date">Wed, Oct 7, 2015</time>
   <p>&ldquo;Random picks from all over the Internet&rdquo;.</p>
-
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Vandals choose <a href="https://twitter.com/hashtag/Java?src=hash&amp;ref_src=twsrc%5Etfw">#Java</a> to maximize damage thanks to its verbosity. <a href="http://t.co/OwHTFZMNGq">pic.twitter.com/OwHTFZMNGq</a></p>&mdash; Hildeberto Mendonça (@htmfilho) <a href="https://twitter.com/htmfilho/status/645610733196189696?ref_src=twsrc%5Etfw">September 20, 2015</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 <h2 id="english">English</h2>
-
 <h3 id="articles">Articles</h3>
-
 <ul>
-<li><p><a href="http://www.cockroachlabs.com/blog/how-cockroachdb-distributes-atomic-transactions/">How CockroachDB Does Distributed, Atomic Transactions</a>
+<li>
+<p><a href="http://www.cockroachlabs.com/blog/how-cockroachdb-distributes-atomic-transactions/">How CockroachDB Does Distributed, Atomic Transactions</a>
 In short: they place new values near the original ones and use some kind of a
-switch (&ldquo;transaction record&rdquo;) to flip between old and new values.</p></li>
-
-<li><p><a href="http://solnic.eu/2015/09/18/ditch-your-orm.html">Ditch Your ORM</a>
+switch (&ldquo;transaction record&rdquo;) to flip between old and new values.</p>
+</li>
+<li>
+<p><a href="http://solnic.eu/2015/09/18/ditch-your-orm.html">Ditch Your ORM</a>
 This could be an eye opener for those who are working with ORM. Author had
-been working with <a href="http://datamapper.org/">Data Mapper</a> project for over 4 years.</p></li>
-
-<li><p><a href="http://coding-geek.com/how-databases-work/">How does a relational database work</a>
-Fantastic article! If you&rsquo;ve always wanted to know how relational DBs work, this
-is the best place to start. (<a href="http://habrahabr.ru/company/mailru/blog/266811/">Russian</a>)</p></li>
-
-<li><p><a href="http://antirez.com/news/94">Clarifications about Redis and Memcached</a>
+been working with <a href="http://datamapper.org/">Data Mapper</a> project for over 4 years.</p>
+</li>
+<li>
+<p><a href="http://coding-geek.com/how-databases-work/">How does a relational database work</a>
+Fantastic article! If you've always wanted to know how relational DBs work, this
+is the best place to start. (<a href="http://habrahabr.ru/company/mailru/blog/266811/">Russian</a>)</p>
+</li>
+<li>
+<p><a href="http://antirez.com/news/94">Clarifications about Redis and Memcached</a>
 Excellent article, which explains some of the differences between Redis and
-Memcached.</p></li>
+Memcached.</p>
+</li>
 </ul>
-
 <h3 id="presentations">Presentations</h3>
-
 <ul>
 <li><a href="http://www.slideshare.net/imcsummit/imcs2015-2-bus4-myth-about-inmemory-databases-busted">4 Myths about In-Memory Databases Busted</a>
 A very good presentation, which compares Aerospike, Couchbase, Redis and Cassandra.</li>

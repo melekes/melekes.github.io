@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tmux on Home on Rails</title>
@@ -21,17 +21,11 @@
       <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
 can see, most of the editors and terminals now support TrueColor (16 million
 colors).&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>
     </item>
     

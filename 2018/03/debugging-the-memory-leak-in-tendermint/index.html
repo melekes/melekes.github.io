@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,7 +62,6 @@
   <h1>Debugging the Memory Leak in Tendermint</h1>
   <time datetime=2018-03-03T13:20:11&#43;0400 class="post-date">Sat, Mar 3, 2018</time>
   <p><em>This article was originally published on <a href="https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420">Medium</a>.</em></p>
-
 <p>I have spent the last week looking for clues and writing test cases in order to
 find and fix the memory leak in
 <a href="https://github.com/tendermint/tendermint/">Tendermint</a>. For those of you who
@@ -61,15 +69,11 @@ don’t know, Tendermint Core is a Byzantine Fault Tolerant (BFT) middleware tha
 takes a state transition machine — written in any programming language — and
 securely replicates it on many machines. It is also the foundation of
 <a href="https://cosmos.network/">Cosmos</a> — our solution for scaling blockchains.</p>
-
 <p>Finding a memory leak in Go is not an easy task. However, there is a common set
 of questions, answers to which will hopefully help you identify the source of a
 leak. Here is the list:</p>
-
-<h2 id="detecting-troubleshooting-and-fixing-a-memory-leak-in-go">Detecting, Troubleshooting, and Fixing a Memory Leak in Go</h2>
-
+<h2 id="detecting-troubleshooting-and-fixing-a-memory-leak-ingo">Detecting, Troubleshooting, and Fixing a Memory Leak in Go</h2>
 <p>The immediate questions to ask are:</p>
-
 <ul>
 <li>Where is memory leaking to? (<code>go tool pprof</code> with <code>-base</code> flag)</li>
 <li>Why is new memory being allocated? (code specific)</li>
@@ -79,44 +83,32 @@ leak. Here is the list:</p>
 <li>If the number of goroutines is not growing, what object(s) hold a reference
 to the leaking memory? (<code>go tool pprof</code> with <code>-base</code> flag and reading code)</li>
 </ul>
-
 <p>If you want to know the whole story, please keep reading.</p>
-
 <h2 id="part-1-discovery">Part 1. Discovery</h2>
-
 <p>It all started with one of our users <a href="https://github.com/cosmos/gaia/issues/108">reporting a memory
 leak</a> (thanks Martin), while he was
 trying to sync with the latest testnet (<code>gaia-2</code>). And 615MB after just a few
 minutes at block ~230k certainly does sound like one. Jeez!</p>
-
 <p>First thing I did is try to replicate this manually by spinning up a new node
 and connecting to the same testnet. I took advantage of existing
 <code>http://localhost:46657/write_heap_profile?filename=_</code> RPC endpoint and created
 two heap dumps: one at the start, another after approximately 10 minutes of
 syncing. Then I compared them using <code>go tool pprof</code>.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">go tool pprof -base /tmp/mem1.mprof /tmp/mem2.mprof</code></pre></div>
-
 <p>Immediately I noticed <a href="https://github.com/cosmos/gaia/issues/108#issuecomment-358742047">a lot of
 memory</a> is
 occupied by <code>newChannel</code> and <code>RepeatTimer</code>. The trail went all the way up to
 the <code>reconnectToPeer</code> function. That was weird because we’re not creating any
 new peers (some of them were just failing due to timeouts and Tendermint tried
 to reconnect).</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2018-03-03-debugging-the-memory-leak-in-tendermint/1.png" alt="" title=""/>
-<img class="img-rounded" src="http://homeonrails.com/images/posts/2018-03-03-debugging-the-memory-leak-in-tendermint/2.png" alt="" title=""/></p>
-
-<h2 id="part-2-mistake">Part 2. Mistake</h2>
-
+<!-- raw HTML omitted -->
+<h2 id="part-2mistake">Part 2. Mistake</h2>
 <p>Here I made a mistake. I thought I pinpointed the exact place where the memory
 is leaking. So I went and wrote a test case for <code>p2p/Switch</code>, where I create a
 peer, close the connection (simulate a timeout), wait until Tendermint
 reconnects and repeat this 100 times. Before and after, I took snapshots of the
 heap and later used them to find where memory is going.</p>
-
 <p>The test-case looked like this:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// memory heap before
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Create</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#f92672">/</span><span style="color:#a6e22e">tmp</span><span style="color:#f92672">/</span><span style="color:#a6e22e">mem1</span>.<span style="color:#a6e22e">mprof</span><span style="color:#960050;background-color:#1e0010">”</span>)
 <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
@@ -126,9 +118,9 @@ heap and later used them to find where memory is going.</p>
 <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">Close</span>()
 
 <span style="color:#75715e">// create a peer
-</span><span style="color:#75715e">// simulate failure by closing the connection
-</span><span style="color:#75715e">// wait until Tendermint reconnects to peer
-</span><span style="color:#75715e">// repeat 100 times
+</span><span style="color:#75715e"></span><span style="color:#75715e">// simulate failure by closing the connection
+</span><span style="color:#75715e"></span><span style="color:#75715e">// wait until Tendermint reconnects to peer
+</span><span style="color:#75715e"></span><span style="color:#75715e">// repeat 100 times
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">// call GC manually
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">runtime</span>.<span style="color:#a6e22e">GC</span>()
@@ -140,52 +132,40 @@ heap and later used them to find where memory is going.</p>
 }
 <span style="color:#a6e22e">pprof</span>.<span style="color:#a6e22e">WriteHeapProfile</span>(<span style="color:#a6e22e">f</span>)
 <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">Close</span>()</code></pre></div>
-
 <p>Indeed, the test showed leaking <code>newChannel</code> and <code>RepeatTimer</code>. But I still had
 no clue about why this was happening. I spent a few days reading various
 resources and source code, trying different instruments and <a href="https://stackoverflow.com/questions/48499573/is-there-a-way-to-know-who-holds-a-reference-to-an-object-in-go">asking
 people</a>
 for advice on StackOverflow.</p>
-
 <p>One advice was particularly interesting: <strong>look for running goroutines</strong>. So at the
 end of the test, I added:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>)
 <span style="color:#a6e22e">pprof</span>.<span style="color:#a6e22e">Lookup</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">goroutine</span><span style="color:#960050;background-color:#1e0010">”</span>).<span style="color:#a6e22e">WriteTo</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stdout</span>, <span style="color:#ae81ff">1</span>)</code></pre></div>
-
 <p><em>In the process, I also discovered a great
 tool — <a href="https://github.com/fortytw2/leaktest">leaktest</a>, which does almost the
 same, except it removes runtime and testing related goroutines, so it’s easy to
 spot leaking goroutines. Plus it makes a test fail if in the end there are
 still some goroutines running.</em></p>
-
 <p>No useful results. However, now I knew it was not goroutines that were the
 issue. I figured out there must be something wrong with my test case. Of
 course! How could I be so stupid? The culprit was testing using <code>TestReactor</code>
 (<a href="https://martinfowler.com/articles/mocksArentStubs.html">spy</a>), which <a href="https://github.com/tendermint/tendermint/blob/747b73cb95dab52ee1076ce83dcc92dca86ef93a/p2p/switch_test.go#L73">keeps track of peers</a> and <a href="https://github.com/tendermint/tendermint/blob/747b73cb95dab52ee1076ce83dcc92dca86ef93a/p2p/switch_test.go#L67">does not remove them</a>.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">tr</span>.<span style="color:#a6e22e">peersAdded</span> = append(<span style="color:#a6e22e">tr</span>.<span style="color:#a6e22e">peersAdded</span>, <span style="color:#a6e22e">peer</span>)</code></pre></div>
-
 <p><code>TestReactor</code> was the one holding reference to all peers (both added and
 removed). This is why Go was not able to garbage collect them.</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/Ti3mWTKXIgk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
 
 <p>The mistake I was talking above was <strong>jumping to a unit test instead of writing
 an integration test</strong>. Then it all became clear. I knew what I needed to do. I
 should have written the same test case but for the whole program (basically
 wrapping <code>main.main()</code>) rather than something, which is using a <a href="https://martinfowler.com/articles/mocksArentStubs.html">spy</a>
 (<code>TestReactor</code>).</p>
-
-<h2 id="part-3-happy-ending">Part 3. Happy Ending</h2>
-
+<h2 id="part-3-happyending">Part 3. Happy Ending</h2>
 <p>In case of Tendermint, the entry point (analogue of <code>main.main()</code>) is creating
 and running a <code>Node</code>.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// create &amp; start node
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">n</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">DefaultNewNode</span>(<span style="color:#a6e22e">config</span>, <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">TestingLogger</span>())
 <span style="color:#f92672">...</span>
@@ -197,7 +177,7 @@ and running a <code>Node</code>.</p>
 <span style="color:#a6e22e">pprof</span>.<span style="color:#a6e22e">WriteHeapProfile</span>(<span style="color:#a6e22e">f</span>)
 <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">Close</span>()
 <span style="color:#75715e">// stop a peer 100 times
-</span><span style="color:#75715e">// call GC manually
+</span><span style="color:#75715e"></span><span style="color:#75715e">// call GC manually
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">runtime</span>.<span style="color:#a6e22e">GC</span>()
 <span style="color:#75715e">// memory heap after
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Create</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#f92672">/</span><span style="color:#a6e22e">tmp</span><span style="color:#f92672">/</span><span style="color:#a6e22e">mem2</span>.<span style="color:#a6e22e">mprof</span><span style="color:#960050;background-color:#1e0010">”</span>)
@@ -211,36 +191,27 @@ and running a <code>Node</code>.</p>
 <span style="color:#75715e">// dump all running goroutines
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>)
 <span style="color:#a6e22e">pprof</span>.<span style="color:#a6e22e">Lookup</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">goroutine</span><span style="color:#960050;background-color:#1e0010">”</span>).<span style="color:#a6e22e">WriteTo</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stdout</span>, <span style="color:#ae81ff">1</span>)</code></pre></div>
-
 <p>2 minutes later I discovered the real reason:</p>
-
 <pre><code>114 @ 0x42f2bc 0x42f3ae 0x440794 0x4403b9 0x468002 0x9fe32d 0x9ff78f 0xa025ed 0x45e571
 # 0x4403b8 sync.runtime_Semacquire+0x38 /usr/lib/go-1.9/src/runtime/sema.go:56
 # 0x468001 sync.(*WaitGroup).Wait+0x71 /usr/lib/go-1.9/src/sync/waitgroup.go:131
 # 0x9fe32c github.com/tendermint/tendermint/vendor/github.com/tendermint/tmlibs/clist.(*CList).FrontWait+0x2c /home/vagrant/go/src/github.com/tendermint/tendermint/vendor/github.com/tendermint/tmlibs/clist/clist.go:233
 # 0x9ff78e github.com/tendermint/tendermint/mempool.(*Mempool).TxsFrontWait+0x2e /home/vagrant/go/src/github.com/tendermint/tendermint/mempool/mempool.go:184
 # 0xa025ec github.com/tendermint/tendermint/mempool.(*MempoolReactor).broadcastTxRoutine+0x25c /home/vagrant/go/src/github.com/tendermint/tendermint/mempool/reactor.go:120
-</code></pre>
-
-<p><code>MempoolReactor</code> creates a broadcast routine for each peer. It can block on an
+</code></pre><p><code>MempoolReactor</code> creates a broadcast routine for each peer. It can block on an
 empty <code>CList</code> forever unless there are transactions coming in. And since there
 are no transactions during sync, this goroutine will just sit there, holding
 onto the peer too. If we’re constantly reconnecting to some peer, old instances
 are not garbage collected, leading to the memory leak.</p>
-
 <p>The leak was <a href="https://github.com/tendermint/tendermint/pull/1173">successfully
 fixed</a> and included in the
 next release of Tendermint (0.16).</p>
-
 <p><strong>Lessons learned</strong>:</p>
-
 <ul>
 <li>avoid unnecessary blocking</li>
 <li>use leaktest in integration tests (especially if code is spawning new goroutines)</li>
 </ul>
-
 <p>Resources:</p>
-
 <ul>
 <li><a href="https://medium.com/golangspec/goroutine-leak-400063aef468">Goroutine leak</a></li>
 <li><a href="https://blog.golang.org/profiling-go-programs">Profiling Go Programs</a></li>

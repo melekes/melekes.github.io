@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -55,156 +64,111 @@
   <p>At the end of <a href="http://homeonrails.com/2014/03/ruby-speed-quiz/">Ruby speed quiz</a> I promised to publish an explanation for each case.
 I did not expect that more than 900 Rubyists will give it a shot. I
 was surprised. Thanks to all who participated!</p>
-
 <p>But lets go back to the questions.</p>
-
 <h1 id="1-range-cover-vs-include">1. Range cover? VS include?</h1>
-
 <ul>
 <li><code>('a'..'z').cover?('f')</code></li>
 <li><code>('a'..'z').include?('f')</code></li>
 <li>both run with the similar speed</li>
 </ul>
-
 <p><strong>cover? is faster</strong> because it just finds out if the argument is &gt; than the first and &lt; the second.
 No looping necessary. include?, in opposite, loops through all elements of the range until it
 finds an argument or reaches the end.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>cover?(<span style="color:#e6db74">&#39;f&#39;</span>)
+<span style="color:#f92672">==</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;f&#39;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#e6db74">&#39;f&#39;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;z&#39;</span>
 
-<pre><code class="language-ruby">('a'..'z').cover?('f')
-==&gt; 'a' &lt;= 'f' &amp;&amp; 'f' &lt;= 'z'
-
-('a'..'z').include?('f')
-==&gt; 'a' == 'f'
-==&gt; 'b' == 'f'
-==&gt; 'c' == 'f'
-==&gt; 'd' == 'f'
-==&gt; 'e' == 'f'
-==&gt; 'f' == 'f'
-</code></pre>
-
-<h3 id="caveats">Caveats</h3>
-
+(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;f&#39;</span>)
+<span style="color:#f92672">==</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;f&#39;</span>
+<span style="color:#f92672">==</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;b&#39;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;f&#39;</span>
+<span style="color:#f92672">==</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;c&#39;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;f&#39;</span>
+<span style="color:#f92672">==</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;d&#39;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;f&#39;</span>
+<span style="color:#f92672">==</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;e&#39;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;f&#39;</span>
+<span style="color:#f92672">==</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;f&#39;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;f&#39;</span>
+</code></pre></div><h3 id="caveats">Caveats</h3>
 <p>Be careful when using include? and cover?:</p>
-
-<pre><code class="language-ruby">('a'..'z').include?('blah')
-# =&gt; false
-('a'..'z').cover?('blah')
-# =&gt; true
-'a' &lt; 'blah'
-# =&gt; true
-'blah' &lt; 'z'
-# =&gt; true
-</code></pre>
-
-<p>See <a href="http://gistflow.com/posts/816-range-include-vs-range-cover">this post</a> for detailed benchmarks.</p>
-
-<h1 id="2-blk-call-vs-yield">2. blk.call VS yield</h1>
-
-<pre><code class="language-ruby">def foo
-  yield if block_given?
-end
-foo { puts &quot;Hi from foo&quot; }
-</code></pre>
-
-<pre><code class="language-ruby">def bar(&amp;blk)
-  blk.call
-end
-bar { puts &quot;Hi from bar&quot; }
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;blah&#39;</span>)
+<span style="color:#75715e"># =&gt; false</span>
+(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>cover?(<span style="color:#e6db74">&#39;blah&#39;</span>)
+<span style="color:#75715e"># =&gt; true</span>
+<span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">&lt;</span> <span style="color:#e6db74">&#39;blah&#39;</span>
+<span style="color:#75715e"># =&gt; true</span>
+<span style="color:#e6db74">&#39;blah&#39;</span> <span style="color:#f92672">&lt;</span> <span style="color:#e6db74">&#39;z&#39;</span>
+<span style="color:#75715e"># =&gt; true</span>
+</code></pre></div><p>See <a href="http://gistflow.com/posts/816-range-include-vs-range-cover">this post</a> for detailed benchmarks.</p>
+<h1 id="2-blkcall-vs-yield">2. blk.call VS yield</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">foo</span>
+  <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">if</span> block_given?
+<span style="color:#66d9ef">end</span>
+foo { puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Hi from foo</span><span style="color:#e6db74">&#34;</span> }
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(<span style="color:#f92672">&amp;</span>blk)
+  blk<span style="color:#f92672">.</span>call
+<span style="color:#66d9ef">end</span>
+bar { puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Hi from bar</span><span style="color:#e6db74">&#34;</span> }
+</code></pre></div><ul>
 <li>both run with the similar speed</li>
 </ul>
-
 <p><strong>yield is faster</strong> because the process of procifying a block takes time.</p>
-
 <p>See <a href="http://mudge.name/2011/01/26/passing-blocks-in-ruby-without-block.html">this post</a> for detailed benchmarks.</p>
-
-<h1 id="3-hash-vs-fetch">3. Hash [] VS fetch</h1>
-
-<pre><code class="language-ruby">h = {}
-h[:a] || 1
-</code></pre>
-
-<pre><code class="language-ruby">h = {}
-h.fetch(:a, 1)
-</code></pre>
-
-<ul>
+<h1 id="3-hash--vs-fetch">3. Hash [] VS fetch</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
+h<span style="color:#f92672">[</span><span style="color:#e6db74">:a</span><span style="color:#f92672">]</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">1</span>
+<span style="color:#f92672"></span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
+h<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">:a</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672"></span>)
+</code></pre></div><ul>
 <li>both run with the similar speed</li>
 </ul>
-
 <p>Using brackets to get goodies out of a hash is the same as fetch because they both use the same code to do exactly the same thing.</p>
-
-<pre><code class="language-ruby">if (!RHASH(hash)-&gt;ntbl || !st_lookup(RHASH(hash)-&gt;ntbl, key, &amp;val)) {
-</code></pre>
-
-<p>It checks that the hash is not empty and tries to find the value using a
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>ntbl <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>st_lookup(<span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>ntbl, key, <span style="color:#f92672">&amp;</span>val)) {
+</code></pre></div><p>It checks that the hash is not empty and tries to find the value using a
 given key.</p>
-
-<h1 id="4-define-method-vs-class-eval-definition-not-call-speed">4. define_method VS class_eval (definition, NOT call speed)</h1>
-
-<pre><code class="language-ruby">class A
-  100.times do |i|
-    define_method(&quot;foo_#{i}&quot;) { 10.times.map { &quot;foo&quot;.length } }
-  end
-end
-</code></pre>
-
-<pre><code class="language-ruby">class B
-  100.times do |i|
-    class_eval 'def bar_#{i}; 10.times.map { &quot;foo&quot;.length }; end'
-  end
-end
-</code></pre>
-
-<ul>
+<h1 id="4-definemethod-vs-classeval-definition-not-call-speed">4. define_method VS class_eval (definition, NOT call speed)</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>
+  <span style="color:#ae81ff">100</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
+    define_method(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">foo_</span><span style="color:#e6db74">#{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) { <span style="color:#ae81ff">10</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times<span style="color:#f92672">.</span>map { <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">foo</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>length } }
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">B</span>
+  <span style="color:#ae81ff">100</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
+    class_eval <span style="color:#e6db74">&#39;def bar_#{i}; 10.times.map { &#34;foo&#34;.length }; end&#39;</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><ul>
 <li>both run with the similar speed</li>
 </ul>
-
-<p><strong>Define method is faster</strong> because you don&rsquo;t have to eval the class and then define a method on it. You are already in the class scope. Also on each call to class_eval, MRI creates a new parser and parses the string. In the define_method case, the parser is only run once.</p>
-
-<p>However, it&rsquo;s not that simple. Yes, define_method creates the method faster. But after creation, a short method created with class_eval is usually faster than one created with define_method. That is why you still can find many class_eval instructions
-in Rails. These are places where run (not startup) speed matters. So, it&rsquo;s worthwhile to chose based on your use case.</p>
-
+<p><strong>Define method is faster</strong> because you don't have to eval the class and then define a method on it. You are already in the class scope. Also on each call to class_eval, MRI creates a new parser and parses the string. In the define_method case, the parser is only run once.</p>
+<p>However, it's not that simple. Yes, define_method creates the method faster. But after creation, a short method created with class_eval is usually faster than one created with define_method. That is why you still can find many class_eval instructions
+in Rails. These are places where run (not startup) speed matters. So, it's worthwhile to chose based on your use case.</p>
 <p>See <a href="http://tenderlovemaking.com/2013/03/03/dynamic_method_definitions.html">this post</a> for detailed benchmarks.</p>
-
 <h1 id="5-super-with-or-without-arguments">5. super with OR without arguments</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
+ <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+   puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">#{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+ <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby">class Parent
- def bar(a, b)
-   puts &quot;#{a} - #{b}&quot;
- end
-end
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Child</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">Parent</span>
+ <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+   <span style="color:#66d9ef">super</span>
+ <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Child</span><span style="color:#f92672">.</span>new
+c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#ae81ff">2</span><span style="color:#f92672"></span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+    puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">#{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
 
-class Child &lt; Parent
- def bar(a, b)
-   super
- end
-end
-c = Child.new
-c.bar(1, 2)
-</code></pre>
-
-<pre><code class="language-ruby">class Parent
-  def bar(a, b)
-    puts &quot;#{a} - #{b}&quot;
-  end
-end
-
-class Child &lt; Parent
-  def bar(a, b)
-    super(a, b)
-  end
-end
-c = Child.new
-c.bar(1, 2)
-</code></pre>
-
-<ul>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Child</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">Parent</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+    <span style="color:#66d9ef">super</span>(a, b)
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Child</span><span style="color:#f92672">.</span>new
+c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#ae81ff">2</span><span style="color:#f92672"></span>)
+</code></pre></div><ul>
 <li>both run with the similar speed</li>
 </ul>
-
 <p>Calling super without arguments passes any arguments along that were passed through to the calling method. So it deals with arguments anyways.</p>
 </div>
 

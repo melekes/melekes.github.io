@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -52,82 +61,53 @@
     <div class="post">
   <h1>Заметка о безопасности</h1>
   <time datetime=2017-12-11T23:48:31-0500 class="post-date">Mon, Dec 11, 2017</time>
-  
-
-<p><a href="https://medium.com/@anton.kalyaev/personal-security-in-the-age-of-cryptocurrencies-904c9bedae01">English</a></p>
-
+  <p><a href="https://medium.com/@anton.kalyaev/personal-security-in-the-age-of-cryptocurrencies-904c9bedae01">English</a></p>
 <p>Недавно начал все больше интересоваться темой безопасности. Наверное, я, как и
 многие люди из поколения Y, выросшие во времена бума компьютерных технологий,
 Сноудена и fsociety всегда был параноиком по части безопасности, но, признаться
 честно, я мало что делал для обеспечения ее как таковой. AdBlock, HTTPS
 Everywhere, и еще пара плагинов для Chrome - джентльменский набор нуба, так
 сказать.</p>
-
 <p>Но грядут новые времена. Времена, где <a href="https://www.coindesk.com/nicehash-ceo-confirms-bitcoin-theft-worth-78-million/">твои криптоденежки можно увести у тебя
 из под носа просто подсунув тебе фейковую версию
 кошелька</a>.
 Поэтому лучше предпринять некие меры, которые, конечно, не гарантируют 100%
 безопасности, но хотя бы значительно уменьшают вектор атаки.</p>
-
 <p>DISCLAIMER: я ну вот вообще не эксперт в безопасности, поэтому запускайте,
 устанавливайте и используйте перечисленные инструменты на свой страх и риск.</p>
-
 <h2 id="mac">Mac</h2>
-
 <p>Базовое руководство (обязательно): <a href="https://github.com/drduh/macOS-Security-and-Privacy-Guide">A practical guide to securing macOS</a></p>
-
 <p>Плюс шаги, которых нет в ^^^: <a href="https://www.macworld.co.uk/feature/mac/22-tricks-improve-mac-security-best-tips-3643100/">https://www.macworld.co.uk/feature/mac/22-tricks-improve-mac-security-best-tips-3643100/</a></p>
-
 <p>Советы от John Galt: <a href="https://discussions.apple.com/docs/DOC-8841">https://discussions.apple.com/docs/DOC-8841</a></p>
-
 <p>Немного устаревшая, но все еще полезная статья с советами от NSA: <a href="https://www.macworld.com/article/2048160/how-the-nsa-snoop-proofs-its-macs.html">https://www.macworld.com/article/2048160/how-the-nsa-snoop-proofs-its-macs.html</a></p>
-
 <p>Выключите Java и удалите Flash Player: <a href="https://www.hackread.com/tips-to-secure-mac-against-hackers/">https://www.hackread.com/tips-to-secure-mac-against-hackers/</a></p>
-
 <blockquote>
 <p>Как увеличить шансы найти спизженный мак?</p>
 </blockquote>
-
 <p>Find My Mac (обратите внимание на то, что гостевой аккаунт должен быть
 включен). Неужели воры до сих пор не догадываются об этом!? Более интересные
 проекты <a href="http://orbicule.com/undercover/mac/">http://orbicule.com/undercover/mac/</a> и <a href="https://www.preyproject.com/">https://www.preyproject.com/</a>. Но
 увы, они не работают с FileVault 2 (встроенным шифрованием).</p>
-
 <p><strong>Malware detector и другие полезности</strong></p>
-
 <p><a href="https://objective-see.com/products.html">Objective See</a></p>
-
 <p><strong>Network monitor</strong></p>
-
 <p><a href="https://www.obdev.at/products/littlesnitch/index.html">Little Snitch</a></p>
-
-<h2 id="поисковый-движок">Поисковый движок</h2>
-
+<h2 id="-">Поисковый движок</h2>
 <p><a href="https://duckduckgo.com/">DuckDuckGo</a></p>
-
 <h2 id="vpn">VPN</h2>
-
 <p><a href="https://nordvpn.com/">NordVPN</a></p>
-
 <p><a href="https://twitter.com/andy_one">@andy_one</a> Некотролируемый VPN это не про
 безопасность совсем. AWS/DO/Azure/GoogleCE + Algo VPN.</p>
-
 <h2 id="secure-communication">Secure communication</h2>
-
 <ul>
 <li><a href="https://www.signal.org/">Signal</a></li>
 <li><a href="https://protonmail.com/">ProtonMail</a></li>
 <li><a href="https://ssd.eff.org/en/playlist/mac-user#how-use-pgp-mac-os-x">PGP</a></li>
 </ul>
-
-<h2 id="браузер">Браузер</h2>
-
+<h2 id="heading">Браузер</h2>
 <p>Chrome или Firefox</p>
-
 <p>Еще хочу попробовать <a href="https://brave.com/">Brave</a>.</p>
-
-<h2 id="плагины">Плагины</h2>
-
+<h2 id="heading1">Плагины</h2>
 <ul>
 <li><a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a></li>
 <li><a href="https://www.ublock.org/">uBlock</a></li>
@@ -137,60 +117,41 @@ Everywhere, и еще пара плагинов для Chrome - джентльм
 <li><a href="https://github.com/409H/EtherAddressLookup">EtherAddressLookup (для крипты)</a></li>
 <li><a href="https://metamask.io">MetaMask (для крипты)</a></li>
 </ul>
-
 <p>Если ScriptSafe кажется слишком радикальным движением, то можно поступить как
 я: создать два профиля (1) стандартный для проверенных ресурсов (2) безопасный
 c ScriptSafe, отключенным Javascript и Cookies.</p>
-
 <h2 id="ubuntu">Ubuntu</h2>
-
 <p>Все еще думаю, а не вернуться ли мне к старому доброму Linux. Купить Lenovo и
 накатить Ubuntu. Что интересно, руководств в интернете меньше для Linux. Значит
 ли это, что его труднее взломать? Наверное нет, просто количество пользователей
 на порядок меньше.</p>
-
 <p>Базовое руководство (обязательно): <a href="https://spreadprivacy.com/linux-privacy-tips/">https://spreadprivacy.com/linux-privacy-tips/</a></p>
-
 <p>Набор утилит: <a href="https://help.ubuntu.com/community/Security">https://help.ubuntu.com/community/Security</a></p>
-
 <h2 id="iphone">iPhone</h2>
-
 <ul>
 <li><a href="https://spreadprivacy.com/iphone-privacy-tips/">How To Protect Your Privacy On iPhone</a></li>
 </ul>
-
 <h2 id="android">Android</h2>
-
 <ul>
 <li><a href="https://spreadprivacy.com/android-privacy-tips/">How To Protect Your Privacy On Android</a></li>
 <li><a href="https://www.androidauthority.com/best-security-apps-android-687799/">10 best security apps for Android that aren’t antivirus apps</a></li>
 </ul>
-
 <h2 id="2fa">2FA</h2>
-
 <p><a href="https://www.yubico.com/">Yubikey</a> или <a href="https://crp.to">OnlyKey</a></p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/r8tHr3p14BU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <h2 id="password-manager">Password manager</h2>
-
 <p><a href="https://www.keepassx.org/">KeePassX</a>  или <a href="https://1password.com/">1Password</a></p>
-
 <p>Большинство 2FA могут быть использованы в качестве замены менеджера паролей или
 как дополнение к нему
 <a href="https://www.yubico.com/why-yubico/for-individuals/password-managers/">1</a>,
 <a href="https://crp.to/2016/10/is-the-entire-password-strategy-flawed-the-short-answer-yes/">2</a>.</p>
-
 <h2 id="tor">Tor</h2>
-
 <p><a href="https://www.torproject.org/">Tor</a> объединяет в себе браузер, мессенджер и сеть.</p>
-
-<h2 id="другие-ос">Другие ОС</h2>
-
+<h2 id="-1">Другие ОС</h2>
 <p><a href="https://www.qubes-os.org/">Qubes OS</a></p>
 
 </div>

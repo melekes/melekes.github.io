@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -55,19 +64,16 @@
   <p>Решил начать новую серию постов. Каждая статья будет представлять из себя набор
 советов, инструментов, скриптов или просто умных мыслей из определенной книги.
 Читать книгу или нет? Это решать вам самим.</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2015-05-23-zamietki-na-poliakh-proghrammirovaniie-v-erlang/book.jpg" alt=""/ width="304" title="Программирование в Erlang"></p>
-
+<p>&lt;img class=&quot;img-rounded&rdquo; src=&rdquo;/images/posts/2015-05-23-zamietki-na-poliakh-proghrammirovaniie-v-erlang/book.jpg&rdquo; alt=&rdquo;&quot;/ width=&quot;304&rdquo; title=&quot;Программирование в Erlang&quot;&gt;</p>
 <p>Вот что советуют Франческо Чезарини и Симон Томпсон в своей книге <a href="http://www.ozon.ru/context/detail/id/30671701/?partner=akalyaev">&ldquo;Программирование в Erlang&rdquo;</a>:</p>
-
 <ul>
 <li>не меняйте приоритет процессу (за редким исключением, когда вы точно понимаете что делаете и зачем);</li>
 <li>не пропускайте сообщения в receive;</li>
 <li>не увлекайтесь =/= и =:= (равенство с проверкой по типу) - они засоряют код;</li>
 <li>создавайте процесс на &ldquo;сущность&rdquo; (например, сообщение, входящий файл);</li>
 <li>используйте spawn_link и spawn_monitor, а не <code>link(spawn(...))</code> - первые атомарны;</li>
-<li>не копируйте MaxR / MaxT из модуля в модуль - их нужно выбирать с умом (<a href="http://www.erlang.org/doc/man/supervisor.html">http://www.erlang.org/doc/man/supervisor.html</a>);</li>
-<li>используйте circuit breakers (<a href="https://github.com/jlouis/fuse">https://github.com/jlouis/fuse</a>, <a href="https://github.com/klarna/circuit_breaker">https://github.com/klarna/circuit_breaker</a>);</li>
+<li>не копируйте MaxR / MaxT из модуля в модуль - их нужно выбирать с умом (<a href="http://www.erlang.org/doc/man/supervisor.html);">http://www.erlang.org/doc/man/supervisor.html);</a></li>
+<li>используйте circuit breakers (<a href="https://github.com/jlouis/fuse">https://github.com/jlouis/fuse</a>, <a href="https://github.com/klarna/circuit_breaker);">https://github.com/klarna/circuit_breaker);</a></li>
 <li>не используйте infinity;</li>
 <li><code>file:write(&quot;/tmp/procs.txt&quot;, erlang:system_info(procs))</code> - дамп информации обо всех процессах;</li>
 <li>не используйте Erlang для передачи больших кусков данных;</li>

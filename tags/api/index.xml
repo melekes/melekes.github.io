@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>api on Home on Rails</title>
@@ -20,7 +20,6 @@
       <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
       <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
 colleagues.&lt;/p&gt;
-
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
 ending by using Fragment caching. Also there is list of tools for
 profiling applications (stackprof, etc.). All techniques are quite

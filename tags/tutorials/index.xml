@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tutorials on Home on Rails</title>
@@ -18,18 +18,16 @@
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/01/signing-git-commits/</guid>
-      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
+      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&#39;а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
 возможны такие смешные поделки как
 &lt;a href=&#34;https://github.com/jayphelps/git-blame-someone-else&#34;&gt;git-blame-someone-else&lt;/a&gt;.
 Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
 действительно вы, прибавляется.&lt;/p&gt;
-
 &lt;p&gt;Github в &lt;a href=&#34;https://github.com/blog/2144-gpg-signature-verification&#34;&gt;апреле прошлого
 года&lt;/a&gt; начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -40,7 +38,7 @@
       <guid>http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
-&lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;ldquo;- I asked myself. Indeed, the majority of source code editors
+&lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;quot;- I asked myself. Indeed, the majority of source code editors
 able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     
@@ -72,8 +70,7 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
-лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
-feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
+лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
@@ -96,7 +93,6 @@ It is intended to help you to validate records count in a given association.&lt;
       
       <guid>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
 Usually it is a parent-children relations. If you are not familiar with such terms

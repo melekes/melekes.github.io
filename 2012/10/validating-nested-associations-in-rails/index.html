@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,7 +62,6 @@
   <h1>Validating nested associations in Rails</h1>
   <time datetime=2012-10-08T00:00:00Z class="post-date">Mon, Oct 8, 2012</time>
   <h2 id="intro">Intro</h2>
-
 <p>Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
 Usually it is a parent-children relations. If you are not familiar with such terms
@@ -61,250 +69,196 @@ as <a href="http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.htm
 or <a href="http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html#M002132">accepts_nested_attributes_for</a>,
 I strongly recommend taking a look at this article <a href="http://rubysource.com/complex-rails-forms-with-nested-attributes/">Complex Rails Forms with Nested Attributes</a>,
 written by <a href="http://xaviershay.com/">Xavier Shay</a>, which will show your how you can create complex forms with Rails.</p>
-
 <h2 id="an-example">An example</h2>
-
 <p>Suppose, we have a model called <code>Company</code>. And the company may have several offices.
 Lets define these two models.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
+  validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
+  has_many <span style="color:#e6db74">:offices</span>
+  accepts_nested_attributes_for <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">allow_destroy</span>: <span style="color:#66d9ef">true</span>
+<span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
-  attr_accessible :name, :offices_attributes
-  validates :name, presence: true
-  has_many :offices
-  accepts_nested_attributes_for :offices, allow_destroy: true
-end
-
-class Company::Office &lt; ActiveRecord::Base
-  attr_accessible :company_id, :name
-  validates :name, presence: true
-  belongs_to :company
-end
-</code></pre>
-
-<p>Both company and office have names. The company could have zero or more offices.</p>
-
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Office</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  attr_accessible <span style="color:#e6db74">:company_id</span>, <span style="color:#e6db74">:name</span>
+  validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
+  belongs_to <span style="color:#e6db74">:company</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>Both company and office have names. The company could have zero or more offices.</p>
 <p>By including <code>accepts_nested_attributes_for</code> it becomes possible to access
 offices attributes inside our <code>Company</code> model.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Company</span><span style="color:#f92672">.</span>create(name: <span style="color:#e6db74">&#39;Mars LLC&#39;</span>)
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">#&lt;Company id: 1, name: &#34;Mars LLC&#34;, created_at: &#34;2012-10-08 19:16:44&#34;, updated_at: &#34;2012-10-08 19:16:44&#34;&gt;</span>
 
-<pre><code class="language-ruby">&gt; c = Company.create(name: 'Mars LLC')
-&gt;   =&gt; #&lt;Company id: 1, name: &quot;Mars LLC&quot;, created_at: &quot;2012-10-08 19:16:44&quot;, updated_at: &quot;2012-10-08 19:16:44&quot;&gt;
+<span style="color:#75715e"># add two new offices</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ name: <span style="color:#e6db74">&#39;North America&#39;</span> }, { name: <span style="color:#e6db74">&#39;Europe&#39;</span> }<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:name</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">North America</span><span style="color:#e6db74">&#34;</span>}, {<span style="color:#e6db74">:name</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Europe</span><span style="color:#e6db74">&#34;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span><span style="color:#75715e">#&lt;Company::Office id: 1, company_id: 1, name: &#34;North America&#34;, created_at: &#34;2012-10-08 19:21:54&#34;, updated_at: &#34;2012-10-08 19:21:54&#34;&gt;, #&lt;Company::Office id: 2, company_id: 1, name: &#34;Europe&#34;, created_at: &#34;2012-10-08 19:21:54&#34;, updated_at: &#34;2012-10-08 19:21:54&#34;&gt;]</span>
 
-# add two new offices
-&gt; c.offices_attributes = [{ name: 'North America' }, { name: 'Europe' }]
-&gt;   =&gt; [{:name=&gt;&quot;North America&quot;}, {:name=&gt;&quot;Europe&quot;}]
-&gt; c.save
-&gt; c.offices
-&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:21:54&quot;&gt;, #&lt;Company::Office id: 2, company_id: 1, name: &quot;Europe&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:21:54&quot;&gt;]
+<span style="color:#75715e"># edit office in North America</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ id: <span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, name: <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">North America (it&#39;s cold out there)</span><span style="color:#e6db74">&#34;</span> }<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:id</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#e6db74">:name</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">North America (it&#39;s cold out there)</span><span style="color:#e6db74">&#34;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span><span style="color:#75715e">#&lt;Company::Office id: 1, company_id: 1, name: &#34;North America (it&#39;s cold out there)&#34;, created_at: &#34;2012-10-08 19:21:54&#34;, updated_at: &#34;2012-10-08 19:25:18&#34;&gt;, #&lt;Company::Office id: 2, company_id: 1, name: &#34;Europe&#34;, created_at: &#34;2012-10-08 19:21:54&#34;, updated_at: &#34;2012-10-08 19:21:54&#34;&gt;]</span>
 
-# edit office in North America
-&gt; c.offices_attributes = [{ id: 1, name: &quot;North America (it's cold out there)&quot; }]
-&gt;   =&gt; [{:id=&gt;1, :name=&gt;&quot;North America (it's cold out there)&quot;}]
-&gt; c.save
-&gt; c.offices
-&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America (it's cold out there)&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:25:18&quot;&gt;, #&lt;Company::Office id: 2, company_id: 1, name: &quot;Europe&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:21:54&quot;&gt;]
-
-# delete an office in Europe
-&gt; c.offices_attributes = [{ id: 2, _destroy: '1' }]
-&gt;   =&gt; [{:id=&gt;2, :_destroy=&gt;&quot;1&quot;}]
-&gt; c.save
-&gt; c.offices
-&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America (it's cold out there)&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:25:18&quot;&gt;]
-</code></pre>
-
-<p>There are two basic options, that you should know when dealing with <code>accepts_nested_attributes_for</code>:</p>
-
+<span style="color:#75715e"># delete an office in Europe</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ id: <span style="color:#ae81ff">2</span><span style="color:#f92672"></span>, <span style="color:#e6db74">_destroy</span>: <span style="color:#e6db74">&#39;1&#39;</span> }<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:id</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">2</span><span style="color:#f92672"></span>, <span style="color:#e6db74">:_destroy</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1</span><span style="color:#e6db74">&#34;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span><span style="color:#75715e">#&lt;Company::Office id: 1, company_id: 1, name: &#34;North America (it&#39;s cold out there)&#34;, created_at: &#34;2012-10-08 19:21:54&#34;, updated_at: &#34;2012-10-08 19:25:18&#34;&gt;]</span>
+</code></pre></div><p>There are two basic options, that you should know when dealing with <code>accepts_nested_attributes_for</code>:</p>
 <ul>
 <li><code>allow_destroy</code> - allows to destroy objects (<code>false</code> by default)</li>
 <li><code>reject_if</code> - rejects the records, based on the given  <code>Proc</code> or
 a <code>Symbol</code> pointing to a method. This one is simular to the <code>Enumerable::reject</code> method (<a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-reject">Doc</a>).</li>
 </ul>
-
 <p>Take a look at the other supported options on <a href="http://apidock.com/rails/ActiveRecord/NestedAttributes/ClassMethods/accepts_nested_attributes_for">apidock.com</a>.</p>
-
 <h3 id="validating-nested-attributes">Validating nested attributes</h3>
-
 <p>Except the basic validation, you can use <code>reject_if</code> option to validate a nested object.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
+  validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
+  has_many <span style="color:#e6db74">:offices</span>
+  accepts_nested_attributes_for <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">allow_destroy</span>: <span style="color:#66d9ef">true</span>, <span style="color:#e6db74">reject_if</span>: <span style="color:#e6db74">:office_name_invalid</span>
 
-<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
-  attr_accessible :name, :offices_attributes
-  validates :name, presence: true
-  has_many :offices
-  accepts_nested_attributes_for :offices, allow_destroy: true, reject_if: :office_name_invalid
+  <span style="color:#66d9ef">private</span>
 
-  private
-
-    def office_name_invalid(attributes)
-      # office name shouldn't start with underscore
-      attributes['name'] =~ /\A_/
-    end
-end
-</code></pre>
-
-<p>The method should return either true (rejects the record) or false.</p>
-
-<pre><code class="language-ruby">&gt; c.offices_attributes = [{ id: 1, name: '_North America'}]
-&gt;   =&gt; [{:id=&gt;1, :name=&gt;&quot;_North America&quot;}]
-&gt; c.save
-&gt; c.offices # no changes
-&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:46:22&quot;&gt;]
-</code></pre>
-
-<p>We could use predefined <code>:all_blank</code> symbol.</p>
-
-<pre><code class="language-ruby">&gt; c.offices_attributes = [{ name: ''}]
-&gt;   =&gt; [{:name=&gt;&quot;&quot;}]
-&gt; c.save
-&gt; c.offices # no changes
-&gt;   =&gt; [#&lt;Company::Office id: 1, company_id: 1, name: &quot;North America&quot;, created_at: &quot;2012-10-08 19:21:54&quot;, updated_at: &quot;2012-10-08 19:46:22&quot;&gt;]
-</code></pre>
-
-<p>Passing <code>:all_blank</code> instead of a Proc will create a proc that will reject a record where all the attributes are blank excluding any value for <code>_destroy</code>.</p>
-
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">office_name_invalid</span>(attributes)
+      <span style="color:#75715e"># office name shouldn&#39;t start with underscore</span>
+      attributes<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;name&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=~</span> <span style="color:#e6db74">/</span><span style="color:#e6db74">\</span><span style="color:#e6db74">A_</span><span style="color:#e6db74">/</span>
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>The method should return either true (rejects the record) or false.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ id: <span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, name: <span style="color:#e6db74">&#39;_North America&#39;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:id</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#e6db74">:name</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">_North America</span><span style="color:#e6db74">&#34;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices <span style="color:#75715e"># no changes</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span><span style="color:#75715e">#&lt;Company::Office id: 1, company_id: 1, name: &#34;North America&#34;, created_at: &#34;2012-10-08 19:21:54&#34;, updated_at: &#34;2012-10-08 19:46:22&#34;&gt;]</span>
+</code></pre></div><p>We could use predefined <code>:all_blank</code> symbol.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ name: <span style="color:#e6db74">&#39;&#39;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:name</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices <span style="color:#75715e"># no changes</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span><span style="color:#75715e">#&lt;Company::Office id: 1, company_id: 1, name: &#34;North America&#34;, created_at: &#34;2012-10-08 19:21:54&#34;, updated_at: &#34;2012-10-08 19:46:22&#34;&gt;]</span>
+</code></pre></div><p>Passing <code>:all_blank</code> instead of a Proc will create a proc that will reject a record where all the attributes are blank excluding any value for <code>_destroy</code>.</p>
 <h3 id="validating-count-of-the-nested-attributes">Validating count of the nested attributes</h3>
-
 <p>Lets add more complexity to our company model and say for example: it <strong>must have at least one
 office</strong> (we usually called it the main office).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 
-<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
-  OFFICES_COUNT_MIN = 1
-
-  attr_accessible :name, :offices_attributes
-  validates :name, presence: true
-  validate do
+  <span style="color:#f92672"></span>attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
+  validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
+  validate <span style="color:#66d9ef">do</span>
     check_offices_number
-  end
-  has_many :offices
-  accepts_nested_attributes_for :offices, allow_destroy: true
+  <span style="color:#66d9ef">end</span>
+  has_many <span style="color:#e6db74">:offices</span>
+  accepts_nested_attributes_for <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">allow_destroy</span>: <span style="color:#66d9ef">true</span>
 
-  private
+  <span style="color:#66d9ef">private</span>
 
-    def offices_count_valid?
-      offices.count &gt;= OFFICES_COUNT_MIN
-    end
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">offices_count_valid?</span>
+      offices<span style="color:#f92672">.</span>count <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">OFFICES_COUNT_MIN</span>
+    <span style="color:#66d9ef">end</span>
 
-    def check_offices_number
-      unless offices_count_valid?
-        errors.add(:base, :offices_too_short, :count =&gt; OFFICES_COUNT_MIN)
-      end
-    end
-end
-</code></pre>
-
-<p>The problem here is that accepts_nested_attributes_for call destroy for child
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">check_offices_number</span>
+      <span style="color:#66d9ef">unless</span> offices_count_valid?
+        errors<span style="color:#f92672">.</span>add(<span style="color:#e6db74">:base</span>, <span style="color:#e6db74">:offices_too_short</span>, <span style="color:#e6db74">:count</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">OFFICES_COUNT_MIN</span>)
+      <span style="color:#66d9ef">end</span>
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>The problem here is that accepts_nested_attributes_for call destroy for child
 objects <strong>AFTER</strong> validation of the parent object. So the user is able to delete
 an office. Of course, later, when the user will try to edit a company,
-he/she will get an error - &ldquo;Company should have at least one office.&rdquo;.</p>
-
-<p><img src="http://homeonrails.com/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process" /></p>
-
-<pre><code class="language-ruby">&gt; c.offices_attributes = [{ id: 1, _destroy: '1' }]
-&gt;   =&gt; [{:id=&gt;1, :_destroy=&gt;&quot;1&quot;}]
-&gt; c.save
-&gt; c.offices
-&gt;   =&gt; []
-</code></pre>
-
-<p>You could try to use standard <code>length</code> validator
+he/she will get an error - &ldquo;Company should have at least one office.&quot;.</p>
+<p><img src="http://homeonrails.com/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ id: <span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#e6db74">_destroy</span>: <span style="color:#e6db74">&#39;1&#39;</span> }<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:id</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#e6db74">:_destroy</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1</span><span style="color:#e6db74">&#34;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span><span style="color:#f92672">]</span>
+</code></pre></div><p>You could try to use standard <code>length</code> validator
 (e.g. <code>validates :offices, length: { minimum: OFFICES_COUNT_MIN }</code>), and it actually works,
 but again, it does not take into account the fact that some of the records may
 be marked for destruction.</p>
-
 <p>The things are getting a little tricky here.
 To sort out the problem, we need to understand what <code>offices_attributes=</code> method does.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># accepts_nested_attributes_for generates for us this method</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">offices_attributes</span><span style="color:#f92672">=</span>(attributes)
+  <span style="color:#75715e"># @note the name of the method to call may vary depending on the type of association</span>
+  <span style="color:#75715e"># @see https://github.com/rails/rails/blob/master/activerecord/lib/active_record/nested_attributes.rb#L285</span>
+  assign_nested_attributes_for_collection_association(<span style="color:#e6db74">:offices</span>, attributes, mass_assignment_options)
+<span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby"># accepts_nested_attributes_for generates for us this method
-def offices_attributes=(attributes)
-  # @note the name of the method to call may vary depending on the type of association
-  # @see https://github.com/rails/rails/blob/master/activerecord/lib/active_record/nested_attributes.rb#L285
-  assign_nested_attributes_for_collection_association(:offices, attributes, mass_assignment_options)
-end
-
-def assign_nested_attributes_for_collection_association
-  ...
-  if !call_reject_if(association_name, attributes) # if the record passed
-    # update a record with the attributes or marks it for destruction
-    assign_to_or_mark_for_destruction(existing_record, attributes, options[:allow_destroy], assignment_opts)
-  end
-  ...
-end
-</code></pre>
-
-<p>As you can see from the code above, our method marks offices records (with <code>_destroy</code> attribute) for destruction.
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">assign_nested_attributes_for_collection_association</span>
+  <span style="color:#f92672">...</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>call_reject_if(association_name, attributes) <span style="color:#75715e"># if the record passed</span>
+    <span style="color:#75715e"># update a record with the attributes or marks it for destruction</span>
+    assign_to_or_mark_for_destruction(existing_record, attributes, options<span style="color:#f92672">[</span><span style="color:#e6db74">:allow_destroy</span><span style="color:#f92672">]</span>, assignment_opts)
+  <span style="color:#66d9ef">end</span>
+  <span style="color:#f92672">...</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>As you can see from the code above, our method marks offices records (with <code>_destroy</code> attribute) for destruction.
 When the company validates offices count, the offices relation includes <strong>all</strong> the records.
 So, all we need to do is to select only those records not marked for destruction.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  <span style="color:#f92672">...</span>
 
-<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
-  ...
+  <span style="color:#66d9ef">private</span>
 
-  private
-
-    def offices_count_valid?
-      offices.reject(&amp;:marked_for_destruction?).count &gt;= OFFICES_COUNT_MIN
-    end
-end
-</code></pre>
-
-<p>Now we&rsquo;ve got the actual number of the company&rsquo;s offices. Therefore, we will get an error while trying to delete the last office in North America:</p>
-
-<pre><code class="language-ruby">&gt; c.offices_attributes = [{ id: 1, _destroy: '1' }]
-&gt;   =&gt; [{:id=&gt;1, :_destroy=&gt;&quot;1&quot;}]
-&gt; c.save
-&gt; c.errors
-&gt;   =&gt; #&lt;ActiveModel::Errors:0x000000038fc840 @base=#&lt;Company id: 1, name: &quot;Mars LLC&quot;, created_at: &quot;2012-10-08 19:16:44&quot;, updated_at: &quot;2012-10-08 19:16:44&quot;&gt;, @messages={:base=&gt;[&quot;Company should have at least one office.&quot;]}&gt;
-</code></pre>
-
-<p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I&rsquo;ve added <a href="http://homeonrails.com/2012/10/associationcountvalidator">one more for this case</a>.</p>
-
-<p>If you know a better solution, don&rsquo;t hesitate to <a href="http://homeonrails.com/about.html">contact me</a> or simply leave a comment below.</p>
-
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">offices_count_valid?</span>
+      offices<span style="color:#f92672">.</span>reject(<span style="color:#f92672">&amp;</span><span style="color:#e6db74">:marked_for_destruction?</span>)<span style="color:#f92672">.</span>count <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">OFFICES_COUNT_MIN</span>
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>Now we've got the actual number of the company's offices. Therefore, we will get an error while trying to delete the last office in North America:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ id: <span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#e6db74">_destroy</span>: <span style="color:#e6db74">&#39;1&#39;</span> }<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:id</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#e6db74">:_destroy</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1</span><span style="color:#e6db74">&#34;</span>}<span style="color:#f92672">]</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>errors
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">#&lt;ActiveModel::Errors:0x000000038fc840 @base=#&lt;Company id: 1, name: &#34;Mars LLC&#34;, created_at: &#34;2012-10-08 19:16:44&#34;, updated_at: &#34;2012-10-08 19:16:44&#34;&gt;, @messages={:base=&gt;[&#34;Company should have at least one office.&#34;]}&gt;</span>
+</code></pre></div><p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I've added <a href="http://homeonrails.com/2012/10/associationcountvalidator">one more for this case</a>.</p>
+<p>If you know a better solution, don't hesitate to <a href="http://homeonrails.com/about.html">contact me</a> or simply leave a comment below.</p>
 <h3 id="validating-presence-of-the-parent-object">Validating presence of the parent object</h3>
-
 <p>The last thing I wanna share with you is how you can add <code>presence</code> validator
 to the parent association inside the nested model.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Office</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  attr_accessible <span style="color:#e6db74">:company_id</span>, <span style="color:#e6db74">:name</span>
 
-<pre><code class="language-ruby">class Company::Office &lt; ActiveRecord::Base
-  attr_accessible :company_id, :name
+  validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># add validator to company</span>
+  validates <span style="color:#e6db74">:company</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
 
-  validates :name, presence: true
-  # add validator to company
-  validates :company, presence: true
-
-  belongs_to :company
-end
-</code></pre>
-
-<p>We want to be sure that the office always have a corresponding company. But this fails on creating a company.</p>
-
-<pre><code class="language-ruby">&gt; c = Company.create(name: 'Adidas America Inc', offices_attributes: [{ name: 'LS' }])
-&gt;   =&gt; #&lt;Company id: nil, name: &quot;Adidas America Inc&quot;, created_at: nil, updated_at: nil&gt;
-&gt; c.errors
-&gt;   =&gt; #&lt;ActiveModel::Errors:0x000000036387a8 @base=#&lt;Company id: nil, name: &quot;Adidas America Inc&quot;, created_at: nil, updated_at: nil&gt;, @messages={:&quot;offices.company&quot;=&gt;[&quot;can't be blank&quot;]}&gt;
-</code></pre>
-
-<p>The solution here is to use <code>inverse_of</code> option. See the options section
+  belongs_to <span style="color:#e6db74">:company</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>We want to be sure that the office always have a corresponding company. But this fails on creating a company.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Company</span><span style="color:#f92672">.</span>create(name: <span style="color:#e6db74">&#39;Adidas America Inc&#39;</span>, <span style="color:#e6db74">offices_attributes</span>: <span style="color:#f92672">[</span>{ name: <span style="color:#e6db74">&#39;LS&#39;</span> }<span style="color:#f92672">]</span>)
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">#&lt;Company id: nil, name: &#34;Adidas America Inc&#34;, created_at: nil, updated_at: nil&gt;</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>errors
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">#&lt;ActiveModel::Errors:0x000000036387a8 @base=#&lt;Company id: nil, name: &#34;Adidas America Inc&#34;, created_at: nil, updated_at: nil&gt;, @messages={:&#34;offices.company&#34;=&gt;[&#34;can&#39;t be blank&#34;]}&gt;</span>
+</code></pre></div><p>The solution here is to use <code>inverse_of</code> option. See the options section
 in <code>belongs_to</code>, <code>has_one</code> or <code>has_many</code> <a href="http://apidock.com/rails/ActiveRecord/Associations/ClassMethods/belongs_to">documentation</a>.
 Note: it does not work in combination with the <code>polymorphic</code> option.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  <span style="color:#f92672">...</span>
+  has_many <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">inverse_of</span>: <span style="color:#e6db74">:company</span>
+  <span style="color:#f92672">...</span>
+<span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby">class Company &lt; ActiveRecord::Base
-  ...
-  has_many :offices, inverse_of: :company
-  ...
-end
-
-class Company::Office &lt; ActiveRecord::Base
-  ...
-  belongs_to :company, inverse_of: :offices
-  ...
-end
-</code></pre>
-
-<p>Now we are able to create a company instance:</p>
-
-<pre><code class="language-ruby">&gt; c = Company.create(name: 'Adidas America Inc', offices_attributes: [{ name: 'LS' }])
-&gt;   =&gt; #&lt;Company id: 2, name: &quot;Adidas America Inc&quot;, created_at: &quot;2012-10-09 07:36:07&quot;, updated_at: &quot;2012-10-09 07:36:07&quot;&gt;
-&gt; c.offices
-&gt;   =&gt; #&lt;Company::Office id: 6, company_id: 2, name: &quot;LS&quot;, created_at: &quot;2012-10-09 07:36:07&quot;, updated_at: &quot;2012-10-09 07:36:07&quot;&gt;
-</code></pre>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Office</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+  <span style="color:#f92672">...</span>
+  belongs_to <span style="color:#e6db74">:company</span>, <span style="color:#e6db74">inverse_of</span>: <span style="color:#e6db74">:offices</span>
+  <span style="color:#f92672">...</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>Now we are able to create a company instance:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Company</span><span style="color:#f92672">.</span>create(name: <span style="color:#e6db74">&#39;Adidas America Inc&#39;</span>, <span style="color:#e6db74">offices_attributes</span>: <span style="color:#f92672">[</span>{ name: <span style="color:#e6db74">&#39;LS&#39;</span> }<span style="color:#f92672">]</span>)
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">#&lt;Company id: 2, name: &#34;Adidas America Inc&#34;, created_at: &#34;2012-10-09 07:36:07&#34;, updated_at: &#34;2012-10-09 07:36:07&#34;&gt;</span>
+<span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices
+<span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">#&lt;Company::Office id: 6, company_id: 2, name: &#34;LS&#34;, created_at: &#34;2012-10-09 07:36:07&#34;, updated_at: &#34;2012-10-09 07:36:07&#34;&gt;</span>
+</code></pre></div>
 </div>
 
 <h2>Comments</h2>

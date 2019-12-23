@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Rails</title>
@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 20 Oct 2019 11:54:29 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 10:54:29 -0500</lastBuildDate>
     
 	<atom:link href="http://homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>One month in Japan</title>
+      <link>http://homeonrails.com/2019/10/japan/</link>
+      <pubDate>Mon, 21 Oct 2019 10:54:29 -0500</pubDate>
+      
+      <guid>http://homeonrails.com/2019/10/japan/</guid>
+      <description>&lt;p&gt;After being in this country for almost one month, here are three things that
+shocked me the most:&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Monthly Art #43</title>
@@ -21,7 +31,6 @@
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“I don’t care that they stole my idea... I care that they don’t have any of their own.” —Nikola Tesla&lt;/p&gt;&amp;mdash; Garry() (@garrytan) &lt;a href=&#34;https://twitter.com/garrytan/status/1185349579639685121?ref_src=twsrc%5Etfw&#34;&gt;October 19, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -35,7 +44,6 @@ or even a painting.&lt;/p&gt;
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Brazilian couple planted 4 million trees within 18 years to form a large forest. &lt;a href=&#34;https://t.co/FZPRyaw0Vz&#34;&gt;pic.twitter.com/FZPRyaw0Vz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Physics &amp;amp; Astronomy Zone🔭 (@ZonePhysics) &lt;a href=&#34;https://twitter.com/ZonePhysics/status/1166138313352175617?ref_src=twsrc%5Etfw&#34;&gt;August 27, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -47,7 +55,7 @@ or even a painting.&lt;/p&gt;
       
       <guid>http://homeonrails.com/2019/07/gophercon-europe-2019/</guid>
       <description>&lt;p&gt;Videos from GopherCon Europe 2019 are up. Shoot out for organizers for sharing
-them! As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll
+them! As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll
 enjoy these too.&lt;/p&gt;</description>
     </item>
     
@@ -57,7 +65,7 @@ enjoy these too.&lt;/p&gt;</description>
       <pubDate>Thu, 18 Jul 2019 10:36:50 +0400</pubDate>
       
       <guid>http://homeonrails.com/2019/07/money-talk/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2019-07-18-money-talk/galley2.jpg&#34; alt=&#34;&#34; title=&#34;Ben-Hur (1959 film)&#34;/&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -69,7 +77,6 @@ enjoy these too.&lt;/p&gt;</description>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ru&#34; dir=&#34;ltr&#34;&gt;Жизнь. &lt;a href=&#34;https://t.co/8uAvhMkCpc&#34;&gt;pic.twitter.com/8uAvhMkCpc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Артём Дерягин (@DerArto) &lt;a href=&#34;https://twitter.com/DerArto/status/1145605391709028354?ref_src=twsrc%5Etfw&#34;&gt;July 1, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -83,7 +90,6 @@ or even a painting.&lt;/p&gt;
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/CyberpunkisNow?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#CyberpunkisNow&lt;/a&gt; The model in the center (Imma) is CGI - 100% computer rendered Instagram model Imma has 50K+ followers &amp;amp; models for Kate Cosmetics.&lt;br&gt;&lt;br&gt;Sequoia Capital has invested millions in Brud, the company behind CGI rendered Instagram model Lil Miquela (1.5 million followers). &lt;a href=&#34;https://t.co/4xZpK6nULZ&#34;&gt;pic.twitter.com/4xZpK6nULZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; ΜΔDΞRΔS (@hackermaderas) &lt;a href=&#34;https://twitter.com/hackermaderas/status/1132991059284451329?ref_src=twsrc%5Etfw&#34;&gt;May 27, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -96,14 +102,13 @@ or even a painting.&lt;/p&gt;
       <guid>http://homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</guid>
       <description>&lt;p&gt;A few days ago I was invited to be a guest on the &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Basic
 Block&amp;rdquo;&lt;/a&gt; podcast - probably the most popular
-crypto podcast in Russia. In spite of me writing a note on what I&amp;rsquo;m going to
+crypto podcast in Russia. In spite of me writing a note on what I&#39;m going to
 say &amp;amp; key points, which you can read
 &lt;a href=&#34;http://homeonrails.com/2019/04/on-tendermint-and-cosmos-ru&#34;&gt;here&lt;/a&gt;, I sucked at it. At least
-that&amp;rsquo;s how I felt after doing it. Fortunately, Basic block radio is one of the
+that&#39;s how I felt after doing it. Fortunately, Basic block radio is one of the
 few podcasts, where authors take on the hard job of editing an episode. Thanks
 guys! So what you end up listening is the edited (often abridged) version, not
 the original conversation.&lt;/p&gt;
-
 &lt;p&gt;You can listen to the episode &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -115,10 +120,7 @@ the original conversation.&lt;/p&gt;
       <guid>http://homeonrails.com/2019/04/monthly-art-number-39/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
-or even a painting.&lt;/p&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;First video of a black hole and what happens when you cross the event horizon. &lt;a href=&#34;https://t.co/JbMuHvkE38&#34;&gt;pic.twitter.com/JbMuHvkE38&lt;/a&gt;&lt;/p&gt;&amp;mdash; Awwwww (@AwwwwCats) &lt;a href=&#34;https://twitter.com/AwwwwCats/status/1116258088170995713?ref_src=twsrc%5Etfw&#34;&gt;April 11, 2019&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
+or even a painting.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -129,7 +131,6 @@ or even a painting.&lt;/p&gt;
       <guid>http://homeonrails.com/2019/04/basicblockradio-68-corrections/</guid>
       <description>&lt;p&gt;Сегодня опубликовали выпуск со мной в подкасте &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;&amp;ldquo;Базовый
 Блок&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;Учитывая, что это был мой первый опыт участия в подкасте, вышло неплохо. НО я
 допустил несколько ошибок (ввиду волнения, ошибки перевода, тысячу других
 отмазок можно придумать) и хотелось бы их разобрать.&lt;/p&gt;</description>
@@ -145,7 +146,6 @@ or even a painting.&lt;/p&gt;
 подкасте &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Базовый Блок&amp;rdquo;&lt;/a&gt;. Это не в коем случае
 не исчерпывающий источник, а лишь короткий обзор включающий плюсы и минусы
 Tendermint, Cosmos. Также упоминается проект Polkadot.&lt;/p&gt;
-
 &lt;p&gt;Выпуск со мной можно послушать &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;здесь&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -158,7 +158,6 @@ Tendermint, Cosmos. Также упоминается проект Polkadot.&lt;
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;What a stunning aerial image of New York City &lt;a href=&#34;https://t.co/7SVYr8fwTk&#34;&gt;pic.twitter.com/7SVYr8fwTk&lt;/a&gt;&lt;/p&gt;&amp;mdash; Feross 🧙🏼‍♂️✨ (@feross) &lt;a href=&#34;https://twitter.com/feross/status/1088918442386907136?ref_src=twsrc%5Etfw&#34;&gt;January 25, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -194,7 +193,6 @@ or even a painting.&lt;/p&gt;</description>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;For my birthday this year, I did a 10-day silent vipassana meditation, this time in Pyin Oo Lwin, Myanmar 🇲🇲. We went into silence on the night of my birthday, the 19th. Here’s what I know 👇🏼&lt;/p&gt;&amp;mdash; jack 🌍🌏🌎 (@jack) &lt;a href=&#34;https://twitter.com/jack/status/1071575088695140353?ref_src=twsrc%5Etfw&#34;&gt;December 9, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -205,9 +203,7 @@ or even a painting.&lt;/p&gt;
       <pubDate>Sat, 05 Jan 2019 22:38:01 -0400</pubDate>
       
       <guid>http://homeonrails.com/2019/01/my-favorite-books-of-2018/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2019-01-05-my-favorite-books-of-2018/year_in_books_full.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;
-&lt;small&gt;(image from Goodreads &lt;a href=&#34;https://www.goodreads.com/user/year_in_books/2018/24729949&#34;&gt;https://www.goodreads.com/user/year_in_books/2018/24729949&lt;/a&gt;)&lt;/small&gt;&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Another year, another goal - read 55 books in 2018. I failed to reach my goal
 of reading 50 books in 2017 and &amp;hellip; dropped the ball this time too. Why set
 even more ambitious goal instead of lowering the expectations? Because lowering
@@ -222,14 +218,11 @@ still happy with the result - 49 books!&lt;/p&gt;</description>
       
       <guid>http://homeonrails.com/2018/11/october-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Excellent hand-picked articles &amp;amp; videos about programming from all over the Internet&amp;rdquo;.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; defer makes you sloppy. Try to avoid when dealing with mutexes&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;defer + mutexes makes you forget that&lt;br&gt;&lt;br&gt;a) while we&amp;#39;re locked, nobody else can access the object (unless its read lock) -&amp;gt; better to unlock earlier&lt;br&gt;b) when you put more code &amp;amp; call other functions between lock / unlock, it becomes easier to deadlock&lt;br&gt;c) defers are slow&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
 
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More times you don&amp;#39;t need a defer &lt;a href=&#34;https://t.co/DYrbJQJwgS&#34;&gt;pic.twitter.com/DYrbJQJwgS&lt;/a&gt;&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
@@ -244,7 +237,6 @@ still happy with the result - 49 books!&lt;/p&gt;</description>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Here&amp;#39;s a dystopian vision of the future: A real announcement I recorded on the Beijing-Shanghai bullet train. (I&amp;#39;ve subtitled it so you can watch in silence.) &lt;a href=&#34;https://t.co/ZoRWtdcSMy&#34;&gt;pic.twitter.com/ZoRWtdcSMy&lt;/a&gt;&lt;/p&gt;&amp;mdash; James O&amp;#39;Malley (@Psythor) &lt;a href=&#34;https://twitter.com/Psythor/status/1056811593177227264?ref_src=twsrc%5Etfw&#34;&gt;October 29, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -258,7 +250,6 @@ or even a painting.&lt;/p&gt;
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Banksy live demos how to shred £1m at Sotheby&amp;#39;s. &lt;a href=&#34;https://twitter.com/hashtag/banksy?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#banksy&lt;/a&gt; &lt;a href=&#34;https://t.co/ZYIHmigRpL&#34;&gt;https://t.co/ZYIHmigRpL&lt;/a&gt;&lt;/p&gt;&amp;mdash; BBC Arts (@bbcarts) &lt;a href=&#34;https://twitter.com/bbcarts/status/1048501962218622976?ref_src=twsrc%5Etfw&#34;&gt;October 6, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
@@ -269,7 +260,7 @@ or even a painting.&lt;/p&gt;
       <pubDate>Sat, 15 Sep 2018 17:33:21 +0400</pubDate>
       
       <guid>http://homeonrails.com/2018/09/apps-for-distributed-team/</guid>
-      <description>&lt;p&gt;Thought I would share applications that we&amp;rsquo;ve been using at Tendermint and/or I
+      <description>&lt;p&gt;Thought I would share applications that we&#39;ve been using at Tendermint and/or I
 can recommend for any folks distributed around the world.&lt;/p&gt;</description>
     </item>
     
@@ -311,7 +302,7 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>http://homeonrails.com/2018/06/better-open-source-with-tokenized-github/</guid>
       <description>In the light of the recent news, I wanted to share an idea I had just recently.
-Every popular open-source project on Github eventually becomes overwhelmed by the number of issues. That&amp;rsquo;s because it&amp;rsquo;s so easy to create one. You are not required to understand the project. You are not required to read the documentation. All you need is a Github account.
+Every popular open-source project on Github eventually becomes overwhelmed by the number of issues. That&#39;s because it&#39;s so easy to create one. You are not required to understand the project. You are not required to read the documentation. All you need is a Github account.
 And this is an example of the amplification attack.</description>
     </item>
     
@@ -434,7 +425,6 @@ Quick question: where should I declare my constant? Most developers would say: �
       
       <guid>http://homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
 &lt;p&gt;Before &lt;a href=&#34;https://github.com/tendermint/tendermint/pull/914&#34;&gt;this pull request&lt;/a&gt;,
 it was a mess. ABCI was using a &lt;code&gt;uint64&lt;/code&gt; height on EndBlock. Tendermint Core
 was using the same type for TxResult. Block and BlockStore, however, were using
@@ -450,7 +440,6 @@ across our repositories as for what type to use for blockchain height.&lt;/p&gt;
       
       <guid>http://homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
 &lt;p&gt;I have spent the last week looking for clues and writing test cases in order to
 find and fix the memory leak in
 &lt;a href=&#34;https://github.com/tendermint/tendermint/&#34;&gt;Tendermint&lt;/a&gt;. For those of you who
@@ -458,7 +447,6 @@ don’t know, Tendermint Core is a Byzantine Fault Tolerant (BFT) middleware tha
 takes a state transition machine — written in any programming language — and
 securely replicates it on many machines. It is also the foundation of
 &lt;a href=&#34;https://cosmos.network/&#34;&gt;Cosmos&lt;/a&gt; — our solution for scaling blockchains.&lt;/p&gt;
-
 &lt;p&gt;Finding a memory leak in Go is not an easy task. However, there is a common set
 of questions, answers to which will hopefully help you identify the source of a
 leak. Here is the list:&lt;/p&gt;</description>
@@ -510,8 +498,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Sat, 30 Dec 2017 19:29:11 -0500</pubDate>
       
       <guid>http://homeonrails.com/2017/12/route-in-ecuador/</guid>
-      <description>&lt;p&gt;&lt;em&gt;(image credit: &lt;a href=&#34;https://www.flickr.com/photos/wurglitsch/9466325427&#34;&gt;https://www.flickr.com/photos/wurglitsch/9466325427&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;_(image credit: &lt;a href=&#34;https://www.flickr.com/photos/wurglitsch/9466325427)_&#34;&gt;https://www.flickr.com/photos/wurglitsch/9466325427)_&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This route was suggested to me by girl from Ecuador (thanks Carla), whom I met
 in Mexico on Dec. 10, 2017.&lt;/p&gt;</description>
     </item>
@@ -551,9 +538,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Tue, 26 Dec 2017 21:15:01 -0500</pubDate>
       
       <guid>http://homeonrails.com/2017/12/my-favorite-books-of-2017/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-12-26-my-favorite-books-of-2017/year_in_books_full.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;
-&lt;small&gt;(image from Goodreads &lt;a href=&#34;https://www.goodreads.com/user/year_in_books/2017/24729949&#34;&gt;https://www.goodreads.com/user/year_in_books/2017/24729949&lt;/a&gt;)&lt;/small&gt;&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;This year I’ve set a very ambitious goal for me, which is to read fifty books.
 And I almost did it. Never thought it would be possible to even read forty
 books. The key here, as many of you know, is to find one hour in evening or
@@ -619,7 +604,7 @@ Was it by share luck or something else, but cards laid out just perfectly.</desc
       <pubDate>Thu, 12 Oct 2017 20:57:11 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/10/how-to-find-a-remote-job/</guid>
-      <description>Many of you probably know that for the last 10 months I&amp;rsquo;ve been working remotely at Tendermint. A few days ago a friend of mine asked me to give him some practical tips on how to find a remote job (being a software developer). I&amp;rsquo;ve told him that it&amp;rsquo;s not so different from searching for a desk job. However, I did give him a few recommendations that I wanted to share with you guys.</description>
+      <description>Many of you probably know that for the last 10 months I&#39;ve been working remotely at Tendermint. A few days ago a friend of mine asked me to give him some practical tips on how to find a remote job (being a software developer). I&#39;ve told him that it&#39;s not so different from searching for a desk job. However, I did give him a few recommendations that I wanted to share with you guys.</description>
     </item>
     
     <item>
@@ -640,7 +625,7 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>http://homeonrails.com/2017/09/usa-cities/</guid>
       <description>Disclaimer: my opinion on some cities can be biased and completely wrong since we rarely stayed more than 2 days in one city.
-New York What I&amp;rsquo;ll remember: the smell of urine and garbage in Manhattan, the New York subway, African Americans jumping over people (show).
+New York What I&#39;ll remember: the smell of urine and garbage in Manhattan, the New York subway, African Americans jumping over people (show).
 When you imagine New York, you most often think of Manhattan and Central Park. You think of luxury apartments with a view of the park and limousines waiting for guests at the entrance.</description>
     </item>
     
@@ -670,7 +655,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Sun, 30 Jul 2017 11:48:01 -0500</pubDate>
       
       <guid>http://homeonrails.com/2017/07/brazilian-movies-weekend/</guid>
-      <description>On the contrary to Indian movies, Brazilian movies are full of pain, struggle, and tears. These movies deeply reflect the history of their country, uncovering all the problems which exist even upon today. They were recommended to me by an architect from Brazil I&amp;rsquo;ve met in Lithuania.
+      <description>On the contrary to Indian movies, Brazilian movies are full of pain, struggle, and tears. These movies deeply reflect the history of their country, uncovering all the problems which exist even upon today. They were recommended to me by an architect from Brazil I&#39;ve met in Lithuania.
 Central Station (1998)   &amp;ldquo;An emotive journey of a former school teacher, who writes letters for illiterate people, and a young boy, whose mother has just died, as they search for the father he never knew.</description>
     </item>
     
@@ -701,8 +686,7 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2/</guid>
       <description>(Cycling route in Ulyanovsk Oblast #2)
-Сложность (difficulty): легко (easy)
-Протяженность в одну сторону (distance, one way): 9.6км (6.7 miles)
+Сложность (difficulty): легко (easy)Протяженность в одну сторону (distance, one way): 9.6км (6.7 miles)
 Сначала любуемся домами богатых жителей Ульяновска, проезжаем кружок по лыжной базе &amp;ldquo;Заря&amp;rdquo; (внимание: штраф 20тр, но всем пофиг; главное не наглеть и пропускать спортсменов). Далее едем в парк 40лет ВЛКСМ и назад через лес. Большая часть пролегает по сосновому лесу, так что воздух там отличный.
 (First we look at the homes of wealthy people of Ulyanovsk, passing around a ski training base &amp;ldquo;Zarya&amp;rdquo; (note: the fine is 20000 RUB, but nobody cares; the important thing is to respect others and give way to athletes).</description>
     </item>
@@ -713,7 +697,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Sun, 25 Jun 2017 11:37:01 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/06/indian-movies-weekend/</guid>
-      <description>On my way from Berlin to Warsaw I&amp;rsquo;ve met 2 really cool guys from India - Winny and Raghav. They asked me to recommend 3 Russian movies to them and I did. Then I asked to return a favor. I watched all of them and they are amazing. No wonder they all have a very good score on IMDB. So, thank you guys!
+      <description>On my way from Berlin to Warsaw I&#39;ve met 2 really cool guys from India - Winny and Raghav. They asked me to recommend 3 Russian movies to them and I did. Then I asked to return a favor. I watched all of them and they are amazing. No wonder they all have a very good score on IMDB. So, thank you guys!
 Swades (2004)   A project manager from NASA decides to go to India to find his nanny.</description>
     </item>
     
@@ -723,7 +707,7 @@ Swades (2004)   A project manager from NASA decides to go to India to find his n
       <pubDate>Tue, 06 Jun 2017 22:35:01 +0200</pubDate>
       
       <guid>http://homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</guid>
-      <description>Wrote a blog post a few days ago for my company&amp;rsquo;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
+      <description>Wrote a blog post a few days ago for my company&#39;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
 https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7</description>
     </item>
     
@@ -734,8 +718,7 @@ https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7<
       
       <guid>http://homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast/</guid>
       <description>(Cycling route in Ulyanovsk Oblast)
-Сложность (difficulty): легко (easy)
-Протяженность в одну сторону (distance, one way): 17.7км (11.268 miles)
+Сложность (difficulty): легко (easy)Протяженность в одну сторону (distance, one way): 17.7км (11.268 miles)
 Небольшой участок пути придется проехать через лес (сразу после Поливно). По приезду в Полдомасово можно искупаться. Вода чистая, проточная (течение сильное) (You will have to bike through the forest at some point (small piece of the track right after Polivno). Upon arrival in Poldomasovo you can go swimming. The water is clean and refreshing.</description>
     </item>
     
@@ -879,9 +862,8 @@ root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&g
       <pubDate>Sat, 28 Jan 2017 14:32:24 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/01/lingualeo-contest/</guid>
-      <description>&lt;p&gt;If you still don&amp;rsquo;t know, Lingualeo and The British Council are conducting a
+      <description>&lt;p&gt;If you still don&#39;t know, Lingualeo and The British Council are conducting a
 &lt;a href=&#34;http://education.lingualeo.com/&#34;&gt;contest&lt;/a&gt; from Jan 25 to Feb 8.&lt;/p&gt;
-
 &lt;p&gt;Here is my submission:&lt;/p&gt;</description>
     </item>
     
@@ -891,10 +873,8 @@ root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&g
       <pubDate>Wed, 18 Jan 2017 20:46:24 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/01/best-books-of-2016/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-18-best-books-of-2016/year_in_books_full.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;
-&lt;small&gt;(image from Goodreads &lt;a href=&#34;https://www.goodreads.com/user/year_in_books/2016/24729949&#34;&gt;https://www.goodreads.com/user/year_in_books/2016/24729949&lt;/a&gt;)&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;Wanted to share the best books I&amp;rsquo;ve read in 2016.&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Wanted to share the best books I&#39;ve read in 2016.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -903,18 +883,16 @@ root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&g
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/01/signing-git-commits/</guid>
-      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
+      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&#39;а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
 возможны такие смешные поделки как
 &lt;a href=&#34;https://github.com/jayphelps/git-blame-someone-else&#34;&gt;git-blame-someone-else&lt;/a&gt;.
 Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
 действительно вы, прибавляется.&lt;/p&gt;
-
 &lt;p&gt;Github в &lt;a href=&#34;https://github.com/blog/2144-gpg-signature-verification&#34;&gt;апреле прошлого
 года&lt;/a&gt; начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -954,7 +932,7 @@ My open source work is available on GitHub, my talks are on Speaker Deck, my wor
       <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/pgp/</guid>
-      <description>-----BEGIN PGP PUBLIC KEY BLOCK----- Version: GnuPG v2 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 pQxA9qGnUkZ65Tb4PukxfALmVQ== =BTtP -----END PGP PUBLIC KEY BLOCK-----  </description>
+      <description>-----BEGIN PGP PUBLIC KEY BLOCK----- Version: GnuPG v2 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 pQxA9qGnUkZ65Tb4PukxfALmVQ== =BTtP -----END PGP PUBLIC KEY BLOCK----- </description>
     </item>
     
     <item>
@@ -1034,9 +1012,8 @@ guy, this guy has some style.&lt;/p&gt;</description>
       <pubDate>Wed, 26 Oct 2016 19:12:16 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/10/hire-me/</guid>
-      <description>&lt;p&gt;For the past two years, I&amp;rsquo;ve been working full time at FunBox as an &lt;strong&gt;Erlang developer&lt;/strong&gt;. I&amp;rsquo;ve learned so much during that time - the Erlang language itself and the tooling (observer, recon and &lt;a href=&#34;http://homeonrails.com/2016/05/profiling-in-erlang/&#34;&gt;others&lt;/a&gt;), Hadoop, HDFS and even some team management skills (thanks to @gumayunov).&lt;/p&gt;
-
-&lt;p&gt;I am grateful for the opportunity that FunBox has given me. But once a while you need to move on and I did. So I&amp;rsquo;m looking for a new job.&lt;/p&gt;</description>
+      <description>&lt;p&gt;For the past two years, I&#39;ve been working full time at FunBox as an &lt;strong&gt;Erlang developer&lt;/strong&gt;. I&#39;ve learned so much during that time - the Erlang language itself and the tooling (observer, recon and &lt;a href=&#34;http://homeonrails.com/2016/05/profiling-in-erlang/&#34;&gt;others&lt;/a&gt;), Hadoop, HDFS and even some team management skills (thanks to @gumayunov).&lt;/p&gt;
+&lt;p&gt;I am grateful for the opportunity that FunBox has given me. But once a while you need to move on and I did. So I&#39;m looking for a new job.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1047,8 +1024,7 @@ guy, this guy has some style.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -1109,9 +1085,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Thu, 06 Oct 2016 22:58:27 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/10/huanglong/</guid>
-      <description>&lt;blockquote&gt;
-Хуанлун (кит. трад. 黃龍, упр. 黄龙, пиньинь: Huánglóng), «Жёлтый дракон» — живописная заповедная местность, известная своими травертиновыми террасами (из известкового туфа), многочисленными озёрами, различных цветов и форм. &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%B0%D0%BD%D0%BB%D1%83%D0%BD_(%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA&#34;&gt;Википедия&lt;/a&gt;
-&lt;/blockquote&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -1143,8 +1117,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Sat, 20 Aug 2016 22:05:30 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/08/backendsecret-week/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-08-20-backendsecret-week/week.jpg&#34; alt=&#34;&#34; width=&#34;360px&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Прошлую неделю (08.08 - 14.08) вел коллективный твиттер-аккаунт для бэкенд-разработчиков
 &lt;a href=&#34;https://twitter.com/backendsecret&#34;&gt;https://twitter.com/backendsecret&lt;/a&gt;. Интересный опыт ;) Когда ты спрашиваешь о
 чем-то или делишься мыслями с большой аудиторией (~ 2500 подписчиков). Правда,
@@ -1210,7 +1183,7 @@ book or even painting.&lt;/p&gt;</description>
       <pubDate>Sat, 09 Jul 2016 10:03:59 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/07/salli-chin-review/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-09-salli-chin-review/salli1.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -1221,8 +1194,7 @@ book or even painting.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2016/07/on-the-importance-of-unification/</guid>
       <description>&lt;p&gt;Unification, for me, means having one way or instrument (not always the best)
 to deal with a problem. And, in some cases, it is crucial.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png&#34; alt=&#34;It&#39;s important to have only one instrument for solving a problem.&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -1249,12 +1221,11 @@ to deal with a problem. And, in some cases, it is crucial.&lt;/p&gt;
       <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
+      <description>&lt;p&gt;I&#39;ve recently decided to give Clojure another try and, as a part of my
 wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
 Clojure conference in the western United States and all about this language, as
 you may guess.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -1284,12 +1255,8 @@ book or even painting.&lt;/p&gt;</description>
       <pubDate>Wed, 25 May 2016 11:41:44 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/05/profiling-in-erlang/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://homeonrails.com/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf&#34; title=&#34;Скачать PDF на русском&#34;&gt;
-  На русском
-&lt;/a&gt;&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;The list of available instruments:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;fprof, eprof, cover, cprof (shipped with erlang)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;top&lt;/code&gt;-like utilities: third party &lt;a href=&#34;https://github.com/zaa/entop&#34;&gt;entop&lt;/a&gt; и &lt;a href=&#34;http://erlang.org/doc/apps/observer/etop_ug.html&#34;&gt;etop&lt;/a&gt;&lt;/li&gt;
@@ -1308,19 +1275,15 @@ book or even painting.&lt;/p&gt;</description>
       <pubDate>Mon, 23 May 2016 12:02:11 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://homeonrails.com/pdfs/posts/2016-05-23-how-to-be-productive-with-almost-any-editor/how_to_be_productive_with_almost_any_editor_ru_RU.pdf&#34; title=&#34;Скачать PDF на русском&#34;&gt;
-  На русском
-&lt;/a&gt;&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;What makes us productive when working with code in the editor? Every day, there
 is a new shining plugin, that allows us to do something useful by pressing only
-2 keystrokes. Don&amp;rsquo;t get me wrong, I&amp;rsquo;m not against plugins. Hell, I have at
-least 40 of them (&lt;a href=&#34;https://git.io/vrg64&#34;&gt;https://git.io/vrg64&lt;/a&gt;).&lt;/p&gt;
-
+2 keystrokes. Don&#39;t get me wrong, I&#39;m not against plugins. Hell, I have at
+least 40 of them (&lt;a href=&#34;https://git.io/vrg64)&#34;&gt;https://git.io/vrg64)&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;But, are all of them equally useful? I am certain that some tricks outperform
 others in terms of productivity (&lt;strong&gt;20% results in 80% boost&lt;/strong&gt;). These could be
-features, built into the editor. You just don&amp;rsquo;t know about them. Here, I&amp;rsquo;ve
-tried to collect &lt;strong&gt;the most important ones&lt;/strong&gt;, which don&amp;rsquo;t require you to read a
+features, built into the editor. You just don&#39;t know about them. Here, I&#39;ve
+tried to collect &lt;strong&gt;the most important ones&lt;/strong&gt;, which don&#39;t require you to read a
 pile of docs and much time to learn.&lt;/p&gt;</description>
     </item>
     
@@ -1353,17 +1316,11 @@ book or even painting.&lt;/p&gt;</description>
       <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
 can see, most of the editors and terminals now support TrueColor (16 million
 colors).&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>
     </item>
     
@@ -1393,11 +1350,9 @@ rebar.&lt;/p&gt;</description>
       
       <guid>http://homeonrails.com/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
-logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
+logger which limits the volume of info messages irrespectively of the lager&#39;s
 backend.&lt;/p&gt;
-
-&lt;p&gt;This article tells a story behind this library. Down below you&amp;rsquo;ll find answers to the following questions:&lt;/p&gt;
-
+&lt;p&gt;This article tells a story behind this library. Down below you&#39;ll find answers to the following questions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Why it was created?&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;How it works?&amp;rdquo;&lt;/li&gt;
@@ -1431,7 +1386,7 @@ book or even painting.&lt;/p&gt;</description>
       <pubDate>Tue, 05 Apr 2016 15:50:31 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -1444,7 +1399,7 @@ book or even painting.&lt;/p&gt;</description>
 2016&lt;/a&gt; conference ended only 3 weeks
 ago. There were many great speakers and presentations. What I specifically like
 about it, is that videos are available almost immediately. As usual, I am
-publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
+publishing the talks, which I liked the most. Hope you&#39;ll enjoy these too.
 &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -1496,7 +1451,6 @@ book or even painting.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2016/02/super-puper-articles/</guid>
       <description>&lt;p&gt;Решил поделиться с вами статьями, которые оказали на меня, как программиста,
 наибольшее влияние.&lt;/p&gt;
-
 &lt;p&gt;Большинство обычных статей сейчас валяются где-то на задворках памяти, либо
 вообще улетучились, словно я их никогда и ни читал. Но было несколько
 особенных, которые запомнились надолго.&lt;/p&gt;</description>
@@ -1515,9 +1469,7 @@ book or even painting.&lt;/p&gt;</description>
 вредные привычки (алкоголе, табаке) и глава про стресс (описание процессов,
 происходящих в нашем теле). Остальные показались мне не слишком интересными, и
 я их пролистывал.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-01-30-smoking-and-brain/who_knew1.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Одна из удивительных вещей, которая мне отдельно запомнилась: как наш мозг
 адаптируется (или перестраивается) к появившимся постоянным дозам никотина
 после того как человек начинает курить.&lt;/p&gt;</description>
@@ -1534,7 +1486,6 @@ book or even painting.&lt;/p&gt;</description>
 знакомых, подобралась неплохая компания и было несколько действительно крутых
 докладов. К счастью, вам не надо смотреть все выложенные видео, чтобы найти те
 самые доклады.&lt;/p&gt;
-
 &lt;p&gt;&lt;em&gt;Дисклеймер: выбранные материалы и степень их крутости отражают личное мнение
 автора. Ваше мнение может отличаться.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
@@ -1547,15 +1498,14 @@ book or even painting.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2016/01/don-hertzfeldt/</guid>
       <description>&lt;p&gt;&amp;ldquo;Don Hertzfeldt (born August 1, 1976) is a two-time Academy Award nominated
 animator, writer, and independent filmmaker. He is the creator of many animated
-films, including It&amp;rsquo;s Such a Beautiful Day, World of Tomorrow, The Meaning of
+films, including It&#39;s Such a Beautiful Day, World of Tomorrow, The Meaning of
 Life, and Rejected. His films have received over 250 awards and have been
 presented around the world. Seven of his films have competed at the Sundance
 Film Festival, a festival record. He is also the only filmmaker to have won the
-Sundance Film Festival&amp;rsquo;s Grand Jury Prize for Short Film twice.&lt;/p&gt;
-
-&lt;p&gt;Hertzfeldt&amp;rsquo;s short films have been described as &amp;ldquo;&lt;strong&gt;some of the most influential
+Sundance Film Festival&#39;s Grand Jury Prize for Short Film twice.&lt;/p&gt;
+&lt;p&gt;Hertzfeldt&#39;s short films have been described as &amp;ldquo;&lt;strong&gt;some of the most influential
 animation ever created&lt;/strong&gt;,&amp;rdquo; and &amp;ldquo;&lt;strong&gt;some of the most vital and expressive animation
-of the millennium&lt;/strong&gt;.&amp;ldquo;&amp;rdquo; - Wikipedia&lt;/p&gt;</description>
+of the millennium&lt;/strong&gt;.&amp;rdquo;&amp;rdquo; - Wikipedia&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1584,7 +1534,7 @@ book or even painting.&lt;/p&gt;</description>
       <pubDate>Sun, 10 Jan 2016 20:57:21 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/01/advices-for-hong-kong-travellers/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-01-10-advices-for-hong-kong-travellers/hongkong.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -1605,8 +1555,8 @@ book or even painting.&lt;/p&gt;</description>
       
       <guid>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.ricon.io/index.html&#34;&gt;RICON&lt;/a&gt; is all about distributed systems. There
-are a lot of academic (Phd) talks and a few practical ones. I&amp;rsquo;ve chosen 3 out
-of 37 videos, which I liked the most. Hope you&amp;rsquo;ll enjoy these too. &lt;em&gt;Disclaimer:
+are a lot of academic (Phd) talks and a few practical ones. I&#39;ve chosen 3 out
+of 37 videos, which I liked the most. Hope you&#39;ll enjoy these too. &lt;em&gt;Disclaimer:
 your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -1670,12 +1620,8 @@ real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&g
       
       <guid>http://homeonrails.com/2015/10/dont-trust-your-devlead/</guid>
       <description>&lt;p&gt;&amp;ldquo;Не верь своему тимлиду&amp;rdquo; или когда не стоит слепо верить словам вашего тимлида.&lt;/p&gt;
-
-&lt;div style=&#34;align:center&#34;&gt;
-  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -1686,12 +1632,8 @@ real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&g
       <guid>http://homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</guid>
       <description>&lt;p&gt;&amp;ldquo;Redis дропает события? Что?&amp;rdquo; или поучительная история о том, как важно читать
 документацию.&lt;/p&gt;
-
-&lt;div style=&#34;align:center&#34;&gt;
-  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -1720,7 +1662,7 @@ book or even painting.&lt;/p&gt;</description>
       <pubDate>Mon, 14 Sep 2015 23:19:10 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
-      <description>&lt;p&gt;If you haven&amp;rsquo;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
+      <description>&lt;p&gt;If you haven&#39;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
 (first time this year), which took place in Prague earlier in July. Despite its
 age, many good speakers happened to be there. Here is the list of my favorite
 talks. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
@@ -1772,13 +1714,12 @@ favorite talks. Enjoy!&lt;/p&gt;</description>
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
+      <description>&lt;p&gt;I&#39;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
 are very different languages: OOP vs functional, mutable vs immutable and so
-on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is also true).&lt;/p&gt;
-
-&lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
-that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
+on. Also, there are things you won&#39;t find in Ruby (the opposite is also true).&lt;/p&gt;
+&lt;p&gt;In this post I want to show you the mistakes that I&#39;ve made and the lessons
+that I&#39;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1818,7 +1759,7 @@ errors.&lt;/p&gt;</description>
       <pubDate>Thu, 04 Jun 2015 22:53:15 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using these four plugins for a really long time. And they are
+      <description>&lt;p&gt;I&#39;ve been using these four plugins for a really long time. And they are
 wonderful. But each time coming on Github and seeing the number of stars, I
 think that few people actually know about them.&lt;/p&gt;</description>
     </item>
@@ -1840,7 +1781,7 @@ think that few people actually know about them.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ferd&#34;&gt;Фред Хеберт&lt;/a&gt; - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
-замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;rdquo;&lt;/a&gt;, которая, к тому же,
+замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;quot;&lt;/a&gt;, которая, к тому же,
 доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
 только начинает изучать Erlang. Но и более опытные разработчики с большой
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
@@ -1864,9 +1805,8 @@ Distributed Erlang).&lt;/p&gt;</description>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
-      <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
-начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
-
+      <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&#39;а. Что ж,
+начнем с того, что клиента для Erlang&#39;а нет :( А на выбор имеются:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;REST&lt;/li&gt;
 &lt;li&gt;Thrift&lt;/li&gt;
@@ -1880,14 +1820,13 @@ Distributed Erlang).&lt;/p&gt;</description>
       <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34; alt=&#34;&#34;/ width=&#34;450&#34; title=&#34;Разрабатываем ruby gem в docker контейнере&#34;&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&amp;lt;img class=&amp;quot;img-rounded&amp;rdquo; src=&amp;rdquo;/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&amp;rdquo; alt=&amp;rdquo;&amp;quot;/ width=&amp;quot;450&amp;rdquo; title=&amp;quot;Разрабатываем ruby gem в docker контейнере&amp;quot;&amp;gt;&lt;/p&gt;
 &lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,
-что я являюсь старым приверженцем Vagrant&amp;rsquo;а, на днях мне все же захотелось
+что я являюсь старым приверженцем Vagrant&#39;а, на днях мне все же захотелось
 попробовать docker для одного из своих проектов -
 &lt;a href=&#34;https://github.com/kaize/valle&#34;&gt;Valle&lt;/a&gt;. Не без препонов, но все же удалось
 встроить docker в процесс. Далее последует руководство по разработке Ruby гема
-с использованием docker&amp;rsquo;а.&lt;/p&gt;</description>
+с использованием docker&#39;а.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1932,7 +1871,7 @@ Distributed Erlang).&lt;/p&gt;</description>
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/02/shamrock/</guid>
-      <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
+      <description>&lt;p&gt;Бывают случаи, когда WebMock&#39;а недостаточно, или же вы просто не любите stub&#39;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
 сервер&lt;/a&gt;
@@ -1949,7 +1888,7 @@ Distributed Erlang).&lt;/p&gt;</description>
       <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
 &lt;a href=&#34;https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.
-Поэтому я решил не использовать Apache&amp;rsquo;s HTTPClient и другие библиотеки, вроде
+Поэтому я решил не использовать Apache&#39;s HTTPClient и другие библиотеки, вроде
 Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
 нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;</description>
     </item>
@@ -1969,13 +1908,7 @@ Unirest или Google HTTP Client. Хотя, если бы требовалос�
       <pubDate>Sat, 17 Jan 2015 12:00:12 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/01/how-opinion-about-the-book-may-change-in-40-years/</guid>
-      <description>&lt;p style=&#34;margin-bottom:0;&#34;&gt;
-  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-01-17-how-opinion-about-the-book-may-change-in-40-years/catcher.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;Как мнение о книге может меняться в течение 40 лет&#34;/&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;small&gt;&lt;a href=&#34;http://tulinovr.deviantart.com/art/rye-129185839&#34;&gt;(рисунок TulinovR с deviantart.com)&lt;/a&gt;&lt;/small&gt;
-&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Бывает, что книга, которую вы только что прочли, вам не понравилась. Но что
 будет через 5 лет? Изменится ли ваше мнение о ней? А через 10 лет? Ниже
 представлен перевод отзыва Mark Monday о книге &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B4_%D0%BF%D1%80%D0%BE%D0%BF%D0%B0%D1%81%D1%82%D1%8C%D1%8E_%D0%B2%D0%BE_%D1%80%D0%B6%D0%B8&#34;&gt;&amp;ldquo;Над пропастью во ржи&amp;rdquo;&lt;/a&gt;
@@ -2016,18 +1949,15 @@ table.&lt;/p&gt;</description>
 its members and the company as a whole. What it can be? Any sorts of things:
 articles, videos, slides, thoughts on a particular tool - generally, any piece
 of useful information that you would like to share with your colleagues.&lt;/p&gt;
-
-&lt;p&gt;And that&amp;rsquo;s why it&amp;rsquo;s important:&lt;/p&gt;
-
+&lt;p&gt;And that&#39;s why it&#39;s important:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Each member of the team is &lt;strong&gt;growing&lt;/strong&gt; as a professional;&lt;/li&gt;
 &lt;li&gt;You &lt;strong&gt;communicate&lt;/strong&gt; with each other (this is especially important for
 distributed teams);&lt;/li&gt;
 &lt;li&gt;The senior colleagues share their &lt;strong&gt;experience&lt;/strong&gt; with the younger ones (by
 posting links to useful books or other materials and discussing certain
-decisions they&amp;rsquo;ve made in comments).&lt;/li&gt;
+decisions they&#39;ve made in comments).&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;p&gt;Specially for you guys, I picked the 5 best tools to help you put your team
 back on track.&lt;/p&gt;</description>
     </item>
@@ -2049,12 +1979,10 @@ back on track.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2014/11/best-books-for-self-development/</guid>
       <description>&lt;p&gt;Давненько я не писал о книгах, которые прочитал за прошедшее время. Что ж,
 давайте исправим это.&lt;/p&gt;
-
 &lt;p&gt;Недавно, один из моих друзей прислал мне &lt;a href=&#34;http://blog.mann-ivanov-ferber.ru/2014/06/18/luchshie-knigi-dlya-samorazvitiya/&#34;&gt;список книг&lt;/a&gt; для
 саморазвития по версии издательства Манн, Иванов и Фербер. Из всего списка я был
 знаком только с одной книгой - &amp;ldquo;Высшая цель&amp;rdquo;, которую прочитал будучи в гостях у
 &lt;a href=&#34;http://health-samurai.ru/&#34;&gt;Health Samurai&lt;/a&gt; в прекрасном городе на Неве.&lt;/p&gt;
-
 &lt;p&gt;Что же до остальных - о них я даже не слышал. А ведь большинство из низ обещало
 помочь эффективно распоряжаться своим временем, укрепить силу воли, избежать
 некоторых ловушек сознания и, в целом, стать успешнее. Звучит недурно, правда?
@@ -2068,17 +1996,10 @@ back on track.&lt;/p&gt;</description>
       <pubDate>Sat, 22 Nov 2014 17:53:57 +0000</pubDate>
       
       <guid>http://homeonrails.com/2014/11/stop-killing-developers-creativity/</guid>
-      <description>&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Carlos?&lt;/p&gt;
-&lt;p style=&#34;color:#800000&#34;&gt;Carlos: Yes.&lt;/p&gt;
-&lt;p style=&#34;color:#008080;margin-bottom:0;&#34;&gt;Andrea: Hi, my name is Andrea! You will be working on project X. Before you
-start, make sure you read pages A, B, and &#34;How do we work with tickets in Jira&#34;
-in our wiki.&lt;/p&gt;
-&lt;p style=&#34;color:#800000&#34;&gt;Carlos: No problem.&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&amp;ldquo;When you start working on a ticket, press &amp;lsquo;Start Progress&amp;rsquo; - this will
-change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&amp;rsquo;re getting distracted from your work
+change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&#39;re getting distracted from your work
 for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Carlos reads to himself&lt;/p&gt;
-
 &lt;p&gt;2 hours later&amp;hellip;&lt;/p&gt;</description>
     </item>
     
@@ -2124,7 +2045,7 @@ for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Car
       
       <guid>http://homeonrails.com/2014/09/short-traveling-guide/</guid>
       <description>&lt;p&gt;Частенько мне задают вопросы типа &amp;ldquo;Как съездить в другую страну не покупая
-тур?&amp;ldquo;. Так вот, я и решил написать заметку, где будет ясная последовательность
+тур?&amp;quot;. Так вот, я и решил написать заметку, где будет ясная последовательность
 шагов: что где посмотреть, о чем надо помнить и так далее.&lt;/p&gt;</description>
     </item>
     
@@ -2147,10 +2068,8 @@ for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Car
 аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
 напротив, многие его фишки, включая подсветку, дополнение по Tab и
 автоматическое раскрытие путей, пришлись мне по душе.&lt;/p&gt;
-
 &lt;p&gt;Одновременно с этим &lt;a href=&#34;https://twitter.com/saratovsource&#34;&gt;@saratovsource&lt;/a&gt;
 намекнул, что пересел на Fish shell около полугода назад и вполне доволен.&lt;/p&gt;
-
 &lt;p&gt;{% img /images/posts/2014-07-15-fish-shell/logo.png %}&lt;/p&gt;</description>
     </item>
     
@@ -2214,8 +2133,7 @@ manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</descriptio
       
       <guid>http://homeonrails.com/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
-&amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
-
+&amp;ldquo;Что?&amp;quot;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
 Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
@@ -2270,7 +2188,6 @@ was surprised. Thanks to all who participated!&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
       <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
 colleagues.&lt;/p&gt;
-
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
 ending by using Fragment caching. Also there is list of tools for
 profiling applications (stackprof, etc.). All techniques are quite
@@ -2303,7 +2220,7 @@ famous.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
-&lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;ldquo;- I asked myself. Indeed, the majority of source code editors
+&lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;quot;- I asked myself. Indeed, the majority of source code editors
 able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     
@@ -2357,8 +2274,7 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
-лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
-feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
+лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
@@ -2426,12 +2342,11 @@ feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь
       <guid>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
-&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;A lot of time has passed since my last post, so I decided to fix this
 little drawback. Next, we will discuss three small pieces of code,
-which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;</description>
+which smells not very good. Let&#39;s see what we can do about it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2482,11 +2397,9 @@ which provides a basic set of the most common sequences.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
-&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;Now is the time to break down the next three examples of code that look
 slightly chapped, and just beg to be retouched. Despite the apparent
 complexity, by running a series of easy refactorings, we can significantly
@@ -2512,7 +2425,6 @@ It is intended to help you to validate records count in a given association.&lt;
       
       <guid>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
 Usually it is a parent-children relations. If you are not familiar with such terms
@@ -2528,7 +2440,7 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
       <pubDate>Sun, 30 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>http://homeonrails.com/2012/09/test-automation-in-ror/</guid>
-      <description>&lt;p&gt;Буквально вчера я вернулся с конференции веб-разработчиков ЧЕБИТ&amp;rsquo;12-10. В этом
+      <description>&lt;p&gt;Буквально вчера я вернулся с конференции веб-разработчиков ЧЕБИТ&#39;12-10. В этом
 году она проходила в баре &amp;ldquo;Манхеттен&amp;rdquo;, что придавало ей нотку закрытого
 подпольного казино для &amp;ldquo;своих&amp;rdquo;. Огромное спасибо за приглашение поучавствовать
 от Данила Письменного (@pismenny) и Ассоциации Региональных Веб-Разработчиков.
@@ -2544,11 +2456,9 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
       <guid>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
-&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
 &lt;p&gt;These series of articles will be dedicated to every day code, that I am working on.
 This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;</description>
     </item>

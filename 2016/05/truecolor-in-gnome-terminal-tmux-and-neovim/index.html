@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -55,117 +64,91 @@
   <p>Here is where we are right now: <a href="https://gist.github.com/XVilka/8346728">https://gist.github.com/XVilka/8346728</a> . As you
 can see, most of the editors and terminals now support TrueColor (16 million
 colors).</p>
-
 <p><strong>The result</strong></p>
-
 <p>Difference between TrueColor (24bits - 16 million colors) and &ldquo;256colors&rdquo; (8bits - 256 colors):</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png" alt="" width="100%" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>Original theme (<a href="https://github.com/morhetz/gruvbox">gruvbox</a>):</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png" alt="" width="100%" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.</p>
-
 <h2 id="gnome-terminal">Gnome Terminal</h2>
-
 <p>gnome-terminal has to be in version linked against <code>libvte &gt;= 0.36</code>.</p>
-
-<p>1) Check</p>
-
+<ol>
+<li>Check</li>
+</ol>
 <pre><code>ldd /usr/lib/gnome-terminal/gnome-terminal-server | grep libvte
-</code></pre>
-
-<p>2) Install</p>
-
+</code></pre><ol start="2">
+<li>Install</li>
+</ol>
 <pre><code>sudo add-apt-repository ppa:gnome3-team/gnome3-staging
 sudo apt-get update
 sudo apt-get install -y gnome-terminal
 sudo add-apt-repository -r ppa:gnome3-team/gnome3-staging
-</code></pre>
-
-<p>3) Restart gnome-terminal-server (I&rsquo;ve just rebooted my machine, but killing the corresponding process should also do the job).</p>
-
+</code></pre><ol start="3">
+<li>Restart gnome-terminal-server (I've just rebooted my machine, but killing the corresponding process should also do the job).</li>
+</ol>
 <p>Links:</p>
-
 <ul>
 <li><a href="https://askubuntu.com/questions/512525/how-to-enable-24bit-true-color-support-in-gnome-terminal">https://askubuntu.com/questions/512525/how-to-enable-24bit-true-color-support-in-gnome-terminal</a></li>
 </ul>
-
 <h2 id="tmux">Tmux</h2>
-
 <p>tmux must be <code>&gt;= 2.2</code>.</p>
-
-<p>1) Check</p>
-
+<ol>
+<li>Check</li>
+</ol>
 <pre><code>tmux -V
-</code></pre>
-
-<p>2) Kill tmux (<code>tmux kill-server</code>) and (optionally) remove it</p>
-
-<p>3) Install</p>
-
+</code></pre><ol start="2">
+<li>
+<p>Kill tmux (<code>tmux kill-server</code>) and (optionally) remove it</p>
+</li>
+<li>
+<p>Install</p>
+</li>
+</ol>
 <p>On Ubuntu:</p>
-
 <pre><code>sudo apt-get install -y libevent-dev libncurses-dev build-essential
-</code></pre>
-
-<pre><code>wget https://github.com/tmux/tmux/releases/download/2.2/tmux-2.2.tar.gz &amp;&amp; \
+</code></pre><pre><code>wget https://github.com/tmux/tmux/releases/download/2.2/tmux-2.2.tar.gz &amp;&amp; \
   tar -xzvf tmux-2.2.tar.gz &amp;&amp; \
   cd tmux-2.2 &amp;&amp; \
   ./configure &amp;&amp; \
   make &amp;&amp; \
   sudo make install
-</code></pre>
-
-<p>4) Alias tmux or set $TERM env variable</p>
-
+</code></pre><ol start="4">
+<li>Alias tmux or set $TERM env variable</li>
+</ol>
 <pre><code>alias tmux=&quot;env TERM=xterm-256color tmux&quot;
-</code></pre>
-
-<p>5) Set option, which overrides default terminal</p>
-
+</code></pre><ol start="5">
+<li>Set option, which overrides default terminal</li>
+</ol>
 <pre><code># .tmux.conf
 set-option -ga terminal-overrides &quot;,xterm-256color:Tc&quot;
-</code></pre>
-
-<p>6) Check (inside tmux)</p>
-
+</code></pre><ol start="6">
+<li>Check (inside tmux)</li>
+</ol>
 <pre><code>tmux info | grep Tc
-</code></pre>
-
-<p>If the command reports Tc: [missing], then support for 24-bit colors has not been enabled properly because the terminal-overrides option may have specified the outer terminal’s $TERM value incorrectly or because tmux may have been reattached to an entirely different outer terminal altogether.</p>
-
+</code></pre><p>If the command reports Tc: [missing], then support for 24-bit colors has not been enabled properly because the terminal-overrides option may have specified the outer terminal’s $TERM value incorrectly or because tmux may have been reattached to an entirely different outer terminal altogether.</p>
 <p>Links:</p>
-
 <ul>
 <li><a href="https://github.com/tmux/tmux">https://github.com/tmux/tmux</a></li>
 <li><a href="https://sunaku.github.io/tmux-24bit-color.html#usage">https://sunaku.github.io/tmux-24bit-color.html#usage</a></li>
 </ul>
-
 <h2 id="neovim">Neovim</h2>
-
-<p>1) Set env variable</p>
-
-<pre><code class="language-vim">&quot; .nvimrc
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-</code></pre>
-
-<p>2) Pick a theme, which does not force 256 colors <code>if !has('gui_running')</code> or checks for <code>neovim</code> (<a href="https://github.com/neovim/neovim/issues/793">discussion</a>):</p>
-
+<ol>
+<li>Set env variable</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; .nvimrc</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> $<span style="color:#a6e22e">NVIM_TUI_ENABLE_TRUE_COLOR</span>=<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><ol start="2">
+<li>Pick a theme, which does not force 256 colors <code>if !has('gui_running')</code> or checks for <code>neovim</code> (<a href="https://github.com/neovim/neovim/issues/793">discussion</a>):</li>
+</ol>
 <ul>
 <li><a href="https://github.com/frankier/neovim-colors-solarized-truecolor-only">solarized fork</a></li>
 <li><a href="https://github.com/morhetz/gruvbox">gruvbox</a></li>
 <li><a href="https://github.com/neovim/neovim/issues/793#issuecomment-59628883">https://github.com/neovim/neovim/issues/793#issuecomment-59628883</a></li>
 </ul>
-
 <p>Links:</p>
-
 <ul>
 <li><a href="https://chris.chowie.net/2015/04/19/True-colour-with-neovim-tmux-and-iterm2/">https://chris.chowie.net/2015/04/19/True-colour-with-neovim-tmux-and-iterm2/</a></li>
 </ul>
-
 <p>My dotfiles: <a href="https://github.com/melekes/dotfiles">https://github.com/melekes/dotfiles</a></p>
 </div>
 

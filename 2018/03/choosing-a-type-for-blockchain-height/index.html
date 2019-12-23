@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,26 +62,21 @@
   <h1>Choosing a type for blockchain height (beware of unsigned integers)</h1>
   <time datetime=2018-03-03T13:47:11&#43;0400 class="post-date">Sat, Mar 3, 2018</time>
   <p><em>This article was originally published on <a href="https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d">Medium</a>.</em></p>
-
 <p>Before <a href="https://github.com/tendermint/tendermint/pull/914">this pull request</a>,
 it was a mess. ABCI was using a <code>uint64</code> height on EndBlock. Tendermint Core
 was using the same type for TxResult. Block and BlockStore, however, were using
 <code>int</code> heights (remember that <code>int</code> is different depending on the processor
 architecture: <code>int32</code> for x86, <code>int64</code> for amd64). There was no single standard
 across our repositories as for what type to use for blockchain height.</p>
-
 <p>There was a need [<a href="https://github.com/tendermint/tendermint/issues/731">1</a>].
 If you have different types everywhere, you need to cast them, which can lead
 to information loss:</p>
-
 <ul>
 <li>value — when casting bigger to smaller type</li>
 <li>sign — when casting signed to unsigned type</li>
 </ul>
-
 <p>Users should be able to build upon Tendermint without worrying that some type
 is going to change overnight.</p>
-
 <p>So one day we sat down and decided to do a small research. Choosing between
 <code>uint64</code> and <code>int64</code> was not an obvious choice. At least not back then.
 Blockchain height should only go up, so it is logical to suggest <code>uint64</code>. And
@@ -81,28 +85,20 @@ million years (assuming one sec. blocks). Wow. That’s life! What about other
 projects? <a href="https://github.com/paritytech/parity">Parity</a> and
 <a href="https://github.com/chain/chain">chain</a> use <code>uint64</code>. Sounds like an obvious
 choice? But if you look deep enough, there are dragons.</p>
-
-<h2 id="ruling-out-int-type">Ruling out int type</h2>
-
+<h2 id="ruling-out-inttype">Ruling out int type</h2>
 <p><code>int</code> was ruled out almost immediately due to size (32 bits on x86) and
 inconsistency between nodes with different architectures.</p>
-
 <blockquote>
 <p>Assuming a one second block time this means on a 32-bit architecture a Tendermint chain can only live 68 years, which is just under the worldwide mean life expectancy for a male. Surely a Tendermint chain should live longer!</p>
 </blockquote>
-
-<h2 id="uint64-vs-int64">uint64 vs int64</h2>
-
+<h2 id="uint64-vsint64">uint64 vs int64</h2>
 <p><strong>Benefits of uint64</strong></p>
-
 <ul>
 <li>good for bit-wise arithmetic (encryption algorithms, etc.)</li>
 <li>a form of self-documentation. The type indicates that the value which the
 unsigned int was intended to hold is never supposed to be negative.</li>
 </ul>
-
 <p><strong>Downsides of uint64</strong></p>
-
 <ul>
 <li>you have to be careful with arithmetic. There are cases where we subtract
 heights or subtract 1 like getting the age of some piece of evidence or logic
@@ -110,13 +106,10 @@ around checkpointing. With signed integers, we can just assert for <code>&lt; 0<
 unsigned integers, we are risking to get a super huge value if we forget to
 check for underflow or make a mistake at some point.</li>
 </ul>
-
 <blockquote>
 <p>I am just saying that if we decrement an uninitialized height uint64(0), all of a sudden that’s a quick mess up. if we have code that can check if <code>height &lt;= 0</code> then we are set with <code>int64</code>. but with <code>uint64</code> only code Jesus can help us</p>
 </blockquote>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2018-03-03-choosing-a-type-for-blockchain-height/jesus.jpg" alt="" title=""/></p>
-
+<!-- raw HTML omitted -->
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 <span style="color:#f92672">import</span> (
     <span style="color:#e6db74">&#34;fmt&#34;</span>
@@ -137,36 +130,25 @@ check for underflow or make a mistake at some point.</li>
     <span style="color:#a6e22e">b</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">29</span>
     <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;b=%v\n&#34;</span>, <span style="color:#a6e22e">b</span>)
 }</code></pre></div>
-
-<p><a href="https://play.golang.org/p/YvQgJ6Bm2Xu">https://play.golang.org/p/YvQgJ6Bm2Xu</a></p>
-
+<p><a href="https://play.golang.org/p/YvQgJ6Bm2Xu"><a href="https://play.golang.org/p/YvQgJ6Bm2Xu">https://play.golang.org/p/YvQgJ6Bm2Xu</a></a></p>
 <p><strong>Note on uint64 and Java</strong></p>
-
 <p>Java does not support unsigned ints. It means ABCI apps, that are written in
 Java won’t be able to go beyond <code>int64</code> anyway. If you are curious about why read
 <a href="https://stackoverflow.com/questions/430346/why-doesnt-java-support-unsigned-ints">Why doesn’t Java support unsigned ints</a>?</p>
-
 <p><strong>Benefits of int64</strong></p>
-
 <ul>
 <li>less chance of fuck up</li>
 </ul>
-
 <p><strong>Downsides of int64</strong></p>
-
 <ul>
 <li>smaller max value (although, 292 million years are more than enough)</li>
 </ul>
-
 <h3 id="in-conclusion">In conclusion</h3>
-
 <p>Given above reasoning we decided to go with <code>int64</code>. “value should never be less
 than zero” should not be a primary reason for picking <code>uint64</code> as a type for
 blockchain height. If you are gonna use <code>uint64</code>, be extra careful with
 arithmetic.</p>
-
 <p>Resources:</p>
-
 <ul>
 <li><a href="https://codemines.blogspot.de/2007/10/youre-probably-using-unsigned.html">You’re probably using “unsigned” incorrectly</a></li>
 </ul>

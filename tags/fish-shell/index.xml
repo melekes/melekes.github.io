@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fish-shell on Home on Rails</title>
@@ -22,10 +22,8 @@
 аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
 напротив, многие его фишки, включая подсветку, дополнение по Tab и
 автоматическое раскрытие путей, пришлись мне по душе.&lt;/p&gt;
-
 &lt;p&gt;Одновременно с этим &lt;a href=&#34;https://twitter.com/saratovsource&#34;&gt;@saratovsource&lt;/a&gt;
 намекнул, что пересел на Fish shell около полугода назад и вполне доволен.&lt;/p&gt;
-
 &lt;p&gt;{% img /images/posts/2014-07-15-fish-shell/logo.png %}&lt;/p&gt;</description>
     </item>
     

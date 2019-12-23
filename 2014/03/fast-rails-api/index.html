@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,58 +63,50 @@
   <time datetime=2014-03-09T13:00:00Z class="post-date">Sun, Mar 9, 2014</time>
   <p>Here are the slides from my internal talk, which I recently gave for my
 colleagues.</p>
-
 <p>They are showing the history of optimizing Rails API, starting from AR connections pool and
 ending by using Fragment caching. Also there is list of tools for
 profiling applications (stackprof, etc.). All techniques are quite
 famous.</p>
-
-<script async="true" class="speakerdeck-embed" data-id="b618391085100131b8c566a463623da4" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js">       </script>
-
-<p>&nbsp;</p>
-
-<h2 id="what-we-ve-tried">What we&rsquo;ve tried</h2>
-
+<!-- raw HTML omitted -->
+<p> </p>
+<h2 id="what-weve-tried">What we've tried</h2>
 <ol>
 <li>Connection pool
-
 <ul>
 <li><a href="https://devcenter.heroku.com/articles/concurrency-and-database-connections">Concurrency and Database Connections in Ruby with ActiveRecord</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://github.com/rails-api/rails-api">Rails-api</a></li>
 <li>Do not load <code>rails/all</code></li>
 <li>Establish DB connection after fork/new thread was created</li>
 <li><a href="https://github.com/kzk/unicorn-worker-killer">Unicorn worker killer</a></li>
 <li>Postgresql tuning
-
 <ul>
 <li><a href="http://postgresql.leopard.in.ua/html/">Работа с PostgreSQL: настройка и масштабирование Алексея Васильева</a></li>
 <li><a href="http://momjian.us/main/writings/pgsql/hw_performance/">PostgreSQL Hardware Performance Tuning by Bruce Momjian</a></li>
 <li><a href="http://raghavt.blogspot.ru/2012/04/caching-in-postgresql.html">Caching in PostgreSQL</a></li>
-</ul></li>
+</ul>
+</li>
 <li>Rails 4</li>
 <li>Ruby 2.1.0</li>
 <li>Fragment caching
-
 <ul>
 <li><a href="https://devcenter.heroku.com/articles/caching-strategies">Caching Strategies for Rails</a></li>
 <li><a href="http://signalvnoise.com/posts/3113-how-key-based-cache-expiration-works">How key-based cache expiration works</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://github.com/rails-api/active_model_serializers">Active Model Serializers</a></li>
 <li><a href="https://github.com/ohler55/oj">Oj</a></li>
 <li>Do not instantiate AR objects
-
 <ul>
 <li><a href="http://brainspec.com/blog/2012/09/28/lightning-json-in-rails/">Lightning JSON in Rails</a></li>
-</ul></li>
+</ul>
+</li>
 <li>Try <a href="https://github.com/tmm1/gctools">OOBGC - Out-of-Band GC</a></li>
 <li>Try different web server (e.g. Puma)</li>
 </ol>
-
 <p>If we missed something, please share your ideas in comments.</p>
-
 <h2 id="profiling-tools">Profiling tools</h2>
-
 <ol>
 <li><a href="https://github.com/tmm1/stackprof">Stackprof</a></li>
 <li><a href="https://github.com/miniprofiler/rack-mini-profiler">Rack Mini Profiler</a></li>
@@ -113,15 +114,12 @@ famous.</p>
 <li><a href="https://github.com/wvanbergen/request-log-analyzer">Request log analyzer</a></li>
 <li><a href="http://newrelic.com/">NewRelic</a></li>
 </ol>
-
 <p>On the penultimate slide is the title slide of the <a href="http://www.slideshare.net/maxlapshin/rails-26416461">presentation</a> of Max
 Lapshin, which briefly tells that to solve certain problems (such as when you need to
 keep a large number of clients) more appropriate solution might be using
 another technologies/languages (Erlang in particular).</p>
-
 <p>UPD. Ideas from comments</p>
-
-<ol>
+<ol start="15">
 <li>Try <a href="http://api.rubyonrails.org/classes/ActionController/ConditionalGet.html">Conditional Get</a></li>
 </ol>
 </div>

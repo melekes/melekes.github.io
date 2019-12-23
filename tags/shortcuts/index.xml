@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shortcuts on Home on Rails</title>
@@ -20,8 +20,7 @@
       <guid>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
-лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
-feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
+лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>

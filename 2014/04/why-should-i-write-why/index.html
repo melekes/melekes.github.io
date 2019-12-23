@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,37 +62,29 @@
   <h1>Почему стоит писать почему</h1>
   <time datetime=2014-04-15T14:58:08Z class="post-date">Tue, Apr 15, 2014</time>
   <p>Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
-&ldquo;Что?&rdquo;.</p>
-
+&ldquo;Что?&quot;.</p>
 <pre><code>commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
 Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
 
     raise NoSlidesError if no slides
-</code></pre>
-
-<p>Что сделали, то и пишем:</p>
-
+</code></pre><p>Что сделали, то и пишем:</p>
 <ul>
 <li>добавили - added</li>
 <li>удалили - removed</li>
 <li>отрефакторили - refactored</li>
 <li>&hellip; ну вы поняли.</li>
 </ul>
-
 <p>Это позволяет быстро понять что было сделано в рамках данного коммита.</p>
-
 <p>Со временем я осознал, что у данного подхода есть один серьезный
-минус - он не отвечает на вопрос &ldquo;Почему это было сделано?&rdquo;. Позже я
+минус - он не отвечает на вопрос &ldquo;Почему это было сделано?&quot;. Позже я
 убедился, что в некоторых ситуациях <strong>это способно сильно осложнить
 жизнь простому разработчику</strong>.</p>
-
 <p>Рассмотрим случай выше. Непонятно почему мы бросаем исключение, а не
 логгируем ошибку. Мы уже не можем быстро поменять данную
 функциональность. Приходится самому додумывать причину. Словом <strong>при
 отсутствии причины внесения изменений увеличивается стоимость поддержки
 данного кода</strong>.</p>
-
 <pre><code>commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
 Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
@@ -92,39 +93,36 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
 
     This is exceptional situation because if there are no slides, layout
     looses it's meaning.
-</code></pre>
-
-<p>Теперь становится ясно, что в случае отсутствия слайдов лейаут теряет свой
+</code></pre><p>Теперь становится ясно, что в случае отсутствия слайдов лейаут теряет свой
 смысл. Мы ожидаем, что будет присутствовать хотя бы один слайд.</p>
-
 <p><em>Прошу вас, не вдавайтесь в терминологию предметной области. Для интересующихся
 лишь отмечу, что исключение обрабатывается уровнем выше.</em></p>
-
 <p>Еще пара советов:</p>
-
 <ul>
-<li>не используйте <code>git commit -m &quot;&quot;</code>. Она(команда) принуждает вас писать короткие
-сообщения (например, &ldquo;fixed nil error&rdquo;)</li>
-<li>по возможности ссылайтесь на внешние источники информации (номер тикета,
-ссылка на баг в Airbrake, ссылка на статью в интернете и т.п.)</li>
-<li>первая строка не должна быть длиннее 72 символов. Следующее после нее
+<li>
+<p>не используйте <code>git commit -m &quot;&quot;</code>. Она(команда) принуждает вас писать короткие
+сообщения (например, &ldquo;fixed nil error&rdquo;)</p>
+</li>
+<li>
+<p>по возможности ссылайтесь на внешние источники информации (номер тикета,
+ссылка на баг в Airbrake, ссылка на статью в интернете и т.п.)</p>
+</li>
+<li>
+<p>первая строка не должна быть длиннее 72 символов. Следующее после нее
 расширенное описание может быть любой длинны. В качестве разделителя идет пустая
-строка.</li>
-
-<li><p>если вы пользуетесь Vim, то можно добавить проверку правописания и ограничение
+строка.</p>
+</li>
+<li>
+<p>если вы пользуетесь Vim, то можно добавить проверку правописания и ограничение
 длины текста добавив это в ваш <code>~/.vimrc</code>:</p>
-
 <pre><code>autocmd Filetype gitcommit setlocal spell textwidth=72
 </code></pre></li>
 </ul>
-
 <p>Полезные ссылки:</p>
-
 <ul>
 <li><a href="http://mislav.uniqpath.com/2014/02/hidden-documentation/">Every line of code is always documented</a></li>
 <li><a href="http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message">5 Useful Tips For A Better Commit Message</a></li>
 </ul>
-
 <p><em>Отдельное спасибо <a href="https://twitter.com/plugin73">@plugin73</a> и <a href="https://twitter.com/SavelyevAndrey">@SavelyevAndrey</a> за ревью</em>.</p>
 </div>
 

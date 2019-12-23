@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -54,16 +63,13 @@
   <time datetime=2015-05-28T11:51:25Z class="post-date">Thu, May 28, 2015</time>
   <p><a href="https://github.com/ferd">Фред Хеберт</a> - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
-замечательную книгу <a href="http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev">&ldquo;Изучай Erlang во имя добра!&rdquo;</a>, которая, к тому же,
+замечательную книгу <a href="http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev">&ldquo;Изучай Erlang во имя добра!&quot;</a>, которая, к тому же,
 доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
 только начинает изучать Erlang. Но и более опытные разработчики с большой
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
 Distributed Erlang).</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2015-05-28-zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/book.jpg" alt=""/ width="270" title="Изучай Erlang во имя добра!"></p>
-
+<p>&lt;img class=&quot;img-rounded&rdquo; src=&rdquo;/images/posts/2015-05-28-zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/book.jpg&rdquo; alt=&rdquo;&quot;/ width=&quot;270&rdquo; title=&quot;Изучай Erlang во имя добра!&ldquo;&gt;</p>
 <p>Вот лишь часть того, что я почерпнул из данной книги:</p>
-
 <ol>
 <li>используйте ctrl-a / ctrl-e в командной строке для перехода в начало / конец строки;</li>
 <li>;(,) и andalso(orelse) различаются в работе при построении защитных выражений (guards). Например, <code>when C1 ; C2</code> не упадет с ошибкой, если первое условие (C1) покрашится, а вычислит второе (C2);</li>
@@ -73,13 +79,10 @@ Distributed Erlang).</p>
 <li>[ETS] ordered_set проигрывает по скорости рандомного чтения set, поэтому должен использоваться только для range queries;</li>
 <li>[EUnit] <code>?_assert</code> исполняется не сразу, а после генерации теста.</li>
 </ol>
-
 <p>{% blockquote %}
 Симметричная мультипроцессорность появилась в Erlang не сразу, а была добавлена в 2000 годах (ее можно отключить с помощью <code>erl -smp disable</code>)
 {% endblockquote %}</p>
-
 <h1 id="distributed-erlang">Distributed Erlang</h1>
-
 <ol>
 <li>узлы в Erlang общаются по TCP соединению, и, если у вас большое сообщение, остальные сообщения будут ждать очень долго. Хуже того, heartbeat сообщения могут не дойти до узла и Erlang посчитает, что узел умер;</li>
 <li>большое количество связей (link) между узлами не есть хорошо, так как приведет к всплеску количества сообщений при падении одного из них;</li>
@@ -89,21 +92,16 @@ Distributed Erlang).</p>
 <li>распределенные приложения OTP (OTP Distributed Applications) делают упор на то, что ошибки в основном происходят по вине аппаратного обеспечения, а не разделения сети. Если у вас по другому - OTP не для вас. Они (приложения) служат для организации failover и backover;</li>
 <li>если планируется использовать горячую замену кода (hot code reloading), то записи (records) лучше не выставлять наружу (только в рамках модуля). Иначе - боль.</li>
 </ol>
-
 <p>{% blockquote %}
 Версии Erlang &gt;= R15B01 позволяют использовать реестры помимо local и global - {via, МодульРеестра, Имя}
 {% endblockquote %}</p>
-
 <h1 id="mnesia">Mnesia</h1>
-
 <ol>
 <li>хорошей идеей будет добавить префикс к названию таблиц в mnesia (так как они шарятся по всему кластеру);</li>
 <li>при написании большого приложения лучше разделить логику приложения и код mnesia (чтобы, к примеру, иметь возможность заменить транзакции на синхронные);</li>
 <li>tv:start() - GUI для просмотра таблиц.</li>
 </ol>
-
 <p>Полезные ссылки:</p>
-
 <ul>
 <li><a href="http://ferd.ca/">Блог автора книги</a></li>
 <li><a href="http://learnyousomeerlang.com/">Сама книга</a></li>

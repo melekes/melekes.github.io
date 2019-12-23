@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -57,68 +66,52 @@ testing you usually do something like <code>go test ./...</code>, when getting a
 dependencies - <code>go get ./...</code>. There may be or may not be a Go package at the
 root level. Examples: <a href="https://github.com/hashicorp/consul">1</a>,
 <a href="https://github.com/tendermint/tendermint">2</a>.</p>
-
 <p>If you are using <a href="https://github.com/Masterminds/glide">glide</a> or other package
 manager:</p>
-
-<pre><code class="language-yaml">---
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
 machine:
   environment:
-    PROJECT_GOPATH: &quot;${HOME}/.go_project&quot;
-    PROJECT_PARENT_PATH: &quot;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&quot;
-    PROJECT_PATH: &quot;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&quot;
-    GOPATH: &quot;${PROJECT_GOPATH}&quot;
-    GO15VENDOREXPERIMENT: 1
+    PROJECT_GOPATH: <span style="color:#e6db74">&#34;${HOME}/.go_project&#34;</span>
+    PROJECT_PARENT_PATH: <span style="color:#e6db74">&#34;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&#34;</span>
+    PROJECT_PATH: <span style="color:#e6db74">&#34;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&#34;</span>
+    GOPATH: <span style="color:#e6db74">&#34;${PROJECT_GOPATH}&#34;</span>
+    GO15VENDOREXPERIMENT: <span style="color:#ae81ff">1</span>
 
 dependencies:
   cache_directories:
-    - &quot;~/.glide&quot;
+    - <span style="color:#e6db74">&#34;~/.glide&#34;</span>
   pre:
     - go get -u -v github.com/Masterminds/glide
   override:
-    - mkdir -p &quot;$PROJECT_PARENT_PATH&quot;
-    - ln -sf &quot;$HOME/$CIRCLE_PROJECT_REPONAME/&quot; &quot;$PROJECT_PATH&quot;
-    - cd &quot;$PROJECT_PATH&quot; &amp;&amp; glide install
+    - mkdir -p <span style="color:#e6db74">&#34;$PROJECT_PARENT_PATH&#34;</span>
+    - ln -sf <span style="color:#e6db74">&#34;$HOME/$CIRCLE_PROJECT_REPONAME/&#34;</span> <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span>
+    - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> glide install
   post:
     - go version
     - glide -v
 
 test:
   override:
-    - cd &quot;$PROJECT_PATH&quot; &amp;&amp; go test -v $(glide novendor)
-</code></pre>
-
-<p>Also, if you want to store your test&rsquo;s output as CircleCI artifact on S3:</p>
-
-<pre><code class="language-yaml">test:
+    - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> go test -v $(glide novendor)
+</code></pre></div><p>Also, if you want to store your test's output as CircleCI artifact on S3:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">test:
   override:
-    - cd &quot;$PROJECT_PATH&quot; &amp;&amp; go test -v $(glide novendor) 2&gt;&amp;1 | tee test.log
+    - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> go test -v $(glide novendor) <span style="color:#ae81ff">2</span>&gt;<span style="color:#75715e">&amp;1</span> | tee test.log
   post:
-    - cd &quot;$PROJECT_PATH&quot; &amp;&amp; mv test.log &quot;${CIRCLE_ARTIFACTS}&quot;
-</code></pre>
-
-<p><code>$(glide novendor)</code> could be replaced with <code>$(shell go list ./... | grep -v
-'/vendor/')</code>. The former is just shorter.</p>
-
+    - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> mv test.log <span style="color:#e6db74">&#34;${CIRCLE_ARTIFACTS}&#34;</span>
+</code></pre></div><p><code>$(glide novendor)</code> could be replaced with <code>$(shell go list ./... | grep -v '/vendor/')</code>. The former is just shorter.</p>
 <p>You might be asking yourself: where is the example using simple <code>go get</code>? I
-won&rsquo;t give you one because <a href="https://discuss.circleci.com/t/using-own-packages-in-go-project/4073/8">I was not able to get <code>go get</code> working on CircleCI
+won't give you one because <a href="https://discuss.circleci.com/t/using-own-packages-in-go-project/4073/8">I was not able to get <code>go get</code> working on CircleCI
 for our
-  project</a>.</p>
-
+project</a>.</p>
 <p>The errors were as follows:</p>
-
 <pre><code>package _/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks: unrecognized import path &quot;_/home/ubuntu/.go_project/src/github.com/tendermint/tendermint/benchmarks&quot; (import path does not begin with hostname)
 ...
-</code></pre>
-
-<p><strong>One small advice:</strong></p>
-
+</code></pre><p><strong>One small advice:</strong></p>
 <p>install <a href="https://github.com/adrienverge/yamllint">yamllint</a> and check your
 config file. If your config contains the syntax errors, CircleCI will output
 &ldquo;Action failed: Configure the build&rdquo;. Very descriptive, right?</p>
-
 <p>Resources:</p>
-
 <ul>
 <li><a href="https://subosito.com/posts/golang-circleci/">https://subosito.com/posts/golang-circleci/</a></li>
 </ul>

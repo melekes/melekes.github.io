@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>clojure on Home on Rails</title>
@@ -18,12 +18,11 @@
       <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
+      <description>&lt;p&gt;I&#39;ve recently decided to give Clojure another try and, as a part of my
 wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
 Clojure conference in the western United States and all about this language, as
 you may guess.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,75 +62,57 @@
   <h1>January picks</h1>
   <time datetime=2015-01-06T12:19:19Z class="post-date">Tue, Jan 6, 2015</time>
   <p>&ldquo;Random picks from all over the Internet&rdquo;.</p>
-
 <h2 id="english">English</h2>
-
 <h3 id="articles">Articles</h3>
-
 <ul>
-<li><a href="https://hashicorp.com/blog/tao-of-hashicorp.html">The Tao of HashiCorp by Mitchell Hashimoto, Armon Dadgar</a></li>
-</ul>
-
+<li>
+<p><a href="https://hashicorp.com/blog/tao-of-hashicorp.html">The Tao of HashiCorp by Mitchell Hashimoto, Armon Dadgar</a></p>
 <p>If you are looking some very good principles for your team or organization,
-  these from HashiCorp may give you the foundation.</p>
-
-<ul>
-<li><a href="http://symas.com/mdb/ondisk/">On-Disk Microbenchmark</a></li>
-</ul>
-
+these from HashiCorp may give you the foundation.</p>
+</li>
+<li>
+<p><a href="http://symas.com/mdb/ondisk/">On-Disk Microbenchmark</a></p>
 <p>Nice benchmarks of LMDB, BerkeleyDB, Google LevelDB and 3 of its derivatives -
-  Basho LevelDB, HyperLevelDB, and Facebook&rsquo;s RocksDB, as well as TokuDB and
-  WiredTiger. Worth seeing.</p>
-
-<ul>
-<li><a href="https://aphyr.com/posts/313-strong-consistency-models">Strong consistency models</a></li>
-</ul>
-
+Basho LevelDB, HyperLevelDB, and Facebook's RocksDB, as well as TokuDB and
+WiredTiger. Worth seeing.</p>
+</li>
+<li>
+<p><a href="https://aphyr.com/posts/313-strong-consistency-models">Strong consistency models</a></p>
 <p>Well written article about program correctness and different strong
-  consistency models and how they fit together.</p>
-
-<h3 id="videos">Videos</h3>
-
-<ul>
-<li><a href="http://vimeo.com/9270320">What We Actually Know About Software Development, and Why We Believe It&rsquo;s True by Greg Wilson</a></li>
+consistency models and how they fit together.</p>
+</li>
 </ul>
-
+<h3 id="videos">Videos</h3>
+<ul>
+<li>
+<p><a href="http://vimeo.com/9270320">What We Actually Know About Software Development, and Why We Believe It's True by Greg Wilson</a></p>
 <p>When someone comes to you and says &ldquo;I want to learn Haskell, because parallel
-  programming is so easy in it&rdquo; I want you to say &ldquo;Where is the evidence? Has
-  somebody tested it? Do we trust them?&rdquo; Thoughtful talk on the software
-  development.</p>
-
+programming is so easy in it&rdquo; I want you to say &ldquo;Where is the evidence? Has
+somebody tested it? Do we trust them?&rdquo; Thoughtful talk on the software
+development.</p>
+</li>
+</ul>
 <h3 id="tools">Tools</h3>
-
-<p>Do you want to improve life of your Linux laptop&rsquo;s battery? Here is a handy tool - <a href="http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html">tlp</a>.</p>
-
+<p>Do you want to improve life of your Linux laptop's battery? Here is a handy tool - <a href="http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html">tlp</a>.</p>
 <pre><code>sudo add-apt-repository ppa:linrunner/tlp
 sudo apt-get update
 sudo apt-get install tlp tlp-rdw
-</code></pre>
-
-<p>ThinkPads require an additional:</p>
-
+</code></pre><p>ThinkPads require an additional:</p>
 <pre><code>sudo apt-get install tp-smapi-dkms acpi-call-dkms
-</code></pre>
-
-<h2 id="russian">Russian</h2>
-
-<h3 id="презентации-с-higload-2014">Презентации с Higload 2014</h3>
-
+</code></pre><h2 id="russian">Russian</h2>
+<h3 id="--higload-2014">Презентации с Higload 2014</h3>
 <ul>
-<li><a href="http://www.slideshare.net/tsarevoleg/ss-40969331">Асинхронная репликация без цензуры: архитектурные проблемы MySQL, или почему PostgreSQL завоюет мир, Олег Царёв</a></li>
-</ul>
-
+<li>
+<p><a href="http://www.slideshare.net/tsarevoleg/ss-40969331">Асинхронная репликация без цензуры: архитектурные проблемы MySQL, или почему PostgreSQL завоюет мир, Олег Царёв</a></p>
 <p>Всё что вы хотели знать про репликацию, но боялись спросить. Ещё один
-  отличный доклад с Highload 2014.</p>
-
-<ul>
-<li><a href="http://smira.ru/posts/highload-2014.html">Клиентские приложения под нагрузкой и Анатомия веб-сервиса 2.0, Андрей Смирнов</a></li>
-</ul>
-
+отличный доклад с Highload 2014.</p>
+</li>
+<li>
+<p><a href="http://smira.ru/posts/highload-2014.html">Клиентские приложения под нагрузкой и Анатомия веб-сервиса 2.0, Андрей Смирнов</a></p>
 <p>Пара презентаций от Андрея Смирнова о проблемах клиент-серверных приложений и
-  возможных подходах к построению backend’а.</p>
+возможных подходах к построению backend’а.</p>
+</li>
+</ul>
 </div>
 
 <h2>Comments</h2>

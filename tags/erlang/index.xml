@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>erlang on Home on Rails</title>
@@ -20,8 +20,7 @@
       <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
-
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -31,12 +30,8 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
       <pubDate>Wed, 25 May 2016 11:41:44 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/05/profiling-in-erlang/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://homeonrails.com/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf&#34; title=&#34;Скачать PDF на русском&#34;&gt;
-  На русском
-&lt;/a&gt;&lt;/p&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;The list of available instruments:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;fprof, eprof, cover, cprof (shipped with erlang)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;top&lt;/code&gt;-like utilities: third party &lt;a href=&#34;https://github.com/zaa/entop&#34;&gt;entop&lt;/a&gt; и &lt;a href=&#34;http://erlang.org/doc/apps/observer/etop_ug.html&#34;&gt;etop&lt;/a&gt;&lt;/li&gt;
@@ -66,11 +61,9 @@ rebar.&lt;/p&gt;</description>
       
       <guid>http://homeonrails.com/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
-logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
+logger which limits the volume of info messages irrespectively of the lager&#39;s
 backend.&lt;/p&gt;
-
-&lt;p&gt;This article tells a story behind this library. Down below you&amp;rsquo;ll find answers to the following questions:&lt;/p&gt;
-
+&lt;p&gt;This article tells a story behind this library. Down below you&#39;ll find answers to the following questions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Why it was created?&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;How it works?&amp;rdquo;&lt;/li&gt;
@@ -84,7 +77,7 @@ backend.&lt;/p&gt;
       <pubDate>Tue, 05 Apr 2016 15:50:31 +0000</pubDate>
       
       <guid>http://homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -97,7 +90,7 @@ backend.&lt;/p&gt;
 2016&lt;/a&gt; conference ended only 3 weeks
 ago. There were many great speakers and presentations. What I specifically like
 about it, is that videos are available almost immediately. As usual, I am
-publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
+publishing the talks, which I liked the most. Hope you&#39;ll enjoy these too.
 &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -108,12 +101,8 @@ publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these 
       
       <guid>http://homeonrails.com/2015/10/dont-trust-your-devlead/</guid>
       <description>&lt;p&gt;&amp;ldquo;Не верь своему тимлиду&amp;rdquo; или когда не стоит слепо верить словам вашего тимлида.&lt;/p&gt;
-
-&lt;div style=&#34;align:center&#34;&gt;
-  &lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png&#34; alt=&#34;&#34; width=&#34;100%&#34; title=&#34;&#34;/&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -133,13 +122,12 @@ favorite talks. Enjoy!&lt;/p&gt;</description>
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
+      <description>&lt;p&gt;I&#39;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
 are very different languages: OOP vs functional, mutable vs immutable and so
-on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is also true).&lt;/p&gt;
-
-&lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
-that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
+on. Also, there are things you won&#39;t find in Ruby (the opposite is also true).&lt;/p&gt;
+&lt;p&gt;In this post I want to show you the mistakes that I&#39;ve made and the lessons
+that I&#39;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -150,7 +138,7 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
       <guid>http://homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ferd&#34;&gt;Фред Хеберт&lt;/a&gt; - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
-замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;rdquo;&lt;/a&gt;, которая, к тому же,
+замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;quot;&lt;/a&gt;, которая, к тому же,
 доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
 только начинает изучать Erlang. Но и более опытные разработчики с большой
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
@@ -174,9 +162,8 @@ Distributed Erlang).&lt;/p&gt;</description>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
       
       <guid>http://homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
-      <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
-начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
-
+      <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&#39;а. Что ж,
+начнем с того, что клиента для Erlang&#39;а нет :( А на выбор имеются:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;REST&lt;/li&gt;
 &lt;li&gt;Thrift&lt;/li&gt;

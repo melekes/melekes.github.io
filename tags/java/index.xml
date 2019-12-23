@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>java on Home on Rails</title>
@@ -32,7 +32,7 @@ errors.&lt;/p&gt;</description>
       <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
 &lt;a href=&#34;https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.
-Поэтому я решил не использовать Apache&amp;rsquo;s HTTPClient и другие библиотеки, вроде
+Поэтому я решил не использовать Apache&#39;s HTTPClient и другие библиотеки, вроде
 Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
 нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;</description>
     </item>

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -52,19 +61,14 @@
     <div class="post">
   <h1>Where should I declare my constant?</h1>
   <time datetime=2018-03-29T15:18:47&#43;0200 class="post-date">Thu, Mar 29, 2018</time>
-  
-
-<p><em>This article was originally published on <a href="https://medium.com/@anton.kalyaev/where-should-i-declare-my-constant-4675d2c87496">Medium</a>.</em></p>
-
+  <p><em>This article was originally published on <a href="https://medium.com/@anton.kalyaev/where-should-i-declare-my-constant-4675d2c87496">Medium</a>.</em></p>
 <p>Quick question: where should I declare my constant? Most developers would say:
 “top of the file”. And that would be the wrong answer. As for the majority of
 the questions in software engineering, the right answer is “it depends”. I
 would try to prove to you, in this post, that, if the constant is private and
 is used only in one place, it’s far better to declare it right above the line,
 where it’s used.</p>
-
 <h3 id="public-constants">Public constants</h3>
-
 <p>Declare public constants at the top of the package or module or whatever is
 your languages defines along with documentation. That’s where most people would
 hope to find them. That’s where other developers would hope to find them. In
@@ -72,61 +76,47 @@ most languages, there is an agreement (written or spoken) on how a code within
 a file should be structured. Most commonly, first, there are constants, then
 variables, then public structures (or class definition), then public functions
 and private functions in the end.</p>
-
 <p>Note sometimes people put constants, representing a common group, in a separate
 file (e.g. “errors.go” file in Golang).</p>
-
 <h3 id="private-constants">Private constants</h3>
-
 <p>If the private constant is used in many files (not just one), then again
 declare it at the top of the file. Which one? How do I know?) It’s your code.
 The reasoning is the same as for public constants above.</p>
-
 <p>If the private constant is used within one file, declare it close to where it’s
 used. Of course, there are all different caveats. For example, in Ruby, there
 is a private modifier, and you are supposed to put private constants and
 methods under it.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">private</span>
 
-  <span style="color:#66d9ef">MY_SECRET_CONST</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;secret&#34;</span>
+  <span style="color:#66d9ef">MY_SECRET_CONST</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">secret</span><span style="color:#e6db74">&#34;</span>
 
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">method_a</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">method_a</span>
   <span style="color:#66d9ef">end</span>
 
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">method_b</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">method_b</span>
   <span style="color:#66d9ef">end</span></code></pre></div>
-
 <p>You can also mark them as private though: <code>private :method_a, :method_b</code>.</p>
-
 <p>Be sure to watch <a href="https://www.youtube.com/watch?v=H5i1gdwe1Ls&amp;feature=youtu.be&amp;t=9m16s">an episode of “On Writing
 Software”</a>
 by David Heinemeier Hansson, where he shares his thoughts on the subject.</p>
-
 <p>If you have a specification (the definition of how the thing works), any
 constant (public or private) that is part of it, should also be at the top of
 the file.</p>
-
 <p>The advantage of having a private constant close to its usage is no context
 loss and no need for scrolling to the top of the file. The context loss is
 probably the main one. When you scrolled to the top and went back, you may not
 remember all the details that were in your head the moment you were reading the
 function/method body in the beginning.</p>
-
 <p>The argument that developers will search for a constant at the top of the file
 is invalid if the constant is declared within this method. In 99% of cases,
 they will notice it with a lateral vision.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">A</span>() {
   <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MY_SECRET_CONST</span> = <span style="color:#e6db74">&#34;secret&#34;</span>
   <span style="color:#a6e22e">methodA</span>(<span style="color:#a6e22e">MY_SECRET_CONST</span>)
 }</code></pre></div>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2018-03-29-where-should-i-declare-my-constant/flowchart.png" alt="" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>The flowchart above is simplified, of course. But at the very least, it
 provides some guidance.</p>
-
 <p>Hope this clarifies things! Be sure to comment on this article if you disagree
 on something.</p>
 

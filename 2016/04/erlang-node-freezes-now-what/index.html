@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -52,64 +61,42 @@
     <div class="post">
   <h1>Зависла Erlang нода. Что делать?</h1>
   <time datetime=2016-04-05T15:50:31Z class="post-date">Tue, Apr 5, 2016</time>
-  <p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg" alt="" width="100%" title=""/></p>
-
+  <!-- raw HTML omitted -->
 <p>Пишу статью по горячим следам. Пару дней назад тестировал работу приложения при
-пропаже соединения с Redis&rsquo;ом. Так вот, после возобновления соединения
+пропаже соединения с Redis'ом. Так вот, после возобновления соединения
 (успешном переподключении), через раз приложение зависало полностью. Ни
 консолью подрубиться, ничего&hellip;</p>
-
 <p>Обычно такое происходит, если вы используете C-расширение, оформленное в виде
 NIF, и оно в один прекрасный момент блокируется. Шедулер Erlang в таком случае
 не может прервать выполнение потока, как он поступил бы в случае с Erlang
 кодом.</p>
-
 <p>Всякие Linux утилиты (типа <code>strace</code>) нам мало о чем скажут. Как дебажить
 C-расширения в Erlang тоже непонятно (отдельно - понятно, <code>gdb</code> и тому
 подобное). Если знаете - напишите плиз.</p>
-
 <p>Зато мы можем послать сигнал виртуальной машине Erlang и она создаст crash dump:</p>
-
 <pre><code>$ kill -SIGUSR1 &lt;pid&gt;
 
 Crash dump is being written to: erl_crash.dump...done
 Received SIGUSR1
-</code></pre>
-
-<p>Смотреть на него без дополнительных утилит еще более болезненно, чем на вывод
+</code></pre><p>Смотреть на него без дополнительных утилит еще более болезненно, чем на вывод
 <code>tcpdump</code> без <a href="https://www.wireshark.org/">Wireshark</a>.</p>
-
-<h2 id="анализируем-crashdump">Анализируем crashdump</h2>
-
+<h2 id="-crashdump">Анализируем crashdump</h2>
 <p>Мне известны по крайней мере 2 инструмента: crashdump_viewer и recon.</p>
-
-<h3 id="crashdump-viewer">crashdump_viewer</h3>
-
+<h3 id="crashdumpviewer">crashdump_viewer</h3>
 <p><a href="http://erlang.org/doc/apps/observer/crashdump_ug.html">http://erlang.org/doc/apps/observer/crashdump_ug.html</a></p>
-
 <pre><code>$ erl
 &gt; crashdump_viewer:start().
-</code></pre>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug1.png" alt="" width="100%" title=""/></p>
-
+</code></pre><!-- raw HTML omitted -->
 <p>Общая информация.</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug2.png" alt="" width="100%" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>Список процессов.</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug3.png" alt="" width="100%" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>Информация по одному из немногих запущенных процессов с большим количеством
 редукций. Чтобы найти конкретный процесс, внутри которого произошла блокировка,
 пришлось просмотреть несколько штук (количество запущенных процессов обычно =
 числу ядер).</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug4.png" alt="" width="100%" title=""/></p>
-
+<!-- raw HTML omitted -->
 <p>stackdump процесса.</p>
-
 <p>Как видно из 2-й картинки выше мы заблокировались на
 <code>hierdis:pipeline_cleaner/4</code> (см. &ldquo;Continuation pointer&rdquo;).
 <a href="https://github.com/funbox/hierdis">Hierdis</a> - это клиент для Redis, который мы
@@ -117,11 +104,8 @@ Received SIGUSR1
 аргументы можно либо в crashdump_viewer, либо используя
 <a href="https://ferd.github.io/recon/recon_trace.html">recon_trace</a>) в самом клиенте и
 найти конкретную причину (<a href="https://github.com/funbox/hierdis/pull/1">PR</a>).</p>
-
 <h3 id="recon">recon</h3>
-
 <p><a href="https://ferd.github.io/recon/">https://ferd.github.io/recon/</a></p>
-
 <pre><code>./recon/scripts/erl_crashdump_analyzer.sh &lt;crashdump&gt;
 
 analyzing erl_crash.dump, generated on:  Tue Apr 5 12:30:26 2016
@@ -191,16 +175,11 @@ Process States when crashing (sum):
       4 Running
       3 Scheduled
     213 Waiting
-</code></pre>
-
-<p>Он дает общую картину того, что происходит.</p>
-
+</code></pre><p>Он дает общую картину того, что происходит.</p>
 <p>Вообще recon довольно полезная библиотека. В ней можно найти различные модули
 для инспекции состояния ноды, трассировки и т.д.</p>
-
 <p>Вот например скрипт, который показывает работающие (running) процессы с
-количеством сообщений в mailbox&rsquo;е &gt;= <code>threshold</code>:</p>
-
+количеством сообщений в mailbox'е &gt;= <code>threshold</code>:</p>
 <pre><code>$ awk -v threshold=1 -f ./recon/script/queue_fun.awk erl_crash.dump                                                                                                                                         MESSAGE QUEUE LENGTH: CURRENT FUNCTION
 ======================================
 1: gen_server:loop/6

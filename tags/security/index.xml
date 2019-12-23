@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security on Home on Rails</title>
@@ -40,12 +40,11 @@
       <guid>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
-&lt;li&gt;Difficulty: &lt;span class=&#34;label label-success&#34;&gt;Easy&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;A lot of time has passed since my last post, so I decided to fix this
 little drawback. Next, we will discuss three small pieces of code,
-which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;</description>
+which smells not very good. Let&#39;s see what we can do about it.&lt;/p&gt;</description>
     </item>
     
   </channel>

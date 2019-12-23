@@ -1,753 +1,107 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
 <head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.60.1" />
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    
-    <meta name="twitter:card" content="summary"/>
-    
-    <meta name="twitter:image" content="/images/cover.png"/>
-    
-
-
-
-<meta name="twitter:title" content="Home on Rails"/>
-<meta name="twitter:description" content="Magic unicorns, steep rabbits, fat cats discussing software development"/>
-<meta name="twitter:site" content="@akaliaev"/>
-
-
-
-  	<meta property="og:title" content="Home on Rails" />
-  	<meta property="og:site_name" content="Home on Rails" />
-  	<meta property="og:url" content="http://homeonrails.com/" />
-
-    
-        
-            <meta property="og:image" content="/images/cover.png"/>
-        
-    
-
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
-    
-
-    <title>Home on Rails</title>
-
-    
-    <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
-    
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="http://homeonrails.com/images/favicon.ico">
-	  <link rel="apple-touch-icon" href="http://homeonrails.com/images/apple-touch-icon.png" />
-
-    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
-
-    
-
-    
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-        
-        <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-      
-      
-        <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
-      
-    
-    <meta name="generator" content="Hugo 0.57.2" />
-
-    <link rel="canonical" href="http://homeonrails.com/" />
-
-    
-      
-    
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Website",
-    "publisher": {
-        "@type": "Person",
-        "name":  null ,
-        
-        "image": {
-            "@type": "ImageObject",
-            "url": "http://homeonrails.com/images/logo.png",
-            "width": 250,
-            "height": 250
-        },
-        
-        "url": "http://homeonrails.com",
-        "sameAs": [
-            
-            
-             
-             
-             
-             
-             
-            
-        ]
-    },
-    "url": "http://homeonrails.com/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://homeonrails.com/"
-    },
-    "description": "Magic unicorns, steep rabbits, fat cats discussing software development"
-}
-  </script>
-    
-
-
-    
-
-    
-
-    
-        
-    
-</head>
-<body class="nav-closed">
-
-  <div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        
-        
-        
-            
-            <li class="nav-opened nav-current" role="presentation">
-            	<a href="http://homeonrails.com/">Blog</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/about">About me</a>
-            </li>
-        
-            <h3>Explore</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/most-popular-posts">Most popular posts</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://speakerdeck.com/melekes">Talks</a>
-            </li>
-        
-            <h3>Follow Me</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="https://github.com/melekes">Github repos</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://twitter.com/akaliaev">Twitter timeline</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://www.goodreads.com/melekes">Goodreads books</a>
-            </li>
-        
-            <h3>Contact Me</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="http://www.linkedin.com/in/melekes">LinkedIn</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://Keybase.io/melekes">Keybase (secure msg)</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
-            </li>
-        
-        
-    </ul>
-
-    
-    <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
-    
-</div>
-<span class="nav-cover"></span>
-
-
- <div class="site-wrapper">
-
-
-
-
-  <header class="main-header" style="background-image: url(/images/cover.png)">
   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home on Rails</title>
+  <meta name="description" content="Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
-    <nav class="main-nav overlay clearfix">
-        
-            <a class="blog-logo" href="http://homeonrails.com/"><img src="http://homeonrails.com/images/logo.png" alt="Blog Logo" /></a>
-        
-        
-            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
-        
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://homeonrails.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
+
+  
+  <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
+</head>
+
+  <body class="theme-base-0d ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://homeonrails.com/"><h1>Home on Rails</h1></a>
+      <p class="lead">
+       Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://homeonrails.com/">Home</a> </li>
+        <li><a href="http://homeonrails.com/pgp/"> PGP Pub Key </a></li><li><a href="http://homeonrails.com/about"> About me </a></li><li><a href="https://github.com/melekes"> Github </a></li><li><a href="https://www.goodreads.com/melekes"> Goodreads </a></li><li><a href="http://www.linkedin.com/in/melekes"> LinkedIn </a></li><li><a href="http://homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://speakerdeck.com/melekes"> Slides </a></li><li><a href="https://twitter.com/akaliaev"> Twitter </a></li>
+      </ul>
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            
 
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
 
-    <a class="bloglogo" href="https://github.com/melekes" target="_blank">
-    <span class="icon-github" style="color:white;font-size:2em"></span>
-    </a>
-&nbsp;
-
-
-
-
-
-
-
-
-
-    <a class="bloglogo" href="https://twitter.com/akaliaev" target="_blank">
-        <span class="icon-twitter" style="color:white;font-size:2em"></span>
-    </a>
-&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h1 class="page-title">Home on Rails</h1>
-            <h2 class="page-description">Magic unicorns, steep rabbits, fat cats discussing software development</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
-</header>
-
-
-<main id="content" class="content" role="main">
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    
-
-    
-    
-    
-
-    <div class="extra-pagination inner">
-        <nav class="pagination" role="navigation">
-	
-	    <a class="newer-posts" href="http://homeonrails.com/page/19/">&larr; Newer Posts</a>
-	
-	<span class="page-number">Page 20 of 21</span>
-	
-	    <a class="older-posts" href="http://homeonrails.com/page/21/">Older Posts &rarr;</a>
-	
-</nav>
-
-    </div>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/">Copy and paste between Vim and OS</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>When I first encountered this problem it slightly
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2014/02/january-picks/">January picks</a>
+  </h1>
+  <time datetime="2014-02-10T00:00:00Z" class="post-date">Mon, Feb 10, 2014</time>
+  <p>Monthly {newsletter} with great articles, videos and presentations.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2014/02/january-picks/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2014/01/december-picks/">December picks</a>
+  </h1>
+  <time datetime="2014-01-10T00:00:00Z" class="post-date">Fri, Jan 10, 2014</time>
+  <p>Monthly {newsletter} with great articles, videos and presentations.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2014/01/december-picks/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/">Copy and paste between Vim and OS</a>
+  </h1>
+  <time datetime="2014-01-09T00:00:00Z" class="post-date">Thu, Jan 9, 2014</time>
+  <p>When I first encountered this problem it slightly
 puzzled me. &ldquo;Why can not I press <code>ctrl-c</code> to copy the text and
-<code>ctrl-v</code> to paste?&ldquo;- I asked myself. Indeed, the majority of source code editors
-able to do this. And yes, I got used to this dammit!</p> <a class="read-more" href="http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/tutorials/">#tutorials</a>,
-            
-                <a href="http://homeonrails.com//tags/vim/">#vim</a>,
-            
-                <a href="http://homeonrails.com//tags/os/">#os</a>,
-            
-                <a href="http://homeonrails.com//tags/copy-and-paste/">#copy-and-paste</a>,
-            
-                <a href="http://homeonrails.com//tags/vimrc/">#vimrc</a>,
-            
-        
-        <time class="post-date" datetime="2014-01-09T00:00:00Z">
-            9 Jan 2014
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2014/01/riding-in-bansko-2013/">Покатушки 2013 - Банско, Болгария</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>
+<code>ctrl-v</code> to paste?&quot;- I asked myself. Indeed, the majority of source code editors
+able to do this. And yes, I got used to this dammit!</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2014/01/riding-in-bansko-2013/">Покатушки 2013 - Банско, Болгария</a>
+  </h1>
+  <time datetime="2014-01-09T00:00:00Z" class="post-date">Thu, Jan 9, 2014</time>
+  
 <p>На улице плюс 6, ярко светит послеобеденное солнце, в воздухе витают запахи печенных
 лепешек и кофе. Таким мне предстал небольшой и уютный городок Банско, расположенный у
 подножья Пирин. Это популярный у туристов из Европы и самих болгар горнолыжный курорт.</p>
@@ -760,50 +114,18 @@ able to do this. And yes, I got used to this dammit!</p> <a class="read-more" hr
   alt="BooksViaBooks"/ width="450">
 </div>
 
- <a class="read-more" href="http://homeonrails.com/2014/01/riding-in-bansko-2013/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/reviews/">#reviews</a>,
-            
-                <a href="http://homeonrails.com//tags/snowboard/">#snowboard</a>,
-            
-                <a href="http://homeonrails.com//tags/ski-resort/">#ski-resort</a>,
-            
-                <a href="http://homeonrails.com//tags/bansko/">#bansko</a>,
-            
-        
-        <time class="post-date" datetime="2014-01-09T00:00:00Z">
-            9 Jan 2014
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/">По следам RailsRumble 2013</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2014/01/riding-in-bansko-2013/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/">По следам RailsRumble 2013</a>
+  </h1>
+  <time datetime="2013-10-23T00:00:00Z" class="post-date">Wed, Oct 23, 2013</time>
+  
 <p>В этом году я в очередной раз участвовал в
 <a href="http://railsrumble.com">RailsRumble</a>. Если кто не в курсе, RailsRumble
 - это 48 часовой хакатон, в рамках которого команды со всего света соревнуются
@@ -814,387 +136,322 @@ able to do this. And yes, I got used to this dammit!</p> <a class="read-more" hr
 организаторов конференций, приложение которое показывает треки из видео
 на YouTube или Vimeo.</p>
 
- <a class="read-more" href="http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/tutorials/">#tutorials</a>,
-            
-                <a href="http://homeonrails.com//tags/railsrumble/">#railsrumble</a>,
-            
-                <a href="http://homeonrails.com//tags/hackaton/">#hackaton</a>,
-            
-        
-        <time class="post-date" datetime="2013-10-23T00:00:00Z">
-            23 Oct 2013
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2013/07/top-10-commands-you-currently-use/">10 команд, которыми вы пользуетесь чаще всего</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Порой, если вы активно пользуетесь командной строкой, вы начинаете
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2013/07/top-10-commands-you-currently-use/">10 команд, которыми вы пользуетесь чаще всего</a>
+  </h1>
+  <time datetime="2013-07-28T00:00:00Z" class="post-date">Sun, Jul 28, 2013</time>
+  <p>Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
-лень каждый раз набирать <code>vagrant up</code> или <code>git checkout
-feature/awesome-feature</code>? Если да и вы стремитесь к повышению
+лень каждый раз набирать <code>vagrant up</code> или <code>git checkout feature/awesome-feature</code>? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
-которое нам поможет - алиасы.</p> <a class="read-more" href="http://homeonrails.com/2013/07/top-10-commands-you-currently-use/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/tutorials/">#tutorials</a>,
-            
-                <a href="http://homeonrails.com//tags/alias/">#alias</a>,
-            
-                <a href="http://homeonrails.com//tags/linux/">#linux</a>,
-            
-                <a href="http://homeonrails.com//tags/history/">#history</a>,
-            
-                <a href="http://homeonrails.com//tags/shortcuts/">#shortcuts</a>,
-            
-                <a href="http://homeonrails.com//tags/git/">#git</a>,
-            
-                <a href="http://homeonrails.com//tags/productivity/">#productivity</a>,
-            
-        
-        <time class="post-date" datetime="2013-07-28T00:00:00Z">
-            28 Jul 2013
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/">Выступление на Belarus Ruby Meetup 2013</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>
+которое нам поможет - алиасы.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2013/07/top-10-commands-you-currently-use/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/">Выступление на Belarus Ruby Meetup 2013</a>
+  </h1>
+  <time datetime="2013-07-28T00:00:00Z" class="post-date">Sun, Jul 28, 2013</time>
+  
 <p>  Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где
 прошла очередная встреча ruby разработчиков <a href="http://lanyrd.com/2013/belarus-ruby/" target="_blank">Belarus Ruby Meetup</a>. Формат
 встречи очень похож на аналогичные мероприятия в рамках ULCAMP::Dev в Ульяновске.
 Однако, есть ряд особенностей и интересных вещей, о которых грех
 не упомянуть.</p>
 
- <a class="read-more" href="http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-                <a href="http://homeonrails.com//tags/video/">#video</a>,
-            
-                <a href="http://homeonrails.com//tags/belarus_ruby/">#belarus_ruby</a>,
-            
-        
-        <time class="post-date" datetime="2013-07-28T00:00:00Z">
-            28 Jul 2013
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/">Готовые Vim сборки VS свои детища</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/">Готовые Vim сборки VS свои детища</a>
+  </h1>
+  <time datetime="2013-07-02T00:00:00Z" class="post-date">Tue, Jul 2, 2013</time>
+  
 <p>Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
 возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
 есть чистый .vimrc и ваша фантазия.</p>
 
- <a class="read-more" href="http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-                <a href="http://homeonrails.com//tags/vim/">#vim</a>,
-            
-        
-        <time class="post-date" datetime="2013-07-02T00:00:00Z">
-            2 Jul 2013
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2013/02/about-interface/">Об интерфейсе</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Проектирование взаимодействия все еще является достаточно молодой дисциплиной.
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2013/02/about-interface/">Об интерфейсе</a>
+  </h1>
+  <time datetime="2013-02-28T00:00:00Z" class="post-date">Thu, Feb 28, 2013</time>
+  <p>Проектирование взаимодействия все еще является достаточно молодой дисциплиной.
 Тем не менее, ее изучение может принести некоторую выгоду. Если вы разработчик,
 то она заставит вас взглянуть на продукт под другим углом, что в перспективе,
-откроет перед вами пути по улучшению пользовательского опыта.</p> <a class="read-more" href="http://homeonrails.com/2013/02/about-interface/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-        
-        <time class="post-date" datetime="2013-02-28T00:00:00Z">
-            28 Feb 2013
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/">Kaizen philosophy (Initial commit)</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Обучение новичков всегда было не таким уж легким делом. Когда в команду
+откроет перед вами пути по улучшению пользовательского опыта.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2013/02/about-interface/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/">Kaizen philosophy (Initial commit)</a>
+  </h1>
+  <time datetime="2013-02-08T00:00:00Z" class="post-date">Fri, Feb 8, 2013</time>
+  <p>Обучение новичков всегда было не таким уж легким делом. Когда в команду
 приходят новые люди, их необходимо познакомить с основными подходами, техниками
 и интрументами, принятыми на вооружении. Каждая компания подходит к этому по
 разному. Кто-то проводит обучающие семинары, кто-то - отдает новоприбывших в
-руки более опытных коллег. (aka team leaders)</p> <a class="read-more" href="http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-        
-        <time class="post-date" datetime="2013-02-08T00:00:00Z">
-            8 Feb 2013
-        </time>
-    </footer>
+руки более опытных коллег. (aka team leaders)</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/">Read More…</a>
+  </div>
+  
 </article>
+</div>
 
+
+<ul class="pagination">
     
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/">Don&#39;t do this at home on Rails #3</a></h2>
-    </header>
-    <section class="post-excerpt">
+    <li class="page-item">
+        <a href="http://homeonrails.com/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="http://homeonrails.com/page/19/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
         
-            <p><ul>
-<li>Languages: Ruby</li>
-<li>Difficulty: <span class="label label-success">Easy</span></li>
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/19/">19</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="http://homeonrails.com/page/20/">20</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/21/">21</a></li>
+    
+    
+    <li class="page-item">
+    <a href="http://homeonrails.com/page/21/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="http://homeonrails.com/page/21/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
 </ul>
 
-<p>A lot of time has passed since my last post, so I decided to fix this
-little drawback. Next, we will discuss three small pieces of code,
-which smells not very good. Let&rsquo;s see what we can do about it.</p> <a class="read-more" href="http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
 
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/ruby/">#ruby</a>,
-            
-                <a href="http://homeonrails.com//tags/ruby-on-rails/">#ruby-on-rails</a>,
-            
-                <a href="http://homeonrails.com//tags/security/">#security</a>,
-            
-                <a href="http://homeonrails.com//tags/yaml/">#yaml</a>,
-            
-        
-        <time class="post-date" datetime="2013-01-05T00:00:00Z">
-            5 Jan 2013
-        </time>
-    </footer>
-</article>
+    </main>
 
     
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2012/11/rubys-gc-ru/">Ruby&#39;s GC (RU)</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>В последнее время в Кайдзен проходит все больше и больше внутренних докладов, в
-рамках которых каждый делится своими знаниями в той или иной области (к примеру
-доклад Александра Кириллова @saratovsource <a href="http://www.slideshare.net/ssusercdd0ed/securing-rails-applications">Securing Rails
-Applications</a>).
-Докладчику это позволяет лишний раз потренироваться в искусстве публичных
-выступлений, аудитории же - набраться полезных знаний. Один из таких докладов я
-и представляю на ваш суд.</p> <a class="read-more" href="http://homeonrails.com/2012/11/rubys-gc-ru/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-        
-        <time class="post-date" datetime="2012-11-23T00:00:00Z">
-            23 Nov 2012
-        </time>
-    </footer>
-</article>
-
-    
-
-    <nav class="pagination" role="navigation">
-	
-	    <a class="newer-posts" href="http://homeonrails.com/page/19/">&larr; Newer Posts</a>
-	
-	<span class="page-number">Page 20 of 21</span>
-	
-	    <a class="older-posts" href="http://homeonrails.com/page/21/">Older Posts &rarr;</a>
-	
-</nav>
-
-
-
-</main>
-
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
-        
-        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
-        
-    </footer>
-    </div>
-    <script type="text/javascript" src="http://homeonrails.com/js/jquery.js"></script>
-    <script type="text/javascript" src="http://homeonrails.com/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="http://homeonrails.com/js/index.js"></script>
-    
-</body>
+  </body>
 </html>
-

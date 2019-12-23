@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -53,24 +62,15 @@
   <h1>Vim: Open current line on Atlassian Stash (Bitbucket Server)</h1>
   <time datetime=2016-04-28T11:47:36Z class="post-date">Thu, Apr 28, 2016</time>
   <p>This is based on Felix Geisendörfer <a href="http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html">Vim Trick: Open current line on GitHub</a>.</p>
-
 <p><strong>Step 1. Create a git alias</strong></p>
-
 <pre><code># ~/.gitconfig
 [alias]
   url =! bash -c 'git config --get remote.origin.url | sed -E &quot;s/.+\\.ru\\\\/\\(.+\\)\\\\/\\(.+\\)\\.git$/https:\\\\/\\\\/stash\\\\.yourcompanyname\\\\.com\\\\/projects\\\\/\\\\1\\\\/repos\\\\/\\\\2\\\\/browse/g&quot;'
-</code></pre>
-
-<p>Change domain name from &lsquo;stash.yourcompanyname.com&rsquo; to something real. Pay attention to &lsquo;.&rsquo; escaping.</p>
-
+</code></pre><p>Change domain name from &lsquo;stash.yourcompanyname.com&rsquo; to something real. Pay attention to &lsquo;.&rsquo; escaping.</p>
 <p><strong>Step 2. Create a mapping in Vim</strong></p>
-
-<pre><code class="language-vim">; ~/.vimrc
-nnoremap &lt;leader&gt;ou :!echo `git url`/%?at=`git rev-parse HEAD`\#&lt;C-R&gt;=line('.')&lt;CR&gt; \| xargs open&lt;CR&gt;&lt;CR&gt;
-</code></pre>
-
-<p><strong>Step 3. Enjoy</strong></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">; ~/.<span style="color:#a6e22e">vimrc</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">leader</span>&gt;<span style="color:#a6e22e">ou</span> :!<span style="color:#a6e22e">echo</span> `<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">url</span>`/%?<span style="color:#a6e22e">at</span>=`<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">rev</span>-<span style="color:#a6e22e">parse</span> <span style="color:#a6e22e">HEAD</span>`\#&lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">R</span>&gt;=<span style="color:#a6e22e">line</span>(<span style="color:#e6db74">&#39;.&#39;</span>)&lt;<span style="color:#a6e22e">CR</span>&gt; \| <span style="color:#a6e22e">xargs</span> <span style="color:#a6e22e">open</span>&lt;<span style="color:#a6e22e">CR</span>&gt;&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p><strong>Step 3. Enjoy</strong></p>
 <p>My dotfiles: <a href="https://github.com/melekes/dotfiles">https://github.com/melekes/dotfiles</a></p>
 </div>
 

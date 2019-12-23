@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -58,49 +67,35 @@ Guide&rdquo;</a> there is a chapter
 named &ldquo;MapReduce Integration&rdquo;, which sheds some light on this. I would like to
 give you another example of the MR task that reads and writes to the same HBase
 table.</p>
-
 <p><em>This article assumes you have a basic knowledge of Hadoop.</em></p>
-
 <h2 id="task">Task</h2>
-
 <p>In our table &ldquo;weather&rdquo; we have 2 columns - the maximum temperature for a
 month (<code>max</code>) and minimum respectively (<code>min</code>). We need to calculate the
 average temperature and put it in a new column for further calculations.</p>
-
 <h2 id="mapper">Mapper</h2>
-
 <p>{% gist 8ba19e1baca077d67c65 AvgTemperatureMapper.java %}</p>
-
-<p>For every row we get <code>max</code> and <code>min</code> column&rsquo;s latest values (#13), wrap them into
+<p>For every row we get <code>max</code> and <code>min</code> column's latest values (#13), wrap them into
 ByteBuffer (#15), so we can get Integer values.</p>
-
 <p>On line #7, we then construct new Put object, passing the same rowkey. After
 that , we add new column <code>avg</code> into <code>temperatures</code> family and put the result of
 <code>(max + min) / 2.0</code> in it (#8). In the end, we pass <code>rowkey</code> and our Put object
 to <code>context#write</code> method, which modifies &ldquo;weather&rdquo; table and records the
 results (#9).</p>
-
 <h2 id="driver">Driver</h2>
-
 <p>{% gist 8ba19e1baca077d67c65 AvgTemperatureDriver.java %}</p>
-
 <p>In order to run our baby, we create new job (#5). Since we do not have Reduce
 stage, we can set number of reduce tasks to 0 (#7). TableMapReduceUtil utility
 saves us from routine work by setting the correct input format, mapper class,
 adding dependencies jars and so on. All we need to do is to pass a few
 parameters to <code>initTableMapperJob</code> method (#11).</p>
-
 <p>I would like to note that if you need additional filtering, Scan object (#9)
 could be tweaked more heavily (e.g. by using <code>#setFilter</code> method).</p>
-
 <p>That is all for the reading. To write to a table (not necessarily the same, it
 could be any other table as well) we have to:</p>
-
 <ol>
 <li>Set OutputKeyClass and OutputValueClass to ImmutableBytesWritable and Put (both in mapper - #1 and driver - lines #14, #15);</li>
 <li>Set OutputFormatClass (#20) and table name (#21).</li>
 </ol>
-
 <p>Thats all folks. If I missed something, feel free to contact me or just leave a
 comment.</p>
 </div>

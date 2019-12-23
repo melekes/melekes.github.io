@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Home on Rails</title>
@@ -18,18 +18,16 @@
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
       
       <guid>http://homeonrails.com/2017/01/signing-git-commits/</guid>
-      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
+      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&#39;а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
 возможны такие смешные поделки как
 &lt;a href=&#34;https://github.com/jayphelps/git-blame-someone-else&#34;&gt;git-blame-someone-else&lt;/a&gt;.
 Если же вы подписываете коммит своей подписью, то уверенности в том, что автор
 действительно вы, прибавляется.&lt;/p&gt;
-
 &lt;p&gt;Github в &lt;a href=&#34;https://github.com/blog/2144-gpg-signature-verification&#34;&gt;апреле прошлого
 года&lt;/a&gt; начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;img-rounded&#34; src=&#34;http://homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34; alt=&#34;&#34; title=&#34;&#34;/&gt;&lt;/p&gt;</description>
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -39,8 +37,7 @@
       
       <guid>http://homeonrails.com/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
-&amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
-
+&amp;ldquo;Что?&amp;quot;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
 Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
@@ -57,8 +54,7 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
       <guid>http://homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
-лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout
-feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
+лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>

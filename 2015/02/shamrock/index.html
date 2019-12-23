@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,16 @@
   <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
 
   
-  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
 </head>
 
   <body class="theme-base-0d ">
@@ -52,38 +61,32 @@
     <div class="post">
   <h1>Shamrock</h1>
   <time datetime=2015-02-17T10:05:37Z class="post-date">Tue, Feb 17, 2015</time>
-  <p>Бывают случаи, когда WebMock&rsquo;а недостаточно, или же вы просто не любите stub&rsquo;ы
+  <p>Бывают случаи, когда WebMock'а недостаточно, или же вы просто не любите stub'ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой <a href="https://practicingruby.com/articles/implementing-an-http-file-server">простенький http
 сервер</a>
 или выбрать один из существующих, и стартовать его на время тестов(а). А можно
 взять готовую библиотеку - <a href="https://github.com/jsl/shamrock">Shamrock</a>.</p>
-
 <p>Она принимает на вход любое Rack приложение и запускает его в отдельном треде с
-помощью WEBrick&rsquo;а. Порт можно задать самому. В противном случае будет
+помощью WEBrick'а. Порт можно задать самому. В противном случае будет
 использован первый свободный.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">setup</span>
+  json <span style="color:#f92672">=</span> load_fixture(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">service/200.json</span><span style="color:#e6db74">&#34;</span>)
+  my_rack_app <span style="color:#f92672">=</span> proc {<span style="color:#f92672">|</span>env<span style="color:#f92672">|</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">200</span><span style="color:#f92672"></span>, {<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Content-Type</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">application/json</span><span style="color:#e6db74">&#34;</span>}, <span style="color:#f92672">[</span>json<span style="color:#f92672">]</span><span style="color:#f92672">]</span>}
+  @service <span style="color:#f92672">=</span> <span style="color:#66d9ef">Shamrock</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Service</span><span style="color:#f92672">.</span>new(my_rack_app)
+  @service<span style="color:#f92672">.</span>start
+  @service<span style="color:#f92672">.</span>uri    <span style="color:#75715e"># =&gt; #&lt;URI::HTTP http://localhost:54321&gt;</span>
+<span style="color:#66d9ef">end</span>
 
-<pre><code class="language-ruby">def setup
-  json = load_fixture(&quot;service/200.json&quot;)
-  my_rack_app = proc {|env| [200, {&quot;Content-Type&quot; =&gt; &quot;application/json&quot;}, [json]]}
-  @service = Shamrock::Service.new(my_rack_app)
-  @service.start
-  @service.uri    # =&gt; #&lt;URI::HTTP http://localhost:54321&gt;
-end
-
-def teardown
-  @service.stop
-end
-</code></pre>
-
-<p>Доступные параметры у Service#new:</p>
-
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">teardown</span>
+  @service<span style="color:#f92672">.</span>stop
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>Доступные параметры у Service#new:</p>
 <ul>
 <li><code>handler</code> - обработчик, который запускает Rack приложение (по умолчанию Rack::Handler::WEBrick)</li>
 <li><code>port</code> - порт</li>
 <li><code>monitor</code> - монитор, который блокируется до тех пор, пока сервер не стартанет</li>
 </ul>
-
 <p>Вообще, либа написана хорошо, и выполняет именно то, что от нее ждут. Правда
 популярности ей это не принесло :)</p>
 </div>

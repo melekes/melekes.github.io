@@ -1,1128 +1,428 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
 <head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.60.1" />
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    
-    <meta name="twitter:card" content="summary"/>
-    
-    <meta name="twitter:image" content="/images/cover.png"/>
-    
-
-
-
-<meta name="twitter:title" content="Home on Rails"/>
-<meta name="twitter:description" content="Magic unicorns, steep rabbits, fat cats discussing software development"/>
-<meta name="twitter:site" content="@akaliaev"/>
-
-
-
-  	<meta property="og:title" content="Home on Rails" />
-  	<meta property="og:site_name" content="Home on Rails" />
-  	<meta property="og:url" content="http://homeonrails.com/" />
-
-    
-        
-            <meta property="og:image" content="/images/cover.png"/>
-        
-    
-
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
-    
-
-    <title>Home on Rails</title>
-
-    
-    <meta name="description" content="Magic unicorns, steep rabbits, fat cats discussing software development" />
-    
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="http://homeonrails.com/images/favicon.ico">
-	  <link rel="apple-touch-icon" href="http://homeonrails.com/images/apple-touch-icon.png" />
-
-    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://homeonrails.com/css/nav.css" />
-
-    
-
-    
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/solarized-dark.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-        
-        <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-      
-      
-        <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
-      
-    
-    <meta name="generator" content="Hugo 0.57.2" />
-
-    <link rel="canonical" href="http://homeonrails.com/" />
-
-    
-      
-    
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Website",
-    "publisher": {
-        "@type": "Person",
-        "name":  null ,
-        
-        "image": {
-            "@type": "ImageObject",
-            "url": "http://homeonrails.com/images/logo.png",
-            "width": 250,
-            "height": 250
-        },
-        
-        "url": "http://homeonrails.com",
-        "sameAs": [
-            
-            
-             
-             
-             
-             
-             
-            
-        ]
-    },
-    "url": "http://homeonrails.com/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://homeonrails.com/"
-    },
-    "description": "Magic unicorns, steep rabbits, fat cats discussing software development"
-}
-  </script>
-    
-
-
-    
-
-    
-
-    
-        
-    
-</head>
-<body class="nav-closed">
-
-  <div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        
-        
-        
-            
-            <li class="nav-opened nav-current" role="presentation">
-            	<a href="http://homeonrails.com/">Blog</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/about">About me</a>
-            </li>
-        
-            <h3>Explore</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/most-popular-posts">Most popular posts</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://speakerdeck.com/melekes">Talks</a>
-            </li>
-        
-            <h3>Follow Me</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="https://github.com/melekes">Github repos</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://twitter.com/akaliaev">Twitter timeline</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://www.goodreads.com/melekes">Goodreads books</a>
-            </li>
-        
-            <h3>Contact Me</h3>
-            <li class="nav-opened" role="presentation">
-            	<a href="http://www.linkedin.com/in/melekes">LinkedIn</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="https://Keybase.io/melekes">Keybase (secure msg)</a>
-            </li>
-        
-            
-            <li class="nav-opened" role="presentation">
-            	<a href="http://homeonrails.com/pgp/">PGP Pub Key</a>
-            </li>
-        
-        
-    </ul>
-
-    
-    <a class="subscribe-button icon-feed" href="http://homeonrails.com/index.xml">Subscribe</a>
-    
-</div>
-<span class="nav-cover"></span>
-
-
- <div class="site-wrapper">
-
-
-
-
-  <header class="main-header" style="background-image: url(/images/cover.png)">
   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home on Rails</title>
+  <meta name="description" content="Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
-    <nav class="main-nav overlay clearfix">
-        
-            <a class="blog-logo" href="http://homeonrails.com/"><img src="http://homeonrails.com/images/logo.png" alt="Blog Logo" /></a>
-        
-        
-            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
-        
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://homeonrails.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
+
+  
+  <link href="http://homeonrails.com/index.xml" rel="alternate" type="application/rss+xml" title="Home on Rails" />
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+</style>
+
+</head>
+
+  <body class="theme-base-0d ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://homeonrails.com/"><h1>Home on Rails</h1></a>
+      <p class="lead">
+       Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://homeonrails.com/">Home</a> </li>
+        <li><a href="http://homeonrails.com/pgp/"> PGP Pub Key </a></li><li><a href="http://homeonrails.com/about"> About me </a></li><li><a href="https://github.com/melekes"> Github </a></li><li><a href="https://www.goodreads.com/melekes"> Goodreads </a></li><li><a href="http://www.linkedin.com/in/melekes"> LinkedIn </a></li><li><a href="http://homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://speakerdeck.com/melekes"> Slides </a></li><li><a href="https://twitter.com/akaliaev"> Twitter </a></li>
+      </ul>
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            
 
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
 
-    <a class="bloglogo" href="https://github.com/melekes" target="_blank">
-    <span class="icon-github" style="color:white;font-size:2em"></span>
-    </a>
-&nbsp;
-
-
-
-
-
-
-
-
-
-    <a class="bloglogo" href="https://twitter.com/akaliaev" target="_blank">
-        <span class="icon-twitter" style="color:white;font-size:2em"></span>
-    </a>
-&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h1 class="page-title">Home on Rails</h1>
-            <h2 class="page-description">Magic unicorns, steep rabbits, fat cats discussing software development</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
-</header>
-
-
-<main id="content" class="content" role="main">
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    
-
-    
-    
-    
-
-    <div class="extra-pagination inner">
-        <nav class="pagination" role="navigation">
-	
-	    <a class="newer-posts" href="http://homeonrails.com/page/10/">&larr; Newer Posts</a>
-	
-	<span class="page-number">Page 11 of 21</span>
-	
-	    <a class="older-posts" href="http://homeonrails.com/page/12/">Older Posts &rarr;</a>
-	
-</nav>
-
-    </div>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/07/june-picks/">June Picks</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>&ldquo;Random picks from all over the Internet&rdquo;.</p> <a class="read-more" href="http://homeonrails.com/2016/07/june-picks/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/picks/">#picks</a>,
-            
-        
-        <time class="post-date" datetime="2016-07-11T12:44:33Z">
-            11 Jul 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/07/monthly-art-number-11/">Monthly Art #11</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>This is a monthly &ldquo;newsletter&rdquo;, containing a list of what I enjoyed the most
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/08/monthly-art-number-12/">Monthly Art #12</a>
+  </h1>
+  <time datetime="2016-08-13T11:26:40Z" class="post-date">Sat, Aug 13, 2016</time>
+  <p>This is a monthly &ldquo;newsletter&rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
-book or even painting.</p> <a class="read-more" href="http://homeonrails.com/2016/07/monthly-art-number-11/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/art/">#art</a>,
-            
-        
-        <time class="post-date" datetime="2016-07-11T12:16:47Z">
-            11 Jul 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/07/salli-chin-review/">Отзыв о стуле Salli Chin</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-07-09-salli-chin-review/salli1.jpg" alt="" width="100%" title=""/></p> <a class="read-more" href="http://homeonrails.com/2016/07/salli-chin-review/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/workplace/">#workplace</a>,
-            
-                <a href="http://homeonrails.com//tags/health/">#health</a>,
-            
-        
-        <time class="post-date" datetime="2016-07-09T10:03:59Z">
-            9 Jul 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/07/on-the-importance-of-unification/">On the importance of unification</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Unification, for me, means having one way or instrument (not always the best)
+book or even painting.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/08/monthly-art-number-12/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/07/how-to-choose-a-job-correctly/">Правильный подход к выбору работы</a>
+  </h1>
+  <time datetime="2016-07-29T11:22:34Z" class="post-date">Fri, Jul 29, 2016</time>
+  <p>На свою первую работу в качестве программиста я устроился чисто случайно. Один
+из преподавателей в универе предложил под его руководством написать CRM систему
+для довольно известной сети бытовой техники. Недолго раздумывая (~ 1 день), я
+согласился. Т.е <strong>на то, чем я буду заниматься с 9 до 18 каждый день на
+протяжении 1 с лишним года, ушел лишь 1 день</strong>.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/07/how-to-choose-a-job-correctly/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/07/june-picks/">June Picks</a>
+  </h1>
+  <time datetime="2016-07-11T12:44:33Z" class="post-date">Mon, Jul 11, 2016</time>
+  <p>&ldquo;Random picks from all over the Internet&rdquo;.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/07/june-picks/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/07/monthly-art-number-11/">Monthly Art #11</a>
+  </h1>
+  <time datetime="2016-07-11T12:16:47Z" class="post-date">Mon, Jul 11, 2016</time>
+  <p>This is a monthly &ldquo;newsletter&rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album or
+book or even painting.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/07/monthly-art-number-11/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/07/salli-chin-review/">Отзыв о стуле Salli Chin</a>
+  </h1>
+  <time datetime="2016-07-09T10:03:59Z" class="post-date">Sat, Jul 9, 2016</time>
+  <!-- raw HTML omitted -->
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/07/salli-chin-review/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/07/on-the-importance-of-unification/">On the importance of unification</a>
+  </h1>
+  <time datetime="2016-07-05T16:24:36Z" class="post-date">Tue, Jul 5, 2016</time>
+  <p>Unification, for me, means having one way or instrument (not always the best)
 to deal with a problem. And, in some cases, it is crucial.</p>
-
-<p><img class="img-rounded" src="http://homeonrails.com/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png" alt="It's important to have only one instrument for solving a problem." width="100%" title=""/></p> <a class="read-more" href="http://homeonrails.com/2016/07/on-the-importance-of-unification/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/programming/">#programming</a>,
-            
-        
-        <time class="post-date" datetime="2016-07-05T16:24:36Z">
-            5 Jul 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/07/why-do-you-need-a-pool/">Why Do You Need a Pool</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>There are a number of reasons you may want to use a pool of workers in your application.</p> <a class="read-more" href="http://homeonrails.com/2016/07/why-do-you-need-a-pool/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/programming/">#programming</a>,
-            
-        
-        <time class="post-date" datetime="2016-07-04T12:35:52Z">
-            4 Jul 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/07/choosing-a-vpn/">Выбираем VPN</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>Недавно пришлось выбирать VPN сервис (чтобы безопасно в интернетах лазить общедоступных; в кафешке там или аэропорту).</p> <a class="read-more" href="http://homeonrails.com/2016/07/choosing-a-vpn/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/security/">#security</a>,
-            
-                <a href="http://homeonrails.com//tags/traveling/">#traveling</a>,
-            
-        
-        <time class="post-date" datetime="2016-07-03T16:28:03Z">
-            3 Jul 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/">The Best of Clojure/west 2016</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>I&rsquo;ve recently decided to give Clojure another try and, as a part of my
+<!-- raw HTML omitted -->
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/07/on-the-importance-of-unification/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/07/why-do-you-need-a-pool/">Why Do You Need a Pool</a>
+  </h1>
+  <time datetime="2016-07-04T12:35:52Z" class="post-date">Mon, Jul 4, 2016</time>
+  <p>There are a number of reasons you may want to use a pool of workers in your application.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/07/why-do-you-need-a-pool/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/07/choosing-a-vpn/">Выбираем VPN</a>
+  </h1>
+  <time datetime="2016-07-03T16:28:03Z" class="post-date">Sun, Jul 3, 2016</time>
+  <p>Недавно пришлось выбирать VPN сервис (чтобы безопасно в интернетах лазить общедоступных; в кафешке там или аэропорту).</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/07/choosing-a-vpn/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/">The Best of Clojure/west 2016</a>
+  </h1>
+  <time datetime="2016-06-18T13:44:21Z" class="post-date">Sat, Jun 18, 2016</time>
+  <p>I've recently decided to give Clojure another try and, as a part of my
 wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
 Clojure conference in the western United States and all about this language, as
 you may guess.</p>
-
-<p>As usual, I am publishing the talks, which I liked the most. Hope you&rsquo;ll enjoy
-these too. <em>Disclaimer: your experience may vary.</em></p> <a class="read-more" href="http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/talks/">#talks</a>,
-            
-                <a href="http://homeonrails.com//tags/clojure/">#clojure</a>,
-            
-        
-        <time class="post-date" datetime="2016-06-18T13:44:21Z">
-            18 Jun 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/06/mothly-art-number-10/">Mothly Art #10</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>This is a monthly &ldquo;newsletter&rdquo;, containing a list of what I enjoyed the most
+<p>As usual, I am publishing the talks, which I liked the most. Hope you'll enjoy
+these too. <em>Disclaimer: your experience may vary.</em></p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://homeonrails.com/2016/06/mothly-art-number-10/">Mothly Art #10</a>
+  </h1>
+  <time datetime="2016-06-11T11:35:48Z" class="post-date">Sat, Jun 11, 2016</time>
+  <p>This is a monthly &ldquo;newsletter&rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
-book or even painting.</p> <a class="read-more" href="http://homeonrails.com/2016/06/mothly-art-number-10/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/art/">#art</a>,
-            
-        
-        <time class="post-date" datetime="2016-06-11T11:35:48Z">
-            11 Jun 2016
-        </time>
-    </footer>
+book or even painting.</p>
+  
+  <div class="read-more-link">
+    <a href="http://homeonrails.com/2016/06/mothly-art-number-10/">Read More…</a>
+  </div>
+  
 </article>
+</div>
+
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="http://homeonrails.com/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="http://homeonrails.com/page/10/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/10/">10</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="http://homeonrails.com/page/11/">11</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/12/">12</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="http://homeonrails.com/page/21/">21</a></li>
+    
+    
+    <li class="page-item">
+    <a href="http://homeonrails.com/page/12/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="http://homeonrails.com/page/21/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+
+    </main>
 
     
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/06/may-picks/">May Picks</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>&ldquo;Random picks from all over the Internet&rdquo;.</p> <a class="read-more" href="http://homeonrails.com/2016/06/may-picks/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/picks/">#picks</a>,
-            
-        
-        <time class="post-date" datetime="2016-06-11T10:40:07Z">
-            11 Jun 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="http://homeonrails.com/2016/05/profiling-in-erlang/">Profiling in Erlang</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><a href="http://homeonrails.com/pdfs/posts/2016-05-25-profiling-in-erlang/profiling_in_erlang_ru_RU.pdf" title="Скачать PDF на русском">
-  На русском
-</a></p>
-
-<p>The list of available instruments:</p>
-
-<ul>
-<li>fprof, eprof, cover, cprof (shipped with erlang)</li>
-<li><code>top</code>-like utilities: third party <a href="https://github.com/zaa/entop">entop</a> и <a href="http://erlang.org/doc/apps/observer/etop_ug.html">etop</a></li>
-<li><a href="https://github.com/virtan/eep/">eep</a></li>
-<li><a href="https://ferd.github.io/recon/">recon</a></li>
-<li><a href="https://github.com/proger/eflame">eflame</a> and <a href="https://github.com/slfritchie/eflame">eflame2</a></li>
-<li><a href="https://github.com/massemanet/eper">eper</a></li>
-<li><code>timer:tc/3</code>, <code>statistics/1</code></li>
-<li><a href="https://gist.github.com/slfritchie/159a8ce1f49fc03c77c6">latency_histogram_tracer.erl</a> (requires <code>folsom_metrics</code>)</li>
-</ul> <a class="read-more" href="http://homeonrails.com/2016/05/profiling-in-erlang/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="http://homeonrails.com/images/logo.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Anton Kaliaev
-                 
-        
-
-        on
-            
-                <a href="http://homeonrails.com//tags/erlang/">#erlang</a>,
-            
-        
-        <time class="post-date" datetime="2016-05-25T11:41:44Z">
-            25 May 2016
-        </time>
-    </footer>
-</article>
-
-    
-
-    <nav class="pagination" role="navigation">
-	
-	    <a class="newer-posts" href="http://homeonrails.com/page/10/">&larr; Newer Posts</a>
-	
-	<span class="page-number">Page 11 of 21</span>
-	
-	    <a class="older-posts" href="http://homeonrails.com/page/12/">Older Posts &rarr;</a>
-	
-</nav>
-
-
-
-</main>
-
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Home on Rails</a> All rights reserved</section>
-        
-        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
-        
-    </footer>
-    </div>
-    <script type="text/javascript" src="http://homeonrails.com/js/jquery.js"></script>
-    <script type="text/javascript" src="http://homeonrails.com/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="http://homeonrails.com/js/index.js"></script>
-    
-</body>
+  </body>
 </html>
-
