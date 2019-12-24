@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>poetry on Home on Rails</title>
-    <link>http://homeonrails.com/tags/poetry/</link>
+    <link>https://www.homeonrails.com/tags/poetry/</link>
     <description>Recent content in poetry on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Fri, 07 Nov 2014 22:05:06 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Хайку о мозге</title>
-      <link>http://homeonrails.com/2014/11/brain-haiku-contest/</link>
+      <link>https://www.homeonrails.com/2014/11/brain-haiku-contest/</link>
       <pubDate>Fri, 07 Nov 2014 22:05:06 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2014/11/brain-haiku-contest/</guid>
+      <guid>https://www.homeonrails.com/2014/11/brain-haiku-contest/</guid>
       <description>&lt;p&gt;Сегодня принял участие в конкурсе от &lt;a href=&#34;http://www.lumosity.com/&#34;&gt;Lumosity&lt;/a&gt;. Для
 участия нужно было сочинить &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83&#34;&gt;хайку&lt;/a&gt; о своём мозге - что делает его
 уникальным, что тебе больше всего нравится в нём. Если честно, я уже и не помню

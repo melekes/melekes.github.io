@@ -12,16 +12,16 @@
   <meta name="description" content="" />
 
   
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/hyde.css">
   <link href="https://fonts.googleapis.com/css?family=Literata|Neucha&display=swap" rel="stylesheet">
 
 
   
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://homeonrails.com/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.homeonrails.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://www.homeonrails.com/favicon.png">
 
   
   <style>
@@ -48,7 +48,7 @@ html {
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="http://homeonrails.com/"><h1>Home on Rails</h1></a>
+      <a href="https://www.homeonrails.com/"><h1>Home on Rails</h1></a>
       <p class="lead">
        Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
       </p>
@@ -56,8 +56,8 @@ html {
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="http://homeonrails.com/">Home</a> </li>
-        <li><a href="http://homeonrails.com/pgp/"> PGP Pub Key </a></li><li><a href="http://homeonrails.com/about"> About me </a></li><li><a href="https://github.com/melekes"> Github </a></li><li><a href="https://www.goodreads.com/melekes"> Goodreads </a></li><li><a href="http://www.linkedin.com/in/melekes"> LinkedIn </a></li><li><a href="http://homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://speakerdeck.com/melekes"> Slides </a></li><li><a href="https://twitter.com/akaliaev"> Twitter </a></li>
+        <li><a href="https://www.homeonrails.com/">Home</a> </li>
+        <li><a href="https://www.homeonrails.com/pgp/"> PGP Pub Key </a></li><li><a href="https://www.homeonrails.com/about"> About me </a></li><li><a href="https://github.com/melekes"> Github </a></li><li><a href="https://www.goodreads.com/melekes"> Goodreads </a></li><li><a href="http://www.linkedin.com/in/melekes"> LinkedIn </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://speakerdeck.com/melekes"> Slides </a></li><li><a href="https://twitter.com/akaliaev"> Twitter </a></li>
       </ul>
     </nav>
 
@@ -82,7 +82,7 @@ backend.</p>
 <p>We use lager in almost all of our applications. And it works pretty well most
 of the time, except the cases where it doesn't.</p>
 <figure>
-    <img src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif"/> 
+    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif"/> 
 </figure>
 
 <p>It all started one day when we were experiencing a <strong>peak load</strong> in one of the
@@ -90,7 +90,7 @@ applications (we'll call it FortKnox). So, FortKnox was processing a lot of
 data and producing a lot of logs (particularly, info messages). As
 shown on a picture below, we were writing logs to a file on disk.</p>
 <figure>
-    <img src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app1.png"/> 
+    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app1.png"/> 
 </figure>
 
 <p>Then we started seeing <strong>random exits</strong> (timeouts in calls to <code>lager:info</code>)
@@ -99,7 +99,7 @@ FortKnox crashing. Some of them got restarted by their supervisor. But it was
 clear that this won't last long. Indeed, at some point, it all came down to the
 application's supervisor and <strong>whole node stopped working</strong>.</p>
 <figure>
-    <img src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png"/> 
+    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png"/> 
 </figure>
 
 <p>This is what happened. <strong>Hard disk was not able to handle so much writes</strong> (even in
@@ -119,7 +119,7 @@ That's how we came to the random exits.</p>
 <p>lager has many settings and we could play with them. For example, we could turn
 off synchronous mode.</p>
 <figure>
-    <img src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png"/> 
+    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png"/> 
 </figure>
 
 <p>What will happen then is lager's mailbox start growing and, eventually, when
@@ -135,7 +135,7 @@ calls (<a href="https://github.com/basho/lager/blob/1159f9262fb589ce2ec310eb7dec
 chokecherry</strong>. What follows is how it works.</p>
 <h2 id="chokecherry">Chokecherry</h2>
 <figure>
-    <img src="http://homeonrails.com/images/posts/2016-04-24-chokecherry/app4.png"/> 
+    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app4.png"/> 
 </figure>
 
 <p><strong>shaper</strong> accumulates incoming messages in the queue. If the queue size

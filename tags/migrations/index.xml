@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>migrations on Home on Rails</title>
-    <link>http://homeonrails.com/tags/migrations/</link>
+    <link>https://www.homeonrails.com/tags/migrations/</link>
     <description>Recent content in migrations on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sun, 18 Nov 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/migrations/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/migrations/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Null migration, or What to do when there are too many migrations</title>
-      <link>http://homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
+      <link>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
       <pubDate>Sun, 18 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
+      <guid>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
       <description>&lt;p&gt;Migrations are probably one of the most killer features of ActiveRecord.
 They allow you to design the architecture of the database along with the
 growth of your project. If you change your data model (&lt;a href=&#34;http://martinfowler.com/eaaCatalog/domainModel.html&#34;&gt;Domain Model&lt;/a&gt;),

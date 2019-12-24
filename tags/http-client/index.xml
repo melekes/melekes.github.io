@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>http-client on Home on Rails</title>
-    <link>http://homeonrails.com/tags/http-client/</link>
+    <link>https://www.homeonrails.com/tags/http-client/</link>
     <description>Recent content in http-client on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sun, 15 Feb 2015 12:04:01 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/http-client/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/http-client/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Тестируем HTTP клиент на Java</title>
-      <link>http://homeonrails.com/2015/02/testing-http-client-in-java/</link>
+      <link>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</link>
       <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/02/testing-http-client-in-java/</guid>
+      <guid>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</guid>
       <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
 &lt;a href=&#34;https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.

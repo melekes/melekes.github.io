@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>remote on Home on Rails</title>
-    <link>http://homeonrails.com/tags/remote/</link>
+    <link>https://www.homeonrails.com/tags/remote/</link>
     <description>Recent content in remote on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 15 Sep 2018 17:33:21 +0400</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/remote/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/remote/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apps for a distributed team</title>
-      <link>http://homeonrails.com/2018/09/apps-for-distributed-team/</link>
+      <link>https://www.homeonrails.com/2018/09/apps-for-distributed-team/</link>
       <pubDate>Sat, 15 Sep 2018 17:33:21 +0400</pubDate>
       
-      <guid>http://homeonrails.com/2018/09/apps-for-distributed-team/</guid>
+      <guid>https://www.homeonrails.com/2018/09/apps-for-distributed-team/</guid>
       <description>&lt;p&gt;Thought I would share applications that we&#39;ve been using at Tendermint and/or I
 can recommend for any folks distributed around the world.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to find a remote job (Practical tips)</title>
-      <link>http://homeonrails.com/2017/10/how-to-find-a-remote-job/</link>
+      <link>https://www.homeonrails.com/2017/10/how-to-find-a-remote-job/</link>
       <pubDate>Thu, 12 Oct 2017 20:57:11 +0400</pubDate>
       
-      <guid>http://homeonrails.com/2017/10/how-to-find-a-remote-job/</guid>
+      <guid>https://www.homeonrails.com/2017/10/how-to-find-a-remote-job/</guid>
       <description>Many of you probably know that for the last 10 months I&#39;ve been working remotely at Tendermint. A few days ago a friend of mine asked me to give him some practical tips on how to find a remote job (being a software developer). I&#39;ve told him that it&#39;s not so different from searching for a desk job. However, I did give him a few recommendations that I wanted to share with you guys.</description>
     </item>
     
     <item>
       <title>Удаленная работа</title>
-      <link>http://homeonrails.com/2017/03/remote-work/</link>
+      <link>https://www.homeonrails.com/2017/03/remote-work/</link>
       <pubDate>Wed, 15 Mar 2017 10:21:49 +0400</pubDate>
       
-      <guid>http://homeonrails.com/2017/03/remote-work/</guid>
+      <guid>https://www.homeonrails.com/2017/03/remote-work/</guid>
       <description>&lt;p&gt;Вот уже третий месяц как я работаю удаленно на американский стартап. Хотелось
 бы поделиться с вами впечатлениями от удаленной работы. 3 месяца - не такой уж
 и большой срок. Но до этого я 6 лет работал в офисе, лишь изредка путешествуя и

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ruby-on-rails on Home on Rails</title>
-    <link>http://homeonrails.com/tags/ruby-on-rails/</link>
+    <link>https://www.homeonrails.com/tags/ruby-on-rails/</link>
     <description>Recent content in ruby-on-rails on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Tue, 17 Feb 2015 10:05:37 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Shamrock</title>
-      <link>http://homeonrails.com/2015/02/shamrock/</link>
+      <link>https://www.homeonrails.com/2015/02/shamrock/</link>
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/02/shamrock/</guid>
+      <guid>https://www.homeonrails.com/2015/02/shamrock/</guid>
       <description>&lt;p&gt;Бывают случаи, когда WebMock&#39;а недостаточно, или же вы просто не любите stub&#39;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
@@ -28,10 +28,10 @@
     
     <item>
       <title>Fast Rails API</title>
-      <link>http://homeonrails.com/2014/03/fast-rails-api/</link>
+      <link>https://www.homeonrails.com/2014/03/fast-rails-api/</link>
       <pubDate>Sun, 09 Mar 2014 13:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
+      <guid>https://www.homeonrails.com/2014/03/fast-rails-api/</guid>
       <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
 colleagues.&lt;/p&gt;
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
@@ -42,10 +42,10 @@ famous.&lt;/p&gt;</description>
     
     <item>
       <title>Don&#39;t do this at home on Rails #3</title>
-      <link>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
+      <link>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
       <pubDate>Sat, 05 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
+      <guid>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
@@ -57,10 +57,10 @@ which smells not very good. Let&#39;s see what we can do about it.&lt;/p&gt;</de
     
     <item>
       <title>Null migration, or What to do when there are too many migrations</title>
-      <link>http://homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
+      <link>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
       <pubDate>Sun, 18 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
+      <guid>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
       <description>&lt;p&gt;Migrations are probably one of the most killer features of ActiveRecord.
 They allow you to design the architecture of the database along with the
 growth of your project. If you change your data model (&lt;a href=&#34;http://martinfowler.com/eaaCatalog/domainModel.html&#34;&gt;Domain Model&lt;/a&gt;),
@@ -71,10 +71,10 @@ creating a new table, deleting a column or adding an unique index.&lt;/p&gt;</de
     
     <item>
       <title>Don&#39;t do this at home on Rails #2</title>
-      <link>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
+      <link>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
       <pubDate>Sat, 10 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
+      <guid>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
@@ -89,21 +89,21 @@ increase its speed. Who knows?&lt;/p&gt;</description>
     
     <item>
       <title>AssociationCountValidator</title>
-      <link>http://homeonrails.com/2012/10/associationcountvalidator/</link>
+      <link>https://www.homeonrails.com/2012/10/associationcountvalidator/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/10/associationcountvalidator/</guid>
-      <description>&lt;p&gt;As a result of my &lt;a href=&#34;http://homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
+      <guid>https://www.homeonrails.com/2012/10/associationcountvalidator/</guid>
+      <description>&lt;p&gt;As a result of my &lt;a href=&#34;https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Validating nested associations in Rails</title>
-      <link>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</link>
+      <link>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</link>
       <pubDate>Mon, 08 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
+      <guid>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
@@ -116,10 +116,10 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
     
     <item>
       <title>Don&#39;t do this at home on Rails #1</title>
-      <link>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
+      <link>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
       <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
+      <guid>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;

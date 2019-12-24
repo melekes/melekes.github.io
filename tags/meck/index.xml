@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>meck on Home on Rails</title>
-    <link>http://homeonrails.com/tags/meck/</link>
+    <link>https://www.homeonrails.com/tags/meck/</link>
     <description>Recent content in meck on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Tue, 03 Mar 2015 11:04:41 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/meck/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/meck/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Опции meck:new</title>
-      <link>http://homeonrails.com/2015/03/meck-new-options/</link>
+      <link>https://www.homeonrails.com/2015/03/meck-new-options/</link>
       <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/03/meck-new-options/</guid>
+      <guid>https://www.homeonrails.com/2015/03/meck-new-options/</guid>
       <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     

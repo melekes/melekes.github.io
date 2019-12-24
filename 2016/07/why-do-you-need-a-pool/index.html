@@ -12,16 +12,16 @@
   <meta name="description" content="" />
 
   
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="http://homeonrails.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/hyde.css">
   <link href="https://fonts.googleapis.com/css?family=Literata|Neucha&display=swap" rel="stylesheet">
 
 
   
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://homeonrails.com/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="http://homeonrails.com/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.homeonrails.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://www.homeonrails.com/favicon.png">
 
   
   <style>
@@ -48,7 +48,7 @@ html {
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="http://homeonrails.com/"><h1>Home on Rails</h1></a>
+      <a href="https://www.homeonrails.com/"><h1>Home on Rails</h1></a>
       <p class="lead">
        Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
       </p>
@@ -56,8 +56,8 @@ html {
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="http://homeonrails.com/">Home</a> </li>
-        <li><a href="http://homeonrails.com/pgp/"> PGP Pub Key </a></li><li><a href="http://homeonrails.com/about"> About me </a></li><li><a href="https://github.com/melekes"> Github </a></li><li><a href="https://www.goodreads.com/melekes"> Goodreads </a></li><li><a href="http://www.linkedin.com/in/melekes"> LinkedIn </a></li><li><a href="http://homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://speakerdeck.com/melekes"> Slides </a></li><li><a href="https://twitter.com/akaliaev"> Twitter </a></li>
+        <li><a href="https://www.homeonrails.com/">Home</a> </li>
+        <li><a href="https://www.homeonrails.com/pgp/"> PGP Pub Key </a></li><li><a href="https://www.homeonrails.com/about"> About me </a></li><li><a href="https://github.com/melekes"> Github </a></li><li><a href="https://www.goodreads.com/melekes"> Goodreads </a></li><li><a href="http://www.linkedin.com/in/melekes"> LinkedIn </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://speakerdeck.com/melekes"> Slides </a></li><li><a href="https://twitter.com/akaliaev"> Twitter </a></li>
       </ul>
     </nav>
 
@@ -91,14 +91,14 @@ for more information.</p>
 </ul>
 <p>I think, only the last one requires explanation, others are pretty obvious.</p>
 <figure>
-    <img src="http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif"/> 
+    <img src="https://www.homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif"/> 
 </figure>
 
 <p>Our friend Barney here wants to buy some beer, so he takes a long walk to the nearest store. It will take him <code>3 * (t1 + t2)</code> to buy 3 beers.</p>
 <p>t1 is a network latency, t2 - processing time.</p>
 <p>What if instead, he and his buddies will go to the store together. <strong>Even if the store has only one cash register (like Redis) and the cashier serve them in turn, they will buy 3 beers in <code>t1 + 3 * t2</code></strong>.</p>
 <figure>
-    <img src="http://homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif"/> 
+    <img src="https://www.homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif"/> 
 </figure>
 
 <p>Most often t1 much greater than t2. Therefore, <code>t1 + 3 * t2</code> &lt; <code>3 * (t1 + t2)</code>.

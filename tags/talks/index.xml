@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>talks on Home on Rails</title>
-    <link>http://homeonrails.com/tags/talks/</link>
+    <link>https://www.homeonrails.com/tags/talks/</link>
     <description>Recent content in talks on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Tue, 30 Jul 2019 11:12:01 +0400</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GopherCon Europe 2019</title>
-      <link>http://homeonrails.com/2019/07/gophercon-europe-2019/</link>
+      <link>https://www.homeonrails.com/2019/07/gophercon-europe-2019/</link>
       <pubDate>Tue, 30 Jul 2019 11:12:01 +0400</pubDate>
       
-      <guid>http://homeonrails.com/2019/07/gophercon-europe-2019/</guid>
+      <guid>https://www.homeonrails.com/2019/07/gophercon-europe-2019/</guid>
       <description>&lt;p&gt;Videos from GopherCon Europe 2019 are up. Shoot out for organizers for sharing
 them! As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll
 enjoy these too.&lt;/p&gt;</description>
@@ -25,10 +25,10 @@ enjoy these too.&lt;/p&gt;</description>
     
     <item>
       <title>The Best of Erlang User Conference 2016</title>
-      <link>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
+      <link>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
       <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
+      <guid>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
 &lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
@@ -37,10 +37,10 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
     
     <item>
       <title>The Best of Strange Loop 2016</title>
-      <link>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
+      <link>https://www.homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
       <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
+      <guid>https://www.homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
 conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
 YouTube&lt;/a&gt;.
@@ -50,10 +50,10 @@ gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt
     
     <item>
       <title>The Best of Clojure/west 2016</title>
-      <link>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</link>
+      <link>https://www.homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</link>
       <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
+      <guid>https://www.homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
       <description>&lt;p&gt;I&#39;ve recently decided to give Clojure another try and, as a part of my
 wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
 Clojure conference in the western United States and all about this language, as
@@ -64,10 +64,10 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
     
     <item>
       <title>The Best of Erlang Factory SF Bay 2016</title>
-      <link>http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
+      <link>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
       <pubDate>Thu, 31 Mar 2016 10:49:23 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
+      <guid>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
       <description>&lt;p&gt;Annual &lt;a href=&#34;http://www.erlang-factory.com/sfbay2016&#34;&gt;Erlang Factory SF Bay Area
 2016&lt;/a&gt; conference ended only 3 weeks
 ago. There were many great speakers and presentations. What I specifically like
@@ -78,10 +78,10 @@ publishing the talks, which I liked the most. Hope you&#39;ll enjoy these too.
     
     <item>
       <title>Лучшие доклады fpconf 2015</title>
-      <link>http://homeonrails.com/2016/01/the-best-of-fpconf-2015/</link>
+      <link>https://www.homeonrails.com/2016/01/the-best-of-fpconf-2015/</link>
       <pubDate>Sat, 23 Jan 2016 11:15:07 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/01/the-best-of-fpconf-2015/</guid>
+      <guid>https://www.homeonrails.com/2016/01/the-best-of-fpconf-2015/</guid>
       <description>&lt;p&gt;В прошлом году состоялась первая конференция, посвященная функциональному
 программированию - &lt;a href=&#34;http://fpconf.ru/&#34;&gt;fpconf&lt;/a&gt;. Судя по рассказам моих
 знакомых, подобралась неплохая компания и было несколько действительно крутых
@@ -93,10 +93,10 @@ publishing the talks, which I liked the most. Hope you&#39;ll enjoy these too.
     
     <item>
       <title>The Best of RICON 2015</title>
-      <link>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</link>
+      <link>https://www.homeonrails.com/2015/12/the-best-of-ricon-2015/</link>
       <pubDate>Sun, 13 Dec 2015 10:16:59 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
+      <guid>https://www.homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.ricon.io/index.html&#34;&gt;RICON&lt;/a&gt; is all about distributed systems. There
 are a lot of academic (Phd) talks and a few practical ones. I&#39;ve chosen 3 out
 of 37 videos, which I liked the most. Hope you&#39;ll enjoy these too. &lt;em&gt;Disclaimer:
@@ -105,10 +105,10 @@ your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     
     <item>
       <title>The Best of Strange Loop 2015</title>
-      <link>http://homeonrails.com/2015/11/the-best-of-strange-loop-2015/</link>
+      <link>https://www.homeonrails.com/2015/11/the-best-of-strange-loop-2015/</link>
       <pubDate>Sat, 07 Nov 2015 16:10:26 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/11/the-best-of-strange-loop-2015/</guid>
+      <guid>https://www.homeonrails.com/2015/11/the-best-of-strange-loop-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is my top 5 &amp;ldquo;every year&amp;rdquo;
 conferences. There were &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaCIl5eU53uPBnRJ9rbIH32R&#34;&gt;many
 videos&lt;/a&gt;
@@ -118,10 +118,10 @@ real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&g
     
     <item>
       <title>The Best of Curry On 2015</title>
-      <link>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</link>
+      <link>https://www.homeonrails.com/2015/09/the-best-of-curry-on-2015/</link>
       <pubDate>Mon, 14 Sep 2015 23:19:10 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
+      <guid>https://www.homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
       <description>&lt;p&gt;If you haven&#39;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
 (first time this year), which took place in Prague earlier in July. Despite its
 age, many good speakers happened to be there. Here is the list of my favorite
@@ -130,10 +130,10 @@ talks. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</des
     
     <item>
       <title>The best of Erlang User Conference 2015</title>
-      <link>http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</link>
+      <link>https://www.homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</link>
       <pubDate>Mon, 10 Aug 2015 11:53:19 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</guid>
+      <guid>https://www.homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</guid>
       <description>&lt;p&gt;It’s been a few months since this year’s Erlang User Conference 2015, so most
 of the videos are now online (kudos to organizers). Here is a short list of my
 favorite talks. Enjoy!&lt;/p&gt;</description>
@@ -141,10 +141,10 @@ favorite talks. Enjoy!&lt;/p&gt;</description>
     
     <item>
       <title>Fast Rails API</title>
-      <link>http://homeonrails.com/2014/03/fast-rails-api/</link>
+      <link>https://www.homeonrails.com/2014/03/fast-rails-api/</link>
       <pubDate>Sun, 09 Mar 2014 13:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2014/03/fast-rails-api/</guid>
+      <guid>https://www.homeonrails.com/2014/03/fast-rails-api/</guid>
       <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
 colleagues.&lt;/p&gt;
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
@@ -155,10 +155,10 @@ famous.&lt;/p&gt;</description>
     
     <item>
       <title>Выступление на Belarus Ruby Meetup 2013</title>
-      <link>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</link>
+      <link>https://www.homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</link>
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
+      <guid>https://www.homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
       <description>
 &lt;p&gt;  Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где
 прошла очередная встреча ruby разработчиков &lt;a href=&#34;http://lanyrd.com/2013/belarus-ruby/&#34; target=&#34;_blank&#34;&gt;Belarus Ruby Meetup&lt;/a&gt;. Формат
@@ -171,10 +171,10 @@ famous.&lt;/p&gt;</description>
     
     <item>
       <title>Готовые Vim сборки VS свои детища</title>
-      <link>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
+      <link>https://www.homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
+      <guid>https://www.homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
       <description>
 &lt;p&gt;Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
 возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
@@ -185,10 +185,10 @@ famous.&lt;/p&gt;</description>
     
     <item>
       <title>Об интерфейсе</title>
-      <link>http://homeonrails.com/2013/02/about-interface/</link>
+      <link>https://www.homeonrails.com/2013/02/about-interface/</link>
       <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/02/about-interface/</guid>
+      <guid>https://www.homeonrails.com/2013/02/about-interface/</guid>
       <description>&lt;p&gt;Проектирование взаимодействия все еще является достаточно молодой дисциплиной.
 Тем не менее, ее изучение может принести некоторую выгоду. Если вы разработчик,
 то она заставит вас взглянуть на продукт под другим углом, что в перспективе,
@@ -197,10 +197,10 @@ famous.&lt;/p&gt;</description>
     
     <item>
       <title>Kaizen philosophy (Initial commit)</title>
-      <link>http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</link>
+      <link>https://www.homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</guid>
+      <guid>https://www.homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</guid>
       <description>&lt;p&gt;Обучение новичков всегда было не таким уж легким делом. Когда в команду
 приходят новые люди, их необходимо познакомить с основными подходами, техниками
 и интрументами, принятыми на вооружении. Каждая компания подходит к этому по
@@ -210,10 +210,10 @@ famous.&lt;/p&gt;</description>
     
     <item>
       <title>Ruby&#39;s GC (RU)</title>
-      <link>http://homeonrails.com/2012/11/rubys-gc-ru/</link>
+      <link>https://www.homeonrails.com/2012/11/rubys-gc-ru/</link>
       <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/11/rubys-gc-ru/</guid>
+      <guid>https://www.homeonrails.com/2012/11/rubys-gc-ru/</guid>
       <description>&lt;p&gt;В последнее время в Кайдзен проходит все больше и больше внутренних докладов, в
 рамках которых каждый делится своими знаниями в той или иной области (к примеру
 доклад Александра Кириллова @saratovsource &lt;a href=&#34;http://www.slideshare.net/ssusercdd0ed/securing-rails-applications&#34;&gt;Securing Rails
@@ -225,10 +225,10 @@ Applications&lt;/a&gt;).
     
     <item>
       <title>Автоматизация тестирования в RoR</title>
-      <link>http://homeonrails.com/2012/09/test-automation-in-ror/</link>
+      <link>https://www.homeonrails.com/2012/09/test-automation-in-ror/</link>
       <pubDate>Sun, 30 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2012/09/test-automation-in-ror/</guid>
+      <guid>https://www.homeonrails.com/2012/09/test-automation-in-ror/</guid>
       <description>&lt;p&gt;Буквально вчера я вернулся с конференции веб-разработчиков ЧЕБИТ&#39;12-10. В этом
 году она проходила в баре &amp;ldquo;Манхеттен&amp;rdquo;, что придавало ей нотку закрытого
 подпольного казино для &amp;ldquo;своих&amp;rdquo;. Огромное спасибо за приглашение поучавствовать

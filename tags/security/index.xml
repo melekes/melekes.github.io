@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security on Home on Rails</title>
-    <link>http://homeonrails.com/tags/security/</link>
+    <link>https://www.homeonrails.com/tags/security/</link>
     <description>Recent content in security on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Mon, 11 Dec 2017 23:48:31 -0500</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Заметка о безопасности</title>
-      <link>http://homeonrails.com/2017/12/note-on-security/</link>
+      <link>https://www.homeonrails.com/2017/12/note-on-security/</link>
       <pubDate>Mon, 11 Dec 2017 23:48:31 -0500</pubDate>
       
-      <guid>http://homeonrails.com/2017/12/note-on-security/</guid>
+      <guid>https://www.homeonrails.com/2017/12/note-on-security/</guid>
       <description>English
 Недавно начал все больше интересоваться темой безопасности. Наверное, я, как и многие люди из поколения Y, выросшие во времена бума компьютерных технологий, Сноудена и fsociety всегда был параноиком по части безопасности, но, признаться честно, я мало что делал для обеспечения ее как таковой. AdBlock, HTTPS Everywhere, и еще пара плагинов для Chrome - джентльменский набор нуба, так сказать.
 Но грядут новые времена. Времена, где твои криптоденежки можно увести у тебя из под носа просто подсунув тебе фейковую версию кошелька.</description>
@@ -25,19 +25,19 @@
     
     <item>
       <title>Выбираем VPN</title>
-      <link>http://homeonrails.com/2016/07/choosing-a-vpn/</link>
+      <link>https://www.homeonrails.com/2016/07/choosing-a-vpn/</link>
       <pubDate>Sun, 03 Jul 2016 16:28:03 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/07/choosing-a-vpn/</guid>
+      <guid>https://www.homeonrails.com/2016/07/choosing-a-vpn/</guid>
       <description>&lt;p&gt;Недавно пришлось выбирать VPN сервис (чтобы безопасно в интернетах лазить общедоступных; в кафешке там или аэропорту).&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Don&#39;t do this at home on Rails #3</title>
-      <link>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
+      <link>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
       <pubDate>Sat, 05 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
+      <guid>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;

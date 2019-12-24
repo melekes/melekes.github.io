@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>railsrumble on Home on Rails</title>
-    <link>http://homeonrails.com/tags/railsrumble/</link>
+    <link>https://www.homeonrails.com/tags/railsrumble/</link>
     <description>Recent content in railsrumble on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Wed, 23 Oct 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/railsrumble/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/railsrumble/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>По следам RailsRumble 2013</title>
-      <link>http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</link>
+      <link>https://www.homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</link>
       <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</guid>
+      <guid>https://www.homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</guid>
       <description>
 &lt;p&gt;В этом году я в очередной раз участвовал в
 &lt;a href=&#34;http://railsrumble.com&#34;&gt;RailsRumble&lt;/a&gt;. Если кто не в курсе, RailsRumble

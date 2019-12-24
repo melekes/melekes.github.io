@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>logging on Home on Rails</title>
-    <link>http://homeonrails.com/tags/logging/</link>
+    <link>https://www.homeonrails.com/tags/logging/</link>
     <description>Recent content in logging on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sun, 24 Apr 2016 11:25:45 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/logging/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chokecherry Or The Story About 1000000 Timeouts</title>
-      <link>http://homeonrails.com/2016/04/chokecherry/</link>
+      <link>https://www.homeonrails.com/2016/04/chokecherry/</link>
       <pubDate>Sun, 24 Apr 2016 11:25:45 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/04/chokecherry/</guid>
+      <guid>https://www.homeonrails.com/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
 logger which limits the volume of info messages irrespectively of the lager&#39;s
 backend.&lt;/p&gt;

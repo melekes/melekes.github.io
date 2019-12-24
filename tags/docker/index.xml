@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on Home on Rails</title>
-    <link>http://homeonrails.com/tags/docker/</link>
+    <link>https://www.homeonrails.com/tags/docker/</link>
     <description>Recent content in docker on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Thu, 07 May 2015 11:53:25 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Разрабатываем ruby gem в docker контейнере</title>
-      <link>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
+      <link>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
       <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
+      <guid>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
       <description>&lt;figure&gt;
-    &lt;img src=&#34;http://homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34;/&gt; 
+    &lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,

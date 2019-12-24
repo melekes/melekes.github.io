@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vim on Home on Rails</title>
-    <link>http://homeonrails.com/tags/vim/</link>
+    <link>https://www.homeonrails.com/tags/vim/</link>
     <description>Recent content in vim on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Mon, 23 May 2016 12:02:11 +0000</lastBuildDate>
     
-	<atom:link href="http://homeonrails.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.homeonrails.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to be productive with almost any text editor</title>
-      <link>http://homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</link>
+      <link>https://www.homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</link>
       <pubDate>Mon, 23 May 2016 12:02:11 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</guid>
+      <guid>https://www.homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;What makes us productive when working with code in the editor? Every day, there
 is a new shining plugin, that allows us to do something useful by pressing only
@@ -32,22 +32,22 @@ pile of docs and much time to learn.&lt;/p&gt;</description>
     
     <item>
       <title>TrueColor in Gnome Terminal, Tmux and Neovim</title>
-      <link>http://homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
+      <link>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
       <pubDate>Wed, 04 May 2016 11:41:10 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
+      <guid>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
       <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
 can see, most of the editors and terminals now support TrueColor (16 million
 colors).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt; 
+    &lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&#34;http://homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt; 
+    &lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>
@@ -55,19 +55,19 @@ colors).&lt;/p&gt;
     
     <item>
       <title>Vim: Open current line on Atlassian Stash (Bitbucket Server)</title>
-      <link>http://homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</link>
+      <link>https://www.homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</link>
       <pubDate>Thu, 28 Apr 2016 11:47:36 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</guid>
+      <guid>https://www.homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</guid>
       <description>&lt;p&gt;This is based on Felix Geisendörfer &lt;a href=&#34;http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html&#34;&gt;Vim Trick: Open current line on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>tmux / Автоматическое восстановление сессии</title>
-      <link>http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</link>
+      <link>https://www.homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</link>
       <pubDate>Fri, 17 Jul 2015 10:35:07 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
+      <guid>https://www.homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
       <description>&lt;p&gt;Не так давно собрался с силами, и настроил у себя в tmux автоматическое
 сохранение и восстановление последней сессии. По прошествии месяца могу с
 уверенностью сказать - просто бомба!&lt;/p&gt;</description>
@@ -75,10 +75,10 @@ colors).&lt;/p&gt;
     
     <item>
       <title>4 Vim Plugins Nobody Knows About</title>
-      <link>http://homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</link>
+      <link>https://www.homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</link>
       <pubDate>Thu, 04 Jun 2015 22:53:15 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</guid>
+      <guid>https://www.homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</guid>
       <description>&lt;p&gt;I&#39;ve been using these four plugins for a really long time. And they are
 wonderful. But each time coming on Github and seeing the number of stars, I
 think that few people actually know about them.&lt;/p&gt;</description>
@@ -86,10 +86,10 @@ think that few people actually know about them.&lt;/p&gt;</description>
     
     <item>
       <title>Vim: Connect to Clojure nREPL inside the VM</title>
-      <link>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
+      <link>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
       <pubDate>Wed, 04 Jun 2014 12:11:45 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
+      <guid>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
       <description>&lt;p&gt;For Vim to talk to nREPL we will be using fantastic
 &lt;a href=&#34;https://github.com/tpope/vim-fireplace&#34;&gt;fireplace.vim&lt;/a&gt; plugin. If you have
 Clojure installed locally, this plugin will connect to its nREPL automatically
@@ -100,10 +100,10 @@ manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</descriptio
     
     <item>
       <title>Copy and paste between Vim and OS</title>
-      <link>http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>
+      <link>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
+      <guid>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
 &lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;quot;- I asked myself. Indeed, the majority of source code editors
@@ -112,10 +112,10 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     
     <item>
       <title>Готовые Vim сборки VS свои детища</title>
-      <link>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
+      <link>https://www.homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
+      <guid>https://www.homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
       <description>
 &lt;p&gt;Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
 возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
