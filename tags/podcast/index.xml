@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>podcast on Home on Rails</title>
+    <link>https://www.homeonrails.com/tags/podcast/</link>
+    <description>Recent content in podcast on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Wed, 17 Apr 2019 20:00:12 +0400</lastBuildDate>
+    
+	<atom:link href="https://www.homeonrails.com/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lessons learned from my first podcast appearance</title>
+      <link>https://www.homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</link>
+      <pubDate>Wed, 17 Apr 2019 20:00:12 +0400</pubDate>
+      
+      <guid>https://www.homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</guid>
+      <description>&lt;p&gt;A few days ago I was invited to be a guest on the &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Basic
+Block&amp;rdquo;&lt;/a&gt; podcast - probably the most popular
+crypto podcast in Russia. In spite of me writing a note on what I&#39;m going to
+say &amp;amp; key points, which you can read
+&lt;a href=&#34;https://www.homeonrails.com/2019/04/on-tendermint-and-cosmos-ru&#34;&gt;here&lt;/a&gt;, I sucked at it. At least
+that&#39;s how I felt after doing it. Fortunately, Basic block radio is one of the
+few podcasts, where authors take on the hard job of editing an episode. Thanks
+guys! So what you end up listening is the edited (often abridged) version, not
+the original conversation.&lt;/p&gt;
+&lt;p&gt;You can listen to the episode &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Базовый Блок 68: поправки и дополнения</title>
+      <link>https://www.homeonrails.com/2019/04/basicblockradio-68-corrections/</link>
+      <pubDate>Mon, 15 Apr 2019 09:00:12 +0400</pubDate>
+      
+      <guid>https://www.homeonrails.com/2019/04/basicblockradio-68-corrections/</guid>
+      <description>&lt;p&gt;Сегодня опубликовали выпуск со мной в подкасте &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;&amp;ldquo;Базовый
+Блок&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Учитывая, что это был мой первый опыт участия в подкасте, вышло неплохо. НО я
+допустил несколько ошибок (ввиду волнения, ошибки перевода, тысячу других
+отмазок можно придумать) и хотелось бы их разобрать.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distributed on Home on Rails</title>
+    <link>https://www.homeonrails.com/tags/distributed/</link>
+    <description>Recent content in distributed on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sat, 15 Sep 2018 17:33:21 +0400</lastBuildDate>
+    
+	<atom:link href="https://www.homeonrails.com/tags/distributed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apps for a distributed team</title>
+      <link>https://www.homeonrails.com/2018/09/apps-for-distributed-team/</link>
+      <pubDate>Sat, 15 Sep 2018 17:33:21 +0400</pubDate>
+      
+      <guid>https://www.homeonrails.com/2018/09/apps-for-distributed-team/</guid>
+      <description>&lt;p&gt;Thought I would share applications that we&#39;ve been using at Tendermint and/or I
+can recommend for any folks distributed around the world.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

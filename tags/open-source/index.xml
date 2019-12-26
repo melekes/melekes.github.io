@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open-source on Home on Rails</title>
+    <link>https://www.homeonrails.com/tags/open-source/</link>
+    <description>Recent content in open-source on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Wed, 06 Jun 2018 17:08:21 +0400</lastBuildDate>
+    
+	<atom:link href="https://www.homeonrails.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Better Open-Source With Tokenized Github</title>
+      <link>https://www.homeonrails.com/2018/06/better-open-source-with-tokenized-github/</link>
+      <pubDate>Wed, 06 Jun 2018 17:08:21 +0400</pubDate>
+      
+      <guid>https://www.homeonrails.com/2018/06/better-open-source-with-tokenized-github/</guid>
+      <description>In the light of the recent news, I wanted to share an idea I had just recently.
+Every popular open-source project on Github eventually becomes overwhelmed by the number of issues. That&#39;s because it&#39;s so easy to create one. You are not required to understand the project. You are not required to read the documentation. All you need is a Github account.
+And this is an example of the amplification attack.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>movies on Home on Rails</title>
+    <link>https://www.homeonrails.com/tags/movies/</link>
+    <description>Recent content in movies on Home on Rails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 30 Jul 2017 11:48:01 -0500</lastBuildDate>
+    
+	<atom:link href="https://www.homeonrails.com/tags/movies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brazilian movies weekend</title>
+      <link>https://www.homeonrails.com/2017/07/brazilian-movies-weekend/</link>
+      <pubDate>Sun, 30 Jul 2017 11:48:01 -0500</pubDate>
+      
+      <guid>https://www.homeonrails.com/2017/07/brazilian-movies-weekend/</guid>
+      <description>On the contrary to Indian movies, Brazilian movies are full of pain, struggle, and tears. These movies deeply reflect the history of their country, uncovering all the problems which exist even upon today. They were recommended to me by an architect from Brazil I&#39;ve met in Lithuania.
+Central Station (1998)   &amp;ldquo;An emotive journey of a former school teacher, who writes letters for illiterate people, and a young boy, whose mother has just died, as they search for the father he never knew.</description>
+    </item>
+    
+    <item>
+      <title>Indian movies weekend</title>
+      <link>https://www.homeonrails.com/2017/06/indian-movies-weekend/</link>
+      <pubDate>Sun, 25 Jun 2017 11:37:01 +0400</pubDate>
+      
+      <guid>https://www.homeonrails.com/2017/06/indian-movies-weekend/</guid>
+      <description>On my way from Berlin to Warsaw I&#39;ve met 2 really cool guys from India - Winny and Raghav. They asked me to recommend 3 Russian movies to them and I did. Then I asked to return a favor. I watched all of them and they are amazing. No wonder they all have a very good score on IMDB. So, thank you guys!
+Swades (2004)   A project manager from NASA decides to go to India to find his nanny.</description>
+    </item>
+    
+  </channel>
+</rss>
