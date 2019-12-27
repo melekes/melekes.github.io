@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,8 +133,7 @@ format, suitable for
 <li>percentage relative to its parent (&ldquo;Relative to Parent&rdquo;) is even better, otherwise, you can't understand the damn thing.</li>
 </ul>
 <p>&ldquo;No Grouping&rdquo; and &ldquo;Function Cycle&rdquo; do not give a clear picture of what is
-happening. The first option leads to the top lines: <code>gen_server:decode_msg`,</code>
-gen_server:loop<code>, and only indicates that more time spent in </code>gen_server:*` -
+happening. The first option leads to the top lines: <code>gen_server:decode_msg</code>,<code>gen_server:loop</code>, and only indicates that more time spent in <code>gen_server:*</code> -
 thank you, captain! I didn't understand the results of the second option.</p>
 <h2 id="eflame2">eflame2</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eflame2:<span style="color:#a6e22e">write_trace</span>(global_calls_plus_new_procs, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">/tmp/ef.test.0</span><span style="color:#e6db74">&#34;</span>, all, <span style="color:#ae81ff">10</span><span style="color:#f92672">*</span><span style="color:#ae81ff">1000</span>).

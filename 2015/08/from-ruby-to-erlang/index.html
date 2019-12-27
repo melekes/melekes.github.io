@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -160,7 +160,7 @@ same thread in Ruby (that is why timings are usually more accurate).</p>
 </figure>
 
 <p><strong>Lesson #2. Do not rely on lager timings, because it is a separate gen_server (i.e. you don’t know when it will process your messages).</strong></p>
-<h2 id="3-highloaded-genserver">3. High-loaded gen_server</h2>
+<h2 id="3-high-loaded-gen-server">3. High-loaded gen_server</h2>
 <p>This is more like a word of advice. When you have a <code>gen_server</code>, which is
 supposed to process, say, 1000 events per second, you can't make any
 synchronous blocking calls (e.g. to Redis) or set any locks, because soon

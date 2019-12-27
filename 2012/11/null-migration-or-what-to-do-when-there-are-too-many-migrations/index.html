@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,7 +108,7 @@ Possible values ​​are <code>:ruby</code> ​​or <code>:sql</code>. The def
 between them is that the second one goes with support for the functions specific
 to a particular database (e.g., PostgreSQL sequences).</p>
 <p>Next, I will show how you can create a null migration.</p>
-<h2 id="creating-a-null-migration-schema-format--ruby">Creating a null migration (schema format - <code>:ruby</code>)</h2>
+<h2 id="creating-a-null-migration-schema-format---ruby">Creating a null migration (schema format - <code>:ruby</code>)</h2>
 <ol>
 <li>Dump your schema</li>
 <li>Create a migration</li>
@@ -178,21 +178,21 @@ executed migration timestamp, which is much easier to do.</p>
 20120925084251_null_migration.rb
 </code></pre></div><h3 id="4-remove-previous-migrations">4. Remove previous migrations</h3>
 <p>Now you only have to remove the previous migrations. I think this you can do without my help :)</p>
-<h2 id="creating-a-null-migration-schema-format--sql">Creating a null migration (schema format - <code>:sql</code>)</h2>
+<h2 id="creating-a-null-migration-schema-format---sql">Creating a null migration (schema format - <code>:sql</code>)</h2>
 <ol>
 <li>Dump your schema</li>
 <li>Create a migration</li>
 <li>Change migration timestamp</li>
 <li>Remove previous migrations</li>
 </ol>
-<h3 id="1-dump-your-schema1">1. Dump your schema</h3>
+<h3 id="1-dump-your-schema-1">1. Dump your schema</h3>
 <p>This step is not much different from the above, with the exception of the
 schema file - <code>db/structure.sql</code> and rake command to dump the database:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rake db:structure:dump
 </code></pre></div><p>Would like to note that, unlike the command <code>rake db:schema:dump</code>, which uses
 built-in ActiveRecord schema dumper, this command uses special tools
 specific to a particular database (for example, pg_dump for PostgreSQL).</p>
-<h3 id="2-create-a-migration1">2. Create a migration</h3>
+<h3 id="2-create-a-migration-1">2. Create a migration</h3>
 <p>Create a migration (see a similar step above). Next, copy the file
 <code>db/structure.sql</code> into folder <code>db/migrate</code> and rename it to <code>null_schema.sql</code>.</p>
 <p>Our migration would look like this:</p>
@@ -206,8 +206,8 @@ specific to a particular database (for example, pg_dump for PostgreSQL).</p>
     <span style="color:#66d9ef">raise</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">IrreversibleMigration</span>
   <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
-</code></pre></div><h3 id="3-change-migration-timestamp1">3. Change migration timestamp</h3>
-<h3 id="4-remove-previous-migrations1">4. Remove previous migrations</h3>
+</code></pre></div><h3 id="3-change-migration-timestamp-1">3. Change migration timestamp</h3>
+<h3 id="4-remove-previous-migrations-1">4. Remove previous migrations</h3>
 <h2 id="wrapping-up">Wrapping Up</h2>
 <p>Creating a null migration - a convenient way to get rid of a large number
 of migrations. Therefore, we become able to restart the database development

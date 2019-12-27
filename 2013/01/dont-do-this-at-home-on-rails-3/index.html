@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,7 +76,7 @@ html {
 <p>A lot of time has passed since my last post, so I decided to fix this
 little drawback. Next, we will discuss three small pieces of code,
 which smells not very good. Let's see what we can do about it.</p>
-<h3 id="1--vulnerabilities-in-code">#1 - Vulnerabilities in code</h3>
+<h3 id="1---vulnerabilities-in-code">#1 - Vulnerabilities in code</h3>
 <p>Let's take a closer look at two methods from the controller:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">show_with_fragments</span>
   constant <span style="color:#f92672">=</span> get_constant_from_param
@@ -146,7 +146,7 @@ This will allow us to remove all those ugly is_a? checks.</p>
   <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>Looks better, right?</p>
-<h3 id="2--take-advantage-of-yaml-language">#2 - Take advantage of YAML language</h3>
+<h3 id="2---take-advantage-of-yaml-language">#2 - Take advantage of YAML language</h3>
 <p>Despite the fact that most of rails applications (and others) using
 <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> to store the translations and settings,
 not many of us knows all its features. Two features that
@@ -192,7 +192,7 @@ development:
   database: db_name
   username: postgres
   password:
-</code></pre></div><h3 id="3--look-for-existing-method-before-writing-your-own">#3 - Look for existing method before writing your own</h3>
+</code></pre></div><h3 id="3---look-for-existing-method-before-writing-your-own">#3 - Look for existing method before writing your own</h3>
 <p>Maybe I'm repeating myself, but this is exactly the case where repetition
 will only benefit.</p>
 <p>Before you write any functionality, that is not relevant to the

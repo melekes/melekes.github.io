@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,7 +80,7 @@ complexity, by running a series of easy refactorings, we can significantly
 improve the code: reduce the size, improve the readability and even
 increase its speed. Who knows?</p>
 <p>Well, let's start.</p>
-<h3 id="1--prefer-timecurrent-over-timezonenow-or-timezone">#1 - prefer Time.current over Time.zone.now or Time.zone</h3>
+<h3 id="1---prefer-timecurrent-over-timezonenow-or-timezone">#1 - prefer Time.current over Time.zone.now or Time.zone</h3>
 <p>Very often I see a code like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> schedulled_at <span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>zone<span style="color:#f92672">.</span>now
   <span style="color:#f92672">...</span>
@@ -94,7 +94,7 @@ otherwise just returns <code>Time.now</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> schedulled_at <span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>current
   <span style="color:#f92672">...</span>
 <span style="color:#66d9ef">end</span>
-</code></pre></div><h3 id="2--avoid-using-beforefilter">#2 - Avoid using <code>before_filter</code></h3>
+</code></pre></div><h3 id="2---avoid-using-before-filter">#2 - Avoid using <code>before_filter</code></h3>
 <p><code>before_filter</code> is used inside controllers to execute any code before any action
 will be executed. This allows us to avoid duplicating code. But, like any tool,
 it can be used &ldquo;in the wrong way&rdquo;.</p>
@@ -155,7 +155,7 @@ and the explicitness of method calling becomes very helpful.</p>
 <p>Note that I added <code>!</code> sign to the <code>find_by_name</code> method, which now throws an exception if the
 corresponding record is not found. Next, I would probably get rid of the private
 method, since it consists only of one line.</p>
-<h3 id="3--use-powerful-enumerable-methods-example-with-select">#3 - Use powerful <code>Enumerable</code> methods (example with <code>select</code>)</h3>
+<h3 id="3---use-powerful-enumerable-methods-example-with-select">#3 - Use powerful <code>Enumerable</code> methods (example with <code>select</code>)</h3>
 <p>Module <a href="http://ruby-doc.org/core-1.9.3/Enumerable.html">Enumerable</a> provides a
 variety of methods for manipulating, traversing and searching though a
 collection. It is very hard to remember them all, but that is not necessary.

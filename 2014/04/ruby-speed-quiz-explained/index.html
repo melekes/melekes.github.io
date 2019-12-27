@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -129,7 +129,7 @@ h<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">:a</span>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>ntbl <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>st_lookup(<span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>ntbl, key, <span style="color:#f92672">&amp;</span>val)) {
 </code></pre></div><p>It checks that the hash is not empty and tries to find the value using a
 given key.</p>
-<h1 id="4-definemethod-vs-classeval-definition-not-call-speed">4. define_method VS class_eval (definition, NOT call speed)</h1>
+<h1 id="4-define-method-vs-class-eval-definition-not-call-speed">4. define_method VS class_eval (definition, NOT call speed)</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>
   <span style="color:#ae81ff">100</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
     define_method(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">foo_</span><span style="color:#e6db74">#{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) { <span style="color:#ae81ff">10</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times<span style="color:#f92672">.</span>map { <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">foo</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>length } }
