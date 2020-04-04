@@ -20,7 +20,7 @@
       <guid>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
-&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&#39;ll enjoy
+&lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -61,9 +61,9 @@ rebar.&lt;/p&gt;</description>
       
       <guid>https://www.homeonrails.com/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
-logger which limits the volume of info messages irrespectively of the lager&#39;s
+logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
 backend.&lt;/p&gt;
-&lt;p&gt;This article tells a story behind this library. Down below you&#39;ll find answers to the following questions:&lt;/p&gt;
+&lt;p&gt;This article tells a story behind this library. Down below you&amp;rsquo;ll find answers to the following questions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Why it was created?&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;How it works?&amp;rdquo;&lt;/li&gt;
@@ -92,7 +92,7 @@ backend.&lt;/p&gt;
 2016&lt;/a&gt; conference ended only 3 weeks
 ago. There were many great speakers and presentations. What I specifically like
 about it, is that videos are available almost immediately. As usual, I am
-publishing the talks, which I liked the most. Hope you&#39;ll enjoy these too.
+publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
 &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -125,12 +125,12 @@ favorite talks. Enjoy!&lt;/p&gt;</description>
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
       
       <guid>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
-      <description>&lt;p&gt;I&#39;ve  been programming full-time using Erlang for a while already (about eight
+      <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
 are very different languages: OOP vs functional, mutable vs immutable and so
-on. Also, there are things you won&#39;t find in Ruby (the opposite is also true).&lt;/p&gt;
-&lt;p&gt;In this post I want to show you the mistakes that I&#39;ve made and the lessons
-that I&#39;ve learned during the transition.&lt;/p&gt;</description>
+on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is also true).&lt;/p&gt;
+&lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
+that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     
     <item>

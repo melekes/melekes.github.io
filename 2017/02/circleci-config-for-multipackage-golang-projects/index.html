@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -77,39 +77,39 @@ root level. Examples: <a href="https://github.com/hashicorp/consul">1</a>,
 <p>If you are using <a href="https://github.com/Masterminds/glide">glide</a> or other package
 manager:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-machine:
-  environment:
-    PROJECT_GOPATH: <span style="color:#e6db74">&#34;${HOME}/.go_project&#34;</span>
-    PROJECT_PARENT_PATH: <span style="color:#e6db74">&#34;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&#34;</span>
-    PROJECT_PATH: <span style="color:#e6db74">&#34;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&#34;</span>
-    GOPATH: <span style="color:#e6db74">&#34;${PROJECT_GOPATH}&#34;</span>
-    GO15VENDOREXPERIMENT: <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">machine</span>:
+  <span style="color:#66d9ef">environment</span>:
+    <span style="color:#66d9ef">PROJECT_GOPATH</span>: <span style="color:#e6db74">&#34;${HOME}/.go_project&#34;</span>
+    <span style="color:#66d9ef">PROJECT_PARENT_PATH</span>: <span style="color:#e6db74">&#34;${PROJECT_GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}&#34;</span>
+    <span style="color:#66d9ef">PROJECT_PATH</span>: <span style="color:#e6db74">&#34;${PROJECT_PARENT_PATH}/${CIRCLE_PROJECT_REPONAME}&#34;</span>
+    <span style="color:#66d9ef">GOPATH</span>: <span style="color:#e6db74">&#34;${PROJECT_GOPATH}&#34;</span>
+    <span style="color:#66d9ef">GO15VENDOREXPERIMENT</span>: <span style="color:#ae81ff">1</span>
 
-dependencies:
-  cache_directories:
+<span style="color:#66d9ef">dependencies</span>:
+  <span style="color:#66d9ef">cache_directories</span>:
     - <span style="color:#e6db74">&#34;~/.glide&#34;</span>
-  pre:
+  <span style="color:#66d9ef">pre</span>:
     - go get -u -v github.com/Masterminds/glide
-  override:
+  <span style="color:#66d9ef">override</span>:
     - mkdir -p <span style="color:#e6db74">&#34;$PROJECT_PARENT_PATH&#34;</span>
     - ln -sf <span style="color:#e6db74">&#34;$HOME/$CIRCLE_PROJECT_REPONAME/&#34;</span> <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span>
     - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> glide install
-  post:
+  <span style="color:#66d9ef">post</span>:
     - go version
     - glide -v
 
-test:
-  override:
+<span style="color:#66d9ef">test</span>:
+  <span style="color:#66d9ef">override</span>:
     - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> go test -v $(glide novendor)
-</code></pre></div><p>Also, if you want to store your test's output as CircleCI artifact on S3:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">test:
-  override:
+</code></pre></div><p>Also, if you want to store your test&rsquo;s output as CircleCI artifact on S3:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">test</span>:
+  <span style="color:#66d9ef">override</span>:
     - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> go test -v $(glide novendor) <span style="color:#ae81ff">2</span>&gt;<span style="color:#75715e">&amp;1</span> | tee test.log
-  post:
+  <span style="color:#66d9ef">post</span>:
     - cd <span style="color:#e6db74">&#34;$PROJECT_PATH&#34;</span> <span style="color:#75715e">&amp;&amp;</span> mv test.log <span style="color:#e6db74">&#34;${CIRCLE_ARTIFACTS}&#34;</span>
 </code></pre></div><p><code>$(glide novendor)</code> could be replaced with <code>$(shell go list ./... | grep -v '/vendor/')</code>. The former is just shorter.</p>
 <p>You might be asking yourself: where is the example using simple <code>go get</code>? I
-won't give you one because <a href="https://discuss.circleci.com/t/using-own-packages-in-go-project/4073/8">I was not able to get <code>go get</code> working on CircleCI
+won&rsquo;t give you one because <a href="https://discuss.circleci.com/t/using-own-packages-in-go-project/4073/8">I was not able to get <code>go get</code> working on CircleCI
 for our
 project</a>.</p>
 <p>The errors were as follows:</p>

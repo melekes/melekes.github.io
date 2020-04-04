@@ -18,12 +18,12 @@
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
       
       <guid>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
-      <description>&lt;p&gt;I&#39;ve  been programming full-time using Erlang for a while already (about eight
+      <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
 are very different languages: OOP vs functional, mutable vs immutable and so
-on. Also, there are things you won&#39;t find in Ruby (the opposite is also true).&lt;/p&gt;
-&lt;p&gt;In this post I want to show you the mistakes that I&#39;ve made and the lessons
-that I&#39;ve learned during the transition.&lt;/p&gt;</description>
+on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is also true).&lt;/p&gt;
+&lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
+that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ was surprised. Thanks to all who participated!&lt;/p&gt;</description>
 &lt;/ul&gt;
 &lt;p&gt;A lot of time has passed since my last post, so I decided to fix this
 little drawback. Next, we will discuss three small pieces of code,
-which smells not very good. Let&#39;s see what we can do about it.&lt;/p&gt;</description>
+which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;</description>
     </item>
     
     <item>

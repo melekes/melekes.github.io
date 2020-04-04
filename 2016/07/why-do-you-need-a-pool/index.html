@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -72,9 +72,9 @@ html {
   <p>There are a number of reasons you may want to use a pool of workers in your application.</p>
 <p><strong>1) Distribute work across all available CPUs.</strong></p>
 <p>For that, we create fixed number of threads with the desired level of
-parallelism = the number of available cores of the host's CPU. <em>Example in
+parallelism = the number of available cores of the host&rsquo;s CPU. <em>Example in
 Java.</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ExecutorService executor <span style="color:#f92672">=</span> Executors<span style="color:#f92672">.</span><span style="color:#a6e22e">newFixedThreadPool</span><span style="color:#f92672">(</span>4<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ExecutorService executor <span style="color:#f92672">=</span> Executors<span style="color:#f92672">.</span><span style="color:#a6e22e">newFixedThreadPool</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
 </code></pre></div><p>This may require some tuning. A number of threads could be increased or
 decreased. Alternately, you could switch to
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html#newWorkStealingPool--">WorkStealingPool</a>
@@ -84,9 +84,9 @@ for more information.</p>
 <p><strong>2) Open N connections to an external resource (typically, a database)</strong></p>
 <p>This gives us a lot of benefits (some of them are not so obvious):</p>
 <ul>
-<li>we do not spend time on opening the connections (if we're creating a TCP connection, handshake could take <a href="https://www.quora.com/How-long-does-tcp-connection-setup-time-take-on-average">up to 750 ms</a>)</li>
+<li>we do not spend time on opening the connections (if we&rsquo;re creating a TCP connection, handshake could take <a href="https://www.quora.com/How-long-does-tcp-connection-setup-time-take-on-average">up to 750 ms</a>)</li>
 <li>it is much easier to support the code since all operations with the particular resource happen in one place</li>
-<li>it is much easier to analyze the current application's state (number of connections, etc.)</li>
+<li>it is much easier to analyze the current application&rsquo;s state (number of connections, etc.)</li>
 <li>we improve throughput by sharing the network latency</li>
 </ul>
 <p>I think, only the last one requires explanation, others are pretty obvious.</p>

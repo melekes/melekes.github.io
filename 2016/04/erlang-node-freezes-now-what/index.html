@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -91,9 +91,9 @@ Crash dump is being written to: erl_crash.dump...done
 Received SIGUSR1
 </code></pre><p>Смотреть на него без дополнительных утилит еще более болезненно, чем на вывод
 <code>tcpdump</code> без <a href="https://www.wireshark.org/">Wireshark</a>.</p>
-<h2 id="-crashdump">Анализируем crashdump</h2>
+<h2 id="анализируем-crashdump">Анализируем crashdump</h2>
 <p>Мне известны по крайней мере 2 инструмента: crashdump_viewer и recon.</p>
-<h3 id="crashdump-viewer">crashdump_viewer</h3>
+<h3 id="crashdump_viewer">crashdump_viewer</h3>
 <p><a href="http://erlang.org/doc/apps/observer/crashdump_ug.html">http://erlang.org/doc/apps/observer/crashdump_ug.html</a></p>
 <pre><code>$ erl
 &gt; crashdump_viewer:start().

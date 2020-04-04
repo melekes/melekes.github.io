@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -70,9 +70,9 @@ html {
   <h1>Chokecherry Or The Story About 1000000 Timeouts</h1>
   <time datetime=2016-04-24T11:25:45Z class="post-date">Sun, Apr 24, 2016</time>
   <p>Chokecherry (<a href="https://github.com/funbox/chokecherry">https://github.com/funbox/chokecherry</a>) is a wrapper around lager
-logger which limits the volume of info messages irrespectively of the lager's
+logger which limits the volume of info messages irrespectively of the lager&rsquo;s
 backend.</p>
-<p>This article tells a story behind this library. Down below you'll find answers to the following questions:</p>
+<p>This article tells a story behind this library. Down below you&rsquo;ll find answers to the following questions:</p>
 <ul>
 <li>&ldquo;Why it was created?&rdquo;</li>
 <li>&ldquo;How it works?&rdquo;</li>
@@ -80,13 +80,13 @@ backend.</p>
 </ul>
 <h2 id="the-story-about-1000000-timeouts">The Story About 1000000 Timeouts</h2>
 <p>We use lager in almost all of our applications. And it works pretty well most
-of the time, except the cases where it doesn't.</p>
+of the time, except the cases where it doesn&rsquo;t.</p>
 <figure>
     <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif"/> 
 </figure>
 
 <p>It all started one day when we were experiencing a <strong>peak load</strong> in one of the
-applications (we'll call it FortKnox). So, FortKnox was processing a lot of
+applications (we&rsquo;ll call it FortKnox). So, FortKnox was processing a lot of
 data and producing a lot of logs (particularly, info messages). As
 shown on a picture below, we were writing logs to a file on disk.</p>
 <figure>
@@ -96,18 +96,18 @@ shown on a picture below, we were writing logs to a file on disk.</p>
 <p>Then we started seeing <strong>random exits</strong> (timeouts in calls to <code>lager:info</code>)
 from many places. These led to different parts (gen_servers, gen_fsms, etc.) of
 FortKnox crashing. Some of them got restarted by their supervisor. But it was
-clear that this won't last long. Indeed, at some point, it all came down to the
-application's supervisor and <strong>whole node stopped working</strong>.</p>
+clear that this won&rsquo;t last long. Indeed, at some point, it all came down to the
+application&rsquo;s supervisor and <strong>whole node stopped working</strong>.</p>
 <figure>
     <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png"/> 
 </figure>
 
 <p>This is what happened. <strong>Hard disk was not able to handle so much writes</strong> (even in
-the presence of OS caches). <a href="https://github.com/basho/lager/blob/ec43800bd5bf0286c5d591fbda0b2d22fccf4d7b/src/lager_file_backend.erl#L257">file:write</a> became slower and lager's
+the presence of OS caches). <a href="https://github.com/basho/lager/blob/ec43800bd5bf0286c5d591fbda0b2d22fccf4d7b/src/lager_file_backend.erl#L257">file:write</a> became slower and lager&rsquo;s
 message box started to grow in size. The behavior for lager, in that case, is
 to switch to synchronous mode (see
 <a href="https://github.com/basho/lager#overload-protection">https://github.com/basho/lager#overload-protection</a> for details), what he did.
-That's how we came to the random exits.</p>
+That&rsquo;s how we came to the random exits.</p>
 <p>Possible solutions were (<a href="https://groups.google.com/forum/#!topic/erlang-russian/8xEeffAV8sc">discussion on erlang-russian</a>):</p>
 <ul>
 <li><del>RAM disk</del> (high cost of maintenance)</li>
@@ -122,7 +122,7 @@ off synchronous mode.</p>
     <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png"/> 
 </figure>
 
-<p>What will happen then is lager's mailbox start growing and, eventually, when
+<p>What will happen then is lager&rsquo;s mailbox start growing and, eventually, when
 there will be no more free memory, node will crash.</p>
 <blockquote>
 <p>For performance, the file backend does delayed writes, although it will sync
@@ -130,8 +130,8 @@ at specific log levels, configured via the `sync_on&rsquo; option. By default th
 error level or above will trigger a sync.</p>
 </blockquote>
 <p>Keep in mind that there were an exessive amount of info messages, so no <code>fsync</code>
-calls (<a href="https://github.com/basho/lager/blob/1159f9262fb589ce2ec310eb7dec5ac03b1fee16/src/lager_file_backend.erl#L262">file:datasync</a>) were made (we didn't change the default).</p>
-<p>So <strong>there was no simple solution</strong> for this problem. <strong>That's why we created
+calls (<a href="https://github.com/basho/lager/blob/1159f9262fb589ce2ec310eb7dec5ac03b1fee16/src/lager_file_backend.erl#L262">file:datasync</a>) were made (we didn&rsquo;t change the default).</p>
+<p>So <strong>there was no simple solution</strong> for this problem. <strong>That&rsquo;s why we created
 chokecherry</strong>. What follows is how it works.</p>
 <h2 id="chokecherry">Chokecherry</h2>
 <figure>
@@ -157,7 +157,7 @@ the maximum size of the queue.</p>
 <p>If your application produces a lot of logs and you can afford to lose some
 (i.e. stable work of an application is more important to you) - <strong>yes</strong>.</p>
 <p>In the above story, we were writing logs to a file using <code>lager_file_backend</code>.
-This doesn't mean that a similar story could not happen to you if you're using
+This doesn&rsquo;t mean that a similar story could not happen to you if you&rsquo;re using
 a different backend. So it may be applicable to other backends likewise.</p>
 <h2 id="source-code">Source code</h2>
 <p>Currently, we are only &ldquo;shaping&rdquo; info messages. If you think we should do it

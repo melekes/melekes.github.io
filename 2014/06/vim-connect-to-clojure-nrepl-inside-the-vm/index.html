@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -78,11 +78,11 @@ manually using <code>:Connect</code> function.</p>
 <p>This function has the following syntax:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">Connect</span> {<span style="color:#a6e22e">proto</span>}:<span style="color:#e6db74">//</span>{<span style="color:#a6e22e">host</span>}:{<span style="color:#a6e22e">port</span>} {<span style="color:#a6e22e">path</span>}<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Most of the options are self-explanatory, except to say that <code>proto</code> (protocol)
-is always <code>nrepl</code> and <code>path</code> is your project's location.</p>
+is always <code>nrepl</code> and <code>path</code> is your project&rsquo;s location.</p>
 <p>I am using Vagrant to manage my VMs and this one, as the rest,
 configured with private network.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Vagrant</span><span style="color:#f92672">.</span>configure(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">2</span><span style="color:#e6db74">&#34;</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
-  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">private_network</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">ip</span>: <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">192.168.50.4</span><span style="color:#e6db74">&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Vagrant</span><span style="color:#f92672">.</span>configure(<span style="color:#e6db74">&#34;2&#34;</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
+  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;private_network&#34;</span>, <span style="color:#e6db74">ip</span>: <span style="color:#e6db74">&#34;192.168.50.4&#34;</span>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>Now we need to start nREPL inside the guest machine.</p>
 <pre><code>$&gt; lein repl :start :host 0.0.0.0 :port 4242

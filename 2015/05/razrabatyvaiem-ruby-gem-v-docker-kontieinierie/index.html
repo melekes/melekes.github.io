@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -85,7 +85,7 @@ Container</a>, или еще кто-то. Пусть победит
 сильнейший. docker я выбрал по 2 причинам: 1) он уже давно стабилен и вполне
 годен для повседневного использования (для разработки точно) 2) это довольно
 большая платформа с кучей готовых рецептов и туториалов.</p>
-<h3 id="1--docker">1. Устанавливаем docker</h3>
+<h3 id="1-устанавливаем-docker">1. Устанавливаем docker</h3>
 <p>Все команды актуальны для Ubuntu. Инструкции для других ОС читайте на
 официальных сайтах.</p>
 <p>И так, начнем. Первым делом нам надо установить сам docker (для других ОС см.
@@ -94,19 +94,19 @@ Container</a>, или еще кто-то. Пусть победит
 </code></pre></div><p>Чтобы каждый раз не писать sudo при его использовании, создадим группу docker и
 добавим своего пользователя в нее:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo usermod -aG docker &lt;username&gt;
-</code></pre></div><h3 id="2--dockerfile">2. Создаем Dockerfile</h3>
+</code></pre></div><h3 id="2-создаем-dockerfile">2. Создаем Dockerfile</h3>
 <p>Следующим нашим шагом будет создание Dockerfile'а для нашего гема. Создайте
 Dockerfile со следующим содержимым в корне вашего гема:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ruby:2.2.2</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir -p /usr/src/lib<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /usr/src/lib</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> Gemfile* /usr/src/lib/<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> *.gemspec /usr/src/lib/<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle install<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /usr/src/lib/<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Вы можете натолкнуться на ошибку мол &ldquo;Не могу найти lib/&lt;yourgemname&gt;/version.rb&rdquo; если
 загружаете его (файл с версией) в gemspec файле. Решением будет добавить еще
@@ -127,37 +127,37 @@ pkg/
 выполнить <code>bundle install</code> и пересобрать контейнер (опционально).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ruby:2.2.2</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># throw errors if Gemfile has been modified since Gemfile.lock</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle config --global frozen <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>...<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><code>bundle install</code> выполняем так:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run --rm -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib -w /usr/src/lib ruby:2.2.2 bundle install
 </code></pre></div><p>Другие хорошие практики можно прочесть здесь - <a href="https://docs.docker.com/articles/dockerfile_best-practices/">Best practices for writing
 Dockerfiles</a></p>
-<h3 id="3-----">3. Собираем контейнер и запускаем тесты</h3>
+<h3 id="3-собираем-контейнер-и-запускаем-тесты">3. Собираем контейнер и запускаем тесты</h3>
 <p>Результирующий Dockerfile должен выглядеть примерно так:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ruby:2.2.2</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># throw errors if Gemfile has been modified since Gemfile.lock</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle config --global frozen <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir -p /usr/src/lib<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /usr/src/lib</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> Gemfile* /usr/src/lib/<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> *.gemspec /usr/src/lib/<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle install<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /usr/src/lib/<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Теперь соберем наш контейнер:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker build -t &lt;yourgemname&gt; .
 </code></pre></div><p>И запустим тесты:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run -it --rm -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib &lt;yourgemname&gt; bundle exec rake
 </code></pre></div><p>Все должно отработать без проблем.</p>
-<h3 id="4-makefile-">4. Makefile (опционально)</h3>
+<h3 id="4-makefile-опционально">4. Makefile (опционально)</h3>
 <p>Хорошей идеей также будет добавить Makefile:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">docker_build</span><span style="color:#f92672">:</span>
 	docker build -t &lt;yourgemname&gt; .
@@ -167,7 +167,7 @@ Dockerfiles</a></p>
 
 <span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> docker_build docker_test
 </code></pre></div><p>или использовать <a href="https://docs.docker.com/compose/">docker-compose</a>.</p>
-<h3 id="5-">5. Результаты</h3>
+<h3 id="5-результаты">5. Результаты</h3>
 <p>Все это работает очень шустро (по крайней мере на моем Linux'е). Поговаривают,
 что на маках ситуация чуть хуже по понятным причинам.</p>
 <p>Таким образом, все что потребуется от нашего коллеги или контрибьютора для

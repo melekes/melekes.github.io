@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -69,18 +69,18 @@ html {
     <div class="post">
   <h1>From Ruby To Erlang. Beginner&#39;s mistakes</h1>
   <time datetime=2015-08-03T15:09:10Z class="post-date">Mon, Aug 3, 2015</time>
-  <p>I've  been programming full-time using Erlang for a while already (about eight
+  <p>I&rsquo;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
 are very different languages: OOP vs functional, mutable vs immutable and so
-on. Also, there are things you won't find in Ruby (the opposite is also true).</p>
-<p>In this post I want to show you the mistakes that I've made and the lessons
-that I've learned during the transition.</p>
+on. Also, there are things you won&rsquo;t find in Ruby (the opposite is also true).</p>
+<p>In this post I want to show you the mistakes that I&rsquo;ve made and the lessons
+that I&rsquo;ve learned during the transition.</p>
 <h2 id="1-list-comprehensions">1. List Comprehensions</h2>
 <p>There is no such thing as List Comprehension in Ruby (but you could write
-<a href="http://blog.tarkalabs.com/2015/04/21/list-comprehension-in-ruby/">something similar</a>), so when I was using it in Erlang, I didn't fully
+<a href="http://blog.tarkalabs.com/2015/04/21/list-comprehension-in-ruby/">something similar</a>), so when I was using it in Erlang, I didn&rsquo;t fully
 understand how it works. Let me show you.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[X || X <span style="color:#f92672">&lt;</span><span style="color:#f92672">-</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>], X <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span>].
-<span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> [<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[X || X <span style="color:#f92672">&lt;-</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>], X <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span>].
+<span style="color:#f92672">=&gt;</span> [<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>]
 </code></pre></div><p>There are 3 main components here:</p>
 <ol>
 <li><code>X &lt;- [1,2,3,4,5,6]</code> - <strong>generator</strong> - usually some set of elements;</li>
@@ -97,9 +97,9 @@ understand how it works. Let me show you.</p>
 <li>if it passes all the filters, the expression on the left gets executed;
 otherwise, goto (1).</li>
 </ol>
-<p>As it turned out, I was wrong. I've noticed it, when I wrote a for loop using
+<p>As it turned out, I was wrong. I&rsquo;ve noticed it, when I wrote a for loop using
 list comprehension, and, later on, one of the filters fell.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[save(Rec, Db) || Rec <span style="color:#f92672">&lt;</span><span style="color:#f92672">-</span> Records, is_dirty(Rec), can_be_saved(Rec)]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[save(Rec, Db) || Rec <span style="color:#f92672">&lt;-</span> Records, is_dirty(Rec), can_be_saved(Rec)]
 </code></pre></div><p><em>this is not the production code</em></p>
 <p>What do you think will happen if <code>can_be_saved</code> throw an error for the
 third record? <strong>Correct answer</strong>: non of the records will be saved.</p>
@@ -115,21 +115,21 @@ third record? <strong>Correct answer</strong>: non of the records will be saved.
 filters initial list. After that, it executes expression on the left side for
 each item resulting in a new list.</p>
 <p><strong>Lesson #1. List Comprehension should not be used when you need a for loop. Instead, use recursion.</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#a6e22e">save_records</span>([], _) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> ok;
-<span style="color:#a6e22e">save_records</span>([Rec|Rest], Db) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#a6e22e">save_records</span>([], _) <span style="color:#f92672">-&gt;</span> ok;
+<span style="color:#a6e22e">save_records</span>([Rec|Rest], Db) <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">try</span>
         <span style="color:#66d9ef">case</span> is_dirty(Rec) <span style="color:#66d9ef">of</span>
-            false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> throw({filtered, io_lib:<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">~p</span><span style="color:#e6db74"> not dirty</span><span style="color:#e6db74">&#34;</span>, [Rec])});
-            true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> ok
+            false <span style="color:#f92672">-&gt;</span> throw({filtered, io_lib:<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">~p</span><span style="color:#e6db74"> not dirty&#34;</span>, [Rec])});
+            true <span style="color:#f92672">-&gt;</span> ok
         <span style="color:#66d9ef">end</span>,
         <span style="color:#66d9ef">case</span> can_be_saved(Rec) <span style="color:#66d9ef">of</span>
-            false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> throw({filtered, io_lib:<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">~p</span><span style="color:#e6db74"> cannot be saved</span><span style="color:#e6db74">&#34;</span>, [Rec])});
-            true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> ok
+            false <span style="color:#f92672">-&gt;</span> throw({filtered, io_lib:<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">~p</span><span style="color:#e6db74"> cannot be saved&#34;</span>, [Rec])});
+            true <span style="color:#f92672">-&gt;</span> ok
         <span style="color:#66d9ef">end</span>
-    <span style="color:#66d9ef">of</span> _ <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#66d9ef">of</span> _ <span style="color:#f92672">-&gt;</span>
         save(Rec, Db)
     <span style="color:#66d9ef">catch</span>
-        throw:{filtered, Reason} <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> lager:<span style="color:#a6e22e">debug</span>(Reason)
+        throw:{filtered, Reason} <span style="color:#f92672">-&gt;</span> lager:<span style="color:#a6e22e">debug</span>(Reason)
     <span style="color:#66d9ef">end</span>,
     save_records(Rest, Db).
 </code></pre></div><p>This way, if <code>can_be_saved</code> does throw an error, at least some of the records
@@ -151,7 +151,7 @@ system, was looking at log timings. Wrong move!</p>
 <p>It is like an old shabby van with free candies. You have a feeling that
 something is not right.</p>
 <p>And when I had used <code>timer:tc</code> (analog in Ruby - <code>Benchmark</code>), these timings
-proved to be &ldquo;wrong&rdquo;. And that's because in Erlang, logger (as most things) is
+proved to be &ldquo;wrong&rdquo;. And that&rsquo;s because in Erlang, logger (as most things) is
 a separate process with its own mailbox. What you see are <strong>the times of when
 it received the messages</strong>. In contrast, things are usually happening in the
 same thread in Ruby (that is why timings are usually more accurate).</p>
@@ -160,9 +160,9 @@ same thread in Ruby (that is why timings are usually more accurate).</p>
 </figure>
 
 <p><strong>Lesson #2. Do not rely on lager timings, because it is a separate gen_server (i.e. you don’t know when it will process your messages).</strong></p>
-<h2 id="3-high-loaded-gen-server">3. High-loaded gen_server</h2>
+<h2 id="3-high-loaded-gen_server">3. High-loaded gen_server</h2>
 <p>This is more like a word of advice. When you have a <code>gen_server</code>, which is
-supposed to process, say, 1000 events per second, you can't make any
+supposed to process, say, 1000 events per second, you can&rsquo;t make any
 synchronous blocking calls (e.g. to Redis) or set any locks, because soon
 enough the process mailbox will be full of messages and things will become
 ugly.</p>
@@ -171,7 +171,7 @@ something like that) or use a worker pool (<a href="https://github.com/devinus/p
 recommend to watch <a href="https://www.youtube.com/watch?v=GO_97_6w5lU">this talk</a> by Anthony Molinaro at Erlang Factory SF
 2015, where he compares a few different options we have at the moment.</p>
 <p>If you also had some troubles during transition to another language, let me
-know. I personally laugh at such moments and don't take them too seriously,
+know. I personally laugh at such moments and don&rsquo;t take them too seriously,
 because, you know, it just happens sometimes. The important is to learn by
 these mistakes.</p>
 </div>

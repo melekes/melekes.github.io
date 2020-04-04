@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -93,13 +93,13 @@ be fixed or not.</p>
 <h2 id="fprof-cprof">fprof, cprof</h2>
 <p>Like it or not, you need to know one or two standard tools.</p>
 <p>The best place to start: <a href="http://erlang.org/doc/efficiency_guide/profiling.html">http://erlang.org/doc/efficiency_guide/profiling.html</a></p>
-<p>fprof's output can be converted into the format suitable for kcachegrind (see
+<p>fprof&rsquo;s output can be converted into the format suitable for kcachegrind (see
 below) using the <a href="https://github.com/isacssouza/erlgrind">erlgrind</a>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> fprof:<span style="color:#a6e22e">start</span>().
 <span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span> fprof:trace([start, {procs, all}]). <span style="color:#75715e">% trace all the processes (significantly slows down the system)
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span> fprof:trace([stop]).
 <span style="color:#ae81ff">4</span><span style="color:#f92672">&gt;</span> fprof:<span style="color:#a6e22e">profile</span>().
-<span style="color:#ae81ff">5</span><span style="color:#f92672">&gt;</span> fprof:<span style="color:#a6e22e">analyse</span>([totals, {dest, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">fprof.analysis</span><span style="color:#e6db74">&#34;</span>}]).
+<span style="color:#ae81ff">5</span><span style="color:#f92672">&gt;</span> fprof:<span style="color:#a6e22e">analyse</span>([totals, {dest, <span style="color:#e6db74">&#34;fprof.analysis&#34;</span>}]).
 <span style="color:#ae81ff">6</span><span style="color:#f92672">&gt;</span> fprof:<span style="color:#a6e22e">stop</span>().
 </code></pre></div><p>You can find explanations for each command above in the standard docs and also
 <a href="https://timanovsky.wordpress.com/2009/01/20/profiling-running-erlang-server/">here</a>.</p>
@@ -109,14 +109,14 @@ below) using the <a href="https://github.com/isacssouza/erlgrind">erlgrind</a>.<
 <span style="color:#ae81ff">4</span><span style="color:#f92672">&gt;</span> cprof:<span style="color:#a6e22e">analyse</span>(cprof). <span style="color:#75715e">% analysing calls of a specific module
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">5</span><span style="color:#f92672">&gt;</span> cprof:<span style="color:#a6e22e">stop</span>().
 </code></pre></div><h2 id="eep">eep</h2>
-<p>The sequence of steps is quite simple and described in the project's README.</p>
+<p>The sequence of steps is quite simple and described in the project&rsquo;s README.</p>
 <p>We start the tracing:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eep:<span style="color:#a6e22e">start_file_tracing</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">appname</span><span style="color:#e6db74">&#34;</span>), timer:<span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">10000</span>), eep:<span style="color:#a6e22e">stop_tracing</span>().
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eep:<span style="color:#a6e22e">start_file_tracing</span>(<span style="color:#e6db74">&#34;appname&#34;</span>), timer:<span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">10000</span>), eep:<span style="color:#a6e22e">stop_tracing</span>().
 </code></pre></div><p>Then copy the resulting file: <code>appname.trace</code> to our machine (before that we
-gzip it because of it's size). On our machine, we transform it into the text
+gzip it because of it&rsquo;s size). On our machine, we transform it into the text
 format, suitable for
 <a href="https://kcachegrind.github.io/html/Home.html">kcachegrind</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eep:<span style="color:#a6e22e">convert_tracing</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">appname</span><span style="color:#e6db74">&#34;</span>).
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eep:<span style="color:#a6e22e">convert_tracing</span>(<span style="color:#e6db74">&#34;appname&#34;</span>).
 </code></pre></div><p>If you still do not have kcachegrind, go install it:</p>
 <p>In Ubuntu:</p>
 <pre><code>$ sudo apt-get install kcachegrind
@@ -130,16 +130,16 @@ format, suitable for
 <ul>
 <li>group by &ldquo;Source File&rdquo; (or by &ldquo;ELF Object&rdquo; if you target is a particular PID);</li>
 <li>percentage (&ldquo;Relative&rdquo;) is better than absolute time;</li>
-<li>percentage relative to its parent (&ldquo;Relative to Parent&rdquo;) is even better, otherwise, you can't understand the damn thing.</li>
+<li>percentage relative to its parent (&ldquo;Relative to Parent&rdquo;) is even better, otherwise, you can&rsquo;t understand the damn thing.</li>
 </ul>
 <p>&ldquo;No Grouping&rdquo; and &ldquo;Function Cycle&rdquo; do not give a clear picture of what is
 happening. The first option leads to the top lines: <code>gen_server:decode_msg</code>,<code>gen_server:loop</code>, and only indicates that more time spent in <code>gen_server:*</code> -
-thank you, captain! I didn't understand the results of the second option.</p>
+thank you, captain! I didn&rsquo;t understand the results of the second option.</p>
 <h2 id="eflame2">eflame2</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eflame2:<span style="color:#a6e22e">write_trace</span>(global_calls_plus_new_procs, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">/tmp/ef.test.0</span><span style="color:#e6db74">&#34;</span>, all, <span style="color:#ae81ff">10</span><span style="color:#f92672">*</span><span style="color:#ae81ff">1000</span>).
-<span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span> eflame2:<span style="color:#a6e22e">format_trace</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">/tmp/ef.test.0</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">/tmp/ef.test.0.out</span><span style="color:#e6db74">&#34;</span>).
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eflame2:<span style="color:#a6e22e">write_trace</span>(global_calls_plus_new_procs, <span style="color:#e6db74">&#34;/tmp/ef.test.0&#34;</span>, all, <span style="color:#ae81ff">10</span><span style="color:#f92672">*</span><span style="color:#ae81ff">1000</span>).
+<span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span> eflame2:<span style="color:#a6e22e">format_trace</span>(<span style="color:#e6db74">&#34;/tmp/ef.test.0&#34;</span>, <span style="color:#e6db74">&#34;/tmp/ef.test.0.out&#34;</span>).
 </code></pre></div><p>According to the docs, we need to run tracing in a separate process. But when
-I'd tried to do so, I got &ldquo;Segmentation fault&rdquo;.</p>
+I&rsquo;d tried to do so, I got &ldquo;Segmentation fault&rdquo;.</p>
 <pre><code>$ cat /tmp/ef.test.0.out | ./flamegraph.riak-color.pl &gt; output.svg
 </code></pre><figure>
     <img src="https://www.homeonrails.com/images/posts/2016-05-25-profiling-in-erlang/eflame2.png"/> 
@@ -148,9 +148,9 @@ I'd tried to do so, I got &ldquo;Segmentation fault&rdquo;.</p>
 <h2 id="timertc">timer:tc</h2>
 <p>What is there to talk? Recently, I came across an unexpected behavior. Take a
 look at the following code:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{Time, Result} <span style="color:#f92672">=</span> timer:<span style="color:#a6e22e">tc</span>(<span style="color:#66d9ef">fun</span>() <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
-    {Time1, Result1} <span style="color:#f92672">=</span> timer_tc(<span style="color:#66d9ef">fun</span>() <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> do_smth1() <span style="color:#66d9ef">end</span>)
-    {Time2, Result2} <span style="color:#f92672">=</span> timer_tc(<span style="color:#66d9ef">fun</span>() <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> do_smth2() <span style="color:#66d9ef">end</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{Time, Result} <span style="color:#f92672">=</span> timer:<span style="color:#a6e22e">tc</span>(<span style="color:#66d9ef">fun</span>() <span style="color:#f92672">-&gt;</span>
+    {Time1, Result1} <span style="color:#f92672">=</span> timer_tc(<span style="color:#66d9ef">fun</span>() <span style="color:#f92672">-&gt;</span> do_smth1() <span style="color:#66d9ef">end</span>)
+    {Time2, Result2} <span style="color:#f92672">=</span> timer_tc(<span style="color:#66d9ef">fun</span>() <span style="color:#f92672">-&gt;</span> do_smth2() <span style="color:#66d9ef">end</span>)
 <span style="color:#66d9ef">end</span>)
 </code></pre></div><p><code>Time</code> should be equal to <code>Time1 + Time2</code>, right?</p>
 <p>Well, not in reality. <strong>Time is often greater than Time1 + Time2</strong> (even if I

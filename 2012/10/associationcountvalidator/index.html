@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -74,16 +74,16 @@ about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># lib/association_count_validator.rb</span>
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AssociationCountValidator</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveModel</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Validations</span><span style="color:#f92672">::</span><span style="color:#66d9ef">LengthValidator</span>
-  <span style="color:#66d9ef">MESSAGES</span> <span style="color:#f92672">=</span> { <span style="color:#e6db74">:wrong_length</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">:association_count_invalid</span>,
-               <span style="color:#e6db74">:too_short</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">:association_count_greater_than_or_equal_to</span>,
-               <span style="color:#e6db74">:too_long</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">:association_count_less_than_or_equal_to</span> }<span style="color:#f92672">.</span>freeze
+  <span style="color:#66d9ef">MESSAGES</span> <span style="color:#f92672">=</span> { <span style="color:#e6db74">:wrong_length</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_invalid</span>,
+               <span style="color:#e6db74">:too_short</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_greater_than_or_equal_to</span>,
+               <span style="color:#e6db74">:too_long</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_less_than_or_equal_to</span> }<span style="color:#f92672">.</span>freeze
 
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">initialize</span>(options)
-    <span style="color:#66d9ef">MESSAGES</span><span style="color:#f92672">.</span>each { <span style="color:#f92672">|</span>key, message<span style="color:#f92672">|</span> options<span style="color:#f92672">[</span>key<span style="color:#f92672">]</span> <span style="color:#f92672">||</span><span style="color:#f92672">=</span> message }
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initialize</span>(options)
+    <span style="color:#66d9ef">MESSAGES</span><span style="color:#f92672">.</span>each { <span style="color:#f92672">|</span>key, message<span style="color:#f92672">|</span> options<span style="color:#f92672">[</span>key<span style="color:#f92672">]</span> <span style="color:#f92672">||=</span> message }
     <span style="color:#66d9ef">super</span>
   <span style="color:#66d9ef">end</span>
 
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">validate_each</span>(record, attribute, value)
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">validate_each</span>(record, attribute, value)
     existing_records <span style="color:#f92672">=</span> record<span style="color:#f92672">.</span>send(attribute)<span style="color:#f92672">.</span>reject(<span style="color:#f92672">&amp;</span><span style="color:#e6db74">:marked_for_destruction?</span>)
     <span style="color:#66d9ef">super</span>(record, attribute, existing_records)
   <span style="color:#66d9ef">end</span>
@@ -96,7 +96,7 @@ which was mentioned in the previous post.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
   <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 
-  <span style="color:#f92672"></span>attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
+  attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
 
   validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
   validates <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">association_count</span>: { <span style="color:#e6db74">minimum</span>: <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> }
@@ -107,18 +107,18 @@ which was mentioned in the previous post.</p>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>Do not forget to add custom error messages to your localization files.</p>
 <p>Example for <code>en</code> culture:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">en:
-  errors:
-    messages:
-      association_count_less_than_or_equal_to:
-        one: count must be less than <span style="color:#ae81ff">1</span>
-        other: count must be less than or equal to %{count}
-      association_count_greater_than_or_equal_to:
-        one: count must be greater than <span style="color:#ae81ff">1</span>
-        other: count must be greater than or equal to %{count}
-      association_count_invalid:
-        one: count is invalid (must be equal to <span style="color:#ae81ff">1</span>)
-        other: count is invalid (must be equal to %{count})
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">en</span>:
+  <span style="color:#66d9ef">errors</span>:
+    <span style="color:#66d9ef">messages</span>:
+      <span style="color:#66d9ef">association_count_less_than_or_equal_to</span>:
+        <span style="color:#66d9ef">one</span>: count must be less than <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">other</span>: count must be less than or equal to %{count}
+      <span style="color:#66d9ef">association_count_greater_than_or_equal_to</span>:
+        <span style="color:#66d9ef">one</span>: count must be greater than <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">other</span>: count must be greater than or equal to %{count}
+      <span style="color:#66d9ef">association_count_invalid</span>:
+        <span style="color:#66d9ef">one</span>: count is invalid (must be equal to <span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">other</span>: count is invalid (must be equal to %{count})
 </code></pre></div>
 </div>
 

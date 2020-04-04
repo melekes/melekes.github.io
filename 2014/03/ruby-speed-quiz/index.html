@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -87,31 +87,31 @@ html {
 <ol>
 <li></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">foo</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>
   <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">if</span> block_given?
 <span style="color:#66d9ef">end</span>
-foo { puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Hi from foo</span><span style="color:#e6db74">&#34;</span> }
+foo { puts <span style="color:#e6db74">&#34;Hi from foo&#34;</span> }
 </code></pre></div><ol start="2">
 <li>
 <p>both run with similar speed</p>
 </li>
 <li></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(<span style="color:#f92672">&amp;</span>blk)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(<span style="color:#f92672">&amp;</span>blk)
   blk<span style="color:#f92672">.</span>call
 <span style="color:#66d9ef">end</span>
-bar { puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Hi from bar</span><span style="color:#e6db74">&#34;</span> }
+bar { puts <span style="color:#e6db74">&#34;Hi from bar&#34;</span> }
 </code></pre></div><h3 id="3-hash--vs-fetch">3. Hash [] VS fetch</h3>
 <ol>
 <li></li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
 h<span style="color:#f92672">[</span><span style="color:#e6db74">:a</span><span style="color:#f92672">]</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">1</span>
-<span style="color:#f92672"></span></code></pre></div><ol start="2">
+</code></pre></div><ol start="2">
 <li></li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
-h<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">:a</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672"></span>)
+h<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">:a</span>, <span style="color:#ae81ff">1</span>)
 </code></pre></div><ol start="3">
 <li>both run with similar speed</li>
 </ol>
@@ -120,18 +120,18 @@ h<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">:a</span>
 <li></li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(a, b)
     puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">#{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
   <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Child</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">Parent</span>
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(a, b)
     <span style="color:#66d9ef">super</span>(a, b)
   <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
 c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Child</span><span style="color:#f92672">.</span>new
-c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#ae81ff">2</span><span style="color:#f92672"></span>)
+c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)
 </code></pre></div><ol start="2">
 <li>
 <p>both run with similar speed</p>
@@ -139,32 +139,32 @@ c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span><sp
 <li></li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
- <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+ <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(a, b)
    puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">#{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
  <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Child</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">Parent</span>
- <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">bar</span>(a, b)
+ <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(a, b)
    <span style="color:#66d9ef">super</span>
  <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
 c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Child</span><span style="color:#f92672">.</span>new
-c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span><span style="color:#f92672"></span>, <span style="color:#ae81ff">2</span><span style="color:#f92672"></span>)
-</code></pre></div><h3 id="5-define-method-vs-class-eval-definition-not-call-speed">5. define_method VS class_eval (definition, NOT call speed)</h3>
+c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)
+</code></pre></div><h3 id="5-define_method-vs-class_eval-definition-not-call-speed">5. define_method VS class_eval (definition, NOT call speed)</h3>
 <ol>
 <li></li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>
-  <span style="color:#ae81ff">100</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
-    define_method(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">foo_</span><span style="color:#e6db74">#{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) { <span style="color:#ae81ff">10</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times<span style="color:#f92672">.</span>map { <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">foo</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>length } }
+  <span style="color:#ae81ff">100</span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
+    define_method(<span style="color:#e6db74">&#34;foo_</span><span style="color:#e6db74">#{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) { <span style="color:#ae81ff">10</span><span style="color:#f92672">.</span>times<span style="color:#f92672">.</span>map { <span style="color:#e6db74">&#34;foo&#34;</span><span style="color:#f92672">.</span>length } }
   <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><ol start="2">
 <li></li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">B</span>
-  <span style="color:#ae81ff">100</span><span style="color:#f92672"></span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
+  <span style="color:#ae81ff">100</span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
     class_eval <span style="color:#e6db74">&#39;def bar_#{i}; 10.times.map { &#34;foo&#34;.length };
 </span><span style="color:#e6db74">end&#39;</span>
   <span style="color:#66d9ef">end</span>

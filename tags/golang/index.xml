@@ -52,7 +52,7 @@ leak. Here is the list:&lt;/p&gt;</description>
       <pubDate>Tue, 06 Jun 2017 22:35:01 +0200</pubDate>
       
       <guid>https://www.homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</guid>
-      <description>Wrote a blog post a few days ago for my company&#39;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
+      <description>Wrote a blog post a few days ago for my company&amp;rsquo;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
 https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7</description>
     </item>
     

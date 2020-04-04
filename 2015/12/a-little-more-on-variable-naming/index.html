@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -72,11 +72,11 @@ html {
   <p>Вообще, после того, как вы прочитаете &ldquo;Совершенный код&rdquo; Стива Макконнелла,
 вопросов как назвать ту или иную переменную быть не должно. Но есть некоторые
 моменты, которые не освещены в книге и нуждаются в обсуждении.</p>
-<h2 id="-ms-min">Меры (ms, min)</h2>
+<h2 id="меры-ms-min">Меры (ms, min)</h2>
 <p>Недавно пришлось залезть в исходники HBase, чтобы выяснить в каких единицах мне
 нужно задать TTL. В документации я этого не нашел :( Вот, например, одна строка из теста:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> TTL <span style="color:#f92672">=</span> 86400<span style="color:#f92672">;</span>
-</code></pre></div><p><!-- raw HTML omitted -->(<a href="https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35)%3C/small%3E">https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35)&lt;/small&gt;</a></p>
+</code></pre></div><p><!-- raw HTML omitted -->(<a href="https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35">https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35</a>)<!-- raw HTML omitted --></p>
 <figure>
     <img src="https://www.homeonrails.com/images/posts/2015-12-14-a-little-more-on-variable-naming/wtf.png"/> 
 </figure>
@@ -87,7 +87,7 @@ html {
 <li>Писать единицы в названии: <code>TTL_IN_SEC</code> - так себе, думаю тут все согласны.</li>
 <li>Писать рядом комментарий: <code>TTL = 86400; // sec</code> - уже лучше, но ненамного; пока придерживаюсь этого варианта.</li>
 <li>Использовать структуры языка: <code>-define(TTL, {86400, sec});</code>.
-Для тех, кто не знает, это определение константы в Erlang'e. Здесь мы
+Для тех, кто не знает, это определение константы в Erlang&rsquo;e. Здесь мы
 складываем значение и единицу в кортеж (tuple). Очевидный минус в том, что
 нужно будет переписать код для работы с ними.</li>
 <li>Предоставить стандартный класс, кот. явно задает единицу измерения для любых
@@ -113,7 +113,7 @@ html {
 </code></pre><p>Кстати, TTL для отдельного столбца <a href="https://github.com/apache/hbase/blob/master/hbase-client/src/main/java/org/apache/hadoop/hbase/client/Mutation.java#L444">задается в
 мс</a>.
 В примере выше оказались секунды.</p>
-<h2 id="--">Переменные под прикрытием</h2>
+<h2 id="переменные-под-прикрытием">Переменные под прикрытием</h2>
 <p>Зачастую вижу в коде в одном месте переменная называется <code>list_id</code>, а в функции
 куда она передается - <code>dest_id</code>.</p>
 <pre><code># first_class.rb
@@ -132,7 +132,7 @@ end
 переменную <code>dest_list_id</code> в <code>second_class.rb</code>.</p>
 <p>Похожую мысль в своем <a href="http://tonsky.livejournal.com/304954.html">ЖЖ</a> недавно
 высказал <a href="https://twitter.com/nikitonsky">Никита Прокопов</a>.</p>
-<h2 id="-">Какой тип?</h2>
+<h2 id="какои-тип">Какой тип?</h2>
 <p>В языках со строгой типизацией (в частности, в Erlang) мы получим ошибку в
 рантайме, если попытаемся склеить число со списком:</p>
 <pre><code>1 ++ &quot;abc&quot;.

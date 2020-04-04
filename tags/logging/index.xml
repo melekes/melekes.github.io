@@ -19,9 +19,9 @@
       
       <guid>https://www.homeonrails.com/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
-logger which limits the volume of info messages irrespectively of the lager&#39;s
+logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
 backend.&lt;/p&gt;
-&lt;p&gt;This article tells a story behind this library. Down below you&#39;ll find answers to the following questions:&lt;/p&gt;
+&lt;p&gt;This article tells a story behind this library. Down below you&amp;rsquo;ll find answers to the following questions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Why it was created?&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;How it works?&amp;rdquo;&lt;/li&gt;

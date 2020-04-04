@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -133,9 +133,9 @@ heap and later used them to find where memory is going.</p>
 <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">Close</span>()
 
 <span style="color:#75715e">// create a peer
-</span><span style="color:#75715e"></span><span style="color:#75715e">// simulate failure by closing the connection
-</span><span style="color:#75715e"></span><span style="color:#75715e">// wait until Tendermint reconnects to peer
-</span><span style="color:#75715e"></span><span style="color:#75715e">// repeat 100 times
+</span><span style="color:#75715e">// simulate failure by closing the connection
+</span><span style="color:#75715e">// wait until Tendermint reconnects to peer
+</span><span style="color:#75715e">// repeat 100 times
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">// call GC manually
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">runtime</span>.<span style="color:#a6e22e">GC</span>()
@@ -192,7 +192,7 @@ and running a <code>Node</code>.</p>
 <span style="color:#a6e22e">pprof</span>.<span style="color:#a6e22e">WriteHeapProfile</span>(<span style="color:#a6e22e">f</span>)
 <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">Close</span>()
 <span style="color:#75715e">// stop a peer 100 times
-</span><span style="color:#75715e"></span><span style="color:#75715e">// call GC manually
+</span><span style="color:#75715e">// call GC manually
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">runtime</span>.<span style="color:#a6e22e">GC</span>()
 <span style="color:#75715e">// memory heap after
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Create</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#f92672">/</span><span style="color:#a6e22e">tmp</span><span style="color:#f92672">/</span><span style="color:#a6e22e">mem2</span>.<span style="color:#a6e22e">mprof</span><span style="color:#960050;background-color:#1e0010">”</span>)

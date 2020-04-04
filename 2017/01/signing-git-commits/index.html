@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -83,7 +83,7 @@ html {
 </figure>
 
 <p>Создать подпись и настроить git очень просто. Итак, давайте сделаем это:</p>
-<h3 id="1--">1. Создаем подпись</h3>
+<h3 id="1-создаем-подпись">1. Создаем подпись</h3>
 <p>Ставим gpg:</p>
 <pre><code># Ubuntu
 sudo apt-get install gpa seahorse
@@ -103,7 +103,7 @@ uid                          User Name &lt;user.name@email.com&gt;
 ssb   2048R/098AA7C27DD57ACC 2017-01-14
 
 gpg --armor --export &lt;PASTE_LONG_KEY_HERE&gt;
-</code></pre><h3 id="2--git">2. Настраиваем git</h3>
+</code></pre><h3 id="2-настраиваем-git">2. Настраиваем git</h3>
 <pre><code>gpg --list-secret-keys
 
 -------------------------------
@@ -115,7 +115,7 @@ git config --global user.signingKey &lt;PASTE_SHORT_KEY_HERE&gt;
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
 </code></pre><p>(можно настроить индивидуально под каждый репозиторий).</p>
-<h3 id="3--">3. Кэшируем пароль</h3>
+<h3 id="3-кэшируем-пароль">3. Кэшируем пароль</h3>
 <p>чтобы не вводить его каждый раз при подписи.</p>
 <p>Если вы пользователь Mac OS, то ставим <a href="https://gpgtools.org/">GPG Suite</a>,
 который интегрируется с Mac OS keychain. Переходим к шагу 4.</p>
@@ -145,7 +145,7 @@ set -gx GPG_AGENT_INFO (cut -c 16- ~/.gpg-agent-info)
 set -gx GPG_TTY (tty)
 </code></pre><p>или <a href="https://github.com/ErinCall/Dotfiles/blob/master/.bashrc#L32-L40">bash</a>
 или напрямую <code>gpg-agent --daemon</code>.</p>
-<h2 id="4---------github">4. Коммитим что угодно и идем смотреть результат на Github</h2>
+<h2 id="4-коммитим-что-угодно-и-идем-смотреть-результат-на-github">4. Коммитим что угодно и идем смотреть результат на Github</h2>
 <p>Материалы:</p>
 <ul>
 <li><a href="https://blog.erincall.com/p/signing-your-git-commits-with-gpg">Signing Your Git Commits With GPG</a></li>

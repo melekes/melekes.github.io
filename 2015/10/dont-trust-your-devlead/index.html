@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.65.3" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2019. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
   </div>
 </aside>
 
@@ -85,15 +85,15 @@ VP of Engineering мне написал: &ldquo;Тут можно сильно �
 <p>А вот и код, о котором идет речь:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
 </span><span style="color:#75715e"></span>NewAcc <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
-  false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+  false <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">case</span> lists:<span style="color:#a6e22e">keyfind</span>(norange, <span style="color:#ae81ff">1</span>, Acc) <span style="color:#66d9ef">of</span>
-      {norange, List} <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{norange, [Item|List]}|lists:<span style="color:#a6e22e">keydelete</span>(norange, <span style="color:#ae81ff">1</span>, Acc)];
-      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{norange, [Item]}|Acc]
+      {norange, List} <span style="color:#f92672">-&gt;</span> [{norange, [Item|List]}|lists:<span style="color:#a6e22e">keydelete</span>(norange, <span style="color:#ae81ff">1</span>, Acc)];
+      false <span style="color:#f92672">-&gt;</span> [{norange, [Item]}|Acc]
     <span style="color:#66d9ef">end</span>;
-  true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+  true <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">case</span> lists:<span style="color:#a6e22e">keyfind</span>(RangeStart, <span style="color:#ae81ff">1</span>, Acc) <span style="color:#66d9ef">of</span>
-      {RangeStart, List} <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{RangeStart, [Item|List]}|lists:<span style="color:#a6e22e">keydelete</span>(RangeStart, <span style="color:#ae81ff">1</span>, Acc)];
-      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [{RangeStart, [Item]}|Acc]
+      {RangeStart, List} <span style="color:#f92672">-&gt;</span> [{RangeStart, [Item|List]}|lists:<span style="color:#a6e22e">keydelete</span>(RangeStart, <span style="color:#ae81ff">1</span>, Acc)];
+      false <span style="color:#f92672">-&gt;</span> [{RangeStart, [Item]}|Acc]
     <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>,
 ...
@@ -110,15 +110,15 @@ Average: 1846 mics
 </code></pre><p>Потом попробовал <code>dict:append_list</code>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
 </span><span style="color:#75715e"></span>NewAcc <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
-  false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+  false <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">case</span> dict:<span style="color:#a6e22e">is_key</span>(norange, Acc) <span style="color:#66d9ef">of</span>
-      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append</span>(norange, Item, Acc);
-      true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append_list</span>(norange, [Item], Acc)
+      false <span style="color:#f92672">-&gt;</span> dict:<span style="color:#a6e22e">append</span>(norange, Item, Acc);
+      true <span style="color:#f92672">-&gt;</span> dict:<span style="color:#a6e22e">append_list</span>(norange, [Item], Acc)
     <span style="color:#66d9ef">end</span>;
-  true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>
+  true <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">case</span> dict:<span style="color:#a6e22e">is_key</span>(RangeStart, Acc) <span style="color:#66d9ef">of</span>
-      false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append</span>(RangeStart, Item, Acc);
-      true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dict:<span style="color:#a6e22e">append_list</span>(RangeStart, [Item], Acc)
+      false <span style="color:#f92672">-&gt;</span> dict:<span style="color:#a6e22e">append</span>(RangeStart, Item, Acc);
+      true <span style="color:#f92672">-&gt;</span> dict:<span style="color:#a6e22e">append_list</span>(RangeStart, [Item], Acc)
     <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>,
 ...
@@ -131,10 +131,10 @@ Average: 68343 mics
 <p>Затем попробовал <code>dict:update</code>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
 </span><span style="color:#75715e"></span>Key <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
-  false <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> norange;
-  true <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> RangeStart
+  false <span style="color:#f92672">-&gt;</span> norange;
+  true <span style="color:#f92672">-&gt;</span> RangeStart
 <span style="color:#66d9ef">end</span>,
-NewAcc <span style="color:#f92672">=</span> dict:<span style="color:#a6e22e">update</span>(Key, <span style="color:#66d9ef">fun</span>(List) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> [Item|List] <span style="color:#66d9ef">end</span>, [Item], Acc),
+NewAcc <span style="color:#f92672">=</span> dict:<span style="color:#a6e22e">update</span>(Key, <span style="color:#66d9ef">fun</span>(List) <span style="color:#f92672">-&gt;</span> [Item|List] <span style="color:#66d9ef">end</span>, [Item], Acc),
 ...
 <span style="color:#75715e">% позже возвращаем результирующий список
 </span><span style="color:#75715e"></span>dict:<span style="color:#a6e22e">to_list</span>(NewAcc)
