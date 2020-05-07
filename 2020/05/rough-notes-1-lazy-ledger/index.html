@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rough notes #1: LazyLedger &middot; Home on Rails</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/hyde.css">
+  <link href="https://fonts.googleapis.com/css?family=Literata|Neucha&display=swap" rel="stylesheet">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.homeonrails.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://www.homeonrails.com/favicon.png">
+
+  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+
+html {
+  font-family: 'Literata', serif;
+}
+
+.sidebar-about h1, .post h1 {
+  font-family: 'Neucha', cursive;
+}
+</style>
+
+</head>
+
+  <body class="theme-base-0d ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.homeonrails.com/"><h1>Home on Rails</h1></a>
+      <p class="lead">
+       Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.homeonrails.com/">Home</a> </li>
+        <li><a href="https://www.homeonrails.com/about"> About author </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.homeonrails.com/tags"> Tags </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Rough notes #1: LazyLedger</h1>
+  <time datetime=2020-05-07T15:49:01&#43;0400 class="post-date">Thu, May 7, 2020</time>
+  <p><a href="https://arxiv.org/abs/1905.09274">LazyLedger: A Distributed Data Availability Ledger With Client-Side Smart
+Contracts</a> by Mustafa Al-Bassam, published in
+May 2019.</p>
+<blockquote>
+<p>&ldquo;We propose LazyLedger, a design for distributed ledgers where the blockchain is optimized for solely ordering and guaranteeing the availability of transaction data. Responsibility for executing and validating transactions is shifted to only the clients that have an interest in specific transactions relating to blockchain applications that they use.&rdquo;</p>
+</blockquote>
+<p>Sounds intriguing, right? Let&rsquo;s dive in!</p>
+<p>Offloading responsibility to a client is not a novel approach and been used in
+client-server architecture for <a href="https://en.wikipedia.org/wiki/Fat_client">quite some
+time</a>. But not in the world of
+blockchains <a href="https://www.cs.cornell.edu/lorenzo/papers/sosp03.pdf" title="Separating Agreement from Execution for Byzantine Fault Tolerant Services">(1)</a>.</p>
+<p>This design choice has some interesting properties:</p>
+<ul>
+<li>lower resource requirements for full nodes;</li>
+<li>faster consensus - no need to check/execute transactions + for BFT protocols you only need a simple majority to achieve consensus, rather than ?+;</li>
+<li>applications can be written in any language (same can be archived with
+<a href="https://docs.tendermint.com/master/introduction/what-is-tendermint.html#intro-to-abci">Tendermint ABCI
+</a>);</li>
+<li>applications can be written in different languages (no need to have a common
+runtime);</li>
+<li>forking/upgrading becomes easy =&gt; just run a new version of your application.</li>
+</ul>
+<p>The downsides include:</p>
+<ul>
+<li>higher resource requirements for the clients, which execute transactions (note light clients have low resource usage);</li>
+<li>upgrading requires additional coordination (i.e., if there&rsquo;s a new version of a contract deployed on Ethereum, everybody can see it; here, if you start using a new version, nobody knows; there needs to be some kind of application registry). Furthermore, if other apps need to communicate with your app, the users of the other apps need to upgrade your app too.</li>
+</ul>
+<hr>
+<p>In LazyLedger, the client ONLY verifies &amp; executes transactions, which are
+related to the application it&rsquo;s running. When a client requests transactions,
+it uses the namespace ID (e.g., &ldquo;cryptokitties&rdquo;) to tell which transactions
+it&rsquo;s interested in. Namespace IDs, therefore, are used as shard keys (virtual
+shards).</p>
+<p>Consensus nodes use either PoW or PoS consensus to agree on the order of
+transactions.</p>
+<h2 id="on-availability">On Availability</h2>
+<p>To familiarize yourself with the data availability problem, read <a href="https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding">&ldquo;A note on
+data availability and erasure
+coding&rdquo;</a>
+or <a href="https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43">this
+article</a>
+from Near protocol.</p>
+<p>For light clients, we want to guarantee not only that the headers form a valid
+chain (like in Tendermint), but have the guarantee that corresponding blocks
+are valid too. To solve this, LazyLedger makes use of <a href="https://en.wikipedia.org/wiki/Erasure_code">erasure coding</a>,
+<a href="https://arxiv.org/pdf/1809.09044.pdf" title="Fraud and Data Availability Proofs: Maximising Light Client Security and Scaling Blockchains with Dishonest Majorities">fraud proofs, and random sampling</a>.</p>
+<p>A block header contains a Merkle tree root of the erasure coded block data.
+Light clients randomly sample the block parts to ensure data availability.
+While 100% guarantee is possible, in practice probabilistic guarantee is given
+(99%).</p>
+<blockquote>
+<p>&ldquo;if an adversarial block producer has withheld k out of n shares, then there is a high probability that the client will sample an unavailable piece and reject the block&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>&ldquo;a block &hellip; divided into 4096 shares, only 15 samples corresponding to 0.4% of the block data needs to be downloaded by a node to achive a 99% guarantee&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>&ldquo;because all applications in LazyLedger share the same chain, the availability of the data of all their transactions are equally and uniformly guaranteed by the same consensus group, unlike in traditional sidechains where each sidechain may have a different (smaller) consensus group&rdquo;</p>
+</blockquote>
+<p>There&rsquo;s no &ldquo;Plasma&rdquo; sharding, just a single chain.</p>
+<blockquote>
+<p>&ldquo;clients gossip downloaded samples to full nodes that request it, so that they can recover the full block with enough shares&rdquo;</p>
+</blockquote>
+<p>Clients and full nodes form a single p2p network, communicating block parts on demand.</p>
+<blockquote>
+<p>&ldquo;sufficient minimum number of nodes in the network making a sufficient number of sample requests&rdquo;</p>
+</blockquote>
+<p>LazyLedger has an interesting property: as the number of clients grows, the
+security of the network strengthens. More clients =&gt; more requests proving
+block availability =&gt; better guarantee that block is indeed available. With the
+number of clients increasing, block size can be increased too.</p>
+<h2 id="on-liveness-and-safety">On Liveness and Safety</h2>
+<blockquote>
+<p>&ldquo;We assume that honest nodes not under an eclipse attack and are thus connected to at least one other honest node&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>&ldquo;We also assume that there is a maximum network delay Y&rdquo;</p>
+</blockquote>
+<p>LazyLedger assumes a synchronous gossiping network for both liveness and
+safety.</p>
+<h2 id="on-security">On Security</h2>
+<p>Because consensus nodes do not validate transactions, it&rsquo;s possible for a
+malicious block producer to create a block filled with bad transactions.
+Clients won&rsquo;t accept it, but it will still be created and stored by full nodes.</p>
+<p>Therefore, it&rsquo;s important for applications to have a way to punish the
+malicious block producer in PoS networks.</p>
+<h2 id="social-coordination">Social coordination</h2>
+<p>Social or other means of coordination are required when upgrading an
+application to a new version. Since here we don&rsquo;t have a common runtime (e.g.
+EVM), we need a way for applications to signal that a new version is available.</p>
+<p>This can be done through some off-chain registry or another application.</p>
+<p>The LazyLedger team plans to provide tooling for deployment, so deploying an
+application is &ldquo;easily as deploying a smart contract on eth or spinning
+up a docker container&rdquo;.</p>
+<h2 id="future-plans">Future plans</h2>
+<p>The LazyLedger team plans to use optimistic rollups. Each application will have
+a state root (along w/ fraud proofs), which will be used by light clients.</p>
+<hr>
+<p>To learn more, you can go to <a href="https://lazyledger.io/">their website</a>. Don&rsquo;t
+forget to like this and subscribe.</p>
+<p><em>Thanks to <a href="https://twitter.com/KreuzUQuer">Ismail Khoffi</a> and <a href="https://twitter.com/musalbas">Mustafa
+Al-Bassam</a> for answering my questions!</em></p>
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "homeonrails" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>

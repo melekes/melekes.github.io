@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.65.3" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,7 +74,7 @@ html {
 </figure>
 
 <p>Пишу статью по горячим следам. Пару дней назад тестировал работу приложения при
-пропаже соединения с Redis'ом. Так вот, после возобновления соединения
+пропаже соединения с Redis&rsquo;ом. Так вот, после возобновления соединения
 (успешном переподключении), через раз приложение зависало полностью. Ни
 консолью подрубиться, ничего&hellip;</p>
 <p>Обычно такое происходит, если вы используете C-расширение, оформленное в виде
@@ -202,7 +202,7 @@ Process States when crashing (sum):
 <p>Вообще recon довольно полезная библиотека. В ней можно найти различные модули
 для инспекции состояния ноды, трассировки и т.д.</p>
 <p>Вот например скрипт, который показывает работающие (running) процессы с
-количеством сообщений в mailbox'е &gt;= <code>threshold</code>:</p>
+количеством сообщений в mailbox&rsquo;е &gt;= <code>threshold</code>:</p>
 <pre><code>$ awk -v threshold=1 -f ./recon/script/queue_fun.awk erl_crash.dump                                                                                                                                         MESSAGE QUEUE LENGTH: CURRENT FUNCTION
 ======================================
 1: gen_server:loop/6

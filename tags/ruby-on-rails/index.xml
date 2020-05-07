@@ -18,7 +18,7 @@
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
       
       <guid>https://www.homeonrails.com/2015/02/shamrock/</guid>
-      <description>&lt;p&gt;Бывают случаи, когда WebMock&#39;а недостаточно, или же вы просто не любите stub&#39;ы
+      <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
 сервер&lt;/a&gt;

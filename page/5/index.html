@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.65.3" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,6 +69,27 @@ html {
     <main class="content container">
     <div class="posts">
 <article class="post">
+  <h1 class="post-title">
+    <a href="https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/">Debugging the Memory Leak in Tendermint</a>
+  </h1>
+  <time datetime="2018-03-03T13:20:11&#43;0400" class="post-date">Sat, Mar 3, 2018</time>
+  <p><em>This article was originally published on <a href="https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420">Medium</a>.</em></p>
+<p>I have spent the last week looking for clues and writing test cases in order to
+find and fix the memory leak in
+<a href="https://github.com/tendermint/tendermint/">Tendermint</a>. For those of you who
+don’t know, Tendermint Core is a Byzantine Fault Tolerant (BFT) middleware that
+takes a state transition machine — written in any programming language — and
+securely replicates it on many machines. It is also the foundation of
+<a href="https://cosmos.network/">Cosmos</a> — our solution for scaling blockchains.</p>
+<p>Finding a memory leak in Go is not an easy task. However, there is a common set
+of questions, answers to which will hopefully help you identify the source of a
+leak. Here is the list:</p>
+  
+  <div class="read-more-link">
+    <a href="https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/">Read More…</a>
+  </div>
+  
+</article><article class="post">
   <h1 class="post-title">
     <a href="https://www.homeonrails.com/2018/03/monthly-art-number-28/">Monthly Art #28</a>
   </h1>
@@ -181,19 +202,6 @@ reading. Audiobooks are great too!</p>
   
   <div class="read-more-link">
     <a href="https://www.homeonrails.com/2017/12/my-favorite-books-of-2017/">Read More…</a>
-  </div>
-  
-</article><article class="post">
-  <h1 class="post-title">
-    <a href="https://www.homeonrails.com/2017/12/note-on-security/">Заметка о безопасности</a>
-  </h1>
-  <time datetime="2017-12-11T23:48:31-0500" class="post-date">Mon, Dec 11, 2017</time>
-  English
-Недавно начал все больше интересоваться темой безопасности. Наверное, я, как и многие люди из поколения Y, выросшие во времена бума компьютерных технологий, Сноудена и fsociety всегда был параноиком по части безопасности, но, признаться честно, я мало что делал для обеспечения ее как таковой. AdBlock, HTTPS Everywhere, и еще пара плагинов для Chrome - джентльменский набор нуба, так сказать.
-Но грядут новые времена. Времена, где твои криптоденежки можно увести у тебя из под носа просто подсунув тебе фейковую версию кошелька.
-  
-  <div class="read-more-link">
-    <a href="https://www.homeonrails.com/2017/12/note-on-security/">Read More…</a>
   </div>
   
 </article>

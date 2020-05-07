@@ -165,8 +165,8 @@ Distributed Erlang).&lt;/p&gt;</description>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
       
       <guid>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
-      <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&#39;а. Что ж,
-начнем с того, что клиента для Erlang&#39;а нет :( А на выбор имеются:&lt;/p&gt;
+      <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
+начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;REST&lt;/li&gt;
 &lt;li&gt;Thrift&lt;/li&gt;

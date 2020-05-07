@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.65.3" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,14 +69,14 @@ html {
     <div class="post">
   <h1>Shamrock</h1>
   <time datetime=2015-02-17T10:05:37Z class="post-date">Tue, Feb 17, 2015</time>
-  <p>Бывают случаи, когда WebMock'а недостаточно, или же вы просто не любите stub'ы
+  <p>Бывают случаи, когда WebMock&rsquo;а недостаточно, или же вы просто не любите stub&rsquo;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой <a href="https://practicingruby.com/articles/implementing-an-http-file-server">простенький http
 сервер</a>
 или выбрать один из существующих, и стартовать его на время тестов(а). А можно
 взять готовую библиотеку - <a href="https://github.com/jsl/shamrock">Shamrock</a>.</p>
 <p>Она принимает на вход любое Rack приложение и запускает его в отдельном треде с
-помощью WEBrick'а. Порт можно задать самому. В противном случае будет
+помощью WEBrick&rsquo;а. Порт можно задать самому. В противном случае будет
 использован первый свободный.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup</span>
   json <span style="color:#f92672">=</span> load_fixture(<span style="color:#e6db74">&#34;service/200.json&#34;</span>)

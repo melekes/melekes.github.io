@@ -37,11 +37,11 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
 &lt;/figure&gt;
 
 &lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,
-что я являюсь старым приверженцем Vagrant&#39;а, на днях мне все же захотелось
+что я являюсь старым приверженцем Vagrant&amp;rsquo;а, на днях мне все же захотелось
 попробовать docker для одного из своих проектов -
 &lt;a href=&#34;https://github.com/kaize/valle&#34;&gt;Valle&lt;/a&gt;. Не без препонов, но все же удалось
 встроить docker в процесс. Далее последует руководство по разработке Ruby гема
-с использованием docker&#39;а.&lt;/p&gt;</description>
+с использованием docker&amp;rsquo;а.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
       
       <guid>https://www.homeonrails.com/2015/02/shamrock/</guid>
-      <description>&lt;p&gt;Бывают случаи, когда WebMock&#39;а недостаточно, или же вы просто не любите stub&#39;ы
+      <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
 сервер&lt;/a&gt;

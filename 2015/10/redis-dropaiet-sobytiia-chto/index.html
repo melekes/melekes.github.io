@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.65.3" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,13 +116,13 @@ $ cat /proc/sys/net/ipv4/tcp_wmem # subscribers sockets
 <p>Если подписчик не успевает вычитывать данные, буфер справа в какой-то момент
 заполнится и TCP запретит дальнейшую запись в него. Redis пометит буфер как
 &ldquo;non-writable&rdquo; и начнет заполнять свой буфер.</p>
-<p>Если размер буфера Redis'а превысит 32MB или в течении 60 секунд будет больше
+<p>Если размер буфера Redis&rsquo;а превысит 32MB или в течении 60 секунд будет больше
 8MB, то Redis закроет соединение. Об этом честно написано в <a href="http://redis.io/topics/clients">документации
 Redis</a> см. &ldquo;Output buffers limits&rdquo;. Правда,
 нигде не написано, что перед тем как соединение будет закрыто часть сообщений
 будут потеряны.</p>
 <p>В нашем случае Redis действительно закрывал соединение, но Listener
-переподнимался Upstart'ом и тут же подписывался заново, продолжая выгребать
+переподнимался Upstart&rsquo;ом и тут же подписывался заново, продолжая выгребать
 лишь часть отчетов.</p>
 <p>Как решили: оптимизировали выборку и запись в БД, распараллелили Listener.</p>
 <p>Вывод для себя сделал такой - <strong>перед тем как использовать

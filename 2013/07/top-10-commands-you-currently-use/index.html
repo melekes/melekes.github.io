@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.65.3" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,7 +99,7 @@ alias l<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ls -
 alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git commit -m&#34;</span>
 </code></pre></div><p>Мне очень нравятся однобуквенные алиасы. Хотя на многое их явно не
 хватит.</p>
-<p>Также можно проанализировать только команды vagrant'а (subcommands) или любой
+<p>Также можно проанализировать только команды vagrant&rsquo;а (subcommands) или любой
 другой программы слегка модифицировав предыдущий скрипт:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history|grep vagrant| awk <span style="color:#e6db74">&#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
 </code></pre></div><p>Пример вывода:</p>
@@ -129,8 +129,8 @@ alias vssh<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;v
 <p><strong>Как результат, мы повышаем продуктивность и, что немаловажно, снижаем нагрузку на наши
 пальцы.</strong></p>
 <p>P.S. очень рекомендую посмотреть доклад <a href="http://www.youtube.com/watch?v=SkdrYWhh-8s">Ben Orenstein - Write code faster: expert-level vim (Railsberry 2012)</a>,
-в котором Бен рассказывает очень правильные подходы в работе с vim'ом. Даже если вы не
-пользуетесь vim'ом, многие вещи можно переложить на ваш любимый редактор, будь то Emacs, Sublime или любой другой.</p>
+в котором Бен рассказывает очень правильные подходы в работе с vim&rsquo;ом. Даже если вы не
+пользуетесь vim&rsquo;ом, многие вещи можно переложить на ваш любимый редактор, будь то Emacs, Sublime или любой другой.</p>
 </div>
 
 <h2>Comments</h2>

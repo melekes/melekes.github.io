@@ -18,7 +18,7 @@
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
       
       <guid>https://www.homeonrails.com/2017/01/signing-git-commits/</guid>
-      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&#39;а уже
+      <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
 возможны такие смешные поделки как
 &lt;a href=&#34;https://github.com/jayphelps/git-blame-someone-else&#34;&gt;git-blame-someone-else&lt;/a&gt;.
