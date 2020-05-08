@@ -78,8 +78,8 @@ May 2019.</p>
 <p>Sounds intriguing, right? Let&rsquo;s dive in!</p>
 <p>Offloading responsibility to a client is not a novel approach and been used in
 client-server architecture for <a href="https://en.wikipedia.org/wiki/Fat_client">quite some
-time</a>. But not in the world of
-blockchains <a href="https://www.cs.cornell.edu/lorenzo/papers/sosp03.pdf" title="Separating Agreement from Execution for Byzantine Fault Tolerant Services">(1)</a>.</p>
+time</a>. In the world of blockchains,
+the concept again appeared with Mastercoin.</p>
 <p>This design choice has some interesting properties:</p>
 <ul>
 <li>lower resource requirements for full nodes;</li>
@@ -115,6 +115,10 @@ from Near protocol.</p>
 chain (like in Tendermint), but have the guarantee that corresponding blocks
 are valid too. To solve this, LazyLedger makes use of <a href="https://en.wikipedia.org/wiki/Erasure_code">erasure coding</a>,
 <a href="https://arxiv.org/pdf/1809.09044.pdf" title="Fraud and Data Availability Proofs: Maximising Light Client Security and Scaling Blockchains with Dishonest Majorities">fraud proofs, and random sampling</a>.</p>
+<p>What differentiates LazyLedger from earlier approaches (<a href="https://www.cs.cornell.edu/lorenzo/papers/sosp03.pdf" title="Separating Agreement from Execution for Byzantine Fault Tolerant Services">1</a>) is using data
+availability proofs to prevent clients from having to download everyone else&rsquo;s
+transactions to validate the (data availability) of the chain, thus truly
+offloading responsibility.</p>
 <p>A block header contains a Merkle tree root of the erasure coded block data.
 Light clients randomly sample the block parts to ensure data availability.
 While 100% guarantee is possible, in practice probabilistic guarantee is given
