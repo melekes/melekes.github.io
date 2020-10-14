@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,18 +107,18 @@ which was mentioned in the previous post.</p>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>Do not forget to add custom error messages to your localization files.</p>
 <p>Example for <code>en</code> culture:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">en</span>:
-  <span style="color:#66d9ef">errors</span>:
-    <span style="color:#66d9ef">messages</span>:
-      <span style="color:#66d9ef">association_count_less_than_or_equal_to</span>:
-        <span style="color:#66d9ef">one</span>: count must be less than <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">other</span>: count must be less than or equal to %{count}
-      <span style="color:#66d9ef">association_count_greater_than_or_equal_to</span>:
-        <span style="color:#66d9ef">one</span>: count must be greater than <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">other</span>: count must be greater than or equal to %{count}
-      <span style="color:#66d9ef">association_count_invalid</span>:
-        <span style="color:#66d9ef">one</span>: count is invalid (must be equal to <span style="color:#ae81ff">1</span>)
-        <span style="color:#66d9ef">other</span>: count is invalid (must be equal to %{count})
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">en</span>:
+  <span style="color:#f92672">errors</span>:
+    <span style="color:#f92672">messages</span>:
+      <span style="color:#f92672">association_count_less_than_or_equal_to</span>:
+        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count must be less than 1</span>
+        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count must be less than or equal to %{count}</span>
+      <span style="color:#f92672">association_count_greater_than_or_equal_to</span>:
+        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count must be greater than 1</span>
+        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count must be greater than or equal to %{count}</span>
+      <span style="color:#f92672">association_count_invalid</span>:
+        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count is invalid (must be equal to 1)</span>
+        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count is invalid (must be equal to %{count})</span>
 </code></pre></div>
 </div>
 

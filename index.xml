@@ -7,10 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 06 Jan 2017 14:14:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 14 Oct 2020 10:03:29 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monthly Art #46</title>
+      <link>https://www.homeonrails.com/2020/10/monthly-art-number-46/</link>
+      <pubDate>Wed, 14 Oct 2020 10:03:29 +0400</pubDate>
+      
+      <guid>https://www.homeonrails.com/2020/10/monthly-art-number-46/</guid>
+      <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
+last month. Whether it was a full length movie, short film, music album, book
+or even a painting.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Rough notes #1: LazyLedger</title>
@@ -2145,7 +2152,7 @@ for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Car
       
       <guid>https://www.homeonrails.com/2014/09/short-traveling-guide/</guid>
       <description>&lt;p&gt;Частенько мне задают вопросы типа &amp;ldquo;Как съездить в другую страну не покупая
-тур?&amp;quot;. Так вот, я и решил написать заметку, где будет ясная последовательность
+тур?&amp;rdquo;. Так вот, я и решил написать заметку, где будет ясная последовательность
 шагов: что где посмотреть, о чем надо помнить и так далее.&lt;/p&gt;</description>
     </item>
     
@@ -2235,7 +2242,7 @@ manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</descriptio
       
       <guid>https://www.homeonrails.com/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
-&amp;ldquo;Что?&amp;quot;.&lt;/p&gt;
+&amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
 Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400

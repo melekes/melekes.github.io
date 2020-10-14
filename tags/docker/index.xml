@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 07 May 2015 11:53:25 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.homeonrails.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 07 May 2015 11:53:25 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Разрабатываем ruby gem в docker контейнере</title>
       <link>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>

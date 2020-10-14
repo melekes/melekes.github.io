@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -159,7 +159,7 @@ Mutations <span style="color:#f92672">=</span> [#&#39;Mutation&#39;{column<span 
 {C1, {ok, _}} <span style="color:#f92672">=</span> thrift_client:<span style="color:#a6e22e">call</span>(C0, mutateRow, [<span style="color:#e6db74">&#34;users&#34;</span>, <span style="color:#e6db74">&#34;mike&#34;</span>, Mutations, dict:<span style="color:#a6e22e">new</span>()]),
 thrift_client:<span style="color:#a6e22e">close</span>(C1).
 </code></pre></div><p>Новое значение для столбца в записи #&lsquo;Mutation&rsquo; может быть либо строкой, либо
-binary (&laquo;&quot;17&quot;&raquo;).</p>
+binary (&laquo;&ldquo;17&rdquo;&raquo;).</p>
 <h3 id="scan">Scan</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
 Scan <span style="color:#f92672">=</span> #&#39;TScan&#39;{&#39;columns&#39;<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;data:sex&#34;</span>]},

@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 09 Jan 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.homeonrails.com/tags/os/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 09 Jan 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copy and paste between Vim and OS</title>
       <link>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>

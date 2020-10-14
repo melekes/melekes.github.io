@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -182,7 +182,7 @@ office</strong> (we usually called it the main office).</p>
 </code></pre></div><p>The problem here is that accepts_nested_attributes_for call destroy for child
 objects <strong>AFTER</strong> validation of the parent object. So the user is able to delete
 an office. Of course, later, when the user will try to edit a company,
-he/she will get an error - &ldquo;Company should have at least one office.&quot;.</p>
+he/she will get an error - &ldquo;Company should have at least one office.&rdquo;.</p>
 <p><img src="https://www.homeonrails.com/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process"></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ id: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">_destroy</span>: <span style="color:#e6db74">&#39;1&#39;</span> }<span style="color:#f92672">]</span>
 <span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:id</span><span style="color:#f92672">=&gt;</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">:_destroy</span><span style="color:#f92672">=&gt;</span><span style="color:#e6db74">&#34;1&#34;</span>}<span style="color:#f92672">]</span>

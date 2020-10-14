@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -156,42 +156,42 @@ It allows us to attach the anchors (&amp;) on the elements and refer to them
 using references (*). To understand this, it is useful to imagine
 a document as a tree.</p>
 <p>For example, here is some common locale file <code>config/locales/en.yml</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">en</span>:
-  <span style="color:#66d9ef">helpers</span>:
-    <span style="color:#66d9ef">submit</span>:
-      <span style="color:#66d9ef">product</span>:
-        <span style="color:#66d9ef">create</span>: <span style="color:#e6db74">&#39;Create it&#39;</span>
-        <span style="color:#66d9ef">update</span>: <span style="color:#e6db74">&#39;Save it&#39;</span>
-      <span style="color:#66d9ef">product_item</span>:
-        <span style="color:#66d9ef">create</span>: <span style="color:#e6db74">&#39;Create it&#39;</span>
-        <span style="color:#66d9ef">update</span>: <span style="color:#e6db74">&#39;Save it&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">en</span>:
+  <span style="color:#f92672">helpers</span>:
+    <span style="color:#f92672">submit</span>:
+      <span style="color:#f92672">product</span>:
+        <span style="color:#f92672">create</span>: <span style="color:#e6db74">&#39;Create it&#39;</span>
+        <span style="color:#f92672">update</span>: <span style="color:#e6db74">&#39;Save it&#39;</span>
+      <span style="color:#f92672">product_item</span>:
+        <span style="color:#f92672">create</span>: <span style="color:#e6db74">&#39;Create it&#39;</span>
+        <span style="color:#f92672">update</span>: <span style="color:#e6db74">&#39;Save it&#39;</span>
 </code></pre></div><p>What if we could define the translations for helpers <code>create</code> and <code>update</code>
 in one place, and then use them in other cases. Usually these translations
 rarely changes, so, in this case, this is just what we need.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">en</span>:
-  <span style="color:#66d9ef">helpers</span>:
-    <span style="color:#66d9ef">submit</span>:
-      <span style="color:#66d9ef">product</span>:
-        <span style="color:#66d9ef">create</span>: <span style="color:#75715e">&amp;create</span> <span style="color:#e6db74">&#39;Create it&#39;</span>
-        <span style="color:#66d9ef">update</span>: <span style="color:#75715e">&amp;update</span> <span style="color:#e6db74">&#39;Save it&#39;</span>
-      <span style="color:#66d9ef">product_item</span>:
-        <span style="color:#66d9ef">create</span>: <span style="color:#75715e">*create</span>
-        <span style="color:#66d9ef">update</span>: <span style="color:#75715e">*update</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">en</span>:
+  <span style="color:#f92672">helpers</span>:
+    <span style="color:#f92672">submit</span>:
+      <span style="color:#f92672">product</span>:
+        <span style="color:#f92672">create</span>: <span style="color:#75715e">&amp;create</span> <span style="color:#e6db74">&#39;Create it&#39;</span>
+        <span style="color:#f92672">update</span>: <span style="color:#75715e">&amp;update</span> <span style="color:#e6db74">&#39;Save it&#39;</span>
+      <span style="color:#f92672">product_item</span>:
+        <span style="color:#f92672">create</span>: <span style="color:#75715e">*create</span>
+        <span style="color:#f92672">update</span>: <span style="color:#75715e">*update</span>
 </code></pre></div><p>Here we have created two anchors and referred to them inside product_item
 through two links. Advantages: avoiding possible errors (define
 in one place) and compactness. Also, in future, if the translation will needs
 to be changed, we wont spend much time to perform the appropriate changes.</p>
 <p>You can anchor not only tree nodes, but also the whole branches:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">common</span>: <span style="color:#75715e">&amp;COMMON</span>
-  <span style="color:#66d9ef">adapter</span>: postgresql
-  <span style="color:#66d9ef">encoding</span>: unicode
-  <span style="color:#66d9ef">pool</span>: <span style="color:#ae81ff">10</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">common</span>: <span style="color:#75715e">&amp;COMMON</span>
+  <span style="color:#f92672">adapter</span>: <span style="color:#ae81ff">postgresql</span>
+  <span style="color:#f92672">encoding</span>: <span style="color:#ae81ff">unicode</span>
+  <span style="color:#f92672">pool</span>: <span style="color:#ae81ff">10</span>
 
-<span style="color:#66d9ef">development</span>:
-  <span style="color:#66d9ef">&lt;&lt;</span>: <span style="color:#75715e">*COMMON</span>
-  <span style="color:#66d9ef">database</span>: db_name
-  <span style="color:#66d9ef">username</span>: postgres
-  <span style="color:#66d9ef">password</span>:
+<span style="color:#f92672">development</span>:
+  <span style="color:#f92672">&lt;&lt;</span>: <span style="color:#75715e">*COMMON</span>
+  <span style="color:#f92672">database</span>: <span style="color:#ae81ff">db_name</span>
+  <span style="color:#f92672">username</span>: <span style="color:#ae81ff">postgres</span>
+  <span style="color:#f92672">password</span>:
 </code></pre></div><h3 id="3---look-for-existing-method-before-writing-your-own">#3 - Look for existing method before writing your own</h3>
 <p>Maybe I&rsquo;m repeating myself, but this is exactly the case where repetition
 will only benefit.</p>

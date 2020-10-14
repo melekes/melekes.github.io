@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 04 May 2016 11:41:10 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.homeonrails.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 04 May 2016 11:41:10 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TrueColor in Gnome Terminal, Tmux and Neovim</title>
       <link>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
