@@ -37,13 +37,11 @@ can see, most of the editors and terminals now support TrueColor (16 million
 colors).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>

@@ -3,12 +3,12 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Rough notes #1: LazyLedger &middot; Home on Rails</title>
+  <title>Rough notes #1: Celestia &middot; Home on Rails</title>
   <meta name="description" content="" />
 
   
@@ -67,7 +67,7 @@ html {
 
     <main class="content container">
     <div class="post">
-  <h1>Rough notes #1: LazyLedger</h1>
+  <h1>Rough notes #1: Celestia</h1>
   <time datetime=2020-05-07T15:49:01&#43;0400 class="post-date">Thu, May 7, 2020</time>
   <p><a href="https://arxiv.org/abs/1905.09274">LazyLedger: A Distributed Data Availability Ledger With Client-Side Smart
 Contracts</a> by Mustafa Al-Bassam, published in
@@ -97,7 +97,8 @@ runtime);</li>
 <li>upgrading requires additional coordination (i.e., if there&rsquo;s a new version of a contract deployed on Ethereum, everybody can see it; here, if you start using a new version, nobody knows; there needs to be some kind of application registry). Furthermore, if other apps need to communicate with your app, the users of the other apps need to upgrade your app too.</li>
 </ul>
 <hr>
-<p>In LazyLedger, the client ONLY verifies &amp; executes transactions, which are
+<p>June 2021: LazyLedger project is now called Celestia.</p>
+<p>In Celestia, the client ONLY verifies &amp; executes transactions, which are
 related to the application it&rsquo;s running. When a client requests transactions,
 it uses the namespace ID (e.g., &ldquo;cryptokitties&rdquo;) to tell which transactions
 it&rsquo;s interested in. Namespace IDs, therefore, are used as shard keys (virtual
@@ -113,9 +114,9 @@ article</a>
 from Near protocol.</p>
 <p>For light clients, we want to guarantee not only that the headers form a valid
 chain (like in Tendermint), but have the guarantee that corresponding blocks
-are valid too. To solve this, LazyLedger makes use of <a href="https://en.wikipedia.org/wiki/Erasure_code">erasure coding</a>,
+are valid too. To solve this, Celestia makes use of <a href="https://en.wikipedia.org/wiki/Erasure_code">erasure coding</a>,
 <a href="https://arxiv.org/pdf/1809.09044.pdf" title="Fraud and Data Availability Proofs: Maximising Light Client Security and Scaling Blockchains with Dishonest Majorities">fraud proofs, and random sampling</a>.</p>
-<p>What differentiates LazyLedger from earlier approaches (<a href="https://www.cs.cornell.edu/lorenzo/papers/sosp03.pdf" title="Separating Agreement from Execution for Byzantine Fault Tolerant Services">1</a>) is using data
+<p>What differentiates Celestia from earlier approaches (<a href="https://www.cs.cornell.edu/lorenzo/papers/sosp03.pdf" title="Separating Agreement from Execution for Byzantine Fault Tolerant Services">1</a>) is using data
 availability proofs to prevent clients from having to download everyone else&rsquo;s
 transactions to validate the (data availability) of the chain, thus truly
 offloading responsibility.</p>
@@ -130,7 +131,7 @@ While 100% guarantee is possible, in practice probabilistic guarantee is given
 <p>&ldquo;a block &hellip; divided into 4096 shares, only 15 samples corresponding to 0.4% of the block data needs to be downloaded by a node to achive a 99% guarantee&rdquo;</p>
 </blockquote>
 <blockquote>
-<p>&ldquo;because all applications in LazyLedger share the same chain, the availability of the data of all their transactions are equally and uniformly guaranteed by the same consensus group, unlike in traditional sidechains where each sidechain may have a different (smaller) consensus group&rdquo;</p>
+<p>&ldquo;because all applications in Celestia share the same chain, the availability of the data of all their transactions are equally and uniformly guaranteed by the same consensus group, unlike in traditional sidechains where each sidechain may have a different (smaller) consensus group&rdquo;</p>
 </blockquote>
 <p>There&rsquo;s no &ldquo;Plasma&rdquo; sharding, just a single chain.</p>
 <blockquote>
@@ -140,7 +141,7 @@ While 100% guarantee is possible, in practice probabilistic guarantee is given
 <blockquote>
 <p>&ldquo;sufficient minimum number of nodes in the network making a sufficient number of sample requests&rdquo;</p>
 </blockquote>
-<p>LazyLedger has an interesting property: as the number of clients grows, the
+<p>Celestia has an interesting property: as the number of clients grows, the
 security of the network strengthens. More clients =&gt; more requests proving
 block availability =&gt; better guarantee that block is indeed available. With the
 number of clients increasing, block size can be increased too.</p>
@@ -151,7 +152,7 @@ number of clients increasing, block size can be increased too.</p>
 <blockquote>
 <p>&ldquo;We also assume that there is a maximum network delay Y&rdquo;</p>
 </blockquote>
-<p>LazyLedger assumes a synchronous gossiping network for both liveness and
+<p>Celestia assumes a synchronous gossiping network for both liveness and
 safety.</p>
 <h2 id="on-security">On Security</h2>
 <p>Because consensus nodes do not validate transactions, it&rsquo;s possible for a
@@ -164,14 +165,14 @@ malicious block producer in PoS networks.</p>
 application to a new version. Since here we don&rsquo;t have a common runtime (e.g.
 EVM), we need a way for applications to signal that a new version is available.</p>
 <p>This can be done through some off-chain registry or another application.</p>
-<p>The LazyLedger team plans to provide tooling for deployment, so deploying an
+<p>The Celestia team plans to provide tooling for deployment, so deploying an
 application is &ldquo;easily as deploying a smart contract on eth or spinning
 up a docker container&rdquo;.</p>
 <h2 id="future-plans">Future plans</h2>
-<p>The LazyLedger team plans to use optimistic rollups. Each application will have
+<p>The Celestia team plans to use optimistic rollups. Each application will have
 a state root (along w/ fraud proofs), which will be used by light clients.</p>
 <hr>
-<p>To learn more, you can go to <a href="https://lazyledger.io/">their website</a>. Don&rsquo;t
+<p>To learn more, you can go to <a href="https://celestia.org/">their website</a>. Don&rsquo;t
 forget to like this and subscribe.</p>
 <p><em>Thanks to <a href="https://twitter.com/KreuzUQuer">Ismail Khoffi</a> and <a href="https://twitter.com/musalbas">Mustafa
 Al-Bassam</a> for answering my questions!</em></p>

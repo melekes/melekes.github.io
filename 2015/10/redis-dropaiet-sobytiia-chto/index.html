@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,8 +71,7 @@ html {
   <time datetime=2015-10-19T14:00:26Z class="post-date">Mon, Oct 19, 2015</time>
   <p>&ldquo;Redis дропает события? Что?&rdquo; или поучительная история о том, как важно читать
 документацию.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg"/>
 </figure>
 
 <p>В один дождливый и прохладный осенний день мы увидели слишком маленькое
@@ -81,8 +80,7 @@ html {
 (2) публиковались в Redis через Redis Pub/Sub и (3) вычитывались отдельным
 демоном (Listener), который (4) отмечал факт получения или неполучения
 абонентом смс в БД (Postgresql).</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/app.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/app.png"/>
 </figure>
 
 <p>В статистике значилось: <strong>&ldquo;отправлено 20000, доставлено 122&rdquo;</strong>. По необъяснимой
@@ -95,16 +93,14 @@ html {
 overcoming  of  output  buffer  limits&rdquo;, мы поняли что скорее всего так и есть.</p>
 <p>Я был удивлен. Опыта работы с Redis у меня было не так уж и много, но мне все
 равно казалось это нереальным.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/wat.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/wat.png"/>
 </figure>
 
 <p>Думалось, что он будет хранить данные в списке так долго как сможет.
 Оказывается, Redis Pub/Sub вообще не хранит никаких данных (есть буфер). В
 идеале, он старается раскидать данные с сокета &ldquo;издателя&rdquo; (Publisher&rsquo;s socket)
 по сокетам подписчиков (Subscribers sockets) на одной итерации <a href="https://en.wikipedia.org/wiki/Event_loop">event loop</a>.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/pub-sub.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/pub-sub.png"/>
 </figure>
 
 <p>Так что же про буферы. У Redis есть буфер с soft limit = 8MB и hard limit =

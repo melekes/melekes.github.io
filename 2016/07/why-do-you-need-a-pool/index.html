@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,15 +90,13 @@ for more information.</p>
 <li>we improve throughput by sharing the network latency</li>
 </ul>
 <p>I think, only the last one requires explanation, others are pretty obvious.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/single.gif"/>
 </figure>
 
 <p>Our friend Barney here wants to buy some beer, so he takes a long walk to the nearest store. It will take him <code>3 * (t1 + t2)</code> to buy 3 beers.</p>
 <p>t1 is a network latency, t2 - processing time.</p>
 <p>What if instead, he and his buddies will go to the store together. <strong>Even if the store has only one cash register (like Redis) and the cashier serve them in turn, they will buy 3 beers in <code>t1 + 3 * t2</code></strong>.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-07-04-why-do-you-need-a-pool/pool.gif"/>
 </figure>
 
 <p>Most often t1 much greater than t2. Therefore, <code>t1 + 3 * t2</code> &lt; <code>3 * (t1 + t2)</code>.

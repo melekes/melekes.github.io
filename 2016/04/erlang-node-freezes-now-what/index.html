@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,8 +69,7 @@ html {
     <div class="post">
   <h1>Зависла Erlang нода. Что делать?</h1>
   <time datetime=2016-04-05T15:50:31Z class="post-date">Tue, Apr 5, 2016</time>
-  <figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg"/> 
+  <figure><img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg"/>
 </figure>
 
 <p>Пишу статью по горячим следам. Пару дней назад тестировал работу приложения при
@@ -97,26 +96,22 @@ Received SIGUSR1
 <p><a href="http://erlang.org/doc/apps/observer/crashdump_ug.html">http://erlang.org/doc/apps/observer/crashdump_ug.html</a></p>
 <pre><code>$ erl
 &gt; crashdump_viewer:start().
-</code></pre><figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug1.png"/> 
+</code></pre><figure><img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug1.png"/>
 </figure>
 
 <p>Общая информация.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug2.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug2.png"/>
 </figure>
 
 <p>Список процессов.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug3.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug3.png"/>
 </figure>
 
 <p>Информация по одному из немногих запущенных процессов с большим количеством
 редукций. Чтобы найти конкретный процесс, внутри которого произошла блокировка,
 пришлось просмотреть несколько штук (количество запущенных процессов обычно =
 числу ядер).</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug4.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug4.png"/>
 </figure>
 
 <p>stackdump процесса.</p>

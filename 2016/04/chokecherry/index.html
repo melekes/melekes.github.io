@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,16 +81,14 @@ backend.</p>
 <h2 id="the-story-about-1000000-timeouts">The Story About 1000000 Timeouts</h2>
 <p>We use lager in almost all of our applications. And it works pretty well most
 of the time, except the cases where it doesn&rsquo;t.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif"/>
 </figure>
 
 <p>It all started one day when we were experiencing a <strong>peak load</strong> in one of the
 applications (we&rsquo;ll call it FortKnox). So, FortKnox was processing a lot of
 data and producing a lot of logs (particularly, info messages). As
 shown on a picture below, we were writing logs to a file on disk.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app1.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app1.png"/>
 </figure>
 
 <p>Then we started seeing <strong>random exits</strong> (timeouts in calls to <code>lager:info</code>)
@@ -98,8 +96,7 @@ from many places. These led to different parts (gen_servers, gen_fsms, etc.) of
 FortKnox crashing. Some of them got restarted by their supervisor. But it was
 clear that this won&rsquo;t last long. Indeed, at some point, it all came down to the
 application&rsquo;s supervisor and <strong>whole node stopped working</strong>.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png"/>
 </figure>
 
 <p>This is what happened. <strong>Hard disk was not able to handle so much writes</strong> (even in
@@ -118,8 +115,7 @@ That&rsquo;s how we came to the random exits.</p>
 <h3 id="on-lager-settings">On lager settings</h3>
 <p>lager has many settings and we could play with them. For example, we could turn
 off synchronous mode.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png"/>
 </figure>
 
 <p>What will happen then is lager&rsquo;s mailbox start growing and, eventually, when
@@ -134,8 +130,7 @@ calls (<a href="https://github.com/basho/lager/blob/1159f9262fb589ce2ec310eb7dec
 <p>So <strong>there was no simple solution</strong> for this problem. <strong>That&rsquo;s why we created
 chokecherry</strong>. What follows is how it works.</p>
 <h2 id="chokecherry">Chokecherry</h2>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app4.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app4.png"/>
 </figure>
 
 <p><strong>shaper</strong> accumulates incoming messages in the queue. If the queue size

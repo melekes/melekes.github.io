@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,8 +87,7 @@ understand how it works. Let me show you.</p>
 <li><code>X &gt; 3</code> - <strong>filter</strong> - conditions, that we impose on these elements;</li>
 <li><code>X</code> - <strong>list</strong> - expression, which gives us the resulting element.</li>
 </ol>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc1.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc1.png"/>
 </figure>
 
 <p>I thought that, the way it works is &ldquo;one by one&rdquo;:</p>
@@ -103,12 +102,10 @@ list comprehension, and, later on, one of the filters fell.</p>
 </code></pre></div><p><em>this is not the production code</em></p>
 <p>What do you think will happen if <code>can_be_saved</code> throw an error for the
 third record? <strong>Correct answer</strong>: non of the records will be saved.</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc2.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc2.png"/>
 </figure>
 
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc3.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/listc3.png"/>
 </figure>
 
 <p>The way it works is &ldquo;one by one || one by one&rdquo;: firstly, Erlang generates and
@@ -155,8 +152,7 @@ proved to be &ldquo;wrong&rdquo;. And that&rsquo;s because in Erlang, logger (as
 a separate process with its own mailbox. What you see are <strong>the times of when
 it received the messages</strong>. In contrast, things are usually happening in the
 same thread in Ruby (that is why timings are usually more accurate).</p>
-<figure>
-    <img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/lager1.png"/> 
+<figure><img src="https://www.homeonrails.com/images/posts/2015-08-03-from-ruby-to-erlang/lager1.png"/>
 </figure>
 
 <p><strong>Lesson #2. Do not rely on lager timings, because it is a separate gen_server (i.e. you don’t know when it will process your messages).</strong></p>
