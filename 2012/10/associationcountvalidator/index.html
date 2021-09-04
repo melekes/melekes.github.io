@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,7 +72,7 @@ html {
   <p>As a result of my <a href="https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails">previous blog post</a>
 about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># lib/association_count_validator.rb</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># lib/association_count_validator.rb</span>
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AssociationCountValidator</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveModel</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Validations</span><span style="color:#f92672">::</span><span style="color:#66d9ef">LengthValidator</span>
   <span style="color:#66d9ef">MESSAGES</span> <span style="color:#f92672">=</span> { <span style="color:#e6db74">:wrong_length</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_invalid</span>,
                <span style="color:#e6db74">:too_short</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_greater_than_or_equal_to</span>,
@@ -93,7 +93,7 @@ This has a big advantage - all options, provided by the basic validator, are sup
 And it correctly handles the situation with marked for destruction records,
 which was mentioned in the previous post.</p>
 <p>Usage:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
   <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 
   attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
@@ -107,7 +107,7 @@ which was mentioned in the previous post.</p>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>Do not forget to add custom error messages to your localization files.</p>
 <p>Example for <code>en</code> culture:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">en</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">en</span>:
   <span style="color:#f92672">errors</span>:
     <span style="color:#f92672">messages</span>:
       <span style="color:#f92672">association_count_less_than_or_equal_to</span>:

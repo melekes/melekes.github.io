@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,13 +117,13 @@ to a particular database (e.g., PostgreSQL sequences).</p>
 </ol>
 <h3 id="1-dump-your-schema">1. Dump your schema</h3>
 <p>In most cases, you should already have a file <code>db/schema.rb</code>. If not, use the following rake task:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rake db:schema:dump
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rake db:schema:dump
 </code></pre></div><p>It should do the job.</p>
 <h3 id="2-create-a-migration">2. Create a migration</h3>
 <p>Create a new migration named <code>NullMigration</code> using Rails generator:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rails g migration NullMigration
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rails g migration NullMigration
 </code></pre></div><p>Open the newly created migration. It should look something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">up</span>
   <span style="color:#66d9ef">end</span>
 
@@ -138,7 +138,7 @@ let&rsquo;s make our first migration irreversible, especially, there is no much
 sense in rolling back to an empty database (we can always delete and create the required
 database using the rake command <code>db:drop db:create</code>).</p>
 <p>As a result, the migration should look like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">up</span>
     create_table <span style="color:#e6db74">&#34;table&#34;</span>, <span style="color:#e6db74">:force</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>
     <span style="color:#f92672">...</span>
@@ -166,7 +166,7 @@ executed migration timestamp, which is much easier to do.</p>
 <code>ActiveRecord::Schema.define(:version =&gt; 20120925084251)</code> block (or at the end of
 <code>null_schema.sql</code> in case of <code>:sql</code> schema format)</p>
 <p>Example (using the command line):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; ls db/migrate
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; ls db/migrate
 
 20120925084251_add_state_to_task_topics.rb
 20121120080714_null_migration.rb
@@ -188,7 +188,7 @@ executed migration timestamp, which is much easier to do.</p>
 <h3 id="1-dump-your-schema-1">1. Dump your schema</h3>
 <p>This step is not much different from the above, with the exception of the
 schema file - <code>db/structure.sql</code> and rake command to dump the database:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rake db:structure:dump
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; rake db:structure:dump
 </code></pre></div><p>Would like to note that, unlike the command <code>rake db:schema:dump</code>, which uses
 built-in ActiveRecord schema dumper, this command uses special tools
 specific to a particular database (for example, pg_dump for PostgreSQL).</p>
@@ -196,7 +196,7 @@ specific to a particular database (for example, pg_dump for PostgreSQL).</p>
 <p>Create a migration (see a similar step above). Next, copy the file
 <code>db/structure.sql</code> into folder <code>db/migrate</code> and rename it to <code>null_schema.sql</code>.</p>
 <p>Our migration would look like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NullMigration</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">up</span>
     file_data <span style="color:#f92672">=</span> <span style="color:#66d9ef">File</span><span style="color:#f92672">.</span>read(<span style="color:#e6db74">&#39;db/migrate/null_schema.sql&#39;</span>)
     <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span><span style="color:#f92672">.</span>connection<span style="color:#f92672">.</span>execute file_data

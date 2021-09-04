@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,7 @@ was surprised. Thanks to all who participated!</p>
 <p><strong>cover? is faster</strong> because it just finds out if the argument is &gt; than the first and &lt; the second.
 No looping necessary. include?, in opposite, loops through all elements of the range until it
 finds an argument or reaches the end.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>cover?(<span style="color:#e6db74">&#39;f&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>cover?(<span style="color:#e6db74">&#39;f&#39;</span>)
 <span style="color:#f92672">==&gt;</span> <span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#39;f&#39;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#e6db74">&#39;f&#39;</span> <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#39;z&#39;</span>
 
 (<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;f&#39;</span>)
@@ -94,7 +94,7 @@ finds an argument or reaches the end.</p>
 <span style="color:#f92672">==&gt;</span> <span style="color:#e6db74">&#39;f&#39;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;f&#39;</span>
 </code></pre></div><h3 id="caveats">Caveats</h3>
 <p>Be careful when using include? and cover?:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;blah&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;blah&#39;</span>)
 <span style="color:#75715e"># =&gt; false</span>
 (<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;z&#39;</span>)<span style="color:#f92672">.</span>cover?(<span style="color:#e6db74">&#39;blah&#39;</span>)
 <span style="color:#75715e"># =&gt; true</span>
@@ -104,11 +104,11 @@ finds an argument or reaches the end.</p>
 <span style="color:#75715e"># =&gt; true</span>
 </code></pre></div><p>See <a href="http://gistflow.com/posts/816-range-include-vs-range-cover">this post</a> for detailed benchmarks.</p>
 <h1 id="2-blkcall-vs-yield">2. blk.call VS yield</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>
   <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">if</span> block_given?
 <span style="color:#66d9ef">end</span>
 foo { puts <span style="color:#e6db74">&#34;Hi from foo&#34;</span> }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(<span style="color:#f92672">&amp;</span>blk)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(<span style="color:#f92672">&amp;</span>blk)
   blk<span style="color:#f92672">.</span>call
 <span style="color:#66d9ef">end</span>
 bar { puts <span style="color:#e6db74">&#34;Hi from bar&#34;</span> }
@@ -118,24 +118,24 @@ bar { puts <span style="color:#e6db74">&#34;Hi from bar&#34;</span> }
 <p><strong>yield is faster</strong> because the process of procifying a block takes time.</p>
 <p>See <a href="http://mudge.name/2011/01/26/passing-blocks-in-ruby-without-block.html">this post</a> for detailed benchmarks.</p>
 <h1 id="3-hash--vs-fetch">3. Hash [] VS fetch</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
 h<span style="color:#f92672">[</span><span style="color:#e6db74">:a</span><span style="color:#f92672">]</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">1</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">h <span style="color:#f92672">=</span> {}
 h<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">:a</span>, <span style="color:#ae81ff">1</span>)
 </code></pre></div><ul>
 <li>both run with the similar speed</li>
 </ul>
 <p>Using brackets to get goodies out of a hash is the same as fetch because they both use the same code to do exactly the same thing.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-&gt;</span>ntbl <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>st_lookup(<span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-&gt;</span>ntbl, key, <span style="color:#f92672">&amp;</span>val)) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-&gt;</span>ntbl <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>st_lookup(<span style="color:#66d9ef">RHASH</span>(hash)<span style="color:#f92672">-&gt;</span>ntbl, key, <span style="color:#f92672">&amp;</span>val)) {
 </code></pre></div><p>It checks that the hash is not empty and tries to find the value using a
 given key.</p>
 <h1 id="4-define_method-vs-class_eval-definition-not-call-speed">4. define_method VS class_eval (definition, NOT call speed)</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>
   <span style="color:#ae81ff">100</span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
     define_method(<span style="color:#e6db74">&#34;foo_</span><span style="color:#e6db74">#{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) { <span style="color:#ae81ff">10</span><span style="color:#f92672">.</span>times<span style="color:#f92672">.</span>map { <span style="color:#e6db74">&#34;foo&#34;</span><span style="color:#f92672">.</span>length } }
   <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">B</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">B</span>
   <span style="color:#ae81ff">100</span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>i<span style="color:#f92672">|</span>
     class_eval <span style="color:#e6db74">&#39;def bar_#{i}; 10.times.map { &#34;foo&#34;.length }; end&#39;</span>
   <span style="color:#66d9ef">end</span>
@@ -148,7 +148,7 @@ given key.</p>
 in Rails. These are places where run (not startup) speed matters. So, it&rsquo;s worthwhile to chose based on your use case.</p>
 <p>See <a href="http://tenderlovemaking.com/2013/03/03/dynamic_method_definitions.html">this post</a> for detailed benchmarks.</p>
 <h1 id="5-super-with-or-without-arguments">5. super with OR without arguments</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(a, b)
    puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">#{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
  <span style="color:#66d9ef">end</span>
@@ -161,7 +161,7 @@ in Rails. These are places where run (not startup) speed matters. So, it&rsquo;s
 <span style="color:#66d9ef">end</span>
 c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Child</span><span style="color:#f92672">.</span>new
 c<span style="color:#f92672">.</span>bar(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(a, b)
     puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">#{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
   <span style="color:#66d9ef">end</span>

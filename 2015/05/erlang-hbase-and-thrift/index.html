@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,7 +98,7 @@ thrift&rsquo;у по скорости (особенно xml и json, котор�
 </figure>
 
 <p>Например, в protobuf схеме вы не найдете <code>filter</code>, которые может быть нужен при выполнении <code>Scan</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-proto" data-lang="proto"><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">Scanner</span> {<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-proto" data-lang="proto"><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">Scanner</span> {<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">optional</span> <span style="color:#66d9ef">bytes</span> startRow <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">optional</span> <span style="color:#66d9ef">bytes</span> endRow <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">repeated</span> <span style="color:#66d9ef">bytes</span> columns <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;<span style="color:#960050;background-color:#1e0010">
@@ -107,7 +107,7 @@ thrift&rsquo;у по скорости (особенно xml и json, котор�
 </span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">optional</span> <span style="color:#66d9ef">int64</span> endTime <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Хотя в XML схеме он присутствует:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;complexType</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Scanner&#34;</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;complexType</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Scanner&#34;</span><span style="color:#f92672">&gt;</span>
     ...
     <span style="color:#f92672">&lt;sequence&gt;</span>
         <span style="color:#f92672">&lt;element</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;filter&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;string&#34;</span> <span style="color:#a6e22e">minOccurs=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">maxOccurs=</span><span style="color:#e6db74">&#34;1&#34;</span><span style="color:#f92672">&gt;&lt;/element&gt;</span>
@@ -138,7 +138,7 @@ hbase(main):007:0&gt; put 'users', 'caleb', 'data:age', 21
 hbase(main):007:0&gt; put 'users', 'caleb', 'data:sex', 'male'
 </code></pre>
 <h3 id="get">Get</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
 {C1, {ok, Results}} <span style="color:#f92672">=</span> thrift_client:<span style="color:#a6e22e">call</span>(C0, getRowWithColumns, [<span style="color:#e6db74">&#34;users&#34;</span>, <span style="color:#e6db74">&#34;mike&#34;</span>, [<span style="color:#e6db74">&#34;data:age&#34;</span>, <span style="color:#e6db74">&#34;data:sex&#34;</span>], dict:<span style="color:#a6e22e">new</span>()]),
 <span style="color:#f92672">=&gt;</span> [{&#39;TRowResult&#39;,<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;mike&#34;</span><span style="color:#f92672">&gt;&gt;</span>,
                {dict,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">16</span>,<span style="color:#ae81ff">16</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">80</span>,<span style="color:#ae81ff">48</span>,
@@ -153,14 +153,14 @@ connect_timeout - таймаут на соединение, и hbase_thrift - и
 (обычно == OTP application name). Далее мы забираем строку с интересующими нас
 столбцами по ключу.</p>
 <h3 id="put">Put</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
 Mutations <span style="color:#f92672">=</span> [#&#39;Mutation&#39;{column<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;data:age&#34;</span>, value<span style="color:#f92672">=</span> <span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;17&#34;</span><span style="color:#f92672">&gt;&gt;</span>}]
 {C1, {ok, _}} <span style="color:#f92672">=</span> thrift_client:<span style="color:#a6e22e">call</span>(C0, mutateRow, [<span style="color:#e6db74">&#34;users&#34;</span>, <span style="color:#e6db74">&#34;mike&#34;</span>, Mutations, dict:<span style="color:#a6e22e">new</span>()]),
 thrift_client:<span style="color:#a6e22e">close</span>(C1).
 </code></pre></div><p>Новое значение для столбца в записи #&lsquo;Mutation&rsquo; может быть либо строкой, либо
 binary (&laquo;&ldquo;17&rdquo;&raquo;).</p>
 <h3 id="scan">Scan</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
 Scan <span style="color:#f92672">=</span> #&#39;TScan&#39;{&#39;columns&#39;<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;data:sex&#34;</span>]},
 {C1, {ok, ScannerId}} <span style="color:#f92672">=</span> thrift_client:<span style="color:#a6e22e">call</span>(C0, scannerOpenWithScan, [<span style="color:#e6db74">&#34;users&#34;</span>, Scan, dict:<span style="color:#a6e22e">new</span>()]),
 {C2, {ok, Results}} <span style="color:#f92672">=</span> thrift_client:<span style="color:#a6e22e">call</span>(C1, scannerGetList, [ScannerId, <span style="color:#ae81ff">10</span>]),
@@ -185,7 +185,7 @@ thrift_client:<span style="color:#a6e22e">close</span>(C3).
 </code></pre></div><p>У #&lsquo;Scan&rsquo; можно задать не только столбцы, но и другие параметры: стартовую
 строку, конечную строку, фильтр (рассмотрен ниже).</p>
 <h3 id="scan-с-фильтром-и-начальной-строкой">Scan с фильтром и начальной строкой</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
 FilterString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;(SingleColumnValueFilter(&#39;data&#39;, &#39;sex&#39;, =, &#39;binary:male&#39;, true, true))&#34;</span>,
 Scan <span style="color:#f92672">=</span> #&#39;TScan&#39;{&#39;filterString&#39;<span style="color:#f92672">=</span>FilterString,&#39;startRow&#39;<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;caleb1&#34;</span>,&#39;columns&#39;<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;data:sex&#34;</span>]},
 {C1, {ok, ScannerId}} <span style="color:#f92672">=</span> thrift_client:<span style="color:#a6e22e">call</span>(C0, scannerOpenWithScan, [<span style="color:#e6db74">&#34;users&#34;</span>, Scan, dict:<span style="color:#a6e22e">new</span>()]),
@@ -208,7 +208,7 @@ SingleColumnValueFilter</a>.</p>
 <p>Обратите также внимание на значение startRow - <code>caleb1</code>. Постфикс (1 байт в
 конце) нужен для того, чтобы не включать данную строку в результат.</p>
 <h3 id="delete">Delete</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">{ok, C0} <span style="color:#f92672">=</span> thrift_client_util:<span style="color:#a6e22e">new</span>(<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#ae81ff">9090</span>, hbase_thrift, [{connect_timeout, <span style="color:#ae81ff">5000</span>}]),
 {C1, {ok, _}} <span style="color:#f92672">=</span> thrift_client:<span style="color:#a6e22e">call</span>(C0, deleteAll, [<span style="color:#e6db74">&#34;users&#34;</span>, <span style="color:#e6db74">&#34;caleb&#34;</span>, <span style="color:#e6db74">&#34;data:age&#34;</span>, dict:<span style="color:#a6e22e">new</span>()]),
 thrift_client:<span style="color:#a6e22e">close</span>(C1).
 </code></pre></div><p>удалит столбец age (все версии) у пользователя caleb.</p>

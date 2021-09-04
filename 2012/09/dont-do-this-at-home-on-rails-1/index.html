@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +81,7 @@ This could be the parts of my own projects or some ruby gems. Together, we will 
 <p>The first example is a scope, that fetches the records within a given range.
 If the <code>date</code> param passed to this block responds to the <code>first</code> and <code>last</code> methods,
 these are considered as start and end dates. Otherwise, it selects records for that date plus 1 day.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>date<span style="color:#f92672">|</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>date<span style="color:#f92672">|</span>
   <span style="color:#66d9ef">if</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:last</span>) <span style="color:#f92672">&amp;&amp;</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:first</span>)
     where(<span style="color:#e6db74">&#34;created_at &gt;= ? AND created_at &lt;= ?&#34;</span>, date<span style="color:#f92672">.</span>first, date<span style="color:#f92672">.</span>last)
   <span style="color:#66d9ef">else</span>
@@ -92,7 +92,7 @@ these are considered as start and end dates. Otherwise, it selects records for t
 The first thing that caches the eye is duplicated <code>where</code> condition.
 Just imagine, each time you want to change the query, you will need to update these 2 lines.
 Lets fix this.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>date<span style="color:#f92672">|</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>date<span style="color:#f92672">|</span>
   <span style="color:#66d9ef">if</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:last</span>) <span style="color:#f92672">&amp;&amp;</span> date<span style="color:#f92672">.</span>respond_to?(<span style="color:#e6db74">:first</span>)
     date_start <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>first
     date_end <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>last
@@ -111,13 +111,13 @@ we will get this query <code>created_at &gt;= 2 and created_at &lt;= 3</code> fo
 <p>But wait, ActiveRecord&rsquo;s query interface also supports ranges as an arguments,
 so we could write something like this: <code>where(created_at: date.first..date.last)</code>,
 which will generate a query <code>created_at BETWEEN &lt;date.first&gt; AND &lt;date.last&gt;</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>range<span style="color:#f92672">|</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">scope <span style="color:#e6db74">:at_date</span>, lambda { <span style="color:#f92672">|</span>range<span style="color:#f92672">|</span>
   where(<span style="color:#e6db74">created_at</span>: range)
 }
 </code></pre></div><h3 id="2---try-to-search-for-existing-method-first">#2 - try to search for existing method first</h3>
 <p>The second slice of code selects the channels, locked by the current user and
 free channels.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">cu <span style="color:#f92672">=</span> current_user
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">cu <span style="color:#f92672">=</span> current_user
 locked <span style="color:#f92672">=</span> channels<span style="color:#f92672">.</span>select{ <span style="color:#f92672">|</span>ch<span style="color:#f92672">|</span> ch<span style="color:#f92672">.</span>is_locked_by?(cu) }
 free   <span style="color:#f92672">=</span> channels<span style="color:#f92672">.</span>select{ <span style="color:#f92672">|</span>ch<span style="color:#f92672">|</span> <span style="color:#f92672">!</span>ch<span style="color:#f92672">.</span>is_locked_by?(cu) }
 </code></pre></div><p>Did you notice the reverse condition? Every time I see the code,
@@ -126,10 +126,10 @@ In fact, ruby and rails has a greater collection of methods. Take a look at <cod
 methods <a href="http://apidock.com/rails/ActiveSupport">http://apidock.com/rails/ActiveSupport</a>. But what about our case? After a few minutes
 of searching, I&rsquo;ve found <code>partition</code> method (<a href="http://apidock.com/ruby/Enumerable/partition">Doc</a>),
 which does exactly just we want to - splits collection into two arrays by a given condition.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">locked, unlocked <span style="color:#f92672">=</span> channels<span style="color:#f92672">.</span>partition { <span style="color:#f92672">|</span>ch<span style="color:#f92672">|</span> ch<span style="color:#f92672">.</span>is_locked_by?(current_user) }
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">locked, unlocked <span style="color:#f92672">=</span> channels<span style="color:#f92672">.</span>partition { <span style="color:#f92672">|</span>ch<span style="color:#f92672">|</span> ch<span style="color:#f92672">.</span>is_locked_by?(current_user) }
 </code></pre></div><h3 id="3---think-about-what-you-are-writing-right-now">#3 - think about what you are writing right now</h3>
 <p>The third method is a simple method inside some model.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">has_description?</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">has_description?</span>
   <span style="color:#f92672">!</span>self<span style="color:#f92672">.</span>description<span style="color:#f92672">.</span>blank?
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>I know what you are thinking right now - it&rsquo;s not my :)</p>

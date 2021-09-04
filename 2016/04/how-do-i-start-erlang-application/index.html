@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +75,7 @@ rebar.</p>
 придерживаюсь я. Он не претендует на звание &ldquo;единственно правильный способ&rdquo;.
 Если вы видите явные недочеты, пишите в комментариях.</em></p>
 <h1 id="как-запускаем-приложение-при-разработке">Как запускаем приложение при разработке</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># Makefile
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># Makefile
 </span><span style="color:#75715e"></span>
 <span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> all compile run
 
@@ -92,7 +92,7 @@ REBAR<span style="color:#f92672">=</span>./rebar3
 запуск, перезапуск, падение частей приложения.</p>
 <p><a href="https://github.com/rustyio/sync">https://github.com/rustyio/sync</a> перекомпилирует и перезагружает код налету.</p>
 <p><code>-s yourawesomeapp</code> попытается вызвать <code>yourawesomeapp:start()</code>, так что нужен файл следующего содержания (если у вас его еще нет):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">-module(yourawesomeapp).
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">-module(yourawesomeapp).
 
 -export([start<span style="color:#f92672">/</span><span style="color:#ae81ff">0</span>]).
 
@@ -125,7 +125,7 @@ start(_StartType, _StartArgs) -&gt;
                  ]},
   ...
  ]}.
-</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/sys.config
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/sys.config
 </span><span style="color:#75715e"></span>
 [
     {yourawesomeapp, [
@@ -140,7 +140,7 @@ start(_StartType, _StartArgs) -&gt;
         {error_logger_mf_maxfiles, <span style="color:#ae81ff">5</span>}
     ]}
 ].
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/vm.args
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/vm.args
 </span><span style="color:#75715e"></span>
 <span style="color:#960050;background-color:#1e0010">##</span> Name <span style="color:#66d9ef">of</span> the node
 -sname yourawesomeapp

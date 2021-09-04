@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,7 @@ increase its speed. Who knows?</p>
 <p>Well, let&rsquo;s start.</p>
 <h3 id="1---prefer-timecurrent-over-timezonenow-or-timezone">#1 - prefer Time.current over Time.zone.now or Time.zone</h3>
 <p>Very often I see a code like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> schedulled_at <span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>zone<span style="color:#f92672">.</span>now
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> schedulled_at <span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>zone<span style="color:#f92672">.</span>now
   <span style="color:#f92672">...</span>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>And there is nothing wrong with it :) Seriously. But what if we have not set
@@ -91,14 +91,14 @@ method that does this check for us.</p>
 <p><a href="http://apidock.com/rails/Time/current/class">Time.current</a> - returns
 <code>Time.zone.now</code> if the <code>Time.zone</code> or <code>config.time_zone</code> set,
 otherwise just returns <code>Time.now</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> schedulled_at <span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>current
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> schedulled_at <span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>current
   <span style="color:#f92672">...</span>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><h3 id="2---avoid-using-before_filter">#2 - Avoid using <code>before_filter</code></h3>
 <p><code>before_filter</code> is used inside controllers to execute any code before any action
 will be executed. This allows us to avoid duplicating code. But, like any tool,
 it can be used &ldquo;in the wrong way&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SubscribesController</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationController</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SubscribesController</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationController</span>
   before_filter <span style="color:#e6db74">:load_subscribe</span>, <span style="color:#e6db74">only</span>: <span style="color:#f92672">[</span><span style="color:#e6db74">:show</span>, <span style="color:#e6db74">:destroy</span><span style="color:#f92672">]</span>
 
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>
@@ -127,7 +127,7 @@ called by these filters and only then he or she comes to the action itself. This
 the application logic confusing and difficult to understand.</p>
 <p>Before filters are really helpful in some cases. For example, when we need to check
 whether the user is authorized or log each request.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SubscribesController</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationController</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SubscribesController</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationController</span>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>
     @subscribes <span style="color:#f92672">=</span> <span style="color:#66d9ef">Subscribe</span><span style="color:#f92672">.</span>all
   <span style="color:#66d9ef">end</span>
@@ -165,7 +165,7 @@ What is required of us, is to simplify code by maximum.</p>
 <li><a href="http://apidock.com/">APIdock</a></li>
 <li><a href="http://ruby-doc.org/core-1.9.3/">Ruby 1.9.3 Doc</a></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># before</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># before</span>
 @groups <span style="color:#f92672">=</span> <span style="color:#66d9ef">Group</span><span style="color:#f92672">.</span>all<span style="color:#f92672">.</span>find_all { <span style="color:#f92672">|</span>g<span style="color:#f92672">|</span> g<span style="color:#f92672">.</span>admin?(current_user) }
 @projects <span style="color:#f92672">=</span> <span style="color:#66d9ef">Project</span><span style="color:#f92672">.</span>all<span style="color:#f92672">.</span>find_all { <span style="color:#f92672">|</span>p<span style="color:#f92672">|</span> p<span style="color:#f92672">.</span>admin?(current_user) }
 

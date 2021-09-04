@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,6 +69,28 @@ html {
     <main class="content container">
     <div class="posts">
 <article class="post">
+  <h1 class="post-title">
+    <a href="https://www.homeonrails.com/2016/05/profiling-in-erlang/">Profiling in Erlang</a>
+  </h1>
+  <time datetime="2016-05-25T11:41:44Z" class="post-date">Wed, May 25, 2016</time>
+  <!-- raw HTML omitted -->
+<p>The list of available instruments:</p>
+<ul>
+<li>fprof, eprof, cover, cprof (shipped with erlang)</li>
+<li><code>top</code>-like utilities: third party <a href="https://github.com/zaa/entop">entop</a> и <a href="http://erlang.org/doc/apps/observer/etop_ug.html">etop</a></li>
+<li><a href="https://github.com/virtan/eep/">eep</a></li>
+<li><a href="https://ferd.github.io/recon/">recon</a></li>
+<li><a href="https://github.com/proger/eflame">eflame</a> and <a href="https://github.com/slfritchie/eflame">eflame2</a></li>
+<li><a href="https://github.com/massemanet/eper">eper</a></li>
+<li><code>timer:tc/3</code>, <code>statistics/1</code></li>
+<li><a href="https://gist.github.com/slfritchie/159a8ce1f49fc03c77c6">latency_histogram_tracer.erl</a> (requires <code>folsom_metrics</code>)</li>
+</ul>
+  
+  <div class="read-more-link">
+    <a href="https://www.homeonrails.com/2016/05/profiling-in-erlang/">Read More…</a>
+  </div>
+  
+</article><article class="post">
   <h1 class="post-title">
     <a href="https://www.homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/">How to be productive with almost any text editor</a>
   </h1>
@@ -201,64 +223,38 @@ book or even painting.</p>
     <a href="https://www.homeonrails.com/2016/04/march-picks/">Read More…</a>
   </div>
   
-</article><article class="post">
-  <h1 class="post-title">
-    <a href="https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/">Зависла Erlang нода. Что делать?</a>
-  </h1>
-  <time datetime="2016-04-05T15:50:31Z" class="post-date">Tue, Apr 5, 2016</time>
-  <figure><img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg"/>
-</figure>
-  
-  <div class="read-more-link">
-    <a href="https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/">Read More…</a>
-  </div>
-  
 </article>
 </div>
 
-<ul class="pagination">
-  <li class="page-item">
-    <a href="https://www.homeonrails.com/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="https://www.homeonrails.com/page/12/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="https://www.homeonrails.com/">1</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="https://www.homeonrails.com/page/2/">2</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="https://www.homeonrails.com/page/3/">3</a>
-  </li>
-  <li class="page-item disabled">
-    <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="https://www.homeonrails.com/page/12/">12</a>
-  </li>
-  <li class="page-item active">
-    <a class="page-link" href="https://www.homeonrails.com/page/13/">13</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="https://www.homeonrails.com/page/14/">14</a>
-  </li>
-  <li class="page-item disabled">
-    <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="https://www.homeonrails.com/page/22/">22</a>
-  </li>
-  <li class="page-item">
-    <a href="https://www.homeonrails.com/page/14/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="https://www.homeonrails.com/page/22/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-  </li>
-</ul>
-
-
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/page/12/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/page/11/" aria-label="Page 11" class="page-link" role="button">11</a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/page/12/" aria-label="Page 12" class="page-link" role="button">12</a>
+      </li>
+      <li class="page-item active">
+        <a href="#" aria-current="page" aria-label="Page 13" class="page-link" role="button">13</a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/page/15/" aria-label="Page 15" class="page-link" role="button">15</a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/page/14/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.homeonrails.com/page/22/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
     </main>
 
     

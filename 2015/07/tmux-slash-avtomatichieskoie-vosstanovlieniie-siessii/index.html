@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,7 +83,7 @@ html {
 же строке, где он и был в последний раз</strong>.</p>
 <p>Для того, чтобы данное чудо заработало и у вас, нам потребуется <a href="https://github.com/tmux-plugins/tpm">Tmux Plugin
 Manager</a> (сокращенно, tpm):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 </code></pre></div><p><em>(примечание: нужен tmux &gt;= 1.9)</em></p>
 <p>Теперь добавим следующее в конец .tmux.conf:</p>
 <pre><code># .tmux.conf
@@ -95,7 +95,7 @@ set -g @plugin 'tmux-plugins/tmux-continuum'
 
 run '~/.tmux/plugins/tpm/tpm'
 </code></pre><p>Далее остается только загрузить наши изменения и установить плагины:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ tmux source ~/.tmux.conf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ tmux source ~/.tmux.conf
 </code></pre></div><p>Для установки плагинов нажмите <code>prefix - I</code>.</p>
 <p>Для комфортной работы стоит добавить пару опций. По умолчанию, tmux-continuum
 (плагин, который автоматически сохраняет tmux окружение) не восстанавливает его

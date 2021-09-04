@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +75,7 @@ html {
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.</p>
 <p>Сначала надо получить список наиболее часто используемых команд:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history | awk <span style="color:#e6db74">&#39;{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history | awk <span style="color:#e6db74">&#39;{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
 </code></pre></div><p><code>awk</code> сохраняет команду и количество ее вхождений в
 историю. Затем результат печатается, фильтруются скрипты вида
 <code>./something</code>, сортируется и обрезается до нужной длины.</p>
@@ -93,7 +93,7 @@ html {
 10190  1.90019%   gc
 </code></pre><p>Основываясь на выводе выше, можно сказать что я очень часто пользуюсь
 git, так что неплохо бы создать алиас для него и команд ниже.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias g<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias g<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git&#34;</span>
 alias v<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vim&#34;</span>
 alias l<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ls -al&#34;</span>
 alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git commit -m&#34;</span>
@@ -101,7 +101,7 @@ alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git 
 хватит.</p>
 <p>Также можно проанализировать только команды vagrant&rsquo;а (subcommands) или любой
 другой программы слегка модифицировав предыдущий скрипт:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history|grep vagrant| awk <span style="color:#e6db74">&#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history|grep vagrant| awk <span style="color:#e6db74">&#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
 </code></pre></div><p>Пример вывода:</p>
 <pre><code>1   193  23.9752%   ssh
 2   166  20.6211%   up
@@ -114,7 +114,7 @@ alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git 
 9   9    1.11801%   solo
 10  8    0.993789%  -r
 </code></pre><p>Для vagrant мы заведем такой набор:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias v<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias v<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant&#34;</span>
 alias vst<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant status&#34;</span>
 alias vup<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant up&#34;</span>
 alias vpr<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vagrant provision&#34;</span>

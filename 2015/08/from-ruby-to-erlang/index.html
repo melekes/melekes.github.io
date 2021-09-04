@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +79,7 @@ that I&rsquo;ve learned during the transition.</p>
 <p>There is no such thing as List Comprehension in Ruby (but you could write
 <a href="http://blog.tarkalabs.com/2015/04/21/list-comprehension-in-ruby/">something similar</a>), so when I was using it in Erlang, I didn&rsquo;t fully
 understand how it works. Let me show you.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[X || X <span style="color:#f92672">&lt;-</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>], X <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span>].
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[X || X <span style="color:#f92672">&lt;-</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>], X <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span>].
 <span style="color:#f92672">=&gt;</span> [<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>]
 </code></pre></div><p>There are 3 main components here:</p>
 <ol>
@@ -98,7 +98,7 @@ otherwise, goto (1).</li>
 </ol>
 <p>As it turned out, I was wrong. I&rsquo;ve noticed it, when I wrote a for loop using
 list comprehension, and, later on, one of the filters fell.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[save(Rec, Db) || Rec <span style="color:#f92672">&lt;-</span> Records, is_dirty(Rec), can_be_saved(Rec)]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">[save(Rec, Db) || Rec <span style="color:#f92672">&lt;-</span> Records, is_dirty(Rec), can_be_saved(Rec)]
 </code></pre></div><p><em>this is not the production code</em></p>
 <p>What do you think will happen if <code>can_be_saved</code> throw an error for the
 third record? <strong>Correct answer</strong>: non of the records will be saved.</p>
@@ -112,7 +112,7 @@ third record? <strong>Correct answer</strong>: non of the records will be saved.
 filters initial list. After that, it executes expression on the left side for
 each item resulting in a new list.</p>
 <p><strong>Lesson #1. List Comprehension should not be used when you need a for loop. Instead, use recursion.</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#a6e22e">save_records</span>([], _) <span style="color:#f92672">-&gt;</span> ok;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#a6e22e">save_records</span>([], _) <span style="color:#f92672">-&gt;</span> ok;
 <span style="color:#a6e22e">save_records</span>([Rec|Rest], Db) <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">try</span>
         <span style="color:#66d9ef">case</span> is_dirty(Rec) <span style="color:#66d9ef">of</span>

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,7 +94,7 @@ The reasoning is the same as for public constants above.</p>
 used. Of course, there are all different caveats. For example, in Ruby, there
 is a private modifier, and you are supposed to put private constants and
 methods under it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">private</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">private</span>
 
   <span style="color:#66d9ef">MY_SECRET_CONST</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;secret&#34;</span>
 
@@ -118,7 +118,7 @@ function/method body in the beginning.</p>
 <p>The argument that developers will search for a constant at the top of the file
 is invalid if the constant is declared within this method. In 99% of cases,
 they will notice it with a lateral vision.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">A</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">A</span>() {
   <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MY_SECRET_CONST</span> = <span style="color:#e6db74">&#34;secret&#34;</span>
   <span style="color:#a6e22e">methodA</span>(<span style="color:#a6e22e">MY_SECRET_CONST</span>)
 }</code></pre></div>

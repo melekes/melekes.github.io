@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,7 +85,7 @@ and found out it is a bit outdated. So I will post a necessary steps here.</p>
 &lt;/dependency&gt;
 </code></pre><p><em>This is for Maven and Hadoop 2.</em></p>
 <p>Next step is to write a simple test case:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Test</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Test</span>
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">returnsMaximumIntegerInValues</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException<span style="color:#f92672">,</span>
     InterruptedException <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">new</span> ReduceDriver<span style="color:#f92672">&lt;</span>Text<span style="color:#f92672">,</span> IntWritable<span style="color:#f92672">,</span> Text<span style="color:#f92672">,</span> IntWritable<span style="color:#f92672">&gt;()</span>
@@ -103,12 +103,12 @@ and found out it is a bit outdated. So I will post a necessary steps here.</p>
 HBase table, Hadoop is telling us that he doesn&rsquo;t know how to serialize our
 data. That is why we need to help it. Inside <code>setUp</code> set the
 <code>io.serializations</code> variable:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">conf<span style="color:#f92672">.</span><span style="color:#a6e22e">setStrings</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>conf<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">),</span> MutationSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(),</span> ResultSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()});</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">conf<span style="color:#f92672">.</span><span style="color:#a6e22e">setStrings</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>conf<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">),</span> MutationSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(),</span> ResultSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()});</span>
 </code></pre></div><p>Apart from tests, you will hardly see such a code, because
 <a href="https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.html">TableMapReduceUtil</a>
 hides many details from you.</p>
 <p>When you do this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">TableMapReduceUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">initTableReducerJob</span><span style="color:#f92672">(</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">TableMapReduceUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">initTableReducerJob</span><span style="color:#f92672">(</span>
     Bytes<span style="color:#f92672">.</span><span style="color:#a6e22e">toBytes</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;animals&#34;</span><span style="color:#f92672">),</span>
     CatMaxAgesReducer<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span>
     job

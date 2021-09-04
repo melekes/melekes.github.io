@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,14 +89,14 @@ Container</a>, или еще кто-то. Пусть победит
 официальных сайтах.</p>
 <p>И так, начнем. Первым делом нам надо установить сам docker (для других ОС см.
 <a href="http://docs.docker.com/installation/">инструкцию</a>):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ wget -qO- https://get.docker.com/ | sh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ wget -qO- https://get.docker.com/ | sh
 </code></pre></div><p>Чтобы каждый раз не писать sudo при его использовании, создадим группу docker и
 добавим своего пользователя в нее:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo usermod -aG docker &lt;username&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo usermod -aG docker &lt;username&gt;
 </code></pre></div><h3 id="2-создаем-dockerfile">2. Создаем Dockerfile</h3>
 <p>Следующим нашим шагом будет создание Dockerfile&rsquo;а для нашего гема. Создайте
 Dockerfile со следующим содержимым в корне вашего гема:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ruby:2.2.2</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir -p /usr/src/lib<span style="color:#960050;background-color:#1e0010">
@@ -111,10 +111,10 @@ Dockerfile со следующим содержимым в корне вашег
 загружаете его (файл с версией) в gemspec файле. Решением будет добавить еще
 одну инструкцию COPY перед bundle install или <a href="https://github.com/kaize/valle/commit/cfb4e8e451c54bb94176577811de72a01740d501#diff-6e266e394c50981ec99b03694aa7ccc0L2">удалить
 его к чертям</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">RUN</span> mkdir -p /usr/src/lib/&lt;yourgemname&gt;<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">RUN</span> mkdir -p /usr/src/lib/&lt;yourgemname&gt;<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> lib/&lt;yourgemname&gt;/version.rb /usr/src/lib/&lt;yourgemname&gt;/version.rb<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Если вы только начинаете разрабатывать гем и вам нужно создать его скелет выполните:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run -it --rm --user <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>id -u<span style="color:#66d9ef">)</span><span style="color:#e6db74">:</span><span style="color:#66d9ef">$(</span>id -g<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib -w /usr/src/lib ruby:2.2.2 bundle gem &lt;yourgemname&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run -it --rm --user <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>id -u<span style="color:#66d9ef">)</span><span style="color:#e6db74">:</span><span style="color:#66d9ef">$(</span>id -g<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib -w /usr/src/lib ruby:2.2.2 bundle gem &lt;yourgemname&gt;
 </code></pre></div><p>Эта команда создаст поддиректорию &lt;yourgemname&gt; внутри текущей.</p>
 <p>По умолчанию COPY скопирует все файлы и папки внутрь контейнера. Хорошей
 практикой считается добавление .dockerignore в проект (как .gitignore,
@@ -124,7 +124,7 @@ pkg/
 </code></pre><p>Также можно заморозить bundler, чтобы он выкидывал ошибку каждый раз, когда вы
 пытаетесь запустить что-то при измененном Gemfile. То есть, вам придется
 выполнить <code>bundle install</code> и пересобрать контейнер (опционально).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ruby:2.2.2</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># throw errors if Gemfile has been modified since Gemfile.lock</span><span style="color:#960050;background-color:#1e0010">
@@ -132,12 +132,12 @@ pkg/
 </span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>...<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><code>bundle install</code> выполняем так:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run --rm -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib -w /usr/src/lib ruby:2.2.2 bundle install
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run --rm -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib -w /usr/src/lib ruby:2.2.2 bundle install
 </code></pre></div><p>Другие хорошие практики можно прочесть здесь - <a href="https://docs.docker.com/articles/dockerfile_best-practices/">Best practices for writing
 Dockerfiles</a></p>
 <h3 id="3-собираем-контейнер-и-запускаем-тесты">3. Собираем контейнер и запускаем тесты</h3>
 <p>Результирующий Dockerfile должен выглядеть примерно так:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Dockerfile</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ruby:2.2.2</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># throw errors if Gemfile has been modified since Gemfile.lock</span><span style="color:#960050;background-color:#1e0010">
@@ -152,13 +152,13 @@ Dockerfiles</a></p>
 </span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /usr/src/lib/<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Теперь соберем наш контейнер:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker build -t &lt;yourgemname&gt; .
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker build -t &lt;yourgemname&gt; .
 </code></pre></div><p>И запустим тесты:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run -it --rm -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib &lt;yourgemname&gt; bundle exec rake
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run -it --rm -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/usr/src/lib &lt;yourgemname&gt; bundle exec rake
 </code></pre></div><p>Все должно отработать без проблем.</p>
 <h3 id="4-makefile-опционально">4. Makefile (опционально)</h3>
 <p>Хорошей идеей также будет добавить Makefile:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">docker_build</span><span style="color:#f92672">:</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">docker_build</span><span style="color:#f92672">:</span>
 	docker build -t &lt;yourgemname&gt; .
 
 <span style="color:#a6e22e">docker_test</span><span style="color:#f92672">:</span>

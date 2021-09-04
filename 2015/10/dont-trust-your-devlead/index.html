@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,7 @@ Engineering, словом у человека, умудренного опыто
 VP of Engineering мне написал: &ldquo;Тут можно сильно разогнать, используя в
 качестве аккумулятора dict и обновляя значения через dict:update.&rdquo;.</p>
 <p>А вот и код, о котором идет речь:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
 </span><span style="color:#75715e"></span>NewAcc <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
   false <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">case</span> lists:<span style="color:#a6e22e">keyfind</span>(norange, <span style="color:#ae81ff">1</span>, Acc) <span style="color:#66d9ef">of</span>
@@ -107,7 +107,7 @@ VP of Engineering мне написал: &ldquo;Тут можно сильно �
 Median: 1798 mics
 Average: 1846 mics
 </code></pre><p>Потом попробовал <code>dict:append_list</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
 </span><span style="color:#75715e"></span>NewAcc <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
   false <span style="color:#f92672">-&gt;</span>
     <span style="color:#66d9ef">case</span> dict:<span style="color:#a6e22e">is_key</span>(norange, Acc) <span style="color:#66d9ef">of</span>
@@ -128,7 +128,7 @@ Median: 67062 mics
 Average: 68343 mics
 </code></pre><p>Он оказался значительно медленнее (из-за того, что списки склеиваются с помощью <code>++</code>).</p>
 <p>Затем попробовал <code>dict:update</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% for every Item in Items, коих около 5000
 </span><span style="color:#75715e"></span>Key <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
   false <span style="color:#f92672">-&gt;</span> norange;
   true <span style="color:#f92672">-&gt;</span> RangeStart

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,7 +76,7 @@ root level. Examples: <a href="https://github.com/hashicorp/consul">1</a>,
 <a href="https://github.com/tendermint/tendermint">2</a>.</p>
 <p>If you are using <a href="https://github.com/Masterminds/glide">glide</a> or other package
 manager:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
 <span style="color:#f92672">machine</span>:
   <span style="color:#f92672">environment</span>:
     <span style="color:#f92672">PROJECT_GOPATH</span>: <span style="color:#e6db74">&#34;${HOME}/.go_project&#34;</span>
@@ -102,7 +102,7 @@ manager:</p>
   <span style="color:#f92672">override</span>:
     - <span style="color:#ae81ff">cd &#34;$PROJECT_PATH&#34; &amp;&amp; go test -v $(glide novendor)</span>
 </code></pre></div><p>Also, if you want to store your test&rsquo;s output as CircleCI artifact on S3:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">test</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">test</span>:
   <span style="color:#f92672">override</span>:
     - <span style="color:#ae81ff">cd &#34;$PROJECT_PATH&#34; &amp;&amp; go test -v $(glide novendor) 2&gt;&amp;1 | tee test.log</span>
   <span style="color:#f92672">post</span>:

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,7 +73,7 @@ html {
 <ul>
 <li><code>passthrough</code> пробрасывает функции meck-модуля (string_meck) в оригинальный модуль (string)</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">meck:<span style="color:#a6e22e">new</span>(string, [passthrough]),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">meck:<span style="color:#a6e22e">new</span>(string, [passthrough]),
 meck:<span style="color:#a6e22e">expect</span>(string, char_at,
     <span style="color:#66d9ef">fun</span>(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">-&gt;</span>
         <span style="color:#e6db74">$a</span>;
@@ -104,7 +104,7 @@ meck:<span style="color:#a6e22e">expect</span>(string, char_at,
 <p><code>{stub_all, '{@link ret_spec()}'}</code> замокает все функции модуля и будет возвращать то, что указано вторым параметром.</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">meck:<span style="color:#a6e22e">new</span>(string, [stub_all]),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">meck:<span style="color:#a6e22e">new</span>(string, [stub_all]),
 <span style="color:#f92672">?</span>assertEqual(ok, string:<span style="color:#a6e22e">colorize</span>()).
 
 meck:<span style="color:#a6e22e">new</span>(string, [{stub_all, true}]),
