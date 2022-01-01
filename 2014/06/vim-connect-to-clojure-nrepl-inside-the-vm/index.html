@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -85,7 +85,7 @@ configured with private network.</p>
   config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;private_network&#34;</span>, <span style="color:#e6db74">ip</span>: <span style="color:#e6db74">&#34;192.168.50.4&#34;</span>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>Now we need to start nREPL inside the guest machine.</p>
-<pre><code>$&gt; lein repl :start :host 0.0.0.0 :port 4242
+<pre tabindex="0"><code>$&gt; lein repl :start :host 0.0.0.0 :port 4242
 </code></pre><p>You could omit the <code>:port</code> option, in which case leiningen will use a
 random port.</p>
 <p>One thing remains is to connect to nREPL.</p>

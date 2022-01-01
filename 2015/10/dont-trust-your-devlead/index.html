@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -103,7 +103,7 @@ VP of Engineering мне написал: &ldquo;Тут можно сильно �
 <p>Я решил проверить, действительно ли использование dict способно повысить
 производительность данного кода (т.е. сократить время выполнения). Для начала
 замерил скорость работы со списками:</p>
-<pre><code>Range: 398 - 7667 mics
+<pre tabindex="0"><code>Range: 398 - 7667 mics
 Median: 1798 mics
 Average: 1846 mics
 </code></pre><p>Потом попробовал <code>dict:append_list</code>:</p>
@@ -123,7 +123,7 @@ Average: 1846 mics
 ...
 <span style="color:#75715e">% позже возвращаем результирующий список
 </span><span style="color:#75715e"></span>dict:<span style="color:#a6e22e">to_list</span>(NewAcc)
-</code></pre></div><pre><code>Range: 61466 - 94095 mics
+</code></pre></div><pre tabindex="0"><code>Range: 61466 - 94095 mics
 Median: 67062 mics
 Average: 68343 mics
 </code></pre><p>Он оказался значительно медленнее (из-за того, что списки склеиваются с помощью <code>++</code>).</p>
@@ -137,7 +137,7 @@ NewAcc <span style="color:#f92672">=</span> dict:<span style="color:#a6e22e">u
 ...
 <span style="color:#75715e">% позже возвращаем результирующий список
 </span><span style="color:#75715e"></span>dict:<span style="color:#a6e22e">to_list</span>(NewAcc)
-</code></pre></div><pre><code>Range: 4044 - 11357 mics
+</code></pre></div><pre tabindex="0"><code>Range: 4044 - 11357 mics
 Median: 4672 mics
 Average: 4963 mics
 </code></pre><p>Кода меньше в разы, но по скорости уступает, а на данном участке нам важна была

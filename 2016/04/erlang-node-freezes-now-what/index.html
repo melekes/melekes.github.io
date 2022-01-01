@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -84,7 +84,7 @@ NIF, и оно в один прекрасный момент блокирует�
 C-расширения в Erlang тоже непонятно (отдельно - понятно, <code>gdb</code> и тому
 подобное). Если знаете - напишите плиз.</p>
 <p>Зато мы можем послать сигнал виртуальной машине Erlang и она создаст crash dump:</p>
-<pre><code>$ kill -SIGUSR1 &lt;pid&gt;
+<pre tabindex="0"><code>$ kill -SIGUSR1 &lt;pid&gt;
 
 Crash dump is being written to: erl_crash.dump...done
 Received SIGUSR1
@@ -94,7 +94,7 @@ Received SIGUSR1
 <p>Мне известны по крайней мере 2 инструмента: crashdump_viewer и recon.</p>
 <h3 id="crashdump_viewer">crashdump_viewer</h3>
 <p><a href="http://erlang.org/doc/apps/observer/crashdump_ug.html">http://erlang.org/doc/apps/observer/crashdump_ug.html</a></p>
-<pre><code>$ erl
+<pre tabindex="0"><code>$ erl
 &gt; crashdump_viewer:start().
 </code></pre><figure><img src="https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/crashdump_ug1.png"/>
 </figure>
@@ -124,7 +124,7 @@ Received SIGUSR1
 найти конкретную причину (<a href="https://github.com/funbox/hierdis/pull/1">PR</a>).</p>
 <h3 id="recon">recon</h3>
 <p><a href="https://ferd.github.io/recon/">https://ferd.github.io/recon/</a></p>
-<pre><code>./recon/scripts/erl_crashdump_analyzer.sh &lt;crashdump&gt;
+<pre tabindex="0"><code>./recon/scripts/erl_crashdump_analyzer.sh &lt;crashdump&gt;
 
 analyzing erl_crash.dump, generated on:  Tue Apr 5 12:30:26 2016
 
@@ -198,7 +198,7 @@ Process States when crashing (sum):
 для инспекции состояния ноды, трассировки и т.д.</p>
 <p>Вот например скрипт, который показывает работающие (running) процессы с
 количеством сообщений в mailbox&rsquo;е &gt;= <code>threshold</code>:</p>
-<pre><code>$ awk -v threshold=1 -f ./recon/script/queue_fun.awk erl_crash.dump                                                                                                                                         MESSAGE QUEUE LENGTH: CURRENT FUNCTION
+<pre tabindex="0"><code>$ awk -v threshold=1 -f ./recon/script/queue_fun.awk erl_crash.dump                                                                                                                                         MESSAGE QUEUE LENGTH: CURRENT FUNCTION
 ======================================
 1: gen_server:loop/6
 1: gen:do_call/4

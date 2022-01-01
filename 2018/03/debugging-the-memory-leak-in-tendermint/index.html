@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -205,7 +205,7 @@ and running a <code>Node</code>.</p>
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>)
 <span style="color:#a6e22e">pprof</span>.<span style="color:#a6e22e">Lookup</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">goroutine</span><span style="color:#960050;background-color:#1e0010">”</span>).<span style="color:#a6e22e">WriteTo</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stdout</span>, <span style="color:#ae81ff">1</span>)</code></pre></div>
 <p>2 minutes later I discovered the real reason:</p>
-<pre><code>114 @ 0x42f2bc 0x42f3ae 0x440794 0x4403b9 0x468002 0x9fe32d 0x9ff78f 0xa025ed 0x45e571
+<pre tabindex="0"><code>114 @ 0x42f2bc 0x42f3ae 0x440794 0x4403b9 0x468002 0x9fe32d 0x9ff78f 0xa025ed 0x45e571
 # 0x4403b8 sync.runtime_Semacquire+0x38 /usr/lib/go-1.9/src/runtime/sema.go:56
 # 0x468001 sync.(*WaitGroup).Wait+0x71 /usr/lib/go-1.9/src/sync/waitgroup.go:131
 # 0x9fe32c github.com/tendermint/tendermint/vendor/github.com/tendermint/tmlibs/clist.(*CList).FrontWait+0x2c /home/vagrant/go/src/github.com/tendermint/tendermint/vendor/github.com/tendermint/tmlibs/clist/clist.go:233

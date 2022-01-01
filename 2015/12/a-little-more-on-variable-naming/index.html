@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -108,14 +108,14 @@ html {
 <span style="color:#75715e">// example
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>)
 </code></pre></div><p>В Ruby есть библиотека <a href="http://api.rubyonrails.org/v2.3/classes/ActiveSupport/CoreExtensions/Numeric/Time.html">ActiveSupport</a>:</p>
-<pre><code>TTL = 20.seconds
+<pre tabindex="0"><code>TTL = 20.seconds
 </code></pre><p>Кстати, TTL для отдельного столбца <a href="https://github.com/apache/hbase/blob/master/hbase-client/src/main/java/org/apache/hadoop/hbase/client/Mutation.java#L444">задается в
 мс</a>.
 В примере выше оказались секунды.</p>
 <h2 id="переменные-под-прикрытием">Переменные под прикрытием</h2>
 <p>Зачастую вижу в коде в одном месте переменная называется <code>list_id</code>, а в функции
 куда она передается - <code>dest_id</code>.</p>
-<pre><code># first_class.rb
+<pre tabindex="0"><code># first_class.rb
 list_id = 1
 call(list_id, ...)
 
@@ -134,19 +134,19 @@ end
 <h2 id="какои-тип">Какой тип?</h2>
 <p>В языках со строгой типизацией (в частности, в Erlang) мы получим ошибку в
 рантайме, если попытаемся склеить число со списком:</p>
-<pre><code>1 ++ &quot;abc&quot;.
+<pre tabindex="0"><code>1 ++ &quot;abc&quot;.
 ** exception error: bad argument
      in operator  ++/2
         called as 1 ++ &quot;abc&quot;
 </code></pre><p>потому что отсутствует автоматическое приведение типов. Проблема тут в том, что
 ты не можешь узнать тип переменной исходя из ее имени:</p>
-<pre><code>call(ListId,...) -&gt;
+<pre tabindex="0"><code>call(ListId,...) -&gt;
   Str = integer_to_list(ListId),
   ...
 </code></pre><p>сюда в результате рефакторинга может прийти строка и все попадает нафиг.</p>
 <p>Опытным путем было установлено, что добавление типа к имени переменной помогает
 избегать подобных багов.</p>
-<pre><code>call(ListIdStr,...) -&gt;
+<pre tabindex="0"><code>call(ListIdStr,...) -&gt;
   ...
 </code></pre><p>Еще конечно выручает <a href="http://www.erlang.org/doc/man/dialyzer.html">dialyzer</a>
 или его аналоги: <a href="https://andreacensi.github.io/contracts/">PyContracts</a>,

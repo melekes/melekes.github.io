@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -137,12 +137,12 @@ it has become a de facto standard for Erlang applications.</p>
 <p>Usually, when you look through log files in Ruby (e.g. puma.log), you can say
 &ldquo;we started processing at XXX and finished at YYY&rdquo; and it will be more or less
 accurate.</p>
-<pre><code>I, [2015-04-31T03:04:20.613116 #28143]  INFO -- : Started
+<pre tabindex="0"><code>I, [2015-04-31T03:04:20.613116 #28143]  INFO -- : Started
 ...
 I, [2015-04-31T03:04:21.345985 #28143]  INFO -- : Finished
 </code></pre><p>So the first thing I did, when I needed to find a bottleneck in one part of our
 system, was looking at log timings. Wrong move!</p>
-<pre><code>2015-05-25 16:50:42.229 [info] Started
+<pre tabindex="0"><code>2015-05-25 16:50:42.229 [info] Started
 2015-05-25 16:50:42.235 [info] Finished
 </code></pre><p>6ms - wow!</p>
 <p>It is like an old shabby van with free candies. You have a feeling that

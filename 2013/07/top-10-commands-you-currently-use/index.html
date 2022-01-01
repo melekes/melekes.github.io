@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -81,7 +81,7 @@ html {
 <code>./something</code>, сортируется и обрезается до нужной длины.</p>
 <p><a href="http://linux.byexamples.com/archives/332/what-is-your-10-common-linux-commands/">Источник</a></p>
 <p>Пример вывода:</p>
-<pre><code>13185  31.8532%   git
+<pre tabindex="0"><code>13185  31.8532%   git
 21430  14.3014%   gst
 3706   7.301406071%   vim
 4687   6.87069%   cd
@@ -103,7 +103,7 @@ alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;git 
 другой программы слегка модифицировав предыдущий скрипт:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">history|grep vagrant| awk <span style="color:#e6db74">&#39;{CMD[$3]++;count++;}END { for (a in CMD)print CMD[a] &#34; &#34; CMD[a]/count*100 &#34;% &#34; a;}&#39;</span> | grep -v <span style="color:#e6db74">&#34;./&#34;</span> | column -c3 -s <span style="color:#e6db74">&#34; &#34;</span> -t | sort -nr | nl |  head -n10
 </code></pre></div><p>Пример вывода:</p>
-<pre><code>1   193  23.9752%   ssh
+<pre tabindex="0"><code>1   193  23.9752%   ssh
 2   166  20.6211%   up
 3   98   12.1739%   halt
 4   63   7.82609%   reload

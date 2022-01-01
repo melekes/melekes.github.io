@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -119,9 +119,9 @@ format, suitable for
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eep:<span style="color:#a6e22e">convert_tracing</span>(<span style="color:#e6db74">&#34;appname&#34;</span>).
 </code></pre></div><p>If you still do not have kcachegrind, go install it:</p>
 <p>In Ubuntu:</p>
-<pre><code>$ sudo apt-get install kcachegrind
+<pre tabindex="0"><code>$ sudo apt-get install kcachegrind
 </code></pre><p>After the conversion has finished, we may begin analyzing the results.</p>
-<pre><code>$ kcachegrind callgrind.out.appname
+<pre tabindex="0"><code>$ kcachegrind callgrind.out.appname
 </code></pre><figure><img src="https://www.homeonrails.com/images/posts/2016-05-25-profiling-in-erlang/eep.png"/>
 </figure>
 
@@ -132,14 +132,14 @@ format, suitable for
 <li>percentage relative to its parent (&ldquo;Relative to Parent&rdquo;) is even better, otherwise, you can&rsquo;t understand the damn thing.</li>
 </ul>
 <p>&ldquo;No Grouping&rdquo; and &ldquo;Function Cycle&rdquo; do not give a clear picture of what is
-happening. The first option leads to the top lines: <code>gen_server:decode_msg</code>,<code>gen_server:loop</code>, and only indicates that more time spent in <code>gen_server:*</code> -
+happening. The first option leads to the top lines: <code>gen_server:decode_msg</code>,<code> gen_server:loop</code>, and only indicates that more time spent in <code>gen_server:*</code> -
 thank you, captain! I didn&rsquo;t understand the results of the second option.</p>
 <h2 id="eflame2">eflame2</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> eflame2:<span style="color:#a6e22e">write_trace</span>(global_calls_plus_new_procs, <span style="color:#e6db74">&#34;/tmp/ef.test.0&#34;</span>, all, <span style="color:#ae81ff">10</span><span style="color:#f92672">*</span><span style="color:#ae81ff">1000</span>).
 <span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span> eflame2:<span style="color:#a6e22e">format_trace</span>(<span style="color:#e6db74">&#34;/tmp/ef.test.0&#34;</span>, <span style="color:#e6db74">&#34;/tmp/ef.test.0.out&#34;</span>).
 </code></pre></div><p>According to the docs, we need to run tracing in a separate process. But when
 I&rsquo;d tried to do so, I got &ldquo;Segmentation fault&rdquo;.</p>
-<pre><code>$ cat /tmp/ef.test.0.out | ./flamegraph.riak-color.pl &gt; output.svg
+<pre tabindex="0"><code>$ cat /tmp/ef.test.0.out | ./flamegraph.riak-color.pl &gt; output.svg
 </code></pre><figure><img src="https://www.homeonrails.com/images/posts/2016-05-25-profiling-in-erlang/eflame2.png"/>
 </figure>
 
@@ -152,7 +152,7 @@ look at the following code:</p>
 <span style="color:#66d9ef">end</span>)
 </code></pre></div><p><code>Time</code> should be equal to <code>Time1 + Time2</code>, right?</p>
 <p>Well, not in reality. <strong>Time is often greater than Time1 + Time2</strong> (even if I
-measure it, say 100 times). I think it is because <code>timer:tc</code> uses<code>os:timestamp</code> and <code>Time</code> includes some switching (when scheduler runs other
+measure it, say 100 times). I think it is because <code>timer:tc</code> uses<code> os:timestamp</code> and <code>Time</code> includes some switching (when scheduler runs other
 process).</p>
 <p>Useful links:</p>
 <ul>

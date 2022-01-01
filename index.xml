@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 08 Sep 2021 13:33:01 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jan 2022 15:52:01 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My favorite books of 2021</title>
+      <link>https://www.homeonrails.com/2022/01/my-favorite-books-of-2021/</link>
+      <pubDate>Sat, 01 Jan 2022 15:52:01 +0400</pubDate>
+      
+      <guid>https://www.homeonrails.com/2022/01/my-favorite-books-of-2021/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://homeonrails.s3.eu-north-1.amazonaws.com/assets/images/2022-01-01-my-favorite-books-of-2021/goodreads_year_in_review_2021.jpg&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Read 61 books in 2021.&lt;/p&gt;
+&lt;p&gt;The shortest book was &amp;ldquo;The Death of Ivan Ilych&amp;rdquo; by Leo
+Tolstoy, the longest &amp;ldquo;Shogun&amp;rdquo; by James Clavell.&lt;/p&gt;
+&lt;p&gt;Average book length: 375 pages.&lt;/p&gt;
+&lt;p&gt;Most popular: &amp;ldquo;Memoirs of a Geisha&amp;rdquo; by Arthur Golden. Least popular: &amp;ldquo;Дневник
+Реалиста&amp;rdquo; by Илья Волочков.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>My favorite books of 2020</title>
       <link>https://www.homeonrails.com/2021/09/my-favorite-books-of-2020/</link>
@@ -144,7 +161,7 @@ shocked me the most:&lt;/p&gt;</description>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“I don’t care that they stole my idea... I care that they don’t have any of their own.” —Nikola Tesla&lt;/p&gt;&amp;mdash; Garry Tan 陈嘉兴 🌐 (@garrytan) &lt;a href=&#34;https://twitter.com/garrytan/status/1185349579639685121?ref_src=twsrc%5Etfw&#34;&gt;October 19, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“I don’t care that they stole my idea... I care that they don’t have any of their own.” —Nikola Tesla&lt;/p&gt;&amp;mdash; garrytan.eth 陈嘉兴 🥑🌐🦇🔊🍌🔺(∞, ∞) (@garrytan) &lt;a href=&#34;https://twitter.com/garrytan/status/1185349579639685121?ref_src=twsrc%5Etfw&#34;&gt;October 19, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
     
@@ -334,13 +351,13 @@ still happy with the result - 49 books!&lt;/p&gt;</description>
       
       <guid>https://www.homeonrails.com/2018/11/october-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Excellent hand-picked articles &amp;amp; videos about programming from all over the Internet&amp;rdquo;.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; defer makes you sloppy. Try to avoid when dealing with mutexes&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; defer makes you sloppy. Try to avoid when dealing with mutexes&lt;/p&gt;&amp;mdash; melekes 🥕 (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;defer + mutexes makes you forget that&lt;br&gt;&lt;br&gt;a) while we&amp;#39;re locked, nobody else can access the object (unless its read lock) -&amp;gt; better to unlock earlier&lt;br&gt;b) when you put more code &amp;amp; call other functions between lock / unlock, it becomes easier to deadlock&lt;br&gt;c) defers are slow&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;defer + mutexes makes you forget that&lt;br&gt;&lt;br&gt;a) while we&amp;#39;re locked, nobody else can access the object (unless its read lock) -&amp;gt; better to unlock earlier&lt;br&gt;b) when you put more code &amp;amp; call other functions between lock / unlock, it becomes easier to deadlock&lt;br&gt;c) defers are slow&lt;/p&gt;&amp;mdash; melekes 🥕 (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More times you don&amp;#39;t need a defer &lt;a href=&#34;https://t.co/DYrbJQJwgS&#34;&gt;pic.twitter.com/DYrbJQJwgS&lt;/a&gt;&lt;/p&gt;&amp;mdash; Anton Kaliaev (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More times you don&amp;#39;t need a defer &lt;a href=&#34;https://t.co/DYrbJQJwgS&#34;&gt;pic.twitter.com/DYrbJQJwgS&lt;/a&gt;&lt;/p&gt;&amp;mdash; melekes 🥕 (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
     
@@ -613,7 +630,7 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Sat, 30 Dec 2017 19:29:11 -0500</pubDate>
       
       <guid>https://www.homeonrails.com/2017/12/route-in-ecuador/</guid>
-      <description>&lt;p&gt;_(image credit: &lt;a href=&#34;https://www.flickr.com/photos/wurglitsch/9466325427)_&#34;&gt;https://www.flickr.com/photos/wurglitsch/9466325427)_&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;(image credit: &lt;a href=&#34;https://www.flickr.com/photos/wurglitsch/9466325427)&#34;&gt;https://www.flickr.com/photos/wurglitsch/9466325427)&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This route was suggested to me by girl from Ecuador (thanks Carla), whom I met
 in Mexico on Dec. 10, 2017.&lt;/p&gt;</description>
     </item>
@@ -2281,7 +2298,7 @@ manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</descriptio
       <guid>https://www.homeonrails.com/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
 &amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
 Author: Anton Kaliaev ...
 Date:   Mon Apr 14 13:20:06 2014 +0400
 

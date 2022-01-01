@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -84,17 +84,17 @@ html {
 <p>Создать подпись и настроить git очень просто. Итак, давайте сделаем это:</p>
 <h3 id="1-создаем-подпись">1. Создаем подпись</h3>
 <p>Ставим gpg:</p>
-<pre><code># Ubuntu
+<pre tabindex="0"><code># Ubuntu
 sudo apt-get install gpa seahorse
 # Mac
 brew install gpg
 </code></pre><p>Создаем RSA пару (публичный и приватный ключ):</p>
-<pre><code>gpg --gen-key
+<pre tabindex="0"><code>gpg --gen-key
 </code></pre><p>(размер не ниже 2048, но и <a href="https://gnupg.org/faq/gnupg-faq.html#no_default_of_rsa4096">больше не особо
 нужно</a>; срок
 годности по желанию)</p>
 <p>Копируем полученный публичный ключ на <a href="https://github.com/settings/keys">Github</a>:</p>
-<pre><code>gpg --list-secret-keys --keyid-format LONG
+<pre tabindex="0"><code>gpg --list-secret-keys --keyid-format LONG
 
 -------------------------------
 sec   2048R/&lt;COPY_LONG_KEY&gt;  2017-01-14 [expires: 2019-01-14]
@@ -103,7 +103,7 @@ ssb   2048R/098AA7C27DD57ACC 2017-01-14
 
 gpg --armor --export &lt;PASTE_LONG_KEY_HERE&gt;
 </code></pre><h3 id="2-настраиваем-git">2. Настраиваем git</h3>
-<pre><code>gpg --list-secret-keys
+<pre tabindex="0"><code>gpg --list-secret-keys
 
 -------------------------------
 sec   2048R/&lt;COPY_SHORT_KEY&gt; 2017-01-14 [expires: 2019-01-14]
@@ -120,17 +120,17 @@ git config --global tag.gpgsign true
 который интегрируется с Mac OS keychain. Переходим к шагу 4.</p>
 <p>Если пользуетесь Linux, то придется воспользоваться встроенным <code>gpg-agent</code>.</p>
 <p>Создаем конфиг <code>.gnupg/gpg-agent.conf</code> со следующим содержимым:</p>
-<pre><code>default-cache-ttl 28800
+<pre tabindex="0"><code>default-cache-ttl 28800
 max-cache-ttl 28800
 </code></pre><p>28800 - 8 часов (кто-то ставит 1 час).</p>
 <p>В конфиге <code>.gnupg/gpg.conf</code> указываем:</p>
-<pre><code>use-agent
+<pre tabindex="0"><code>use-agent
 batch
 </code></pre><p><code>batch</code> убирает противные сообщения вида: <code>You need a passphrase to unlock the secret key</code>. Да, они по неведомой причине появляются даже, если агент
 закэшировал пароль.</p>
 <p>Не забываем запустить <code>gpg-agent</code>:</p>
 <p>fish:</p>
-<pre><code>if not begin
+<pre tabindex="0"><code>if not begin
     # Is the agent running already? Does the agent-info file exist, and if so,
     # is there a process with the pid given in the file?
     [ -f ~/.gpg-agent-info ]

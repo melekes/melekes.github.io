@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -86,7 +86,7 @@ Manager</a> (сокращенно, tpm):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 </code></pre></div><p><em>(примечание: нужен tmux &gt;= 1.9)</em></p>
 <p>Теперь добавим следующее в конец .tmux.conf:</p>
-<pre><code># .tmux.conf
+<pre tabindex="0"><code># .tmux.conf
 
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
@@ -100,7 +100,7 @@ run '~/.tmux/plugins/tpm/tpm'
 <p>Для комфортной работы стоит добавить пару опций. По умолчанию, tmux-continuum
 (плагин, который автоматически сохраняет tmux окружение) не восстанавливает его
 при запуске tmux. Что ж, исправим это недоразумение:</p>
-<pre><code># .tmux.conf
+<pre tabindex="0"><code># .tmux.conf
 
 set -g @continuum-restore 'on'
 </code></pre><p>Для того, чтобы при загрузке восстанавливались Vim (Neovim) сессии, нужно</p>
@@ -108,7 +108,7 @@ set -g @continuum-restore 'on'
 <li>установить плагин <a href="https://github.com/tpope/vim-obsession">https://github.com/tpope/vim-obsession</a></li>
 <li>добавить пару строк в .tmux.conf:</li>
 </ol>
-<pre><code># .tmux.conf
+<pre tabindex="0"><code># .tmux.conf
 
 # for vim
 set -g @resurrect-strategy-vim 'session'
@@ -119,7 +119,7 @@ set -g @resurrect-strategy-nvim 'session'
 <li>ssh, psql, rails console, которые были запущены в прошлый раз. Для этого,
 правда, надо добавить их в конфиг:</li>
 </ul>
-<pre><code># .tmux.conf
+<pre tabindex="0"><code># .tmux.conf
 
 set -g @resurrect-processes 'ssh psql mysql sqlite3'
 </code></pre><p>Также у данного плагина (<a href="https://github.com/tmux-plugins/tmux-resurrect">https://github.com/tmux-plugins/tmux-resurrect</a>) есть и

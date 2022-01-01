@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -71,7 +71,7 @@ html {
   <time datetime=2016-04-28T11:47:36Z class="post-date">Thu, Apr 28, 2016</time>
   <p>This is based on Felix Geisendörfer <a href="http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html">Vim Trick: Open current line on GitHub</a>.</p>
 <p><strong>Step 1. Create a git alias</strong></p>
-<pre><code># ~/.gitconfig
+<pre tabindex="0"><code># ~/.gitconfig
 [alias]
   url =! bash -c 'git config --get remote.origin.url | sed -E &quot;s/.+\\.ru\\\\/\\(.+\\)\\\\/\\(.+\\)\\.git$/https:\\\\/\\\\/stash\\\\.yourcompanyname\\\\.com\\\\/projects\\\\/\\\\1\\\\/repos\\\\/\\\\2\\\\/browse/g&quot;'
 </code></pre><p>Change domain name from &lsquo;stash.yourcompanyname.com&rsquo; to something real. Pay attention to &lsquo;.&rsquo; escaping.</p>

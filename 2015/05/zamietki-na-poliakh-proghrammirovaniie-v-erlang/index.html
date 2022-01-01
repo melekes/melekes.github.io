@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.91.2" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2022. All rights reserved. </p>
   </div>
 </aside>
 
@@ -85,7 +85,7 @@ html {
 <li>создавайте процесс на &ldquo;сущность&rdquo; (например, сообщение, входящий файл);</li>
 <li>используйте spawn_link и spawn_monitor, а не <code>link(spawn(...))</code> - первые атомарны;</li>
 <li>не копируйте MaxR / MaxT из модуля в модуль - их нужно выбирать с умом (<a href="http://www.erlang.org/doc/man/supervisor.html);">http://www.erlang.org/doc/man/supervisor.html);</a></li>
-<li>используйте circuit breakers (<a href="https://github.com/jlouis/fuse,">https://github.com/jlouis/fuse,</a> <a href="https://github.com/klarna/circuit_breaker);">https://github.com/klarna/circuit_breaker);</a></li>
+<li>используйте circuit breakers (<a href="https://github.com/jlouis/fuse">https://github.com/jlouis/fuse</a>, <a href="https://github.com/klarna/circuit_breaker);">https://github.com/klarna/circuit_breaker);</a></li>
 <li>не используйте infinity;</li>
 <li><code>file:write(&quot;/tmp/procs.txt&quot;, erlang:system_info(procs))</code> - дамп информации обо всех процессах;</li>
 <li>не используйте Erlang для передачи больших кусков данных;</li>
