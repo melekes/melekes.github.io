@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.homeonrails.com/</loc>
+    <lastmod>2022-01-17T15:43:01+04:00</lastmod>
+  </url><url>
+    <loc>https://www.homeonrails.com/post/</loc>
+    <lastmod>2022-01-17T15:43:01+04:00</lastmod>
+  </url><url>
+    <loc>https://www.homeonrails.com/2022/01/rough-notes-2-axelar/</loc>
+    <lastmod>2022-01-17T15:43:01+04:00</lastmod>
+  </url><url>
+    <loc>https://www.homeonrails.com/tags/roughnotes/</loc>
+    <lastmod>2022-01-17T15:43:01+04:00</lastmod>
+  </url><url>
+    <loc>https://www.homeonrails.com/tags/</loc>
+    <lastmod>2022-01-17T15:43:01+04:00</lastmod>
+  </url><url>
     <loc>https://www.homeonrails.com/tags/books/</loc>
     <lastmod>2022-01-01T15:52:01+04:00</lastmod>
   </url><url>
-    <loc>https://www.homeonrails.com/</loc>
-    <lastmod>2022-01-01T15:52:01+04:00</lastmod>
-  </url><url>
     <loc>https://www.homeonrails.com/2022/01/my-favorite-books-of-2021/</loc>
-    <lastmod>2022-01-01T15:52:01+04:00</lastmod>
-  </url><url>
-    <loc>https://www.homeonrails.com/post/</loc>
-    <lastmod>2022-01-01T15:52:01+04:00</lastmod>
-  </url><url>
-    <loc>https://www.homeonrails.com/tags/</loc>
     <lastmod>2022-01-01T15:52:01+04:00</lastmod>
   </url><url>
     <loc>https://www.homeonrails.com/2021/09/my-favorite-books-of-2020/</loc>
@@ -39,9 +45,6 @@
     <lastmod>2020-10-14T10:03:29+04:00</lastmod>
   </url><url>
     <loc>https://www.homeonrails.com/2020/05/rough-notes-1-lazy-ledger/</loc>
-    <lastmod>2020-05-07T15:49:01+04:00</lastmod>
-  </url><url>
-    <loc>https://www.homeonrails.com/tags/roughnotes/</loc>
     <lastmod>2020-05-07T15:49:01+04:00</lastmod>
   </url><url>
     <loc>https://www.homeonrails.com/2020/04/monthly-art-number-45/</loc>

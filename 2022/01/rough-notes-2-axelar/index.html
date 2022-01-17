@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rough notes #2: Axelar &middot; Home on Rails</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/hyde.css">
+  <link href="https://fonts.googleapis.com/css?family=Literata|Neucha&display=swap" rel="stylesheet">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.homeonrails.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://www.homeonrails.com/favicon.png">
+
+  
+  <style>
+.pagination {
+  list-style-type: none;
+}
+
+.pagination .page-item {
+  display: inline;
+}
+
+html {
+  font-family: 'Literata', serif;
+}
+
+.sidebar-about h1, .post h1 {
+  font-family: 'Neucha', cursive;
+}
+</style>
+
+</head>
+
+  <body class="theme-base-0d ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.homeonrails.com/"><h1>Home on Rails</h1></a>
+      <p class="lead">
+       Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.homeonrails.com/">Home</a> </li>
+        <li><a href="https://www.homeonrails.com/about"> About author </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.homeonrails.com/tags"> Tags </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2022. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Rough notes #2: Axelar</h1>
+  <time datetime=2022-01-17T15:43:01&#43;0400 class="post-date">Mon, Jan 17, 2022</time>
+  <p><a href="https://axelar.network/wp-content/uploads/2021/07/axelar_whitepaper.pdf">Axelar Network: Connecting Applications with Blockchain
+Ecosystems</a>
+by Sergey Gorbunov and Georgios Vlachos, published in January 2021.</p>
+<blockquote>
+<p>&ldquo;To enable applications to communicate across blockchain ecosystems
+frictionlessly, we propose Axelar. Axelar stack provides a decentralized
+network, protocols, tools, and APIs that allow simple cross-chain
+communication. Axelar protocol suite consists of cross-border routing and
+transfer protocols.&rdquo;</p>
+</blockquote>
+<p>The two questions the authors pose are:</p>
+<ol>
+<li>Can we enable application builders to build on the best platform for their needs while still communicating across multiple blockchain ecosystems?</li>
+<li>Can we allow users to interact with any application on any blockchain directly from their wallets?</li>
+</ol>
+<p>High-level goals:</p>
+<ul>
+<li>no heavy engineering work from ecosystem developers</li>
+<li>minimal effect to interoperability if a blockchain itself upgrades</li>
+<li>a simple protocol to lock, unlock, transfer tokens, and communicate with other applications</li>
+</ul>
+<p>While <a href="https://alexeizamyatin.medium.com/interoperability-deep-dive-xcmp-vs-ibc-vs-optics-e365c72180cb">multiple interoperability
+protocols</a>
+now exist, their adoption is still fairly limited. It&rsquo;s more or less clear that
+the future is <a href="https://vitalik.ca/general/2021/12/06/endgame.html">multichain</a>,
+but the road ahead is fuzzy. Most ecosystems currently racing towards biggest
+adoption / market cap and their developers don&rsquo;t have time for any cross-chain
+development. As a result, <a href="https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8">many custom bridges had
+appeared</a>.</p>
+<p>Existing solutions do not scale well (&ldquo;We have also seen a few
+other single-purpose bridges by platform developers that rewrite
+state-transition logic in smart contracts to bridge to other ecosystems [1, 7].
+They suffer from multiple scalability issues, do not allow the ecosystem to
+scale uniformly, and introduce additional dependencies for applications&rdquo;).</p>
+<blockquote>
+<p>Why just not use IBC?</p>
+</blockquote>
+<p>There&rsquo;s a claim that IBC requires Tendermint consensus, which is false. Any
+consensus with finality is supported. IBC does require in-protocol light
+clients, but so does Axelar (see below). IBC does not provide any high-level
+application protocols (see below).</p>
+<h2 id="general-info">General info</h2>
+<figure><img src="https://www.homeonrails.com/images/posts/2022-01-17-routh-notes-2-axelar/axelar.jpg"/>
+</figure>
+
+<p>At the base layer there&rsquo;s a dPoS blockchain that is responsible for storing
+the state of multiple blockchains that the platform is connected to.
+&ldquo;Governance rules allow network participants to enact protocol decisions such as
+which blockchains to bridge and which assets to support.&rdquo;</p>
+<p>&ldquo;The validators collectively maintain threshold signature accounts
+on other blockchains (e.g., 80% of validators must approve and co-sign any
+transaction out of it), which allows them to lock and unlock assets and state
+across chains and to post state on other blockchains, the “outgoing bridges.&rdquo;</p>
+<p>NOTE that threshold signature bridges can be
+<a href="https://medium.com/l2beat/is-the-6b-locked-in-l2-secure-895cba23d026">unsecure</a>,
+but this is less the case here if the validator set is sufficiently large and
+decentralized.</p>
+<p>&ldquo;As part of consensus, validators run light-client software of other
+blockchains, allowing them to verify the state of other blockchains. The
+validators report these states to the Axelar blockchain, and once enough of
+them report, the state of Bitcoin, Ethereum, and other chains is recorded on
+Axelar.&rdquo;</p>
+<p>In the beginning validator generate threshold key for each outgoing bridge.
+When the validator set changes, the key is regenerated.</p>
+<p>&ldquo;Axelar sets the safety threshold to 90%, meaning that almost all validators will need
+to collude to withdraw any funds that are locked by its network or forge state proofs&rdquo;</p>
+<h3 id="network-synchrony-assumptions">Network synchrony assumptions</h3>
+<p>&ldquo;When connecting chains through Axelar, the connection works assuming the
+strongest network assumptions out of these chains, which is synchrony in the
+case of connecting Bitcoin and Cosmos, for instance.&rdquo;</p>
+<h2 id="what-if-the-network-stalls-or-a-connected-chain-breaks">What if the network stalls or a connected chain breaks?</h2>
+<p>&ldquo;To address any potential stall of the Axelar network itself, each threshold
+bridge account on a blockchain X that the Axelar validators collectively
+control has an “emergency unlock key”&rdquo;</p>
+<p>&ldquo;If chain X that is connected to Axelar breaks, there are a couple options:</p>
+<ul>
+<li>Impose limits on the USD value of assets that can be moved in/out of X on any single day. Thus
+a malicious chain X can only steal a small fraction of all assets that are bridged to it before Axelar
+validators detect this, and the governance mechanisms from the following bullets kick in.</li>
+<li>The Axelar governance module can be used to vote on what happens in those situations. For instance,
+if there is a benign bug and the community restarts X, Axelar governance can determine to restart the
+connection from where it left off.</li>
+<li>If ETH had moved to X, a custom Ethereum recovery key can determine what happens to the ETH
+assets.&rdquo;</li>
+</ul>
+<h2 id="cross-chain-gateway-protocol-cgp">Cross-Chain Gateway Protocol (CGP)</h2>
+<p>This protocol allows:</p>
+<ul>
+<li>posting info about the state of one blockchain into the
+state of another blockchain</li>
+<li>transferring tokens</li>
+</ul>
+<p>The user posts a request q on one of the bridge accounts. Validators who need
+to validate both chains (what if they don&rsquo;t?) query the state. Once 2/3+
+validators returns the same result, it&rsquo;s signed and returned to the user.</p>
+<p>Transferring is more or less similar (pegged tokens are created for those
+frozen on a bridge account).</p>
+<h2 id="cross-chain-transfer-protocol-ctp">Cross-Chain Transfer Protocol (CTP)</h2>
+<p>&ldquo;Applications can leverage cross-chain features by calling CTP queries
+analogous to HTTP/HTTPS GET/POST methods. These queries are subsequently picked
+up by CGP layer for execution and results are returned back to the users.</p>
+<ul>
+<li>
+<p>CTP Queries. Application developers can host their applications on any chain
+and integrate their smart contracts with threshold bridge accounts to execute
+CTP queries.</p>
+</li>
+<li>
+<p>Threshold bridge accounts. Suppose an application developer builds their
+contracts on chain A. Then, they would reference threshold bridge contracts to
+obtain cross-chain support.</p>
+<p>This contract allows applications to:</p>
+<ul>
+<li>Register a blockchain it would like to communicate with.</li>
+<li>Register assets on that blockchain that it would like to leverage.</li>
+<li>Perform operations over the assets such as accept deposits, process withdrawals, and other functions (similar to, say, ERC-20 contract calls).&rdquo;</li>
+</ul>
+</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Axelar is a common relay chain to forward messages from one blockchain to
+another (&ldquo;decentralized crosschain read/write oracle&rdquo;) using
+threshold-signature based bridges and light clients.</p>
+<p>The novelty comes from the set of high-level protocols (CGP and CTP) for
+cross-chain application calls, which is unavailable in the existing protocols
+(e.g. IBC).</p>
+<hr>
+<p>To learn more, you can go to <a href="https://axelar.network/">their website</a>. Don&rsquo;t
+forget to like this and subscribe. Joking :) I don&rsquo;t care. I read whitepapers
+for fun.</p>
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "homeonrails" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>
