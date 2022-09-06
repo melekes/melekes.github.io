@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +71,7 @@ html {
   <time datetime=2014-01-09T00:00:00Z class="post-date">Thu, Jan 9, 2014</time>
   <p>When I first encountered this problem it slightly
 puzzled me. &ldquo;Why can not I press <code>ctrl-c</code> to copy the text and
-<code>ctrl-v</code> to paste?&quot;- I asked myself. Indeed, the majority of source code editors
+<code>ctrl-v</code> to paste?&rdquo;- I asked myself. Indeed, the majority of source code editors
 able to do this. And yes, I got used to this dammit!</p>
 <p>Well, Vim is primarily a console text editor. Of course, there is a GUI version - GVim (or MacVim for MacOS), but most prefer to stay in the console, where we can use such wonderful tools as <a href="http://en.wikipedia.org/wiki/Tmux">tmux</a> and <a href="https://github.com/remiprev/teamocil">teamochil</a> *.</p>
 <h3 id="first-attempt">First attempt</h3>
@@ -80,27 +80,27 @@ able to do this. And yes, I got used to this dammit!</p>
 <p>And at first, it suited me. But it has lasted a short time and I started
 looking for other ways out. The next approach was to use of custom bindings for tmux, which use xclip utility (pbcopy on MacOS) to copy the contents of the system&rsquo;s buffer into tmux&rsquo;s buffer and back.</p>
 <p>For this you was have to write:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># move x clipboard into tmux paste buffer</span>
-bind C-p run <span style="color:#e6db74">&#34;tmux set-buffer \&#34;</span><span style="color:#66d9ef">$(</span>xclip -o<span style="color:#66d9ef">)</span><span style="color:#e6db74">\&#34;; tmux paste-buffer&#34;</span>
-<span style="color:#75715e"># move tmux copy buffer into x clipboard</span>
-bind C-y run <span style="color:#e6db74">&#34;tmux save-buffer - | xclip -i&#34;</span>
-</code></pre></div><p>in your <code>.tmux.conf</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># move x clipboard into tmux paste buffer</span>
+</span></span><span style="display:flex;"><span>bind C-p run <span style="color:#e6db74">&#34;tmux set-buffer \&#34;</span><span style="color:#66d9ef">$(</span>xclip -o<span style="color:#66d9ef">)</span><span style="color:#e6db74">\&#34;; tmux paste-buffer&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># move tmux copy buffer into x clipboard</span>
+</span></span><span style="display:flex;"><span>bind C-y run <span style="color:#e6db74">&#34;tmux save-buffer - | xclip -i&#34;</span>
+</span></span></code></pre></div><p>in your <code>.tmux.conf</code>.</p>
 <p>But do not rush to do it :)</p>
 <h3 id="third-attempt-the-lucky-one">Third attempt (the lucky one)</h3>
 <p>While getting to know Vim more tightly, I learned that it has support
 for system buffer. To work with it, Vim has two registers <code>*</code> and <code>+</code>
 (see <code>:h registers</code>). &ldquo;Sounds great&rdquo; - I thought.</p>
 <p>One catch - Vim must be compiled with <code>+clipboard</code>. To check whether you have support for clipboard run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ vim --version | grep clipboard
-</code></pre></div><p>The easiest way to fix this <strong>for most Linux&rsquo;es</strong> is to install GVim (but continue to use its console version).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install vim-gnome
-</code></pre></div><p><strong>For MacOS</strong> you can get Vim with <code>+clipboard</code> via Homebrew or download and install MacVim <a href="http://code.google.com/p/macvim/downloads/list">here</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew install vim
-</code></pre></div><p>Look inside /Applications/MacVim.app/Contents/MacOS, and you’ll see that the app provides two binaries: MacVim, which launches the GUI, and Vim, which runs in the Terminal with the same feature set. Both versions include the <code>+clipboard</code> feature.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vim --version | grep clipboard
+</span></span></code></pre></div><p>The easiest way to fix this <strong>for most Linux&rsquo;es</strong> is to install GVim (but continue to use its console version).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo apt-get install vim-gnome
+</span></span></code></pre></div><p><strong>For MacOS</strong> you can get Vim with <code>+clipboard</code> via Homebrew or download and install MacVim <a href="http://code.google.com/p/macvim/downloads/list">here</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ brew install vim
+</span></span></code></pre></div><p>Look inside /Applications/MacVim.app/Contents/MacOS, and you’ll see that the app provides two binaries: MacVim, which launches the GUI, and Vim, which runs in the Terminal with the same feature set. Both versions include the <code>+clipboard</code> feature.</p>
 <p>The last thing left to do - something to get rid of the need to
 to type <code>&quot;*p</code> and <code>&quot;*y</code> prefixes. I don&rsquo;t want copy and paste between Vim and OS was some special occasion, I want everything to be transparent to the user. It turned out, you just need to add this line to your <code>.vimrc</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span> <span style="color:#75715e">&#34; or unnamedplus if you have X11</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>Now all operations such as <code>yy</code>, <code>D</code>, and <code>p</code> work with the clipboard. No need to prefix them with <code>&quot;*</code> or <code>&quot;+</code>. Sounds like magic, right?!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span> <span style="color:#75715e">&#34; or unnamedplus if you have X11</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Now all operations such as <code>yy</code>, <code>D</code>, and <code>p</code> work with the clipboard. No need to prefix them with <code>&quot;*</code> or <code>&quot;+</code>. Sounds like magic, right?!</p>
 <p>Example:</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -113,7 +113,7 @@ to type <code>&quot;*p</code> and <code>&quot;*y</code> prefixes. I don&rsquo;t 
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

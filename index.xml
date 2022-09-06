@@ -172,7 +172,7 @@ shocked me the most:&lt;/p&gt;</description>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“I don’t care that they stole my idea... I care that they don’t have any of their own.” —Nikola Tesla&lt;/p&gt;&amp;mdash; garrytan.eth 陈嘉兴 🥑🌐🦇🔊🍌🔺(∞, ∞) (@garrytan) &lt;a href=&#34;https://twitter.com/garrytan/status/1185349579639685121?ref_src=twsrc%5Etfw&#34;&gt;October 19, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“I don’t care that they stole my idea... I care that they don’t have any of their own.” —Nikola Tesla&lt;/p&gt;&amp;mdash; Garry Tan 陈嘉兴 (@garrytan) &lt;a href=&#34;https://twitter.com/garrytan/status/1185349579639685121?ref_src=twsrc%5Etfw&#34;&gt;October 19, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
     
@@ -335,7 +335,7 @@ or even a painting.&lt;/p&gt;</description>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;For my birthday this year, I did a 10-day silent vipassana meditation, this time in Pyin Oo Lwin, Myanmar 🇲🇲. We went into silence on the night of my birthday, the 19th. Here’s what I know 👇🏼&lt;/p&gt;&amp;mdash; jack⚡️ (@jack) &lt;a href=&#34;https://twitter.com/jack/status/1071575088695140353?ref_src=twsrc%5Etfw&#34;&gt;December 9, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;For my birthday this year, I did a 10-day silent vipassana meditation, this time in Pyin Oo Lwin, Myanmar 🇲🇲. We went into silence on the night of my birthday, the 19th. Here’s what I know 👇🏼&lt;/p&gt;&amp;mdash; jack (@jack) &lt;a href=&#34;https://twitter.com/jack/status/1071575088695140353?ref_src=twsrc%5Etfw&#34;&gt;December 9, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
     
@@ -361,15 +361,7 @@ still happy with the result - 49 books!&lt;/p&gt;</description>
       <pubDate>Sun, 04 Nov 2018 09:03:09 +0400</pubDate>
       
       <guid>https://www.homeonrails.com/2018/11/october-tech-picks/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Excellent hand-picked articles &amp;amp; videos about programming from all over the Internet&amp;rdquo;.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; defer makes you sloppy. Try to avoid when dealing with mutexes&lt;/p&gt;&amp;mdash; melekes 🥕 (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;defer + mutexes makes you forget that&lt;br&gt;&lt;br&gt;a) while we&amp;#39;re locked, nobody else can access the object (unless its read lock) -&amp;gt; better to unlock earlier&lt;br&gt;b) when you put more code &amp;amp; call other functions between lock / unlock, it becomes easier to deadlock&lt;br&gt;c) defers are slow&lt;/p&gt;&amp;mdash; melekes 🥕 (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More times you don&amp;#39;t need a defer &lt;a href=&#34;https://t.co/DYrbJQJwgS&#34;&gt;pic.twitter.com/DYrbJQJwgS&lt;/a&gt;&lt;/p&gt;&amp;mdash; melekes 🥕 (@akaliaev) &lt;a href=&#34;https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw&#34;&gt;November 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
+      <description>&lt;p&gt;&amp;ldquo;Excellent hand-picked articles &amp;amp; videos about programming from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -525,7 +517,8 @@ or even a painting.&lt;/p&gt;</description>
       <pubDate>Sat, 31 Mar 2018 15:46:21 +0200</pubDate>
       
       <guid>https://www.homeonrails.com/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</guid>
-      <description>Plea for Greek Independence by Eugène Delacroix (1826)   In 1889, Anton Chekhov writes to his brother Alexander: &amp;ldquo;My advice: in the play try to be original and as clever as possible, but do not be afraid to seem silly; we need free-thinking, but only the freethinker who is not afraid to write nonsense. Do not grind it, but be clumsy and impudent. Brevity is the soul of wit.</description>
+      <description>Plea for Greek Independence by Eugène Delacroix (1826) In 1889, Anton Chekhov writes to his brother Alexander: &amp;ldquo;My advice: in the play try to be original and as clever as possible, but do not be afraid to seem silly; we need free-thinking, but only the freethinker who is not afraid to write nonsense. Do not grind it, but be clumsy and impudent. Brevity is the soul of wit.”
+I think we can apply the same principles to academic papers as well.</description>
     </item>
     
     <item>
@@ -535,11 +528,11 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>https://www.homeonrails.com/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</guid>
       <description>This article was originally published on Medium.
- Kangxi Emperor   About ALGOL 60 which introduced recursion and enabled him to express his quick sort algorithm:
- “The highest goal of programming language design to enable good ideas to be elegantly expressed.”
- On shortening programs (meaningful name -&amp;gt; a1):
- “The way to shorten programs is to use procedures, not to omit vital declarative information.”
- On complexity and the role of a programming language:</description>
+Kangxi Emperor About ALGOL 60 which introduced recursion and enabled him to express his quick sort algorithm:
+“The highest goal of programming language design to enable good ideas to be elegantly expressed.”
+On shortening programs (meaningful name -&amp;gt; a1):
+“The way to shorten programs is to use procedures, not to omit vital declarative information.”
+On complexity and the role of a programming language:</description>
     </item>
     
     <item>
@@ -801,7 +794,7 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>https://www.homeonrails.com/2017/07/brazilian-movies-weekend/</guid>
       <description>On the contrary to Indian movies, Brazilian movies are full of pain, struggle, and tears. These movies deeply reflect the history of their country, uncovering all the problems which exist even upon today. They were recommended to me by an architect from Brazil I&amp;rsquo;ve met in Lithuania.
-Central Station (1998)   &amp;ldquo;An emotive journey of a former school teacher, who writes letters for illiterate people, and a young boy, whose mother has just died, as they search for the father he never knew.</description>
+Central Station (1998) &amp;ldquo;An emotive journey of a former school teacher, who writes letters for illiterate people, and a young boy, whose mother has just died, as they search for the father he never knew.</description>
     </item>
     
     <item>
@@ -831,7 +824,7 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>https://www.homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2/</guid>
       <description>(Cycling route in Ulyanovsk Oblast #2)
- Сложность (difficulty): легко (easy)Протяженность в одну сторону (distance, one way): 9.6км (6.7 miles)
+Сложность (difficulty): легко (easy) Протяженность в одну сторону (distance, one way): 9.6км (6.7 miles)
 Сначала любуемся домами богатых жителей Ульяновска, проезжаем кружок по лыжной базе &amp;ldquo;Заря&amp;rdquo; (внимание: штраф 20тр, но всем пофиг; главное не наглеть и пропускать спортсменов). Далее едем в парк 40лет ВЛКСМ и назад через лес. Большая часть пролегает по сосновому лесу, так что воздух там отличный.
 (First we look at the homes of wealthy people of Ulyanovsk, passing around a ski training base &amp;ldquo;Zarya&amp;rdquo; (note: the fine is 20000 RUB, but nobody cares; the important thing is to respect others and give way to athletes).</description>
     </item>
@@ -843,7 +836,7 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>https://www.homeonrails.com/2017/06/indian-movies-weekend/</guid>
       <description>On my way from Berlin to Warsaw I&amp;rsquo;ve met 2 really cool guys from India - Winny and Raghav. They asked me to recommend 3 Russian movies to them and I did. Then I asked to return a favor. I watched all of them and they are amazing. No wonder they all have a very good score on IMDB. So, thank you guys!
-Swades (2004)   A project manager from NASA decides to go to India to find his nanny.</description>
+Swades (2004) A project manager from NASA decides to go to India to find his nanny.</description>
     </item>
     
     <item>
@@ -863,7 +856,7 @@ https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7<
       
       <guid>https://www.homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast/</guid>
       <description>(Cycling route in Ulyanovsk Oblast)
- Сложность (difficulty): легко (easy)Протяженность в одну сторону (distance, one way): 17.7км (11.268 miles)
+Сложность (difficulty): легко (easy) Протяженность в одну сторону (distance, one way): 17.7км (11.268 miles)
 Небольшой участок пути придется проехать через лес (сразу после Поливно). По приезду в Полдомасово можно искупаться. Вода чистая, проточная (течение сильное) (You will have to bike through the forest at some point (small piece of the track right after Polivno). Upon arrival in Poldomasovo you can go swimming. The water is clean and refreshing.</description>
     </item>
     
@@ -1081,7 +1074,7 @@ or even a painting.&lt;/p&gt;</description>
       
       <guid>https://www.homeonrails.com/about/</guid>
       <description>Hi! My name is Anton Kaliaev.
- I am an enthusiastic developer, who likes to grow every day in different areas of expertise and apply that knowledge in everyday life.
+I am an enthusiastic developer, who likes to grow every day in different areas of expertise and apply that knowledge in everyday life.
 I also read a lot of books! You can follow my reviews on Goodreads.
 My open source work is available on GitHub, my talks are on Speaker Deck, my work history is on LinkedIn, and my thoughts are on Twitter. You’re also welcome to say hello at anton.</description>
     </item>
@@ -1949,7 +1942,7 @@ think that few people actually know about them.&lt;/p&gt;</description>
       <guid>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ferd&#34;&gt;Фред Хеберт&lt;/a&gt; - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
-замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;quot;&lt;/a&gt;, которая, к тому же,
+замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;rdquo;&lt;/a&gt;, которая, к тому же,
 доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
 только начинает изучать Erlang. Но и более опытные разработчики с большой
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
@@ -2255,9 +2248,9 @@ for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Car
       
       <guid>https://www.homeonrails.com/most-popular-posts/</guid>
       <description>EN:
- Best motivational videos How to be productive with almost any text editor Why Do You Need a Pool Profiling in Erlang On the importance of unification Validating nested associations in Rails Podcasts I am listening to  RU:
- Правильный подход к выбору работы Супер-пупер крутые статьи для разработчиков  Ещё из забавного:
- Топ 3 ответов при собеседовании Отзыв о стуле Salli Chin Один месяц в Китае 5 New Tab Google Chrome extensions for productivity freaks  </description>
+Best motivational videos How to be productive with almost any text editor Why Do You Need a Pool Profiling in Erlang On the importance of unification Validating nested associations in Rails Podcasts I am listening to RU:
+Правильный подход к выбору работы Супер-пупер крутые статьи для разработчиков Ещё из забавного:
+Топ 3 ответов при собеседовании Отзыв о стуле Salli Chin Один месяц в Китае 5 New Tab Google Chrome extensions for productivity freaks </description>
     </item>
     
     <item>
@@ -2395,7 +2388,7 @@ famous.&lt;/p&gt;</description>
       <guid>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
-&lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;quot;- I asked myself. Indeed, the majority of source code editors
+&lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;rdquo;- I asked myself. Indeed, the majority of source code editors
 able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     

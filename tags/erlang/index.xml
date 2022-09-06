@@ -135,7 +135,7 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
       <guid>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ferd&#34;&gt;Фред Хеберт&lt;/a&gt; - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
-замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;quot;&lt;/a&gt;, которая, к тому же,
+замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;rdquo;&lt;/a&gt;, которая, к тому же,
 доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
 только начинает изучать Erlang. Но и более опытные разработчики с большой
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,

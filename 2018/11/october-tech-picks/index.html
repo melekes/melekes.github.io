@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,15 +70,6 @@ html {
   <h1>October Tech Picks</h1>
   <time datetime=2018-11-04T09:03:09&#43;0400 class="post-date">Sun, Nov 4, 2018</time>
   <p>&ldquo;Excellent hand-picked articles &amp; videos about programming from all over the Internet&rdquo;.</p>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> defer makes you sloppy. Try to avoid when dealing with mutexes</p>&mdash; melekes 🥕 (@akaliaev) <a href="https://twitter.com/akaliaev/status/1058384359844204544?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">defer + mutexes makes you forget that<br><br>a) while we&#39;re locked, nobody else can access the object (unless its read lock) -&gt; better to unlock earlier<br>b) when you put more code &amp; call other functions between lock / unlock, it becomes easier to deadlock<br>c) defers are slow</p>&mdash; melekes 🥕 (@akaliaev) <a href="https://twitter.com/akaliaev/status/1058384638362771462?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">More times you don&#39;t need a defer <a href="https://t.co/DYrbJQJwgS">pic.twitter.com/DYrbJQJwgS</a></p>&mdash; melekes 🥕 (@akaliaev) <a href="https://twitter.com/akaliaev/status/1058387780563333120?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 <p><strong>Articles</strong></p>
 <ul>
 <li><a href="https://www.divio.com/blog/documentation/">What nobody tells you about documentation</a></li>
@@ -123,7 +114,7 @@ html {
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

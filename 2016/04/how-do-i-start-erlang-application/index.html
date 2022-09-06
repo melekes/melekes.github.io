@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,32 +75,32 @@ rebar.</p>
 придерживаюсь я. Он не претендует на звание &ldquo;единственно правильный способ&rdquo;.
 Если вы видите явные недочеты, пишите в комментариях.</em></p>
 <h1 id="как-запускаем-приложение-при-разработке">Как запускаем приложение при разработке</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># Makefile
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> all compile run
-
-REBAR<span style="color:#f92672">=</span>./rebar3
-
-<span style="color:#a6e22e">all</span><span style="color:#f92672">:</span> compile
-
-<span style="color:#a6e22e">compile</span><span style="color:#f92672">:</span>
-    <span style="color:#66d9ef">$(</span>REBAR<span style="color:#66d9ef">)</span> compile
-
-<span style="color:#a6e22e">run</span><span style="color:#f92672">:</span> compile
-		erl -pa _build/default/lib/*/ebin -config config/sys.config -args_file config/vm.args -boot start_sasl -s sync -s yourawesomeapp
-</code></pre></div><p>sasl нужен для более красивых и подробных сообщениях об ошибках и не только:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># Makefile
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> all compile run
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>REBAR<span style="color:#f92672">=</span>./rebar3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">all</span><span style="color:#f92672">:</span> compile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">compile</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">$(</span>REBAR<span style="color:#66d9ef">)</span> compile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">run</span><span style="color:#f92672">:</span> compile
+</span></span><span style="display:flex;"><span>		erl -pa _build/default/lib/*/ebin -config config/sys.config -args_file config/vm.args -boot start_sasl -s sync -s yourawesomeapp
+</span></span></code></pre></div><p>sasl нужен для более красивых и подробных сообщениях об ошибках и не только:
 запуск, перезапуск, падение частей приложения.</p>
 <p><a href="https://github.com/rustyio/sync">https://github.com/rustyio/sync</a> перекомпилирует и перезагружает код налету.</p>
 <p><code>-s yourawesomeapp</code> попытается вызвать <code>yourawesomeapp:start()</code>, так что нужен файл следующего содержания (если у вас его еще нет):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang">-module(yourawesomeapp).
-
--export([start<span style="color:#f92672">/</span><span style="color:#ae81ff">0</span>]).
-
--spec start() <span style="color:#f92672">-&gt;</span> &#39;ok&#39;.
-<span style="color:#a6e22e">start</span>() <span style="color:#f92672">-&gt;</span>
-    {ok, _} <span style="color:#f92672">=</span> application:<span style="color:#a6e22e">ensure_all_started</span>(yourawesomeapp),
-    ok.
-</code></pre></div><p>ensure_all_started удостоверится, что все зависимости вашего приложения запущены.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-erlang" data-lang="erlang"><span style="display:flex;"><span>-module(yourawesomeapp).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-export([start<span style="color:#f92672">/</span><span style="color:#ae81ff">0</span>]).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-spec start() <span style="color:#f92672">-&gt;</span> &#39;ok&#39;.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">start</span>() <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    {ok, _} <span style="color:#f92672">=</span> application:<span style="color:#a6e22e">ensure_all_started</span>(yourawesomeapp),
+</span></span><span style="display:flex;"><span>    ok.
+</span></span></code></pre></div><p>ensure_all_started удостоверится, что все зависимости вашего приложения запущены.</p>
 <p>Плохой практикой считается старт зависимостей вручную:</p>
 <pre tabindex="0"><code>% ПЛОХО
 % yourawesomeapp_app.erl
@@ -115,7 +115,7 @@ start(_StartType, _StartArgs) -&gt;
 
 {application, yourawesomeapp,
  [
-  {description, &quot;Dope app #1&quot;},
+  {description, &#34;Dope app #1&#34;},
   ...
   {applications, [
                   kernel,
@@ -125,79 +125,79 @@ start(_StartType, _StartArgs) -&gt;
                  ]},
   ...
  ]}.
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/sys.config
-</span><span style="color:#75715e"></span>
-[
-    {yourawesomeapp, [
-    ]},
-
-    <span style="color:#75715e">%% SASL config
-</span><span style="color:#75715e"></span>    {sasl, [
-        {sasl_error_logger, {file, <span style="color:#e6db74">&#34;log/sasl-error.log&#34;</span>}},
-        {errlog_type, error},
-        {error_logger_mf_dir, <span style="color:#e6db74">&#34;log/sasl&#34;</span>},
-        {error_logger_mf_maxbytes, <span style="color:#ae81ff">10485760</span>},
-        {error_logger_mf_maxfiles, <span style="color:#ae81ff">5</span>}
-    ]}
-].
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-erlang" data-lang="erlang"><span style="color:#75715e">% config/vm.args
-</span><span style="color:#75715e"></span>
-<span style="color:#960050;background-color:#1e0010">##</span> Name <span style="color:#66d9ef">of</span> the node
--sname yourawesomeapp
-
-<span style="color:#960050;background-color:#1e0010">##</span> Cookie for distributed erlang
--setcookie XXX
-
-<span style="color:#960050;background-color:#1e0010">##</span> Heartbeat management; auto<span style="color:#f92672">-</span>restarts VM <span style="color:#66d9ef">if</span> it dies <span style="color:#f92672">or</span> becomes unresponsive
-<span style="color:#960050;background-color:#1e0010">##</span> (Disabled by default..use with caution<span style="color:#f92672">!</span>)
-<span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>heart
-
-<span style="color:#960050;background-color:#1e0010">##</span> Enable kernel poll <span style="color:#f92672">and</span> a few async threads
-<span style="color:#f92672">+</span>K true
-<span style="color:#f92672">+</span>A <span style="color:#ae81ff">10</span>
-
-<span style="color:#960050;background-color:#1e0010">##</span> Distribution buffer busy limit (dist_buf_busy_limit)
-<span style="color:#f92672">+</span>zdbbl <span style="color:#ae81ff">8192</span>
-
-<span style="color:#960050;background-color:#1e0010">##</span> Sets mapping for warning messages
-<span style="color:#f92672">+</span>W w
-
-<span style="color:#960050;background-color:#1e0010">##</span> Sets  the number <span style="color:#66d9ef">of</span> scheduler threads to create <span style="color:#f92672">and</span> scheduler
-<span style="color:#960050;background-color:#1e0010">##</span> threads to set online <span style="color:#66d9ef">when</span> SMP support has been enabled.
-<span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">+</span>S <span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>
-
-<span style="color:#960050;background-color:#1e0010">##</span> Increase number <span style="color:#66d9ef">of</span> concurrent ports<span style="color:#f92672">/</span>sockets
-<span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>env ERL_MAX_PORTS <span style="color:#ae81ff">4096</span>
-
-<span style="color:#960050;background-color:#1e0010">##</span> Tweak GC to run more often
-<span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>env ERL_FULLSWEEP_AFTER <span style="color:#ae81ff">10</span>
-
-<span style="color:#960050;background-color:#1e0010">##</span> Application libraries
-<span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>env ERL_LIBS <span style="color:#f92672">/</span>srv<span style="color:#f92672">/</span>projects<span style="color:#f92672">/</span>yourawesomeapp
-
-<span style="color:#960050;background-color:#1e0010">##</span> Increase the maximum number <span style="color:#66d9ef">of</span> simultaneously existing processes
-<span style="color:#f92672">+</span>P <span style="color:#ae81ff">1048576</span>
-</code></pre></div><h1 id="как-запускаем-приложение-в-продакшене">Как запускаем приложение в продакшене</h1>
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-erlang" data-lang="erlang"><span style="display:flex;"><span><span style="color:#75715e">% config/sys.config
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>    {yourawesomeapp, [
+</span></span><span style="display:flex;"><span>    ]},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">%% SASL config
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    {sasl, [
+</span></span><span style="display:flex;"><span>        {sasl_error_logger, {file, <span style="color:#e6db74">&#34;log/sasl-error.log&#34;</span>}},
+</span></span><span style="display:flex;"><span>        {errlog_type, error},
+</span></span><span style="display:flex;"><span>        {error_logger_mf_dir, <span style="color:#e6db74">&#34;log/sasl&#34;</span>},
+</span></span><span style="display:flex;"><span>        {error_logger_mf_maxbytes, <span style="color:#ae81ff">10485760</span>},
+</span></span><span style="display:flex;"><span>        {error_logger_mf_maxfiles, <span style="color:#ae81ff">5</span>}
+</span></span><span style="display:flex;"><span>    ]}
+</span></span><span style="display:flex;"><span>].
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-erlang" data-lang="erlang"><span style="display:flex;"><span><span style="color:#75715e">% config/vm.args
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Name <span style="color:#66d9ef">of</span> the node
+</span></span><span style="display:flex;"><span>-sname yourawesomeapp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Cookie for distributed erlang
+</span></span><span style="display:flex;"><span>-setcookie XXX
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Heartbeat management; auto<span style="color:#f92672">-</span>restarts VM <span style="color:#66d9ef">if</span> it dies <span style="color:#f92672">or</span> becomes unresponsive
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> (Disabled by default..use with caution<span style="color:#f92672">!</span>)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>heart
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Enable kernel poll <span style="color:#f92672">and</span> a few async threads
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span>K true
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span>A <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Distribution buffer busy limit (dist_buf_busy_limit)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span>zdbbl <span style="color:#ae81ff">8192</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Sets mapping for warning messages
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span>W w
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Sets  the number <span style="color:#66d9ef">of</span> scheduler threads to create <span style="color:#f92672">and</span> scheduler
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> threads to set online <span style="color:#66d9ef">when</span> SMP support has been enabled.
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#f92672">+</span>S <span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Increase number <span style="color:#66d9ef">of</span> concurrent ports<span style="color:#f92672">/</span>sockets
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>env ERL_MAX_PORTS <span style="color:#ae81ff">4096</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Tweak GC to run more often
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>env ERL_FULLSWEEP_AFTER <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Application libraries
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span><span style="color:#f92672">-</span>env ERL_LIBS <span style="color:#f92672">/</span>srv<span style="color:#f92672">/</span>projects<span style="color:#f92672">/</span>yourawesomeapp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span> Increase the maximum number <span style="color:#66d9ef">of</span> simultaneously existing processes
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span>P <span style="color:#ae81ff">1048576</span>
+</span></span></code></pre></div><h1 id="как-запускаем-приложение-в-продакшене">Как запускаем приложение в продакшене</h1>
 <p>Тут все зависит от того, релизы у вас или нет. Если релизы, при сборке вы просто указываете нужные vm.args и sys.config:</p>
 <pre tabindex="0"><code>{relx, [
-    {release, {yourawesomeapp, &quot;1.0.0&quot;},
+    {release, {yourawesomeapp, &#34;1.0.0&#34;},
      %% list of apps to include
      [yourawesomeapp, sasl, lager]},
 
-    %% Don't ship an Erlang VM by default
+    %% Don&#39;t ship an Erlang VM by default
     {include_erts, false},
 
-    {vm_args, &quot;./config/vm.args&quot;}
+    {vm_args, &#34;./config/vm.args&#34;}
 ]}.
 
 {profiles, [
     %% called as `rebar3 as prod &lt;command&gt;`
     {prod, [
         {relx, [ % override relx specifically
-          {include_src, false}, % don't include source code
+          {include_src, false}, % don&#39;t include source code
           {include_erts, true},  % include the VM in the release
 
-          {sys_config, &quot;./config/production.config&quot;}
+          {sys_config, &#34;./config/production.config&#34;}
         ]}
     ]}
 ]}.
@@ -213,7 +213,7 @@ make run) или использовать переменные окружени�
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

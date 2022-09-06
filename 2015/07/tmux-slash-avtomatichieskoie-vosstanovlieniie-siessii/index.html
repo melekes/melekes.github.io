@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,26 +83,26 @@ html {
 же строке, где он и был в последний раз</strong>.</p>
 <p>Для того, чтобы данное чудо заработало и у вас, нам потребуется <a href="https://github.com/tmux-plugins/tpm">Tmux Plugin
 Manager</a> (сокращенно, tpm):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-</code></pre></div><p><em>(примечание: нужен tmux &gt;= 1.9)</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+</span></span></code></pre></div><p><em>(примечание: нужен tmux &gt;= 1.9)</em></p>
 <p>Теперь добавим следующее в конец .tmux.conf:</p>
 <pre tabindex="0"><code># .tmux.conf
 
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-sensible'
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin &#39;tmux-plugins/tpm&#39;
+set -g @plugin &#39;tmux-plugins/tmux-sensible&#39;
+set -g @plugin &#39;tmux-plugins/tmux-resurrect&#39;
+set -g @plugin &#39;tmux-plugins/tmux-continuum&#39;
 
-run '~/.tmux/plugins/tpm/tpm'
+run &#39;~/.tmux/plugins/tpm/tpm&#39;
 </code></pre><p>Далее остается только загрузить наши изменения и установить плагины:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ tmux source ~/.tmux.conf
-</code></pre></div><p>Для установки плагинов нажмите <code>prefix - I</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ tmux source ~/.tmux.conf
+</span></span></code></pre></div><p>Для установки плагинов нажмите <code>prefix - I</code>.</p>
 <p>Для комфортной работы стоит добавить пару опций. По умолчанию, tmux-continuum
 (плагин, который автоматически сохраняет tmux окружение) не восстанавливает его
 при запуске tmux. Что ж, исправим это недоразумение:</p>
 <pre tabindex="0"><code># .tmux.conf
 
-set -g @continuum-restore 'on'
+set -g @continuum-restore &#39;on&#39;
 </code></pre><p>Для того, чтобы при загрузке восстанавливались Vim (Neovim) сессии, нужно</p>
 <ol>
 <li>установить плагин <a href="https://github.com/tpope/vim-obsession">https://github.com/tpope/vim-obsession</a></li>
@@ -111,9 +111,9 @@ set -g @continuum-restore 'on'
 <pre tabindex="0"><code># .tmux.conf
 
 # for vim
-set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-strategy-vim &#39;session&#39;
 # for neovim
-set -g @resurrect-strategy-nvim 'session'
+set -g @resurrect-strategy-nvim &#39;session&#39;
 </code></pre><p>Стоит отметить, что можно стартовать не только Vim, но и любые другие программы</p>
 <ul>
 <li>ssh, psql, rails console, которые были запущены в прошлый раз. Для этого,
@@ -121,7 +121,7 @@ set -g @resurrect-strategy-nvim 'session'
 </ul>
 <pre tabindex="0"><code># .tmux.conf
 
-set -g @resurrect-processes 'ssh psql mysql sqlite3'
+set -g @resurrect-processes &#39;ssh psql mysql sqlite3&#39;
 </code></pre><p>Также у данного плагина (<a href="https://github.com/tmux-plugins/tmux-resurrect">https://github.com/tmux-plugins/tmux-resurrect</a>) есть и
 несколько интересных экспериментальный опций, таких как сохранение истории для
 каждого сплита и сохранение его содержимого.</p>
@@ -130,7 +130,7 @@ set -g @resurrect-processes 'ssh psql mysql sqlite3'
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,18 +78,18 @@ html {
 <p>Она принимает на вход любое Rack приложение и запускает его в отдельном треде с
 помощью WEBrick&rsquo;а. Порт можно задать самому. В противном случае будет
 использован первый свободный.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup</span>
-  json <span style="color:#f92672">=</span> load_fixture(<span style="color:#e6db74">&#34;service/200.json&#34;</span>)
-  my_rack_app <span style="color:#f92672">=</span> proc {<span style="color:#f92672">|</span>env<span style="color:#f92672">|</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">200</span>, {<span style="color:#e6db74">&#34;Content-Type&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;application/json&#34;</span>}, <span style="color:#f92672">[</span>json<span style="color:#f92672">]]</span>}
-  @service <span style="color:#f92672">=</span> <span style="color:#66d9ef">Shamrock</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Service</span><span style="color:#f92672">.</span>new(my_rack_app)
-  @service<span style="color:#f92672">.</span>start
-  @service<span style="color:#f92672">.</span>uri    <span style="color:#75715e"># =&gt; #&lt;URI::HTTP http://localhost:54321&gt;</span>
-<span style="color:#66d9ef">end</span>
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">teardown</span>
-  @service<span style="color:#f92672">.</span>stop
-<span style="color:#66d9ef">end</span>
-</code></pre></div><p>Доступные параметры у Service#new:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup</span>
+</span></span><span style="display:flex;"><span>  json <span style="color:#f92672">=</span> load_fixture(<span style="color:#e6db74">&#34;service/200.json&#34;</span>)
+</span></span><span style="display:flex;"><span>  my_rack_app <span style="color:#f92672">=</span> proc {<span style="color:#f92672">|</span>env<span style="color:#f92672">|</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">200</span>, {<span style="color:#e6db74">&#34;Content-Type&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;application/json&#34;</span>}, <span style="color:#f92672">[</span>json<span style="color:#f92672">]]</span>}
+</span></span><span style="display:flex;"><span>  @service <span style="color:#f92672">=</span> <span style="color:#66d9ef">Shamrock</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Service</span><span style="color:#f92672">.</span>new(my_rack_app)
+</span></span><span style="display:flex;"><span>  @service<span style="color:#f92672">.</span>start
+</span></span><span style="display:flex;"><span>  @service<span style="color:#f92672">.</span>uri    <span style="color:#75715e"># =&gt; #&lt;URI::HTTP http://localhost:54321&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">teardown</span>
+</span></span><span style="display:flex;"><span>  @service<span style="color:#f92672">.</span>stop
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Доступные параметры у Service#new:</p>
 <ul>
 <li><code>handler</code> - обработчик, который запускает Rack приложение (по умолчанию Rack::Handler::WEBrick)</li>
 <li><code>port</code> - порт</li>
@@ -102,7 +102,7 @@ html {
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

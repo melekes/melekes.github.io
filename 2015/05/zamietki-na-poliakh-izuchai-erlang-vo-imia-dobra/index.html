@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +71,7 @@ html {
   <time datetime=2015-05-28T11:51:25Z class="post-date">Thu, May 28, 2015</time>
   <p><a href="https://github.com/ferd">Фред Хеберт</a> - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
-замечательную книгу <a href="http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev">&ldquo;Изучай Erlang во имя добра!&quot;</a>, которая, к тому же,
+замечательную книгу <a href="http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev">&ldquo;Изучай Erlang во имя добра!&rdquo;</a>, которая, к тому же,
 доступна онлайн совершенно бесплатно. Она в основном предназначена для тех, кто
 только начинает изучать Erlang. Но и более опытные разработчики с большой
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
@@ -85,7 +85,7 @@ Distributed Erlang).</p>
 <ol>
 <li>используйте ctrl-a / ctrl-e в командной строке для перехода в начало / конец строки;</li>
 <li>;(,) и andalso(orelse) различаются в работе при построении защитных выражений (guards). Например, <code>when C1 ; C2</code> не упадет с ошибкой, если первое условие (C1) покрашится, а вычислит второе (C2);</li>
-<li>старайтесь избегать “true&rdquo; веток в условных операторах, если есть возможность покрыть все варианты (пример: <code>X &gt;= 0, X &lt; 0</code>);</li>
+<li>старайтесь избегать “true&quot; веток в условных операторах, если есть возможность покрыть все варианты (пример: <code>X &gt;= 0, X &lt; 0</code>);</li>
 <li><a href="http://www.erlang.se/~bjorn/">Björn Gustavsson</a> из команды Erlang OTP рекомендует использовать gb_sets почти во всех случаях, ordsets, когда вам нужно простое представление и sets, когда требуется строгое сравнение =:= ;</li>
 <li>references используются, в том числе, потому что Pid может поменяться пока мы дожидаемся ответа на сообщение (процесс упал и был перезапущен супервизором);</li>
 <li>[ETS] ordered_set проигрывает по скорости рандомного чтения set, поэтому должен использоваться только для range queries;</li>
@@ -123,7 +123,7 @@ Distributed Erlang).</p>
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

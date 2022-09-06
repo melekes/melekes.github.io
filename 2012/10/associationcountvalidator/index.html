@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,60 +72,60 @@ html {
   <p>As a result of my <a href="https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails">previous blog post</a>
 about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># lib/association_count_validator.rb</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AssociationCountValidator</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveModel</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Validations</span><span style="color:#f92672">::</span><span style="color:#66d9ef">LengthValidator</span>
-  <span style="color:#66d9ef">MESSAGES</span> <span style="color:#f92672">=</span> { <span style="color:#e6db74">:wrong_length</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_invalid</span>,
-               <span style="color:#e6db74">:too_short</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_greater_than_or_equal_to</span>,
-               <span style="color:#e6db74">:too_long</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_less_than_or_equal_to</span> }<span style="color:#f92672">.</span>freeze
-
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initialize</span>(options)
-    <span style="color:#66d9ef">MESSAGES</span><span style="color:#f92672">.</span>each { <span style="color:#f92672">|</span>key, message<span style="color:#f92672">|</span> options<span style="color:#f92672">[</span>key<span style="color:#f92672">]</span> <span style="color:#f92672">||=</span> message }
-    <span style="color:#66d9ef">super</span>
-  <span style="color:#66d9ef">end</span>
-
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">validate_each</span>(record, attribute, value)
-    existing_records <span style="color:#f92672">=</span> record<span style="color:#f92672">.</span>send(attribute)<span style="color:#f92672">.</span>reject(<span style="color:#f92672">&amp;</span><span style="color:#e6db74">:marked_for_destruction?</span>)
-    <span style="color:#66d9ef">super</span>(record, attribute, existing_records)
-  <span style="color:#66d9ef">end</span>
-<span style="color:#66d9ef">end</span>
-</code></pre></div><p>Probably, you noticed that this is just a wrapper over the standard <code>LengthValidator</code>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># lib/association_count_validator.rb</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AssociationCountValidator</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveModel</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Validations</span><span style="color:#f92672">::</span><span style="color:#66d9ef">LengthValidator</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">MESSAGES</span> <span style="color:#f92672">=</span> { <span style="color:#e6db74">:wrong_length</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_invalid</span>,
+</span></span><span style="display:flex;"><span>               <span style="color:#e6db74">:too_short</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_greater_than_or_equal_to</span>,
+</span></span><span style="display:flex;"><span>               <span style="color:#e6db74">:too_long</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">:association_count_less_than_or_equal_to</span> }<span style="color:#f92672">.</span>freeze
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initialize</span>(options)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">MESSAGES</span><span style="color:#f92672">.</span>each { <span style="color:#f92672">|</span>key, message<span style="color:#f92672">|</span> options<span style="color:#f92672">[</span>key<span style="color:#f92672">]</span> <span style="color:#f92672">||=</span> message }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">validate_each</span>(record, attribute, value)
+</span></span><span style="display:flex;"><span>    existing_records <span style="color:#f92672">=</span> record<span style="color:#f92672">.</span>send(attribute)<span style="color:#f92672">.</span>reject(<span style="color:#f92672">&amp;</span><span style="color:#e6db74">:marked_for_destruction?</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span>(record, attribute, existing_records)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Probably, you noticed that this is just a wrapper over the standard <code>LengthValidator</code>.
 This has a big advantage - all options, provided by the basic validator, are supported.
 And it correctly handles the situation with marked for destruction records,
 which was mentioned in the previous post.</p>
 <p>Usage:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
-  <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
-  attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
-
-  validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
-  validates <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">association_count</span>: { <span style="color:#e6db74">minimum</span>: <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> }
-
-  has_many <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">inverse_of</span>: <span style="color:#e6db74">:company</span>
-
-  accepts_nested_attributes_for <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">allow_destroy</span>: <span style="color:#66d9ef">true</span>
-<span style="color:#66d9ef">end</span>
-</code></pre></div><p>Do not forget to add custom error messages to your localization files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Company</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Base</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  attr_accessible <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">:offices_attributes</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  validates <span style="color:#e6db74">:name</span>, <span style="color:#e6db74">presence</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  validates <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">association_count</span>: { <span style="color:#e6db74">minimum</span>: <span style="color:#66d9ef">OFFICES_COUNT_MIN</span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  has_many <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">inverse_of</span>: <span style="color:#e6db74">:company</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  accepts_nested_attributes_for <span style="color:#e6db74">:offices</span>, <span style="color:#e6db74">allow_destroy</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Do not forget to add custom error messages to your localization files.</p>
 <p>Example for <code>en</code> culture:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">en</span>:
-  <span style="color:#f92672">errors</span>:
-    <span style="color:#f92672">messages</span>:
-      <span style="color:#f92672">association_count_less_than_or_equal_to</span>:
-        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count must be less than 1</span>
-        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count must be less than or equal to %{count}</span>
-      <span style="color:#f92672">association_count_greater_than_or_equal_to</span>:
-        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count must be greater than 1</span>
-        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count must be greater than or equal to %{count}</span>
-      <span style="color:#f92672">association_count_invalid</span>:
-        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count is invalid (must be equal to 1)</span>
-        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count is invalid (must be equal to %{count})</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">en</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">errors</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">messages</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">association_count_less_than_or_equal_to</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count must be less than 1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count must be less than or equal to %{count}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">association_count_greater_than_or_equal_to</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count must be greater than 1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count must be greater than or equal to %{count}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">association_count_invalid</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">one</span>: <span style="color:#ae81ff">count is invalid (must be equal to 1)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">other</span>: <span style="color:#ae81ff">count is invalid (must be equal to %{count})</span>
+</span></span></code></pre></div>
 </div>
 
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

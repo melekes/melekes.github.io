@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -286,7 +286,7 @@ detail).</p>
 <p>If you don&rsquo;t want to type fg, there is a hack:</p>
 <p>zsh: <a href="https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/fancy-ctrl-z/fancy-ctrl-z.plugin.zsh">https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/fancy-ctrl-z/fancy-ctrl-z.plugin.zsh</a></p>
 <p>fish:</p>
-<pre tabindex="0"><code>bind \ck 'if test -z (commandline) ; fg %; else ; clear; commandline &quot;&quot;; end'
+<pre tabindex="0"><code>bind \ck &#39;if test -z (commandline) ; fg %; else ; clear; commandline &#34;&#34;; end&#39;
 </code></pre><p>Another advantage of having a terminal emulator: copy-pasting between the
 terminal emulator and your code is much easier, and you <strong>get completion in the
 code for things in the terminal</strong> (thanks to
@@ -500,7 +500,7 @@ the same. It may be a good idea for Spacemacs, is it?</p>
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

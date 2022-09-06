@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.92.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,7 +106,7 @@ overcoming  of  output  buffer  limits&rdquo;, мы поняли что скор
 <p>Так что же про буферы. У Redis есть буфер с soft limit = 8MB и hard limit =
 32MB. Также есть по 1 буферу на каждое TCP соединение.</p>
 <p>Размеры буферов можно узнать так:</p>
-<pre tabindex="0"><code>$ cat /proc/sys/net/ipv4/tcp_rmem # publisher's socket
+<pre tabindex="0"><code>$ cat /proc/sys/net/ipv4/tcp_rmem # publisher&#39;s socket
 $ cat /proc/sys/net/ipv4/tcp_wmem # subscribers sockets
 </code></pre><p>В нашем случае размер и того, и другого = 4MB.</p>
 <p>Если подписчик не успевает вычитывать данные, буфер справа в какой-то момент
@@ -129,7 +129,7 @@ Redis</a> см. &ldquo;Output buffers limits&rdquo;. Правда,
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
