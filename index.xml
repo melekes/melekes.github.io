@@ -9,6 +9,24 @@
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Wed, 19 Oct 2022 10:54:20 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Favorite books</title>
+      <link>https://www.homeonrails.com/favorite-books/</link>
+      <pubDate>Sat, 03 Dec 2022 10:54:24 +0200</pubDate>
+      
+      <guid>https://www.homeonrails.com/favorite-books/</guid>
+      <description> 2021 2020 2019 2018 2017 2016 </description>
+    </item>
+    
+    <item>
+      <title>One month in some country</title>
+      <link>https://www.homeonrails.com/one-month-country/</link>
+      <pubDate>Sat, 03 Dec 2022 10:54:24 +0200</pubDate>
+      
+      <guid>https://www.homeonrails.com/one-month-country/</guid>
+      <description> Japan USA. Part 1 and USA. Part 2 China </description>
+    </item>
+    
+    <item>
       <title>Monthly Art #52</title>
       <link>https://www.homeonrails.com/2022/10/monthly-art-number-52/</link>
       <pubDate>Wed, 19 Oct 2022 10:54:20 +0400</pubDate>
@@ -1081,15 +1099,14 @@ or even a painting.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>About author</title>
+      <title>About me</title>
       <link>https://www.homeonrails.com/about/</link>
       <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
       
       <guid>https://www.homeonrails.com/about/</guid>
-      <description>Hi! My name is Anton Kaliaev.
-I am an enthusiastic developer, who likes to grow every day in different areas of expertise and apply that knowledge in everyday life.
-I also read a lot of books! You can follow my reviews on Goodreads.
-My open source work is available on GitHub, my talks are on Speaker Deck, my work history is on LinkedIn, and my thoughts are on Twitter. You’re also welcome to say hello at anton.</description>
+      <description>Hi! My name is Anton.
+10x lazy programmer 💻 crypto/web3 since 2017 hitchhiking, swimming, meditating, exploring, reading, learning My open source work is available on GitHub, my talks are on Speaker Deck, my work history is on LinkedIn, and my thoughts are on Twitter.
+Born in Ulyanovsk, Russia on March 25, 1988. Both of my parents were engineers so I&amp;rsquo;ve followed in their footsteps. During the 90s I was cooking for my father and his colleagues while they were trying to make some money in construction as there were no other jobs available (remember USSR collapsed in 1991).</description>
     </item>
     
     <item>

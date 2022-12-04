@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.104.3" />
+  <meta name="generator" content="Hugo 0.107.0">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,7 @@ html {
     <nav>
       <ul class="sidebar-nav">
         <li><a href="https://www.homeonrails.com/">Home</a> </li>
-        <li><a href="https://www.homeonrails.com/about"> About author </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.homeonrails.com/tags"> Tags </a></li>
+        <li><a href="https://www.homeonrails.com/about"> About me </a></li><li><a href="https://www.homeonrails.com/favorite-books"> Favorite books </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.homeonrails.com/one-month-country"> One month in some country </a></li><li><a href="https://www.homeonrails.com/tags"> Tags </a></li>
       </ul>
     </nav>
 
@@ -75,7 +75,7 @@ html {
 <h2 id="меры-ms-min">Меры (ms, min)</h2>
 <p>Недавно пришлось залезть в исходники HBase, чтобы выяснить в каких единицах мне
 нужно задать TTL. В документации я этого не нашел :( Вот, например, одна строка из теста:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> TTL <span style="color:#f92672">=</span> 86400<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> TTL <span style="color:#f92672">=</span> <span style="color:#ae81ff">86400</span><span style="color:#f92672">;</span>
 </span></span></code></pre></div><p><!-- raw HTML omitted -->(<a href="https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35">https://github.com/apache/hbase/blob/a545d71295e582398b2689ed09d2167d7f118cec/hbase-rest/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java#L35</a>)<!-- raw HTML omitted --></p>
 <figure><img src="https://www.homeonrails.com/images/posts/2015-12-14-a-little-more-on-variable-naming/wtf.png"/>
 </figure>
