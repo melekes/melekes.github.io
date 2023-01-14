@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.107.0">
+  <meta name="generator" content="Hugo 0.109.0">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,13 +62,30 @@ html {
       </ul>
     </nav>
 
-    <p>&copy; 2022. All rights reserved. </p>
+    <p>&copy; 2023. All rights reserved. </p>
   </div>
 </aside>
 
     <main class="content container">
     <div class="posts">
 <article class="post">
+  <h1 class="post-title">
+    <a href="https://www.homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/">Choosing a type for blockchain height (beware of unsigned integers)</a>
+  </h1>
+  <time datetime="2018-03-03T13:47:11&#43;0400" class="post-date">Sat, Mar 3, 2018</time>
+  <p><em>This article was originally published on <a href="https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d">Medium</a>.</em></p>
+<p>Before <a href="https://github.com/tendermint/tendermint/pull/914">this pull request</a>,
+it was a mess. ABCI was using a <code>uint64</code> height on EndBlock. Tendermint Core
+was using the same type for TxResult. Block and BlockStore, however, were using
+<code>int</code> heights (remember that <code>int</code> is different depending on the processor
+architecture: <code>int32</code> for x86, <code>int64</code> for amd64). There was no single standard
+across our repositories as for what type to use for blockchain height.</p>
+  
+  <div class="read-more-link">
+    <a href="https://www.homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/">Read More…</a>
+  </div>
+  
+</article><article class="post">
   <h1 class="post-title">
     <a href="https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/">Debugging the Memory Leak in Tendermint</a>
   </h1>
@@ -183,24 +200,6 @@ or even a painting.</p>
   
   <div class="read-more-link">
     <a href="https://www.homeonrails.com/2017/12/december-tech-picks/">Read More…</a>
-  </div>
-  
-</article><article class="post">
-  <h1 class="post-title">
-    <a href="https://www.homeonrails.com/2017/12/my-favorite-books-of-2017/">My favorite books of 2017</a>
-  </h1>
-  <time datetime="2017-12-26T21:15:01-0500" class="post-date">Tue, Dec 26, 2017</time>
-  <figure><img src="https://www.homeonrails.com/images/posts/2017-12-26-my-favorite-books-of-2017/year_in_books_full.png"/>
-</figure>
-
-<p>This year I’ve set a very ambitious goal for me, which is to read fifty books.
-And I almost did it. Never thought it would be possible to even read forty
-books. The key here, as many of you know, is to find one hour in evening or
-before you go to sleep (depending on what works best for you) and spend it
-reading. Audiobooks are great too!</p>
-  
-  <div class="read-more-link">
-    <a href="https://www.homeonrails.com/2017/12/my-favorite-books-of-2017/">Read More…</a>
   </div>
   
 </article>
