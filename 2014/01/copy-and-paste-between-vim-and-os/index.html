@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.109.0">
+  <meta name="generator" content="Hugo 0.119.0">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,8 +99,8 @@ for system buffer. To work with it, Vim has two registers <code>*</code> and <co
 </span></span></code></pre></div><p>Look inside /Applications/MacVim.app/Contents/MacOS, and you’ll see that the app provides two binaries: MacVim, which launches the GUI, and Vim, which runs in the Terminal with the same feature set. Both versions include the <code>+clipboard</code> feature.</p>
 <p>The last thing left to do - something to get rid of the need to
 to type <code>&quot;*p</code> and <code>&quot;*y</code> prefixes. I don&rsquo;t want copy and paste between Vim and OS was some special occasion, I want everything to be transparent to the user. It turned out, you just need to add this line to your <code>.vimrc</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span> <span style="color:#75715e">&#34; or unnamedplus if you have X11</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>Now all operations such as <code>yy</code>, <code>D</code>, and <code>p</code> work with the clipboard. No need to prefix them with <code>&quot;*</code> or <code>&quot;+</code>. Sounds like magic, right?!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span> <span style="color:#75715e">&#34; or unnamedplus if you have X11</span>
+</span></span></code></pre></div><p>Now all operations such as <code>yy</code>, <code>D</code>, and <code>p</code> work with the clipboard. No need to prefix them with <code>&quot;*</code> or <code>&quot;+</code>. Sounds like magic, right?!</p>
 <p>Example:</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">

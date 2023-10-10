@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.109.0">
+  <meta name="generator" content="Hugo 0.119.0">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -129,11 +129,11 @@ Average: 68343 mics
 </code></pre><p>Он оказался значительно медленнее (из-за того, что списки склеиваются с помощью <code>++</code>).</p>
 <p>Затем попробовал <code>dict:update</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-erlang" data-lang="erlang"><span style="display:flex;"><span><span style="color:#75715e">% for every Item in Items, коих около 5000
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Key<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010"> </span><span style="color:#66d9ef">case</span><span style="color:#960050;background-color:#1e0010"> </span>gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart,<span style="color:#960050;background-color:#1e0010"> </span>RangeStarts)<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#66d9ef">of</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> false<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#f92672">-&gt;</span><span style="color:#960050;background-color:#1e0010"> </span>norange;
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> true<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#f92672">-&gt;</span><span style="color:#960050;background-color:#1e0010"> </span>RangeStart
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Key <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> gb_sets:<span style="color:#a6e22e">is_member</span>(RangeStart, RangeStarts) <span style="color:#66d9ef">of</span>
+</span></span><span style="display:flex;"><span>  false <span style="color:#f92672">-&gt;</span> norange;
+</span></span><span style="display:flex;"><span>  true <span style="color:#f92672">-&gt;</span> RangeStart
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>,
-</span></span><span style="display:flex;"><span>NewAcc<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010"> </span>dict:<span style="color:#a6e22e">update</span>(Key,<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#66d9ef">fun</span>(List)<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#f92672">-&gt;</span><span style="color:#960050;background-color:#1e0010"> </span>[Item|List]<span style="color:#960050;background-color:#1e0010"> </span><span style="color:#66d9ef">end</span>,<span style="color:#960050;background-color:#1e0010"> </span>[Item],<span style="color:#960050;background-color:#1e0010"> </span>Acc),
+</span></span><span style="display:flex;"><span>NewAcc <span style="color:#f92672">=</span> dict:<span style="color:#a6e22e">update</span>(Key, <span style="color:#66d9ef">fun</span>(List) <span style="color:#f92672">-&gt;</span> [Item|List] <span style="color:#66d9ef">end</span>, [Item], Acc),
 </span></span><span style="display:flex;"><span>...
 </span></span><span style="display:flex;"><span><span style="color:#75715e">% позже возвращаем результирующий список
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dict:<span style="color:#a6e22e">to_list</span>(NewAcc)

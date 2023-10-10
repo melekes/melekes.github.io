@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.109.0">
+  <meta name="generator" content="Hugo 0.119.0">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -229,7 +229,7 @@ So, all we need to do is to select only those records not marked for destruction
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>errors
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#75715e">#&lt;ActiveModel::Errors:0x000000038fc840 @base=#&lt;Company id: 1, name: &#34;Mars LLC&#34;, created_at: &#34;2012-10-08 19:16:44&#34;, updated_at: &#34;2012-10-08 19:16:44&#34;&gt;, @messages={:base=&gt;[&#34;Company should have at least one office.&#34;]}&gt;</span>
 </span></span></code></pre></div><p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I&rsquo;ve added <a href="https://www.homeonrails.com/2012/10/associationcountvalidator">one more for this case</a>.</p>
-<p>If you know a better solution, don&rsquo;t hesitate to <a href="https://www.homeonrails.com/about.html">contact me</a> or simply leave a comment below.</p>
+<p>If you know a better solution, don&rsquo;t hesitate to <a href="https://www.homeonrails.com/about">contact me</a> or simply leave a comment below.</p>
 <h3 id="validating-presence-of-the-parent-object">Validating presence of the parent object</h3>
 <p>The last thing I wanna share with you is how you can add <code>presence</code> validator
 to the parent association inside the nested model.</p>
