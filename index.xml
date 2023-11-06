@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Rails</title>
-    <link>https://www.homeonrails.com/</link>
-    <description>Recent content on Home on Rails</description>
+    <title>melekes.me</title>
+    <link>https://www.melekes.me/</link>
+    <description>Recent content on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 14 Jan 2023 12:07:20 +0800</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consulting / Консультации</title>
-      <link>https://www.homeonrails.com/consulting/</link>
+      <link>https://www.melekes.me/consulting/</link>
       <pubDate>Wed, 01 Feb 2023 10:54:24 +0200</pubDate>
-      <guid>https://www.homeonrails.com/consulting/</guid>
+      <guid>https://www.melekes.me/consulting/</guid>
       <description>I&amp;rsquo;ve spent the last 5 years building the largest blockchain ecosystems (Cosmos, Polkadot). If you need a quick onboarding into blockchains and/or interested in learning the technical side of things (architecture, design patterns, tools, frameworks, etc.), please DM me.
 &amp;ndash;
 Я посвятил последние 5 лет созданию крупнейших блокчейн-экосистем (Cosmos, Polkadot). Если вам нужно быстро вкатиться в эту тему и/или вы заинтересованы в изучении технической стороны вещей (архитектура, шаблоны проектирования, инструменты, фреймворки и т.</description>
     </item>
     <item>
       <title>Крепостные рвы</title>
-      <link>https://www.homeonrails.com/2023/01/moat-concept/</link>
+      <link>https://www.melekes.me/2023/01/moat-concept/</link>
       <pubDate>Sat, 14 Jan 2023 12:07:20 +0800</pubDate>
-      <guid>https://www.homeonrails.com/2023/01/moat-concept/</guid>
+      <guid>https://www.melekes.me/2023/01/moat-concept/</guid>
       <description>&lt;p&gt;Это перевод &lt;a href=&#34;https://twitter.com/thedefiedge/status/1613540840215040000&#34;&gt;Twitter треда&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;p&gt;Уоррен Баффет &lt;a href=&#34;https://finance.yahoo.com/news/warren-buffett-explains-moat-principle-164442359.html&#34;&gt;отказывается
@@ -32,32 +32,32 @@
     </item>
     <item>
       <title>Управление рисками в крипте</title>
-      <link>https://www.homeonrails.com/2022/12/risk-management-in-crypto/</link>
+      <link>https://www.melekes.me/2022/12/risk-management-in-crypto/</link>
       <pubDate>Tue, 13 Dec 2022 08:59:20 +0800</pubDate>
-      <guid>https://www.homeonrails.com/2022/12/risk-management-in-crypto/</guid>
+      <guid>https://www.melekes.me/2022/12/risk-management-in-crypto/</guid>
       <description>&lt;p&gt;Это перевод &lt;a href=&#34;https://twitter.com/thedefiedge/status/1488193098702331913&#34;&gt;Twitter треда&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;p&gt;Вот все, что вам нужно знать об управлении рисками в крипте:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Favorite books</title>
-      <link>https://www.homeonrails.com/favorite-books/</link>
+      <link>https://www.melekes.me/favorite-books/</link>
       <pubDate>Sat, 03 Dec 2022 10:54:24 +0200</pubDate>
-      <guid>https://www.homeonrails.com/favorite-books/</guid>
+      <guid>https://www.melekes.me/favorite-books/</guid>
       <description> 2021 2020 2019 2018 2017 2016 </description>
     </item>
     <item>
       <title>One month in some country</title>
-      <link>https://www.homeonrails.com/one-month-country/</link>
+      <link>https://www.melekes.me/one-month-country/</link>
       <pubDate>Sat, 03 Dec 2022 10:54:24 +0200</pubDate>
-      <guid>https://www.homeonrails.com/one-month-country/</guid>
+      <guid>https://www.melekes.me/one-month-country/</guid>
       <description> Japan USA. Part 1 and USA. Part 2 China </description>
     </item>
     <item>
       <title>Monthly Art #52</title>
-      <link>https://www.homeonrails.com/2022/10/monthly-art-number-52/</link>
+      <link>https://www.melekes.me/2022/10/monthly-art-number-52/</link>
       <pubDate>Wed, 19 Oct 2022 10:54:20 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2022/10/monthly-art-number-52/</guid>
+      <guid>https://www.melekes.me/2022/10/monthly-art-number-52/</guid>
       <description>&lt;p&gt;This is a &lt;del&gt;monthly&lt;/del&gt; &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -66,18 +66,18 @@ write a separate post with my thoughts.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rough notes #2: Axelar</title>
-      <link>https://www.homeonrails.com/2022/01/rough-notes-2-axelar/</link>
+      <link>https://www.melekes.me/2022/01/rough-notes-2-axelar/</link>
       <pubDate>Mon, 17 Jan 2022 15:43:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2022/01/rough-notes-2-axelar/</guid>
+      <guid>https://www.melekes.me/2022/01/rough-notes-2-axelar/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://axelar.network/wp-content/uploads/2021/07/axelar_whitepaper.pdf&#34;&gt;Axelar Network: Connecting Applications with Blockchain
 Ecosystems&lt;/a&gt;
 by Sergey Gorbunov and Georgios Vlachos, published in January 2021.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My favorite books of 2021</title>
-      <link>https://www.homeonrails.com/2022/01/my-favorite-books-of-2021/</link>
+      <link>https://www.melekes.me/2022/01/my-favorite-books-of-2021/</link>
       <pubDate>Sat, 01 Jan 2022 15:52:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2022/01/my-favorite-books-of-2021/</guid>
+      <guid>https://www.melekes.me/2022/01/my-favorite-books-of-2021/</guid>
       <description>&lt;figure&gt;&lt;img src=&#34;https://homeonrails.s3.eu-north-1.amazonaws.com/assets/images/2022-01-01-my-favorite-books-of-2021/goodreads_year_in_review_2021.jpg&#34;/&gt;
 &lt;/figure&gt;
 
@@ -90,9 +90,9 @@ Tolstoy, the longest &amp;ldquo;Shogun&amp;rdquo; by James Clavell.&lt;/p&gt;
     </item>
     <item>
       <title>My favorite books of 2020</title>
-      <link>https://www.homeonrails.com/2021/09/my-favorite-books-of-2020/</link>
+      <link>https://www.melekes.me/2021/09/my-favorite-books-of-2020/</link>
       <pubDate>Wed, 08 Sep 2021 13:33:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2021/09/my-favorite-books-of-2020/</guid>
+      <guid>https://www.melekes.me/2021/09/my-favorite-books-of-2020/</guid>
       <description>&lt;figure&gt;&lt;img src=&#34;https://homeonrails.s3.eu-north-1.amazonaws.com/assets/images/2021-09-08-my-favorite-books-of-2020/goodreads_year_in_review_2020.png&#34;/&gt;
 &lt;/figure&gt;
 
@@ -101,72 +101,72 @@ Tolstoy, the longest &amp;ldquo;Shogun&amp;rdquo; by James Clavell.&lt;/p&gt;
     </item>
     <item>
       <title>Monthly Art #50</title>
-      <link>https://www.homeonrails.com/2021/09/monthly-art-number-50/</link>
+      <link>https://www.melekes.me/2021/09/monthly-art-number-50/</link>
       <pubDate>Sat, 04 Sep 2021 10:12:20 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2021/09/monthly-art-number-50/</guid>
+      <guid>https://www.melekes.me/2021/09/monthly-art-number-50/</guid>
       <description>&lt;p&gt;This is a &lt;del&gt;monthly&lt;/del&gt; &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #49</title>
-      <link>https://www.homeonrails.com/2021/06/monthly-art-number-49/</link>
+      <link>https://www.melekes.me/2021/06/monthly-art-number-49/</link>
       <pubDate>Wed, 23 Jun 2021 12:32:20 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2021/06/monthly-art-number-49/</guid>
+      <guid>https://www.melekes.me/2021/06/monthly-art-number-49/</guid>
       <description>&lt;p&gt;This is a &lt;del&gt;monthly&lt;/del&gt; &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #48</title>
-      <link>https://www.homeonrails.com/2021/03/monthly-art-number-48/</link>
+      <link>https://www.melekes.me/2021/03/monthly-art-number-48/</link>
       <pubDate>Thu, 18 Mar 2021 11:31:20 +0500</pubDate>
-      <guid>https://www.homeonrails.com/2021/03/monthly-art-number-48/</guid>
+      <guid>https://www.melekes.me/2021/03/monthly-art-number-48/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #47</title>
-      <link>https://www.homeonrails.com/2020/11/monthly-art-number-47/</link>
+      <link>https://www.melekes.me/2020/11/monthly-art-number-47/</link>
       <pubDate>Fri, 27 Nov 2020 12:20:29 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2020/11/monthly-art-number-47/</guid>
+      <guid>https://www.melekes.me/2020/11/monthly-art-number-47/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #46</title>
-      <link>https://www.homeonrails.com/2020/10/monthly-art-number-46/</link>
+      <link>https://www.melekes.me/2020/10/monthly-art-number-46/</link>
       <pubDate>Wed, 14 Oct 2020 10:03:29 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2020/10/monthly-art-number-46/</guid>
+      <guid>https://www.melekes.me/2020/10/monthly-art-number-46/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rough notes #1: Celestia</title>
-      <link>https://www.homeonrails.com/2020/05/rough-notes-1-lazy-ledger/</link>
+      <link>https://www.melekes.me/2020/05/rough-notes-1-lazy-ledger/</link>
       <pubDate>Thu, 07 May 2020 15:49:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2020/05/rough-notes-1-lazy-ledger/</guid>
+      <guid>https://www.melekes.me/2020/05/rough-notes-1-lazy-ledger/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1905.09274&#34;&gt;LazyLedger: A Distributed Data Availability Ledger With Client-Side Smart
 Contracts&lt;/a&gt; by Mustafa Al-Bassam, published in
 May 2019.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #45</title>
-      <link>https://www.homeonrails.com/2020/04/monthly-art-number-45/</link>
+      <link>https://www.melekes.me/2020/04/monthly-art-number-45/</link>
       <pubDate>Sat, 04 Apr 2020 14:08:29 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2020/04/monthly-art-number-45/</guid>
+      <guid>https://www.melekes.me/2020/04/monthly-art-number-45/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My favorite books of 2019</title>
-      <link>https://www.homeonrails.com/2019/12/my-favorite-books-of-2019/</link>
+      <link>https://www.melekes.me/2019/12/my-favorite-books-of-2019/</link>
       <pubDate>Wed, 25 Dec 2019 13:21:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/12/my-favorite-books-of-2019/</guid>
+      <guid>https://www.melekes.me/2019/12/my-favorite-books-of-2019/</guid>
       <description>&lt;figure&gt;&lt;img src=&#34;https://homeonrails.s3.eu-north-1.amazonaws.com/assets/images/2019-12-25-my-favorite-books-of-2019/goodreads_year_in_review_2019.png&#34;/&gt;
 &lt;/figure&gt;
 
@@ -178,26 +178,26 @@ photography books: &amp;ldquo;Wall and Piece&amp;rdquo; by Banksy, &amp;ldquo;Ar
     </item>
     <item>
       <title>Monthly Art #44</title>
-      <link>https://www.homeonrails.com/2019/12/monthly-art-number-44/</link>
+      <link>https://www.melekes.me/2019/12/monthly-art-number-44/</link>
       <pubDate>Tue, 24 Dec 2019 22:01:29 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/12/monthly-art-number-44/</guid>
+      <guid>https://www.melekes.me/2019/12/monthly-art-number-44/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>One month in Japan</title>
-      <link>https://www.homeonrails.com/2019/10/japan/</link>
+      <link>https://www.melekes.me/2019/10/japan/</link>
       <pubDate>Mon, 21 Oct 2019 10:54:29 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2019/10/japan/</guid>
+      <guid>https://www.melekes.me/2019/10/japan/</guid>
       <description>&lt;p&gt;After being in this country for almost one month, here are three things that
 shocked me the most:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #43</title>
-      <link>https://www.homeonrails.com/2019/10/monthly-art-number-43/</link>
+      <link>https://www.melekes.me/2019/10/monthly-art-number-43/</link>
       <pubDate>Sun, 20 Oct 2019 11:54:29 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2019/10/monthly-art-number-43/</guid>
+      <guid>https://www.melekes.me/2019/10/monthly-art-number-43/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -206,37 +206,37 @@ or even a painting.&lt;/p&gt;
     </item>
     <item>
       <title>Monthly Art #42</title>
-      <link>https://www.homeonrails.com/2019/09/monthly-art-number-42/</link>
+      <link>https://www.melekes.me/2019/09/monthly-art-number-42/</link>
       <pubDate>Sun, 01 Sep 2019 10:27:54 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/09/monthly-art-number-42/</guid>
+      <guid>https://www.melekes.me/2019/09/monthly-art-number-42/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GopherCon Europe 2019</title>
-      <link>https://www.homeonrails.com/2019/07/gophercon-europe-2019/</link>
+      <link>https://www.melekes.me/2019/07/gophercon-europe-2019/</link>
       <pubDate>Tue, 30 Jul 2019 11:12:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/07/gophercon-europe-2019/</guid>
+      <guid>https://www.melekes.me/2019/07/gophercon-europe-2019/</guid>
       <description>&lt;p&gt;Videos from GopherCon Europe 2019 are up. Shoot out for organizers for sharing
 them! As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll
 enjoy these too.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Money talk или как занять места бизнес класса на галере</title>
-      <link>https://www.homeonrails.com/2019/07/money-talk/</link>
+      <link>https://www.melekes.me/2019/07/money-talk/</link>
       <pubDate>Thu, 18 Jul 2019 10:36:50 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/07/money-talk/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2019-07-18-money-talk/galley2.jpg&#34;/&gt;&lt;figcaption&gt;
+      <guid>https://www.melekes.me/2019/07/money-talk/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2019-07-18-money-talk/galley2.jpg&#34;/&gt;&lt;figcaption&gt;
             &lt;h4&gt;Ben-Hur (1959 film)&lt;/h4&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Monthly Art #41</title>
-      <link>https://www.homeonrails.com/2019/07/monthly-art-number-41/</link>
+      <link>https://www.melekes.me/2019/07/monthly-art-number-41/</link>
       <pubDate>Tue, 02 Jul 2019 14:18:16 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/07/monthly-art-number-41/</guid>
+      <guid>https://www.melekes.me/2019/07/monthly-art-number-41/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -245,9 +245,9 @@ or even a painting.&lt;/p&gt;
     </item>
     <item>
       <title>Monthly Art #40</title>
-      <link>https://www.homeonrails.com/2019/06/monthly-art-number-40/</link>
+      <link>https://www.melekes.me/2019/06/monthly-art-number-40/</link>
       <pubDate>Sun, 09 Jun 2019 09:36:16 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/06/monthly-art-number-40/</guid>
+      <guid>https://www.melekes.me/2019/06/monthly-art-number-40/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -256,14 +256,14 @@ or even a painting.&lt;/p&gt;
     </item>
     <item>
       <title>Lessons learned from my first podcast appearance</title>
-      <link>https://www.homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</link>
+      <link>https://www.melekes.me/2019/04/lessons-learned-from-my-first-podcast-appearance/</link>
       <pubDate>Wed, 17 Apr 2019 20:00:12 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</guid>
+      <guid>https://www.melekes.me/2019/04/lessons-learned-from-my-first-podcast-appearance/</guid>
       <description>&lt;p&gt;A few days ago I was invited to be a guest on the &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Basic
 Block&amp;rdquo;&lt;/a&gt; podcast - probably the most popular
 crypto podcast in Russia. In spite of me writing a note on what I&amp;rsquo;m going to
 say &amp;amp; key points, which you can read
-&lt;a href=&#34;https://www.homeonrails.com/2019/04/on-tendermint-and-cosmos-ru&#34;&gt;here&lt;/a&gt;, I sucked at it. At least
+&lt;a href=&#34;https://www.melekes.me/2019/04/on-tendermint-and-cosmos-ru&#34;&gt;here&lt;/a&gt;, I sucked at it. At least
 that&amp;rsquo;s how I felt after doing it. Fortunately, Basic block radio is one of the
 few podcasts, where authors take on the hard job of editing an episode. Thanks
 guys! So what you end up listening is the edited (often abridged) version, not
@@ -272,18 +272,18 @@ the original conversation.&lt;/p&gt;
     </item>
     <item>
       <title>Monthly Art #39</title>
-      <link>https://www.homeonrails.com/2019/04/monthly-art-number-39/</link>
+      <link>https://www.melekes.me/2019/04/monthly-art-number-39/</link>
       <pubDate>Mon, 15 Apr 2019 22:00:21 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/04/monthly-art-number-39/</guid>
+      <guid>https://www.melekes.me/2019/04/monthly-art-number-39/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Базовый Блок 68: поправки и дополнения</title>
-      <link>https://www.homeonrails.com/2019/04/basicblockradio-68-corrections/</link>
+      <link>https://www.melekes.me/2019/04/basicblockradio-68-corrections/</link>
       <pubDate>Mon, 15 Apr 2019 09:00:12 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/04/basicblockradio-68-corrections/</guid>
+      <guid>https://www.melekes.me/2019/04/basicblockradio-68-corrections/</guid>
       <description>&lt;p&gt;Сегодня опубликовали выпуск со мной в подкасте &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;&amp;ldquo;Базовый
 Блок&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Учитывая, что это был мой первый опыт участия в подкасте, вышло неплохо. НО я
@@ -292,9 +292,9 @@ or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Коротко о Tendermint и Cosmos Network</title>
-      <link>https://www.homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/</link>
+      <link>https://www.melekes.me/2019/04/on-tendermint-and-cosmos-ru/</link>
       <pubDate>Wed, 10 Apr 2019 09:18:59 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/</guid>
+      <guid>https://www.melekes.me/2019/04/on-tendermint-and-cosmos-ru/</guid>
       <description>&lt;p&gt;Ниже приведен текст заметки, которая была написана при подготовке к участию в
 подкасте &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Базовый Блок&amp;rdquo;&lt;/a&gt;. Это не в коем случае
 не исчерпывающий источник, а лишь короткий обзор включающий плюсы и минусы
@@ -303,9 +303,9 @@ Tendermint, Cosmos. Также упоминается проект Polkadot.&lt;
     </item>
     <item>
       <title>Monthly Art #38</title>
-      <link>https://www.homeonrails.com/2019/03/monthly-art-number-38/</link>
+      <link>https://www.melekes.me/2019/03/monthly-art-number-38/</link>
       <pubDate>Thu, 07 Mar 2019 16:07:21 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/03/monthly-art-number-38/</guid>
+      <guid>https://www.melekes.me/2019/03/monthly-art-number-38/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -314,27 +314,27 @@ or even a painting.&lt;/p&gt;
     </item>
     <item>
       <title>Monthly Art #37</title>
-      <link>https://www.homeonrails.com/2019/02/monthly-art-number-37/</link>
+      <link>https://www.melekes.me/2019/02/monthly-art-number-37/</link>
       <pubDate>Fri, 15 Feb 2019 10:01:21 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/02/monthly-art-number-37/</guid>
+      <guid>https://www.melekes.me/2019/02/monthly-art-number-37/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Что делать после покупки дома в Ульяновске (свет, вода, газ)</title>
-      <link>https://www.homeonrails.com/2019/02/so-you-have-bought-house-what-then/</link>
+      <link>https://www.melekes.me/2019/02/so-you-have-bought-house-what-then/</link>
       <pubDate>Thu, 14 Feb 2019 11:43:14 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/02/so-you-have-bought-house-what-then/</guid>
+      <guid>https://www.melekes.me/2019/02/so-you-have-bought-house-what-then/</guid>
       <description>&lt;p&gt;После заключения договора купли-продажи, нужно перезаключить договора на свет,
 газ и воду. Для этого берите паспорт(а) РФ, паспорт БТИ (для газовиков),
 договор купли-продажи и выписки из росреестра о собственности.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #36</title>
-      <link>https://www.homeonrails.com/2019/01/monthly-art-number-36/</link>
+      <link>https://www.melekes.me/2019/01/monthly-art-number-36/</link>
       <pubDate>Thu, 10 Jan 2019 12:27:51 +0300</pubDate>
-      <guid>https://www.homeonrails.com/2019/01/monthly-art-number-36/</guid>
+      <guid>https://www.melekes.me/2019/01/monthly-art-number-36/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -343,10 +343,10 @@ or even a painting.&lt;/p&gt;
     </item>
     <item>
       <title>My favorite books of 2018</title>
-      <link>https://www.homeonrails.com/2019/01/my-favorite-books-of-2018/</link>
+      <link>https://www.melekes.me/2019/01/my-favorite-books-of-2018/</link>
       <pubDate>Sat, 05 Jan 2019 22:38:01 -0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/01/my-favorite-books-of-2018/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2019-01-05-my-favorite-books-of-2018/year_in_books_full.png&#34;/&gt;
+      <guid>https://www.melekes.me/2019/01/my-favorite-books-of-2018/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2019-01-05-my-favorite-books-of-2018/year_in_books_full.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Another year, another goal - read 55 books in 2018. I failed to reach my goal
@@ -357,16 +357,16 @@ still happy with the result - 49 books!&lt;/p&gt;</description>
     </item>
     <item>
       <title>October Tech Picks</title>
-      <link>https://www.homeonrails.com/2018/11/october-tech-picks/</link>
+      <link>https://www.melekes.me/2018/11/october-tech-picks/</link>
       <pubDate>Sun, 04 Nov 2018 09:03:09 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/11/october-tech-picks/</guid>
+      <guid>https://www.melekes.me/2018/11/october-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Excellent hand-picked articles &amp;amp; videos about programming from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #35</title>
-      <link>https://www.homeonrails.com/2018/11/monthly-art-number-35/</link>
+      <link>https://www.melekes.me/2018/11/monthly-art-number-35/</link>
       <pubDate>Sat, 03 Nov 2018 19:24:51 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/11/monthly-art-number-35/</guid>
+      <guid>https://www.melekes.me/2018/11/monthly-art-number-35/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -375,9 +375,9 @@ or even a painting.&lt;/p&gt;
     </item>
     <item>
       <title>Monthly Art #34</title>
-      <link>https://www.homeonrails.com/2018/10/monthly-art-number-34/</link>
+      <link>https://www.melekes.me/2018/10/monthly-art-number-34/</link>
       <pubDate>Sat, 13 Oct 2018 22:14:51 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/10/monthly-art-number-34/</guid>
+      <guid>https://www.melekes.me/2018/10/monthly-art-number-34/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;
@@ -386,114 +386,114 @@ or even a painting.&lt;/p&gt;
     </item>
     <item>
       <title>Apps for a distributed team</title>
-      <link>https://www.homeonrails.com/2018/09/apps-for-distributed-team/</link>
+      <link>https://www.melekes.me/2018/09/apps-for-distributed-team/</link>
       <pubDate>Sat, 15 Sep 2018 17:33:21 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/09/apps-for-distributed-team/</guid>
+      <guid>https://www.melekes.me/2018/09/apps-for-distributed-team/</guid>
       <description>&lt;p&gt;Thought I would share applications that we&amp;rsquo;ve been using at Tendermint and/or I
 can recommend for any folks distributed around the world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #33</title>
-      <link>https://www.homeonrails.com/2018/09/monthly-art-number-33/</link>
+      <link>https://www.melekes.me/2018/09/monthly-art-number-33/</link>
       <pubDate>Sat, 08 Sep 2018 14:22:51 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/09/monthly-art-number-33/</guid>
+      <guid>https://www.melekes.me/2018/09/monthly-art-number-33/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>July Tech Picks</title>
-      <link>https://www.homeonrails.com/2018/08/july-tech-picks/</link>
+      <link>https://www.melekes.me/2018/08/july-tech-picks/</link>
       <pubDate>Wed, 01 Aug 2018 11:56:09 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/08/july-tech-picks/</guid>
+      <guid>https://www.melekes.me/2018/08/july-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #32</title>
-      <link>https://www.homeonrails.com/2018/07/monthly-art-number-32/</link>
+      <link>https://www.melekes.me/2018/07/monthly-art-number-32/</link>
       <pubDate>Tue, 10 Jul 2018 21:12:51 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/07/monthly-art-number-32/</guid>
+      <guid>https://www.melekes.me/2018/07/monthly-art-number-32/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Better Open-Source With Tokenized Github</title>
-      <link>https://www.homeonrails.com/2018/06/better-open-source-with-tokenized-github/</link>
+      <link>https://www.melekes.me/2018/06/better-open-source-with-tokenized-github/</link>
       <pubDate>Wed, 06 Jun 2018 17:08:21 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/06/better-open-source-with-tokenized-github/</guid>
+      <guid>https://www.melekes.me/2018/06/better-open-source-with-tokenized-github/</guid>
       <description>In the light of the recent news, I wanted to share an idea I had just recently.
 Every popular open-source project on Github eventually becomes overwhelmed by the number of issues. That&amp;rsquo;s because it&amp;rsquo;s so easy to create one. You are not required to understand the project. You are not required to read the documentation. All you need is a Github account.
 And this is an example of the amplification attack.</description>
     </item>
     <item>
       <title>Monthly Art #31</title>
-      <link>https://www.homeonrails.com/2018/06/monthly-art-number-31/</link>
+      <link>https://www.melekes.me/2018/06/monthly-art-number-31/</link>
       <pubDate>Sun, 03 Jun 2018 12:22:51 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/06/monthly-art-number-31/</guid>
+      <guid>https://www.melekes.me/2018/06/monthly-art-number-31/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>May Tech Picks (Blockchain Edition)</title>
-      <link>https://www.homeonrails.com/2018/06/may-tech-picks/</link>
+      <link>https://www.melekes.me/2018/06/may-tech-picks/</link>
       <pubDate>Sun, 03 Jun 2018 12:05:09 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/06/may-tech-picks/</guid>
+      <guid>https://www.melekes.me/2018/06/may-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>April Tech Picks</title>
-      <link>https://www.homeonrails.com/2018/05/april-tech-picks/</link>
+      <link>https://www.melekes.me/2018/05/april-tech-picks/</link>
       <pubDate>Tue, 08 May 2018 18:20:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/05/april-tech-picks/</guid>
+      <guid>https://www.melekes.me/2018/05/april-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #30</title>
-      <link>https://www.homeonrails.com/2018/05/monthly-art-number-30/</link>
+      <link>https://www.melekes.me/2018/05/monthly-art-number-30/</link>
       <pubDate>Wed, 02 May 2018 20:08:51 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/05/monthly-art-number-30/</guid>
+      <guid>https://www.melekes.me/2018/05/monthly-art-number-30/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Отзыв о visatohome</title>
-      <link>https://www.homeonrails.com/2018/04/visatohome/</link>
+      <link>https://www.melekes.me/2018/04/visatohome/</link>
       <pubDate>Sat, 28 Apr 2018 11:25:21 +0300</pubDate>
-      <guid>https://www.homeonrails.com/2018/04/visatohome/</guid>
+      <guid>https://www.melekes.me/2018/04/visatohome/</guid>
       <description>&lt;p&gt;Решил воспользоваться &lt;a href=&#34;https://www.visatohome.ru/&#34;&gt;https://www.visatohome.ru/&lt;/a&gt; для оформления визы в Германию. Весь процесс занял ~ 3 недели.&lt;/p&gt;</description>
     </item>
     <item>
       <title>March Tech Picks</title>
-      <link>https://www.homeonrails.com/2018/04/march-tech-picks/</link>
+      <link>https://www.melekes.me/2018/04/march-tech-picks/</link>
       <pubDate>Mon, 02 Apr 2018 12:21:09 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/04/march-tech-picks/</guid>
+      <guid>https://www.melekes.me/2018/04/march-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #29</title>
-      <link>https://www.homeonrails.com/2018/04/monthly-art-number-29/</link>
+      <link>https://www.melekes.me/2018/04/monthly-art-number-29/</link>
       <pubDate>Sun, 01 Apr 2018 11:17:51 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/04/monthly-art-number-29/</guid>
+      <guid>https://www.melekes.me/2018/04/monthly-art-number-29/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Plea for Lean Software by Niklaus Wirth (1995)</title>
-      <link>https://www.homeonrails.com/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</link>
+      <link>https://www.melekes.me/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</link>
       <pubDate>Sat, 31 Mar 2018 15:46:21 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</guid>
+      <guid>https://www.melekes.me/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</guid>
       <description>Plea for Greek Independence by Eugène Delacroix (1826) In 1889, Anton Chekhov writes to his brother Alexander: &amp;ldquo;My advice: in the play try to be original and as clever as possible, but do not be afraid to seem silly; we need free-thinking, but only the freethinker who is not afraid to write nonsense. Do not grind it, but be clumsy and impudent. Brevity is the soul of wit.”
 I think we can apply the same principles to academic papers as well.</description>
     </item>
     <item>
       <title>4 quotes from The Emperor’s Old Clothes by C.A.R. Hoare (1981)</title>
-      <link>https://www.homeonrails.com/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</link>
+      <link>https://www.melekes.me/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</link>
       <pubDate>Fri, 30 Mar 2018 13:22:31 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</guid>
+      <guid>https://www.melekes.me/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</guid>
       <description>This article was originally published on Medium.
 Kangxi Emperor About ALGOL 60 which introduced recursion and enabled him to express his quick sort algorithm:
 “The highest goal of programming language design to enable good ideas to be elegantly expressed.”
@@ -503,24 +503,24 @@ On complexity and the role of a programming language:</description>
     </item>
     <item>
       <title>Where should I declare my constant?</title>
-      <link>https://www.homeonrails.com/2018/03/where-should-i-declare-my-constant/</link>
+      <link>https://www.melekes.me/2018/03/where-should-i-declare-my-constant/</link>
       <pubDate>Thu, 29 Mar 2018 15:18:47 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/where-should-i-declare-my-constant/</guid>
+      <guid>https://www.melekes.me/2018/03/where-should-i-declare-my-constant/</guid>
       <description>This article was originally published on Medium.
 Quick question: where should I declare my constant? Most developers would say: “top of the file”. And that would be the wrong answer. As for the majority of the questions in software engineering, the right answer is “it depends”. I would try to prove to you, in this post, that, if the constant is private and is used only in one place, it’s far better to declare it right above the line, where it’s used.</description>
     </item>
     <item>
       <title>Строительные компании Ульяновской области (частные дома / офисные здания)</title>
-      <link>https://www.homeonrails.com/2018/03/construction-companies-in-ulsk-oblast/</link>
+      <link>https://www.melekes.me/2018/03/construction-companies-in-ulsk-oblast/</link>
       <pubDate>Sun, 18 Mar 2018 17:46:32 +0300</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/construction-companies-in-ulsk-oblast/</guid>
+      <guid>https://www.melekes.me/2018/03/construction-companies-in-ulsk-oblast/</guid>
       <description></description>
     </item>
     <item>
       <title>Choosing a type for blockchain height (beware of unsigned integers)</title>
-      <link>https://www.homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</link>
+      <link>https://www.melekes.me/2018/03/choosing-a-type-for-blockchain-height/</link>
       <pubDate>Sat, 03 Mar 2018 13:47:11 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</guid>
+      <guid>https://www.melekes.me/2018/03/choosing-a-type-for-blockchain-height/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Before &lt;a href=&#34;https://github.com/tendermint/tendermint/pull/914&#34;&gt;this pull request&lt;/a&gt;,
 it was a mess. ABCI was using a &lt;code&gt;uint64&lt;/code&gt; height on EndBlock. Tendermint Core
@@ -531,9 +531,9 @@ across our repositories as for what type to use for blockchain height.&lt;/p&gt;
     </item>
     <item>
       <title>Debugging the Memory Leak in Tendermint</title>
-      <link>https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</link>
+      <link>https://www.melekes.me/2018/03/debugging-the-memory-leak-in-tendermint/</link>
       <pubDate>Sat, 03 Mar 2018 13:20:11 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</guid>
+      <guid>https://www.melekes.me/2018/03/debugging-the-memory-leak-in-tendermint/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I have spent the last week looking for clues and writing test cases in order to
 find and fix the memory leak in
@@ -548,74 +548,74 @@ leak. Here is the list:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #28</title>
-      <link>https://www.homeonrails.com/2018/03/monthly-art-number-28/</link>
+      <link>https://www.melekes.me/2018/03/monthly-art-number-28/</link>
       <pubDate>Thu, 01 Mar 2018 11:15:18 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/monthly-art-number-28/</guid>
+      <guid>https://www.melekes.me/2018/03/monthly-art-number-28/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>February Tech Picks</title>
-      <link>https://www.homeonrails.com/2018/03/february-tech-picks/</link>
+      <link>https://www.melekes.me/2018/03/february-tech-picks/</link>
       <pubDate>Thu, 01 Mar 2018 10:29:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/february-tech-picks/</guid>
+      <guid>https://www.melekes.me/2018/03/february-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #27</title>
-      <link>https://www.homeonrails.com/2018/02/monthly-art-number-27/</link>
+      <link>https://www.melekes.me/2018/02/monthly-art-number-27/</link>
       <pubDate>Sat, 03 Feb 2018 22:10:18 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/02/monthly-art-number-27/</guid>
+      <guid>https://www.melekes.me/2018/02/monthly-art-number-27/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>January Tech Picks</title>
-      <link>https://www.homeonrails.com/2018/02/january-tech-picks/</link>
+      <link>https://www.melekes.me/2018/02/january-tech-picks/</link>
       <pubDate>Sat, 03 Feb 2018 20:11:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/02/january-tech-picks/</guid>
+      <guid>https://www.melekes.me/2018/02/january-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Route in Ecuador</title>
-      <link>https://www.homeonrails.com/2017/12/route-in-ecuador/</link>
+      <link>https://www.melekes.me/2017/12/route-in-ecuador/</link>
       <pubDate>Sat, 30 Dec 2017 19:29:11 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/12/route-in-ecuador/</guid>
+      <guid>https://www.melekes.me/2017/12/route-in-ecuador/</guid>
       <description>&lt;p&gt;&lt;em&gt;(image credit: &lt;a href=&#34;https://www.flickr.com/photos/wurglitsch/9466325427)&#34;&gt;https://www.flickr.com/photos/wurglitsch/9466325427)&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This route was suggested to me by girl from Ecuador (thanks Carla), whom I met
 in Mexico on Dec. 10, 2017.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bus to Monte Alban</title>
-      <link>https://www.homeonrails.com/2017/12/bus-to-monte-alban/</link>
+      <link>https://www.melekes.me/2017/12/bus-to-monte-alban/</link>
       <pubDate>Sat, 30 Dec 2017 18:38:01 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/12/bus-to-monte-alban/</guid>
+      <guid>https://www.melekes.me/2017/12/bus-to-monte-alban/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Cheap local direct bus to &lt;a href=&#34;https://en.wikipedia.org/wiki/Monte_Alb%C3%A1n&#34;&gt;Monte Alban&lt;/a&gt;, Oaxaca&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #26</title>
-      <link>https://www.homeonrails.com/2017/12/monthly-art-number-26/</link>
+      <link>https://www.melekes.me/2017/12/monthly-art-number-26/</link>
       <pubDate>Sat, 30 Dec 2017 09:46:23 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/12/monthly-art-number-26/</guid>
+      <guid>https://www.melekes.me/2017/12/monthly-art-number-26/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>December Tech Picks</title>
-      <link>https://www.homeonrails.com/2017/12/december-tech-picks/</link>
+      <link>https://www.melekes.me/2017/12/december-tech-picks/</link>
       <pubDate>Fri, 29 Dec 2017 19:23:11 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/12/december-tech-picks/</guid>
+      <guid>https://www.melekes.me/2017/12/december-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My favorite books of 2017</title>
-      <link>https://www.homeonrails.com/2017/12/my-favorite-books-of-2017/</link>
+      <link>https://www.melekes.me/2017/12/my-favorite-books-of-2017/</link>
       <pubDate>Tue, 26 Dec 2017 21:15:01 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/12/my-favorite-books-of-2017/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2017-12-26-my-favorite-books-of-2017/year_in_books_full.png&#34;/&gt;
+      <guid>https://www.melekes.me/2017/12/my-favorite-books-of-2017/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2017-12-26-my-favorite-books-of-2017/year_in_books_full.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;This year I’ve set a very ambitious goal for me, which is to read fifty books.
@@ -626,116 +626,116 @@ reading. Audiobooks are great too!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Заметка о безопасности</title>
-      <link>https://www.homeonrails.com/2017/12/note-on-security/</link>
+      <link>https://www.melekes.me/2017/12/note-on-security/</link>
       <pubDate>Mon, 11 Dec 2017 23:48:31 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/12/note-on-security/</guid>
+      <guid>https://www.melekes.me/2017/12/note-on-security/</guid>
       <description>English
 Недавно начал все больше интересоваться темой безопасности. Наверное, я, как и многие люди из поколения Y, выросшие во времена бума компьютерных технологий, Сноудена и fsociety всегда был параноиком по части безопасности, но, признаться честно, я мало что делал для обеспечения ее как таковой. AdBlock, HTTPS Everywhere, и еще пара плагинов для Chrome - джентльменский набор нуба, так сказать.
 Но грядут новые времена. Времена, где твои криптоденежки можно увести у тебя из под носа просто подсунув тебе фейковую версию кошелька.</description>
     </item>
     <item>
       <title>Monthly Art #25</title>
-      <link>https://www.homeonrails.com/2017/12/monthly-art-number-25/</link>
+      <link>https://www.melekes.me/2017/12/monthly-art-number-25/</link>
       <pubDate>Sun, 03 Dec 2017 09:35:33 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/12/monthly-art-number-25/</guid>
+      <guid>https://www.melekes.me/2017/12/monthly-art-number-25/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>November Tech Picks</title>
-      <link>https://www.homeonrails.com/2017/11/november-tech-picks/</link>
+      <link>https://www.melekes.me/2017/11/november-tech-picks/</link>
       <pubDate>Wed, 29 Nov 2017 14:05:09 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/11/november-tech-picks/</guid>
+      <guid>https://www.melekes.me/2017/11/november-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #24</title>
-      <link>https://www.homeonrails.com/2017/11/monthly-art-number-24/</link>
+      <link>https://www.melekes.me/2017/11/monthly-art-number-24/</link>
       <pubDate>Sat, 04 Nov 2017 23:07:33 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/11/monthly-art-number-24/</guid>
+      <guid>https://www.melekes.me/2017/11/monthly-art-number-24/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>USA: From New York to San Francisco</title>
-      <link>https://www.homeonrails.com/2017/10/usa/</link>
+      <link>https://www.melekes.me/2017/10/usa/</link>
       <pubDate>Sat, 14 Oct 2017 17:19:45 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/10/usa/</guid>
+      <guid>https://www.melekes.me/2017/10/usa/</guid>
       <description>I remember me and my friends sitting in a cafe and talking about the USA. How amazing would it be to rent a car and drive from the East to the West coast? From New York to San Francisco. From the city of bankers, where everything is telling you that &amp;ldquo;you should make more money&amp;rdquo; to the technological capital of the planet Earth, a city of programmers.
 Was it by share luck or something else, but cards laid out just perfectly.</description>
     </item>
     <item>
       <title>How to find a remote job (Practical tips)</title>
-      <link>https://www.homeonrails.com/2017/10/how-to-find-a-remote-job/</link>
+      <link>https://www.melekes.me/2017/10/how-to-find-a-remote-job/</link>
       <pubDate>Thu, 12 Oct 2017 20:57:11 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/10/how-to-find-a-remote-job/</guid>
+      <guid>https://www.melekes.me/2017/10/how-to-find-a-remote-job/</guid>
       <description>Many of you probably know that for the last 10 months I&amp;rsquo;ve been working remotely at Tendermint. A few days ago a friend of mine asked me to give him some practical tips on how to find a remote job (being a software developer). I&amp;rsquo;ve told him that it&amp;rsquo;s not so different from searching for a desk job. However, I did give him a few recommendations that I wanted to share with you guys.</description>
     </item>
     <item>
       <title>Monthly Art #23</title>
-      <link>https://www.homeonrails.com/2017/09/monthly-art-number-23/</link>
+      <link>https://www.melekes.me/2017/09/monthly-art-number-23/</link>
       <pubDate>Sat, 30 Sep 2017 12:28:29 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/09/monthly-art-number-23/</guid>
+      <guid>https://www.melekes.me/2017/09/monthly-art-number-23/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>USA / Cities</title>
-      <link>https://www.homeonrails.com/2017/09/usa-cities/</link>
+      <link>https://www.melekes.me/2017/09/usa-cities/</link>
       <pubDate>Sun, 03 Sep 2017 21:39:21 -0600</pubDate>
-      <guid>https://www.homeonrails.com/2017/09/usa-cities/</guid>
+      <guid>https://www.melekes.me/2017/09/usa-cities/</guid>
       <description>Disclaimer: my opinion on some cities can be biased and completely wrong since we rarely stayed more than 2 days in one city.
 New York What I&amp;rsquo;ll remember: the smell of urine and garbage in Manhattan, the New York subway, African Americans jumping over people (show).
 When you imagine New York, you most often think of Manhattan and Central Park. You think of luxury apartments with a view of the park and limousines waiting for guests at the entrance.</description>
     </item>
     <item>
       <title>July Tech Picks</title>
-      <link>https://www.homeonrails.com/2017/08/july-tech-picks/</link>
+      <link>https://www.melekes.me/2017/08/july-tech-picks/</link>
       <pubDate>Sun, 06 Aug 2017 23:03:09 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/08/july-tech-picks/</guid>
+      <guid>https://www.melekes.me/2017/08/july-tech-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #22</title>
-      <link>https://www.homeonrails.com/2017/08/monthly-art-number-22/</link>
+      <link>https://www.melekes.me/2017/08/monthly-art-number-22/</link>
       <pubDate>Sun, 06 Aug 2017 20:33:29 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/08/monthly-art-number-22/</guid>
+      <guid>https://www.melekes.me/2017/08/monthly-art-number-22/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Brazilian movies weekend</title>
-      <link>https://www.homeonrails.com/2017/07/brazilian-movies-weekend/</link>
+      <link>https://www.melekes.me/2017/07/brazilian-movies-weekend/</link>
       <pubDate>Sun, 30 Jul 2017 11:48:01 -0500</pubDate>
-      <guid>https://www.homeonrails.com/2017/07/brazilian-movies-weekend/</guid>
+      <guid>https://www.melekes.me/2017/07/brazilian-movies-weekend/</guid>
       <description>On the contrary to Indian movies, Brazilian movies are full of pain, struggle, and tears. These movies deeply reflect the history of their country, uncovering all the problems which exist even upon today. They were recommended to me by an architect from Brazil I&amp;rsquo;ve met in Lithuania.
 Central Station (1998) &amp;ldquo;An emotive journey of a former school teacher, who writes letters for illiterate people, and a young boy, whose mother has just died, as they search for the father he never knew.</description>
     </item>
     <item>
       <title>Monthly Art #21</title>
-      <link>https://www.homeonrails.com/2017/07/monthly-art-number-21/</link>
+      <link>https://www.melekes.me/2017/07/monthly-art-number-21/</link>
       <pubDate>Thu, 13 Jul 2017 09:43:29 +0300</pubDate>
-      <guid>https://www.homeonrails.com/2017/07/monthly-art-number-21/</guid>
+      <guid>https://www.melekes.me/2017/07/monthly-art-number-21/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>June Picks</title>
-      <link>https://www.homeonrails.com/2017/07/june-picks/</link>
+      <link>https://www.melekes.me/2017/07/june-picks/</link>
       <pubDate>Sat, 01 Jul 2017 15:14:09 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/07/june-picks/</guid>
+      <guid>https://www.melekes.me/2017/07/june-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Велосипедный маршрут №2 по Ульяновской области</title>
-      <link>https://www.homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2/</link>
+      <link>https://www.melekes.me/2017/06/cycling-route-in-ulyanovsk-oblast-2/</link>
       <pubDate>Sun, 25 Jun 2017 15:57:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast-2/</guid>
+      <guid>https://www.melekes.me/2017/06/cycling-route-in-ulyanovsk-oblast-2/</guid>
       <description>(Cycling route in Ulyanovsk Oblast #2)
 Сложность (difficulty): легко (easy) Протяженность в одну сторону (distance, one way): 9.6км (6.7 miles)
 Сначала любуемся домами богатых жителей Ульяновска, проезжаем кружок по лыжной базе &amp;ldquo;Заря&amp;rdquo; (внимание: штраф 20тр, но всем пофиг; главное не наглеть и пропускать спортсменов). Далее едем в парк 40лет ВЛКСМ и назад через лес. Большая часть пролегает по сосновому лесу, так что воздух там отличный.
@@ -743,74 +743,74 @@ or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Indian movies weekend</title>
-      <link>https://www.homeonrails.com/2017/06/indian-movies-weekend/</link>
+      <link>https://www.melekes.me/2017/06/indian-movies-weekend/</link>
       <pubDate>Sun, 25 Jun 2017 11:37:01 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/06/indian-movies-weekend/</guid>
+      <guid>https://www.melekes.me/2017/06/indian-movies-weekend/</guid>
       <description>On my way from Berlin to Warsaw I&amp;rsquo;ve met 2 really cool guys from India - Winny and Raghav. They asked me to recommend 3 Russian movies to them and I did. Then I asked to return a favor. I watched all of them and they are amazing. No wonder they all have a very good score on IMDB. So, thank you guys!
 Swades (2004) A project manager from NASA decides to go to India to find his nanny.</description>
     </item>
     <item>
       <title>Abstracting the logger interface in Go</title>
-      <link>https://www.homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</link>
+      <link>https://www.melekes.me/2017/06/abstracting-the-logger-interface-in-go/</link>
       <pubDate>Tue, 06 Jun 2017 22:35:01 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</guid>
+      <guid>https://www.melekes.me/2017/06/abstracting-the-logger-interface-in-go/</guid>
       <description>Wrote a blog post a few days ago for my company&amp;rsquo;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
 https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7</description>
     </item>
     <item>
       <title>Велосипедный маршрут №1 по Ульяновской области</title>
-      <link>https://www.homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast/</link>
+      <link>https://www.melekes.me/2017/06/cycling-route-in-ulyanovsk-oblast/</link>
       <pubDate>Thu, 01 Jun 2017 01:46:01 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2017/06/cycling-route-in-ulyanovsk-oblast/</guid>
+      <guid>https://www.melekes.me/2017/06/cycling-route-in-ulyanovsk-oblast/</guid>
       <description>(Cycling route in Ulyanovsk Oblast)
 Сложность (difficulty): легко (easy) Протяженность в одну сторону (distance, one way): 17.7км (11.268 miles)
 Небольшой участок пути придется проехать через лес (сразу после Поливно). По приезду в Полдомасово можно искупаться. Вода чистая, проточная (течение сильное) (You will have to bike through the forest at some point (small piece of the track right after Polivno). Upon arrival in Poldomasovo you can go swimming. The water is clean and refreshing.</description>
     </item>
     <item>
       <title>Monthly Art #20</title>
-      <link>https://www.homeonrails.com/2017/05/monthly-art-number-20/</link>
+      <link>https://www.melekes.me/2017/05/monthly-art-number-20/</link>
       <pubDate>Wed, 24 May 2017 23:46:29 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2017/05/monthly-art-number-20/</guid>
+      <guid>https://www.melekes.me/2017/05/monthly-art-number-20/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>April Picks</title>
-      <link>https://www.homeonrails.com/2017/05/april-picks/</link>
+      <link>https://www.melekes.me/2017/05/april-picks/</link>
       <pubDate>Wed, 24 May 2017 23:10:09 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2017/05/april-picks/</guid>
+      <guid>https://www.melekes.me/2017/05/april-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drive in France</title>
-      <link>https://www.homeonrails.com/2017/05/drive-in-france/</link>
+      <link>https://www.melekes.me/2017/05/drive-in-france/</link>
       <pubDate>Sun, 21 May 2017 14:25:41 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2017/05/drive-in-france/</guid>
+      <guid>https://www.melekes.me/2017/05/drive-in-france/</guid>
       <description>&lt;p&gt;On my way to Warsaw took a picture of the example route from a driver, who used
 to drive tourists across France.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #19</title>
-      <link>https://www.homeonrails.com/2017/04/monthly-art-number-19/</link>
+      <link>https://www.melekes.me/2017/04/monthly-art-number-19/</link>
       <pubDate>Sat, 15 Apr 2017 23:56:34 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/04/monthly-art-number-19/</guid>
+      <guid>https://www.melekes.me/2017/04/monthly-art-number-19/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>March Picks</title>
-      <link>https://www.homeonrails.com/2017/04/march-picks/</link>
+      <link>https://www.melekes.me/2017/04/march-picks/</link>
       <pubDate>Sat, 15 Apr 2017 23:22:09 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/04/march-picks/</guid>
+      <guid>https://www.melekes.me/2017/04/march-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Удаленная работа</title>
-      <link>https://www.homeonrails.com/2017/03/remote-work/</link>
+      <link>https://www.melekes.me/2017/03/remote-work/</link>
       <pubDate>Wed, 15 Mar 2017 10:21:49 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/03/remote-work/</guid>
+      <guid>https://www.melekes.me/2017/03/remote-work/</guid>
       <description>&lt;p&gt;Вот уже третий месяц как я работаю удаленно на американский стартап. Хотелось
 бы поделиться с вами впечатлениями от удаленной работы. 3 месяца - не такой уж
 и большой срок. Но до этого я 6 лет работал в офисе, лишь изредка путешествуя и
@@ -819,25 +819,25 @@ or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #18</title>
-      <link>https://www.homeonrails.com/2017/03/monthly-art-number-18/</link>
+      <link>https://www.melekes.me/2017/03/monthly-art-number-18/</link>
       <pubDate>Fri, 10 Mar 2017 16:33:29 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/03/monthly-art-number-18/</guid>
+      <guid>https://www.melekes.me/2017/03/monthly-art-number-18/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>February Picks</title>
-      <link>https://www.homeonrails.com/2017/03/february-picks/</link>
+      <link>https://www.melekes.me/2017/03/february-picks/</link>
       <pubDate>Fri, 10 Mar 2017 16:23:05 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/03/february-picks/</guid>
+      <guid>https://www.melekes.me/2017/03/february-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Podcasts I listen to</title>
-      <link>https://www.homeonrails.com/2017/03/podcasts-i-am-listening-to/</link>
+      <link>https://www.melekes.me/2017/03/podcasts-i-am-listening-to/</link>
       <pubDate>Sun, 05 Mar 2017 12:00:12 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/03/podcasts-i-am-listening-to/</guid>
+      <guid>https://www.melekes.me/2017/03/podcasts-i-am-listening-to/</guid>
       <description>&lt;p&gt;Last updated: Mon, Dec. 23, 2019&lt;/p&gt;
 &lt;p&gt;A podcast, as an information medium, is more popular than ever before. Soon, it
 seems, even my dog will have its own show. There are many good podcasts out
@@ -853,32 +853,32 @@ particularly interesting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #17</title>
-      <link>https://www.homeonrails.com/2017/02/monthly-art-number-17/</link>
+      <link>https://www.melekes.me/2017/02/monthly-art-number-17/</link>
       <pubDate>Mon, 13 Feb 2017 12:13:45 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/02/monthly-art-number-17/</guid>
+      <guid>https://www.melekes.me/2017/02/monthly-art-number-17/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>January Picks</title>
-      <link>https://www.homeonrails.com/2017/02/january-picks/</link>
+      <link>https://www.melekes.me/2017/02/january-picks/</link>
       <pubDate>Mon, 13 Feb 2017 11:32:11 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/02/january-picks/</guid>
+      <guid>https://www.melekes.me/2017/02/january-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Кто с кем играет: кошка со мной или я с ней?</title>
-      <link>https://www.homeonrails.com/2017/02/whos-playing-with-whom/</link>
+      <link>https://www.melekes.me/2017/02/whos-playing-with-whom/</link>
       <pubDate>Wed, 08 Feb 2017 12:07:24 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/02/whos-playing-with-whom/</guid>
+      <guid>https://www.melekes.me/2017/02/whos-playing-with-whom/</guid>
       <description>&amp;ldquo;Если кошка мурлычет и трется о хозяйские ноги, нам кажется, что она благодарна за заботу и такое поведение - признак тепла и приязни. На самом деле она, скорее всего, втирает в вас свои гормоны, заявляя свои права (на вас, разумеется), что имеет целью отвадить других кошек. С точки зрения кошки, вы - что-то вроде прислуги, обязанность которой несколько раз в день подавать еду, и она, втирая в вас свой запах, предупреждает остальных, что у вас уже есть законная хозяйка.</description>
     </item>
     <item>
       <title>CircleCI config for multipackage Golang projects</title>
-      <link>https://www.homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</link>
+      <link>https://www.melekes.me/2017/02/circleci-config-for-multipackage-golang-projects/</link>
       <pubDate>Mon, 06 Feb 2017 10:54:24 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</guid>
+      <guid>https://www.melekes.me/2017/02/circleci-config-for-multipackage-golang-projects/</guid>
       <description>&lt;p&gt;Multipackage Golang project - project, consisting of several packages. When
 testing you usually do something like &lt;code&gt;go test ./...&lt;/code&gt;, when getting all the
 dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be a Go package at the
@@ -887,28 +887,28 @@ root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&g
     </item>
     <item>
       <title>Lingualeo Contest</title>
-      <link>https://www.homeonrails.com/2017/01/lingualeo-contest/</link>
+      <link>https://www.melekes.me/2017/01/lingualeo-contest/</link>
       <pubDate>Sat, 28 Jan 2017 14:32:24 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/01/lingualeo-contest/</guid>
+      <guid>https://www.melekes.me/2017/01/lingualeo-contest/</guid>
       <description>&lt;p&gt;If you still don&amp;rsquo;t know, Lingualeo and The British Council are conducting a
 &lt;a href=&#34;http://education.lingualeo.com/&#34;&gt;contest&lt;/a&gt; from Jan 25 to Feb 8.&lt;/p&gt;
 &lt;p&gt;Here is my submission:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Best books of 2016</title>
-      <link>https://www.homeonrails.com/2017/01/best-books-of-2016/</link>
+      <link>https://www.melekes.me/2017/01/best-books-of-2016/</link>
       <pubDate>Wed, 18 Jan 2017 20:46:24 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/01/best-books-of-2016/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2017-01-18-best-books-of-2016/year_in_books_full.png&#34;/&gt;
+      <guid>https://www.melekes.me/2017/01/best-books-of-2016/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2017-01-18-best-books-of-2016/year_in_books_full.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Wanted to share the best books I&amp;rsquo;ve read in 2016.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Подписываем git коммиты</title>
-      <link>https://www.homeonrails.com/2017/01/signing-git-commits/</link>
+      <link>https://www.melekes.me/2017/01/signing-git-commits/</link>
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2017/01/signing-git-commits/</guid>
+      <guid>https://www.melekes.me/2017/01/signing-git-commits/</guid>
       <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
 возможны такие смешные поделки как
@@ -918,30 +918,30 @@ root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&g
 &lt;p&gt;Github в &lt;a href=&#34;https://github.com/blog/2144-gpg-signature-verification&#34;&gt;апреле прошлого
 года&lt;/a&gt; начал показывать
 зеленый бейджик когда коммит подписан. Вот как он выглядит:&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2017-01-14-signing-git-commits/github.png&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Monthly Art #16</title>
-      <link>https://www.homeonrails.com/2017/01/monthly-art-number-16/</link>
+      <link>https://www.melekes.me/2017/01/monthly-art-number-16/</link>
       <pubDate>Tue, 10 Jan 2017 09:54:11 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2017/01/monthly-art-number-16/</guid>
+      <guid>https://www.melekes.me/2017/01/monthly-art-number-16/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>December Picks</title>
-      <link>https://www.homeonrails.com/2017/01/december-picks/</link>
+      <link>https://www.melekes.me/2017/01/december-picks/</link>
       <pubDate>Sat, 07 Jan 2017 10:54:24 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2017/01/december-picks/</guid>
+      <guid>https://www.melekes.me/2017/01/december-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About me</title>
-      <link>https://www.homeonrails.com/about/</link>
+      <link>https://www.melekes.me/about/</link>
       <pubDate>Fri, 06 Jan 2017 14:14:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/about/</guid>
+      <guid>https://www.melekes.me/about/</guid>
       <description>Hi! My name is Anton.
 10x lazy programmer 💻 crypto/web3 since 2017 hitchhiking, swimming, meditating, exploring, reading, learning My open source work is available on GitHub, my talks are on Speaker Deck, my work history is on LinkedIn, and my thoughts are on Twitter.
 My photos are on Instagram.
@@ -950,17 +950,17 @@ Born in Ulyanovsk, Russia on March 25, 1988.</description>
     </item>
     <item>
       <title>Best motivational videos</title>
-      <link>https://www.homeonrails.com/2016/12/best-motivational-videos/</link>
+      <link>https://www.melekes.me/2016/12/best-motivational-videos/</link>
       <pubDate>Thu, 29 Dec 2016 11:54:48 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/12/best-motivational-videos/</guid>
+      <guid>https://www.melekes.me/2016/12/best-motivational-videos/</guid>
       <description>&lt;p&gt;Last updated: Fri, Dec. 27, 2019&lt;/p&gt;
 &lt;p&gt;Best motivational videos related to life (in general).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Итоги 2016 года</title>
-      <link>https://www.homeonrails.com/2016/12/2016-results/</link>
+      <link>https://www.melekes.me/2016/12/2016-results/</link>
       <pubDate>Wed, 28 Dec 2016 22:45:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/12/2016-results/</guid>
+      <guid>https://www.melekes.me/2016/12/2016-results/</guid>
       <description>&lt;p&gt;Под конец уходящего года принято подводить некоторые итоги: что удалось, что не
 удалось сделать, поставить цели на следующий год. В принципе, это не
 обязательно должен быть канун НГ. Просто так удобней. Еще можно попробовать
@@ -968,57 +968,57 @@ Born in Ulyanovsk, Russia on March 25, 1988.</description>
     </item>
     <item>
       <title>Monthly Art #15</title>
-      <link>https://www.homeonrails.com/2016/12/monthly-art-number-15/</link>
+      <link>https://www.melekes.me/2016/12/monthly-art-number-15/</link>
       <pubDate>Tue, 13 Dec 2016 16:40:11 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/12/monthly-art-number-15/</guid>
+      <guid>https://www.melekes.me/2016/12/monthly-art-number-15/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>November Picks</title>
-      <link>https://www.homeonrails.com/2016/12/november-picks/</link>
+      <link>https://www.melekes.me/2016/12/november-picks/</link>
       <pubDate>Tue, 13 Dec 2016 12:06:13 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/12/november-picks/</guid>
+      <guid>https://www.melekes.me/2016/12/november-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #14</title>
-      <link>https://www.homeonrails.com/2016/11/monthly-art-number-14/</link>
+      <link>https://www.melekes.me/2016/11/monthly-art-number-14/</link>
       <pubDate>Fri, 11 Nov 2016 13:24:39 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/11/monthly-art-number-14/</guid>
+      <guid>https://www.melekes.me/2016/11/monthly-art-number-14/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>October Picks</title>
-      <link>https://www.homeonrails.com/2016/11/october-picks/</link>
+      <link>https://www.melekes.me/2016/11/october-picks/</link>
       <pubDate>Fri, 11 Nov 2016 12:20:03 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/11/october-picks/</guid>
+      <guid>https://www.melekes.me/2016/11/october-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prince Ea</title>
-      <link>https://www.homeonrails.com/2016/11/prince-ea/</link>
+      <link>https://www.melekes.me/2016/11/prince-ea/</link>
       <pubDate>Fri, 04 Nov 2016 23:14:20 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/11/prince-ea/</guid>
+      <guid>https://www.melekes.me/2016/11/prince-ea/</guid>
       <description>&lt;p&gt;There are actually not many great motivational videos on the Internet. But this
 guy, this guy has some style.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hire me</title>
-      <link>https://www.homeonrails.com/2016/10/hire-me/</link>
+      <link>https://www.melekes.me/2016/10/hire-me/</link>
       <pubDate>Wed, 26 Oct 2016 19:12:16 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/hire-me/</guid>
-      <description>&lt;p&gt;For the past two years, I&amp;rsquo;ve been working full time at FunBox as an &lt;strong&gt;Erlang developer&lt;/strong&gt;. I&amp;rsquo;ve learned so much during that time - the Erlang language itself and the tooling (observer, recon and &lt;a href=&#34;http://homeonrails.com/2016/05/profiling-in-erlang/&#34;&gt;others&lt;/a&gt;), Hadoop, HDFS and even some team management skills (thanks to @gumayunov).&lt;/p&gt;
+      <guid>https://www.melekes.me/2016/10/hire-me/</guid>
+      <description>&lt;p&gt;For the past two years, I&amp;rsquo;ve been working full time at FunBox as an &lt;strong&gt;Erlang developer&lt;/strong&gt;. I&amp;rsquo;ve learned so much during that time - the Erlang language itself and the tooling (observer, recon and &lt;a href=&#34;https://www.melekes.me/2016/05/profiling-in-erlang/&#34;&gt;others&lt;/a&gt;), Hadoop, HDFS and even some team management skills (thanks to @gumayunov).&lt;/p&gt;
 &lt;p&gt;I am grateful for the opportunity that FunBox has given me. But once a while you need to move on and I did. So I&amp;rsquo;m looking for a new job.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of Erlang User Conference 2016</title>
-      <link>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
+      <link>https://www.melekes.me/2016/10/the-best-of-erlang-user-conference-2016/</link>
       <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
+      <guid>https://www.melekes.me/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
 &lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
@@ -1026,16 +1026,16 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
     </item>
     <item>
       <title>5 New Tab Google Chrome extensions for productivity freaks</title>
-      <link>https://www.homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</link>
+      <link>https://www.melekes.me/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</link>
       <pubDate>Tue, 18 Oct 2016 17:40:16 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
+      <guid>https://www.melekes.me/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
       <description></description>
     </item>
     <item>
       <title>The Best of Strange Loop 2016</title>
-      <link>https://www.homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
+      <link>https://www.melekes.me/2016/10/the-best-of-strange-loop-2016/</link>
       <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
+      <guid>https://www.melekes.me/2016/10/the-best-of-strange-loop-2016/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
 conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
 YouTube&lt;/a&gt;.
@@ -1044,41 +1044,41 @@ gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt
     </item>
     <item>
       <title>Monthly Art #13</title>
-      <link>https://www.homeonrails.com/2016/10/monthly-art-number-13/</link>
+      <link>https://www.melekes.me/2016/10/monthly-art-number-13/</link>
       <pubDate>Tue, 11 Oct 2016 12:06:49 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/monthly-art-number-13/</guid>
+      <guid>https://www.melekes.me/2016/10/monthly-art-number-13/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album, book
 or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>September Picks</title>
-      <link>https://www.homeonrails.com/2016/10/september-picks/</link>
+      <link>https://www.melekes.me/2016/10/september-picks/</link>
       <pubDate>Tue, 11 Oct 2016 10:47:37 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/september-picks/</guid>
+      <guid>https://www.melekes.me/2016/10/september-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Обязательные приложения для путешествия по Китаю</title>
-      <link>https://www.homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</link>
+      <link>https://www.melekes.me/2016/10/must-have-apps-for-traveling-in-china/</link>
       <pubDate>Fri, 07 Oct 2016 12:17:02 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/must-have-apps-for-traveling-in-china/</guid>
+      <guid>https://www.melekes.me/2016/10/must-have-apps-for-traveling-in-china/</guid>
       <description></description>
     </item>
     <item>
       <title>Заповедник Хуанлун. Как добраться из Цзючжайгоу плюс карта</title>
-      <link>https://www.homeonrails.com/2016/10/huanglong/</link>
+      <link>https://www.melekes.me/2016/10/huanglong/</link>
       <pubDate>Thu, 06 Oct 2016 22:58:27 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/huanglong/</guid>
+      <guid>https://www.melekes.me/2016/10/huanglong/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Хуанлун (кит. трад. 黃龍, упр. 黄龙, пиньинь: Huánglóng), «Жёлтый дракон» — живописная заповедная местность, известная своими травертиновыми террасами (из известкового туфа), многочисленными озёрами, различных цветов и форм. &lt;!-- raw HTML omitted --&gt;Википедия&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Один месяц в Китае</title>
-      <link>https://www.homeonrails.com/2016/10/one-month-in-china/</link>
+      <link>https://www.melekes.me/2016/10/one-month-in-china/</link>
       <pubDate>Thu, 06 Oct 2016 13:00:41 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/one-month-in-china/</guid>
+      <guid>https://www.melekes.me/2016/10/one-month-in-china/</guid>
       <description>&lt;p&gt;Недавно вернулся из Китая, где прожил один месяц. Никакой работы, просто
 путешествуя из города в город. Иногда это были деревни, иногда заповедники.
 Другие люди, другая еда, да все другое. Этим меня и покорил Китай. Но не будем
@@ -1086,19 +1086,19 @@ or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Непереносимость глютена? Аллерготесты в Ульяновске</title>
-      <link>https://www.homeonrails.com/2016/08/gluten-intolerance/</link>
+      <link>https://www.melekes.me/2016/08/gluten-intolerance/</link>
       <pubDate>Thu, 25 Aug 2016 10:02:36 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/08/gluten-intolerance/</guid>
+      <guid>https://www.melekes.me/2016/08/gluten-intolerance/</guid>
       <description>&lt;p&gt;Так как я собираюсь в Китай, решил проверить, до сих пор ли у меня пищевая
 аллергия на рыбу. Последние аллергопробы делал лет 14 назад. Заодно добавил
 некоторые морепродукты и глютен (&lt;strong&gt;по совету медсестры лаборатории&lt;/strong&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Неделя @backendsecret в твиттере</title>
-      <link>https://www.homeonrails.com/2016/08/backendsecret-week/</link>
+      <link>https://www.melekes.me/2016/08/backendsecret-week/</link>
       <pubDate>Sat, 20 Aug 2016 22:05:30 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/08/backendsecret-week/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-08-20-backendsecret-week/week.jpg&#34;/&gt;
+      <guid>https://www.melekes.me/2016/08/backendsecret-week/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-08-20-backendsecret-week/week.jpg&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Прошлую неделю (08.08 - 14.08) вел коллективный твиттер-аккаунт для бэкенд-разработчиков
@@ -1108,25 +1108,25 @@ or even a painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>July Picks</title>
-      <link>https://www.homeonrails.com/2016/08/july-picks/</link>
+      <link>https://www.melekes.me/2016/08/july-picks/</link>
       <pubDate>Sat, 13 Aug 2016 13:02:05 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/08/july-picks/</guid>
+      <guid>https://www.melekes.me/2016/08/july-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #12</title>
-      <link>https://www.homeonrails.com/2016/08/monthly-art-number-12/</link>
+      <link>https://www.melekes.me/2016/08/monthly-art-number-12/</link>
       <pubDate>Sat, 13 Aug 2016 11:26:40 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/08/monthly-art-number-12/</guid>
+      <guid>https://www.melekes.me/2016/08/monthly-art-number-12/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Правильный подход к выбору работы</title>
-      <link>https://www.homeonrails.com/2016/07/how-to-choose-a-job-correctly/</link>
+      <link>https://www.melekes.me/2016/07/how-to-choose-a-job-correctly/</link>
       <pubDate>Fri, 29 Jul 2016 11:22:34 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/how-to-choose-a-job-correctly/</guid>
+      <guid>https://www.melekes.me/2016/07/how-to-choose-a-job-correctly/</guid>
       <description>&lt;p&gt;На свою первую работу в качестве программиста я устроился чисто случайно. Один
 из преподавателей в универе предложил под его руководством написать CRM систему
 для довольно известной сети бытовой техники. Недолго раздумывая (~ 1 день), я
@@ -1135,59 +1135,59 @@ book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>June Picks</title>
-      <link>https://www.homeonrails.com/2016/07/june-picks/</link>
+      <link>https://www.melekes.me/2016/07/june-picks/</link>
       <pubDate>Mon, 11 Jul 2016 12:44:33 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/june-picks/</guid>
+      <guid>https://www.melekes.me/2016/07/june-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #11</title>
-      <link>https://www.homeonrails.com/2016/07/monthly-art-number-11/</link>
+      <link>https://www.melekes.me/2016/07/monthly-art-number-11/</link>
       <pubDate>Mon, 11 Jul 2016 12:16:47 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/monthly-art-number-11/</guid>
+      <guid>https://www.melekes.me/2016/07/monthly-art-number-11/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Отзыв о стуле Salli Chin</title>
-      <link>https://www.homeonrails.com/2016/07/salli-chin-review/</link>
+      <link>https://www.melekes.me/2016/07/salli-chin-review/</link>
       <pubDate>Sat, 09 Jul 2016 10:03:59 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/salli-chin-review/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-07-09-salli-chin-review/salli1.jpg&#34;/&gt;
+      <guid>https://www.melekes.me/2016/07/salli-chin-review/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-07-09-salli-chin-review/salli1.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>On the importance of unification</title>
-      <link>https://www.homeonrails.com/2016/07/on-the-importance-of-unification/</link>
+      <link>https://www.melekes.me/2016/07/on-the-importance-of-unification/</link>
       <pubDate>Tue, 05 Jul 2016 16:24:36 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/on-the-importance-of-unification/</guid>
+      <guid>https://www.melekes.me/2016/07/on-the-importance-of-unification/</guid>
       <description>&lt;p&gt;Unification, for me, means having one way or instrument (not always the best)
 to deal with a problem. And, in some cases, it is crucial.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png&#34;/&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png&#34;/&gt;&lt;figcaption&gt;
             &lt;h4&gt;It&amp;#39;s important to have only one instrument for solving a problem&lt;/h4&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Why Do You Need a Pool</title>
-      <link>https://www.homeonrails.com/2016/07/why-do-you-need-a-pool/</link>
+      <link>https://www.melekes.me/2016/07/why-do-you-need-a-pool/</link>
       <pubDate>Mon, 04 Jul 2016 12:35:52 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/why-do-you-need-a-pool/</guid>
+      <guid>https://www.melekes.me/2016/07/why-do-you-need-a-pool/</guid>
       <description>&lt;p&gt;There are a number of reasons you may want to use a pool of workers in your application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Выбираем VPN</title>
-      <link>https://www.homeonrails.com/2016/07/choosing-a-vpn/</link>
+      <link>https://www.melekes.me/2016/07/choosing-a-vpn/</link>
       <pubDate>Sun, 03 Jul 2016 16:28:03 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/choosing-a-vpn/</guid>
+      <guid>https://www.melekes.me/2016/07/choosing-a-vpn/</guid>
       <description>&lt;p&gt;Недавно пришлось выбирать VPN сервис (чтобы безопасно в интернетах лазить общедоступных; в кафешке там или аэропорту).&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of Clojure/west 2016</title>
-      <link>https://www.homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</link>
+      <link>https://www.melekes.me/2016/06/the-best-of-clojure-slash-west-2016/</link>
       <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
+      <guid>https://www.melekes.me/2016/06/the-best-of-clojure-slash-west-2016/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
 wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
 Clojure conference in the western United States and all about this language, as
@@ -1197,25 +1197,25 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
     </item>
     <item>
       <title>Mothly Art #10</title>
-      <link>https://www.homeonrails.com/2016/06/mothly-art-number-10/</link>
+      <link>https://www.melekes.me/2016/06/mothly-art-number-10/</link>
       <pubDate>Sat, 11 Jun 2016 11:35:48 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/06/mothly-art-number-10/</guid>
+      <guid>https://www.melekes.me/2016/06/mothly-art-number-10/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>May Picks</title>
-      <link>https://www.homeonrails.com/2016/06/may-picks/</link>
+      <link>https://www.melekes.me/2016/06/may-picks/</link>
       <pubDate>Sat, 11 Jun 2016 10:40:07 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/06/may-picks/</guid>
+      <guid>https://www.melekes.me/2016/06/may-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Profiling in Erlang</title>
-      <link>https://www.homeonrails.com/2016/05/profiling-in-erlang/</link>
+      <link>https://www.melekes.me/2016/05/profiling-in-erlang/</link>
       <pubDate>Wed, 25 May 2016 11:41:44 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/05/profiling-in-erlang/</guid>
+      <guid>https://www.melekes.me/2016/05/profiling-in-erlang/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;The list of available instruments:&lt;/p&gt;
 &lt;ul&gt;
@@ -1231,9 +1231,9 @@ book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to be productive with almost any text editor</title>
-      <link>https://www.homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</link>
+      <link>https://www.melekes.me/2016/05/how-to-be-productive-with-almost-any-editor/</link>
       <pubDate>Mon, 23 May 2016 12:02:11 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</guid>
+      <guid>https://www.melekes.me/2016/05/how-to-be-productive-with-almost-any-editor/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;What makes us productive when working with code in the editor? Every day, there
 is a new shining plugin, that allows us to do something useful by pressing only
@@ -1247,59 +1247,59 @@ pile of docs and much time to learn.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #9</title>
-      <link>https://www.homeonrails.com/2016/05/monthly-art-number-9/</link>
+      <link>https://www.melekes.me/2016/05/monthly-art-number-9/</link>
       <pubDate>Tue, 10 May 2016 22:02:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/05/monthly-art-number-9/</guid>
+      <guid>https://www.melekes.me/2016/05/monthly-art-number-9/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>April Picks</title>
-      <link>https://www.homeonrails.com/2016/05/april-picks/</link>
+      <link>https://www.melekes.me/2016/05/april-picks/</link>
       <pubDate>Tue, 10 May 2016 20:43:40 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/05/april-picks/</guid>
+      <guid>https://www.melekes.me/2016/05/april-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>TrueColor in Gnome Terminal, Tmux and Neovim</title>
-      <link>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
+      <link>https://www.melekes.me/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
       <pubDate>Wed, 04 May 2016 11:41:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
+      <guid>https://www.melekes.me/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
       <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
 can see, most of the editors and terminals now support TrueColor (16 million
 colors).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vim: Open current line on Atlassian Stash (Bitbucket Server)</title>
-      <link>https://www.homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</link>
+      <link>https://www.melekes.me/2016/04/vim-open-current-line-on-atlassian-stash/</link>
       <pubDate>Thu, 28 Apr 2016 11:47:36 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/04/vim-open-current-line-on-atlassian-stash/</guid>
+      <guid>https://www.melekes.me/2016/04/vim-open-current-line-on-atlassian-stash/</guid>
       <description>&lt;p&gt;This is based on Felix Geisendörfer &lt;a href=&#34;http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html&#34;&gt;Vim Trick: Open current line on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Как стартовать Erlang приложение</title>
-      <link>https://www.homeonrails.com/2016/04/how-do-i-start-erlang-application/</link>
+      <link>https://www.melekes.me/2016/04/how-do-i-start-erlang-application/</link>
       <pubDate>Mon, 25 Apr 2016 10:38:13 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/04/how-do-i-start-erlang-application/</guid>
+      <guid>https://www.melekes.me/2016/04/how-do-i-start-erlang-application/</guid>
       <description>&lt;p&gt;Подразумевается, что у вас уже есть какое-то приложение и вы используете 3й
 rebar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chokecherry Or The Story About 1000000 Timeouts</title>
-      <link>https://www.homeonrails.com/2016/04/chokecherry/</link>
+      <link>https://www.melekes.me/2016/04/chokecherry/</link>
       <pubDate>Sun, 24 Apr 2016 11:25:45 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/04/chokecherry/</guid>
+      <guid>https://www.melekes.me/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
 logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
 backend.&lt;/p&gt;
@@ -1312,33 +1312,33 @@ backend.&lt;/p&gt;
     </item>
     <item>
       <title>Monthly Art #8</title>
-      <link>https://www.homeonrails.com/2016/04/monthly-art-number-8/</link>
+      <link>https://www.melekes.me/2016/04/monthly-art-number-8/</link>
       <pubDate>Tue, 12 Apr 2016 10:39:35 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/04/monthly-art-number-8/</guid>
+      <guid>https://www.melekes.me/2016/04/monthly-art-number-8/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>March Picks</title>
-      <link>https://www.homeonrails.com/2016/04/march-picks/</link>
+      <link>https://www.melekes.me/2016/04/march-picks/</link>
       <pubDate>Mon, 11 Apr 2016 22:00:55 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/04/march-picks/</guid>
+      <guid>https://www.melekes.me/2016/04/march-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Зависла Erlang нода. Что делать?</title>
-      <link>https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/</link>
+      <link>https://www.melekes.me/2016/04/erlang-node-freezes-now-what/</link>
       <pubDate>Tue, 05 Apr 2016 15:50:31 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34;/&gt;
+      <guid>https://www.melekes.me/2016/04/erlang-node-freezes-now-what/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>The Best of Erlang Factory SF Bay 2016</title>
-      <link>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
+      <link>https://www.melekes.me/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
       <pubDate>Thu, 31 Mar 2016 10:49:23 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
+      <guid>https://www.melekes.me/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
       <description>&lt;p&gt;Annual &lt;a href=&#34;http://www.erlang-factory.com/sfbay2016&#34;&gt;Erlang Factory SF Bay Area
 2016&lt;/a&gt; conference ended only 3 weeks
 ago. There were many great speakers and presentations. What I specifically like
@@ -1348,41 +1348,41 @@ publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these 
     </item>
     <item>
       <title>Monthly Art #7</title>
-      <link>https://www.homeonrails.com/2016/03/monthly-art-number-7/</link>
+      <link>https://www.melekes.me/2016/03/monthly-art-number-7/</link>
       <pubDate>Sat, 12 Mar 2016 23:41:05 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/03/monthly-art-number-7/</guid>
+      <guid>https://www.melekes.me/2016/03/monthly-art-number-7/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>February Picks</title>
-      <link>https://www.homeonrails.com/2016/03/february-picks/</link>
+      <link>https://www.melekes.me/2016/03/february-picks/</link>
       <pubDate>Sat, 12 Mar 2016 22:12:38 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/03/february-picks/</guid>
+      <guid>https://www.melekes.me/2016/03/february-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #6</title>
-      <link>https://www.homeonrails.com/2016/02/monthly-art-number-6/</link>
+      <link>https://www.melekes.me/2016/02/monthly-art-number-6/</link>
       <pubDate>Wed, 10 Feb 2016 22:48:15 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/02/monthly-art-number-6/</guid>
+      <guid>https://www.melekes.me/2016/02/monthly-art-number-6/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>January picks</title>
-      <link>https://www.homeonrails.com/2016/02/january-picks/</link>
+      <link>https://www.melekes.me/2016/02/january-picks/</link>
       <pubDate>Wed, 10 Feb 2016 22:09:20 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/02/january-picks/</guid>
+      <guid>https://www.melekes.me/2016/02/january-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Супер-пупер крутые статьи для разработчиков</title>
-      <link>https://www.homeonrails.com/2016/02/super-puper-articles/</link>
+      <link>https://www.melekes.me/2016/02/super-puper-articles/</link>
       <pubDate>Sat, 06 Feb 2016 18:20:37 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/02/super-puper-articles/</guid>
+      <guid>https://www.melekes.me/2016/02/super-puper-articles/</guid>
       <description>&lt;p&gt;Решил поделиться с вами статьями, которые оказали на меня, как программиста,
 наибольшее влияние.&lt;/p&gt;
 &lt;p&gt;Большинство обычных статей сейчас валяются где-то на задворках памяти, либо
@@ -1391,9 +1391,9 @@ book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Про курение и мозг</title>
-      <link>https://www.homeonrails.com/2016/01/smoking-and-brain/</link>
+      <link>https://www.melekes.me/2016/01/smoking-and-brain/</link>
       <pubDate>Sat, 30 Jan 2016 11:54:13 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/01/smoking-and-brain/</guid>
+      <guid>https://www.melekes.me/2016/01/smoking-and-brain/</guid>
       <description>&lt;p&gt;Недавно прочел книгу Аси Казанцевой &amp;ldquo;Кто бы мог подумать! Как мозг заставляет
 нас делать глупости&amp;rdquo;. Прекрасный образчик научпопа. Автор простым языком
 описывает, как та или иная вещь влияет на наш мозг, и как это в свою очередь
@@ -1401,7 +1401,7 @@ book or even painting.&lt;/p&gt;</description>
 вредные привычки (алкоголе, табаке) и глава про стресс (описание процессов,
 происходящих в нашем теле). Остальные показались мне не слишком интересными, и
 я их пролистывал.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-01-30-smoking-and-brain/who_knew1.jpg&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-01-30-smoking-and-brain/who_knew1.jpg&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Одна из удивительных вещей, которая мне отдельно запомнилась: как наш мозг
@@ -1410,9 +1410,9 @@ book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Лучшие доклады fpconf 2015</title>
-      <link>https://www.homeonrails.com/2016/01/the-best-of-fpconf-2015/</link>
+      <link>https://www.melekes.me/2016/01/the-best-of-fpconf-2015/</link>
       <pubDate>Sat, 23 Jan 2016 11:15:07 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/01/the-best-of-fpconf-2015/</guid>
+      <guid>https://www.melekes.me/2016/01/the-best-of-fpconf-2015/</guid>
       <description>&lt;p&gt;В прошлом году состоялась первая конференция, посвященная функциональному
 программированию - &lt;a href=&#34;http://fpconf.ru/&#34;&gt;fpconf&lt;/a&gt;. Судя по рассказам моих
 знакомых, подобралась неплохая компания и было несколько действительно крутых
@@ -1423,9 +1423,9 @@ book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don Hertzfeldt</title>
-      <link>https://www.homeonrails.com/2016/01/don-hertzfeldt/</link>
+      <link>https://www.melekes.me/2016/01/don-hertzfeldt/</link>
       <pubDate>Sat, 16 Jan 2016 11:51:55 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/01/don-hertzfeldt/</guid>
+      <guid>https://www.melekes.me/2016/01/don-hertzfeldt/</guid>
       <description>&lt;p&gt;&amp;ldquo;Don Hertzfeldt (born August 1, 1976) is a two-time Academy Award nominated
 animator, writer, and independent filmmaker. He is the creator of many animated
 films, including It&amp;rsquo;s Such a Beautiful Day, World of Tomorrow, The Meaning of
@@ -1439,42 +1439,42 @@ of the millennium&lt;/strong&gt;.&amp;rdquo;&amp;rdquo; - Wikipedia&lt;/p&gt;</d
     </item>
     <item>
       <title>Monthly Art #5</title>
-      <link>https://www.homeonrails.com/2016/01/monthly-art-number-5/</link>
+      <link>https://www.melekes.me/2016/01/monthly-art-number-5/</link>
       <pubDate>Sat, 16 Jan 2016 11:30:22 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/01/monthly-art-number-5/</guid>
+      <guid>https://www.melekes.me/2016/01/monthly-art-number-5/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>December picks</title>
-      <link>https://www.homeonrails.com/2016/01/december-picks/</link>
+      <link>https://www.melekes.me/2016/01/december-picks/</link>
       <pubDate>Fri, 15 Jan 2016 21:15:49 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/01/december-picks/</guid>
+      <guid>https://www.melekes.me/2016/01/december-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Советы собирающимся в Гонконг</title>
-      <link>https://www.homeonrails.com/2016/01/advices-for-hong-kong-travellers/</link>
+      <link>https://www.melekes.me/2016/01/advices-for-hong-kong-travellers/</link>
       <pubDate>Sun, 10 Jan 2016 20:57:21 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/01/advices-for-hong-kong-travellers/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-01-10-advices-for-hong-kong-travellers/hongkong.jpg&#34;/&gt;
+      <guid>https://www.melekes.me/2016/01/advices-for-hong-kong-travellers/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-01-10-advices-for-hong-kong-travellers/hongkong.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Еще немного про именование переменных</title>
-      <link>https://www.homeonrails.com/2015/12/a-little-more-on-variable-naming/</link>
+      <link>https://www.melekes.me/2015/12/a-little-more-on-variable-naming/</link>
       <pubDate>Mon, 14 Dec 2015 15:33:33 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/12/a-little-more-on-variable-naming/</guid>
+      <guid>https://www.melekes.me/2015/12/a-little-more-on-variable-naming/</guid>
       <description>&lt;p&gt;Вообще, после того, как вы прочитаете &amp;ldquo;Совершенный код&amp;rdquo; Стива Макконнелла,
 вопросов как назвать ту или иную переменную быть не должно. Но есть некоторые
 моменты, которые не освещены в книге и нуждаются в обсуждении.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of RICON 2015</title>
-      <link>https://www.homeonrails.com/2015/12/the-best-of-ricon-2015/</link>
+      <link>https://www.melekes.me/2015/12/the-best-of-ricon-2015/</link>
       <pubDate>Sun, 13 Dec 2015 10:16:59 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
+      <guid>https://www.melekes.me/2015/12/the-best-of-ricon-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.ricon.io/index.html&#34;&gt;RICON&lt;/a&gt; is all about distributed systems. There
 are a lot of academic (Phd) talks and a few practical ones. I&amp;rsquo;ve chosen 3 out
 of 37 videos, which I liked the most. Hope you&amp;rsquo;ll enjoy these too. &lt;em&gt;Disclaimer:
@@ -1482,34 +1482,34 @@ your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #4</title>
-      <link>https://www.homeonrails.com/2015/12/monthly-art-number-4/</link>
+      <link>https://www.melekes.me/2015/12/monthly-art-number-4/</link>
       <pubDate>Sat, 12 Dec 2015 13:55:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/12/monthly-art-number-4/</guid>
+      <guid>https://www.melekes.me/2015/12/monthly-art-number-4/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>November picks</title>
-      <link>https://www.homeonrails.com/2015/12/november-picks/</link>
+      <link>https://www.melekes.me/2015/12/november-picks/</link>
       <pubDate>Wed, 09 Dec 2015 19:43:27 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/12/november-picks/</guid>
+      <guid>https://www.melekes.me/2015/12/november-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monthly Art #3</title>
-      <link>https://www.homeonrails.com/2015/11/monthly-art-number-3/</link>
+      <link>https://www.melekes.me/2015/11/monthly-art-number-3/</link>
       <pubDate>Tue, 10 Nov 2015 20:37:40 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/11/monthly-art-number-3/</guid>
+      <guid>https://www.melekes.me/2015/11/monthly-art-number-3/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of Strange Loop 2015</title>
-      <link>https://www.homeonrails.com/2015/11/the-best-of-strange-loop-2015/</link>
+      <link>https://www.melekes.me/2015/11/the-best-of-strange-loop-2015/</link>
       <pubDate>Sat, 07 Nov 2015 16:10:26 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/11/the-best-of-strange-loop-2015/</guid>
+      <guid>https://www.melekes.me/2015/11/the-best-of-strange-loop-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is my top 5 &amp;ldquo;every year&amp;rdquo;
 conferences. There were &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaCIl5eU53uPBnRJ9rbIH32R&#34;&gt;many
 videos&lt;/a&gt;
@@ -1518,51 +1518,51 @@ real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&g
     </item>
     <item>
       <title>October picks</title>
-      <link>https://www.homeonrails.com/2015/11/october-picks/</link>
+      <link>https://www.melekes.me/2015/11/october-picks/</link>
       <pubDate>Mon, 02 Nov 2015 23:34:32 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/11/october-picks/</guid>
+      <guid>https://www.melekes.me/2015/11/october-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Не верь своему тимлиду</title>
-      <link>https://www.homeonrails.com/2015/10/dont-trust-your-devlead/</link>
+      <link>https://www.melekes.me/2015/10/dont-trust-your-devlead/</link>
       <pubDate>Thu, 22 Oct 2015 10:16:35 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/10/dont-trust-your-devlead/</guid>
+      <guid>https://www.melekes.me/2015/10/dont-trust-your-devlead/</guid>
       <description>&lt;p&gt;&amp;ldquo;Не верь своему тимлиду&amp;rdquo; или когда не стоит слепо верить словам вашего тимлида.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2015-10-22-dont-trust-your-devlead/dog.png&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Redis дропает события? Что?</title>
-      <link>https://www.homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</link>
+      <link>https://www.melekes.me/2015/10/redis-dropaiet-sobytiia-chto/</link>
       <pubDate>Mon, 19 Oct 2015 14:00:26 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/10/redis-dropaiet-sobytiia-chto/</guid>
+      <guid>https://www.melekes.me/2015/10/redis-dropaiet-sobytiia-chto/</guid>
       <description>&lt;p&gt;&amp;ldquo;Redis дропает события? Что?&amp;rdquo; или поучительная история о том, как важно читать
 документацию.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2015-10-19-redis-dropaiet-sobytiia-chto/docs.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Monthly Art #2</title>
-      <link>https://www.homeonrails.com/2015/10/monthly-art-number-2/</link>
+      <link>https://www.melekes.me/2015/10/monthly-art-number-2/</link>
       <pubDate>Sun, 11 Oct 2015 11:33:09 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/10/monthly-art-number-2/</guid>
+      <guid>https://www.melekes.me/2015/10/monthly-art-number-2/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>September picks</title>
-      <link>https://www.homeonrails.com/2015/10/september-picks/</link>
+      <link>https://www.melekes.me/2015/10/september-picks/</link>
       <pubDate>Wed, 07 Oct 2015 11:14:55 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/10/september-picks/</guid>
+      <guid>https://www.melekes.me/2015/10/september-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of Curry On 2015</title>
-      <link>https://www.homeonrails.com/2015/09/the-best-of-curry-on-2015/</link>
+      <link>https://www.melekes.me/2015/09/the-best-of-curry-on-2015/</link>
       <pubDate>Mon, 14 Sep 2015 23:19:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
+      <guid>https://www.melekes.me/2015/09/the-best-of-curry-on-2015/</guid>
       <description>&lt;p&gt;If you haven&amp;rsquo;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
 (first time this year), which took place in Prague earlier in July. Despite its
 age, many good speakers happened to be there. Here is the list of my favorite
@@ -1570,41 +1570,41 @@ talks. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</des
     </item>
     <item>
       <title>Monthly Art #1</title>
-      <link>https://www.homeonrails.com/2015/09/monthly-art-number-1/</link>
+      <link>https://www.melekes.me/2015/09/monthly-art-number-1/</link>
       <pubDate>Thu, 10 Sep 2015 21:30:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/09/monthly-art-number-1/</guid>
+      <guid>https://www.melekes.me/2015/09/monthly-art-number-1/</guid>
       <description>&lt;p&gt;This is a monthly &amp;ldquo;newsletter&amp;rdquo;, containing a list of what I enjoyed the most
 last month. Whether it was a full length movie, short film, music album or
 book or even painting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>August picks</title>
-      <link>https://www.homeonrails.com/2015/09/august-picks/</link>
+      <link>https://www.melekes.me/2015/09/august-picks/</link>
       <pubDate>Mon, 07 Sep 2015 19:48:02 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/09/august-picks/</guid>
+      <guid>https://www.melekes.me/2015/09/august-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The best of Erlang User Conference 2015</title>
-      <link>https://www.homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</link>
+      <link>https://www.melekes.me/2015/08/the-best-of-erlang-user-conference-2015/</link>
       <pubDate>Mon, 10 Aug 2015 11:53:19 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</guid>
+      <guid>https://www.melekes.me/2015/08/the-best-of-erlang-user-conference-2015/</guid>
       <description>&lt;p&gt;It’s been a few months since this year’s Erlang User Conference 2015, so most
 of the videos are now online (kudos to organizers). Here is a short list of my
 favorite talks. Enjoy!&lt;/p&gt;</description>
     </item>
     <item>
       <title>July Picks</title>
-      <link>https://www.homeonrails.com/2015/08/july-picks/</link>
+      <link>https://www.melekes.me/2015/08/july-picks/</link>
       <pubDate>Tue, 04 Aug 2015 09:07:21 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/08/july-picks/</guid>
+      <guid>https://www.melekes.me/2015/08/july-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From Ruby To Erlang. Beginner&#39;s mistakes</title>
-      <link>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</link>
+      <link>https://www.melekes.me/2015/08/from-ruby-to-erlang/</link>
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
+      <guid>https://www.melekes.me/2015/08/from-ruby-to-erlang/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
 are very different languages: OOP vs functional, mutable vs immutable and so
@@ -1614,50 +1614,50 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
-      <link>https://www.homeonrails.com/2015/07/testing-reducer/</link>
+      <link>https://www.melekes.me/2015/07/testing-reducer/</link>
       <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/07/testing-reducer/</guid>
+      <guid>https://www.melekes.me/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>tmux / Автоматическое восстановление сессии</title>
-      <link>https://www.homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</link>
+      <link>https://www.melekes.me/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</link>
       <pubDate>Fri, 17 Jul 2015 10:35:07 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
+      <guid>https://www.melekes.me/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
       <description>&lt;p&gt;Не так давно собрался с силами, и настроил у себя в tmux автоматическое
 сохранение и восстановление последней сессии. По прошествии месяца могу с
 уверенностью сказать - просто бомба!&lt;/p&gt;</description>
     </item>
     <item>
       <title>June picks</title>
-      <link>https://www.homeonrails.com/2015/07/june-picks/</link>
+      <link>https://www.melekes.me/2015/07/june-picks/</link>
       <pubDate>Fri, 03 Jul 2015 10:59:59 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/07/june-picks/</guid>
+      <guid>https://www.melekes.me/2015/07/june-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>4 Vim Plugins Nobody Knows About</title>
-      <link>https://www.homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</link>
+      <link>https://www.melekes.me/2015/06/4-vim-plugins-nobody-knows-about/</link>
       <pubDate>Thu, 04 Jun 2015 22:53:15 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/06/4-vim-plugins-nobody-knows-about/</guid>
+      <guid>https://www.melekes.me/2015/06/4-vim-plugins-nobody-knows-about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been using these four plugins for a really long time. And they are
 wonderful. But each time coming on Github and seeing the number of stars, I
 think that few people actually know about them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>May Picks</title>
-      <link>https://www.homeonrails.com/2015/06/may-picks/</link>
+      <link>https://www.melekes.me/2015/06/may-picks/</link>
       <pubDate>Mon, 01 Jun 2015 22:04:31 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/06/may-picks/</guid>
+      <guid>https://www.melekes.me/2015/06/may-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Заметки на полях: Изучай Erlang во имя добра!</title>
-      <link>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</link>
+      <link>https://www.melekes.me/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</link>
       <pubDate>Thu, 28 May 2015 11:51:25 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
+      <guid>https://www.melekes.me/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ferd&#34;&gt;Фред Хеберт&lt;/a&gt; - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
 замечательную книгу &lt;a href=&#34;http://www.ozon.ru/context/detail/id/28953563/?partner=akalyaev&#34;&gt;&amp;ldquo;Изучай Erlang во имя добра!&amp;rdquo;&lt;/a&gt;, которая, к тому же,
@@ -1668,18 +1668,18 @@ Distributed Erlang).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Заметки на полях: Программирование в Erlang</title>
-      <link>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</link>
+      <link>https://www.melekes.me/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</link>
       <pubDate>Sat, 23 May 2015 15:35:04 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</guid>
+      <guid>https://www.melekes.me/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</guid>
       <description>&lt;p&gt;Решил начать новую серию постов. Каждая статья будет представлять из себя набор
 советов, инструментов, скриптов или просто умных мыслей из определенной книги.
 Читать книгу или нет? Это решать вам самим.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Erlang, HBase и Thrift</title>
-      <link>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</link>
+      <link>https://www.melekes.me/2015/05/erlang-hbase-and-thrift/</link>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
+      <guid>https://www.melekes.me/2015/05/erlang-hbase-and-thrift/</guid>
       <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
 начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
 &lt;ol&gt;
@@ -1690,10 +1690,10 @@ Distributed Erlang).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Разрабатываем ruby gem в docker контейнере</title>
-      <link>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
+      <link>https://www.melekes.me/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
       <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34;/&gt;
+      <guid>https://www.melekes.me/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,
@@ -1705,37 +1705,37 @@ Distributed Erlang).&lt;/p&gt;</description>
     </item>
     <item>
       <title>April picks</title>
-      <link>https://www.homeonrails.com/2015/05/april-picks/</link>
+      <link>https://www.melekes.me/2015/05/april-picks/</link>
       <pubDate>Wed, 06 May 2015 23:19:11 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/05/april-picks/</guid>
+      <guid>https://www.melekes.me/2015/05/april-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>March picks</title>
-      <link>https://www.homeonrails.com/2015/04/march-picks/</link>
+      <link>https://www.melekes.me/2015/04/march-picks/</link>
       <pubDate>Tue, 14 Apr 2015 11:22:15 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/04/march-picks/</guid>
+      <guid>https://www.melekes.me/2015/04/march-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Опции meck:new</title>
-      <link>https://www.homeonrails.com/2015/03/meck-new-options/</link>
+      <link>https://www.melekes.me/2015/03/meck-new-options/</link>
       <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/03/meck-new-options/</guid>
+      <guid>https://www.melekes.me/2015/03/meck-new-options/</guid>
       <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>February Picks (2)</title>
-      <link>https://www.homeonrails.com/2015/03/february-picks/</link>
+      <link>https://www.melekes.me/2015/03/february-picks/</link>
       <pubDate>Mon, 02 Mar 2015 13:47:59 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/03/february-picks/</guid>
+      <guid>https://www.melekes.me/2015/03/february-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shamrock</title>
-      <link>https://www.homeonrails.com/2015/02/shamrock/</link>
+      <link>https://www.melekes.me/2015/02/shamrock/</link>
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/02/shamrock/</guid>
+      <guid>https://www.melekes.me/2015/02/shamrock/</guid>
       <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
@@ -1745,9 +1745,9 @@ Distributed Erlang).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Тестируем HTTP клиент на Java</title>
-      <link>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</link>
+      <link>https://www.melekes.me/2015/02/testing-http-client-in-java/</link>
       <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</guid>
+      <guid>https://www.melekes.me/2015/02/testing-http-client-in-java/</guid>
       <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
 &lt;a href=&#34;https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.
@@ -1757,17 +1757,17 @@ Unirest или Google HTTP Client. Хотя, если бы требовалос�
     </item>
     <item>
       <title>February picks</title>
-      <link>https://www.homeonrails.com/2015/02/february-picks/</link>
+      <link>https://www.melekes.me/2015/02/february-picks/</link>
       <pubDate>Mon, 02 Feb 2015 10:45:11 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/02/february-picks/</guid>
+      <guid>https://www.melekes.me/2015/02/february-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Как мнение о книге может меняться в течение 40 лет</title>
-      <link>https://www.homeonrails.com/2015/01/how-opinion-about-the-book-may-change-in-40-years/</link>
+      <link>https://www.melekes.me/2015/01/how-opinion-about-the-book-may-change-in-40-years/</link>
       <pubDate>Sat, 17 Jan 2015 12:00:12 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/01/how-opinion-about-the-book-may-change-in-40-years/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-01-17-how-opinion-about-the-book-may-change-in-40-years/catcher.jpg&#34;/&gt;&lt;figcaption&gt;
+      <guid>https://www.melekes.me/2015/01/how-opinion-about-the-book-may-change-in-40-years/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2015-01-17-how-opinion-about-the-book-may-change-in-40-years/catcher.jpg&#34;/&gt;&lt;figcaption&gt;
             &lt;h4&gt;(рисунок TulinovR с deviantart.com)&lt;/h4&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1780,9 +1780,9 @@ Unirest или Google HTTP Client. Хотя, если бы требовалос�
     </item>
     <item>
       <title>Writing to HBase from Hadoop Mapper</title>
-      <link>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
+      <link>https://www.melekes.me/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
       <pubDate>Fri, 16 Jan 2015 15:48:49 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
+      <guid>https://www.melekes.me/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
       <description>&lt;p&gt;Although Hadoop and HBase are often used together, not so many resources
 devoted to interaction between them. In the book &lt;a href=&#34;http://shop.oreilly.com/product/0636920014348.do&#34;&gt;&amp;ldquo;HBase: The Definitive
 Guide&amp;rdquo;&lt;/a&gt; there is a chapter
@@ -1792,16 +1792,16 @@ table.&lt;/p&gt;</description>
     </item>
     <item>
       <title>January picks</title>
-      <link>https://www.homeonrails.com/2015/01/january-picks/</link>
+      <link>https://www.melekes.me/2015/01/january-picks/</link>
       <pubDate>Tue, 06 Jan 2015 12:19:19 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/01/january-picks/</guid>
+      <guid>https://www.melekes.me/2015/01/january-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Great Tools To Share Knowledge In a Team</title>
-      <link>https://www.homeonrails.com/2014/12/5-best-tools-to-share-knowledge-in-a-team/</link>
+      <link>https://www.melekes.me/2014/12/5-best-tools-to-share-knowledge-in-a-team/</link>
       <pubDate>Sat, 13 Dec 2014 17:57:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/12/5-best-tools-to-share-knowledge-in-a-team/</guid>
+      <guid>https://www.melekes.me/2014/12/5-best-tools-to-share-knowledge-in-a-team/</guid>
       <description>&lt;p&gt;Sharing knowledge in a team is one of the important factors of success of all
 its members and the company as a whole. What it can be? Any sorts of things:
 articles, videos, slides, thoughts on a particular tool - generally, any piece
@@ -1820,16 +1820,16 @@ back on track.&lt;/p&gt;</description>
     </item>
     <item>
       <title>November picks</title>
-      <link>https://www.homeonrails.com/2014/12/november-picks/</link>
+      <link>https://www.melekes.me/2014/12/november-picks/</link>
       <pubDate>Mon, 01 Dec 2014 17:20:19 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/12/november-picks/</guid>
+      <guid>https://www.melekes.me/2014/12/november-picks/</guid>
       <description>&lt;p&gt;&amp;ldquo;Random picks from all over the Internet&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Лучшие книги для саморазвития</title>
-      <link>https://www.homeonrails.com/2014/11/best-books-for-self-development/</link>
+      <link>https://www.melekes.me/2014/11/best-books-for-self-development/</link>
       <pubDate>Sun, 30 Nov 2014 16:02:05 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/11/best-books-for-self-development/</guid>
+      <guid>https://www.melekes.me/2014/11/best-books-for-self-development/</guid>
       <description>&lt;p&gt;Давненько я не писал о книгах, которые прочитал за прошедшее время. Что ж,
 давайте исправим это.&lt;/p&gt;
 &lt;p&gt;Недавно, один из моих друзей прислал мне &lt;a href=&#34;http://blog.mann-ivanov-ferber.ru/2014/06/18/luchshie-knigi-dlya-samorazvitiya/&#34;&gt;список книг&lt;/a&gt; для
@@ -1844,9 +1844,9 @@ back on track.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stop Killing Developers Creativity</title>
-      <link>https://www.homeonrails.com/2014/11/stop-killing-developers-creativity/</link>
+      <link>https://www.melekes.me/2014/11/stop-killing-developers-creativity/</link>
       <pubDate>Sat, 22 Nov 2014 17:53:57 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/11/stop-killing-developers-creativity/</guid>
+      <guid>https://www.melekes.me/2014/11/stop-killing-developers-creativity/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&amp;ldquo;When you start working on a ticket, press &amp;lsquo;Start Progress&amp;rsquo; - this will
 change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&amp;rsquo;re getting distracted from your work
@@ -1855,9 +1855,9 @@ for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Car
     </item>
     <item>
       <title>Хайку о мозге</title>
-      <link>https://www.homeonrails.com/2014/11/brain-haiku-contest/</link>
+      <link>https://www.melekes.me/2014/11/brain-haiku-contest/</link>
       <pubDate>Fri, 07 Nov 2014 22:05:06 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/11/brain-haiku-contest/</guid>
+      <guid>https://www.melekes.me/2014/11/brain-haiku-contest/</guid>
       <description>&lt;p&gt;Сегодня принял участие в конкурсе от &lt;a href=&#34;http://www.lumosity.com/&#34;&gt;Lumosity&lt;/a&gt;. Для
 участия нужно было сочинить &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83&#34;&gt;хайку&lt;/a&gt; о своём мозге - что делает его
 уникальным, что тебе больше всего нравится в нём. Если честно, я уже и не помню
@@ -1866,9 +1866,9 @@ for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Car
     </item>
     <item>
       <title>Топ 3 ответов при собеседовании</title>
-      <link>https://www.homeonrails.com/2014/10/top-3-answers-at-interview/</link>
+      <link>https://www.melekes.me/2014/10/top-3-answers-at-interview/</link>
       <pubDate>Sat, 04 Oct 2014 20:42:38 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/10/top-3-answers-at-interview/</guid>
+      <guid>https://www.melekes.me/2014/10/top-3-answers-at-interview/</guid>
       <description>&lt;p&gt;Ни для кого не секрет, чтобы найти подходящего вам по всем параметрам
 сотрудника, нужно прособеседовать немалое количество кандидатов. К нам в Undev
 довольно часто приходят программисты, желающие попробовать себя в той или иной
@@ -1877,46 +1877,46 @@ for more than 1 hour, press &amp;lsquo;Stop progress&amp;rsquo;&amp;rdquo; - Car
     </item>
     <item>
       <title>September picks</title>
-      <link>https://www.homeonrails.com/2014/10/september-picks/</link>
+      <link>https://www.melekes.me/2014/10/september-picks/</link>
       <pubDate>Wed, 01 Oct 2014 14:47:51 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/10/september-picks/</guid>
+      <guid>https://www.melekes.me/2014/10/september-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Краткий гайд по путешествиям</title>
-      <link>https://www.homeonrails.com/2014/09/short-traveling-guide/</link>
+      <link>https://www.melekes.me/2014/09/short-traveling-guide/</link>
       <pubDate>Wed, 17 Sep 2014 15:22:17 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/09/short-traveling-guide/</guid>
+      <guid>https://www.melekes.me/2014/09/short-traveling-guide/</guid>
       <description>&lt;p&gt;Частенько мне задают вопросы типа &amp;ldquo;Как съездить в другую страну не покупая
 тур?&amp;rdquo;. Так вот, я и решил написать заметку, где будет ясная последовательность
 шагов: что где посмотреть, о чем надо помнить и так далее.&lt;/p&gt;</description>
     </item>
     <item>
       <title>July Picks</title>
-      <link>https://www.homeonrails.com/2014/08/july-picks/</link>
+      <link>https://www.melekes.me/2014/08/july-picks/</link>
       <pubDate>Tue, 05 Aug 2014 20:45:46 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/08/july-picks/</guid>
+      <guid>https://www.melekes.me/2014/08/july-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fish shell</title>
-      <link>https://www.homeonrails.com/2014/07/fish-shell/</link>
+      <link>https://www.melekes.me/2014/07/fish-shell/</link>
       <pubDate>Tue, 15 Jul 2014 18:20:50 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/07/fish-shell/</guid>
+      <guid>https://www.melekes.me/2014/07/fish-shell/</guid>
       <description>&lt;p&gt;Не так давно у меня появилось немножко свободного времени, и я решил посмотреть
 аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
 напротив, многие его фишки, включая подсветку, дополнение по Tab и
 автоматическое раскрытие путей, пришлись мне по душе.&lt;/p&gt;
 &lt;p&gt;Одновременно с этим &lt;a href=&#34;https://twitter.com/saratovsource&#34;&gt;@saratovsource&lt;/a&gt;
 намекнул, что пересел на Fish shell около полугода назад и вполне доволен.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2014-07-15-fish-shell/logo.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2014-07-15-fish-shell/logo.png&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Most popular posts</title>
-      <link>https://www.homeonrails.com/most-popular-posts/</link>
+      <link>https://www.melekes.me/most-popular-posts/</link>
       <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
-      <guid>https://www.homeonrails.com/most-popular-posts/</guid>
+      <guid>https://www.melekes.me/most-popular-posts/</guid>
       <description>EN:
 Best motivational videos How to be productive with almost any text editor Why Do You Need a Pool Profiling in Erlang On the importance of unification Validating nested associations in Rails Podcasts I am listening to RU:
 Правильный подход к выбору работы Супер-пупер крутые статьи для разработчиков Ещё из забавного:
@@ -1924,16 +1924,16 @@ Best motivational videos How to be productive with almost any text editor Why Do
     </item>
     <item>
       <title>June picks</title>
-      <link>https://www.homeonrails.com/2014/07/june-picks/</link>
+      <link>https://www.melekes.me/2014/07/june-picks/</link>
       <pubDate>Wed, 02 Jul 2014 19:31:15 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/07/june-picks/</guid>
+      <guid>https://www.melekes.me/2014/07/june-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vim: Connect to Clojure nREPL inside the VM</title>
-      <link>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
+      <link>https://www.melekes.me/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
       <pubDate>Wed, 04 Jun 2014 12:11:45 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
+      <guid>https://www.melekes.me/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
       <description>&lt;p&gt;For Vim to talk to nREPL we will be using fantastic
 &lt;a href=&#34;https://github.com/tpope/vim-fireplace&#34;&gt;fireplace.vim&lt;/a&gt; plugin. If you have
 Clojure installed locally, this plugin will connect to its nREPL automatically
@@ -1943,23 +1943,23 @@ manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</descriptio
     </item>
     <item>
       <title>May picks</title>
-      <link>https://www.homeonrails.com/2014/06/may-picks/</link>
+      <link>https://www.melekes.me/2014/06/may-picks/</link>
       <pubDate>Tue, 03 Jun 2014 09:58:07 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/06/may-picks/</guid>
+      <guid>https://www.melekes.me/2014/06/may-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>April picks</title>
-      <link>https://www.homeonrails.com/2014/05/april-picks/</link>
+      <link>https://www.melekes.me/2014/05/april-picks/</link>
       <pubDate>Sat, 03 May 2014 10:31:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/05/april-picks/</guid>
+      <guid>https://www.melekes.me/2014/05/april-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Почему стоит писать почему</title>
-      <link>https://www.homeonrails.com/2014/04/why-should-i-write-why/</link>
+      <link>https://www.melekes.me/2014/04/why-should-i-write-why/</link>
       <pubDate>Tue, 15 Apr 2014 14:58:08 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/04/why-should-i-write-why/</guid>
+      <guid>https://www.melekes.me/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
 &amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1
@@ -1971,39 +1971,39 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
     </item>
     <item>
       <title>March picks</title>
-      <link>https://www.homeonrails.com/2014/04/march-picks/</link>
+      <link>https://www.melekes.me/2014/04/march-picks/</link>
       <pubDate>Sat, 05 Apr 2014 13:47:43 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/04/march-picks/</guid>
+      <guid>https://www.melekes.me/2014/04/march-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ruby speed quiz explained</title>
-      <link>https://www.homeonrails.com/2014/04/ruby-speed-quiz-explained/</link>
+      <link>https://www.melekes.me/2014/04/ruby-speed-quiz-explained/</link>
       <pubDate>Tue, 01 Apr 2014 23:47:38 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/04/ruby-speed-quiz-explained/</guid>
-      <description>&lt;p&gt;At the end of &lt;a href=&#34;https://www.homeonrails.com/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
+      <guid>https://www.melekes.me/2014/04/ruby-speed-quiz-explained/</guid>
+      <description>&lt;p&gt;At the end of &lt;a href=&#34;https://www.melekes.me/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
 I did not expect that more than 900 Rubyists will give it a shot. I
 was surprised. Thanks to all who participated!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ruby speed quiz</title>
-      <link>https://www.homeonrails.com/2014/03/ruby-speed-quiz/</link>
+      <link>https://www.melekes.me/2014/03/ruby-speed-quiz/</link>
       <pubDate>Fri, 28 Mar 2014 12:13:48 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/03/ruby-speed-quiz/</guid>
+      <guid>https://www.melekes.me/2014/03/ruby-speed-quiz/</guid>
       <description>&lt;p&gt;For each case choose the fastest option.&lt;/p&gt;</description>
     </item>
     <item>
       <title>February picks</title>
-      <link>https://www.homeonrails.com/2014/03/february-picks/</link>
+      <link>https://www.melekes.me/2014/03/february-picks/</link>
       <pubDate>Mon, 10 Mar 2014 11:45:03 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/03/february-picks/</guid>
+      <guid>https://www.melekes.me/2014/03/february-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fast Rails API</title>
-      <link>https://www.homeonrails.com/2014/03/fast-rails-api/</link>
+      <link>https://www.melekes.me/2014/03/fast-rails-api/</link>
       <pubDate>Sun, 09 Mar 2014 13:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/03/fast-rails-api/</guid>
+      <guid>https://www.melekes.me/2014/03/fast-rails-api/</guid>
       <description>&lt;p&gt;Here are the slides from my internal talk, which I recently gave for my
 colleagues.&lt;/p&gt;
 &lt;p&gt;They are showing the history of optimizing Rails API, starting from AR connections pool and
@@ -2013,23 +2013,23 @@ famous.&lt;/p&gt;</description>
     </item>
     <item>
       <title>January picks</title>
-      <link>https://www.homeonrails.com/2014/02/january-picks/</link>
+      <link>https://www.melekes.me/2014/02/january-picks/</link>
       <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/02/january-picks/</guid>
+      <guid>https://www.melekes.me/2014/02/january-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>December picks</title>
-      <link>https://www.homeonrails.com/2014/01/december-picks/</link>
+      <link>https://www.melekes.me/2014/01/december-picks/</link>
       <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/01/december-picks/</guid>
+      <guid>https://www.melekes.me/2014/01/december-picks/</guid>
       <description>&lt;p&gt;Monthly {newsletter} with great articles, videos and presentations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Copy and paste between Vim and OS</title>
-      <link>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>
+      <link>https://www.melekes.me/2014/01/copy-and-paste-between-vim-and-os/</link>
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
+      <guid>https://www.melekes.me/2014/01/copy-and-paste-between-vim-and-os/</guid>
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
 &lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;rdquo;- I asked myself. Indeed, the majority of source code editors
@@ -2037,9 +2037,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Покатушки 2013 - Банско, Болгария</title>
-      <link>https://www.homeonrails.com/2014/01/riding-in-bansko-2013/</link>
+      <link>https://www.melekes.me/2014/01/riding-in-bansko-2013/</link>
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/01/riding-in-bansko-2013/</guid>
+      <guid>https://www.melekes.me/2014/01/riding-in-bansko-2013/</guid>
       <description>
 &lt;p&gt;На улице плюс 6, ярко светит послеобеденное солнце, в воздухе витают запахи печенных
 лепешек и кофе. Таким мне предстал небольшой и уютный городок Банско, расположенный у
@@ -2049,7 +2049,7 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
 
 &lt;div align=&#34;center&#34;&gt;
   &lt;img class=&#34;img-rounded&#34;
-  src=&#34;https://www.homeonrails.com/images/posts/2014-01-09-riding-in-bansko-2013/1.JPG&#34;
+  src=&#34;https://www.melekes.me/images/posts/2014-01-09-riding-in-bansko-2013/1.JPG&#34;
   alt=&#34;BooksViaBooks&#34;/ width=&#34;450&#34;&gt;
 &lt;/div&gt;
 
@@ -2057,9 +2057,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>По следам RailsRumble 2013</title>
-      <link>https://www.homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</link>
+      <link>https://www.melekes.me/2013/10/in-the-wake-of-railsrumble2013/</link>
       <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/10/in-the-wake-of-railsrumble2013/</guid>
+      <guid>https://www.melekes.me/2013/10/in-the-wake-of-railsrumble2013/</guid>
       <description>
 &lt;p&gt;В этом году я в очередной раз участвовал в
 &lt;a href=&#34;http://railsrumble.com&#34;&gt;RailsRumble&lt;/a&gt;. Если кто не в курсе, RailsRumble
@@ -2075,9 +2075,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>10 команд, которыми вы пользуетесь чаще всего</title>
-      <link>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</link>
+      <link>https://www.melekes.me/2013/07/top-10-commands-you-currently-use/</link>
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
+      <guid>https://www.melekes.me/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
 лень каждый раз набирать &lt;code&gt;vagrant up&lt;/code&gt; или &lt;code&gt;git checkout feature/awesome-feature&lt;/code&gt;? Если да и вы стремитесь к повышению
@@ -2086,9 +2086,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Выступление на Belarus Ruby Meetup 2013</title>
-      <link>https://www.homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</link>
+      <link>https://www.melekes.me/2013/07/speaking-at-belarus-ruby-meetup/</link>
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/07/speaking-at-belarus-ruby-meetup/</guid>
+      <guid>https://www.melekes.me/2013/07/speaking-at-belarus-ruby-meetup/</guid>
       <description>
 &lt;p&gt;  Не так давно я посетил Белоруссию и, в частности, ее столицу - Минск, где
 прошла очередная встреча ruby разработчиков &lt;a href=&#34;http://lanyrd.com/2013/belarus-ruby/&#34; target=&#34;_blank&#34;&gt;Belarus Ruby Meetup&lt;/a&gt;. Формат
@@ -2100,9 +2100,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Готовые Vim сборки VS свои детища</title>
-      <link>https://www.homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
+      <link>https://www.melekes.me/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</link>
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
+      <guid>https://www.melekes.me/2013/07/gotovyie-vim-sborki-vs-svoi-dietishcha/</guid>
       <description>
 &lt;p&gt;Сейчас существует большое количество готовых Vim сборок. Они предоставляют богатые
 возможности вкупе с расширенной плагинами функциональностью. В противоположность им,
@@ -2112,9 +2112,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Об интерфейсе</title>
-      <link>https://www.homeonrails.com/2013/02/about-interface/</link>
+      <link>https://www.melekes.me/2013/02/about-interface/</link>
       <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/02/about-interface/</guid>
+      <guid>https://www.melekes.me/2013/02/about-interface/</guid>
       <description>&lt;p&gt;Проектирование взаимодействия все еще является достаточно молодой дисциплиной.
 Тем не менее, ее изучение может принести некоторую выгоду. Если вы разработчик,
 то она заставит вас взглянуть на продукт под другим углом, что в перспективе,
@@ -2122,9 +2122,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kaizen philosophy (Initial commit)</title>
-      <link>https://www.homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</link>
+      <link>https://www.melekes.me/2013/02/kaizen-philosophy-initial-commit/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/02/kaizen-philosophy-initial-commit/</guid>
+      <guid>https://www.melekes.me/2013/02/kaizen-philosophy-initial-commit/</guid>
       <description>&lt;p&gt;Обучение новичков всегда было не таким уж легким делом. Когда в команду
 приходят новые люди, их необходимо познакомить с основными подходами, техниками
 и интрументами, принятыми на вооружении. Каждая компания подходит к этому по
@@ -2133,9 +2133,9 @@ able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don&#39;t do this at home on Rails #3</title>
-      <link>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
+      <link>https://www.melekes.me/2013/01/dont-do-this-at-home-on-rails-3/</link>
       <pubDate>Sat, 05 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
+      <guid>https://www.melekes.me/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
@@ -2146,9 +2146,9 @@ which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&g
     </item>
     <item>
       <title>Ruby&#39;s GC (RU)</title>
-      <link>https://www.homeonrails.com/2012/11/rubys-gc-ru/</link>
+      <link>https://www.melekes.me/2012/11/rubys-gc-ru/</link>
       <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/rubys-gc-ru/</guid>
+      <guid>https://www.melekes.me/2012/11/rubys-gc-ru/</guid>
       <description>&lt;p&gt;В последнее время в Кайдзен проходит все больше и больше внутренних докладов, в
 рамках которых каждый делится своими знаниями в той или иной области (к примеру
 доклад Александра Кириллова @saratovsource &lt;a href=&#34;http://www.slideshare.net/ssusercdd0ed/securing-rails-applications&#34;&gt;Securing Rails
@@ -2159,9 +2159,9 @@ Applications&lt;/a&gt;).
     </item>
     <item>
       <title>Null migration, or What to do when there are too many migrations</title>
-      <link>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
+      <link>https://www.melekes.me/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
       <pubDate>Sun, 18 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
+      <guid>https://www.melekes.me/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
       <description>&lt;p&gt;Migrations are probably one of the most killer features of ActiveRecord.
 They allow you to design the architecture of the database along with the
 growth of your project. If you change your data model (&lt;a href=&#34;http://martinfowler.com/eaaCatalog/domainModel.html&#34;&gt;Domain Model&lt;/a&gt;),
@@ -2171,18 +2171,18 @@ creating a new table, deleting a column or adding an unique index.&lt;/p&gt;</de
     </item>
     <item>
       <title>Tired of copying FactoryGirl sequences from project to project?</title>
-      <link>https://www.homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</link>
+      <link>https://www.melekes.me/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</link>
       <pubDate>Thu, 15 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</guid>
+      <guid>https://www.melekes.me/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</guid>
       <description>&lt;p&gt;Take a look at the
 &lt;a href=&#34;http://rubygems.org/gems/factory_girl_sequences&#34;&gt;factory_girl_sequences&lt;/a&gt; gem,
 which provides a basic set of the most common sequences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don&#39;t do this at home on Rails #2</title>
-      <link>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
+      <link>https://www.melekes.me/2012/11/dont-do-this-at-home-on-rails-2/</link>
       <pubDate>Sat, 10 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
+      <guid>https://www.melekes.me/2012/11/dont-do-this-at-home-on-rails-2/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
@@ -2196,18 +2196,18 @@ increase its speed. Who knows?&lt;/p&gt;</description>
     </item>
     <item>
       <title>AssociationCountValidator</title>
-      <link>https://www.homeonrails.com/2012/10/associationcountvalidator/</link>
+      <link>https://www.melekes.me/2012/10/associationcountvalidator/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/10/associationcountvalidator/</guid>
-      <description>&lt;p&gt;As a result of my &lt;a href=&#34;https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
+      <guid>https://www.melekes.me/2012/10/associationcountvalidator/</guid>
+      <description>&lt;p&gt;As a result of my &lt;a href=&#34;https://www.melekes.me/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Validating nested associations in Rails</title>
-      <link>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</link>
+      <link>https://www.melekes.me/2012/10/validating-nested-associations-in-rails/</link>
       <pubDate>Mon, 08 Oct 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
+      <guid>https://www.melekes.me/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
@@ -2219,9 +2219,9 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
     </item>
     <item>
       <title>Автоматизация тестирования в RoR</title>
-      <link>https://www.homeonrails.com/2012/09/test-automation-in-ror/</link>
+      <link>https://www.melekes.me/2012/09/test-automation-in-ror/</link>
       <pubDate>Sun, 30 Sep 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/09/test-automation-in-ror/</guid>
+      <guid>https://www.melekes.me/2012/09/test-automation-in-ror/</guid>
       <description>&lt;p&gt;Буквально вчера я вернулся с конференции веб-разработчиков ЧЕБИТ&#39;12-10. В этом
 году она проходила в баре &amp;ldquo;Манхеттен&amp;rdquo;, что придавало ей нотку закрытого
 подпольного казино для &amp;ldquo;своих&amp;rdquo;. Огромное спасибо за приглашение поучавствовать
@@ -2231,9 +2231,9 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
     </item>
     <item>
       <title>Don&#39;t do this at home on Rails #1</title>
-      <link>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
+      <link>https://www.melekes.me/2012/09/dont-do-this-at-home-on-rails-1/</link>
       <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
+      <guid>https://www.melekes.me/2012/09/dont-do-this-at-home-on-rails-1/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;

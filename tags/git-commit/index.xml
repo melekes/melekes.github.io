@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git-commit on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/git-commit/</link>
-    <description>Recent content in git-commit on Home on Rails</description>
+    <title>git-commit on melekes.me</title>
+    <link>https://www.melekes.me/tags/git-commit/</link>
+    <description>Recent content in git-commit on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Tue, 15 Apr 2014 14:58:08 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/git-commit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/git-commit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Почему стоит писать почему</title>
-      <link>https://www.homeonrails.com/2014/04/why-should-i-write-why/</link>
+      <link>https://www.melekes.me/2014/04/why-should-i-write-why/</link>
       <pubDate>Tue, 15 Apr 2014 14:58:08 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/04/why-should-i-write-why/</guid>
+      <guid>https://www.melekes.me/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
 &amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;commit 210a1f2df795bf49bfdd08e50d22ba80bac141f1

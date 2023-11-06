@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>interviews on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/interviews/</link>
-    <description>Recent content in interviews on Home on Rails</description>
+    <title>interviews on melekes.me</title>
+    <link>https://www.melekes.me/tags/interviews/</link>
+    <description>Recent content in interviews on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Thu, 18 Jul 2019 10:36:50 +0400</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Money talk или как занять места бизнес класса на галере</title>
-      <link>https://www.homeonrails.com/2019/07/money-talk/</link>
+      <link>https://www.melekes.me/2019/07/money-talk/</link>
       <pubDate>Thu, 18 Jul 2019 10:36:50 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2019/07/money-talk/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2019-07-18-money-talk/galley2.jpg&#34;/&gt;&lt;figcaption&gt;
+      <guid>https://www.melekes.me/2019/07/money-talk/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2019-07-18-money-talk/galley2.jpg&#34;/&gt;&lt;figcaption&gt;
             &lt;h4&gt;Ben-Hur (1959 film)&lt;/h4&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Топ 3 ответов при собеседовании</title>
-      <link>https://www.homeonrails.com/2014/10/top-3-answers-at-interview/</link>
+      <link>https://www.melekes.me/2014/10/top-3-answers-at-interview/</link>
       <pubDate>Sat, 04 Oct 2014 20:42:38 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/10/top-3-answers-at-interview/</guid>
+      <guid>https://www.melekes.me/2014/10/top-3-answers-at-interview/</guid>
       <description>&lt;p&gt;Ни для кого не секрет, чтобы найти подходящего вам по всем параметрам
 сотрудника, нужно прособеседовать немалое количество кандидатов. К нам в Undev
 довольно часто приходят программисты, желающие попробовать себя в той или иной

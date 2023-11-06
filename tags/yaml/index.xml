@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>yaml on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/yaml/</link>
-    <description>Recent content in yaml on Home on Rails</description>
+    <title>yaml on melekes.me</title>
+    <link>https://www.melekes.me/tags/yaml/</link>
+    <description>Recent content in yaml on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 05 Jan 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/yaml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/yaml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don&#39;t do this at home on Rails #3</title>
-      <link>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
+      <link>https://www.melekes.me/2013/01/dont-do-this-at-home-on-rails-3/</link>
       <pubDate>Sat, 05 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
+      <guid>https://www.melekes.me/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;

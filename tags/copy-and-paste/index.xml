@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>copy-and-paste on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/copy-and-paste/</link>
-    <description>Recent content in copy-and-paste on Home on Rails</description>
+    <title>copy-and-paste on melekes.me</title>
+    <link>https://www.melekes.me/tags/copy-and-paste/</link>
+    <description>Recent content in copy-and-paste on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Thu, 09 Jan 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/copy-and-paste/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/copy-and-paste/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copy and paste between Vim and OS</title>
-      <link>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>
+      <link>https://www.melekes.me/2014/01/copy-and-paste-between-vim-and-os/</link>
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
+      <guid>https://www.melekes.me/2014/01/copy-and-paste-between-vim-and-os/</guid>
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
 &lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;rdquo;- I asked myself. Indeed, the majority of source code editors

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>testing on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/testing/</link>
-    <description>Recent content in testing on Home on Rails</description>
+    <title>testing on melekes.me</title>
+    <link>https://www.melekes.me/tags/testing/</link>
+    <description>Recent content in testing on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
-      <link>https://www.homeonrails.com/2015/07/testing-reducer/</link>
+      <link>https://www.melekes.me/2015/07/testing-reducer/</link>
       <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/07/testing-reducer/</guid>
+      <guid>https://www.melekes.me/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Опции meck:new</title>
-      <link>https://www.homeonrails.com/2015/03/meck-new-options/</link>
+      <link>https://www.melekes.me/2015/03/meck-new-options/</link>
       <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/03/meck-new-options/</guid>
+      <guid>https://www.melekes.me/2015/03/meck-new-options/</guid>
       <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shamrock</title>
-      <link>https://www.homeonrails.com/2015/02/shamrock/</link>
+      <link>https://www.melekes.me/2015/02/shamrock/</link>
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/02/shamrock/</guid>
+      <guid>https://www.melekes.me/2015/02/shamrock/</guid>
       <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
@@ -39,9 +39,9 @@ errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Тестируем HTTP клиент на Java</title>
-      <link>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</link>
+      <link>https://www.melekes.me/2015/02/testing-http-client-in-java/</link>
       <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</guid>
+      <guid>https://www.melekes.me/2015/02/testing-http-client-in-java/</guid>
       <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
 &lt;a href=&#34;https://gist.github.com/melekes/63b9084d3804f72be2d7#file-httpclient-java&#34;&gt;Gist&lt;/a&gt;.

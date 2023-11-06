@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>refactoring on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/refactoring/</link>
-    <description>Recent content in refactoring on Home on Rails</description>
+    <title>refactoring on melekes.me</title>
+    <link>https://www.melekes.me/tags/refactoring/</link>
+    <description>Recent content in refactoring on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 10 Nov 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/refactoring/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/refactoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don&#39;t do this at home on Rails #2</title>
-      <link>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
+      <link>https://www.melekes.me/2012/11/dont-do-this-at-home-on-rails-2/</link>
       <pubDate>Sat, 10 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
+      <guid>https://www.melekes.me/2012/11/dont-do-this-at-home-on-rails-2/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
@@ -27,9 +27,9 @@ increase its speed. Who knows?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don&#39;t do this at home on Rails #1</title>
-      <link>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
+      <link>https://www.melekes.me/2012/09/dont-do-this-at-home-on-rails-1/</link>
       <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
+      <guid>https://www.melekes.me/2012/09/dont-do-this-at-home-on-rails-1/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;

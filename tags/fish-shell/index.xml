@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fish-shell on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/fish-shell/</link>
-    <description>Recent content in fish-shell on Home on Rails</description>
+    <title>fish-shell on melekes.me</title>
+    <link>https://www.melekes.me/tags/fish-shell/</link>
+    <description>Recent content in fish-shell on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Tue, 15 Jul 2014 18:20:50 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/fish-shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/fish-shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fish shell</title>
-      <link>https://www.homeonrails.com/2014/07/fish-shell/</link>
+      <link>https://www.melekes.me/2014/07/fish-shell/</link>
       <pubDate>Tue, 15 Jul 2014 18:20:50 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/07/fish-shell/</guid>
+      <guid>https://www.melekes.me/2014/07/fish-shell/</guid>
       <description>&lt;p&gt;Не так давно у меня появилось немножко свободного времени, и я решил посмотреть
 аналоги моему любимому zsh. Не могу сказать, что он меня в чем то неустраивал,
 напротив, многие его фишки, включая подсветку, дополнение по Tab и
 автоматическое раскрытие путей, пришлись мне по душе.&lt;/p&gt;
 &lt;p&gt;Одновременно с этим &lt;a href=&#34;https://twitter.com/saratovsource&#34;&gt;@saratovsource&lt;/a&gt;
 намекнул, что пересел на Fish shell около полугода назад и вполне доволен.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2014-07-15-fish-shell/logo.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2014-07-15-fish-shell/logo.png&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
   </channel>

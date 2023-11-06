@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>time-tracking on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/time-tracking/</link>
-    <description>Recent content in time-tracking on Home on Rails</description>
+    <title>time-tracking on melekes.me</title>
+    <link>https://www.melekes.me/tags/time-tracking/</link>
+    <description>Recent content in time-tracking on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 22 Nov 2014 17:53:57 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/time-tracking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/time-tracking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stop Killing Developers Creativity</title>
-      <link>https://www.homeonrails.com/2014/11/stop-killing-developers-creativity/</link>
+      <link>https://www.melekes.me/2014/11/stop-killing-developers-creativity/</link>
       <pubDate>Sat, 22 Nov 2014 17:53:57 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/11/stop-killing-developers-creativity/</guid>
+      <guid>https://www.melekes.me/2014/11/stop-killing-developers-creativity/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&amp;ldquo;When you start working on a ticket, press &amp;lsquo;Start Progress&amp;rsquo; - this will
 change its status to &amp;lsquo;In Progress&amp;rsquo;; if you&amp;rsquo;re getting distracted from your work

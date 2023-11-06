@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ruby on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/ruby/</link>
-    <description>Recent content in ruby on Home on Rails</description>
+    <title>ruby on melekes.me</title>
+    <link>https://www.melekes.me/tags/ruby/</link>
+    <description>Recent content in ruby on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Mon, 03 Aug 2015 15:09:10 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Ruby To Erlang. Beginner&#39;s mistakes</title>
-      <link>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</link>
+      <link>https://www.melekes.me/2015/08/from-ruby-to-erlang/</link>
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
+      <guid>https://www.melekes.me/2015/08/from-ruby-to-erlang/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
 are very different languages: OOP vs functional, mutable vs immutable and so
@@ -23,10 +23,10 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Разрабатываем ruby gem в docker контейнере</title>
-      <link>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
+      <link>https://www.melekes.me/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
       <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34;/&gt;
+      <guid>https://www.melekes.me/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Контейнеры захватывают вселенную, и ничего с этим не поделаешь. Несмотря на то,
@@ -38,9 +38,9 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shamrock</title>
-      <link>https://www.homeonrails.com/2015/02/shamrock/</link>
+      <link>https://www.melekes.me/2015/02/shamrock/</link>
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/02/shamrock/</guid>
+      <guid>https://www.melekes.me/2015/02/shamrock/</guid>
       <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
 написать свой &lt;a href=&#34;https://practicingruby.com/articles/implementing-an-http-file-server&#34;&gt;простенький http
@@ -50,25 +50,25 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ruby speed quiz explained</title>
-      <link>https://www.homeonrails.com/2014/04/ruby-speed-quiz-explained/</link>
+      <link>https://www.melekes.me/2014/04/ruby-speed-quiz-explained/</link>
       <pubDate>Tue, 01 Apr 2014 23:47:38 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/04/ruby-speed-quiz-explained/</guid>
-      <description>&lt;p&gt;At the end of &lt;a href=&#34;https://www.homeonrails.com/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
+      <guid>https://www.melekes.me/2014/04/ruby-speed-quiz-explained/</guid>
+      <description>&lt;p&gt;At the end of &lt;a href=&#34;https://www.melekes.me/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
 I did not expect that more than 900 Rubyists will give it a shot. I
 was surprised. Thanks to all who participated!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ruby speed quiz</title>
-      <link>https://www.homeonrails.com/2014/03/ruby-speed-quiz/</link>
+      <link>https://www.melekes.me/2014/03/ruby-speed-quiz/</link>
       <pubDate>Fri, 28 Mar 2014 12:13:48 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/03/ruby-speed-quiz/</guid>
+      <guid>https://www.melekes.me/2014/03/ruby-speed-quiz/</guid>
       <description>&lt;p&gt;For each case choose the fastest option.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don&#39;t do this at home on Rails #3</title>
-      <link>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
+      <link>https://www.melekes.me/2013/01/dont-do-this-at-home-on-rails-3/</link>
       <pubDate>Sat, 05 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
+      <guid>https://www.melekes.me/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
@@ -79,9 +79,9 @@ which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&g
     </item>
     <item>
       <title>Null migration, or What to do when there are too many migrations</title>
-      <link>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
+      <link>https://www.melekes.me/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
       <pubDate>Sun, 18 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
+      <guid>https://www.melekes.me/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
       <description>&lt;p&gt;Migrations are probably one of the most killer features of ActiveRecord.
 They allow you to design the architecture of the database along with the
 growth of your project. If you change your data model (&lt;a href=&#34;http://martinfowler.com/eaaCatalog/domainModel.html&#34;&gt;Domain Model&lt;/a&gt;),
@@ -91,18 +91,18 @@ creating a new table, deleting a column or adding an unique index.&lt;/p&gt;</de
     </item>
     <item>
       <title>Tired of copying FactoryGirl sequences from project to project?</title>
-      <link>https://www.homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</link>
+      <link>https://www.melekes.me/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</link>
       <pubDate>Thu, 15 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</guid>
+      <guid>https://www.melekes.me/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</guid>
       <description>&lt;p&gt;Take a look at the
 &lt;a href=&#34;http://rubygems.org/gems/factory_girl_sequences&#34;&gt;factory_girl_sequences&lt;/a&gt; gem,
 which provides a basic set of the most common sequences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don&#39;t do this at home on Rails #2</title>
-      <link>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
+      <link>https://www.melekes.me/2012/11/dont-do-this-at-home-on-rails-2/</link>
       <pubDate>Sat, 10 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
+      <guid>https://www.melekes.me/2012/11/dont-do-this-at-home-on-rails-2/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
@@ -116,18 +116,18 @@ increase its speed. Who knows?&lt;/p&gt;</description>
     </item>
     <item>
       <title>AssociationCountValidator</title>
-      <link>https://www.homeonrails.com/2012/10/associationcountvalidator/</link>
+      <link>https://www.melekes.me/2012/10/associationcountvalidator/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/10/associationcountvalidator/</guid>
-      <description>&lt;p&gt;As a result of my &lt;a href=&#34;https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
+      <guid>https://www.melekes.me/2012/10/associationcountvalidator/</guid>
+      <description>&lt;p&gt;As a result of my &lt;a href=&#34;https://www.melekes.me/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Validating nested associations in Rails</title>
-      <link>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</link>
+      <link>https://www.melekes.me/2012/10/validating-nested-associations-in-rails/</link>
       <pubDate>Mon, 08 Oct 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
+      <guid>https://www.melekes.me/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
 This can be a simple form for one object, or the form for many related objects.
@@ -139,9 +139,9 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
     </item>
     <item>
       <title>Don&#39;t do this at home on Rails #1</title>
-      <link>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
+      <link>https://www.melekes.me/2012/09/dont-do-this-at-home-on-rails-1/</link>
       <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
+      <guid>https://www.melekes.me/2012/09/dont-do-this-at-home-on-rails-1/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
 &lt;li&gt;Difficulty: &lt;!-- raw HTML omitted --&gt;Easy&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;

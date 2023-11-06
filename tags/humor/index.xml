@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>humor on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/humor/</link>
-    <description>Recent content in humor on Home on Rails</description>
+    <title>humor on melekes.me</title>
+    <link>https://www.melekes.me/tags/humor/</link>
+    <description>Recent content in humor on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 04 Oct 2014 20:42:38 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/humor/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/humor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Топ 3 ответов при собеседовании</title>
-      <link>https://www.homeonrails.com/2014/10/top-3-answers-at-interview/</link>
+      <link>https://www.melekes.me/2014/10/top-3-answers-at-interview/</link>
       <pubDate>Sat, 04 Oct 2014 20:42:38 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/10/top-3-answers-at-interview/</guid>
+      <guid>https://www.melekes.me/2014/10/top-3-answers-at-interview/</guid>
       <description>&lt;p&gt;Ни для кого не секрет, чтобы найти подходящего вам по всем параметрам
 сотрудника, нужно прособеседовать немалое количество кандидатов. К нам в Undev
 довольно часто приходят программисты, желающие попробовать себя в той или иной

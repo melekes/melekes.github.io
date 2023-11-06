@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Home on Rails</title>
-    <link>https://www.homeonrails.com/categories/</link>
-    <description>Recent content in Categories on Home on Rails</description>
+    <title>Categories on melekes.me</title>
+    <link>https://www.melekes.me/categories/</link>
+    <description>Recent content in Categories on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <atom:link href="https://www.homeonrails.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

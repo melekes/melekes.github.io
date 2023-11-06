@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>crypto on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/crypto/</link>
-    <description>Recent content in crypto on Home on Rails</description>
+    <title>crypto on melekes.me</title>
+    <link>https://www.melekes.me/tags/crypto/</link>
+    <description>Recent content in crypto on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 14 Jan 2023 12:07:20 +0800</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Крепостные рвы</title>
-      <link>https://www.homeonrails.com/2023/01/moat-concept/</link>
+      <link>https://www.melekes.me/2023/01/moat-concept/</link>
       <pubDate>Sat, 14 Jan 2023 12:07:20 +0800</pubDate>
-      <guid>https://www.homeonrails.com/2023/01/moat-concept/</guid>
+      <guid>https://www.melekes.me/2023/01/moat-concept/</guid>
       <description>&lt;p&gt;Это перевод &lt;a href=&#34;https://twitter.com/thedefiedge/status/1613540840215040000&#34;&gt;Twitter треда&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;p&gt;Уоррен Баффет &lt;a href=&#34;https://finance.yahoo.com/news/warren-buffett-explains-moat-principle-164442359.html&#34;&gt;отказывается
@@ -23,18 +23,18 @@
     </item>
     <item>
       <title>Управление рисками в крипте</title>
-      <link>https://www.homeonrails.com/2022/12/risk-management-in-crypto/</link>
+      <link>https://www.melekes.me/2022/12/risk-management-in-crypto/</link>
       <pubDate>Tue, 13 Dec 2022 08:59:20 +0800</pubDate>
-      <guid>https://www.homeonrails.com/2022/12/risk-management-in-crypto/</guid>
+      <guid>https://www.melekes.me/2022/12/risk-management-in-crypto/</guid>
       <description>&lt;p&gt;Это перевод &lt;a href=&#34;https://twitter.com/thedefiedge/status/1488193098702331913&#34;&gt;Twitter треда&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;p&gt;Вот все, что вам нужно знать об управлении рисками в крипте:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Better Open-Source With Tokenized Github</title>
-      <link>https://www.homeonrails.com/2018/06/better-open-source-with-tokenized-github/</link>
+      <link>https://www.melekes.me/2018/06/better-open-source-with-tokenized-github/</link>
       <pubDate>Wed, 06 Jun 2018 17:08:21 +0400</pubDate>
-      <guid>https://www.homeonrails.com/2018/06/better-open-source-with-tokenized-github/</guid>
+      <guid>https://www.melekes.me/2018/06/better-open-source-with-tokenized-github/</guid>
       <description>In the light of the recent news, I wanted to share an idea I had just recently.
 Every popular open-source project on Github eventually becomes overwhelmed by the number of issues. That&amp;rsquo;s because it&amp;rsquo;s so easy to create one. You are not required to understand the project. You are not required to read the documentation. All you need is a Github account.
 And this is an example of the amplification attack.</description>

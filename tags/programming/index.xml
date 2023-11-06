@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>programming on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/programming/</link>
-    <description>Recent content in programming on Home on Rails</description>
+    <title>programming on melekes.me</title>
+    <link>https://www.melekes.me/tags/programming/</link>
+    <description>Recent content in programming on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Sat, 31 Mar 2018 15:46:21 +0200</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Plea for Lean Software by Niklaus Wirth (1995)</title>
-      <link>https://www.homeonrails.com/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</link>
+      <link>https://www.melekes.me/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</link>
       <pubDate>Sat, 31 Mar 2018 15:46:21 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</guid>
+      <guid>https://www.melekes.me/2018/03/a-plea-for-lean-software-niklaus-wirth-1995/</guid>
       <description>Plea for Greek Independence by Eugène Delacroix (1826) In 1889, Anton Chekhov writes to his brother Alexander: &amp;ldquo;My advice: in the play try to be original and as clever as possible, but do not be afraid to seem silly; we need free-thinking, but only the freethinker who is not afraid to write nonsense. Do not grind it, but be clumsy and impudent. Brevity is the soul of wit.”
 I think we can apply the same principles to academic papers as well.</description>
     </item>
     <item>
       <title>4 quotes from The Emperor’s Old Clothes by C.A.R. Hoare (1981)</title>
-      <link>https://www.homeonrails.com/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</link>
+      <link>https://www.melekes.me/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</link>
       <pubDate>Fri, 30 Mar 2018 13:22:31 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</guid>
+      <guid>https://www.melekes.me/2018/03/4-quotes-from-the-emperors-old-clothes-by-c-a-r-hoare-1981/</guid>
       <description>This article was originally published on Medium.
 Kangxi Emperor About ALGOL 60 which introduced recursion and enabled him to express his quick sort algorithm:
 “The highest goal of programming language design to enable good ideas to be elegantly expressed.”
@@ -31,17 +31,17 @@ On complexity and the role of a programming language:</description>
     </item>
     <item>
       <title>Where should I declare my constant?</title>
-      <link>https://www.homeonrails.com/2018/03/where-should-i-declare-my-constant/</link>
+      <link>https://www.melekes.me/2018/03/where-should-i-declare-my-constant/</link>
       <pubDate>Thu, 29 Mar 2018 15:18:47 +0200</pubDate>
-      <guid>https://www.homeonrails.com/2018/03/where-should-i-declare-my-constant/</guid>
+      <guid>https://www.melekes.me/2018/03/where-should-i-declare-my-constant/</guid>
       <description>This article was originally published on Medium.
 Quick question: where should I declare my constant? Most developers would say: “top of the file”. And that would be the wrong answer. As for the majority of the questions in software engineering, the right answer is “it depends”. I would try to prove to you, in this post, that, if the constant is private and is used only in one place, it’s far better to declare it right above the line, where it’s used.</description>
     </item>
     <item>
       <title>The Best of Erlang User Conference 2016</title>
-      <link>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
+      <link>https://www.melekes.me/2016/10/the-best-of-erlang-user-conference-2016/</link>
       <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
+      <guid>https://www.melekes.me/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
 &lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
@@ -49,9 +49,9 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
     </item>
     <item>
       <title>The Best of Strange Loop 2016</title>
-      <link>https://www.homeonrails.com/2016/10/the-best-of-strange-loop-2016/</link>
+      <link>https://www.melekes.me/2016/10/the-best-of-strange-loop-2016/</link>
       <pubDate>Sat, 15 Oct 2016 12:12:01 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/10/the-best-of-strange-loop-2016/</guid>
+      <guid>https://www.melekes.me/2016/10/the-best-of-strange-loop-2016/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is one of my top 5 most beloved
 conferences. You can find all the 63 videos &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa&#34;&gt;on
 YouTube&lt;/a&gt;.
@@ -60,28 +60,28 @@ gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt
     </item>
     <item>
       <title>On the importance of unification</title>
-      <link>https://www.homeonrails.com/2016/07/on-the-importance-of-unification/</link>
+      <link>https://www.melekes.me/2016/07/on-the-importance-of-unification/</link>
       <pubDate>Tue, 05 Jul 2016 16:24:36 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/on-the-importance-of-unification/</guid>
+      <guid>https://www.melekes.me/2016/07/on-the-importance-of-unification/</guid>
       <description>&lt;p&gt;Unification, for me, means having one way or instrument (not always the best)
 to deal with a problem. And, in some cases, it is crucial.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png&#34;/&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-07-05-on-the-importance-of-unification/hammer.png&#34;/&gt;&lt;figcaption&gt;
             &lt;h4&gt;It&amp;#39;s important to have only one instrument for solving a problem&lt;/h4&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;</description>
     </item>
     <item>
       <title>Why Do You Need a Pool</title>
-      <link>https://www.homeonrails.com/2016/07/why-do-you-need-a-pool/</link>
+      <link>https://www.melekes.me/2016/07/why-do-you-need-a-pool/</link>
       <pubDate>Mon, 04 Jul 2016 12:35:52 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/07/why-do-you-need-a-pool/</guid>
+      <guid>https://www.melekes.me/2016/07/why-do-you-need-a-pool/</guid>
       <description>&lt;p&gt;There are a number of reasons you may want to use a pool of workers in your application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of Erlang Factory SF Bay 2016</title>
-      <link>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
+      <link>https://www.melekes.me/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
       <pubDate>Thu, 31 Mar 2016 10:49:23 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
+      <guid>https://www.melekes.me/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
       <description>&lt;p&gt;Annual &lt;a href=&#34;http://www.erlang-factory.com/sfbay2016&#34;&gt;Erlang Factory SF Bay Area
 2016&lt;/a&gt; conference ended only 3 weeks
 ago. There were many great speakers and presentations. What I specifically like
@@ -91,9 +91,9 @@ publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these 
     </item>
     <item>
       <title>Лучшие доклады fpconf 2015</title>
-      <link>https://www.homeonrails.com/2016/01/the-best-of-fpconf-2015/</link>
+      <link>https://www.melekes.me/2016/01/the-best-of-fpconf-2015/</link>
       <pubDate>Sat, 23 Jan 2016 11:15:07 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/01/the-best-of-fpconf-2015/</guid>
+      <guid>https://www.melekes.me/2016/01/the-best-of-fpconf-2015/</guid>
       <description>&lt;p&gt;В прошлом году состоялась первая конференция, посвященная функциональному
 программированию - &lt;a href=&#34;http://fpconf.ru/&#34;&gt;fpconf&lt;/a&gt;. Судя по рассказам моих
 знакомых, подобралась неплохая компания и было несколько действительно крутых
@@ -104,18 +104,18 @@ publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these 
     </item>
     <item>
       <title>Еще немного про именование переменных</title>
-      <link>https://www.homeonrails.com/2015/12/a-little-more-on-variable-naming/</link>
+      <link>https://www.melekes.me/2015/12/a-little-more-on-variable-naming/</link>
       <pubDate>Mon, 14 Dec 2015 15:33:33 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/12/a-little-more-on-variable-naming/</guid>
+      <guid>https://www.melekes.me/2015/12/a-little-more-on-variable-naming/</guid>
       <description>&lt;p&gt;Вообще, после того, как вы прочитаете &amp;ldquo;Совершенный код&amp;rdquo; Стива Макконнелла,
 вопросов как назвать ту или иную переменную быть не должно. Но есть некоторые
 моменты, которые не освещены в книге и нуждаются в обсуждении.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of RICON 2015</title>
-      <link>https://www.homeonrails.com/2015/12/the-best-of-ricon-2015/</link>
+      <link>https://www.melekes.me/2015/12/the-best-of-ricon-2015/</link>
       <pubDate>Sun, 13 Dec 2015 10:16:59 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/12/the-best-of-ricon-2015/</guid>
+      <guid>https://www.melekes.me/2015/12/the-best-of-ricon-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.ricon.io/index.html&#34;&gt;RICON&lt;/a&gt; is all about distributed systems. There
 are a lot of academic (Phd) talks and a few practical ones. I&amp;rsquo;ve chosen 3 out
 of 37 videos, which I liked the most. Hope you&amp;rsquo;ll enjoy these too. &lt;em&gt;Disclaimer:
@@ -123,9 +123,9 @@ your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Best of Strange Loop 2015</title>
-      <link>https://www.homeonrails.com/2015/11/the-best-of-strange-loop-2015/</link>
+      <link>https://www.melekes.me/2015/11/the-best-of-strange-loop-2015/</link>
       <pubDate>Sat, 07 Nov 2015 16:10:26 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/11/the-best-of-strange-loop-2015/</guid>
+      <guid>https://www.melekes.me/2015/11/the-best-of-strange-loop-2015/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt; is my top 5 &amp;ldquo;every year&amp;rdquo;
 conferences. There were &lt;a href=&#34;https://www.youtube.com/playlist?list=PLcGKfGEEONaCIl5eU53uPBnRJ9rbIH32R&#34;&gt;many
 videos&lt;/a&gt;
@@ -134,9 +134,9 @@ real gems for you guys. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&g
     </item>
     <item>
       <title>The Best of Curry On 2015</title>
-      <link>https://www.homeonrails.com/2015/09/the-best-of-curry-on-2015/</link>
+      <link>https://www.melekes.me/2015/09/the-best-of-curry-on-2015/</link>
       <pubDate>Mon, 14 Sep 2015 23:19:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/09/the-best-of-curry-on-2015/</guid>
+      <guid>https://www.melekes.me/2015/09/the-best-of-curry-on-2015/</guid>
       <description>&lt;p&gt;If you haven&amp;rsquo;t heard, &lt;a href=&#34;http://curry-on.org/&#34;&gt;Curry On&lt;/a&gt; is a new conference
 (first time this year), which took place in Prague earlier in July. Despite its
 age, many good speakers happened to be there. Here is the list of my favorite

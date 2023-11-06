@@ -8,20 +8,20 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Chokecherry Or The Story About 1000000 Timeouts &middot; Home on Rails</title>
+  <title>Chokecherry Or The Story About 1000000 Timeouts &middot; melekes.me</title>
   <meta name="description" content="" />
 
   
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/hyde.css">
   <link href="https://fonts.googleapis.com/css?family=Literata|Neucha&display=swap" rel="stylesheet">
 
 
   
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.homeonrails.com/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="https://www.homeonrails.com/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.melekes.me/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://www.melekes.me/favicon.png">
 
   
   <style>
@@ -48,7 +48,7 @@ html {
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.homeonrails.com/"><h1>Home on Rails</h1></a>
+      <a href="https://www.melekes.me/"><h1>melekes.me</h1></a>
       <p class="lead">
        Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
       </p>
@@ -56,8 +56,8 @@ html {
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="https://www.homeonrails.com/">Home</a> </li>
-        <li><a href="https://www.homeonrails.com/about"> About me </a></li><li><a href="https://www.homeonrails.com/consulting"> Consulting / Консультации </a></li><li><a href="https://www.homeonrails.com/favorite-books"> Favorite books </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.homeonrails.com/one-month-country"> One month in some country </a></li><li><a href="https://www.homeonrails.com/tags"> Tags </a></li>
+        <li><a href="https://www.melekes.me/">Home</a> </li>
+        <li><a href="https://www.melekes.me/about"> About me </a></li><li><a href="https://www.melekes.me/consulting"> Consulting / Консультации </a></li><li><a href="https://www.melekes.me/favorite-books"> Favorite books </a></li><li><a href="https://www.melekes.me/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.melekes.me/one-month-country"> One month in some country </a></li><li><a href="https://www.melekes.me/tags"> Tags </a></li>
       </ul>
     </nav>
 
@@ -81,14 +81,14 @@ backend.</p>
 <h2 id="the-story-about-1000000-timeouts">The Story About 1000000 Timeouts</h2>
 <p>We use lager in almost all of our applications. And it works pretty well most
 of the time, except the cases where it doesn&rsquo;t.</p>
-<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/karate.gif"/>
+<figure><img src="https://www.melekes.me/images/posts/2016-04-24-chokecherry/karate.gif"/>
 </figure>
 
 <p>It all started one day when we were experiencing a <strong>peak load</strong> in one of the
 applications (we&rsquo;ll call it FortKnox). So, FortKnox was processing a lot of
 data and producing a lot of logs (particularly, info messages). As
 shown on a picture below, we were writing logs to a file on disk.</p>
-<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app1.png"/>
+<figure><img src="https://www.melekes.me/images/posts/2016-04-24-chokecherry/app1.png"/>
 </figure>
 
 <p>Then we started seeing <strong>random exits</strong> (timeouts in calls to <code>lager:info</code>)
@@ -96,7 +96,7 @@ from many places. These led to different parts (gen_servers, gen_fsms, etc.) of
 FortKnox crashing. Some of them got restarted by their supervisor. But it was
 clear that this won&rsquo;t last long. Indeed, at some point, it all came down to the
 application&rsquo;s supervisor and <strong>whole node stopped working</strong>.</p>
-<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app2.png"/>
+<figure><img src="https://www.melekes.me/images/posts/2016-04-24-chokecherry/app2.png"/>
 </figure>
 
 <p>This is what happened. <strong>Hard disk was not able to handle so much writes</strong> (even in
@@ -115,7 +115,7 @@ That&rsquo;s how we came to the random exits.</p>
 <h3 id="on-lager-settings">On lager settings</h3>
 <p>lager has many settings and we could play with them. For example, we could turn
 off synchronous mode.</p>
-<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app3.png"/>
+<figure><img src="https://www.melekes.me/images/posts/2016-04-24-chokecherry/app3.png"/>
 </figure>
 
 <p>What will happen then is lager&rsquo;s mailbox start growing and, eventually, when
@@ -130,7 +130,7 @@ calls (<a href="https://github.com/basho/lager/blob/1159f9262fb589ce2ec310eb7dec
 <p>So <strong>there was no simple solution</strong> for this problem. <strong>That&rsquo;s why we created
 chokecherry</strong>. What follows is how it works.</p>
 <h2 id="chokecherry">Chokecherry</h2>
-<figure><img src="https://www.homeonrails.com/images/posts/2016-04-24-chokecherry/app4.png"/>
+<figure><img src="https://www.melekes.me/images/posts/2016-04-24-chokecherry/app4.png"/>
 </figure>
 
 <p><strong>shaper</strong> accumulates incoming messages in the queue. If the queue size
@@ -174,7 +174,7 @@ for warning and error, or make it optional, let us know.</p>
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "homeonrails" + '.disqus.com/embed.js';
+        s.src = '//' + "melekes" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

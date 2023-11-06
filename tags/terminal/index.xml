@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>terminal on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/terminal/</link>
-    <description>Recent content in terminal on Home on Rails</description>
+    <title>terminal on melekes.me</title>
+    <link>https://www.melekes.me/tags/terminal/</link>
+    <description>Recent content in terminal on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Wed, 04 May 2016 11:41:10 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TrueColor in Gnome Terminal, Tmux and Neovim</title>
-      <link>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
+      <link>https://www.melekes.me/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
       <pubDate>Wed, 04 May 2016 11:41:10 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
+      <guid>https://www.melekes.me/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
       <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
 can see, most of the editors and terminals now support TrueColor (16 million
 colors).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Difference between TrueColor (24bits - 16 million colors) and &amp;ldquo;256colors&amp;rdquo; (8bits - 256 colors):&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/diff1.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Original theme (&lt;a href=&#34;https://github.com/morhetz/gruvbox&#34;&gt;gruvbox&lt;/a&gt;):&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.melekes.me/images/posts/2016-05-05-truecolor-in-gnome-terminal-tmux-and-neovim/orig.png&#34;/&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hbase on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/hbase/</link>
-    <description>Recent content in hbase on Home on Rails</description>
+    <title>hbase on melekes.me</title>
+    <link>https://www.melekes.me/tags/hbase/</link>
+    <description>Recent content in hbase on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/hbase/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/hbase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
-      <link>https://www.homeonrails.com/2015/07/testing-reducer/</link>
+      <link>https://www.melekes.me/2015/07/testing-reducer/</link>
       <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/07/testing-reducer/</guid>
+      <guid>https://www.melekes.me/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Erlang, HBase и Thrift</title>
-      <link>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</link>
+      <link>https://www.melekes.me/2015/05/erlang-hbase-and-thrift/</link>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
+      <guid>https://www.melekes.me/2015/05/erlang-hbase-and-thrift/</guid>
       <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
 начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
 &lt;ol&gt;
@@ -33,9 +33,9 @@ errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Writing to HBase from Hadoop Mapper</title>
-      <link>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
+      <link>https://www.melekes.me/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
       <pubDate>Fri, 16 Jan 2015 15:48:49 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
+      <guid>https://www.melekes.me/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
       <description>&lt;p&gt;Although Hadoop and HBase are often used together, not so many resources
 devoted to interaction between them. In the book &lt;a href=&#34;http://shop.oreilly.com/product/0636920014348.do&#34;&gt;&amp;ldquo;HBase: The Definitive
 Guide&amp;rdquo;&lt;/a&gt; there is a chapter

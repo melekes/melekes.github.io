@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vm on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/vm/</link>
-    <description>Recent content in vm on Home on Rails</description>
+    <title>vm on melekes.me</title>
+    <link>https://www.melekes.me/tags/vm/</link>
+    <description>Recent content in vm on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Wed, 04 Jun 2014 12:11:45 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/vm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/vm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vim: Connect to Clojure nREPL inside the VM</title>
-      <link>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
+      <link>https://www.melekes.me/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
       <pubDate>Wed, 04 Jun 2014 12:11:45 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
+      <guid>https://www.melekes.me/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
       <description>&lt;p&gt;For Vim to talk to nREPL we will be using fantastic
 &lt;a href=&#34;https://github.com/tpope/vim-fireplace&#34;&gt;fireplace.vim&lt;/a&gt; plugin. If you have
 Clojure installed locally, this plugin will connect to its nREPL automatically

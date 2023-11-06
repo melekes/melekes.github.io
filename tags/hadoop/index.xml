@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hadoop on Home on Rails</title>
-    <link>https://www.homeonrails.com/tags/hadoop/</link>
-    <description>Recent content in hadoop on Home on Rails</description>
+    <title>hadoop on melekes.me</title>
+    <link>https://www.melekes.me/tags/hadoop/</link>
+    <description>Recent content in hadoop on melekes.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Fri, 16 Jan 2015 15:48:49 +0000</lastBuildDate>
-    <atom:link href="https://www.homeonrails.com/tags/hadoop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.melekes.me/tags/hadoop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing to HBase from Hadoop Mapper</title>
-      <link>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
+      <link>https://www.melekes.me/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
       <pubDate>Fri, 16 Jan 2015 15:48:49 +0000</pubDate>
-      <guid>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
+      <guid>https://www.melekes.me/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
       <description>&lt;p&gt;Although Hadoop and HBase are often used together, not so many resources
 devoted to interaction between them. In the book &lt;a href=&#34;http://shop.oreilly.com/product/0636920014348.do&#34;&gt;&amp;ldquo;HBase: The Definitive
 Guide&amp;rdquo;&lt;/a&gt; there is a chapter

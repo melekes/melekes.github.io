@@ -8,20 +8,20 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Validating nested associations in Rails &middot; Home on Rails</title>
+  <title>Validating nested associations in Rails &middot; melekes.me</title>
   <meta name="description" content="" />
 
   
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://www.homeonrails.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.melekes.me/css/hyde.css">
   <link href="https://fonts.googleapis.com/css?family=Literata|Neucha&display=swap" rel="stylesheet">
 
 
   
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.homeonrails.com/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="https://www.homeonrails.com/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.melekes.me/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://www.melekes.me/favicon.png">
 
   
   <style>
@@ -48,7 +48,7 @@ html {
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.homeonrails.com/"><h1>Home on Rails</h1></a>
+      <a href="https://www.melekes.me/"><h1>melekes.me</h1></a>
       <p class="lead">
        Success is not final, failure is not fatal: it is the courage to continue that counts. Winston Churchill 
       </p>
@@ -56,8 +56,8 @@ html {
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="https://www.homeonrails.com/">Home</a> </li>
-        <li><a href="https://www.homeonrails.com/about"> About me </a></li><li><a href="https://www.homeonrails.com/consulting"> Consulting / Консультации </a></li><li><a href="https://www.homeonrails.com/favorite-books"> Favorite books </a></li><li><a href="https://www.homeonrails.com/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.homeonrails.com/one-month-country"> One month in some country </a></li><li><a href="https://www.homeonrails.com/tags"> Tags </a></li>
+        <li><a href="https://www.melekes.me/">Home</a> </li>
+        <li><a href="https://www.melekes.me/about"> About me </a></li><li><a href="https://www.melekes.me/consulting"> Consulting / Консультации </a></li><li><a href="https://www.melekes.me/favorite-books"> Favorite books </a></li><li><a href="https://www.melekes.me/most-popular-posts"> Most popular posts </a></li><li><a href="https://www.melekes.me/one-month-country"> One month in some country </a></li><li><a href="https://www.melekes.me/tags"> Tags </a></li>
       </ul>
     </nav>
 
@@ -183,7 +183,7 @@ office</strong> (we usually called it the main office).</p>
 objects <strong>AFTER</strong> validation of the parent object. So the user is able to delete
 an office. Of course, later, when the user will try to edit a company,
 he/she will get an error - &ldquo;Company should have at least one office.&rdquo;.</p>
-<p><img src="https://www.homeonrails.com/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process"></p>
+<p><img src="https://www.melekes.me/images/posts/2012-10-08-validating-nested-associations-in-rails/flowchart.png" alt="Flowchart of the validation process"></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>offices_attributes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>{ id: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">_destroy</span>: <span style="color:#e6db74">&#39;1&#39;</span> }<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#f92672">[</span>{<span style="color:#e6db74">:id</span><span style="color:#f92672">=&gt;</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">:_destroy</span><span style="color:#f92672">=&gt;</span><span style="color:#e6db74">&#34;1&#34;</span>}<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
@@ -228,8 +228,8 @@ So, all we need to do is to select only those records not marked for destruction
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>save
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> c<span style="color:#f92672">.</span>errors
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#75715e">#&lt;ActiveModel::Errors:0x000000038fc840 @base=#&lt;Company id: 1, name: &#34;Mars LLC&#34;, created_at: &#34;2012-10-08 19:16:44&#34;, updated_at: &#34;2012-10-08 19:16:44&#34;&gt;, @messages={:base=&gt;[&#34;Company should have at least one office.&#34;]}&gt;</span>
-</span></span></code></pre></div><p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I&rsquo;ve added <a href="https://www.homeonrails.com/2012/10/associationcountvalidator">one more for this case</a>.</p>
-<p>If you know a better solution, don&rsquo;t hesitate to <a href="https://www.homeonrails.com/about">contact me</a> or simply leave a comment below.</p>
+</span></span></code></pre></div><p>Hopefully, in Rails 3 we are now able to write our own custom validators, so I&rsquo;ve added <a href="https://www.melekes.me/2012/10/associationcountvalidator">one more for this case</a>.</p>
+<p>If you know a better solution, don&rsquo;t hesitate to <a href="https://www.melekes.me/about">contact me</a> or simply leave a comment below.</p>
 <h3 id="validating-presence-of-the-parent-object">Validating presence of the parent object</h3>
 <p>The last thing I wanna share with you is how you can add <code>presence</code> validator
 to the parent association inside the nested model.</p>
@@ -283,7 +283,7 @@ Note: it does not work in combination with the <code>polymorphic</code> option.<
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "homeonrails" + '.disqus.com/embed.js';
+        s.src = '//' + "melekes" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
