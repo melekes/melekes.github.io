@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 23 May 2015 13:30:47 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/thrift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 May 2015 13:30:47 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/thrift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Erlang, HBase и Thrift</title>
       <link>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</link>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
       <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
 начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
@@ -22,6 +22,5 @@
 &lt;li&gt;C/C++ Apache HBase Client&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

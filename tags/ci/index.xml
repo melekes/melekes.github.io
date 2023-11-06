@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 06 Feb 2017 10:54:24 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Feb 2017 10:54:24 +0400</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CircleCI config for multipackage Golang projects</title>
       <link>https://www.homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</link>
       <pubDate>Mon, 06 Feb 2017 10:54:24 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</guid>
       <description>&lt;p&gt;Multipackage Golang project - project, consisting of several packages. When
 testing you usually do something like &lt;code&gt;go test ./...&lt;/code&gt;, when getting all the
@@ -20,6 +20,5 @@ dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be
 root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&gt;1&lt;/a&gt;,
 &lt;a href=&#34;https://github.com/tendermint/tendermint&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,17 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 17 Jul 2015 10:35:07 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jul 2015 10:35:07 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tmux / Автоматическое восстановление сессии</title>
       <link>https://www.homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</link>
       <pubDate>Fri, 17 Jul 2015 10:35:07 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/07/tmux-slash-avtomatichieskoie-vosstanovlieniie-siessii/</guid>
       <description>&lt;p&gt;Не так давно собрался с силами, и настроил у себя в tmux автоматическое
 сохранение и восстановление последней сессии. По прошествии месяца могу с
 уверенностью сказать - просто бомба!&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

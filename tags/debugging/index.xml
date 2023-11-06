@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 03 Mar 2018 13:20:11 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Mar 2018 13:20:11 +0400</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Debugging the Memory Leak in Tendermint</title>
       <link>https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</link>
       <pubDate>Sat, 03 Mar 2018 13:20:11 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I have spent the last week looking for clues and writing test cases in order to
@@ -26,16 +26,13 @@ securely replicates it on many machines. It is also the foundation of
 of questions, answers to which will hopefully help you identify the source of a
 leak. Here is the list:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Зависла Erlang нода. Что делать?</title>
       <link>https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/</link>
       <pubDate>Tue, 05 Apr 2016 15:50:31 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
       <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
-    
   </channel>
 </rss>

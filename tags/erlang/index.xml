@@ -7,24 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 20 Oct 2016 13:33:36 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Oct 2016 13:33:36 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Best of Erlang User Conference 2016</title>
       <link>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</link>
       <pubDate>Thu, 20 Oct 2016 13:33:36 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/10/the-best-of-erlang-user-conference-2016/</guid>
       <description>&lt;p&gt;Videos from Erlang User Conference 2016 are up. Thank you to organizers for
 sharing them with the community.&lt;/p&gt;
 &lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Profiling in Erlang</title>
       <link>https://www.homeonrails.com/2016/05/profiling-in-erlang/</link>
       <pubDate>Wed, 25 May 2016 11:41:44 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/05/profiling-in-erlang/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;The list of available instruments:&lt;/p&gt;
@@ -39,22 +37,18 @@ these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;<
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/slfritchie/159a8ce1f49fc03c77c6&#34;&gt;latency_histogram_tracer.erl&lt;/a&gt; (requires &lt;code&gt;folsom_metrics&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Как стартовать Erlang приложение</title>
       <link>https://www.homeonrails.com/2016/04/how-do-i-start-erlang-application/</link>
       <pubDate>Mon, 25 Apr 2016 10:38:13 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/04/how-do-i-start-erlang-application/</guid>
       <description>&lt;p&gt;Подразумевается, что у вас уже есть какое-то приложение и вы используете 3й
 rebar.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chokecherry Or The Story About 1000000 Timeouts</title>
       <link>https://www.homeonrails.com/2016/04/chokecherry/</link>
       <pubDate>Sun, 24 Apr 2016 11:25:45 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/04/chokecherry/</guid>
       <description>&lt;p&gt;Chokecherry (&lt;a href=&#34;https://github.com/funbox/chokecherry&#34;&gt;https://github.com/funbox/chokecherry&lt;/a&gt;) is a wrapper around lager
 logger which limits the volume of info messages irrespectively of the lager&amp;rsquo;s
@@ -66,22 +60,18 @@ backend.&lt;/p&gt;
 &lt;li&gt;&amp;ldquo;Do I need it?&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Зависла Erlang нода. Что делать?</title>
       <link>https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/</link>
       <pubDate>Tue, 05 Apr 2016 15:50:31 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/04/erlang-node-freezes-now-what/</guid>
       <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2016-04-05-erlang-node-freezes-now-what/debug_mode_on.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>The Best of Erlang Factory SF Bay 2016</title>
       <link>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</link>
       <pubDate>Thu, 31 Mar 2016 10:49:23 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/03/the-best-of-erlang-factory-sf-bay-2016/</guid>
       <description>&lt;p&gt;Annual &lt;a href=&#34;http://www.erlang-factory.com/sfbay2016&#34;&gt;Erlang Factory SF Bay Area
 2016&lt;/a&gt; conference ended only 3 weeks
@@ -90,34 +80,28 @@ about it, is that videos are available almost immediately. As usual, I am
 publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy these too.
 &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Не верь своему тимлиду</title>
       <link>https://www.homeonrails.com/2015/10/dont-trust-your-devlead/</link>
       <pubDate>Thu, 22 Oct 2015 10:16:35 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/10/dont-trust-your-devlead/</guid>
       <description>&lt;p&gt;&amp;ldquo;Не верь своему тимлиду&amp;rdquo; или когда не стоит слепо верить словам вашего тимлида.&lt;/p&gt;
 &lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-10-22-dont-trust-your-devlead/dog.png&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>The best of Erlang User Conference 2015</title>
       <link>https://www.homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</link>
       <pubDate>Mon, 10 Aug 2015 11:53:19 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/08/the-best-of-erlang-user-conference-2015/</guid>
       <description>&lt;p&gt;It’s been a few months since this year’s Erlang User Conference 2015, so most
 of the videos are now online (kudos to organizers). Here is a short list of my
 favorite talks. Enjoy!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>From Ruby To Erlang. Beginner&#39;s mistakes</title>
       <link>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</link>
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
@@ -126,12 +110,10 @@ on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is als
 &lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
 that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Заметки на полях: Изучай Erlang во имя добра!</title>
       <link>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</link>
       <pubDate>Thu, 28 May 2015 11:51:25 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-izuchai-erlang-vo-imia-dobra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ferd&#34;&gt;Фред Хеберт&lt;/a&gt; - широко известный в Erlang сообществе
 программист. Он не только написал дюжину полезных утилит и приложений, но и
@@ -141,23 +123,19 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
 вероятностью найдут что-то новое в последних главах книги (CommonTest, Mnesia,
 Distributed Erlang).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Заметки на полях: Программирование в Erlang</title>
       <link>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</link>
       <pubDate>Sat, 23 May 2015 15:35:04 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/05/zamietki-na-poliakh-proghrammirovaniie-v-erlang/</guid>
       <description>&lt;p&gt;Решил начать новую серию постов. Каждая статья будет представлять из себя набор
 советов, инструментов, скриптов или просто умных мыслей из определенной книги.
 Читать книгу или нет? Это решать вам самим.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Erlang, HBase и Thrift</title>
       <link>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</link>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
       <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
 начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
@@ -167,15 +145,12 @@ Distributed Erlang).&lt;/p&gt;</description>
 &lt;li&gt;C/C++ Apache HBase Client&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>Опции meck:new</title>
       <link>https://www.homeonrails.com/2015/03/meck-new-options/</link>
       <pubDate>Tue, 03 Mar 2015 11:04:41 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/03/meck-new-options/</guid>
       <description>&lt;p&gt;Документация по &lt;a href=&#34;https://github.com/eproxus/meck&#34;&gt;meck&lt;/a&gt;&amp;hellip; скажем так, не блещет. Давайте разберем опции &lt;code&gt;meck:new&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

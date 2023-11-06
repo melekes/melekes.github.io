@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 15 Feb 2015 12:04:01 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/http-client/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Feb 2015 12:04:01 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/http-client/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Тестируем HTTP клиент на Java</title>
       <link>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</link>
       <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</guid>
       <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
@@ -21,6 +21,5 @@
 Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
 нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

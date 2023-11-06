@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.119.0">
+  <meta name="generator" content="Hugo 0.120.3">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,15 +86,15 @@ and found out it is a bit outdated. So I will post a necessary steps here.</p>
 </code></pre><p><em>This is for Maven and Hadoop 2.</em></p>
 <p>Next step is to write a simple test case:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Test</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">returnsMaximumIntegerInValues</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException<span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>    InterruptedException <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">new</span> ReduceDriver<span style="color:#f92672">&lt;</span>Text<span style="color:#f92672">,</span> IntWritable<span style="color:#f92672">,</span> Text<span style="color:#f92672">,</span> IntWritable<span style="color:#f92672">&gt;()</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span><span style="color:#a6e22e">withReducer</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> MaxTemperatureReducer<span style="color:#f92672">())</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span><span style="color:#a6e22e">withInput</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Text<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1950&#34;</span><span style="color:#f92672">),</span>
-</span></span><span style="display:flex;"><span>            Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> IntWritable<span style="color:#f92672">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">new</span> IntWritable<span style="color:#f92672">(</span><span style="color:#ae81ff">5</span><span style="color:#f92672">)))</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span><span style="color:#a6e22e">withOutput</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Text<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1950&#34;</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">new</span> IntWritable<span style="color:#f92672">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">))</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span><span style="color:#a6e22e">runTest</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">returnsMaximumIntegerInValues</span>() <span style="color:#66d9ef">throws</span> IOException,
+</span></span><span style="display:flex;"><span>    InterruptedException {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">new</span> ReduceDriver<span style="color:#f92672">&lt;</span>Text, IntWritable, Text, IntWritable<span style="color:#f92672">&gt;</span>()
+</span></span><span style="display:flex;"><span>        .<span style="color:#a6e22e">withReducer</span>(<span style="color:#66d9ef">new</span> MaxTemperatureReducer())
+</span></span><span style="display:flex;"><span>        .<span style="color:#a6e22e">withInput</span>(<span style="color:#66d9ef">new</span> Text(<span style="color:#e6db74">&#34;1950&#34;</span>),
+</span></span><span style="display:flex;"><span>            Arrays.<span style="color:#a6e22e">asList</span>(<span style="color:#66d9ef">new</span> IntWritable(10), <span style="color:#66d9ef">new</span> IntWritable(5)))
+</span></span><span style="display:flex;"><span>        .<span style="color:#a6e22e">withOutput</span>(<span style="color:#66d9ef">new</span> Text(<span style="color:#e6db74">&#34;1950&#34;</span>), <span style="color:#66d9ef">new</span> IntWritable(10))
+</span></span><span style="display:flex;"><span>        .<span style="color:#a6e22e">runTest</span>();
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Back to our story. So, I ended up with something like this:</p>
 <p>{% gist e878b351daa8dd17bfae CatMaxAgesReducerTest.java %}</p>
 <p>After running, I encountered the following error:</p>
@@ -103,16 +103,16 @@ and found out it is a bit outdated. So I will post a necessary steps here.</p>
 HBase table, Hadoop is telling us that he doesn&rsquo;t know how to serialize our
 data. That is why we need to help it. Inside <code>setUp</code> set the
 <code>io.serializations</code> variable:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>conf<span style="color:#f92672">.</span><span style="color:#a6e22e">setStrings</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>conf<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;io.serializations&#34;</span><span style="color:#f92672">),</span> MutationSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(),</span> ResultSerialization<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()});</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>conf.<span style="color:#a6e22e">setStrings</span>(<span style="color:#e6db74">&#34;io.serializations&#34;</span>, <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span>{conf.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;io.serializations&#34;</span>), MutationSerialization.<span style="color:#a6e22e">class</span>.<span style="color:#a6e22e">getName</span>(), ResultSerialization.<span style="color:#a6e22e">class</span>.<span style="color:#a6e22e">getName</span>()});
 </span></span></code></pre></div><p>Apart from tests, you will hardly see such a code, because
 <a href="https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.html">TableMapReduceUtil</a>
 hides many details from you.</p>
 <p>When you do this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TableMapReduceUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">initTableReducerJob</span><span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>    Bytes<span style="color:#f92672">.</span><span style="color:#a6e22e">toBytes</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;animals&#34;</span><span style="color:#f92672">),</span>
-</span></span><span style="display:flex;"><span>    CatMaxAgesReducer<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TableMapReduceUtil.<span style="color:#a6e22e">initTableReducerJob</span>(
+</span></span><span style="display:flex;"><span>    Bytes.<span style="color:#a6e22e">toBytes</span>(<span style="color:#e6db74">&#34;animals&#34;</span>),
+</span></span><span style="display:flex;"><span>    CatMaxAgesReducer.<span style="color:#a6e22e">class</span>,
 </span></span><span style="display:flex;"><span>    job
-</span></span><span style="display:flex;"><span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><p>it sets all the necessary settings required to a Reducer to work.</p>
 <p>Useful links:</p>
 <ul>

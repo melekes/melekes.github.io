@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 04 May 2016 11:41:10 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 May 2016 11:41:10 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TrueColor in Gnome Terminal, Tmux and Neovim</title>
       <link>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</link>
       <pubDate>Wed, 04 May 2016 11:41:10 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/05/truecolor-in-gnome-terminal-tmux-and-neovim/</guid>
       <description>&lt;p&gt;Here is where we are right now: &lt;a href=&#34;https://gist.github.com/XVilka/8346728&#34;&gt;https://gist.github.com/XVilka/8346728&lt;/a&gt; . As you
 can see, most of the editors and terminals now support TrueColor (16 million
@@ -28,6 +28,5 @@ colors).&lt;/p&gt;
 
 &lt;p&gt;TrueColor looks better and comfier for your eyes. So, there is no excuse not to use it.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

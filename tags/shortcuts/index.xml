@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 28 Jul 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>10 команд, которыми вы пользуетесь чаще всего</title>
       <link>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</link>
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
@@ -20,6 +20,5 @@
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

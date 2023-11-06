@@ -7,23 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
       <link>https://www.homeonrails.com/2015/07/testing-reducer/</link>
       <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Тестируем HTTP клиент на Java</title>
       <link>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</link>
       <pubDate>Sun, 15 Feb 2015 12:04:01 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/02/testing-http-client-in-java/</guid>
       <description>&lt;p&gt;Не так давно, для одного из проектов, пришлось написать простенький HTTP клиент
 на Java. Он совсем простой и состоит буквально из одного метода -
@@ -32,6 +30,5 @@ errors.&lt;/p&gt;</description>
 Unirest или Google HTTP Client. Хотя, если бы требовалось что-то посерьезнее,
 нежели простые HTTP запросы, рассмотрел бы другие варианты.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

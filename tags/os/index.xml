@@ -7,18 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 09 Jan 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copy and paste between Vim and OS</title>
       <link>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</link>
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2014/01/copy-and-paste-between-vim-and-os/</guid>
       <description>&lt;p&gt;When I first encountered this problem it slightly
 puzzled me. &amp;ldquo;Why can not I press &lt;code&gt;ctrl-c&lt;/code&gt; to copy the text and
 &lt;code&gt;ctrl-v&lt;/code&gt; to paste?&amp;rdquo;- I asked myself. Indeed, the majority of source code editors
 able to do this. And yes, I got used to this dammit!&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

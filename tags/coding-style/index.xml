@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 15 Apr 2014 14:58:08 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/coding-style/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Apr 2014 14:58:08 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/coding-style/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Почему стоит писать почему</title>
       <link>https://www.homeonrails.com/2014/04/why-should-i-write-why/</link>
       <pubDate>Tue, 15 Apr 2014 14:58:08 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
 &amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
@@ -23,6 +23,5 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
     raise NoSlidesError if no slides
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 05 Mar 2017 12:00:12 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/collections/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Mar 2017 12:00:12 +0400</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/collections/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Podcasts I listen to</title>
       <link>https://www.homeonrails.com/2017/03/podcasts-i-am-listening-to/</link>
       <pubDate>Sun, 05 Mar 2017 12:00:12 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2017/03/podcasts-i-am-listening-to/</guid>
       <description>&lt;p&gt;Last updated: Mon, Dec. 23, 2019&lt;/p&gt;
 &lt;p&gt;A podcast, as an information medium, is more popular than ever before. Soon, it
@@ -27,6 +27,5 @@ languages, each has a label:&lt;/p&gt;
 &lt;p&gt;I also record podcasts, which I&amp;rsquo;ve tried to listen, but did not found
 particularly interesting.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

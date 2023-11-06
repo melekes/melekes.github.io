@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 14 Jan 2017 21:14:14 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jan 2017 21:14:14 +0400</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Подписываем git коммиты</title>
       <link>https://www.homeonrails.com/2017/01/signing-git-commits/</link>
       <pubDate>Sat, 14 Jan 2017 21:14:14 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2017/01/signing-git-commits/</guid>
       <description>&lt;p&gt;Решили у себя в команде, что будем подписывать коммиты и тэги. У git&amp;rsquo;а уже
 давно имеется данная возможность. Но мало кто ей пользуется. Благодаря этому
@@ -26,12 +26,10 @@
 &lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2017-01-14-signing-git-commits/github.png&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>Почему стоит писать почему</title>
       <link>https://www.homeonrails.com/2014/04/why-should-i-write-why/</link>
       <pubDate>Tue, 15 Apr 2014 14:58:08 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2014/04/why-should-i-write-why/</guid>
       <description>&lt;p&gt;Раньше в сообщении к коммиту я ограничивался только ответом на вопрос
 &amp;ldquo;Что?&amp;rdquo;.&lt;/p&gt;
@@ -42,12 +40,10 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
     raise NoSlidesError if no slides
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>10 команд, которыми вы пользуетесь чаще всего</title>
       <link>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</link>
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
@@ -55,6 +51,5 @@ Date:   Mon Apr 14 13:20:06 2014 +0400
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

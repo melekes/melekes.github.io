@@ -7,23 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 10 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/validation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/validation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AssociationCountValidator</title>
       <link>https://www.homeonrails.com/2012/10/associationcountvalidator/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/10/associationcountvalidator/</guid>
       <description>&lt;p&gt;As a result of my &lt;a href=&#34;https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Validating nested associations in Rails</title>
       <link>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</link>
       <pubDate>Mon, 08 Oct 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
@@ -34,6 +32,5 @@ or &lt;a href=&#34;http://api.rubyonrails.org/classes/ActiveRecord/NestedAttribu
 I strongly recommend taking a look at this article &lt;a href=&#34;http://rubysource.com/complex-rails-forms-with-nested-attributes/&#34;&gt;Complex Rails Forms with Nested Attributes&lt;/a&gt;,
 written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 03 Mar 2018 13:47:11 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Mar 2018 13:47:11 +0400</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Choosing a type for blockchain height (beware of unsigned integers)</title>
       <link>https://www.homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</link>
       <pubDate>Sat, 03 Mar 2018 13:47:11 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2018/03/choosing-a-type-for-blockchain-height/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Before &lt;a href=&#34;https://github.com/tendermint/tendermint/pull/914&#34;&gt;this pull request&lt;/a&gt;,
@@ -22,12 +22,10 @@ was using the same type for TxResult. Block and BlockStore, however, were using
 architecture: &lt;code&gt;int32&lt;/code&gt; for x86, &lt;code&gt;int64&lt;/code&gt; for amd64). There was no single standard
 across our repositories as for what type to use for blockchain height.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Debugging the Memory Leak in Tendermint</title>
       <link>https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</link>
       <pubDate>Sat, 03 Mar 2018 13:20:11 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2018/03/debugging-the-memory-leak-in-tendermint/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href=&#34;https://blog.cosmos.network/debugging-the-memory-leak-in-tendermint-210186711420&#34;&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I have spent the last week looking for clues and writing test cases in order to
@@ -41,22 +39,18 @@ securely replicates it on many machines. It is also the foundation of
 of questions, answers to which will hopefully help you identify the source of a
 leak. Here is the list:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Abstracting the logger interface in Go</title>
       <link>https://www.homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</link>
       <pubDate>Tue, 06 Jun 2017 22:35:01 +0200</pubDate>
-      
       <guid>https://www.homeonrails.com/2017/06/abstracting-the-logger-interface-in-go/</guid>
       <description>Wrote a blog post a few days ago for my company&amp;rsquo;s blog about our experience of moving from a static logger to an interface and adapter for the go-kit log package.
 https://blog.cosmos.network/abstracting-the-logger-interface-in-go-4cf96bf90bb7</description>
     </item>
-    
     <item>
       <title>CircleCI config for multipackage Golang projects</title>
       <link>https://www.homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</link>
       <pubDate>Mon, 06 Feb 2017 10:54:24 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2017/02/circleci-config-for-multipackage-golang-projects/</guid>
       <description>&lt;p&gt;Multipackage Golang project - project, consisting of several packages. When
 testing you usually do something like &lt;code&gt;go test ./...&lt;/code&gt;, when getting all the
@@ -64,6 +58,5 @@ dependencies - &lt;code&gt;go get ./...&lt;/code&gt;. There may be or may not be
 root level. Examples: &lt;a href=&#34;https://github.com/hashicorp/consul&#34;&gt;1&lt;/a&gt;,
 &lt;a href=&#34;https://github.com/tendermint/tendermint&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

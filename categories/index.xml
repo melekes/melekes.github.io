@@ -6,6 +6,7 @@
     <description>Recent content in Categories on Home on Rails</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>All rights reserved</copyright><atom:link href="https://www.homeonrails.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>All rights reserved</copyright>
+    <atom:link href="https://www.homeonrails.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 10 Apr 2019 09:18:59 +0200</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/cosmos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Apr 2019 09:18:59 +0200</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/cosmos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Коротко о Tendermint и Cosmos Network</title>
       <link>https://www.homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/</link>
       <pubDate>Wed, 10 Apr 2019 09:18:59 +0200</pubDate>
-      
       <guid>https://www.homeonrails.com/2019/04/on-tendermint-and-cosmos-ru/</guid>
       <description>&lt;p&gt;Ниже приведен текст заметки, которая была написана при подготовке к участию в
 подкасте &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Базовый Блок&amp;rdquo;&lt;/a&gt;. Это не в коем случае
@@ -20,6 +20,5 @@
 Tendermint, Cosmos. Также упоминается проект Polkadot.&lt;/p&gt;
 &lt;p&gt;Выпуск со мной можно послушать &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;здесь&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

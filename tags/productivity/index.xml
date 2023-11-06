@@ -7,21 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 18 Oct 2016 17:40:16 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Oct 2016 17:40:16 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5 New Tab Google Chrome extensions for productivity freaks</title>
       <link>https://www.homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</link>
       <pubDate>Tue, 18 Oct 2016 17:40:16 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/10/5-new-tab-google-chrome-extensions-for-productivity-freaks/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>How to be productive with almost any text editor</title>
       <link>https://www.homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</link>
       <pubDate>Mon, 23 May 2016 12:02:11 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/05/how-to-be-productive-with-almost-any-editor/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;What makes us productive when working with code in the editor? Every day, there
@@ -34,12 +32,10 @@ features, built into the editor. You just don&amp;rsquo;t know about them. Here,
 tried to collect &lt;strong&gt;the most important ones&lt;/strong&gt;, which don&amp;rsquo;t require you to read a
 pile of docs and much time to learn.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>10 команд, которыми вы пользуетесь чаще всего</title>
       <link>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</link>
       <pubDate>Sun, 28 Jul 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2013/07/top-10-commands-you-currently-use/</guid>
       <description>&lt;p&gt;Порой, если вы активно пользуетесь командной строкой, вы начинаете
 замечать, что набираете некоторые команды по многу раз. Неужели вам не
@@ -47,6 +43,5 @@ pile of docs and much time to learn.&lt;/p&gt;</description>
 продуктивности своей работы, то в командной оболочке linux есть отличное средство,
 которое нам поможет - алиасы.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

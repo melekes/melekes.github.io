@@ -7,23 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/hbase/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/hbase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
       <link>https://www.homeonrails.com/2015/07/testing-reducer/</link>
       <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Erlang, HBase и Thrift</title>
       <link>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</link>
       <pubDate>Sat, 23 May 2015 13:30:47 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/05/erlang-hbase-and-thrift/</guid>
       <description>&lt;p&gt;И так, вы планируете читать и писать данные в HBase таблицу из Erlang&amp;rsquo;а. Что ж,
 начнем с того, что клиента для Erlang&amp;rsquo;а нет :( А на выбор имеются:&lt;/p&gt;
@@ -33,12 +31,10 @@ errors.&lt;/p&gt;</description>
 &lt;li&gt;C/C++ Apache HBase Client&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>Writing to HBase from Hadoop Mapper</title>
       <link>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</link>
       <pubDate>Fri, 16 Jan 2015 15:48:49 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/01/writing-to-hbase-from-hadoop-mapper/</guid>
       <description>&lt;p&gt;Although Hadoop and HBase are often used together, not so many resources
 devoted to interaction between them. In the book &lt;a href=&#34;http://shop.oreilly.com/product/0636920014348.do&#34;&gt;&amp;ldquo;HBase: The Definitive
@@ -47,6 +43,5 @@ named &amp;ldquo;MapReduce Integration&amp;rdquo;, which sheds some light on thi
 give you another example of the MR task that reads and writes to the same HBase
 table.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

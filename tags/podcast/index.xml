@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 17 Apr 2019 20:00:12 +0400</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Apr 2019 20:00:12 +0400</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lessons learned from my first podcast appearance</title>
       <link>https://www.homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</link>
       <pubDate>Wed, 17 Apr 2019 20:00:12 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2019/04/lessons-learned-from-my-first-podcast-appearance/</guid>
       <description>&lt;p&gt;A few days ago I was invited to be a guest on the &lt;a href=&#34;https://basicblockradio.com/&#34;&gt;&amp;ldquo;Basic
 Block&amp;rdquo;&lt;/a&gt; podcast - probably the most popular
@@ -25,12 +25,10 @@ guys! So what you end up listening is the edited (often abridged) version, not
 the original conversation.&lt;/p&gt;
 &lt;p&gt;You can listen to the episode &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Базовый Блок 68: поправки и дополнения</title>
       <link>https://www.homeonrails.com/2019/04/basicblockradio-68-corrections/</link>
       <pubDate>Mon, 15 Apr 2019 09:00:12 +0400</pubDate>
-      
       <guid>https://www.homeonrails.com/2019/04/basicblockradio-68-corrections/</guid>
       <description>&lt;p&gt;Сегодня опубликовали выпуск со мной в подкасте &lt;a href=&#34;https://basicblockradio.com/e068/&#34;&gt;&amp;ldquo;Базовый
 Блок&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
@@ -38,6 +36,5 @@ the original conversation.&lt;/p&gt;
 допустил несколько ошибок (ввиду волнения, ошибки перевода, тысячу других
 отмазок можно придумать) и хотелось бы их разобрать.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

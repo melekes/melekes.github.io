@@ -7,17 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/mrunit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jul 2015 12:34:19 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/mrunit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Reducer, which saves data to HBase, using MRUnit</title>
       <link>https://www.homeonrails.com/2015/07/testing-reducer/</link>
       <pubDate>Fri, 17 Jul 2015 12:34:19 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/07/testing-reducer/</guid>
       <description>&lt;p&gt;Lately, I was needed to write a test for one of the reducers we have in our
 project. Even though, it was pretty easy, I do confronted with a couple of
 errors.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

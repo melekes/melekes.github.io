@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 03 Aug 2015 15:09:10 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Aug 2015 15:09:10 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Ruby To Erlang. Beginner&#39;s mistakes</title>
       <link>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</link>
       <pubDate>Mon, 03 Aug 2015 15:09:10 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/08/from-ruby-to-erlang/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve  been programming full-time using Erlang for a while already (about eight
 months or so). Before Erlang, I was doing some hardcore Ruby. Obviously, these
@@ -21,12 +21,10 @@ on. Also, there are things you won&amp;rsquo;t find in Ruby (the opposite is als
 &lt;p&gt;In this post I want to show you the mistakes that I&amp;rsquo;ve made and the lessons
 that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Разрабатываем ruby gem в docker контейнере</title>
       <link>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</link>
       <pubDate>Thu, 07 May 2015 11:53:25 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/05/razrabatyvaiem-ruby-gem-v-docker-kontieinierie/</guid>
       <description>&lt;figure&gt;&lt;img src=&#34;https://www.homeonrails.com/images/posts/2015-05-07-razrabatyvaiem-ruby-gem-v-docker-kontieinierie/logo.png&#34;/&gt;
 &lt;/figure&gt;
@@ -38,12 +36,10 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
 встроить docker в процесс. Далее последует руководство по разработке Ruby гема
 с использованием docker&amp;rsquo;а.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Shamrock</title>
       <link>https://www.homeonrails.com/2015/02/shamrock/</link>
       <pubDate>Tue, 17 Feb 2015 10:05:37 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2015/02/shamrock/</guid>
       <description>&lt;p&gt;Бывают случаи, когда WebMock&amp;rsquo;а недостаточно, или же вы просто не любите stub&amp;rsquo;ы
 и хотите, чтобы тест делал реальный http запрос. В таких случаях вы можете
@@ -52,32 +48,26 @@ that I&amp;rsquo;ve learned during the transition.&lt;/p&gt;</description>
 или выбрать один из существующих, и стартовать его на время тестов(а). А можно
 взять готовую библиотеку - &lt;a href=&#34;https://github.com/jsl/shamrock&#34;&gt;Shamrock&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Ruby speed quiz explained</title>
       <link>https://www.homeonrails.com/2014/04/ruby-speed-quiz-explained/</link>
       <pubDate>Tue, 01 Apr 2014 23:47:38 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2014/04/ruby-speed-quiz-explained/</guid>
       <description>&lt;p&gt;At the end of &lt;a href=&#34;https://www.homeonrails.com/2014/03/ruby-speed-quiz/&#34;&gt;Ruby speed quiz&lt;/a&gt; I promised to publish an explanation for each case.
 I did not expect that more than 900 Rubyists will give it a shot. I
 was surprised. Thanks to all who participated!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Ruby speed quiz</title>
       <link>https://www.homeonrails.com/2014/03/ruby-speed-quiz/</link>
       <pubDate>Fri, 28 Mar 2014 12:13:48 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2014/03/ruby-speed-quiz/</guid>
       <description>&lt;p&gt;For each case choose the fastest option.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Don&#39;t do this at home on Rails #3</title>
       <link>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</link>
       <pubDate>Sat, 05 Jan 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2013/01/dont-do-this-at-home-on-rails-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
@@ -87,12 +77,10 @@ was surprised. Thanks to all who participated!&lt;/p&gt;</description>
 little drawback. Next, we will discuss three small pieces of code,
 which smells not very good. Let&amp;rsquo;s see what we can do about it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Null migration, or What to do when there are too many migrations</title>
       <link>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</link>
       <pubDate>Sun, 18 Nov 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/11/null-migration-or-what-to-do-when-there-are-too-many-migrations/</guid>
       <description>&lt;p&gt;Migrations are probably one of the most killer features of ActiveRecord.
 They allow you to design the architecture of the database along with the
@@ -101,23 +89,19 @@ you reflect that change in code and write a migration (or several migrations),
 which will make the necessary actions on your database schema. This may be
 creating a new table, deleting a column or adding an unique index.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tired of copying FactoryGirl sequences from project to project?</title>
       <link>https://www.homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</link>
       <pubDate>Thu, 15 Nov 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/11/tired-of-copying-factorygirl-sequences-from-project-to-project/</guid>
       <description>&lt;p&gt;Take a look at the
 &lt;a href=&#34;http://rubygems.org/gems/factory_girl_sequences&#34;&gt;factory_girl_sequences&lt;/a&gt; gem,
 which provides a basic set of the most common sequences.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Don&#39;t do this at home on Rails #2</title>
       <link>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</link>
       <pubDate>Sat, 10 Nov 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/11/dont-do-this-at-home-on-rails-2/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
@@ -130,23 +114,19 @@ complexity, by running a series of easy refactorings, we can significantly
 improve the code: reduce the size, improve the readability and even
 increase its speed. Who knows?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AssociationCountValidator</title>
       <link>https://www.homeonrails.com/2012/10/associationcountvalidator/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/10/associationcountvalidator/</guid>
       <description>&lt;p&gt;As a result of my &lt;a href=&#34;https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails&#34;&gt;previous blog post&lt;/a&gt;
 about validating nested associations, I wrote custom validator for Rails 3.
 It is intended to help you to validate records count in a given association.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Validating nested associations in Rails</title>
       <link>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</link>
       <pubDate>Mon, 08 Oct 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/10/validating-nested-associations-in-rails/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Rails provide a wide range of options for creating rich forms for your models.
@@ -157,12 +137,10 @@ or &lt;a href=&#34;http://api.rubyonrails.org/classes/ActiveRecord/NestedAttribu
 I strongly recommend taking a look at this article &lt;a href=&#34;http://rubysource.com/complex-rails-forms-with-nested-attributes/&#34;&gt;Complex Rails Forms with Nested Attributes&lt;/a&gt;,
 written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;, which will show your how you can create complex forms with Rails.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Don&#39;t do this at home on Rails #1</title>
       <link>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</link>
       <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2012/09/dont-do-this-at-home-on-rails-1/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Languages: Ruby&lt;/li&gt;
@@ -172,6 +150,5 @@ written by &lt;a href=&#34;http://xaviershay.com/&#34;&gt;Xavier Shay&lt;/a&gt;,
 &lt;p&gt;These series of articles will be dedicated to every day code, that I am working on.
 This could be the parts of my own projects or some ruby gems. Together, we will try to improve quality and readability of it.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 18 Jun 2016 13:44:21 +0000</lastBuildDate><atom:link href="https://www.homeonrails.com/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2016 13:44:21 +0000</lastBuildDate>
+    <atom:link href="https://www.homeonrails.com/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Best of Clojure/west 2016</title>
       <link>https://www.homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</link>
       <pubDate>Sat, 18 Jun 2016 13:44:21 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2016/06/the-best-of-clojure-slash-west-2016/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently decided to give Clojure another try and, as a part of my
 wanderings, watched talks from Clojure/west 2016. Clojure/west is the biggest
@@ -21,12 +21,10 @@ you may guess.&lt;/p&gt;
 &lt;p&gt;As usual, I am publishing the talks, which I liked the most. Hope you&amp;rsquo;ll enjoy
 these too. &lt;em&gt;Disclaimer: your experience may vary.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Vim: Connect to Clojure nREPL inside the VM</title>
       <link>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</link>
       <pubDate>Wed, 04 Jun 2014 12:11:45 +0000</pubDate>
-      
       <guid>https://www.homeonrails.com/2014/06/vim-connect-to-clojure-nrepl-inside-the-vm/</guid>
       <description>&lt;p&gt;For Vim to talk to nREPL we will be using fantastic
 &lt;a href=&#34;https://github.com/tpope/vim-fireplace&#34;&gt;fireplace.vim&lt;/a&gt; plugin. If you have
@@ -35,6 +33,5 @@ based on &lt;code&gt;.nrepl-port&lt;/code&gt;. But if you, like me, have Clojure
 (VirtualBox or VMWare, or something else), you need to connect to its nREPL
 manually using &lt;code&gt;:Connect&lt;/code&gt; function.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
