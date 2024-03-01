@@ -73,7 +73,7 @@ html {
 Ecosystems</a>
 by Sergey Gorbunov and Georgios Vlachos, published in January 2021.</p>
 <blockquote>
-<p>&ldquo;To enable applications to communicate across blockchain ecosystems
+<p>&ldquo; To enable applications to communicate across blockchain ecosystems
 frictionlessly, we propose Axelar. Axelar stack provides a decentralized
 network, protocols, tools, and APIs that allow simple cross-chain
 communication. Axelar protocol suite consists of cross-border routing and
@@ -88,20 +88,20 @@ transfer protocols.&rdquo;</p>
 <ul>
 <li>no heavy engineering work from ecosystem developers</li>
 <li>minimal effect to interoperability if a blockchain itself upgrades</li>
-<li>a simple protocol to lock, unlock, transfer tokens, and communicate with other applications</li>
+<li> a simple protocol to lock, unlock, transfer tokens, and communicate with other applications</li>
 </ul>
 <p>While <a href="https://alexeizamyatin.medium.com/interoperability-deep-dive-xcmp-vs-ibc-vs-optics-e365c72180cb">multiple interoperability
 protocols</a>
 now exist, their adoption is still fairly limited. It&rsquo;s more or less clear that
-the future is <a href="https://vitalik.ca/general/2021/12/06/endgame.html">multichain</a>,
-but the road ahead is fuzzy. Most ecosystems currently racing towards biggest
+the future is <a href="https://vitalik.eth.limo/general/2021/12/06/endgame.html">multichain</a>,
+but the road ahead is fuzzy. Most ecosystems currently racing toward biggest
 adoption / market cap and their developers don&rsquo;t have time for any cross-chain
 development. As a result, <a href="https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8">many custom bridges had
 appeared</a>.</p>
-<p>Existing solutions do not scale well (&ldquo;We have also seen a few
+<p>Existing solutions do not scale well (&ldquo; We have also seen a few
 other single-purpose bridges by platform developers that rewrite
 state-transition logic in smart contracts to bridge to other ecosystems [1, 7].
-They suffer from multiple scalability issues, do not allow the ecosystem to
+They suffer from multiple scalability issues and do not allow the ecosystem to
 scale uniformly, and introduce additional dependencies for applications&rdquo;).</p>
 <blockquote>
 <p>Why not just use IBC?</p>
@@ -191,7 +191,7 @@ obtain cross-chain support.</p>
 <h2 id="summary">Summary</h2>
 <p>Axelar is a common relay chain to forward messages from one blockchain to
 another (&ldquo;decentralized crosschain read/write oracle&rdquo;) using
-threshold-signature based bridges and light clients.</p>
+threshold-signature-based bridges and light clients.</p>
 <p>The novelty comes from the set of high-level protocols (CGP and CTP) for
 cross-chain application calls, which is unavailable in the existing protocols
 (e.g. IBC).</p>
